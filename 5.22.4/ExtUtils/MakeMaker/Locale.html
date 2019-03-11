@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ExtUtils::MakeMaker::Locale - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>ExtUtils::MakeMaker::Locale - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.22.4/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.22.4/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.22.4/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.22.4/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.22.4/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.22.4/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.22.4/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.22.4/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.22.4/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.22.4/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.22.4/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.22.4/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.22.4/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.22.4/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.22.4/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../../index-modules-E.html">Core modules (E)</a> &gt;
+      
+    
+    ExtUtils::MakeMaker::Locale
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 22.4 documentation</h1>
+                  </div>
+                  <h1>ExtUtils::MakeMaker::Locale</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#NOTES">NOTES</a></li><ul><li><a href="#Windows">Windows</a></li><li><a href="#Mac-OS-X">Mac OS X</a></li><li><a href="#POSIX-(Linux-and-other-Unixes)">POSIX (Linux and other Unixes)</a></li></ul><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#AUTHOR">AUTHOR</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>ExtUtils::MakeMaker::Locale - bundled Encode::Locale</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<pre>
+  <a class="l_k" href="../../functions/use.html">use</a> <span class="w">Encode::Locale</span><span class="sc">;</span>
+  <a class="l_k" href="../../functions/use.html">use</a> <span class="w">Encode</span><span class="sc">;</span>
+
+  <span class="i">$string</span> = <span class="i">decode</span><span class="s">(</span><span class="w">locale</span> <span class="cm">=&gt;</span> <span class="i">$bytes</span><span class="s">)</span><span class="sc">;</span>
+  <span class="i">$bytes</span> = <span class="i">encode</span><span class="s">(</span><span class="w">locale</span> <span class="cm">=&gt;</span> <span class="i">$string</span><span class="s">)</span><span class="sc">;</span>
+
+  <a class="l_k" href="../../functions/if.html">if</a> <span class="s">(</span>-t<span class="s">)</span> <span class="s">{</span>
+      <a class="l_k" href="../../functions/binmode.html">binmode</a><span class="s">(</span><span class="w">STDIN</span><span class="cm">,</span> <span class="q">&quot;:encoding(console_in)&quot;</span><span class="s">)</span><span class="sc">;</span>
+      <a class="l_k" href="../../functions/binmode.html">binmode</a><span class="s">(</span><span class="w">STDOUT</span><span class="cm">,</span> <span class="q">&quot;:encoding(console_out)&quot;</span><span class="s">)</span><span class="sc">;</span>
+      <a class="l_k" href="../../functions/binmode.html">binmode</a><span class="s">(</span><span class="w">STDERR</span><span class="cm">,</span> <span class="q">&quot;:encoding(console_out)&quot;</span><span class="s">)</span><span class="sc">;</span>
+  <span class="s">}</span>
+
+  <span class="c"># Processing file names passed in as arguments</span>
+  <a class="l_k" href="../../functions/my.html">my</a> <span class="i">$uni_filename</span> = <span class="i">decode</span><span class="s">(</span><span class="w">locale</span> <span class="cm">=&gt;</span> <span class="i">$ARGV</span>[<span class="n">0</span>]<span class="s">)</span><span class="sc">;</span>
+  <a class="l_k" href="../../functions/open.html">open</a><span class="s">(</span><a class="l_k" href="../../functions/my.html">my</a> <span class="i">$fh</span><span class="cm">,</span> <span class="q">&quot;&lt;&quot;</span><span class="cm">,</span> <span class="i">encode</span><span class="s">(</span><span class="w">locale_fs</span> <span class="cm">=&gt;</span> <span class="i">$uni_filename</span><span class="s">)</span><span class="s">)</span>
+     || <a class="l_k" href="../../functions/die.html">die</a> <span class="q">&quot;Can&#39;t open &#39;$uni_filename&#39;: $!&quot;</span><span class="sc">;</span>
+  <a class="l_k" href="../../functions/binmode.html">binmode</a><span class="s">(</span><span class="i">$fh</span><span class="cm">,</span> <span class="q">&quot;:encoding(locale)&quot;</span><span class="s">)</span><span class="sc">;</span>
+  ...</pre>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>In many applications it's wise to let Perl use Unicode for the strings it
+processes.  Most of the interfaces Perl has to the outside world are still byte
+based.  Programs therefore need to decode byte strings that enter the program
+from the outside and encode them again on the way out.</p>
+<p>The POSIX locale system is used to specify both the language conventions
+requested by the user and the preferred character set to consume and
+output.  The <pre>
+<span class="w">Encode::Locale</span></code>
+ module looks up the charset and encoding (called
+a CODESET in the locale jargon) and arranges for the <a href="../../Encode.html">Encode</a> module to know
+this encoding under the name "locale".  It means bytes obtained from the
+environment can be converted to Unicode strings by calling <pre>
+<span class="i">Encode::encode</span><span class="s">(</span><span class="w">locale</span> <span class="cm">=&gt;</span> <span class="i">$bytes</span><span class="s">)</span></code>
+ and converted back again with <pre>
+<span class="i">Encode::decode</span><span class="s">(</span><span class="w">locale</span> <span class="cm">=&gt;</span> <span class="i">$string</span><span class="s">)</span></code>
+.</p>
+<p>Where file systems interfaces pass file names in and out of the program we also
+need care.  The trend is for operating systems to use a fixed file encoding
+that don't actually depend on the locale; and this module determines the most
+appropriate encoding for file names. The <a href="../../Encode.html">Encode</a> module will know this
+encoding under the name "locale_fs".  For traditional Unix systems this will
+be an alias to the same encoding as "locale".</p>
+<p>For programs running in a terminal window (called a "Console" on some systems)
+the "locale" encoding is usually a good choice for what to expect as input and
+output.  Some systems allows us to query the encoding set for the terminal and
+<pre>
+<span class="w">Encode::Locale</span></code>
+ will do that if available and make these encodings known
+under the <pre>
+<span class="w">Encode</span></code>
+ aliases "console_in" and "console_out".  For systems where
+we can't determine the terminal encoding these will be aliased as the same
+encoding as "locale".  The advice is to use "console_in" for input known to
+come from the terminal and "console_out" for output to the terminal.</p>
+<p>In addition to arranging for various Encode aliases the following functions and
+variables are provided:</p>
+<ul>
+<li><a id="decode_argv(-)"></a><strong>decode_argv( )</strong>
+</li>
+<li><a id="decode_argv(-Encode%3a%3aFB_CROAK-)"></a><strong>decode_argv( Encode::FB_CROAK )</strong>
+<p>This will decode the command line arguments to perl (the <pre>
+<span class="i">@ARGV</span></code>
+ array) in-place.</p>
+<p>The function will by default replace characters that can't be decoded by
+"\x{FFFD}", the Unicode replacement character.</p>
+<p>Any argument provided is passed as CHECK to underlying Encode::decode() call.
+Pass the value <pre>
+<span class="w">Encode::FB_CROAK</span></code>
+ to have the decoding croak if not all the
+command line arguments can be decoded.  See <a href="../../Encode.html#Handling-Malformed-Data">Handling Malformed Data in Encode</a>
+for details on other options for CHECK.</p>
+</li>
+<li><a id="env(-%24uni_key-)"></a><strong>env( $uni_key )</strong>
+</li>
+<li><a id="env(-%24uni_key-%3d%3e-%24uni_value-)"></a><strong>env( $uni_key =&gt; $uni_value )</strong>
+<p>Interface to get/set environment variables.  Returns the current value as a
+Unicode string. The $uni_key and $uni_value arguments are expected to be
+Unicode strings as well.  Passing <code class="inline"><a class="l_k" href="../../functions/undef.html">undef</a></code> as $uni_value deletes the
+environment variable named $uni_key.</p>
+<p>The returned value will have the characters that can't be decoded replaced by
+"\x{FFFD}", the Unicode replacement character.</p>
+<p>There is no interface to request alternative CHECK behavior as for
+decode_argv().  If you need that you need to call encode/decode yourself.
+For example:</p>
+<pre>
+    <a class="l_k" href="../../functions/my.html">my</a> <span class="i">$key</span> = <span class="i">Encode::encode</span><span class="s">(</span><span class="w">locale</span> <span class="cm">=&gt;</span> <span class="i">$uni_key</span><span class="cm">,</span> <span class="w">Encode::FB_CROAK</span><span class="s">)</span><span class="sc">;</span>
+    <a class="l_k" href="../../functions/my.html">my</a> <span class="i">$uni_value</span> = <span class="i">Encode::decode</span><span class="s">(</span><span class="w">locale</span> <span class="cm">=&gt;</span> <span class="i">$ENV</span>{<span class="i">$key</span>}<span class="cm">,</span> <span class="w">Encode::FB_CROAK</span><span class="s">)</span><span class="sc">;</span></pre>
+</li>
+<li><a id="reinit(-)"></a><strong>reinit( )</strong>
+</li>
+<li><a id="reinit(-%24encoding-)"></a><strong>reinit( $encoding )</strong>
+<p>Reinitialize the encodings from the locale.  You want to call this function if
+you changed anything in the environment that might influence the locale.</p>
+<p>This function will croak if the determined encoding isn't recognized by
+the Encode module.</p>
+<p>With argument force $ENCODING_... variables to set to the given value.</p>
+</li>
+<li><a id="%24ENCODING_LOCALE"></a><strong>$ENCODING_LOCALE</strong>
+<p>The encoding name determined to be suitable for the current locale.
+<a href="../../Encode.html">Encode</a> know this encoding as "locale".</p>
+</li>
+<li><a id="%24ENCODING_LOCALE_FS"></a><strong>$ENCODING_LOCALE_FS</strong>
+<p>The encoding name determined to be suitable for file system interfaces
+involving file names.
+<a href="../../Encode.html">Encode</a> know this encoding as "locale_fs".</p>
+</li>
+<li><a id="%24ENCODING_CONSOLE_IN"></a><strong>$ENCODING_CONSOLE_IN</strong>
+</li>
+<li><a id="%24ENCODING_CONSOLE_OUT"></a><strong>$ENCODING_CONSOLE_OUT</strong>
+<p>The encodings to be used for reading and writing output to the a console.
+<a href="../../Encode.html">Encode</a> know these encodings as "console_in" and "console_out".</p>
+</li>
+</ul>
+<a id="NOTES"></a><h2 class='h2' >NOTES</h2>
+<p>This table summarizes the mapping of the encodings set up
+by the <pre>
+<span class="w">Encode::Locale</span></code>
+ module:</p>
+<div class="verbatim"><ol><li>  Encode      |         |              |</li><li>  Alias       | Windows | Mac OS X     | POSIX</li><li>  ------------+---------+--------------+------------</li><li>  locale      | ANSI    | nl_langinfo  | nl_langinfo</li><li>  locale_fs   | ANSI    | UTF-8        | nl_langinfo</li><li>  console_in  | OEM     | nl_langinfo  | nl_langinfo</li><li>  console_out | OEM     | nl_langinfo  | nl_langinfo</li></ol></div><a id="Windows"></a><h3 class='h3' >Windows</h3>
+<p>Windows has basically 2 sets of APIs.  A wide API (based on passing UTF-16
+strings) and a byte based API based a character set called ANSI.  The
+regular Perl interfaces to the OS currently only uses the ANSI APIs.
+Unfortunately ANSI is not a single character set.</p>
+<p>The encoding that corresponds to ANSI varies between different editions of
+Windows.  For many western editions of Windows ANSI corresponds to CP-1252
+which is a character set similar to ISO-8859-1.  Conceptually the ANSI
+character set is a similar concept to the POSIX locale CODESET so this module
+figures out what the ANSI code page is and make this available as
+$ENCODING_LOCALE and the "locale" Encoding alias.</p>
+<p>Windows systems also operate with another byte based character set.
+It's called the OEM code page.  This is the encoding that the Console
+takes as input and output.  It's common for the OEM code page to
+differ from the ANSI code page.</p>
+<a id="Mac-OS-X"></a><h3 class='h3' >Mac OS X</h3>
+<p>On Mac OS X the file system encoding is always UTF-8 while the locale
+can otherwise be set up as normal for POSIX systems.</p>
+<p>File names on Mac OS X will at the OS-level be converted to
+NFD-form.  A file created by passing a NFC-filename will come
+in NFD-form from readdir().  See <a href="../../Unicode/Normalize.html">Unicode::Normalize</a> for details
+of NFD/NFC.</p>
+<p>Actually, Apple does not follow the Unicode NFD standard since not all
+character ranges are decomposed.  The claim is that this avoids problems with
+round trip conversions from old Mac text encodings.  See <a href="https://search.cpan.org/perldoc/Encode::UTF8Mac">Encode::UTF8Mac</a> for
+details.</p>
+<a id="POSIX-(Linux-and-other-Unixes)"></a><h3 class='h3' >POSIX (Linux and other Unixes)</h3>
+<p>File systems might vary in what encoding is to be used for
+filenames.  Since this module has no way to actually figure out
+what the is correct it goes with the best guess which is to
+assume filenames are encoding according to the current locale.
+Users are advised to always specify UTF-8 as the locale charset.</p>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<p><a href="../../I18N/Langinfo.html">I18N::Langinfo</a>, <a href="../../Encode.html">Encode</a>, <a href="https://search.cpan.org/perldoc/Term::Encoding">Term::Encoding</a></p>
+<a id="AUTHOR"></a><h2 class='h2' >AUTHOR</h2>
+<p>Copyright 2010 Gisle Aas &lt;gisle@aas.no&gt;.</p>
+<p>This library is free software; you can redistribute it and/or
+modify it under the same terms as Perl itself.</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#NOTES">NOTES</a></li><ul><li><a href="#Windows">Windows</a></li><li><a href="#Mac-OS-X">Mac OS X</a></li><li><a href="#POSIX-(Linux-and-other-Unixes)">POSIX (Linux and other Unixes)</a></li></ul><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#AUTHOR">AUTHOR</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/4/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/4/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/4/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/4/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/4/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/4/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/4/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/4/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/4/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/4/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/4/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/4/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/4/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/4/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

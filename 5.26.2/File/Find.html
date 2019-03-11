@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="File::Find - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>File::Find - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.26.2/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.26.2/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.26.2/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.26.2/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.26.2/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.26.2/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.26.2/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.26.2/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.26.2/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.26.2/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.26.2/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.26.2/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.26.2/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.26.2/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.26.2/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.26.2/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.26.2/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.26.2/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.26.2/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.26.2/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.26.2/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.26.2/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.26.2/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.26.2/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.26.2/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.26.2/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.26.2/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.26.2/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.26.2/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.26.2/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.26.2/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.26.2/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.26.2/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.26.2/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../index-modules-F.html">Core modules (F)</a> &gt;
+      
+    
+    File::Find
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 26.2 documentation</h1>
+                  </div>
+                  <h1>File::Find</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><ul><li><a href="#%25options">%options</a></li><li><a href="#The-wanted-function">The wanted function</a></li></ul><li><a href="#WARNINGS">WARNINGS</a></li><li><a href="#CAVEAT">CAVEAT</a></li><li><a href="#BUGS-AND-CAVEATS">BUGS AND CAVEATS</a></li><li><a href="#HISTORY">HISTORY</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>File::Find - Traverse a directory tree.</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<div class="verbatim"><ol><li>    use File::Find;</li><li>    find(\&amp;wanted, @directories_to_search);</li><li>    sub wanted { ... }</li><li></li><li>    use File::Find;</li><li>    finddepth(\&amp;wanted, @directories_to_search);</li><li>    sub wanted { ... }</li><li></li><li>    use File::Find;</li><li>    find({ wanted =&gt; \&amp;process, follow =&gt; 1 }, '.');</li></ol></div><a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>These are functions for searching through directory trees doing work
+on each file found similar to the Unix <i>find</i> command.  File::Find
+exports two functions, <pre>
+<span class="w">find</span></code>
+ and <pre>
+<span class="w">finddepth</span></code>
+.  They work similarly
+but have subtle differences.</p>
+<ul>
+<li><a id="*find*"></a><strong><strong>find</strong></strong>
+<pre>
+  <span class="i">find</span><span class="s">(</span>\<span class="i">&amp;wanted</span><span class="cm">,</span>  <span class="i">@directories</span><span class="s">)</span><span class="sc">;</span>
+  <span class="i">find</span><span class="s">(</span>\<span class="i">%options</span><span class="cm">,</span> <span class="i">@directories</span><span class="s">)</span><span class="sc">;</span></pre>
+<p><pre>
+<span class="i">find</span><span class="s">(</span><span class="s">)</span></code>
+ does a depth-first search over the given <pre>
+<span class="i">@directories</span></code>
+ in
+the order they are given.  For each file or directory found, it calls
+the <pre>
+<span class="i">&amp;wanted</span></code>
+ subroutine.  (See below for details on how to use the
+<pre>
+<span class="i">&amp;wanted</span></code>
+ function).  Additionally, for each directory found, it will
+<code class="inline"><a class="l_k" href="../functions/chdir.html">chdir()</a></code> into that directory and continue the search, invoking the
+<pre>
+<span class="i">&amp;wanted</span></code>
+ function on each file or subdirectory in the directory.</p>
+</li>
+<li><a id="*finddepth*"></a><strong><strong>finddepth</strong></strong>
+<pre>
+  <span class="i">finddepth</span><span class="s">(</span>\<span class="i">&amp;wanted</span><span class="cm">,</span>  <span class="i">@directories</span><span class="s">)</span><span class="sc">;</span>
+  <span class="i">finddepth</span><span class="s">(</span>\<span class="i">%options</span><span class="cm">,</span> <span class="i">@directories</span><span class="s">)</span><span class="sc">;</span></pre>
+<p><pre>
+<span class="i">finddepth</span><span class="s">(</span><span class="s">)</span></code>
+ works just like <pre>
+<span class="i">find</span><span class="s">(</span><span class="s">)</span></code>
+ except that it invokes the
+<pre>
+<span class="i">&amp;wanted</span></code>
+ function for a directory <i>after</i> invoking it for the
+directory's contents.  It does a postorder traversal instead of a
+preorder traversal, working from the bottom of the directory tree up
+where <pre>
+<span class="i">find</span><span class="s">(</span><span class="s">)</span></code>
+ works from the top of the tree down.</p>
+</li>
+</ul>
+<a id="%25options"></a><h3 class='h3' >%options</h3>
+<p>The first argument to <pre>
+<span class="i">find</span><span class="s">(</span><span class="s">)</span></code>
+ is either a code reference to your
+<pre>
+<span class="i">&amp;wanted</span></code>
+ function, or a hash reference describing the operations
+to be performed for each file.  The
+code reference is described in <a href="#The-wanted-function">The wanted function</a> below.</p>
+<p>Here are the possible keys for the hash:</p>
+<ul>
+<li><a id="wanted"></a><strong><pre>
+<span class="w">wanted</span></code>
+</strong>
+<p>The value should be a code reference.  This code reference is
+described in <a href="#The-wanted-function">The wanted function</a> below. The <pre>
+<span class="i">&amp;wanted</span></code>
+ subroutine is
+mandatory.</p>
+</li>
+<li><a id="bydepth"></a><strong><pre>
+<span class="w">bydepth</span></code>
+</strong>
+<p>Reports the name of a directory only AFTER all its entries
+have been reported.  Entry point <pre>
+<span class="i">finddepth</span><span class="s">(</span><span class="s">)</span></code>
+ is a shortcut for
+specifying <pre>
+<span class="s">{</span> <span class="w">bydepth</span> <span class="cm">=&gt;</span> <span class="n">1</span> <span class="s">}</span></code>
+ in the first argument of <pre>
+<span class="i">find</span><span class="s">(</span><span class="s">)</span></code>
+.</p>
+</li>
+<li><a id="preprocess"></a><strong><pre>
+<span class="w">preprocess</span></code>
+</strong>
+<p>The value should be a code reference. This code reference is used to
+preprocess the current directory. The name of the currently processed
+directory is in <pre>
+<span class="i">$File::Find::dir</span></code>
+. Your preprocessing function is
+called after <code class="inline"><a class="l_k" href="../functions/readdir.html">readdir()</a></code>, but before the loop that calls the <pre>
+<span class="i">wanted</span><span class="s">(</span><span class="s">)</span></code>
+
+function. It is called with a list of strings (actually file/directory
+names) and is expected to return a list of strings. The code can be
+used to sort the file/directory names alphabetically, numerically,
+or to filter out directory entries based on their name alone. When
+<i>follow</i> or <i>follow_fast</i> are in effect, <pre>
+<span class="w">preprocess</span></code>
+ is a no-op.</p>
+</li>
+<li><a id="postprocess"></a><strong><pre>
+<span class="w">postprocess</span></code>
+</strong>
+<p>The value should be a code reference. It is invoked just before leaving
+the currently processed directory. It is called in void context with no
+arguments. The name of the current directory is in <pre>
+<span class="i">$File::Find::dir</span></code>
+. This
+hook is handy for summarizing a directory, such as calculating its disk
+usage. When <i>follow</i> or <i>follow_fast</i> are in effect, <pre>
+<span class="w">postprocess</span></code>
+ is a
+no-op.</p>
+</li>
+<li><a id="follow"></a><strong><pre>
+<span class="w">follow</span></code>
+</strong>
+<p>Causes symbolic links to be followed. Since directory trees with symbolic
+links (followed) may contain files more than once and may even have
+cycles, a hash has to be built up with an entry for each file.
+This might be expensive both in space and time for a large
+directory tree. See <a href="#follow_fast">follow_fast</a> and <a href="#follow_skip">follow_skip</a> below.
+If either <i>follow</i> or <i>follow_fast</i> is in effect:</p>
+<ul>
+<li>
+<p>It is guaranteed that an <i>lstat</i> has been called before the user's
+<pre>
+<span class="i">wanted</span><span class="s">(</span><span class="s">)</span></code>
+ function is called. This enables fast file checks involving <pre>
+<span class="w">_</span></code>
+.
+Note that this guarantee no longer holds if <i>follow</i> or <i>follow_fast</i>
+are not set.</p>
+</li>
+<li>
+<p>There is a variable <pre>
+<span class="i">$File::Find::fullname</span></code>
+ which holds the absolute
+pathname of the file with all symbolic links resolved.  If the link is
+a dangling symbolic link, then fullname will be set to <code class="inline"><a class="l_k" href="../functions/undef.html">undef</a></code>.</p>
+</li>
+</ul>
+<p>This is a no-op on Win32.</p>
+</li>
+<li><a id="follow_fast"></a><strong><pre>
+<span class="w">follow_fast</span></code>
+</strong>
+<p>This is similar to <i>follow</i> except that it may report some files more
+than once.  It does detect cycles, however.  Since only symbolic links
+have to be hashed, this is much cheaper both in space and time.  If
+processing a file more than once (by the user's <pre>
+<span class="i">wanted</span><span class="s">(</span><span class="s">)</span></code>
+ function)
+is worse than just taking time, the option <i>follow</i> should be used.</p>
+<p>This is also a no-op on Win32.</p>
+</li>
+<li><a id="follow_skip"></a><strong><pre>
+<span class="w">follow_skip</span></code>
+</strong>
+<p><pre>
+<span class="w">follow_skip</span>==<span class="n">1</span></code>
+, which is the default, causes all files which are
+neither directories nor symbolic links to be ignored if they are about
+to be processed a second time. If a directory or a symbolic link
+are about to be processed a second time, File::Find dies.</p>
+<p><pre>
+<span class="w">follow_skip</span>==<span class="n">0</span></code>
+ causes File::Find to die if any file is about to be
+processed a second time.</p>
+<p><pre>
+<span class="w">follow_skip</span>==<span class="n">2</span></code>
+ causes File::Find to ignore any duplicate files and
+directories but to proceed normally otherwise.</p>
+</li>
+<li><a id="dangling_symlinks"></a><strong><pre>
+<span class="w">dangling_symlinks</span></code>
+</strong>
+<p>Specifies what to do with symbolic links whose target doesn't exist.
+If true and a code reference, will be called with the symbolic link
+name and the directory it lives in as arguments.  Otherwise, if true
+and warnings are on, a warning of the form <pre>
+<span class="q">&quot;symbolic_link_name is a dangling</span>
+<span class="q">symbolic link\n&quot;</span></code>
+ will be issued.  If false, the dangling symbolic link
+will be silently ignored.</p>
+</li>
+<li><a id="no_chdir"></a><strong><pre>
+<span class="w">no_chdir</span></code>
+</strong>
+<p>Does not <code class="inline"><a class="l_k" href="../functions/chdir.html">chdir()</a></code> to each directory as it recurses. The <pre>
+<span class="i">wanted</span><span class="s">(</span><span class="s">)</span></code>
+
+function will need to be aware of this, of course. In this case,
+<pre>
+<span class="i">$_</span></code>
+ will be the same as <pre>
+<span class="i">$File::Find::name</span></code>
+.</p>
+</li>
+<li><a id="untaint"></a><strong><pre>
+<span class="w">untaint</span></code>
+</strong>
+<p>If find is used in <a href="../perlsec.html#Taint-mode">taint-mode</a> (-T command line switch or
+if EUID != UID or if EGID != GID), then internally directory names have to be
+untainted before they can be <code class="inline"><a class="l_k" href="../functions/chdir.html">chdir</a></code>'d to. Therefore they are checked against
+a regular expression <i>untaint_pattern</i>.  Note that all names passed to the
+user's <pre>
+<span class="i">wanted</span><span class="s">(</span><span class="s">)</span></code>
+ function are still tainted. If this option is used while not
+in taint-mode, <pre>
+<span class="w">untaint</span></code>
+ is a no-op.</p>
+</li>
+<li><a id="untaint_pattern"></a><strong><pre>
+<span class="w">untaint_pattern</span></code>
+</strong>
+<p>See above. This should be set using the <code class="inline"><a class="l_k" href="../functions/qr.html">qr</a></code> quoting operator.
+The default is set to <code class="inline"><a class="l_k" href="../functions/qr.html">qr|^([-+@\w./]+)$|</a></code>.
+Note that the parentheses are vital.</p>
+</li>
+<li><a id="untaint_skip"></a><strong><pre>
+<span class="w">untaint_skip</span></code>
+</strong>
+<p>If set, a directory which fails the <i>untaint_pattern</i> is skipped,
+including all its sub-directories. The default is to <code class="inline"><a class="l_k" href="../functions/die.html">die</a></code> in such a case.</p>
+</li>
+</ul>
+<a id="The-wanted-function"></a><h3 class='h3' >The wanted function</h3>
+<p>The <pre>
+<span class="i">wanted</span><span class="s">(</span><span class="s">)</span></code>
+ function does whatever verifications you want on
+each file and directory.  Note that despite its name, the <pre>
+<span class="i">wanted</span><span class="s">(</span><span class="s">)</span></code>
+
+function is a generic callback function, and does <strong>not</strong> tell
+File::Find if a file is "wanted" or not.  In fact, its return value
+is ignored.</p>
+<p>The wanted function takes no arguments but rather does its work
+through a collection of variables.</p>
+<ul>
+<li><a id="%24File%3a%3aFind%3a%3adir-is-the-current-directory-name%2c"></a><strong><pre>
+<span class="i">$File::Find::dir</span></code>
+ is the current directory name,</strong>
+</li>
+<li><a id="%24_-is-the-current-filename-within-that-directory"></a><strong><pre>
+<span class="i">$_</span></code>
+ is the current filename within that directory</strong>
+</li>
+<li><a id="%24File%3a%3aFind%3a%3aname-is-the-complete-pathname-to-the-file."></a><strong><pre>
+<span class="i">$File::Find::name</span></code>
+ is the complete pathname to the file.</strong>
+</li>
+</ul>
+<p>The above variables have all been localized and may be changed without
+affecting data outside of the wanted function.</p>
+<p>For example, when examining the file <i>/some/path/foo.ext</i> you will have:</p>
+<div class="verbatim"><ol><li>    $File::Find::dir  = /some/path/</li><li>    $_                = foo.ext</li><li>    $File::Find::name = /some/path/foo.ext</li></ol></div><p>You are chdir()'d to <pre>
+<span class="i">$File::Find::dir</span></code>
+ when the function is called,
+unless <pre>
+<span class="w">no_chdir</span></code>
+ was specified. Note that when changing to
+directories is in effect, the root directory (<i>/</i>) is a somewhat
+special case inasmuch as the concatenation of <pre>
+<span class="i">$File::Find::dir</span></code>
+,
+<pre>
+<span class="q">&#39;/&#39;</span></code>
+ and <pre>
+<span class="i">$_</span></code>
+ is not literally equal to <pre>
+<span class="i">$File::Find::name</span></code>
+. The
+table below summarizes all variants:</p>
+<div class="verbatim"><ol><li>              $File::Find::name  $File::Find::dir  $_</li><li> default      /                  /                 .</li><li> no_chdir=&gt;0  /etc               /                 etc</li><li>              /etc/x             /etc              x</li><li></li><li> no_chdir=&gt;1  /                  /                 /</li><li>              /etc               /                 /etc</li><li>              /etc/x             /etc              /etc/x</li></ol></div><p>When <pre>
+<span class="w">follow</span></code>
+ or <pre>
+<span class="w">follow_fast</span></code>
+ are in effect, there is
+also a <pre>
+<span class="i">$File::Find::fullname</span></code>
+.  The function may set
+<pre>
+<span class="i">$File::Find::prune</span></code>
+ to prune the tree unless <pre>
+<span class="w">bydepth</span></code>
+ was
+specified.  Unless <pre>
+<span class="w">follow</span></code>
+ or <pre>
+<span class="w">follow_fast</span></code>
+ is specified, for
+compatibility reasons (find.pl, find2perl) there are in addition the
+following globals available: <pre>
+<span class="i">$File::Find::topdir</span></code>
+,
+<pre>
+<span class="i">$File::Find::topdev</span></code>
+, <pre>
+<span class="i">$File::Find::topino</span></code>
+,
+<pre>
+<span class="i">$File::Find::topmode</span></code>
+ and <pre>
+<span class="i">$File::Find::topnlink</span></code>
+.</p>
+<p>This library is useful for the <pre>
+<span class="w">find2perl</span></code>
+ tool (distributed as part of the
+App-find2perl CPAN distribution), which when fed,</p>
+<div class="verbatim"><ol><li>  find2perl / -name .nfs\* -mtime +7 \</li><li>    -exec rm -f {} \; -o -fstype nfs -prune</li></ol></div><p>produces something like:</p>
+<pre>
+<a name="wanted"></a> sub <span class="m">wanted</span> <span class="s">{</span>
+    <span class="q">/^\.nfs.*\z/s</span> &amp;&amp;
+    <span class="s">(</span><span class="s">(</span><span class="i">$dev</span><span class="cm">,</span> <span class="i">$ino</span><span class="cm">,</span> <span class="i">$mode</span><span class="cm">,</span> <span class="i">$nlink</span><span class="cm">,</span> <span class="i">$uid</span><span class="cm">,</span> <span class="i">$gid</span><span class="s">)</span> = <a class="l_k" href="../functions/lstat.html">lstat</a><span class="s">(</span><span class="i">$_</span><span class="s">)</span><span class="s">)</span> &amp;&amp;
+    <a class="l_k" href="../functions/int.html">int</a><span class="s">(</span>-M <span class="i">_</span><span class="s">)</span> &gt; <span class="n">7</span> &amp;&amp;
+    <a class="l_k" href="../functions/unlink.html">unlink</a><span class="s">(</span><span class="i">$_</span><span class="s">)</span>
+    ||
+    <span class="s">(</span><span class="i">$nlink</span> || <span class="s">(</span><span class="s">(</span><span class="i">$dev</span><span class="cm">,</span> <span class="i">$ino</span><span class="cm">,</span> <span class="i">$mode</span><span class="cm">,</span> <span class="i">$nlink</span><span class="cm">,</span> <span class="i">$uid</span><span class="cm">,</span> <span class="i">$gid</span><span class="s">)</span> = <a class="l_k" href="../functions/lstat.html">lstat</a><span class="s">(</span><span class="i">$_</span><span class="s">)</span><span class="s">)</span><span class="s">)</span> &amp;&amp;
+    <span class="i">$dev</span> &lt; <span class="n">0</span> &amp;&amp;
+    <span class="s">(</span><span class="i">$File::Find::prune</span> = <span class="n">1</span><span class="s">)</span><span class="sc">;</span>
+ <span class="s">}</span></pre>
+<p>Notice the <pre>
+<span class="w">_</span></code>
+ in the above <pre>
+<a class="l_k" href="../functions/int.html">int</a><span class="s">(</span>-M <span class="i">_</span><span class="s">)</span></code>
+: the <pre>
+<span class="w">_</span></code>
+ is a magical
+filehandle that caches the information from the preceding
+<code class="inline"><a class="l_k" href="../functions/stat.html">stat()</a></code>, <code class="inline"><a class="l_k" href="../functions/lstat.html">lstat()</a></code>, or filetest.</p>
+<p>Here's another interesting wanted function.  It will find all symbolic
+links that don't resolve:</p>
+<pre>
+<a name="wanted"></a>    sub <span class="m">wanted</span> <span class="s">{</span>
+         -l &amp;&amp; !-e &amp;&amp; <a class="l_k" href="../functions/print.html">print</a> <span class="q">&quot;bogus link: $File::Find::name\n&quot;</span><span class="sc">;</span>
+    <span class="s">}</span></pre>
+<p>Note that you may mix directories and (non-directory) files in the list of 
+directories to be searched by the <pre>
+<span class="i">wanted</span><span class="s">(</span><span class="s">)</span></code>
+ function.</p>
+<pre>
+    <span class="i">find</span><span class="s">(</span>\<span class="i">&amp;wanted</span><span class="cm">,</span> <span class="q">&quot;./foo&quot;</span><span class="cm">,</span> <span class="q">&quot;./bar&quot;</span><span class="cm">,</span> <span class="q">&quot;./baz/epsilon&quot;</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>In the example above, no file in <i>./baz/</i> other than <i>./baz/epsilon</i> will be
+evaluated by <pre>
+<span class="i">wanted</span><span class="s">(</span><span class="s">)</span></code>
+.</p>
+<p>See also the script <pre>
+<span class="w">pfind</span></code>
+ on CPAN for a nice application of this
+module.</p>
+<a id="WARNINGS"></a><h2 class='h2' >WARNINGS</h2>
+<p>If you run your program with the <pre>
+-w</code>
+ switch, or if you use the
+<pre>
+<span class="w">warnings</span></code>
+ pragma, File::Find will report warnings for several weird
+situations. You can disable these warnings by putting the statement</p>
+<pre>
+    <a class="l_k" href="../functions/no.html">no</a> <span class="w">warnings</span> <span class="q">&#39;File::Find&#39;</span><span class="sc">;</span></pre>
+<p>in the appropriate scope. See <a href="../warnings.html">warnings</a> for more info about lexical
+warnings.</p>
+<a id="CAVEAT"></a><h2 class='h2' >CAVEAT</h2>
+<ul>
+<li><a id="%24dont_use_nlink"></a><strong>$dont_use_nlink</strong>
+<p>You can set the variable <pre>
+<span class="i">$File::Find::dont_use_nlink</span></code>
+ to 1 if you want to
+force File::Find to always stat directories. This was used for file systems
+that do not have an <pre>
+<span class="w">nlink</span></code>
+ count matching the number of sub-directories.
+Examples are ISO-9660 (CD-ROM), AFS, HPFS (OS/2 file system), FAT (DOS file
+system) and a couple of others.</p>
+<p>You shouldn't need to set this variable, since File::Find should now detect
+such file systems on-the-fly and switch itself to using stat. This works even
+for parts of your file system, like a mounted CD-ROM.</p>
+<p>If you do set <pre>
+<span class="i">$File::Find::dont_use_nlink</span></code>
+ to 1, you will notice slow-downs.</p>
+</li>
+<li><a id="symlinks"></a><strong>symlinks</strong>
+<p>Be aware that the option to follow symbolic links can be dangerous.
+Depending on the structure of the directory tree (including symbolic
+links to directories) you might traverse a given (physical) directory
+more than once (only if <pre>
+<span class="w">follow_fast</span></code>
+ is in effect).
+Furthermore, deleting or changing files in a symbolically linked directory
+might cause very unpleasant surprises, since you delete or change files
+in an unknown directory.</p>
+</li>
+</ul>
+<a id="BUGS-AND-CAVEATS"></a><h2 class='h2' >BUGS AND CAVEATS</h2>
+<p>Despite the name of the <pre>
+<span class="i">finddepth</span><span class="s">(</span><span class="s">)</span></code>
+ function, both <pre>
+<span class="i">find</span><span class="s">(</span><span class="s">)</span></code>
+ and
+<pre>
+<span class="i">finddepth</span><span class="s">(</span><span class="s">)</span></code>
+ perform a depth-first search of the directory
+hierarchy.</p>
+<a id="HISTORY"></a><h2 class='h2' >HISTORY</h2>
+<p>File::Find used to produce incorrect results if called recursively.
+During the development of perl 5.8 this bug was fixed.
+The first fixed version of File::Find was 1.01.</p>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<p><i>find(1)</i>, find2perl.</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><ul><li><a href="#%25options">%options</a></li><li><a href="#The-wanted-function">The wanted function</a></li></ul><li><a href="#WARNINGS">WARNINGS</a></li><li><a href="#CAVEAT">CAVEAT</a></li><li><a href="#BUGS-AND-CAVEATS">BUGS AND CAVEATS</a></li><li><a href="#HISTORY">HISTORY</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/26/2/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/2/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/2/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/2/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/26/2/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/2/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/2/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/2/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/26/2/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/2/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/2/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/26/2/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/2/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/2/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

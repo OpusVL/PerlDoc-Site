@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="AnyDBM_File - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>AnyDBM_File - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.18.0/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.18.0/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.18.0/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.18.0/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.18.0/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.18.0/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.18.0/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.18.0/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.18.0/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.18.0/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.18.0/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.18.0/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.18.0/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.18.0/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.18.0/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.18.0/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.18.0/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.18.0/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.18.0/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.18.0/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.18.0/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.18.0/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.18.0/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.18.0/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.18.0/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.18.0/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.18.0/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.18.0/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.18.0/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.18.0/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.18.0/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.18.0/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.18.0/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.18.0/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="index-modules-A.html">Core modules (A)</a> &gt;
+      
+    
+    AnyDBM_File
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 18.0 documentation</h1>
+                  </div>
+                  <h1>AnyDBM_File</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><ul><li><a href="#DBM-Comparisons">DBM Comparisons</a></li></ul><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>AnyDBM_File - provide framework for multiple DBMs</p>
+<p>NDBM_File, DB_File, GDBM_File, SDBM_File, ODBM_File - various DBM implementations</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<pre>
+    <a class="l_k" href="functions/use.html">use</a> <span class="w">AnyDBM_File</span><span class="sc">;</span></pre>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>This module is a "pure virtual base class"--it has nothing of its own.
+It's just there to inherit from one of the various DBM packages.  It
+prefers ndbm for compatibility reasons with Perl 4, then Berkeley DB (See
+<a href="https://search.cpan.org/perldoc/DB_File">DB_File</a>), GDBM, SDBM (which is always there--it comes with Perl), and
+finally ODBM.   This way old programs that used to use NDBM via dbmopen()
+can still do so, but new ones can reorder @ISA:</p>
+<pre>
+    <a class="l_k" href="functions/BEGIN.html">BEGIN</a> <span class="s">{</span> <span class="i">@AnyDBM_File::ISA</span> = <span class="q">qw(DB_File GDBM_File NDBM_File)</span> <span class="s">}</span>
+    <a class="l_k" href="functions/use.html">use</a> <span class="w">AnyDBM_File</span><span class="sc">;</span></pre>
+<p>Having multiple DBM implementations makes it trivial to copy database formats:</p>
+<pre>
+    <a class="l_k" href="functions/use.html">use</a> <span class="w">Fcntl</span><span class="sc">;</span> <a class="l_k" href="functions/use.html">use</a> <span class="w">NDBM_File</span><span class="sc">;</span> <a class="l_k" href="functions/use.html">use</a> <span class="w">DB_File</span><span class="sc">;</span>
+    <a class="l_k" href="functions/tie.html">tie</a> <span class="i">%newhash</span><span class="cm">,</span>  <span class="q">&#39;DB_File&#39;</span><span class="cm">,</span> <span class="i">$new_filename</span><span class="cm">,</span> <span class="w">O_CREAT</span>|<span class="w">O_RDWR</span><span class="sc">;</span>
+    <a class="l_k" href="functions/tie.html">tie</a> <span class="i">%oldhash</span><span class="cm">,</span>  <span class="q">&#39;NDBM_File&#39;</span><span class="cm">,</span> <span class="i">$old_filename</span><span class="cm">,</span> <span class="n">1</span><span class="cm">,</span> <span class="n">0</span><span class="sc">;</span>
+    <span class="i">%newhash</span> = <span class="i">%oldhash</span><span class="sc">;</span></pre>
+<a id="DBM-Comparisons"></a><h3 class='h3' >DBM Comparisons</h3>
+<p>Here's a partial table of features the different packages offer:</p>
+<div class="verbatim"><ol><li>                         odbm    ndbm    sdbm    gdbm    bsd-db</li><li>			 ----	 ----    ----    ----    ------</li><li> Linkage comes w/ perl   yes     yes     yes     yes     yes</li><li> Src comes w/ perl       no      no      yes     no      no</li><li> Comes w/ many unix os   yes     yes[0]  no      no      no</li><li> Builds ok on !unix      ?       ?       yes     yes     ?</li><li> Code Size               ?       ?       small   big     big</li><li> Database Size           ?       ?       small   big?    ok[1]</li><li> Speed                   ?       ?       slow    ok      fast</li><li> FTPable                 no      no      yes     yes     yes</li><li> Easy to build          N/A     N/A      yes     yes     ok[2]</li><li> Size limits             1k      4k      1k[3]   none    none</li><li> Byte-order independent  no      no      no      no      yes</li><li> Licensing restrictions  ?       ?       no      yes     no</li></ol></div><ul>
+<li><a id="%5b0%5d"></a><strong>[0]</strong>
+<p>on mixed universe machines, may be in the bsd compat library,
+which is often shunned.</p>
+</li>
+<li><a id="%5b1%5d"></a><strong>[1]</strong>
+<p>Can be trimmed if you compile for one access method.</p>
+</li>
+<li><a id="%5b2%5d"></a><strong>[2]</strong>
+<p>See <a href="https://search.cpan.org/perldoc/DB_File">DB_File</a>. 
+Requires symbolic links.</p>
+</li>
+<li><a id="%5b3%5d"></a><strong>[3]</strong>
+<p>By default, but can be redefined.</p>
+</li>
+</ul>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<p>dbm(3), ndbm(3), DB_File(3), <a href="perldbmfilter.html">perldbmfilter</a></p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><ul><li><a href="#DBM-Comparisons">DBM Comparisons</a></li></ul><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/0/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/0/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/0/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/0/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/0/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/0/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/0/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/0/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/0/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/0/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/0/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/0/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/0/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/0/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

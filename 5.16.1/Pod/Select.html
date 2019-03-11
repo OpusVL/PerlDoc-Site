@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Pod::Select - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>Pod::Select - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.16.1/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.16.1/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.16.1/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.16.1/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.16.1/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.16.1/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.16.1/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.16.1/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.16.1/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.16.1/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.16.1/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.16.1/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.16.1/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.16.1/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.16.1/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../index-modules-P.html">Core modules (P)</a> &gt;
+      
+    
+    Pod::Select
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 16.1 documentation</h1>
+                  </div>
+                  <h1>Pod::Select</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#REQUIRES">REQUIRES</a></li><li><a href="#EXPORTS">EXPORTS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#SECTION-SPECIFICATIONS">SECTION SPECIFICATIONS</a></li><li><a href="#OBJECT-METHODS">OBJECT METHODS</a></li><li><a href="#*curr_headings()*">*curr_headings()*</a></li><li><a href="#*select()*">*select()*</a></li><li><a href="#*add_selection()*">*add_selection()*</a></li><li><a href="#*clear_selections()*">*clear_selections()*</a></li><li><a href="#*match_section()*">*match_section()*</a></li><li><a href="#*is_selected()*">*is_selected()*</a></li><li><a href="#EXPORTED-FUNCTIONS">EXPORTED FUNCTIONS</a></li><li><a href="#*podselect()*">*podselect()*</a></li><li><a href="#PRIVATE-METHODS-AND-DATA">PRIVATE METHODS AND DATA</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#AUTHOR">AUTHOR</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>Pod::Select, podselect() - extract selected sections of POD from input</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<div class="verbatim"><ol><li>    use Pod::Select;</li><li></li><li>    ## Select all the POD sections for each file in @filelist</li><li>    ## and print the result on standard output.</li><li>    podselect(@filelist);</li><li></li><li>    ## Same as above, but write to tmp.out</li><li>    podselect({-output =&gt; "tmp.out"}, @filelist):</li><li></li><li>    ## Select from the given filelist, only those POD sections that are</li><li>    ## within a 1st level section named any of: NAME, SYNOPSIS, OPTIONS.</li><li>    podselect({-sections =&gt; ["NAME|SYNOPSIS", "OPTIONS"]}, @filelist):</li><li></li><li>    ## Select the "DESCRIPTION" section of the PODs from STDIN and write</li><li>    ## the result to STDERR.</li><li>    podselect({-output =&gt; "&gt;&amp;STDERR", -sections =&gt; ["DESCRIPTION"]}, \*STDIN);</li></ol></div><p>or</p>
+<pre>
+    <a class="l_k" href="../functions/use.html">use</a> <span class="w">Pod::Select</span><span class="sc">;</span>
+
+    <span class="c">## Create a parser object for selecting POD sections from the input</span>
+    <span class="i">$parser</span> = <span class="w">new</span> <span class="i">Pod::Select</span><span class="s">(</span><span class="s">)</span><span class="sc">;</span>
+
+    <span class="c">## Select all the POD sections for each file in @filelist</span>
+    <span class="c">## and print the result to tmp.out.</span>
+    <span class="i">$parser</span><span class="i">-&gt;parse_from_file</span><span class="s">(</span><span class="q">&quot;&lt;&amp;STDIN&quot;</span><span class="cm">,</span> <span class="q">&quot;tmp.out&quot;</span><span class="s">)</span><span class="sc">;</span>
+
+    <span class="c">## Select from the given filelist, only those POD sections that are</span>
+    <span class="c">## within a 1st level section named any of: NAME, SYNOPSIS, OPTIONS.</span>
+    <span class="i">$parser</span><span class="i">-&gt;select</span><span class="s">(</span><span class="q">&quot;NAME|SYNOPSIS&quot;</span><span class="cm">,</span> <span class="q">&quot;OPTIONS&quot;</span><span class="s">)</span><span class="sc">;</span>
+    <a class="l_k" href="../functions/for.html">for</a> <span class="s">(</span><span class="i">@filelist</span><span class="s">)</span> <span class="s">{</span> <span class="i">$parser</span><span class="i">-&gt;parse_from_file</span><span class="s">(</span><span class="i">$_</span><span class="s">)</span><span class="sc">;</span> <span class="s">}</span>
+
+    <span class="c">## Select the &quot;DESCRIPTION&quot; and &quot;SEE ALSO&quot; sections of the PODs from</span>
+    <span class="c">## STDIN and write the result to STDERR.</span>
+    <span class="i">$parser</span><span class="i">-&gt;select</span><span class="s">(</span><span class="q">&quot;DESCRIPTION&quot;</span><span class="s">)</span><span class="sc">;</span>
+    <span class="i">$parser</span><span class="i">-&gt;add_selection</span><span class="s">(</span><span class="q">&quot;SEE ALSO&quot;</span><span class="s">)</span><span class="sc">;</span>
+    <span class="i">$parser</span><span class="i">-&gt;parse_from_filehandle</span><span class="s">(</span>\<span class="i">*STDIN</span><span class="cm">,</span> \<span class="i">*STDERR</span><span class="s">)</span><span class="sc">;</span></pre>
+<a id="REQUIRES"></a><h2 class='h2' >REQUIRES</h2>
+<p>perl5.005, Pod::Parser, Exporter, Carp</p>
+<a id="EXPORTS"></a><h2 class='h2' >EXPORTS</h2>
+<p>podselect()</p>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p><strong>podselect()</strong> is a function which will extract specified sections of
+pod documentation from an input stream. This ability is provided by the
+<strong>Pod::Select</strong> module which is a subclass of <strong>Pod::Parser</strong>.
+<strong>Pod::Select</strong> provides a method named <strong>select()</strong> to specify the set of
+POD sections to select for processing/printing. <strong>podselect()</strong> merely
+creates a <strong>Pod::Select</strong> object and then invokes the <strong>podselect()</strong>
+followed by <strong>parse_from_file()</strong>.</p>
+<a id="SECTION-SPECIFICATIONS"></a><h2 class='h2' >SECTION SPECIFICATIONS</h2>
+<p><strong>podselect()</strong> and <strong>Pod::Select::select()</strong> may be given one or more
+"section specifications" to restrict the text processed to only the
+desired set of sections and their corresponding subsections.  A section
+specification is a string containing one or more Perl-style regular
+expressions separated by forward slashes ("/").  If you need to use a
+forward slash literally within a section title you can escape it with a
+backslash ("\/").</p>
+<p>The formal syntax of a section specification is:</p>
+<ul>
+<li>
+<p><i>head1-title-regex</i>/<i>head2-title-regex</i>/...</p>
+</li>
+</ul>
+<p>Any omitted or empty regular expressions will default to ".*".
+Please note that each regular expression given is implicitly
+anchored by adding "^" and "$" to the beginning and end.  Also, if a
+given regular expression starts with a "!" character, then the
+expression is <i>negated</i> (so <pre>
+!<span class="w">foo</span></code>
+ would match anything <i>except</i>
+<pre>
+<span class="w">foo</span></code>
+).</p>
+<p>Some example section specifications follow.</p>
+<ul>
+<li>
+<p>Match the <pre>
+<span class="w">NAME</span></code>
+ and <pre>
+<span class="w">SYNOPSIS</span></code>
+ sections and all of their subsections:</p>
+<p><pre>
+<span class="w">NAME</span>|<span class="w">SYNOPSIS</span></code>
+</p>
+</li>
+<li>
+<p>Match only the <pre>
+<span class="w">Question</span></code>
+ and <pre>
+<span class="w">Answer</span></code>
+ subsections of the <pre>
+<span class="w">DESCRIPTION</span></code>
+
+section:</p>
+<p><pre>
+<span class="w">DESCRIPTION</span>/<span class="w">Question</span>|<span class="w">Answer</span></code>
+</p>
+</li>
+<li>
+<p>Match the <pre>
+<span class="w">Comments</span></code>
+ subsection of <i>all</i> sections:</p>
+<p><code class="inline">/Comments</code></p>
+</li>
+<li>
+<p>Match all subsections of <pre>
+<span class="w">DESCRIPTION</span></code>
+ <i>except</i> for <pre>
+<span class="w">Comments</span></code>
+:</p>
+<p><code class="inline">DESCRIPTION/!Comments</code></p>
+</li>
+<li>
+<p>Match the <pre>
+<span class="w">DESCRIPTION</span></code>
+ section but do <i>not</i> match any of its subsections:</p>
+<p><code class="inline">DESCRIPTION/!.+</code></p>
+</li>
+<li>
+<p>Match all top level sections but none of their subsections:</p>
+<p><code class="inline">/!.+</code></p>
+</li>
+</ul>
+<a id="OBJECT-METHODS"></a><h2 class='h2' >OBJECT METHODS</h2>
+<p>The following methods are provided in this module. Each one takes a
+reference to the object itself as an implicit first parameter.</p>
+<a id="*curr_headings()*"></a><h2 class='h2' ><strong>curr_headings()</strong></h2>
+<pre>
+            <span class="s">(</span><span class="i">$head1</span><span class="cm">,</span> <span class="i">$head2</span><span class="cm">,</span> <span class="i">$head3</span><span class="cm">,</span> ...<span class="s">)</span> = <span class="i">$parser</span><span class="i">-&gt;curr_headings</span><span class="s">(</span><span class="s">)</span><span class="sc">;</span>
+            <span class="i">$head1</span> = <span class="i">$parser</span><span class="i">-&gt;curr_headings</span><span class="s">(</span><span class="n">1</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>This method returns a list of the currently active section headings and
+subheadings in the document being parsed. The list of headings returned
+corresponds to the most recently parsed paragraph of the input.</p>
+<p>If an argument is given, it must correspond to the desired section
+heading number, in which case only the specified section heading is
+returned. If there is no current section heading at the specified
+level, then <code class="inline"><a class="l_k" href="../functions/undef.html">undef</a></code> is returned.</p>
+<a id="*select()*"></a><h2 class='h2' ><strong>select()</strong></h2>
+<pre>
+            <span class="i">$parser</span><span class="i">-&gt;select</span><span class="s">(</span><span class="i">$section_spec1</span><span class="cm">,</span><span class="i">$section_spec2</span><span class="cm">,</span>...<span class="s">)</span><span class="sc">;</span></pre>
+<p>This method is used to select the particular sections and subsections of
+POD documentation that are to be printed and/or processed. The existing
+set of selected sections is <i>replaced</i> with the given set of sections.
+See <strong>add_selection()</strong> for adding to the current set of selected
+sections.</p>
+<p>Each of the <pre>
+<span class="i">$section_spec</span></code>
+ arguments should be a section specification
+as described in <a href="#SECTION-SPECIFICATIONS">SECTION SPECIFICATIONS</a>.  The section specifications
+are parsed by this method and the resulting regular expressions are
+stored in the invoking object.</p>
+<p>If no <pre>
+<span class="i">$section_spec</span></code>
+ arguments are given, then the existing set of
+selected sections is cleared out (which means <pre>
+<span class="w">all</span></code>
+ sections will be
+processed).</p>
+<p>This method should <i>not</i> normally be overridden by subclasses.</p>
+<a id="*add_selection()*"></a><h2 class='h2' ><strong>add_selection()</strong></h2>
+<pre>
+            <span class="i">$parser</span><span class="i">-&gt;add_selection</span><span class="s">(</span><span class="i">$section_spec1</span><span class="cm">,</span><span class="i">$section_spec2</span><span class="cm">,</span>...<span class="s">)</span><span class="sc">;</span></pre>
+<p>This method is used to add to the currently selected sections and
+subsections of POD documentation that are to be printed and/or
+processed. See &lt;select()&gt; for replacing the currently selected sections.</p>
+<p>Each of the <pre>
+<span class="i">$section_spec</span></code>
+ arguments should be a section specification
+as described in <a href="#SECTION-SPECIFICATIONS">SECTION SPECIFICATIONS</a>. The section specifications
+are parsed by this method and the resulting regular expressions are
+stored in the invoking object.</p>
+<p>This method should <i>not</i> normally be overridden by subclasses.</p>
+<a id="*clear_selections()*"></a><h2 class='h2' ><strong>clear_selections()</strong></h2>
+<pre>
+            <span class="i">$parser</span><span class="i">-&gt;clear_selections</span><span class="s">(</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>This method takes no arguments, it has the exact same effect as invoking
+&lt;select()&gt; with no arguments.</p>
+<a id="*match_section()*"></a><h2 class='h2' ><strong>match_section()</strong></h2>
+<pre>
+            <span class="i">$boolean</span> = <span class="i">$parser</span><span class="i">-&gt;match_section</span><span class="s">(</span><span class="i">$heading1</span><span class="cm">,</span><span class="i">$heading2</span><span class="cm">,</span>...<span class="s">)</span><span class="sc">;</span></pre>
+<p>Returns a value of true if the given section and subsection heading
+titles match any of the currently selected section specifications in
+effect from prior calls to <strong>select()</strong> and <strong>add_selection()</strong> (or if
+there are no explicitly selected/deselected sections).</p>
+<p>The arguments <pre>
+<span class="i">$heading1</span></code>
+, <pre>
+<span class="i">$heading2</span></code>
+, etc. are the heading titles of
+the corresponding sections, subsections, etc. to try and match.  If
+<pre>
+<span class="i">$headingN</span></code>
+ is omitted then it defaults to the current corresponding
+section heading title in the input.</p>
+<p>This method should <i>not</i> normally be overridden by subclasses.</p>
+<a id="*is_selected()*"></a><h2 class='h2' ><strong>is_selected()</strong></h2>
+<pre>
+            <span class="i">$boolean</span> = <span class="i">$parser</span><span class="i">-&gt;is_selected</span><span class="s">(</span><span class="i">$paragraph</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>This method is used to determine if the block of text given in
+<pre>
+<span class="i">$paragraph</span></code>
+ falls within the currently selected set of POD sections
+and subsections to be printed or processed. This method is also
+responsible for keeping track of the current input section and
+subsections. It is assumed that <pre>
+<span class="i">$paragraph</span></code>
+ is the most recently read
+(but not yet processed) input paragraph.</p>
+<p>The value returned will be true if the <pre>
+<span class="i">$paragraph</span></code>
+ and the rest of the
+text in the same section as <pre>
+<span class="i">$paragraph</span></code>
+ should be selected (included)
+for processing; otherwise a false value is returned.</p>
+<a id="EXPORTED-FUNCTIONS"></a><h2 class='h2' >EXPORTED FUNCTIONS</h2>
+<p>The following functions are exported by this module. Please note that
+these are functions (not methods) and therefore <pre>
+<a class="l_k" href="../functions/do.html">do</a> <a class="l_k" href="../functions/not.html">not</a></code>
+ take an
+implicit first argument.</p>
+<a id="*podselect()*"></a><h2 class='h2' ><strong>podselect()</strong></h2>
+<pre>
+            <span class="i">podselect</span><span class="s">(</span>\<span class="i">%options</span><span class="cm">,</span><span class="i">@filelist</span><span class="s">)</span><span class="sc">;</span></pre>
+<p><strong>podselect</strong> will print the raw (untranslated) POD paragraphs of all
+POD sections in the given input files specified by <pre>
+<span class="i">@filelist</span></code>
+
+according to the given options.</p>
+<p>If any argument to <strong>podselect</strong> is a reference to a hash
+(associative array) then the values with the following keys are
+processed as follows:</p>
+<ul>
+<li><a id="*-output*"></a><strong><strong>-output</strong></strong>
+<p>A string corresponding to the desired output file (or "&gt;&amp;STDOUT"
+or "&gt;&amp;STDERR"). The default is to use standard output.</p>
+</li>
+<li><a id="*-sections*"></a><strong><strong>-sections</strong></strong>
+<p>A reference to an array of sections specifications (as described in
+<a href="#SECTION-SPECIFICATIONS">SECTION SPECIFICATIONS</a>) which indicate the desired set of POD
+sections and subsections to be selected from input. If no section
+specifications are given, then all sections of the PODs are used.</p>
+</li>
+</ul>
+<p>All other arguments should correspond to the names of input files
+containing POD sections. A file name of "-" or "&lt;&amp;STDIN" will
+be interpreted to mean standard input (which is the default if no
+filenames are given).</p>
+<a id="PRIVATE-METHODS-AND-DATA"></a><h2 class='h2' >PRIVATE METHODS AND DATA</h2>
+<p><strong>Pod::Select</strong> makes uses a number of internal methods and data fields
+which clients should not need to see or use. For the sake of avoiding
+name collisions with client data and methods, these methods and fields
+are briefly discussed here. Determined hackers may obtain further
+information about them by reading the <strong>Pod::Select</strong> source code.</p>
+<p>Private data fields are stored in the hash-object whose reference is
+returned by the <strong>new()</strong> constructor for this class. The names of all
+private methods and data-fields used by <strong>Pod::Select</strong> begin with a
+prefix of "_" and match the regular expression <pre>
+<span class="q">/^_\w+$/</span></code>
+.</p>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<p><a href="../Pod/Parser.html">Pod::Parser</a></p>
+<a id="AUTHOR"></a><h2 class='h2' >AUTHOR</h2>
+<p>Please report bugs using <a href="http://rt.cpan.org">http://rt.cpan.org</a>.</p>
+<p>Brad Appleton &lt;bradapp@enteract.com&gt;</p>
+<p>Based on code for <strong>pod2text</strong> written by
+Tom Christiansen &lt;tchrist@mox.perl.com&gt;</p>
+<p><strong>Pod::Select</strong> is part of the <a href="../Pod/Parser.html">Pod::Parser</a> distribution.</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#REQUIRES">REQUIRES</a></li><li><a href="#EXPORTS">EXPORTS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#SECTION-SPECIFICATIONS">SECTION SPECIFICATIONS</a></li><li><a href="#OBJECT-METHODS">OBJECT METHODS</a></li><li><a href="#*curr_headings()*">*curr_headings()*</a></li><li><a href="#*select()*">*select()*</a></li><li><a href="#*add_selection()*">*add_selection()*</a></li><li><a href="#*clear_selections()*">*clear_selections()*</a></li><li><a href="#*match_section()*">*match_section()*</a></li><li><a href="#*is_selected()*">*is_selected()*</a></li><li><a href="#EXPORTED-FUNCTIONS">EXPORTED FUNCTIONS</a></li><li><a href="#*podselect()*">*podselect()*</a></li><li><a href="#PRIVATE-METHODS-AND-DATA">PRIVATE METHODS AND DATA</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#AUTHOR">AUTHOR</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

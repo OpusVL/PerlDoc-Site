@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="perlcheat - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>perlcheat - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.24.0/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.24.0/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.24.0/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.24.0/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.24.0/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.24.0/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.24.0/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.24.0/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.24.0/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.24.0/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.24.0/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.24.0/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.24.0/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.24.0/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.24.0/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.24.0/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.24.0/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.24.0/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.24.0/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.24.0/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.24.0/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.24.0/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.24.0/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.24.0/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.24.0/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.24.0/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.24.0/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.24.0/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.24.0/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.24.0/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.24.0/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.24.0/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.24.0/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.24.0/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="index-tutorials.html">Tutorials</a> &gt;
+      
+    
+    perlcheat
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 24.0 documentation</h1>
+                  </div>
+                  <h1>perlcheat</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><ul><li><a href="#The-sheet">The sheet</a></li></ul><li><a href="#ACKNOWLEDGEMENTS">ACKNOWLEDGEMENTS</a></li><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>perlcheat - Perl 5 Cheat Sheet</p>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>This 'cheat sheet' is a handy reference, meant for beginning Perl
+programmers. Not everything is mentioned, but 195 features may
+already be overwhelming.</p>
+<a id="The-sheet"></a><h3 class='h3' >The sheet</h3>
+<div class="verbatim"><ol><li>  CONTEXTS  SIGILS  ref        ARRAYS        HASHES</li><li>  void      $scalar SCALAR     @array        %hash</li><li>  scalar    @array  ARRAY      @array[0, 2]  @hash{'a', 'b'}</li><li>  list      %hash   HASH       $array[0]     $hash{'a'}</li><li>            &amp;sub    CODE</li><li>            *glob   GLOB       SCALAR VALUES</li><li>                    FORMAT     number, string, ref, glob, undef</li><li>  REFERENCES</li><li>  \      reference       $$foo[1]       aka $foo-&gt;[1]</li><li>  $@%&amp;*  dereference     $$foo{bar}     aka $foo-&gt;{bar}</li><li>  []     anon. arrayref  ${$$foo[1]}[2] aka $foo-&gt;[1]-&gt;[2]</li><li>  {}     anon. hashref   ${$$foo[1]}[2] aka $foo-&gt;[1][2]</li><li>  \()    list of refs</li><li>                         SYNTAX</li><li>  OPERATOR PRECEDENCE    foreach (LIST) { }     for (a;b;c) { }</li><li>  -&gt;                     while   (e) { }        until (e)   { }</li><li>  ++ --                  if      (e) { } elsif (e) { } else { }</li><li>  **                     unless  (e) { } elsif (e) { } else { }</li><li>  ! ~ \ u+ u-            given   (e) { when (e) {} default {} }</li><li>  =~ !~</li><li>  * / % x                 NUMBERS vs STRINGS  FALSE vs TRUE</li><li>  + - .                   =          =        undef, "", 0, "0"</li><li>  &lt;&lt; &gt;&gt;                   +          .        anything else</li><li>  named uops              == !=      eq ne</li><li>  &lt; &gt; &lt;= &gt;= lt gt le ge   &lt; &gt; &lt;= &gt;=  lt gt le ge</li><li>  == != &lt;=&gt; eq ne cmp ~~  &lt;=&gt;        cmp</li><li>  &amp;</li><li>  | ^             REGEX MODIFIERS       REGEX METACHARS</li><li>  &amp;&amp;              /i case insensitive   ^      string begin</li><li>  || //           /m line based ^$      $      str end (bfr \n)</li><li>  .. ...          /s . includes \n      +      one or more</li><li>  ?:              /x ignore wh.space    *      zero or more</li><li>  = += last goto  /p preserve           ?      zero or one</li><li>  , =&gt;            /a ASCII    /aa safe  {3,7}  repeat in range</li><li>  list ops        /l locale   /d  dual  |      alternation</li><li>  not             /u Unicode            []     character class</li><li>  and             /e evaluate /ee rpts  \b     boundary</li><li>  or xor          /g global             \z     string end</li><li>                  /o compile pat once   ()     capture</li><li>  DEBUG                                 (?:p)  no capture</li><li>  -MO=Deparse     REGEX CHARCLASSES     (?#t)  comment</li><li>  -MO=Terse       .   [^\n]             (?=p)  ZW pos ahead</li><li>  -D##            \s  whitespace        (?!p)  ZW neg ahead</li><li>  -d:Trace        \w  word chars        (?&lt;=p) ZW pos behind \K</li><li>                  \d  digits            (?&lt;!p) ZW neg behind</li><li>  CONFIGURATION   \pP named property    (?&gt;p)  no backtrack</li><li>  perl -V:ivsize  \h  horiz.wh.space    (?|p|p)branch reset</li><li>                  \R  linebreak         (?&lt;n&gt;p)named capture</li><li>                  \S \W \D \H negate    \g{n}  ref to named cap</li><li>                                        \K     keep left part</li><li>  FUNCTION RETURN LISTS</li><li>  stat      localtime    caller         SPECIAL VARIABLES</li><li>   0 dev    0 second      0 package     $_    default variable</li><li>   1 ino    1 minute      1 filename    $0    program name</li><li>   2 mode   2 hour        2 line        $/    input separator</li><li>   3 nlink  3 day         3 subroutine  $\    output separator</li><li>   4 uid    4 month-1     4 hasargs     $|    autoflush</li><li>   5 gid    5 year-1900   5 wantarray   $!    sys/libcall error</li><li>   6 rdev   6 weekday     6 evaltext    $@    eval error</li><li>   7 size   7 yearday     7 is_require  $$    process ID</li><li>   8 atime  8 is_dst      8 hints       $.    line number</li><li>   9 mtime                9 bitmask     @ARGV command line args</li><li>  10 ctime               10 hinthash    @INC  include paths</li><li>  11 blksz               3..10 only     @_    subroutine args</li><li>  12 blcks               with EXPR      %ENV  environment</li></ol></div><a id="ACKNOWLEDGEMENTS"></a><h2 class='h2' >ACKNOWLEDGEMENTS</h2>
+<p>The first version of this document appeared on Perl Monks, where several
+people had useful suggestions. Thank you, Perl Monks.</p>
+<p>A special thanks to Damian Conway, who didn't only suggest important changes,
+but also took the time to count the number of listed features and make a
+Perl 6 version to show that Perl will stay Perl.</p>
+<a id="AUTHOR"></a><h2 class='h2' >AUTHOR</h2>
+<p>Juerd Waalboer &lt;#####@juerd.nl&gt;, with the help of many Perl Monks.</p>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<ul>
+<li>
+<p><a href="http://perlmonks.org/?node_id=216602">http://perlmonks.org/?node_id=216602</a> - the original PM post</p>
+</li>
+<li>
+<p><a href="http://perlmonks.org/?node_id=238031">http://perlmonks.org/?node_id=238031</a> - Damian Conway's Perl 6 version</p>
+</li>
+<li>
+<p><a href="http://juerd.nl/site.plp/perlcheat">http://juerd.nl/site.plp/perlcheat</a> - home of the Perl Cheat Sheet</p>
+</li>
+</ul>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><ul><li><a href="#The-sheet">The sheet</a></li></ul><li><a href="#ACKNOWLEDGEMENTS">ACKNOWLEDGEMENTS</a></li><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/24/0/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/0/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/0/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/0/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/24/0/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/0/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/0/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/0/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/24/0/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/0/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/0/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/24/0/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/0/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/0/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

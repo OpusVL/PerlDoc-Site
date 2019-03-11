@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="perlhacktut - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>perlhacktut - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.18.3/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.18.3/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.18.3/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.18.3/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.18.3/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.18.3/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.18.3/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.18.3/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.18.3/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.18.3/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.18.3/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.18.3/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.18.3/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.18.3/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.18.3/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.18.3/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.18.3/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.18.3/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.18.3/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.18.3/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.18.3/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.18.3/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.18.3/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.18.3/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.18.3/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.18.3/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.18.3/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.18.3/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.18.3/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.18.3/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.18.3/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.18.3/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.18.3/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.18.3/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="index-internals.html">Internals and C language interface</a> &gt;
+      
+    
+    perlhacktut
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 18.3 documentation</h1>
+                  </div>
+                  <h1>perlhacktut</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#EXAMPLE-OF-A-SIMPLE-PATCH">EXAMPLE OF A SIMPLE PATCH</a></li><ul><li><a href="#Writing-the-patch">Writing the patch</a></li><li><a href="#Testing-the-patch">Testing the patch</a></li><li><a href="#Documenting-the-patch">Documenting the patch</a></li><li><a href="#Submit">Submit</a></li></ul><li><a href="#AUTHOR">AUTHOR</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>perlhacktut - Walk through the creation of a simple C code patch</p>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>This document takes you through a simple patch example.</p>
+<p>If you haven't read <a href="perlhack.html">perlhack</a> yet, go do that first! You might also
+want to read through <a href="perlsource.html">perlsource</a> too.</p>
+<p>Once you're done here, check out <a href="perlhacktips.html">perlhacktips</a> next.</p>
+<a id="EXAMPLE-OF-A-SIMPLE-PATCH"></a><h2 class='h2' >EXAMPLE OF A SIMPLE PATCH</h2>
+<p>Let's take a simple patch from start to finish.</p>
+<p>Here's something Larry suggested: if a <pre>
+<span class="w">U</span></code>
+ is the first active format
+during a <code class="inline"><a class="l_k" href="functions/pack.html">pack</a></code>, (for example, <pre>
+<a class="l_k" href="functions/pack.html">pack</a> <span class="q">&quot;U3C8&quot;</span><span class="cm">,</span> <span class="i">@stuff</span></code>
+) then the
+resulting string should be treated as UTF-8 encoded.</p>
+<p>If you are working with a git clone of the Perl repository, you will
+want to create a branch for your changes. This will make creating a
+proper patch much simpler. See the <a href="perlgit.html">perlgit</a> for details on how to do
+this.</p>
+<a id="Writing-the-patch"></a><h3 class='h3' >Writing the patch</h3>
+<p>How do we prepare to fix this up? First we locate the code in question
+- the <code class="inline"><a class="l_k" href="functions/pack.html">pack</a></code> happens at runtime, so it's going to be in one of the
+<i>pp</i> files. Sure enough, <pre>
+<span class="w">pp_pack</span></code>
+ is in <i>pp.c</i>. Since we're going
+to be altering this file, let's copy it to <i>pp.c~</i>.</p>
+<p>[Well, it was in <i>pp.c</i> when this tutorial was written. It has now
+been split off with <pre>
+<span class="w">pp_unpack</span></code>
+ to its own file, <i>pp_pack.c</i>]</p>
+<p>Now let's look over <pre>
+<span class="w">pp_pack</span></code>
+: we take a pattern into <pre>
+<span class="w">pat</span></code>
+, and then
+loop over the pattern, taking each format character in turn into
+<pre>
+<span class="w">datum_type</span></code>
+. Then for each possible format character, we swallow up
+the other arguments in the pattern (a field width, an asterisk, and so
+on) and convert the next chunk input into the specified format, adding
+it onto the output SV <pre>
+<span class="w">cat</span></code>
+.</p>
+<p>How do we know if the <pre>
+<span class="w">U</span></code>
+ is the first format in the <pre>
+<span class="w">pat</span></code>
+? Well, if
+we have a pointer to the start of <pre>
+<span class="w">pat</span></code>
+ then, if we see a <pre>
+<span class="w">U</span></code>
+ we can
+test whether we're still at the start of the string. So, here's where
+<pre>
+<span class="w">pat</span></code>
+ is set up:</p>
+<pre>
+    <span class="w">STRLEN</span> <span class="w">fromlen</span><span class="sc">;</span>
+    <span class="w">char</span> *<span class="w">pat</span> = <span class="i">SvPVx</span><span class="s">(</span><span class="i">*+</span>+<span class="w">MARK</span><span class="cm">,</span> <span class="w">fromlen</span><span class="s">)</span><span class="sc">;</span>
+    <span class="w">char</span> *<span class="w">patend</span> = <span class="w">pat</span> + <span class="w">fromlen</span><span class="sc">;</span>
+    <span class="w">I32</span> <span class="w">len</span><span class="sc">;</span>
+    <span class="w">I32</span> <span class="w">datumtype</span><span class="sc">;</span>
+    <span class="w">SV</span> *<span class="w">fromstr</span><span class="sc">;</span></pre>
+<p>We'll have another string pointer in there:</p>
+<pre>
+    <span class="w">STRLEN</span> <span class="w">fromlen</span><span class="sc">;</span>
+    <span class="w">char</span> *<span class="w">pat</span> = <span class="i">SvPVx</span><span class="s">(</span><span class="i">*+</span>+<span class="w">MARK</span><span class="cm">,</span> <span class="w">fromlen</span><span class="s">)</span><span class="sc">;</span>
+    <span class="w">char</span> *<span class="w">patend</span> = <span class="w">pat</span> + <span class="w">fromlen</span><span class="sc">;</span>
+ +  <span class="w">char</span> *<span class="w">patcopy</span><span class="sc">;</span>
+    <span class="w">I32</span> <span class="w">len</span><span class="sc">;</span>
+    <span class="w">I32</span> <span class="w">datumtype</span><span class="sc">;</span>
+    <span class="w">SV</span> *<span class="w">fromstr</span><span class="sc">;</span></pre>
+<p>And just before we start the loop, we'll set <pre>
+<span class="w">patcopy</span></code>
+ to be the start
+of <pre>
+<span class="w">pat</span></code>
+:</p>
+<div class="verbatim"><ol><li>    items = SP - MARK;</li><li>    MARK++;</li><li>    sv_setpvn(cat, "", 0);</li><li> +  patcopy = pat;</li><li>    while (pat &lt; patend) {</li></ol></div><p>Now if we see a <pre>
+<span class="w">U</span></code>
+ which was at the start of the string, we turn on
+the <pre>
+<span class="w">UTF8</span></code>
+ flag for the output SV, <pre>
+<span class="w">cat</span></code>
+:</p>
+<div class="verbatim"><ol><li> +  if (datumtype == 'U' &amp;&amp; pat==patcopy+1)</li><li> +      SvUTF8_on(cat);</li><li>    if (datumtype == '#') {</li><li>        while (pat &lt; patend &amp;&amp; *pat != '\n')</li><li>            pat++;</li></ol></div><p>Remember that it has to be <pre>
+<span class="w">patcopy</span>+<span class="n">1</span></code>
+ because the first character of
+the string is the <pre>
+<span class="w">U</span></code>
+ which has been swallowed into <pre>
+<span class="w">datumtype</span>!</code>
+</p>
+<p>Oops, we forgot one thing: what if there are spaces at the start of the
+pattern? <pre>
+<a class="l_k" href="functions/pack.html">pack</a><span class="s">(</span><span class="q">&quot;  U*&quot;</span><span class="cm">,</span> <span class="i">@stuff</span><span class="s">)</span></code>
+ will have <pre>
+<span class="w">U</span></code>
+ as the first active
+character, even though it's not the first thing in the pattern. In this
+case, we have to advance <pre>
+<span class="w">patcopy</span></code>
+ along with <pre>
+<span class="w">pat</span></code>
+ when we see
+spaces:</p>
+<pre>
+    <a class="l_k" href="functions/if.html">if</a> <span class="s">(</span><span class="i">isSPACE</span><span class="s">(</span><span class="w">datumtype</span><span class="s">)</span><span class="s">)</span>
+        <a class="l_k" href="functions/continue.html">continue</a><span class="sc">;</span></pre>
+<p>needs to become</p>
+<pre>
+    <a class="l_k" href="functions/if.html">if</a> <span class="s">(</span><span class="i">isSPACE</span><span class="s">(</span><span class="w">datumtype</span><span class="s">)</span><span class="s">)</span> <span class="s">{</span>
+        <span class="w">patcopy</span>++<span class="sc">;</span>
+        <a class="l_k" href="functions/continue.html">continue</a><span class="sc">;</span>
+    <span class="s">}</span></pre>
+<p>OK. That's the C part done. Now we must do two additional things before
+this patch is ready to go: we've changed the behaviour of Perl, and so
+we must document that change. We must also provide some more regression
+tests to make sure our patch works and doesn't create a bug somewhere
+else along the line.</p>
+<a id="Testing-the-patch"></a><h3 class='h3' >Testing the patch</h3>
+<p>The regression tests for each operator live in <i>t/op/</i>, and so we make
+a copy of <i>t/op/pack.t</i> to <i>t/op/pack.t~</i>. Now we can add our tests
+to the end. First, we'll test that the <pre>
+<span class="w">U</span></code>
+ does indeed create Unicode
+strings.</p>
+<p>t/op/pack.t has a sensible ok() function, but if it didn't we could use
+the one from t/test.pl.</p>
+<pre>
+ <a class="l_k" href="functions/require.html">require</a> <span class="q">&#39;./test.pl&#39;</span><span class="sc">;</span>
+ <span class="i">plan</span><span class="s">(</span> <span class="w">tests</span> <span class="cm">=&gt;</span> <span class="n">159</span> <span class="s">)</span><span class="sc">;</span></pre>
+<p>so instead of this:</p>
+<pre>
+ <a class="l_k" href="functions/print.html">print</a> <span class="q">&#39;not &#39;</span> <a class="l_k" href="functions/unless.html">unless</a> <span class="q">&quot;1.20.300.4000&quot;</span> <a class="l_k" href="functions/eq.html">eq</a> <a class="l_k" href="functions/sprintf.html">sprintf</a> <span class="q">&quot;%vd&quot;</span><span class="cm">,</span>
+                                               <a class="l_k" href="functions/pack.html">pack</a><span class="s">(</span><span class="q">&quot;U*&quot;</span><span class="cm">,</span><span class="n">1</span><span class="cm">,</span><span class="n">20</span><span class="cm">,</span><span class="n">300</span><span class="cm">,</span><span class="n">4000</span><span class="s">)</span><span class="sc">;</span>
+ <a class="l_k" href="functions/print.html">print</a> <span class="q">&quot;ok $test\n&quot;</span><span class="sc">;</span> <span class="i">$test</span>++<span class="sc">;</span></pre>
+<p>we can write the more sensible (see <a href="Test/More.html">Test::More</a> for a full
+explanation of is() and other testing functions).</p>
+<pre>
+ <span class="i">is</span><span class="s">(</span> <span class="q">&quot;1.20.300.4000&quot;</span><span class="cm">,</span> <a class="l_k" href="functions/sprintf.html">sprintf</a> <span class="q">&quot;%vd&quot;</span><span class="cm">,</span> <a class="l_k" href="functions/pack.html">pack</a><span class="s">(</span><span class="q">&quot;U*&quot;</span><span class="cm">,</span><span class="n">1</span><span class="cm">,</span><span class="n">20</span><span class="cm">,</span><span class="n">300</span><span class="cm">,</span><span class="n">4000</span><span class="s">)</span><span class="cm">,</span>
+                                       <span class="q">&quot;U* produces Unicode&quot;</span> <span class="s">)</span><span class="sc">;</span></pre>
+<p>Now we'll test that we got that space-at-the-beginning business right:</p>
+<pre>
+ <span class="i">is</span><span class="s">(</span> <span class="q">&quot;1.20.300.4000&quot;</span><span class="cm">,</span> <a class="l_k" href="functions/sprintf.html">sprintf</a> <span class="q">&quot;%vd&quot;</span><span class="cm">,</span> <a class="l_k" href="functions/pack.html">pack</a><span class="s">(</span><span class="q">&quot;  U*&quot;</span><span class="cm">,</span><span class="n">1</span><span class="cm">,</span><span class="n">20</span><span class="cm">,</span><span class="n">300</span><span class="cm">,</span><span class="n">4000</span><span class="s">)</span><span class="cm">,</span>
+                                     <span class="q">&quot;  with spaces at the beginning&quot;</span> <span class="s">)</span><span class="sc">;</span></pre>
+<p>And finally we'll test that we don't make Unicode strings if <pre>
+<span class="w">U</span></code>
+ is
+<strong>not</strong> the first active format:</p>
+<pre>
+ <span class="i">isnt</span><span class="s">(</span> <span class="v">v1.20.300.4000</span><span class="cm">,</span> <a class="l_k" href="functions/sprintf.html">sprintf</a> <span class="q">&quot;%vd&quot;</span><span class="cm">,</span> <a class="l_k" href="functions/pack.html">pack</a><span class="s">(</span><span class="q">&quot;C0U*&quot;</span><span class="cm">,</span><span class="n">1</span><span class="cm">,</span><span class="n">20</span><span class="cm">,</span><span class="n">300</span><span class="cm">,</span><span class="n">4000</span><span class="s">)</span><span class="cm">,</span>
+                                       <span class="q">&quot;U* not first isn&#39;t Unicode&quot;</span> <span class="s">)</span><span class="sc">;</span></pre>
+<p>Mustn't forget to change the number of tests which appears at the top,
+or else the automated tester will get confused. This will either look
+like this:</p>
+<pre>
+ <a class="l_k" href="functions/print.html">print</a> <span class="q">&quot;1..156\n&quot;</span><span class="sc">;</span></pre>
+<p>or this:</p>
+<pre>
+ <span class="i">plan</span><span class="s">(</span> <span class="w">tests</span> <span class="cm">=&gt;</span> <span class="n">156</span> <span class="s">)</span><span class="sc">;</span></pre>
+<p>We now compile up Perl, and run it through the test suite. Our new
+tests pass, hooray!</p>
+<a id="Documenting-the-patch"></a><h3 class='h3' >Documenting the patch</h3>
+<p>Finally, the documentation. The job is never done until the paperwork
+is over, so let's describe the change we've just made. The relevant
+place is <i>pod/perlfunc.pod</i>; again, we make a copy, and then we'll
+insert this text in the description of <code class="inline"><a class="l_k" href="functions/pack.html">pack</a></code>:</p>
+<div class="verbatim"><ol><li> =item *</li><li></li><li> If the pattern begins with a C&lt;U&gt;, the resulting string will be treated</li><li> as UTF-8-encoded Unicode. You can force UTF-8 encoding on in a string</li><li> with an initial C&lt;U0&gt;, and the bytes that follow will be interpreted as</li><li> Unicode characters. If you don't want this to happen, you can begin</li><li> your pattern with C&lt;C0&gt; (or anything else) to force Perl not to UTF-8</li><li> encode your string, and then follow this with a C&lt;U*&gt; somewhere in your</li><li> pattern.</li></ol></div><a id="Submit"></a><h3 class='h3' >Submit</h3>
+<p>See <a href="perlhack.html">perlhack</a> for details on how to submit this patch.</p>
+<a id="AUTHOR"></a><h2 class='h2' >AUTHOR</h2>
+<p>This document was originally written by Nathan Torkington, and is
+maintained by the perl5-porters mailing list.</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#EXAMPLE-OF-A-SIMPLE-PATCH">EXAMPLE OF A SIMPLE PATCH</a></li><ul><li><a href="#Writing-the-patch">Writing the patch</a></li><li><a href="#Testing-the-patch">Testing the patch</a></li><li><a href="#Documenting-the-patch">Documenting the patch</a></li><li><a href="#Submit">Submit</a></li></ul><li><a href="#AUTHOR">AUTHOR</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/3/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/3/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/3/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/3/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/3/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/3/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/3/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/3/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/3/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/3/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/3/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/3/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/3/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/3/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

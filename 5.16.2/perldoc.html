@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="perldoc - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>perldoc - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.16.2/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.16.2/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.16.2/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.16.2/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.16.2/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.16.2/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.16.2/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.16.2/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.16.2/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.16.2/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.16.2/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.16.2/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.16.2/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.16.2/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.16.2/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="index-utilities.html">Utilities</a> &gt;
+      
+    
+    perldoc
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 16.2 documentation</h1>
+                  </div>
+                  <h1>perldoc</h1>
+
+
+  <!--    -->
+<ul><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#OPTIONS">OPTIONS</a></li><li><a href="#SECURITY">SECURITY</a></li><li><a href="#ENVIRONMENT">ENVIRONMENT</a></li><li><a href="#CHANGES">CHANGES</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#AUTHOR">AUTHOR</a></li></ul><a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<div class="verbatim"><ol><li>    B&lt;perldoc&gt; [B&lt;-h&gt;] [B&lt;-D&gt;] [B&lt;-t&gt;] [B&lt;-u&gt;] [B&lt;-m&gt;] [B&lt;-l&gt;] [B&lt;-F&gt;]</li><li>        [B&lt;-i&gt;] [B&lt;-V&gt;] [B&lt;-T&gt;] [B&lt;-r&gt;]</li><li>        [B&lt;-dI&lt;destination_file&gt;&gt;]</li><li>        [B&lt;-oI&lt;formatname&gt;&gt;]</li><li>        [B&lt;-MI&lt;FormatterClassName&gt;&gt;]</li><li>        [B&lt;-wI&lt;formatteroption:value&gt;&gt;]</li><li>        [B&lt;-n&gt;I&lt;nroff-replacement&gt;]</li><li>        [B&lt;-X&gt;]</li><li>        [B&lt;-L&gt; I&lt;language_code&gt;]</li><li>        PageName|ModuleName|ProgramName|URL</li></ol></div><p>Examples:</p>
+<div class="verbatim"><ol><li>    B&lt;perldoc&gt; B&lt;-f&gt; BuiltinFunction</li><li></li><li>    B&lt;perldoc&gt; B&lt;-L&gt; it B&lt;-f&gt; BuiltinFunction</li><li></li><li>    B&lt;perldoc&gt; B&lt;-q&gt; FAQ Keyword</li><li></li><li>    B&lt;perldoc&gt; B&lt;-L&gt; fr B&lt;-q&gt; FAQ Keyword</li><li></li><li>    B&lt;perldoc&gt; B&lt;-v&gt; PerlVariable</li></ol></div><p>See below for more description of the switches.</p>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p><strong>perldoc</strong> looks up a piece of documentation in .pod format that is
+embedded in the perl installation tree or in a perl script, and displays
+it via <pre>
+<span class="w">groff</span> -<span class="w">man</span> | <span class="i">$PAGER</span></code>
+. (In addition, if running under HP-UX,
+<pre>
+<span class="w">col</span> -x</code>
+ will be used.) This is primarily used for the documentation for
+the perl library modules.</p>
+<p>Your system may also have man pages installed for those modules, in
+which case you can probably just use the man(1) command.</p>
+<p>If you are looking for a table of contents to the Perl library modules
+documentation, see the <a href="https://search.cpan.org/perldoc/perltoc">perltoc</a> page.</p>
+<a id="OPTIONS"></a><h2 class='h2' >OPTIONS</h2>
+<ul>
+<li><a id="*-h*"></a><strong><strong>-h</strong></strong>
+<p>Prints out a brief <strong>h</strong>elp message.</p>
+</li>
+<li><a id="*-D*"></a><strong><strong>-D</strong></strong>
+<p><strong>D</strong>escribes search for the item in <strong>d</strong>etail.</p>
+</li>
+<li><a id="*-t*"></a><strong><strong>-t</strong></strong>
+<p>Display docs using plain <strong>t</strong>ext converter, instead of nroff. This may be faster,
+but it probably won't look as nice.</p>
+</li>
+<li><a id="*-u*"></a><strong><strong>-u</strong></strong>
+<p>Skip the real Pod formatting, and just show the raw Pod source (<strong>U</strong>nformatted)</p>
+</li>
+<li><a id="*-m*-_module_"></a><strong><strong>-m</strong> <i>module</i></strong>
+<p>Display the entire module: both code and unformatted pod documentation.
+This may be useful if the docs don't explain a function in the detail
+you need, and you'd like to inspect the code directly; perldoc will find
+the file for you and simply hand it off for display.</p>
+</li>
+<li><a id="*-l*"></a><strong><strong>-l</strong></strong>
+<p>Display on<strong>l</strong>y the file name of the module found.</p>
+</li>
+<li><a id="*-F*"></a><strong><strong>-F</strong></strong>
+<p>Consider arguments as file names; no search in directories will be performed.</p>
+</li>
+<li><a id="*-f*-_perlfunc_"></a><strong><strong>-f</strong> <i>perlfunc</i></strong>
+<p>The <strong>-f</strong> option followed by the name of a perl built-in function will
+extract the documentation of this function from <a href="perlfunc.html">perlfunc</a>.</p>
+<p>Example:</p>
+<pre>
+      <span class="w">perldoc</span> -f <a class="l_k" href="functions/sprintf.html">sprintf</a></pre>
+</li>
+<li><a id="*-q*-_perlfaq-search-regexp_"></a><strong><strong>-q</strong> <i>perlfaq-search-regexp</i></strong>
+<p>The <strong>-q</strong> option takes a regular expression as an argument.  It will search
+the <strong>q</strong>uestion headings in perlfaq[1-9] and print the entries matching
+the regular expression.</p>
+<p>Example:</p>
+<div class="verbatim"><ol><li>     perldoc -q shuffle</li></ol></div></li>
+<li><a id="*-v*-_perlvar_"></a><strong><strong>-v</strong> <i>perlvar</i></strong>
+<p>The <strong>-v</strong> option followed by the name of a Perl predefined variable will
+extract the documentation of this variable from <a href="perlvar.html">perlvar</a>.</p>
+<p>Examples:</p>
+<div class="verbatim"><ol><li>     perldoc -v '$"'</li><li>     perldoc -v @+</li><li>     perldoc -v DATA</li></ol></div></li>
+<li><a id="*-T*"></a><strong><strong>-T</strong></strong>
+<p>This specifies that the output is not to be sent to a pager, but is to
+be sent right to STDOUT.</p>
+</li>
+<li><a id="*-d*-_destination-filename_"></a><strong><strong>-d</strong> <i>destination-filename</i></strong>
+<p>This specifies that the output is to be sent neither to a pager nor
+to STDOUT, but is to be saved to the specified filename.  Example:
+<pre>
+<span class="w">perldoc</span> -<span class="w">oLaTeX</span> -<span class="w">dtextwrapdocs</span>.<span class="w">tex</span> <span class="w">Text::Wrap</span></code>
+</p>
+</li>
+<li><a id="*-o*-_output-formatname_"></a><strong><strong>-o</strong> <i>output-formatname</i></strong>
+<p>This specifies that you want Perldoc to try using a Pod-formatting
+class for the output format that you specify.  For example:
+<pre>
+-<span class="w">oman</span></code>
+.  This is actually just a wrapper around the <pre>
+-M</code>
+ switch;
+using <code class="inline">-o<i>formatname</i></code> just looks for a loadable class by adding
+that format name (with different capitalizations) to the end of
+different classname prefixes.</p>
+<p>For example, <pre>
+-<span class="w">oLaTeX</span></code>
+ currently tries all of the following classes:
+Pod::Perldoc::ToLaTeX Pod::Perldoc::Tolatex Pod::Perldoc::ToLatex
+Pod::Perldoc::ToLATEX Pod::Simple::LaTeX Pod::Simple::latex
+Pod::Simple::Latex Pod::Simple::LATEX Pod::LaTeX Pod::latex Pod::Latex
+Pod::LATEX.</p>
+</li>
+<li><a id="*-M*-_module-name_"></a><strong><strong>-M</strong> <i>module-name</i></strong>
+<p>This specifies the module that you want to try using for formatting the
+pod.  The class must at least provide a <pre>
+<span class="w">parse_from_file</span></code>
+ method.
+For example: <pre>
+<span class="w">perldoc</span> -<span class="w">MPod::Perldoc::ToChecker</span></code>
+.</p>
+<p>You can specify several classes to try by joining them with commas
+or semicolons, as in <pre>
+-<span class="w">MTk::SuperPod</span><span class="sc">;</span><span class="w">Tk::Pod</span></code>
+.</p>
+</li>
+<li><a id="*-w*-_option%3avalue_-or-*-w*-_option_"></a><strong><strong>-w</strong> <i>option:value</i> or <strong>-w</strong> <i>option</i></strong>
+<p>This specifies an option to call the formatter <strong>w</strong>ith.  For example,
+<code class="inline">-w textsize:15</code> will call
+<pre>
+<span class="i">$formatter</span><span class="i">-&gt;textsize</span><span class="s">(</span><span class="n">15</span><span class="s">)</span></code>
+ on the formatter object before it is
+used to format the object.  For this to be valid, the formatter class
+must provide such a method, and the value you pass should be valid.
+(So if <pre>
+<span class="w">textsize</span></code>
+ expects an integer, and you do <code class="inline">-w textsize:big</code>,
+expect trouble.)</p>
+<p>You can use <pre>
+-w <span class="w">optionname</span></code>
+ (without a value) as shorthand for
+<code class="inline">-w optionname:<i>TRUE</i></code>.  This is presumably useful in cases of on/off
+features like: <pre>
+-w <span class="w">page_numbering</span></code>
+.</p>
+<p>You can use an "=" instead of the ":", as in: <pre>
+-w <span class="w">textsize</span>=<span class="n">15</span></code>
+.  This
+might be more (or less) convenient, depending on what shell you use.</p>
+</li>
+<li><a id="*-X*"></a><strong><strong>-X</strong></strong>
+<p>Use an index if it is present. The <strong>-X</strong> option looks for an entry
+whose basename matches the name given on the command line in the file
+<pre>
+<span class="i">$Config</span>{<span class="w">archlib</span>}/<span class="w">pod</span>.<span class="w">idx</span></code>
+. The <i>pod.idx</i> file should contain fully
+qualified filenames, one per line.</p>
+</li>
+<li><a id="*-L*-_language_code_"></a><strong><strong>-L</strong> <i>language_code</i></strong>
+<p>This allows one to specify the <i>language code</i> for the desired language
+translation. If the <pre>
+<span class="w">POD2::</span><span class="q">&lt;language_code&gt;</span></code>
+ package isn't
+installed in your system, the switch is ignored.
+All available translation packages are to be found under the <pre>
+<span class="w">POD2::</span></code>
+
+namespace. See <a href="https://search.cpan.org/perldoc/POD2::IT">POD2::IT</a> (or <a href="https://search.cpan.org/perldoc/POD2::FR">POD2::FR</a>) to see how to create new
+localized <pre>
+<span class="w">POD2::</span>*</code>
+ documentation packages and integrate them into
+<a href="Pod/Perldoc.html">Pod::Perldoc</a>.</p>
+</li>
+<li><a id="*PageName%7cModuleName%7cProgramName%7cURL*"></a><strong><strong>PageName|ModuleName|ProgramName|URL</strong></strong>
+<p>The item you want to look up.  Nested modules (such as <pre>
+<span class="w">File::Basename</span></code>
+)
+are specified either as <pre>
+<span class="w">File::Basename</span></code>
+ or <pre>
+<span class="w">File</span>/<span class="w">Basename</span></code>
+.  You may also
+give a descriptive name of a page, such as <pre>
+<span class="w">perlfunc</span></code>
+.  For URLs, HTTP and
+HTTPS are the only kind currently supported.</p>
+<p>For simple names like 'foo', when the normal search fails to find
+a matching page, a search with the "perl" prefix is tried as well.
+So "perldoc intro" is enough to find/render "perlintro.pod".</p>
+</li>
+<li><a id="*-n*-_some-formatter_"></a><strong><strong>-n</strong> <i>some-formatter</i></strong>
+<p>Specify replacement for groff</p>
+</li>
+<li><a id="*-r*"></a><strong><strong>-r</strong></strong>
+<p>Recursive search.</p>
+</li>
+<li><a id="*-i*"></a><strong><strong>-i</strong></strong>
+<p>Ignore case.</p>
+</li>
+<li><a id="*-V*"></a><strong><strong>-V</strong></strong>
+<p>Displays the version of perldoc you're running.</p>
+</li>
+</ul>
+<a id="SECURITY"></a><h2 class='h2' >SECURITY</h2>
+<p>Because <strong>perldoc</strong> does not run properly tainted, and is known to
+have security issues, when run as the superuser it will attempt to
+drop privileges by setting the effective and real IDs to nobody's
+or nouser's account, or -2 if unavailable.  If it cannot relinquish
+its privileges, it will not run.</p>
+<a id="ENVIRONMENT"></a><h2 class='h2' >ENVIRONMENT</h2>
+<p>Any switches in the <pre>
+<span class="w">PERLDOC</span></code>
+ environment variable will be used before the
+command line arguments.</p>
+<p>Useful values for <pre>
+<span class="w">PERLDOC</span></code>
+ include <pre>
+-<span class="w">oman</span></code>
+, <pre>
+-<span class="w">otext</span></code>
+, <pre>
+-<span class="w">otk</span></code>
+, <pre>
+-<span class="w">ortf</span></code>
+,
+<pre>
+-<span class="w">oxml</span></code>
+, and so on, depending on what modules you have on hand; or
+the formatter class may be specified exactly with <pre>
+-<span class="w">MPod::Perldoc::ToMan</span></code>
+
+or the like.</p>
+<p><pre>
+<span class="w">perldoc</span></code>
+ also searches directories
+specified by the <pre>
+<span class="w">PERL5LIB</span></code>
+ (or <pre>
+<span class="w">PERLLIB</span></code>
+ if <pre>
+<span class="w">PERL5LIB</span></code>
+ is not
+defined) and <pre>
+<span class="w">PATH</span></code>
+ environment variables.
+(The latter is so that embedded pods for executables, such as
+<pre>
+<span class="w">perldoc</span></code>
+ itself, are available.)</p>
+<p><pre>
+<span class="w">perldoc</span></code>
+ will use, in order of preference, the pager defined in
+<pre>
+<span class="w">PERLDOC_PAGER</span></code>
+, <pre>
+<span class="w">MANPAGER</span></code>
+, or <pre>
+<span class="w">PAGER</span></code>
+ before trying to find a pager
+on its own. (<pre>
+<span class="w">MANPAGER</span></code>
+ is not used if <pre>
+<span class="w">perldoc</span></code>
+ was told to display
+plain text or unformatted pod.)</p>
+<p>One useful value for <pre>
+<span class="w">PERLDOC_PAGER</span></code>
+ is <pre>
+<span class="w">less</span> -+<span class="w">C</span> -<span class="w">E</span></code>
+.</p>
+<p>Having PERLDOCDEBUG set to a positive integer will make perldoc emit
+even more descriptive output than the <pre>
+-<span class="w">v</span></code>
+ switch does; the higher the
+number, the more it emits.</p>
+<a id="CHANGES"></a><h2 class='h2' >CHANGES</h2>
+<p>Up to 3.14_05, the switch <strong>-v</strong> was used to produce verbose
+messages of <strong>perldoc</strong> operation, which is now enabled by <strong>-D</strong>.</p>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<p><a href="perlpod.html">perlpod</a>, <a href="Pod/Perldoc.html">Pod::Perldoc</a></p>
+<a id="AUTHOR"></a><h2 class='h2' >AUTHOR</h2>
+<p>Current maintainer: Mark Allen <pre>
+<span class="q">&lt;mallen@cpan.org&gt;</span></code>
+</p>
+<p>Past contributors are:
+brian d foy <pre>
+<span class="q">&lt;bdfoy@cpan.org&gt;</span></code>
+ 
+Adriano R. Ferreira <pre>
+<span class="q">&lt;ferreira@cpan.org&gt;</span></code>
+,
+Sean M. Burke <pre>
+<span class="q">&lt;sburke@cpan.org&gt;</span></code>
+,
+Kenneth Albanowski <pre>
+<span class="q">&lt;kjahds@kjahds.com&gt;</span></code>
+,
+Andy Dougherty  <pre>
+<span class="q">&lt;doughera@lafcol.lafayette.edu&gt;</span></code>
+,
+and many others.</p>
+
+
+
+
+      <ul><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#OPTIONS">OPTIONS</a></li><li><a href="#SECURITY">SECURITY</a></li><li><a href="#ENVIRONMENT">ENVIRONMENT</a></li><li><a href="#CHANGES">CHANGES</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#AUTHOR">AUTHOR</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

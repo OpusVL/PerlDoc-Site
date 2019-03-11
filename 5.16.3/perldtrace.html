@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="perldtrace - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>perldtrace - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.16.3/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.16.3/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.16.3/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.16.3/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.16.3/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.16.3/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.16.3/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.16.3/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.16.3/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.16.3/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.16.3/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.16.3/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.16.3/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.16.3/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.16.3/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="index-language.html">Language reference</a> &gt;
+      
+    
+    perldtrace
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 16.3 documentation</h1>
+                  </div>
+                  <h1>perldtrace</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#HISTORY">HISTORY</a></li><li><a href="#PROBES">PROBES</a></li><li><a href="#EXAMPLES">EXAMPLES</a></li><li><a href="#REFERENCES">REFERENCES</a></li><li><a href="#AUTHORS">AUTHORS</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>perldtrace - Perl's support for DTrace</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<div class="verbatim"><ol><li>    # dtrace -Zn 'perl::sub-entry, perl::sub-return { trace(copyinstr(arg0)) }'</li><li>    dtrace: description 'perl::sub-entry, perl::sub-return ' matched 10 probes</li><li></li><li>    # perl -E 'sub outer { inner(@_) } sub inner { say shift } outer("hello")'</li><li>    hello</li><li></li><li>    (dtrace output)</li><li>    CPU     ID                    FUNCTION:NAME</li><li>      0  75915       Perl_pp_entersub:sub-entry   BEGIN</li><li>      0  75915       Perl_pp_entersub:sub-entry   import</li><li>      0  75922      Perl_pp_leavesub:sub-return   import</li><li>      0  75922      Perl_pp_leavesub:sub-return   BEGIN</li><li>      0  75915       Perl_pp_entersub:sub-entry   outer</li><li>      0  75915       Perl_pp_entersub:sub-entry   inner</li><li>      0  75922      Perl_pp_leavesub:sub-return   inner</li><li>      0  75922      Perl_pp_leavesub:sub-return   outer</li></ol></div><a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>DTrace is a framework for comprehensive system- and application-level
+tracing. Perl is a DTrace <i>provider</i>, meaning it exposes several
+<i>probes</i> for instrumentation. You can use these in conjunction
+with kernel-level probes, as well as probes from other providers
+such as MySQL, in order to diagnose software defects, or even just
+your application's bottlenecks.</p>
+<p>Perl must be compiled with the <pre>
+-<span class="w">Dusedtrace</span></code>
+ option in order to
+make use of the provided probes. While DTrace aims to have no
+overhead when its instrumentation is not active, Perl's support
+itself cannot uphold that guarantee, so it is built without DTrace
+probes under most systems. One notable exception is that Mac OS X
+ships a <i>/usr/bin/perl</i> with DTrace support enabled.</p>
+<a id="HISTORY"></a><h2 class='h2' >HISTORY</h2>
+<dl>
+<dt>5.</dt><dd><a id="5.10.1"></a><strong>10.1</strong>
+<p>Perl's initial DTrace support was added, providing <code class="inline"><a class="l_k" href="functions/sub.html">sub-entry</a></code> and
+<code class="inline"><a class="l_k" href="functions/sub.html">sub-return</a></code> probes.</p>
+</dd>
+<dt>5.</dt><dd><a id="5.14.0"></a><strong>14.0</strong>
+<p>The <code class="inline"><a class="l_k" href="functions/sub.html">sub-entry</a></code> and <code class="inline"><a class="l_k" href="functions/sub.html">sub-return</a></code> probes gain a fourth argument: the
+package name of the function.</p>
+</dd>
+<dt>5.</dt><dd><a id="5.16.0"></a><strong>16.0</strong>
+<p>The <pre>
+<span class="w">phase</span>-<span class="w">change</span></code>
+ probe was added.</p>
+</dd>
+</dl>
+<a id="PROBES"></a><h2 class='h2' >PROBES</h2>
+<ul>
+<li><a id="sub-entry(SUBNAME%2c-FILE%2c-LINE%2c-PACKAGE)"></a><strong>sub-entry(SUBNAME, FILE, LINE, PACKAGE)</strong>
+<p>Traces the entry of any subroutine. Note that all of the variables
+refer to the subroutine that is being invoked; there is currently
+no way to get ahold of any information about the subroutine's
+<i>caller</i> from a DTrace action.</p>
+<pre>
+    <span class="j">:</span><span class="i">*perl</span>*<span class="w">::sub</span>-<span class="i">entry</span> <span class="s">{</span>
+        <a class="l_k" href="functions/printf.html">printf</a><span class="s">(</span><span class="q">&quot;%s::%s entered at %s line %d\n&quot;</span><span class="cm">,</span>
+               <span class="i">copyinstr</span><span class="s">(</span><span class="w">arg3</span><span class="s">)</span><span class="cm">,</span> <span class="i">copyinstr</span><span class="s">(</span><span class="w">arg0</span><span class="s">)</span><span class="cm">,</span> <span class="i">copyinstr</span><span class="s">(</span><span class="w">arg1</span><span class="s">)</span><span class="cm">,</span> <span class="w">arg0</span><span class="s">)</span><span class="sc">;</span>
+    <span class="s">}</span></pre>
+</li>
+<li><a id="sub-return(SUBNAME%2c-FILE%2c-LINE%2c-PACKAGE)"></a><strong>sub-return(SUBNAME, FILE, LINE, PACKAGE)</strong>
+<p>Traces the exit of any subroutine. Note that all of the variables
+refer to the subroutine that is returning; there is currently no
+way to get ahold of any information about the subroutine's <i>caller</i>
+from a DTrace action.</p>
+<pre>
+    <span class="j">:</span><span class="i">*perl</span>*<span class="w">::sub</span>-<a class="l_k" href="functions/return.html">return</a> <span class="s">{</span>
+        <a class="l_k" href="functions/printf.html">printf</a><span class="s">(</span><span class="q">&quot;%s::%s returned at %s line %d\n&quot;</span><span class="cm">,</span>
+               <span class="i">copyinstr</span><span class="s">(</span><span class="w">arg3</span><span class="s">)</span><span class="cm">,</span> <span class="i">copyinstr</span><span class="s">(</span><span class="w">arg0</span><span class="s">)</span><span class="cm">,</span> <span class="i">copyinstr</span><span class="s">(</span><span class="w">arg1</span><span class="s">)</span><span class="cm">,</span> <span class="w">arg0</span><span class="s">)</span><span class="sc">;</span>
+    <span class="s">}</span></pre>
+</li>
+<li><a id="phase-change(NEWPHASE%2c-OLDPHASE)"></a><strong>phase-change(NEWPHASE, OLDPHASE)</strong>
+<p>Traces changes to Perl's interpreter state. You can internalize this
+as tracing changes to Perl's <pre>
+<span class="i">$</span>{<span class="w">^GLOBAL_PHASE</span>}</code>
+ variable, especially
+since the values for <pre>
+<span class="w">NEWPHASE</span></code>
+ and <pre>
+<span class="w">OLDPHASE</span></code>
+ are the strings that
+<pre>
+<span class="i">$</span>{<span class="w">^GLOBAL_PHASE</span>}</code>
+ reports.</p>
+<pre>
+    <span class="j">:</span><span class="i">*perl</span>*<span class="w">::phase</span>-<span class="i">change</span> <span class="s">{</span>
+        <a class="l_k" href="functions/printf.html">printf</a><span class="s">(</span><span class="q">&quot;Phase changed from %s to %s\n&quot;</span><span class="cm">,</span>
+            <span class="i">copyinstr</span><span class="s">(</span><span class="w">arg1</span><span class="s">)</span><span class="cm">,</span> <span class="i">copyinstr</span><span class="s">(</span><span class="w">arg0</span><span class="s">)</span><span class="s">)</span><span class="sc">;</span>
+    <span class="s">}</span></pre>
+</li>
+</ul>
+<a id="EXAMPLES"></a><h2 class='h2' >EXAMPLES</h2>
+<ul>
+<li><a id="Most-frequently-called-functions"></a><strong>Most frequently called functions</strong>
+<div class="verbatim"><ol><li>    # dtrace -qZn 'sub-entry { @[strjoin(strjoin(copyinstr(arg3),"::"),copyinstr(arg0))] = count() } END {trunc(@, 10)}'</li><li></li><li>    Class::MOP::Attribute::slots                                    400</li><li>    Try::Tiny::catch                                                411</li><li>    Try::Tiny::try                                                  411</li><li>    Class::MOP::Instance::inline_slot_access                        451</li><li>    Class::MOP::Class::Immutable::Trait:::around                    472</li><li>    Class::MOP::Mixin::AttributeCore::has_initializer               496</li><li>    Class::MOP::Method::Wrapped::__ANON__                           544</li><li>    Class::MOP::Package::_package_stash                             737</li><li>    Class::MOP::Class::initialize                                  1128</li><li>    Class::MOP::get_metaclass_by_name                              1204</li></ol></div></li>
+<li><a id="Trace-function-calls"></a><strong>Trace function calls</strong>
+<div class="verbatim"><ol><li>    # dtrace -qFZn 'sub-entry, sub-return { trace(copyinstr(arg0)) }'</li><li></li><li>    0  -&gt; Perl_pp_entersub                        BEGIN</li><li>    0  &lt;- Perl_pp_leavesub                        BEGIN</li><li>    0  -&gt; Perl_pp_entersub                        BEGIN</li><li>    0    -&gt; Perl_pp_entersub                      import</li><li>    0    &lt;- Perl_pp_leavesub                      import</li><li>    0  &lt;- Perl_pp_leavesub                        BEGIN</li><li>    0  -&gt; Perl_pp_entersub                        BEGIN</li><li>    0    -&gt; Perl_pp_entersub                      dress</li><li>    0    &lt;- Perl_pp_leavesub                      dress</li><li>    0    -&gt; Perl_pp_entersub                      dirty</li><li>    0    &lt;- Perl_pp_leavesub                      dirty</li><li>    0    -&gt; Perl_pp_entersub                      whiten</li><li>    0    &lt;- Perl_pp_leavesub                      whiten</li><li>    0  &lt;- Perl_dounwind                           BEGIN</li></ol></div></li>
+<li><a id="Function-calls-during-interpreter-cleanup"></a><strong>Function calls during interpreter cleanup</strong>
+<div class="verbatim"><ol><li>    # dtrace -Zn 'phase-change /copyinstr(arg0) == "END"/ { self-&gt;ending = 1 } sub-entry /self-&gt;ending/ { trace(copyinstr(arg0)) }'</li><li></li><li>    CPU     ID                    FUNCTION:NAME</li><li>      1  77214       Perl_pp_entersub:sub-entry   END</li><li>      1  77214       Perl_pp_entersub:sub-entry   END</li><li>      1  77214       Perl_pp_entersub:sub-entry   cleanup</li><li>      1  77214       Perl_pp_entersub:sub-entry   _force_writable</li><li>      1  77214       Perl_pp_entersub:sub-entry   _force_writable</li></ol></div></li>
+<li><a id="System-calls-at-compile-time"></a><strong>System calls at compile time</strong>
+<div class="verbatim"><ol><li>    # dtrace -qZn 'phase-change /copyinstr(arg0) == "START"/ { self-&gt;interesting = 1 } phase-change /copyinstr(arg0) == "RUN"/ { self-&gt;interesting = 0 } syscall::: /self-&gt;interesting/ { @[probefunc] = count() } END { trunc(@, 3) }'</li><li></li><li>    lseek                                                           310</li><li>    read                                                            374</li><li>    stat64                                                         1056</li></ol></div></li>
+</ul>
+<a id="REFERENCES"></a><h2 class='h2' >REFERENCES</h2>
+<ul>
+<li><a id="DTrace-User-Guide"></a><strong>DTrace User Guide</strong>
+<p><a href="http://download.oracle.com/docs/cd/E19082-01/819-3620/index.html">http://download.oracle.com/docs/cd/E19082-01/819-3620/index.html</a></p>
+</li>
+<li><a id="DTrace%3a-Dynamic-Tracing-in-Oracle-Solaris%2c-Mac-OS-X-and-FreeBSD"></a><strong>DTrace: Dynamic Tracing in Oracle Solaris, Mac OS X and FreeBSD</strong>
+<p><a href="http://www.amazon.com/DTrace-Dynamic-Tracing-Solaris-FreeBSD/dp/0132091518/">http://www.amazon.com/DTrace-Dynamic-Tracing-Solaris-FreeBSD/dp/0132091518/</a></p>
+</li>
+</ul>
+<a id="AUTHORS"></a><h2 class='h2' >AUTHORS</h2>
+<p>Shawn M Moore <pre>
+<span class="w">sartak</span><span class="i">@gmail</span>.<span class="w">com</span></code>
+</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#HISTORY">HISTORY</a></li><li><a href="#PROBES">PROBES</a></li><li><a href="#EXAMPLES">EXAMPLES</a></li><li><a href="#REFERENCES">REFERENCES</a></li><li><a href="#AUTHORS">AUTHORS</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

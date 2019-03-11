@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Pod::Find - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>Pod::Find - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.16.2/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.16.2/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.16.2/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.16.2/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.16.2/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.16.2/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.16.2/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.16.2/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.16.2/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.16.2/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.16.2/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.16.2/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.16.2/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.16.2/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.16.2/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../index-modules-P.html">Core modules (P)</a> &gt;
+      
+    
+    Pod::Find
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 16.2 documentation</h1>
+                  </div>
+                  <h1>Pod::Find</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><ul><li><a href="#pod_find(-%7b-%25opts-%7d-%2c-%40directories-)">pod_find( { %opts } , @directories )</a></li><li><a href="#simplify_name(-%24str-)">simplify_name( $str )</a></li><li><a href="#pod_where(-%7b-%25opts-%7d%2c-%24pod-)">pod_where( { %opts }, $pod )</a></li><li><a href="#contains_pod(-%24file-%2c-%24verbose-)">contains_pod( $file , $verbose )</a></li></ul><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>Pod::Find - find POD documents in directory trees</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<pre>
+  <a class="l_k" href="../functions/use.html">use</a> <span class="w">Pod::Find</span> <span class="q">qw(pod_find simplify_name)</span><span class="sc">;</span>
+  <a class="l_k" href="../functions/my.html">my</a> <span class="i">%pods</span> = <span class="i">pod_find</span><span class="s">(</span><span class="s">{</span> -<span class="w">verbose</span> <span class="cm">=&gt;</span> <span class="n">1</span><span class="cm">,</span> -<span class="w">inc</span> <span class="cm">=&gt;</span> <span class="n">1</span> <span class="s">}</span><span class="s">)</span><span class="sc">;</span>
+  <a class="l_k" href="../functions/foreach.html">foreach</a><span class="s">(</span><a class="l_k" href="../functions/keys.html">keys</a> <span class="i">%pods</span><span class="s">)</span> <span class="s">{</span>
+     <a class="l_k" href="../functions/print.html">print</a> <span class="q">&quot;found library POD `$pods{$_}&#39; in $_\n&quot;</span><span class="sc">;</span>
+  <span class="s">}</span>
+
+  <a class="l_k" href="../functions/print.html">print</a> <span class="q">&quot;podname=&quot;</span><span class="cm">,</span><span class="i">simplify_name</span><span class="s">(</span><span class="q">&#39;a/b/c/mymodule.pod&#39;</span><span class="s">)</span><span class="cm">,</span><span class="q">&quot;\n&quot;</span><span class="sc">;</span>
+
+  <span class="i">$location</span> = <span class="i">pod_where</span><span class="s">(</span> <span class="s">{</span> -<span class="w">inc</span> <span class="cm">=&gt;</span> <span class="n">1</span> <span class="s">}</span><span class="cm">,</span> <span class="q">&quot;Pod::Find&quot;</span> <span class="s">)</span><span class="sc">;</span></pre>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p><strong>Pod::Find</strong> provides a set of functions to locate POD files.  Note that
+no function is exported by default to avoid pollution of your namespace,
+so be sure to specify them in the <strong>use</strong> statement if you need them:</p>
+<pre>
+  <a class="l_k" href="../functions/use.html">use</a> <span class="w">Pod::Find</span> <span class="q">qw(pod_find)</span><span class="sc">;</span></pre>
+<p>From this version on the typical SCM (software configuration management)
+files/directories like RCS, CVS, SCCS, .svn are ignored.</p>
+<a id="pod_find(-%7b-%25opts-%7d-%2c-%40directories-)"></a><h3 class='h3' ><pre>
+<span class="i">pod_find</span><span class="s">(</span> <span class="s">{</span> <span class="i">%opts</span> <span class="s">}</span> <span class="cm">,</span> <span class="i">@directories</span> <span class="s">)</span></code>
+</h3>
+<p>The function <strong>pod_find</strong> searches for POD documents in a given set of
+files and/or directories. It returns a hash with the file names as keys
+and the POD name as value. The POD name is derived from the file name
+and its position in the directory tree.</p>
+<p>E.g. when searching in <i>$HOME/perl5lib</i>, the file
+<i>$HOME/perl5lib/MyModule.pm</i> would get the POD name <i>MyModule</i>,
+whereas <i>$HOME/perl5lib/Myclass/Subclass.pm</i> would be
+<i>Myclass::Subclass</i>. The name information can be used for POD
+translators.</p>
+<p>Only text files containing at least one valid POD command are found.</p>
+<p>A warning is printed if more than one POD file with the same POD name
+is found, e.g. <i>CPAN.pm</i> in different directories. This usually
+indicates duplicate occurrences of modules in the <i>@INC</i> search path.</p>
+<p><strong>OPTIONS</strong> The first argument for <strong>pod_find</strong> may be a hash reference
+with options. The rest are either directories that are searched
+recursively or files.  The POD names of files are the plain basenames
+with any Perl-like extension (.pm, .pl, .pod) stripped.</p>
+<ul>
+<li><a id="-verbose-%3d%3e-1"></a><strong><pre>
+-<span class="w">verbose</span> <span class="cm">=&gt;</span> <span class="n">1</span></code>
+</strong>
+<p>Print progress information while scanning.</p>
+</li>
+<li><a id="-perl-%3d%3e-1"></a><strong><pre>
+-<span class="w">perl</span> <span class="cm">=&gt;</span> <span class="n">1</span></code>
+</strong>
+<p>Apply Perl-specific heuristics to find the correct PODs. This includes
+stripping Perl-like extensions, omitting subdirectories that are numeric
+but do <i>not</i> match the current Perl interpreter's version id, suppressing
+<i>site_perl</i> as a module hierarchy name etc.</p>
+</li>
+<li><a id="-script-%3d%3e-1"></a><strong><pre>
+-<span class="w">script</span> <span class="cm">=&gt;</span> <span class="n">1</span></code>
+</strong>
+<p>Search for PODs in the current Perl interpreter's installation 
+<strong>scriptdir</strong>. This is taken from the local <a href="../Config.html">Config</a> module.</p>
+</li>
+<li><a id="-inc-%3d%3e-1"></a><strong><pre>
+-<span class="w">inc</span> <span class="cm">=&gt;</span> <span class="n">1</span></code>
+</strong>
+<p>Search for PODs in the current Perl interpreter's <i>@INC</i> paths. This
+automatically considers paths specified in the <pre>
+<span class="w">PERL5LIB</span></code>
+ environment
+as this is included in <i>@INC</i> by the Perl interpreter itself.</p>
+</li>
+</ul>
+<a id="simplify_name(-%24str-)"></a><h3 class='h3' ><pre>
+<span class="i">simplify_name</span><span class="s">(</span> <span class="i">$str</span> <span class="s">)</span></code>
+</h3>
+<p>The function <strong>simplify_name</strong> is equivalent to <strong>basename</strong>, but also
+strips Perl-like extensions (.pm, .pl, .pod) and extensions like
+<i>.bat</i>, <i>.cmd</i> on Win32 and OS/2, or <i>.com</i> on VMS, respectively.</p>
+<a id="pod_where(-%7b-%25opts-%7d%2c-%24pod-)"></a><h3 class='h3' ><pre>
+<span class="i">pod_where</span><span class="s">(</span> <span class="s">{</span> <span class="i">%opts</span> <span class="s">}</span><span class="cm">,</span> <span class="i">$pod</span> <span class="s">)</span></code>
+</h3>
+<p>Returns the location of a pod document given a search directory
+and a module (e.g. <pre>
+<span class="w">File::Find</span></code>
+) or script (e.g. <pre>
+<span class="w">perldoc</span></code>
+) name.</p>
+<p>Options:</p>
+<ul>
+<li><a id="-inc-%3d%3e-1"></a><strong><pre>
+-<span class="w">inc</span> <span class="cm">=&gt;</span> <span class="n">1</span></code>
+</strong>
+<p>Search @INC for the pod and also the <pre>
+<span class="w">scriptdir</span></code>
+ defined in the
+<a href="../Config.html">Config</a> module.</p>
+</li>
+<li><a id="-dirs-%3d%3e-%5b-%24dir1%2c-%24dir2%2c-...-%5d"></a><strong><pre>
+-<span class="w">dirs</span> <span class="cm">=&gt;</span> <span class="s">[</span> <span class="i">$dir1</span><span class="cm">,</span> <span class="i">$dir2</span><span class="cm">,</span> ... <span class="s">]</span></code>
+</strong>
+<p>Reference to an array of search directories. These are searched in order
+before looking in <pre>
+<span class="i">@INC</span></code>
+ (if <strong>-inc</strong>). Current directory is used if
+none are specified.</p>
+</li>
+<li><a id="-verbose-%3d%3e-1"></a><strong><pre>
+-<span class="w">verbose</span> <span class="cm">=&gt;</span> <span class="n">1</span></code>
+</strong>
+<p>List directories as they are searched</p>
+</li>
+</ul>
+<p>Returns the full path of the first occurrence to the file.
+Package names (eg 'A::B') are automatically converted to directory
+names in the selected directory. (eg on unix 'A::B' is converted to
+'A/B'). Additionally, '.pm', '.pl' and '.pod' are appended to the
+search automatically if required.</p>
+<p>A subdirectory <i>pod/</i> is also checked if it exists in any of the given
+search directories. This ensures that e.g. <a href="../perlfunc.html">perlfunc</a> is
+found.</p>
+<p>It is assumed that if a module name is supplied, that that name
+matches the file name. Pods are not opened to check for the 'NAME'
+entry.</p>
+<p>A check is made to make sure that the file that is found does 
+contain some pod documentation.</p>
+<a id="contains_pod(-%24file-%2c-%24verbose-)"></a><h3 class='h3' ><pre>
+<span class="i">contains_pod</span><span class="s">(</span> <span class="i">$file</span> <span class="cm">,</span> <span class="i">$verbose</span> <span class="s">)</span></code>
+</h3>
+<p>Returns true if the supplied filename (not POD module) contains some pod
+information.</p>
+<a id="AUTHOR"></a><h2 class='h2' >AUTHOR</h2>
+<p>Please report bugs using <a href="http://rt.cpan.org">http://rt.cpan.org</a>.</p>
+<p>Marek Rouchal &lt;marekr@cpan.org&gt;,
+heavily borrowing code from Nick Ing-Simmons' PodToHtml.</p>
+<p>Tim Jenness &lt;t.jenness@jach.hawaii.edu&gt; provided
+<pre>
+<span class="w">pod_where</span></code>
+ and <pre>
+<span class="w">contains_pod</span></code>
+.</p>
+<p><strong>Pod::Find</strong> is part of the <a href="../Pod/Parser.html">Pod::Parser</a> distribution.</p>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<p><a href="../Pod/Parser.html">Pod::Parser</a>, <a href="../Pod/Checker.html">Pod::Checker</a>, <a href="../perldoc.html">perldoc</a></p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><ul><li><a href="#pod_find(-%7b-%25opts-%7d-%2c-%40directories-)">pod_find( { %opts } , @directories )</a></li><li><a href="#simplify_name(-%24str-)">simplify_name( $str )</a></li><li><a href="#pod_where(-%7b-%25opts-%7d%2c-%24pod-)">pod_where( { %opts }, $pod )</a></li><li><a href="#contains_pod(-%24file-%2c-%24verbose-)">contains_pod( $file , $verbose )</a></li></ul><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="perl5219delta - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>perl5219delta - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.22.0/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.22.0/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.22.0/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.22.0/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.22.0/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.22.0/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.22.0/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.22.0/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.22.0/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.22.0/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.22.0/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.22.0/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.22.0/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.22.0/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.22.0/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="index-history.html">History / Changes</a> &gt;
+      
+    
+    perl5219delta
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 22.0 documentation</h1>
+                  </div>
+                  <h1>perl5219delta</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#Notice">Notice</a></li><li><a href="#Core-Enhancements">Core Enhancements</a></li><ul><li><a href="#qr%2f%5cb%7bgcb%7d%2f-is-now-handled-in-regular-expressions">qr/\b{gcb}/ is now handled in regular expressions</a></li><li><a href="#qr%2f%5cb%7bwb%7d%2f-is-now-handled-in-regular-expressions">qr/\b{wb}/ is now handled in regular expressions</a></li><li><a href="#qr%2f%5cb%7bsb%7d%2f-is-now-handled-in-regular-expressions">qr/\b{sb}/ is now handled in regular expressions</a></li><li><a href="#New-bitwise-operators">New bitwise operators</a></li><li><a href="#no-re-covers-more-and-is-lexical">no re covers more and is lexical</a></li></ul><li><a href="#Incompatible-Changes">Incompatible Changes</a></li><li><a href="#Modules-and-Pragmata">Modules and Pragmata</a></li><ul><li><a href="#Updated-Modules-and-Pragmata">Updated Modules and Pragmata</a></li></ul><li><a href="#Documentation">Documentation</a></li><ul><li><a href="#New-Documentation">New Documentation</a></li><li><a href="#Changes-to-Existing-Documentation">Changes to Existing Documentation</a></li></ul><li><a href="#Diagnostics">Diagnostics</a></li><ul><li><a href="#New-Diagnostics">New Diagnostics</a></li><li><a href="#Changes-to-Existing-Diagnostics">Changes to Existing Diagnostics</a></li></ul><li><a href="#Utility-Changes">Utility Changes</a></li><ul><li><a href="#the-h2ph-manpage">the h2ph manpage</a></li><li><a href="#the-encguess-manpage">the encguess manpage</a></li></ul><li><a href="#Configuration-and-Compilation">Configuration and Compilation</a></li><li><a href="#Testing">Testing</a></li><li><a href="#Deprecations">Deprecations</a></li><ul><li><a href="#Support-for-new-warnings-categories-outside-of-%22all%22">Support for new warnings categories outside of "all"</a></li></ul><li><a href="#Platform-Support">Platform Support</a></li><ul><li><a href="#Platform-Specific-Notes">Platform-Specific Notes</a></li></ul><li><a href="#Selected-Bug-Fixes">Selected Bug Fixes</a></li><li><a href="#Acknowledgements">Acknowledgements</a></li><li><a href="#Reporting-Bugs">Reporting Bugs</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>perl5219delta - what is new for perl v5.21.9</p>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>This document describes differences between the 5.21.8 release and the 5.21.9
+release.</p>
+<p>If you are upgrading from an earlier release such as 5.21.7, first read
+<a href="perl5218delta.html">perl5218delta</a>, which describes differences between 5.21.7 and 5.21.8.</p>
+<a id="Notice"></a><h2 class='h2' >Notice</h2>
+<p>With this release we are now in the user-visible changes portion of the code
+freeze as we prepare for the next stable release of Perl 5.</p>
+<a id="Core-Enhancements"></a><h2 class='h2' >Core Enhancements</h2>
+<a id="qr%2f%5cb%7bgcb%7d%2f-is-now-handled-in-regular-expressions"></a><h3 class='h3' >qr/\b{gcb}/ is now handled in regular expressions</h3>
+<p><pre>
+<span class="w">gcb</span></code>
+ stands for Grapheme Cluster Boundary.  It is a Unicode property
+that finds the boundary between sequences of characters that look like a
+single character to a native speaker of a language.  Perl has long had
+the ability to deal with these through the <pre>
+\<span class="w">X</span></code>
+ regular escape
+sequence.  Now, there is an alternative way of handling these.  See
+<a href="perlrebackslash.html#%5cb%7b%7d%2c-%5cb%2c-%5cB%7b%7d%2c-%5cB">\b{}, \b, \B{}, \B in perlrebackslash</a> for details.</p>
+<a id="qr%2f%5cb%7bwb%7d%2f-is-now-handled-in-regular-expressions"></a><h3 class='h3' >qr/\b{wb}/ is now handled in regular expressions</h3>
+<p><pre>
+<span class="w">wb</span></code>
+ stands for Word Boundary.  It is a Unicode property
+that finds the boundary between words.  This is similar to the plain
+<pre>
+\<span class="w">b</span></code>
+ (without braces) but is more suitable for natural language
+processing.  It knows, for example that apostrophes can occur in the
+middle of words.  See <a href="perlrebackslash.html#%5cb%7b%7d%2c-%5cb%2c-%5cB%7b%7d%2c-%5cB">\b{}, \b, \B{}, \B in perlrebackslash</a> for details.</p>
+<a id="qr%2f%5cb%7bsb%7d%2f-is-now-handled-in-regular-expressions"></a><h3 class='h3' >qr/\b{sb}/ is now handled in regular expressions</h3>
+<p><pre>
+<span class="w">sb</span></code>
+ stands for Sentence Boundary.  It is a Unicode property
+to aid in parsing natural language sentences.
+See <a href="perlrebackslash.html#%5cb%7b%7d%2c-%5cb%2c-%5cB%7b%7d%2c-%5cB">\b{}, \b, \B{}, \B in perlrebackslash</a> for details.</p>
+<a id="New-bitwise-operators"></a><h3 class='h3' >New bitwise operators</h3>
+<p>A new experimental facility has been added that makes the four standard
+bitwise operators (<pre>
+<span class="i">&amp; |</span> ^ ~</code>
+) treat their operands consistently as
+numbers, and introduces four new dotted operators (<pre>
+&amp;. |. ^. ~.</code>
+) that
+treat their operands consistently as strings.  The same applies to the
+assignment variants (<pre>
+&amp;= |= ^= &amp;.= |.= ^.=</code>
+).</p>
+<p>To use this, enable the "bitwise" feature and disable the
+"experimental::bitwise" warnings category.  See <a href="perlop.html#Bitwise-String-Operators">Bitwise String Operators in perlop</a> for details.  [rt.perl.org #123466]</p>
+<a id="no-re-covers-more-and-is-lexical"></a><h3 class='h3' ><pre>
+<a class="l_k" href="functions/no.html">no</a> <span class="w">re</span></code>
+ covers more and is lexical</h3>
+<p>Previously running <pre>
+<a class="l_k" href="functions/no.html">no</a> <span class="w">re</span></code>
+ would only turn off a few things. Now it
+turns off all the enabled things. For example, previously, you
+couldn't turn off debugging, once enabled, inside the same block.</p>
+<a id="Incompatible-Changes"></a><h2 class='h2' >Incompatible Changes</h2>
+<p>There are no changes intentionally incompatible with 5.21.8.
+If any exist, they are bugs, and we request that you submit a
+report.  See <a href="#Reporting-Bugs">Reporting Bugs</a> below.</p>
+<a id="Modules-and-Pragmata"></a><h2 class='h2' >Modules and Pragmata</h2>
+<a id="Updated-Modules-and-Pragmata"></a><h3 class='h3' >Updated Modules and Pragmata</h3>
+<ul>
+<li>
+<p><a href="attributes.html">attributes</a> has been upgraded from version 0.25 to 0.26.</p>
+</li>
+<li>
+<p><a href="B.html">B</a> has been upgraded from version 1.55 to 1.56.</p>
+</li>
+<li>
+<p><a href="B/Debug.html">B::Debug</a> has been upgraded from version 1.22 to 1.23.</p>
+</li>
+<li>
+<p><a href="B/Deparse.html">B::Deparse</a> has been upgraded from version 1.32 to 1.33.</p>
+<ul>
+<li>
+<p>Deparse now provides a defined state sub in inner subs.</p>
+</li>
+<li>
+<p>Since version Perl 5.21.6, Deparse would croak on special constants, but
+this has now been fixed.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="Benchmark.html">Benchmark</a> has been upgraded from version 1.19 to 1.20.</p>
+</li>
+<li>
+<p><a href="bigint.html">bigint</a>, <a href="bignum.html">bignum</a>, <a href="bigrat.html">bigrat</a> have been upgraded to version 0.39.</p>
+<p>Document in CAVEATS that using strings as numbers won't always invoke
+the big number overloading, and how to invoke it.  [rt.perl.org #123064]</p>
+</li>
+<li>
+<p><a href="bignum.html">bignum</a> has been upgraded from version 0.38 to 0.39.</p>
+</li>
+<li>
+<p><a href="Carp.html">Carp</a> has been upgraded from version 1.34 to 1.35.</p>
+<ul>
+<li>
+<p>Carp now handles non-ASCII platforms better.</p>
+</li>
+<li>
+<p>Off-by-one error fix for Perl &lt; 5.14.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="Config/Perl/V.html">Config::Perl::V</a> has been upgraded from version 0.22 to 0.23.</p>
+</li>
+<li>
+<p><a href="constant.html">constant</a> has been upgraded from version 1.32 to 1.33.</p>
+</li>
+<li>
+<p><a href="CPAN/Meta/Requirements.html">CPAN::Meta::Requirements</a> has been upgraded from version 2.131 to 2.132</p>
+</li>
+<li>
+<p><a href="Data/Dumper.html">Data::Dumper</a> has been upgraded from version 2.156 to 2.157.</p>
+</li>
+<li>
+<p><a href="Devel/Peek.html">Devel::Peek</a> has been upgraded from version 1.21 to 1.22.</p>
+</li>
+<li>
+<p><a href="DynaLoader.html">DynaLoader</a> has been upgraded from version 1.30 to 1.31.</p>
+</li>
+<li>
+<p><a href="Encode.html">Encode</a> has been upgraded from version 2.67 to 2.70.</p>
+<p>Building in C++ mode on Windows now works.</p>
+</li>
+<li>
+<p><a href="encoding.html">encoding</a> has been upgraded from version 2.12 to 2.13.</p>
+</li>
+<li>
+<p><a href="Errno.html">Errno</a> has been upgraded from version 1.22 to 1.23.</p>
+<p>Add <pre>
+-<span class="w">P</span></code>
+ to the preprocessor command-line on GCC 5.  GCC added extra
+line directives, breaking parsing of error code definitions.  [rt.perl.org
+#123784]</p>
+</li>
+<li>
+<p><a href="ExtUtils/Miniperl.html">ExtUtils::Miniperl</a> has been upgraded from version 1.03 to 1.04.</p>
+</li>
+<li>
+<p><a href="feature.html">feature</a> has been upgraded from version 1.39 to 1.40.</p>
+</li>
+<li>
+<p><a href="HTTP/Tiny.html">HTTP::Tiny</a> has been upgraded from version 0.053 to 0.054.</p>
+</li>
+<li>
+<p><a href="Opcode.html">Opcode</a> has been upgraded from version 1.31 to 1.32.</p>
+</li>
+<li>
+<p><a href="overload.html">overload</a> has been upgraded from version 1.24 to 1.25.</p>
+</li>
+<li>
+<p><a href="Perl/OSType.html">Perl::OSType</a> has been upgraded from version 1.007 to 1.008.</p>
+</li>
+<li>
+<p><a href="perlfaq.html">perlfaq</a> has been upgraded from version 5.0150046 to 5.021009.</p>
+</li>
+<li>
+<p><a href="PerlIO/scalar.html">PerlIO::scalar</a> has been upgraded from version 0.21 to 0.22.</p>
+<p>Attempting to write at file positions impossible for the platform now
+fail early rather than wrapping at 4GB.</p>
+</li>
+<li>
+<p><a href="Pod/Parser.html">Pod::Parser</a> has been upgraded from version 1.62 to 1.63.</p>
+</li>
+<li>
+<p><a href="Pod/Perldoc.html">Pod::Perldoc</a> has been upgraded from version 3.24 to 3.25.</p>
+</li>
+<li>
+<p><a href="POSIX.html">POSIX</a> has been upgraded from version 1.49 to 1.51.</p>
+</li>
+<li>
+<p><a href="re.html">re</a> has been upgraded from version 0.30 to 0.31.</p>
+</li>
+<li>
+<p><a href="Socket.html">Socket</a> has been upgraded from version 2.016 to 2.018.</p>
+</li>
+<li>
+<p><a href="Storable.html">Storable</a> has been upgraded from version 2.52 to 2.53.</p>
+</li>
+<li>
+<p><a href="Test/Simple.html">Test::Simple</a> has been upgraded from version 1.301001_097 to 1.301001_098.</p>
+</li>
+<li>
+<p><a href="threads/shared.html">threads::shared</a> has been upgraded from version 1.47 to 1.48.</p>
+</li>
+<li>
+<p><a href="Unicode/Collate.html">Unicode::Collate</a> has been upgraded from version 1.10 to 1.11.</p>
+</li>
+<li>
+<p><a href="Unicode/UCD.html">Unicode::UCD</a> has been upgraded from version 0.59 to 0.61.</p>
+<ul>
+<li>
+<p>A new function <a href="Unicode/UCD.html#prop_values()">property_values()</a>
+has been added to return a given property's possible values.</p>
+</li>
+<li>
+<p>A new function <a href="Unicode/UCD.html#charprop()">charprop()</a>
+has been added to return the value of a given property for a given code
+point.</p>
+</li>
+<li>
+<p>A new function <a href="Unicode/UCD.html#charprops_all()">charprops_all()</a>
+has been added to return the values of all Unicode properties for a
+given code point.</p>
+</li>
+<li>
+<p>A bug has been fixed so that <a href="Unicode/UCD.html#prop_aliases()">propaliases()</a>
+returns the correct short and long names for the Perl extensions where
+it was incorrect.</p>
+</li>
+<li>
+<p>A bug has been fixed so that
+<a href="Unicode/UCD.html#prop_value_aliases()">prop_value_aliases()</a>
+returns <code class="inline"><a class="l_k" href="functions/undef.html">undef</a></code> instead of a wrong result for properties that are Perl
+extensions.</p>
+</li>
+<li>
+<p>This module now works on EBCDIC platforms.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="https://search.cpan.org/perldoc/VMS::Stdio">VMS::Stdio</a> has been upgraded from version 2.4 to 2.41.</p>
+</li>
+<li>
+<p><a href="warnings.html">warnings</a> has been upgraded from version 1.30 to 1.31.</p>
+</li>
+<li>
+<p><a href="https://search.cpan.org/perldoc/Win32">Win32</a> has been upgraded from version 0.49 to 0.51.</p>
+<p>GetOSName() now supports Windows 8.1, and building in C++ mode now works.</p>
+</li>
+<li>
+<p><a href="https://search.cpan.org/perldoc/Win32API::File">Win32API::File</a> has been upgraded from version 0.1201 to 0.1202</p>
+<p>Building in C++ mode now works.</p>
+</li>
+</ul>
+<a id="Documentation"></a><h2 class='h2' >Documentation</h2>
+<a id="New-Documentation"></a><h3 class='h3' >New Documentation</h3>
+<a id="the-perlrebackslash-manpage"></a><h4 class='h4' ><a href="perlrebackslash.html">perlrebackslash</a></h4>
+<ul>
+<li>
+<p>Added documentation of <pre>
+\<span class="i">b</span><span class="s">{</span><span class="w">sb</span><span class="s">}</span></code>
+, <pre>
+\<span class="i">b</span><span class="s">{</span><span class="w">wb</span><span class="s">}</span></code>
+, <pre>
+\<span class="i">b</span><span class="s">{</span><span class="w">gcb</span><span class="s">}</span></code>
+, and <pre>
+\<span class="i">b</span><span class="s">{</span><span class="w">g</span><span class="s">}</span></code>
+.</p>
+</li>
+</ul>
+<a id="the-perlrequick-manpage"></a><h4 class='h4' ><a href="perlrequick.html">perlrequick</a></h4>
+<ul>
+<li>
+<p>Added example for <pre>
+\<span class="i">b</span><span class="s">{</span><span class="w">wb</span><span class="s">}</span></code>
+.</p>
+</li>
+</ul>
+<a id="the-perlretut-manpage"></a><h4 class='h4' ><a href="perlretut.html">perlretut</a></h4>
+<ul>
+<li>
+<p>Added example for <pre>
+\<span class="i">b</span><span class="s">{</span><span class="w">wb</span><span class="s">}</span></code>
+.</p>
+</li>
+</ul>
+<a id="Changes-to-Existing-Documentation"></a><h3 class='h3' >Changes to Existing Documentation</h3>
+<a id="the-perlunicode-manpage"></a><h4 class='h4' ><a href="perlunicode.html">perlunicode</a></h4>
+<ul>
+<li>
+<p>Update <strong>Default Word Boundaries</strong> under
+<a href="perlunicode.html#Unicode-Regular-Expression-Support-Level">Unicode Regular Expression Support Level in perlunicode</a>'s
+<strong>Extended Unicode Support</strong>.</p>
+</li>
+</ul>
+<a id="the-perlunicook-manpage"></a><h4 class='h4' ><a href="perlunicook.html">perlunicook</a></h4>
+<ul>
+<li>
+<p>Clarify that autodie &gt;= 2.26 works with <pre>
+<a class="l_k" href="functions/use.html">use</a> <a class="l_k" href="functions/open.html">open</a></code>
+.</p>
+</li>
+<li>
+<p>Correct warning message for <pre>
+<a class="l_k" href="functions/use.html">use</a> <span class="w">autodie</span></code>
+ and <pre>
+<a class="l_k" href="functions/use.html">use</a> <a class="l_k" href="functions/open.html">open</a></code>
+.</p>
+</li>
+</ul>
+<a id="the-perlfaq-manpage"></a><h4 class='h4' ><a href="perlfaq.html">perlfaq</a></h4>
+<ul>
+<li>
+<p><a href="perlfaq.html">perlfaq</a> has been synchronized with version 5.021009 from CPAN.</p>
+</li>
+</ul>
+<a id="the-perlop-manpage"></a><h4 class='h4' ><a href="perlop.html">perlop</a></h4>
+<ul>
+<li>
+<p>Correct the version number which removes <code class="inline"><a class="l_k" href="functions/m.html">m?PATTERN?</a></code>. It was Perl 5.22.0.</p>
+</li>
+</ul>
+<a id="the-perlvar-manpage"></a><h4 class='h4' ><a href="perlvar.html">perlvar</a></h4>
+<ul>
+<li>
+<p>Further clarify version number representations and usage.</p>
+</li>
+</ul>
+<a id="the-perlmodstyle-manpage"></a><h4 class='h4' ><a href="perlmodstyle.html">perlmodstyle</a></h4>
+<ul>
+<li>
+<p>Instead of pointing to the module list, we are now pointing to
+<a href="http://prepan.org/">PrePAN</a>.</p>
+</li>
+</ul>
+<a id="Diagnostics"></a><h2 class='h2' >Diagnostics</h2>
+<p>The following additions or changes have been made to diagnostic output,
+including warnings and fatal error messages.  For the complete list of
+diagnostic messages, see <a href="perldiag.html">perldiag</a>.</p>
+<a id="New-Diagnostics"></a><h3 class='h3' >New Diagnostics</h3>
+<a id="New-Warnings"></a><h4 class='h4' >New Warnings</h4>
+<ul>
+<li>
+<p><a href="perldiag.html#'%25s'-is-an-unknown-bound-type-in-regex%3b-marked-by-%3c---HERE-in-m%2f%25s%2f">'%s' is an unknown bound type in regex</a></p>
+<p>You used <pre>
+\<span class="i">b</span><span class="s">{</span>...<span class="s">}</span></code>
+ or <pre>
+\<span class="i">B</span><span class="s">{</span>...<span class="s">}</span></code>
+ and the <pre>
+...</code>
+ is not known to
+Perl.  The current valid ones are given in
+<a href="perlrebackslash.html#%5cb%7b%7d%2c-%5cb%2c-%5cB%7b%7d%2c-%5cB">\b{}, \b, \B{}, \B in perlrebackslash</a>.</p>
+</li>
+<li>
+<p><a href="perldiag.html#Use-of-%5cb%7b%7d-for-non-UTF-8-locale-is-wrong.-Assuming-a-UTF-8-locale">Use of \b{} for non-UTF-8 locale is wrong. Assuming a UTF-8 locale</a></p>
+<p>You are matching a regular expression using locale rules,
+and a Unicode boundary is being matched, but the locale is not a Unicode
+one.  This doesn't make sense.  Perl will continue, assuming a Unicode
+(UTF-8) locale, but the results could well be wrong except if the locale
+happens to be ISO-8859-1 (Latin1) where this message is spurious and can
+be ignored.</p>
+</li>
+<li>
+<p><a href="perldiag.html#Using-%2fu-for-'%25s'-instead-of-%2f%25s-in-regex%3b-marked-by-%3c---HERE-in-m%2f%25s%2f">Using /u for '%s' instead of /%s in regex; marked by &lt;-- HERE in m/%s/</a></p>
+<p>You used a Unicode boundary (<pre>
+\<span class="i">b</span><span class="s">{</span>...<span class="s">}</span></code>
+ or <pre>
+\<span class="i">B</span><span class="s">{</span>...<span class="s">}</span></code>
+) in a
+portion of a regular expression where the character set modifiers <code class="inline">/a</code>
+or <code class="inline">/aa</code> are in effect.  These two modifiers indicate an ASCII
+interpretation, and this doesn't make sense for a Unicode definition.
+The generated regular expression will compile so that the boundary uses
+all of Unicode.  No other portion of the regular expression is affected.</p>
+</li>
+<li>
+<p><a href="perldiag.html#The-bitwise-feature-is-experimental">The bitwise feature is experimental</a></p>
+<p>This warning is emitted if you use bitwise
+operators (<pre>
+<span class="i">&amp; |</span> ^ ~ &amp;. |. ^. ~.</code>
+) with the "bitwise" feature enabled.
+Simply suppress the warning if you want to use the feature, but know
+that in doing so you are taking the risk of using an experimental
+feature which may change or be removed in a future Perl version:</p>
+<pre>
+    <a class="l_k" href="functions/no.html">no</a> <span class="w">warnings</span> <span class="q">&quot;experimental::bitwise&quot;</span><span class="sc">;</span>
+    <a class="l_k" href="functions/use.html">use</a> <span class="w">feature</span> <span class="q">&quot;bitwise&quot;</span><span class="sc">;</span>
+    <span class="i">$x</span> |.= <span class="i">$y</span><span class="sc">;</span></pre>
+</li>
+</ul>
+<a id="Changes-to-Existing-Diagnostics"></a><h3 class='h3' >Changes to Existing Diagnostics</h3>
+<ul>
+<li>
+<p><strong>Unusual use of %s in void context</strong> has been removed. It might
+come back in a future release.</p>
+</li>
+<li>
+<p><a href="perldiag.html#Argument-%22%25s%22-isn't-numeric%25s">Argument %s isn't numeric%s</a>
+now adds the following note:</p>
+<div class="verbatim"><ol><li>    Note that for the C&lt;Inf&gt; and C&lt;NaN&gt; (infinity and not-a-number) the</li><li>    definition of "numeric" is somewhat unusual: the strings themselves</li><li>    (like "Inf") are considered numeric, and anything following them is</li><li>    considered non-numeric.</li></ol></div></li>
+<li>
+<p><strong>Possible precedence problem on bitwise %c operator</strong> reworded as
+<a href="perldiag.html#Possible-precedence-problem-on-bitwise-%25s-operator">Possible precedence problem on bitwise %s operator</a>.</p>
+</li>
+</ul>
+<a id="Utility-Changes"></a><h2 class='h2' >Utility Changes</h2>
+<a id="the-h2ph-manpage"></a><h3 class='h3' ><a href="h2ph.html">h2ph</a></h3>
+<ul>
+<li>
+<p><i>h2ph</i> now handles hexadecimal constants in the compiler's predefined
+macro definitions, as visible in <pre>
+<span class="i">$Config</span>{<span class="w">cppsymbols</span>}</code>
+.  [rt.perl.org
+#123784]</p>
+</li>
+</ul>
+<a id="the-encguess-manpage"></a><h3 class='h3' ><a href="encguess.html">encguess</a></h3>
+<ul>
+<li>
+<p>No longer depends on non-core module anymore.</p>
+</li>
+</ul>
+<a id="Configuration-and-Compilation"></a><h2 class='h2' >Configuration and Compilation</h2>
+<ul>
+<li>
+<p><i>Configure</i> now checks for <i>lrintl</i>, <i>lroundl</i>, <i>llrintl</i>, and <i>llroundl</i>.</p>
+</li>
+</ul>
+<a id="Testing"></a><h2 class='h2' >Testing</h2>
+<ul>
+<li>
+<p>Added <i>t/op/dump.t</i> for testing <code class="inline"><a class="l_k" href="functions/dump.html">dump</a></code>.</p>
+</li>
+</ul>
+<a id="Deprecations"></a><h2 class='h2' >Deprecations</h2>
+<a id="Support-for-new-warnings-categories-outside-of-%22all%22"></a><h3 class='h3' >Support for new warnings categories outside of "all"</h3>
+<p>The new option for warnings outside the <strong>all</strong> category in the <a href="warnings.html">warnings</a>
+pragma has been removed for now.</p>
+<p>For more context, you can refer to the following
+<a href="http://www.nntp.perl.org/group/perl.perl5.porters/2015/01/msg225066.html">discussion thread</a>.</p>
+<a id="Platform-Support"></a><h2 class='h2' >Platform Support</h2>
+<a id="Platform-Specific-Notes"></a><h3 class='h3' >Platform-Specific Notes</h3>
+<a id="Win32"></a><h4 class='h4' >Win32</h4>
+<ul>
+<li>
+<p>Perl can now be built in C++ mode on Windows by setting the makefile macro
+<pre>
+<span class="w">USE_CPLUSPLUS</span></code>
+ to the value "define".</p>
+</li>
+<li>
+<p>List form pipe open no longer falls back to the shell.</p>
+</li>
+<li>
+<p>In release 5.21.8 compiling on VC with dmake was broken. Fixed.</p>
+</li>
+<li>
+<p>New <pre>
+<span class="w">DebugSymbols</span></code>
+ and <pre>
+<span class="w">DebugFull</span></code>
+ configuration options added to
+Windows makefiles.</p>
+</li>
+<li>
+<p><a href="B.html">B</a> now compiles again on Windows.</p>
+</li>
+</ul>
+<a id="Solaris"></a><h4 class='h4' >Solaris</h4>
+<p>Look for the Sun Studio compiler in both <i>/opt/solstudio*</i> and
+<i>/opt/solarisstudio*</i>.</p>
+<a id="VMS"></a><h4 class='h4' >VMS</h4>
+<ul>
+<li>
+<p>When spawning a subprocess without waiting, the return value is now
+the correct PID.</p>
+</li>
+<li>
+<p>Fix a prototype so linking doesn't fail under the VMS C++ compiler.</p>
+</li>
+</ul>
+<a id="Selected-Bug-Fixes"></a><h2 class='h2' >Selected Bug Fixes</h2>
+<ul>
+<li>
+<p>Patterns starting with <pre>
+<span class="q">/.*/</span></code>
+ are now fast again. [rt.perl.org #123743]</p>
+</li>
+<li>
+<p>The original visible value of <pre>
+<span class="i">$/</span></code>
+ is now preserved when it is set to
+an invalid value.  Previously if you set <pre>
+<span class="i">$/</span></code>
+ to a reference to an
+array, for example, perl would produce a runtime error and not set
+<pre>
+<span class="w">PL_rs</span></code>
+, but perl code that checked <pre>
+<span class="i">$/</span></code>
+ would see the array
+reference.  [rt.perl.org #123218]</p>
+</li>
+<li>
+<p>In a regular expression pattern, a POSIX class, like <code class="inline">[:ascii:]</code>, must
+be inside a bracketed character class, like <code class="inline">/qr[[:ascii:]]</code>.  A
+warning is issued when something looking like a POSIX class is not
+inside a bracketed class.  That warning wasn't getting generated when
+the POSIX class was negated: <code class="inline">[:^ascii:]</code>.  This is now fixed.</p>
+</li>
+<li>
+<p>Fix a couple of other size calculation overflows.  [rt.perl.org #123554]</p>
+</li>
+<li>
+<p>A bug introduced in 5.21.6, <pre>
+<a class="l_k" href="functions/dump.html">dump</a> <span class="w">LABEL</span></code>
+ acted the same as <pre>
+<a class="l_k" href="functions/goto.html">goto</a>
+<span class="j">LABEL</span></code>
+.  This has been fixed.  [rt.perl.org #123836]</p>
+</li>
+<li>
+<p>Perl 5.14.0 introduced a bug whereby <pre>
+<a class="l_k" href="functions/eval.html">eval</a> <span class="s">{</span> <span class="j">LABEL:</span> <span class="s">}</span></code>
+ would crash.  This
+has been fixed.  [rt.perl.org #123652]</p>
+</li>
+<li>
+<p>Various crashes due to the parser getting confused by syntax errors have
+been fixed.  [rt.perl.org #123617] [rt.perl.org #123737]
+[rt.perl.org #123753] [rt.perl.org #123677]</p>
+</li>
+<li>
+<p>Code like <pre>
+<span class="q">/$a[/</span></code>
+ used to read the next line of input and treat it as
+though it came immediately after the opening bracket.  Some invalid code
+consequently would parse and run, but some code caused crashes, so this is
+now disallowed.  [rt.perl.org #123712]</p>
+</li>
+<li>
+<p>Fix argument underflow for <code class="inline"><a class="l_k" href="functions/pack.html">pack</a></code>.  [rt.perl.org #123874]</p>
+</li>
+<li>
+<p>Fix handling of non-strict <pre>
+\<span class="w">x</span><span class="s">{</span><span class="s">}</span></code>
+. Now <pre>
+\<span class="w">x</span><span class="s">{</span><span class="s">}</span></code>
+ is equivalent to <pre>
+\<span class="i">x</span><span class="s">{</span><span class="n">0</span><span class="s">}</span></code>
+
+instead of faulting.</p>
+</li>
+<li>
+<p><pre>
+<a class="l_k" href="functions/stat.html">stat</a> -t</code>
+ is now no longer treated as stackable, just like <pre>
+-t <a class="l_k" href="functions/stat.html">stat</a></code>
+.
+[rt.perl.org #123816]</p>
+</li>
+<li>
+<p>The following no longer causes a SEGV: <code class="inline"><a class="l_k" href="functions/qr.html">qr{x+(y(?0))*}</a></code>.</p>
+</li>
+<li>
+<p>Fixed infinite loop in parsing backrefs in regexp patterns.</p>
+</li>
+<li>
+<p>Several minor bug fixes in behavior of Inf and NaN, including
+warnings when stringifying Inf-like or NaN-like strings. For example,
+"NaNcy" doesn't numify to NaN anymore.</p>
+</li>
+<li>
+<p>Only stringy classnames are now shared. This fixes some failures in <a href="https://search.cpan.org/perldoc/autobox">autobox</a>.  [rt.cpan.org #100819]</p>
+</li>
+</ul>
+<a id="Acknowledgements"></a><h2 class='h2' >Acknowledgements</h2>
+<p>Perl 5.21.9 represents approximately 4 weeks of development since Perl 5.21.8
+and contains approximately 170,000 lines of changes across 520 files from 32
+authors.</p>
+<p>Excluding auto-generated files, documentation and release tools, there were
+approximately 160,000 lines of changes to 270 .pm, .t, .c and .h files.</p>
+<p>Perl continues to flourish into its third decade thanks to a vibrant community
+of users and developers. The following people are known to have contributed the
+improvements that became Perl 5.21.9:</p>
+<p>Chad Granum, Chris 'BinGOs' Williams, Craig A. Berry, Dagfinn Ilmari
+Manns&#xe5;ker, Daniel Dragan, David Golden, David Mitchell, Father Chrysostomos,
+H.Merijn Brand, Hugo van der Sanden, James E Keenan, James Raspass, Jarkko
+Hietaniemi, Karen Etheridge, Karl Williamson, Kent Fredric, Lajos Veres, Leon
+Timmermans, Lukas Mai, Mathieu Arnold, Matthew Horsfall, Peter Martini, Petr
+P&#xed;sa&#x159;, Randy Stauner, Ricardo Signes, Sawyer X, Shlomi Fish, Sisyphus, Steve
+Hay, Tony Cook, Yves Orton, &#xc6;var Arnfj&#xf6;r&#xf0; Bjarmason.</p>
+<p>The list above is almost certainly incomplete as it is automatically generated
+from version control history. In particular, it does not include the names of
+the (very much appreciated) contributors who reported issues to the Perl bug
+tracker.</p>
+<p>Many of the changes included in this version originated in the CPAN modules
+included in Perl's core. We're grateful to the entire CPAN community for
+helping Perl to flourish.</p>
+<p>For a more complete list of all of Perl's historical contributors, please see
+the <i>AUTHORS</i> file in the Perl source distribution.</p>
+<a id="Reporting-Bugs"></a><h2 class='h2' >Reporting Bugs</h2>
+<p>If you find what you think is a bug, you might check the articles recently
+posted to the comp.lang.perl.misc newsgroup and the perl bug database at
+https://rt.perl.org/ .  There may also be information at
+<a href="http://www.perl.org/">http://www.perl.org/</a> , the Perl Home Page.</p>
+<p>If you believe you have an unreported bug, please run the <a href="perlbug.html">perlbug</a> program
+included with your release.  Be sure to trim your bug down to a tiny but
+sufficient test case.  Your bug report, along with the output of <pre>
+<span class="w">perl</span> -<span class="w">V</span></code>
+,
+will be sent off to perlbug@perl.org to be analysed by the Perl porting team.</p>
+<p>If the bug you are reporting has security implications, which make it
+inappropriate to send to a publicly archived mailing list, then please send it
+to perl5-security-report@perl.org.  This points to a closed subscription
+unarchived mailing list, which includes all the core committers, who will be
+able to help assess the impact of issues, figure out a resolution, and help
+co-ordinate the release of patches to mitigate or fix the problem across all
+platforms on which Perl is supported.  Please only use this address for
+security issues in the Perl core, not for modules independently distributed on
+CPAN.</p>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<p>The <i>Changes</i> file for an explanation of how to view exhaustive details on
+what changed.</p>
+<p>The <i>INSTALL</i> file for how to build Perl.</p>
+<p>The <i>README</i> file for general stuff.</p>
+<p>The <i>Artistic</i> and <i>Copying</i> files for copyright information.</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#Notice">Notice</a></li><li><a href="#Core-Enhancements">Core Enhancements</a></li><ul><li><a href="#qr%2f%5cb%7bgcb%7d%2f-is-now-handled-in-regular-expressions">qr/\b{gcb}/ is now handled in regular expressions</a></li><li><a href="#qr%2f%5cb%7bwb%7d%2f-is-now-handled-in-regular-expressions">qr/\b{wb}/ is now handled in regular expressions</a></li><li><a href="#qr%2f%5cb%7bsb%7d%2f-is-now-handled-in-regular-expressions">qr/\b{sb}/ is now handled in regular expressions</a></li><li><a href="#New-bitwise-operators">New bitwise operators</a></li><li><a href="#no-re-covers-more-and-is-lexical">no re covers more and is lexical</a></li></ul><li><a href="#Incompatible-Changes">Incompatible Changes</a></li><li><a href="#Modules-and-Pragmata">Modules and Pragmata</a></li><ul><li><a href="#Updated-Modules-and-Pragmata">Updated Modules and Pragmata</a></li></ul><li><a href="#Documentation">Documentation</a></li><ul><li><a href="#New-Documentation">New Documentation</a></li><li><a href="#Changes-to-Existing-Documentation">Changes to Existing Documentation</a></li></ul><li><a href="#Diagnostics">Diagnostics</a></li><ul><li><a href="#New-Diagnostics">New Diagnostics</a></li><li><a href="#Changes-to-Existing-Diagnostics">Changes to Existing Diagnostics</a></li></ul><li><a href="#Utility-Changes">Utility Changes</a></li><ul><li><a href="#the-h2ph-manpage">the h2ph manpage</a></li><li><a href="#the-encguess-manpage">the encguess manpage</a></li></ul><li><a href="#Configuration-and-Compilation">Configuration and Compilation</a></li><li><a href="#Testing">Testing</a></li><li><a href="#Deprecations">Deprecations</a></li><ul><li><a href="#Support-for-new-warnings-categories-outside-of-%22all%22">Support for new warnings categories outside of "all"</a></li></ul><li><a href="#Platform-Support">Platform Support</a></li><ul><li><a href="#Platform-Specific-Notes">Platform-Specific Notes</a></li></ul><li><a href="#Selected-Bug-Fixes">Selected Bug Fixes</a></li><li><a href="#Acknowledgements">Acknowledgements</a></li><li><a href="#Reporting-Bugs">Reporting Bugs</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

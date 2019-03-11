@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="libnetcfg - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>libnetcfg - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.22.3/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.22.3/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.22.3/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.22.3/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.22.3/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.22.3/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.22.3/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.22.3/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.22.3/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.22.3/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.22.3/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.22.3/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.22.3/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.22.3/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.22.3/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.22.3/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.22.3/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.22.3/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.22.3/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.22.3/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.22.3/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.22.3/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.22.3/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.22.3/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.22.3/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.22.3/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.22.3/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.22.3/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.22.3/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.22.3/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.22.3/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.22.3/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.22.3/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.22.3/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="index-utilities.html">Utilities</a> &gt;
+      
+    
+    libnetcfg
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 22.3 documentation</h1>
+                  </div>
+                  <h1>libnetcfg</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#USAGE">USAGE</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#AUTHORS">AUTHORS</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>libnetcfg - configure libnet</p>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>The libnetcfg utility can be used to configure the libnet.
+Starting from perl 5.8 libnet is part of the standard Perl
+distribution, but the libnetcfg can be used for any libnet
+installation.</p>
+<a id="USAGE"></a><h2 class='h2' >USAGE</h2>
+<p>Without arguments libnetcfg displays the current configuration.</p>
+<div class="verbatim"><ol><li>    $ libnetcfg</li><li>    # old config ./libnet.cfg</li><li>    daytime_hosts        ntp1.none.such</li><li>    ftp_int_passive      0</li><li>    ftp_testhost         ftp.funet.fi</li><li>    inet_domain          none.such</li><li>    nntp_hosts           nntp.none.such</li><li>    ph_hosts             </li><li>    pop3_hosts           pop.none.such</li><li>    smtp_hosts           smtp.none.such</li><li>    snpp_hosts           </li><li>    test_exist           1</li><li>    test_hosts           1</li><li>    time_hosts           ntp.none.such</li><li>    # libnetcfg -h for help</li><li>    $</li></ol></div><p>It tells where the old configuration file was found (if found).</p>
+<p>The <pre>
+-<span class="w">h</span></code>
+ option will show a usage message.</p>
+<p>To change the configuration you will need to use either the <pre>
+-c</code>
+ or
+the <pre>
+-d</code>
+ options.</p>
+<p>The default name of the old configuration file is by default
+"libnet.cfg", unless otherwise specified using the -i option,
+<pre>
+-<span class="w">i</span> <span class="w">oldfile</span></code>
+, and it is searched first from the current directory,
+and then from your module path.</p>
+<p>The default name of the new configuration file is "libnet.cfg", and by
+default it is written to the current directory, unless otherwise
+specified using the -o option, <pre>
+-o <span class="w">newfile</span></code>
+.</p>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<p><a href="Net/Config.html">Net::Config</a>, <a href="https://search.cpan.org/perldoc/libnetFAQ">libnetFAQ</a></p>
+<a id="AUTHORS"></a><h2 class='h2' >AUTHORS</h2>
+<p>Graham Barr, the original Configure script of libnet.</p>
+<p>Jarkko Hietaniemi, conversion into libnetcfg for inclusion into Perl 5.8.</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#USAGE">USAGE</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#AUTHORS">AUTHORS</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/3/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/3/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/3/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/3/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/3/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/3/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/3/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/3/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/3/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/3/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/3/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/3/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/3/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/3/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

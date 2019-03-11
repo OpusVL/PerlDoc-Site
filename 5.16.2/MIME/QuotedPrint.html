@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="MIME::QuotedPrint - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>MIME::QuotedPrint - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.16.2/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.16.2/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.16.2/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.16.2/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.16.2/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.16.2/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.16.2/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.16.2/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.16.2/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.16.2/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.16.2/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.16.2/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.16.2/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.16.2/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.16.2/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../index-modules-M.html">Core modules (M)</a> &gt;
+      
+    
+    MIME::QuotedPrint
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 16.2 documentation</h1>
+                  </div>
+                  <h1>MIME::QuotedPrint</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#COPYRIGHT">COPYRIGHT</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>MIME::QuotedPrint - Encoding and decoding of quoted-printable strings</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<pre>
+ <a class="l_k" href="../functions/use.html">use</a> <span class="w">MIME::QuotedPrint</span><span class="sc">;</span>
+
+ <span class="i">$encoded</span> = <span class="i">encode_qp</span><span class="s">(</span><span class="i">$decoded</span><span class="s">)</span><span class="sc">;</span>
+ <span class="i">$decoded</span> = <span class="i">decode_qp</span><span class="s">(</span><span class="i">$encoded</span><span class="s">)</span><span class="sc">;</span></pre>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>This module provides functions to encode and decode strings into and from the
+quoted-printable encoding specified in RFC 2045 - <i>MIME (Multipurpose
+Internet Mail Extensions)</i>.  The quoted-printable encoding is intended
+to represent data that largely consists of bytes that correspond to
+printable characters in the ASCII character set.  Each non-printable
+character (as defined by English Americans) is represented by a
+triplet consisting of the character "=" followed by two hexadecimal
+digits.</p>
+<p>The following functions are provided:</p>
+<ul>
+<li><a id="encode_qp(-%24str)"></a><strong>encode_qp( $str)</strong>
+</li>
+<li><a id="encode_qp(-%24str%2c-%24eol)"></a><strong>encode_qp( $str, $eol)</strong>
+</li>
+<li><a id="encode_qp(-%24str%2c-%24eol%2c-%24binmode-)"></a><strong>encode_qp( $str, $eol, $binmode )</strong>
+<p>This function returns an encoded version of the string ($str) given as
+argument.</p>
+<p>The second argument ($eol) is the line-ending sequence to use.  It is
+optional and defaults to "\n".  Every occurrence of "\n" is replaced
+with this string, and it is also used for additional "soft line
+breaks" to ensure that no line end up longer than 76 characters.  Pass
+it as "\015\012" to produce data suitable for external consumption.
+The string "\r\n" produces the same result on many platforms, but not
+all.</p>
+<p>The third argument ($binmode) will select binary mode if passed as a
+TRUE value.  In binary mode "\n" will be encoded in the same way as
+any other non-printable character.  This ensures that a decoder will
+end up with exactly the same string whatever line ending sequence it
+uses.  In general it is preferable to use the base64 encoding for
+binary data; see <a href="../MIME/Base64.html">MIME::Base64</a>.</p>
+<p>An $eol of "" (the empty string) is special.  In this case, no "soft
+line breaks" are introduced and binary mode is effectively enabled so
+that any "\n" in the original data is encoded as well.</p>
+</li>
+<li><a id="decode_qp(-%24str-)"></a><strong>decode_qp( $str )</strong>
+<p>This function returns the plain text version of the string given
+as argument.  The lines of the result are "\n" terminated, even if
+the $str argument contains "\r\n" terminated lines.</p>
+</li>
+</ul>
+<p>If you prefer not to import these routines into your namespace, you can
+call them as:</p>
+<pre>
+  <a class="l_k" href="../functions/use.html">use</a> <span class="w">MIME::QuotedPrint</span> <span class="s">(</span><span class="s">)</span><span class="sc">;</span>
+  <span class="i">$encoded</span> = <span class="i">MIME::QuotedPrint::encode</span><span class="s">(</span><span class="i">$decoded</span><span class="s">)</span><span class="sc">;</span>
+  <span class="i">$decoded</span> = <span class="i">MIME::QuotedPrint::decode</span><span class="s">(</span><span class="i">$encoded</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>Perl v5.8 and better allow extended Unicode characters in strings.
+Such strings cannot be encoded directly, as the quoted-printable
+encoding is only defined for single-byte characters.  The solution is
+to use the Encode module to select the byte encoding you want.  For
+example:</p>
+<pre>
+    <a class="l_k" href="../functions/use.html">use</a> <span class="w">MIME::QuotedPrint</span> <span class="q">qw(encode_qp)</span><span class="sc">;</span>
+    <a class="l_k" href="../functions/use.html">use</a> <span class="w">Encode</span> <span class="q">qw(encode)</span><span class="sc">;</span>
+
+    <span class="i">$encoded</span> = <span class="i">encode_qp</span><span class="s">(</span><span class="i">encode</span><span class="s">(</span><span class="q">&quot;UTF-8&quot;</span><span class="cm">,</span> <span class="q">&quot;\x{FFFF}\n&quot;</span><span class="s">)</span><span class="s">)</span><span class="sc">;</span>
+    <a class="l_k" href="../functions/print.html">print</a> <span class="i">$encoded</span><span class="sc">;</span></pre>
+<a id="COPYRIGHT"></a><h2 class='h2' >COPYRIGHT</h2>
+<p>Copyright 1995-1997,2002-2004 Gisle Aas.</p>
+<p>This library is free software; you can redistribute it and/or
+modify it under the same terms as Perl itself.</p>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<p><a href="../MIME/Base64.html">MIME::Base64</a></p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#COPYRIGHT">COPYRIGHT</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

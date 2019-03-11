@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="feature - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>feature - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.16.3/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.16.3/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.16.3/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.16.3/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.16.3/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.16.3/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.16.3/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.16.3/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.16.3/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.16.3/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.16.3/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.16.3/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.16.3/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.16.3/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.16.3/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="index-pragmas.html">Pragmas</a> &gt;
+      
+    
+    feature
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 16.3 documentation</h1>
+                  </div>
+                  <h1>feature</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><ul><li><a href="#Lexical-effect">Lexical effect</a></li><li><a href="#no-feature">no feature</a></li></ul><li><a href="#AVAILABLE-FEATURES">AVAILABLE FEATURES</a></li><ul><li><a href="#The-'say'-feature">The 'say' feature</a></li><li><a href="#The-'state'-feature">The 'state' feature</a></li><li><a href="#The-'switch'-feature">The 'switch' feature</a></li><li><a href="#The-'unicode_strings'-feature">The 'unicode_strings' feature</a></li><li><a href="#The-'unicode_eval'-and-'evalbytes'-features">The 'unicode_eval' and 'evalbytes' features</a></li><li><a href="#The-'current_sub'-feature">The 'current_sub' feature</a></li><li><a href="#The-'array_base'-feature">The 'array_base' feature</a></li><li><a href="#The-'fc'-feature">The 'fc' feature</a></li></ul><li><a href="#FEATURE-BUNDLES">FEATURE BUNDLES</a></li><li><a href="#IMPLICIT-LOADING">IMPLICIT LOADING</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>feature - Perl pragma to enable new features</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<pre>
+    <a class="l_k" href="functions/use.html">use</a> <span class="w">feature</span> <span class="q">qw(say switch)</span><span class="sc">;</span>
+    <a class="l_k" href="functions/given.html">given</a> <span class="s">(</span><span class="i">$foo</span><span class="s">)</span> <span class="s">{</span>
+        <a class="l_k" href="functions/when.html">when</a> <span class="s">(</span><span class="n">1</span><span class="s">)</span>          <span class="s">{</span> <a class="l_k" href="functions/say.html">say</a> <span class="q">&quot;\$foo == 1&quot;</span> <span class="s">}</span>
+        <a class="l_k" href="functions/when.html">when</a> <span class="s">(</span><span class="s">[</span><span class="n">2</span><span class="cm">,</span><span class="n">3</span><span class="s">]</span><span class="s">)</span>      <span class="s">{</span> <a class="l_k" href="functions/say.html">say</a> <span class="q">&quot;\$foo == 2 || \$foo == 3&quot;</span> <span class="s">}</span>
+        <a class="l_k" href="functions/when.html">when</a> <span class="s">(</span><span class="q">/^a[bc]d$/</span><span class="s">)</span> <span class="s">{</span> <a class="l_k" href="functions/say.html">say</a> <span class="q">&quot;\$foo eq &#39;abd&#39; || \$foo eq &#39;acd&#39;&quot;</span> <span class="s">}</span>
+        <a class="l_k" href="functions/when.html">when</a> <span class="s">(</span><span class="i">$_</span> &gt; <span class="n">100</span><span class="s">)</span>   <span class="s">{</span> <a class="l_k" href="functions/say.html">say</a> <span class="q">&quot;\$foo &gt; 100&quot;</span> <span class="s">}</span>
+        <span class="i">default</span>           <span class="s">{</span> <a class="l_k" href="functions/say.html">say</a> <span class="q">&quot;None of the above&quot;</span> <span class="s">}</span>
+    <span class="s">}</span>
+
+    <a class="l_k" href="functions/use.html">use</a> <span class="w">feature</span> <span class="q">&#39;:5.10&#39;</span><span class="sc">;</span> <span class="c"># loads all features available in perl 5.10</span>
+
+    <a class="l_k" href="functions/use.html">use</a> <span class="v">v5.10</span><span class="sc">;</span>           <span class="c"># implicitly loads :5.10 feature bundle</span></pre>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>It is usually impossible to add new syntax to Perl without breaking
+some existing programs.  This pragma provides a way to minimize that
+risk. New syntactic constructs, or new semantic meanings to older
+constructs, can be enabled by <pre>
+<a class="l_k" href="functions/use.html">use</a> <span class="w">feature</span> <span class="q">&#39;foo&#39;</span></code>
+, and will be parsed
+only when the appropriate feature pragma is in scope.  (Nevertheless, the
+<pre>
+<span class="i">CORE::</span></code>
+ prefix provides access to all Perl keywords, regardless of this
+pragma.)</p>
+<a id="Lexical-effect"></a><h3 class='h3' >Lexical effect</h3>
+<p>Like other pragmas (<pre>
+<a class="l_k" href="functions/use.html">use</a> <span class="w">strict</span></code>
+, for example), features have a lexical
+effect. <pre>
+<a class="l_k" href="functions/use.html">use</a> <span class="w">feature</span> <span class="q">qw(foo)</span></code>
+ will only make the feature "foo" available
+from that point to the end of the enclosing block.</p>
+<pre>
+    <span class="s">{</span>
+        <a class="l_k" href="functions/use.html">use</a> <span class="w">feature</span> <span class="q">&#39;say&#39;</span><span class="sc">;</span>
+        <a class="l_k" href="functions/say.html">say</a> <span class="q">&quot;say is available here&quot;</span><span class="sc">;</span>
+    <span class="s">}</span>
+    <a class="l_k" href="functions/print.html">print</a> <span class="q">&quot;But not here.\n&quot;</span><span class="sc">;</span></pre>
+<a id="no-feature"></a><h3 class='h3' ><pre>
+<a class="l_k" href="functions/no.html">no</a> <span class="w">feature</span></code>
+</h3>
+<p>Features can also be turned off by using <pre>
+<a class="l_k" href="functions/no.html">no</a> <span class="w">feature</span> <span class="q">&quot;foo&quot;</span></code>
+.  This too
+has lexical effect.</p>
+<pre>
+    <a class="l_k" href="functions/use.html">use</a> <span class="w">feature</span> <span class="q">&#39;say&#39;</span><span class="sc">;</span>
+    <a class="l_k" href="functions/say.html">say</a> <span class="q">&quot;say is available here&quot;</span><span class="sc">;</span>
+    <span class="s">{</span>
+        <a class="l_k" href="functions/no.html">no</a> <span class="w">feature</span> <span class="q">&#39;say&#39;</span><span class="sc">;</span>
+        <a class="l_k" href="functions/print.html">print</a> <span class="q">&quot;But not here.\n&quot;</span><span class="sc">;</span>
+    <span class="s">}</span>
+    <a class="l_k" href="functions/say.html">say</a> <span class="q">&quot;Yet it is here.&quot;</span><span class="sc">;</span></pre>
+<p><pre>
+<a class="l_k" href="functions/no.html">no</a> <span class="w">feature</span></code>
+ with no features specified will reset to the default group.  To
+disable <i>all</i> features (an unusual request!) use <pre>
+<a class="l_k" href="functions/no.html">no</a> <span class="w">feature</span> <span class="q">&#39;:all&#39;</span></code>
+.</p>
+<a id="AVAILABLE-FEATURES"></a><h2 class='h2' >AVAILABLE FEATURES</h2>
+<a id="The-'say'-feature"></a><h3 class='h3' >The 'say' feature</h3>
+<p><pre>
+<a class="l_k" href="functions/use.html">use</a> <span class="w">feature</span> <span class="q">&#39;say&#39;</span></code>
+ tells the compiler to enable the Perl 6 style
+<code class="inline"><a class="l_k" href="functions/say.html">say</a></code> function.</p>
+<p>See <a href="functions/say.html">say</a> for details.</p>
+<p>This feature is available starting with Perl 5.10.</p>
+<a id="The-'state'-feature"></a><h3 class='h3' >The 'state' feature</h3>
+<p><pre>
+<a class="l_k" href="functions/use.html">use</a> <span class="w">feature</span> <span class="q">&#39;state&#39;</span></code>
+ tells the compiler to enable <code class="inline"><a class="l_k" href="functions/state.html">state</a></code>
+variables.</p>
+<p>See <a href="perlsub.html#Persistent-Private-Variables">Persistent Private Variables in perlsub</a> for details.</p>
+<p>This feature is available starting with Perl 5.10.</p>
+<a id="The-'switch'-feature"></a><h3 class='h3' >The 'switch' feature</h3>
+<p><pre>
+<a class="l_k" href="functions/use.html">use</a> <span class="w">feature</span> <span class="q">&#39;switch&#39;</span></code>
+ tells the compiler to enable the Perl 6
+given/when construct.</p>
+<p>See <a href="perlsyn.html#Switch-Statements">Switch Statements in perlsyn</a> for details.</p>
+<p>This feature is available starting with Perl 5.10.</p>
+<a id="The-'unicode_strings'-feature"></a><h3 class='h3' >The 'unicode_strings' feature</h3>
+<p><pre>
+<a class="l_k" href="functions/use.html">use</a> <span class="w">feature</span> <span class="q">&#39;unicode_strings&#39;</span></code>
+ tells the compiler to use Unicode semantics
+in all string operations executed within its scope (unless they are also
+within the scope of either <pre>
+<a class="l_k" href="functions/use.html">use</a> <span class="w">locale</span></code>
+ or <pre>
+<a class="l_k" href="functions/use.html">use</a> <span class="w">bytes</span></code>
+).  The same applies
+to all regular expressions compiled within the scope, even if executed outside
+it.</p>
+<p><pre>
+<a class="l_k" href="functions/no.html">no</a> <span class="w">feature</span> <span class="q">&#39;unicode_strings&#39;</span></code>
+ tells the compiler to use the traditional
+Perl semantics wherein the native character set semantics is used unless it is
+clear to Perl that Unicode is desired.  This can lead to some surprises
+when the behavior suddenly changes.  (See
+<a href="perlunicode.html#The-%22Unicode-Bug%22">The Unicode Bug in perlunicode</a> for details.)  For this reason, if you are
+potentially using Unicode in your program, the
+<pre>
+<a class="l_k" href="functions/use.html">use</a> <span class="w">feature</span> <span class="q">&#39;unicode_strings&#39;</span></code>
+ subpragma is <strong>strongly</strong> recommended.</p>
+<p>This feature is available starting with Perl 5.12; was almost fully
+implemented in Perl 5.14; and extended in Perl 5.16 to cover <code class="inline"><a class="l_k" href="functions/quotemeta.html">quotemeta</a></code>.</p>
+<a id="The-'unicode_eval'-and-'evalbytes'-features"></a><h3 class='h3' >The 'unicode_eval' and 'evalbytes' features</h3>
+<p>Under the <pre>
+<span class="w">unicode_eval</span></code>
+ feature, Perl's <code class="inline"><a class="l_k" href="functions/eval.html">eval</a></code> function, when passed a
+string, will evaluate it as a string of characters, ignoring any
+<pre>
+<a class="l_k" href="functions/use.html">use</a> <span class="w">utf8</span></code>
+ declarations.  <pre>
+<a class="l_k" href="functions/use.html">use</a> <span class="w">utf8</span></code>
+ exists to declare the encoding of
+the script, which only makes sense for a stream of bytes, not a string of
+characters.  Source filters are forbidden, as they also really only make
+sense on strings of bytes.  Any attempt to activate a source filter will
+result in an error.</p>
+<p>The <code class="inline"><a class="l_k" href="functions/evalbytes.html">evalbytes</a></code> feature enables the <code class="inline"><a class="l_k" href="functions/evalbytes.html">evalbytes</a></code> keyword, which evaluates
+the argument passed to it as a string of bytes.  It dies if the string
+contains any characters outside the 8-bit range.  Source filters work
+within <code class="inline"><a class="l_k" href="functions/evalbytes.html">evalbytes</a></code>: they apply to the contents of the string being
+evaluated.</p>
+<p>Together, these two features are intended to replace the historical <code class="inline"><a class="l_k" href="functions/eval.html">eval</a></code>
+function, which has (at least) two bugs in it, that cannot easily be fixed
+without breaking existing programs:</p>
+<ul>
+<li>
+<p><code class="inline"><a class="l_k" href="functions/eval.html">eval</a></code> behaves differently depending on the internal encoding of the
+string, sometimes treating its argument as a string of bytes, and sometimes
+as a string of characters.</p>
+</li>
+<li>
+<p>Source filters activated within <code class="inline"><a class="l_k" href="functions/eval.html">eval</a></code> leak out into whichever <i>file</i>
+scope is currently being compiled.  To give an example with the CPAN module
+<a href="https://search.cpan.org/perldoc/Semi::Semicolons">Semi::Semicolons</a>:</p>
+<pre>
+    <a class="l_k" href="functions/BEGIN.html">BEGIN</a> <span class="s">{</span> <a class="l_k" href="functions/eval.html">eval</a> <span class="q">&quot;use Semi::Semicolons;  # not filtered here &quot;</span> <span class="s">}</span>
+    <span class="c"># filtered here!</span></pre>
+<p><code class="inline"><a class="l_k" href="functions/evalbytes.html">evalbytes</a></code> fixes that to work the way one would expect:</p>
+<pre>
+    <a class="l_k" href="functions/use.html">use</a> <span class="w">feature</span> <span class="q">&quot;evalbytes&quot;</span><span class="sc">;</span>
+    <a class="l_k" href="functions/BEGIN.html">BEGIN</a> <span class="s">{</span> <span class="w">evalbytes</span> <span class="q">&quot;use Semi::Semicolons;  # filtered &quot;</span> <span class="s">}</span>
+    <span class="c"># not filtered</span></pre>
+</li>
+</ul>
+<p>These two features are available starting with Perl 5.16.</p>
+<a id="The-'current_sub'-feature"></a><h3 class='h3' >The 'current_sub' feature</h3>
+<p>This provides the <code class="inline"><a class="l_k" href="functions/__SUB__.html">__SUB__</a></code> token that returns a reference to the current
+subroutine or <code class="inline"><a class="l_k" href="functions/undef.html">undef</a></code> outside of a subroutine.</p>
+<p>This feature is available starting with Perl 5.16.</p>
+<a id="The-'array_base'-feature"></a><h3 class='h3' >The 'array_base' feature</h3>
+<p>This feature supports the legacy <pre>
+<span class="i">$[</span></code>
+ variable.  See <a href="perlvar.html#%24%5b">$[ in perlvar</a> and
+<a href="arybase.html">arybase</a>.  It is on by default but disabled under <pre>
+<a class="l_k" href="functions/use.html">use</a> <span class="v">v5.16</span></code>
+ (see
+<a href="#IMPLICIT-LOADING">IMPLICIT LOADING</a>, below).</p>
+<p>This feature is available under this name starting with Perl 5.16.  In
+previous versions, it was simply on all the time, and this pragma knew
+nothing about it.</p>
+<a id="The-'fc'-feature"></a><h3 class='h3' >The 'fc' feature</h3>
+<p><pre>
+<a class="l_k" href="functions/use.html">use</a> <span class="w">feature</span> <span class="q">&#39;fc&#39;</span></code>
+ tells the compiler to enable the <code class="inline"><a class="l_k" href="functions/fc.html">fc</a></code> function,
+which implements Unicode casefolding.</p>
+<p>See <a href="functions/fc.html">fc</a> for details.</p>
+<p>This feature is available from Perl 5.16 onwards.</p>
+<a id="FEATURE-BUNDLES"></a><h2 class='h2' >FEATURE BUNDLES</h2>
+<p>It's possible to load multiple features together, using
+a <i>feature bundle</i>.  The name of a feature bundle is prefixed with
+a colon, to distinguish it from an actual feature.</p>
+<pre>
+  <a class="l_k" href="functions/use.html">use</a> <span class="w">feature</span> <span class="q">&quot;:5.10&quot;</span><span class="sc">;</span></pre>
+<p>The following feature bundles are available:</p>
+<div class="verbatim"><ol><li>  bundle    features included</li><li>  --------- -----------------</li><li>  :default  array_base</li><li></li><li>  :5.10     say state switch array_base</li><li></li><li>  :5.12     say state switch unicode_strings array_base</li><li></li><li>  :5.14     say state switch unicode_strings array_base</li><li></li><li>  :5.16     say state switch unicode_strings</li><li>            unicode_eval evalbytes current_sub fc</li></ol></div><p>The <pre>
+<span class="j">:</span><span class="w">default</span></code>
+ bundle represents the feature set that is enabled before
+any <pre>
+<a class="l_k" href="functions/use.html">use</a> <span class="w">feature</span></code>
+ or <pre>
+<a class="l_k" href="functions/no.html">no</a> <span class="w">feature</span></code>
+ declaration.</p>
+<p>Specifying sub-versions such as the <pre></code>
+ in <pre>
+<span class="v">5.14.0</span></code>
+ in feature bundles has
+no effect.  Feature bundles are guaranteed to be the same for all sub-versions.</p>
+<pre>
+  <a class="l_k" href="functions/use.html">use</a> <span class="w">feature</span> <span class="q">&quot;:5.14.0&quot;</span><span class="sc">;</span>    <span class="c"># same as &quot;:5.14&quot;</span>
+  <a class="l_k" href="functions/use.html">use</a> <span class="w">feature</span> <span class="q">&quot;:5.14.1&quot;</span><span class="sc">;</span>    <span class="c"># same as &quot;:5.14&quot;</span></pre>
+<a id="IMPLICIT-LOADING"></a><h2 class='h2' >IMPLICIT LOADING</h2>
+<p>Instead of loading feature bundles by name, it is easier to let Perl do
+implicit loading of a feature bundle for you.</p>
+<p>There are two ways to load the <pre>
+<span class="w">feature</span></code>
+ pragma implicitly:</p>
+<ul>
+<li>
+<p>By using the <pre>
+-<span class="w">E</span></code>
+ switch on the Perl command-line instead of <pre>
+-e</code>
+.
+That will enable the feature bundle for that version of Perl in the
+main compilation unit (that is, the one-liner that follows <pre>
+-<span class="w">E</span></code>
+).</p>
+</li>
+<li>
+<p>By explicitly requiring a minimum Perl version number for your program, with
+the <pre>
+<a class="l_k" href="functions/use.html">use</a> <span class="w">VERSION</span></code>
+ construct.  That is,</p>
+<pre>
+    <a class="l_k" href="functions/use.html">use</a> <span class="v">v5.10.0</span><span class="sc">;</span></pre>
+<p>will do an implicit</p>
+<pre>
+    <a class="l_k" href="functions/no.html">no</a> <span class="w">feature</span> <span class="q">&#39;:all&#39;</span><span class="sc">;</span>
+    <a class="l_k" href="functions/use.html">use</a> <span class="w">feature</span> <span class="q">&#39;:5.10&#39;</span><span class="sc">;</span></pre>
+<p>and so on.  Note how the trailing sub-version
+is automatically stripped from the
+version.</p>
+<p>But to avoid portability warnings (see <a href="functions/use.html">use</a>), you may prefer:</p>
+<pre>
+    <a class="l_k" href="functions/use.html">use</a> <span class="n">5.010</span><span class="sc">;</span></pre>
+<p>with the same effect.</p>
+<p>If the required version is older than Perl 5.10, the ":default" feature
+bundle is automatically loaded instead.</p>
+</li>
+</ul>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><ul><li><a href="#Lexical-effect">Lexical effect</a></li><li><a href="#no-feature">no feature</a></li></ul><li><a href="#AVAILABLE-FEATURES">AVAILABLE FEATURES</a></li><ul><li><a href="#The-'say'-feature">The 'say' feature</a></li><li><a href="#The-'state'-feature">The 'state' feature</a></li><li><a href="#The-'switch'-feature">The 'switch' feature</a></li><li><a href="#The-'unicode_strings'-feature">The 'unicode_strings' feature</a></li><li><a href="#The-'unicode_eval'-and-'evalbytes'-features">The 'unicode_eval' and 'evalbytes' features</a></li><li><a href="#The-'current_sub'-feature">The 'current_sub' feature</a></li><li><a href="#The-'array_base'-feature">The 'array_base' feature</a></li><li><a href="#The-'fc'-feature">The 'fc' feature</a></li></ul><li><a href="#FEATURE-BUNDLES">FEATURE BUNDLES</a></li><li><a href="#IMPLICIT-LOADING">IMPLICIT LOADING</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Parse::CPAN::Meta - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>Parse::CPAN::Meta - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.18.4/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.18.4/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.18.4/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.18.4/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.18.4/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.18.4/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.18.4/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.18.4/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.18.4/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.18.4/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.18.4/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.18.4/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.18.4/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.18.4/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.18.4/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.18.4/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.18.4/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.18.4/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.18.4/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.18.4/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.18.4/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.18.4/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.18.4/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.18.4/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.18.4/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.18.4/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.18.4/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.18.4/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.18.4/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.18.4/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.18.4/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.18.4/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.18.4/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.18.4/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../../index-modules-P.html">Core modules (P)</a> &gt;
+      
+    
+    Parse::CPAN::Meta
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 18.4 documentation</h1>
+                  </div>
+                  <h1>Parse::CPAN::Meta</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#METHODS">METHODS</a></li><ul><li><a href="#load_file">load_file</a></li><li><a href="#load_yaml_string">load_yaml_string</a></li><li><a href="#load_json_string">load_json_string</a></li><li><a href="#yaml_backend">yaml_backend</a></li><li><a href="#json_backend">json_backend</a></li></ul><li><a href="#FUNCTIONS">FUNCTIONS</a></li><ul><li><a href="#Load">Load</a></li><li><a href="#LoadFile">LoadFile</a></li></ul><li><a href="#ENVIRONMENT">ENVIRONMENT</a></li><ul><li><a href="#PERL_JSON_BACKEND">PERL_JSON_BACKEND</a></li><li><a href="#PERL_YAML_BACKEND">PERL_YAML_BACKEND</a></li></ul><li><a href="#SUPPORT">SUPPORT</a></li><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#COPYRIGHT">COPYRIGHT</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>Parse::CPAN::Meta - Parse META.yml and META.json CPAN metadata files</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<div class="verbatim"><ol><li>    #############################################</li><li>    # In your file</li><li>    </li><li>    ---</li><li>    name: My-Distribution</li><li>    version: 1.23</li><li>    resources:</li><li>      homepage: "http://example.com/dist/My-Distribution"</li><li>    </li><li>    </li><li>    #############################################</li><li>    # In your program</li><li>    </li><li>    use Parse::CPAN::Meta;</li><li>    </li><li>    my $distmeta = Parse::CPAN::Meta-&gt;load_file('META.yml');</li><li>    </li><li>    # Reading properties</li><li>    my $name     = $distmeta-&gt;{name};</li><li>    my $version  = $distmeta-&gt;{version};</li><li>    my $homepage = $distmeta-&gt;{resources}{homepage};</li></ol></div><a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p><strong>Parse::CPAN::Meta</strong> is a parser for <i>META.json</i> and <i>META.yml</i> files, using
+<a href="../../JSON/PP.html">JSON::PP</a> and/or <a href="../../CPAN/Meta/YAML.html">CPAN::Meta::YAML</a>.</p>
+<p><strong>Parse::CPAN::Meta</strong> provides three methods: <pre>
+<span class="w">load_file</span></code>
+, <pre>
+<span class="w">load_json_string</span></code>
+,
+and <pre>
+<span class="w">load_yaml_string</span></code>
+.  These will read and deserialize CPAN metafiles, and
+are described below in detail.</p>
+<p><strong>Parse::CPAN::Meta</strong> provides a legacy API of only two functions,
+based on the YAML functions of the same name. Wherever possible,
+identical calling semantics are used.  These may only be used with YAML sources.</p>
+<p>All error reporting is done with exceptions (die'ing).</p>
+<p>Note that META files are expected to be in UTF-8 encoding, only.  When
+converted string data, it must first be decoded from UTF-8.</p>
+<a id="METHODS"></a><h2 class='h2' >METHODS</h2>
+<a id="load_file"></a><h3 class='h3' >load_file</h3>
+<pre>
+  <a class="l_k" href="../../functions/my.html">my</a> <span class="i">$metadata_structure</span> = <span class="w">Parse::CPAN::Meta</span><span class="w">-&gt;load_file</span><span class="s">(</span><span class="q">&#39;META.json&#39;</span><span class="s">)</span><span class="sc">;</span>
+
+  <a class="l_k" href="../../functions/my.html">my</a> <span class="i">$metadata_structure</span> = <span class="w">Parse::CPAN::Meta</span><span class="w">-&gt;load_file</span><span class="s">(</span><span class="q">&#39;META.yml&#39;</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>This method will read the named file and deserialize it to a data structure,
+determining whether it should be JSON or YAML based on the filename.  On
+Perl 5.8.1 or later, the file will be read using the ":utf8" IO layer.</p>
+<a id="load_yaml_string"></a><h3 class='h3' >load_yaml_string</h3>
+<pre>
+  <a class="l_k" href="../../functions/my.html">my</a> <span class="i">$metadata_structure</span> = <span class="w">Parse::CPAN::Meta</span><span class="w">-&gt;load_yaml_string</span><span class="s">(</span><span class="i">$yaml_string</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>This method deserializes the given string of YAML and returns the first
+document in it.  (CPAN metadata files should always have only one document.)
+If the source was UTF-8 encoded, the string must be decoded before calling
+<pre>
+<span class="w">load_yaml_string</span></code>
+.</p>
+<a id="load_json_string"></a><h3 class='h3' >load_json_string</h3>
+<pre>
+  <a class="l_k" href="../../functions/my.html">my</a> <span class="i">$metadata_structure</span> = <span class="w">Parse::CPAN::Meta</span><span class="w">-&gt;load_json_string</span><span class="s">(</span><span class="i">$json_string</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>This method deserializes the given string of JSON and the result.  
+If the source was UTF-8 encoded, the string must be decoded before calling
+<pre>
+<span class="w">load_json_string</span></code>
+.</p>
+<a id="yaml_backend"></a><h3 class='h3' >yaml_backend</h3>
+<pre>
+  <a class="l_k" href="../../functions/my.html">my</a> <span class="i">$backend</span> = <span class="w">Parse::CPAN::Meta</span><span class="w">-&gt;yaml_backend</span><span class="sc">;</span></pre>
+<p>Returns the module name of the YAML serializer. See <a href="#ENVIRONMENT">ENVIRONMENT</a>
+for details.</p>
+<a id="json_backend"></a><h3 class='h3' >json_backend</h3>
+<pre>
+  <a class="l_k" href="../../functions/my.html">my</a> <span class="i">$backend</span> = <span class="w">Parse::CPAN::Meta</span><span class="w">-&gt;json_backend</span><span class="sc">;</span></pre>
+<p>Returns the module name of the JSON serializer.  This will either
+be <a href="../../JSON/PP.html">JSON::PP</a> or <a href="https://search.cpan.org/perldoc/JSON">JSON</a>.  Even if <pre>
+<span class="w">PERL_JSON_BACKEND</span></code>
+ is set,
+this will return <a href="https://search.cpan.org/perldoc/JSON">JSON</a> as further delegation is handled by
+the <a href="https://search.cpan.org/perldoc/JSON">JSON</a> module.  See <a href="#ENVIRONMENT">ENVIRONMENT</a> for details.</p>
+<a id="FUNCTIONS"></a><h2 class='h2' >FUNCTIONS</h2>
+<p>For maintenance clarity, no functions are exported.  These functions are
+available for backwards compatibility only and are best avoided in favor of
+<pre>
+<span class="w">load_file</span></code>
+.</p>
+<a id="Load"></a><h3 class='h3' >Load</h3>
+<pre>
+  <a class="l_k" href="../../functions/my.html">my</a> <span class="i">@yaml</span> = <span class="i">Parse::CPAN::Meta::Load</span><span class="s">(</span> <span class="i">$string</span> <span class="s">)</span><span class="sc">;</span></pre>
+<p>Parses a string containing a valid YAML stream into a list of Perl data
+structures.</p>
+<a id="LoadFile"></a><h3 class='h3' >LoadFile</h3>
+<pre>
+  <a class="l_k" href="../../functions/my.html">my</a> <span class="i">@yaml</span> = <span class="i">Parse::CPAN::Meta::LoadFile</span><span class="s">(</span> <span class="q">&#39;META.yml&#39;</span> <span class="s">)</span><span class="sc">;</span></pre>
+<p>Reads the YAML stream from a file instead of a string.</p>
+<a id="ENVIRONMENT"></a><h2 class='h2' >ENVIRONMENT</h2>
+<a id="PERL_JSON_BACKEND"></a><h3 class='h3' >PERL_JSON_BACKEND</h3>
+<p>By default, <a href="../../JSON/PP.html">JSON::PP</a> will be used for deserializing JSON data. If the
+<pre>
+<span class="w">PERL_JSON_BACKEND</span></code>
+ environment variable exists, is true and is not
+"JSON::PP", then the <a href="https://search.cpan.org/perldoc/JSON">JSON</a> module (version 2.5 or greater) will be loaded and
+used to interpret <pre>
+<span class="w">PERL_JSON_BACKEND</span></code>
+.  If <a href="https://search.cpan.org/perldoc/JSON">JSON</a> is not installed or is too
+old, an exception will be thrown.</p>
+<a id="PERL_YAML_BACKEND"></a><h3 class='h3' >PERL_YAML_BACKEND</h3>
+<p>By default, <a href="../../CPAN/Meta/YAML.html">CPAN::Meta::YAML</a> will be used for deserializing YAML data. If
+the <pre>
+<span class="w">PERL_YAML_BACKEND</span></code>
+ environment variable is defined, then it is intepreted
+as a module to use for deserialization.  The given module must be installed,
+must load correctly and must implement the <pre>
+<span class="i">Load</span><span class="s">(</span><span class="s">)</span></code>
+ function or an exception
+will be thrown.</p>
+<a id="SUPPORT"></a><h2 class='h2' >SUPPORT</h2>
+<p>Bugs should be reported via the CPAN bug tracker at</p>
+<p><a href="http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Parse-CPAN-Meta">http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Parse-CPAN-Meta</a></p>
+<a id="AUTHOR"></a><h2 class='h2' >AUTHOR</h2>
+<p>Adam Kennedy &lt;adamk@cpan.org&gt;</p>
+<a id="COPYRIGHT"></a><h2 class='h2' >COPYRIGHT</h2>
+<p>Copyright 2006 - 2010 Adam Kennedy.</p>
+<p>This program is free software; you can redistribute
+it and/or modify it under the same terms as Perl itself.</p>
+<p>The full text of the license can be found in the
+LICENSE file included with this module.</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#METHODS">METHODS</a></li><ul><li><a href="#load_file">load_file</a></li><li><a href="#load_yaml_string">load_yaml_string</a></li><li><a href="#load_json_string">load_json_string</a></li><li><a href="#yaml_backend">yaml_backend</a></li><li><a href="#json_backend">json_backend</a></li></ul><li><a href="#FUNCTIONS">FUNCTIONS</a></li><ul><li><a href="#Load">Load</a></li><li><a href="#LoadFile">LoadFile</a></li></ul><li><a href="#ENVIRONMENT">ENVIRONMENT</a></li><ul><li><a href="#PERL_JSON_BACKEND">PERL_JSON_BACKEND</a></li><li><a href="#PERL_YAML_BACKEND">PERL_YAML_BACKEND</a></li></ul><li><a href="#SUPPORT">SUPPORT</a></li><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#COPYRIGHT">COPYRIGHT</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/4/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/4/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/4/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/4/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/4/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/4/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/4/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/4/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/4/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/4/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/4/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/4/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/4/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/4/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

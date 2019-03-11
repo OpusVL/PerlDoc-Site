@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Filter::Util::Call - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>Filter::Util::Call - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.20.3/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.20.3/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.20.3/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.20.3/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.20.3/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.20.3/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.20.3/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.20.3/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.20.3/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.20.3/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.20.3/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.20.3/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.20.3/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.20.3/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.20.3/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../../index-modules-F.html">Core modules (F)</a> &gt;
+      
+    
+    Filter::Util::Call
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 20.3 documentation</h1>
+                  </div>
+                  <h1>Filter::Util::Call</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><ul><li><a href="#*use-Filter%3a%3aUtil%3a%3aCall*">*use Filter::Util::Call*</a></li><li><a href="#*import()*">*import()*</a></li><li><a href="#*filter_add()*">*filter_add()*</a></li><li><a href="#*filter()-and-anonymous-sub*">*filter() and anonymous sub*</a></li></ul><li><a href="#EXAMPLES">EXAMPLES</a></li><ul><li><a href="#Example-1%3a-A-simple-filter.">Example 1: A simple filter.</a></li><li><a href="#Example-2%3a-Using-the-context">Example 2: Using the context</a></li><li><a href="#Example-3%3a-Using-the-context-within-the-filter">Example 3: Using the context within the filter</a></li><li><a href="#Example-4%3a-Using-filter_del">Example 4: Using filter_del</a></li></ul><li><a href="#Filter%3a%3aSimple">Filter::Simple</a></li><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#DATE">DATE</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>Filter::Util::Call - Perl Source Filter Utility Module</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<pre>
+    <a class="l_k" href="../../functions/use.html">use</a> <span class="w">Filter::Util::Call</span> <span class="sc">;</span></pre>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>This module provides you with the framework to write <i>Source Filters</i>
+in Perl.</p>
+<p>An alternate interface to Filter::Util::Call is now available. See
+<a href="../../Filter/Simple.html">Filter::Simple</a> for more details.</p>
+<p>A <i>Perl Source Filter</i> is implemented as a Perl module. The structure
+of the module can take one of two broadly similar formats. To
+distinguish between them, the first will be referred to as <i>method
+filter</i> and the second as <i>closure filter</i>.</p>
+<p>Here is a skeleton for the <i>method filter</i>:</p>
+<pre>
+<a name="package-MyFilter"></a>    package <span class="i">MyFilter</span> <span class="sc">;</span>
+
+    <a class="l_k" href="../../functions/use.html">use</a> <span class="w">Filter::Util::Call</span> <span class="sc">;</span>
+
+<a name="import"></a>    sub <span class="m">import</span>
+    <span class="s">{</span>
+        <a class="l_k" href="../../functions/my.html">my</a><span class="s">(</span><span class="i">$type</span><span class="cm">,</span> <span class="i">@arguments</span><span class="s">)</span> = <span class="i">@_</span> <span class="sc">;</span>
+        <span class="i">filter_add</span><span class="s">(</span><span class="s">[</span><span class="s">]</span><span class="s">)</span> <span class="sc">;</span>
+    <span class="s">}</span>
+
+<a name="filter"></a>    sub <span class="m">filter</span>
+    <span class="s">{</span>
+        <a class="l_k" href="../../functions/my.html">my</a><span class="s">(</span><span class="i">$self</span><span class="s">)</span> = <span class="i">@_</span> <span class="sc">;</span>
+        <a class="l_k" href="../../functions/my.html">my</a><span class="s">(</span><span class="i">$status</span><span class="s">)</span> <span class="sc">;</span>
+
+        <span class="i">$status</span> = <span class="i">filter_read</span><span class="s">(</span><span class="s">)</span> <span class="sc">;</span>
+        <span class="i">$status</span> <span class="sc">;</span>
+    <span class="s">}</span>
+
+    <span class="n">1</span> <span class="sc">;</span></pre>
+<p>and this is the equivalent skeleton for the <i>closure filter</i>:</p>
+<pre>
+<a name="package-MyFilter"></a>    package <span class="i">MyFilter</span> <span class="sc">;</span>
+
+    <a class="l_k" href="../../functions/use.html">use</a> <span class="w">Filter::Util::Call</span> <span class="sc">;</span>
+
+<a name="import"></a>    sub <span class="m">import</span>
+    <span class="s">{</span>
+        <a class="l_k" href="../../functions/my.html">my</a><span class="s">(</span><span class="i">$type</span><span class="cm">,</span> <span class="i">@arguments</span><span class="s">)</span> = <span class="i">@_</span> <span class="sc">;</span>
+
+        <span class="i">filter_add</span><span class="s">(</span>
+            <a class="l_k" href="../../functions/sub.html">sub</a> 
+            <span class="s">{</span>
+                <a class="l_k" href="../../functions/my.html">my</a><span class="s">(</span><span class="i">$status</span><span class="s">)</span> <span class="sc">;</span>
+                <span class="i">$status</span> = <span class="i">filter_read</span><span class="s">(</span><span class="s">)</span> <span class="sc">;</span>
+                <span class="i">$status</span> <span class="sc">;</span>
+            <span class="s">}</span> <span class="s">)</span>
+    <span class="s">}</span>
+
+    <span class="n">1</span> <span class="sc">;</span></pre>
+<p>To make use of either of the two filter modules above, place the line
+below in a Perl source file.</p>
+<pre>
+    <a class="l_k" href="../../functions/use.html">use</a> <span class="w">MyFilter</span><span class="sc">;</span></pre>
+<p>In fact, the skeleton modules shown above are fully functional <i>Source
+Filters</i>, albeit fairly useless ones. All they does is filter the
+source stream without modifying it at all.</p>
+<p>As you can see both modules have a broadly similar structure. They both
+make use of the <pre>
+<span class="w">Filter::Util::Call</span></code>
+ module and both have an <code class="inline"><a class="l_k" href="../../functions/import.html">import</a></code>
+method. The difference between them is that the <i>method filter</i>
+requires a <i>filter</i> method, whereas the <i>closure filter</i> gets the
+equivalent of a <i>filter</i> method with the anonymous sub passed to
+<i>filter_add</i>.</p>
+<p>To make proper use of the <i>closure filter</i> shown above you need to
+have a good understanding of the concept of a <i>closure</i>. See
+<a href="../../perlref.html">perlref</a> for more details on the mechanics of <i>closures</i>.</p>
+<a id="*use-Filter%3a%3aUtil%3a%3aCall*"></a><h3 class='h3' ><strong>use Filter::Util::Call</strong></h3>
+<p>The following functions are exported by <pre>
+<span class="w">Filter::Util::Call</span></code>
+:</p>
+<div class="verbatim"><ol><li>    filter_add()</li><li>    filter_read()</li><li>    filter_read_exact()</li><li>    filter_del()</li></ol></div><a id="*import()*"></a><h3 class='h3' ><strong>import()</strong></h3>
+<p>The <code class="inline"><a class="l_k" href="../../functions/import.html">import</a></code> method is used to create an instance of the filter. It is
+called indirectly by Perl when it encounters the <pre>
+<a class="l_k" href="../../functions/use.html">use</a> <span class="w">MyFilter</span></code>
+ line
+in a source file (See <a href="../../functions/import.html">import</a> for more details on
+<code class="inline"><a class="l_k" href="../../functions/import.html">import</a></code>).</p>
+<p>It will always have at least one parameter automatically passed by Perl
+- this corresponds to the name of the package. In the example above it
+will be <pre>
+<span class="q">&quot;MyFilter&quot;</span></code>
+.</p>
+<p>Apart from the first parameter, import can accept an optional list of
+parameters. These can be used to pass parameters to the filter. For
+example:</p>
+<pre>
+    <a class="l_k" href="../../functions/use.html">use</a> <span class="w">MyFilter</span> <span class="q">qw(a b c)</span> <span class="sc">;</span></pre>
+<p>will result in the <pre>
+<span class="i">@_</span></code>
+ array having the following values:</p>
+<div class="verbatim"><ol><li>    @_ [0] =&gt; "MyFilter"</li><li>    @_ [1] =&gt; "a"</li><li>    @_ [2] =&gt; "b"</li><li>    @_ [3] =&gt; "c"</li></ol></div><p>Before terminating, the <code class="inline"><a class="l_k" href="../../functions/import.html">import</a></code> function must explicitly install the
+filter by calling <pre>
+<span class="w">filter_add</span></code>
+.</p>
+<a id="*filter_add()*"></a><h3 class='h3' ><strong>filter_add()</strong></h3>
+<p>The function, <pre>
+<span class="w">filter_add</span></code>
+, actually installs the filter. It takes one
+parameter which should be a reference. The kind of reference used will
+dictate which of the two filter types will be used.</p>
+<p>If a CODE reference is used then a <i>closure filter</i> will be assumed.</p>
+<p>If a CODE reference is not used, a <i>method filter</i> will be assumed.
+In a <i>method filter</i>, the reference can be used to store context
+information. The reference will be <i>blessed</i> into the package by
+<pre>
+<span class="w">filter_add</span></code>
+.</p>
+<p>See the filters at the end of this documents for examples of using
+context information using both <i>method filters</i> and <i>closure
+filters</i>.</p>
+<a id="*filter()-and-anonymous-sub*"></a><h3 class='h3' ><strong>filter() and anonymous sub</strong></h3>
+<p>Both the <pre>
+<span class="w">filter</span></code>
+ method used with a <i>method filter</i> and the
+anonymous sub used with a <i>closure filter</i> is where the main
+processing for the filter is done.</p>
+<p>The big difference between the two types of filter is that the <i>method
+filter</i> uses the object passed to the method to store any context data,
+whereas the <i>closure filter</i> uses the lexical variables that are
+maintained by the closure.</p>
+<p>Note that the single parameter passed to the <i>method filter</i>,
+<pre>
+<span class="i">$self</span></code>
+, is the same reference that was passed to <pre>
+<span class="w">filter_add</span></code>
+
+blessed into the filter's package. See the example filters later on for
+details of using <pre>
+<span class="i">$self</span></code>
+.</p>
+<p>Here is a list of the common features of the anonymous sub and the
+<pre>
+<span class="i">filter</span><span class="s">(</span><span class="s">)</span></code>
+ method.</p>
+<ul>
+<li><a id="*%24_*"></a><strong><strong>$_</strong></strong>
+<p>Although <pre>
+<span class="i">$_</span></code>
+ doesn't actually appear explicitly in the sample filters
+above, it is implicitly used in a number of places.</p>
+<p>Firstly, when either <pre>
+<span class="w">filter</span></code>
+ or the anonymous sub are called, a local
+copy of <pre>
+<span class="i">$_</span></code>
+ will automatically be created. It will always contain the
+empty string at this point.</p>
+<p>Next, both <pre>
+<span class="w">filter_read</span></code>
+ and <pre>
+<span class="w">filter_read_exact</span></code>
+ will append any
+source data that is read to the end of <pre>
+<span class="i">$_</span></code>
+.</p>
+<p>Finally, when <pre>
+<span class="w">filter</span></code>
+ or the anonymous sub are finished processing,
+they are expected to return the filtered source using <pre>
+<span class="i">$_</span></code>
+.</p>
+<p>This implicit use of <pre>
+<span class="i">$_</span></code>
+ greatly simplifies the filter.</p>
+</li>
+<li><a id="*%24status*"></a><strong><strong>$status</strong></strong>
+<p>The status value that is returned by the user's <pre>
+<span class="w">filter</span></code>
+ method or
+anonymous sub and the <pre>
+<span class="w">filter_read</span></code>
+ and <pre>
+<span class="w">read_exact</span></code>
+ functions take
+the same set of values, namely:</p>
+<div class="verbatim"><ol><li>    &lt; 0  Error</li><li>    = 0  EOF</li><li>    &gt; 0  OK</li></ol></div></li>
+<li><a id="*filter_read*-and-*filter_read_exact*"></a><strong><strong>filter_read</strong> and <strong>filter_read_exact</strong></strong>
+<p>These functions are used by the filter to obtain either a line or block
+from the next filter in the chain or the actual source file if there
+aren't any other filters.</p>
+<p>The function <pre>
+<span class="w">filter_read</span></code>
+ takes two forms:</p>
+<pre>
+    <span class="i">$status</span> = <span class="i">filter_read</span><span class="s">(</span><span class="s">)</span> <span class="sc">;</span>
+    <span class="i">$status</span> = <span class="i">filter_read</span><span class="s">(</span><span class="i">$size</span><span class="s">)</span> <span class="sc">;</span></pre>
+<p>The first form is used to request a <i>line</i>, the second requests a
+<i>block</i>.</p>
+<p>In line mode, <pre>
+<span class="w">filter_read</span></code>
+ will append the next source line to the
+end of the <pre>
+<span class="i">$_</span></code>
+ scalar.</p>
+<p>In block mode, <pre>
+<span class="w">filter_read</span></code>
+ will append a block of data which is &lt;=
+<pre>
+<span class="i">$size</span></code>
+ to the end of the <pre>
+<span class="i">$_</span></code>
+ scalar. It is important to emphasise
+the that <pre>
+<span class="w">filter_read</span></code>
+ will not necessarily read a block which is
+<i>precisely</i> <pre>
+<span class="i">$size</span></code>
+ bytes.</p>
+<p>If you need to be able to read a block which has an exact size, you can
+use the function <pre>
+<span class="w">filter_read_exact</span></code>
+. It works identically to
+<pre>
+<span class="w">filter_read</span></code>
+ in block mode, except it will try to read a block which
+is exactly <pre>
+<span class="i">$size</span></code>
+ bytes in length. The only circumstances when it
+will not return a block which is <pre>
+<span class="i">$size</span></code>
+ bytes long is on EOF or
+error.</p>
+<p>It is <i>very</i> important to check the value of <pre>
+<span class="i">$status</span></code>
+ after <i>every</i>
+call to <pre>
+<span class="w">filter_read</span></code>
+ or <pre>
+<span class="w">filter_read_exact</span></code>
+.</p>
+</li>
+<li><a id="*filter_del*"></a><strong><strong>filter_del</strong></strong>
+<p>The function, <pre>
+<span class="w">filter_del</span></code>
+, is used to disable the current filter. It
+does not affect the running of the filter. All it does is tell Perl not
+to call filter any more.</p>
+<p>See <a href="#Example-4%3a-Using-filter_del">Example 4: Using filter_del</a> for details.</p>
+</li>
+<li><a id="_real_import_"></a><strong><i>real_import</i></strong>
+<p>Internal function which adds the filter, based on the <a href="https://search.cpan.org/perldoc/filter_add">filter_add</a>
+argument type.</p>
+</li>
+</ul>
+<a id="EXAMPLES"></a><h2 class='h2' >EXAMPLES</h2>
+<p>Here are a few examples which illustrate the key concepts - as such
+most of them are of little practical use.</p>
+<p>The <pre>
+<span class="w">examples</span></code>
+ sub-directory has copies of all these filters
+implemented both as <i>method filters</i> and as <i>closure filters</i>.</p>
+<a id="Example-1%3a-A-simple-filter."></a><h3 class='h3' >Example 1: A simple filter.</h3>
+<p>Below is a <i>method filter</i> which is hard-wired to replace all
+occurrences of the string <pre>
+<span class="q">&quot;Joe&quot;</span></code>
+ to <pre>
+<span class="q">&quot;Jim&quot;</span></code>
+. Not particularly
+Useful, but it is the first example and I wanted to keep it simple.</p>
+<pre>
+<a name="package-Joe2Jim"></a>    package <span class="i">Joe2Jim</span> <span class="sc">;</span>
+
+    <a class="l_k" href="../../functions/use.html">use</a> <span class="w">Filter::Util::Call</span> <span class="sc">;</span>
+
+<a name="import"></a>    sub <span class="m">import</span>
+    <span class="s">{</span>
+        <a class="l_k" href="../../functions/my.html">my</a><span class="s">(</span><span class="i">$type</span><span class="s">)</span> = <span class="i">@_</span> <span class="sc">;</span>
+
+        <span class="i">filter_add</span><span class="s">(</span><a class="l_k" href="../../functions/bless.html">bless</a> <span class="s">[</span><span class="s">]</span><span class="s">)</span> <span class="sc">;</span>
+    <span class="s">}</span>
+
+<a name="filter"></a>    sub <span class="m">filter</span>
+    <span class="s">{</span>
+        <a class="l_k" href="../../functions/my.html">my</a><span class="s">(</span><span class="i">$self</span><span class="s">)</span> = <span class="i">@_</span> <span class="sc">;</span>
+        <a class="l_k" href="../../functions/my.html">my</a><span class="s">(</span><span class="i">$status</span><span class="s">)</span> <span class="sc">;</span>
+
+        <span class="q">s/Joe/Jim/g</span>
+            <a class="l_k" href="../../functions/if.html">if</a> <span class="s">(</span><span class="i">$status</span> = <span class="i">filter_read</span><span class="s">(</span><span class="s">)</span><span class="s">)</span> &gt; <span class="n">0</span> <span class="sc">;</span>
+        <span class="i">$status</span> <span class="sc">;</span>
+    <span class="s">}</span>
+
+    <span class="n">1</span> <span class="sc">;</span></pre>
+<p>Here is an example of using the filter:</p>
+<pre>
+    <a class="l_k" href="../../functions/use.html">use</a> <span class="w">Joe2Jim</span> <span class="sc">;</span>
+    <a class="l_k" href="../../functions/print.html">print</a> <span class="q">&quot;Where is Joe?\n&quot;</span> <span class="sc">;</span></pre>
+<p>And this is what the script above will print:</p>
+<div class="verbatim"><ol><li>    Where is Jim?</li></ol></div><a id="Example-2%3a-Using-the-context"></a><h3 class='h3' >Example 2: Using the context</h3>
+<p>The previous example was not particularly useful. To make it more
+general purpose we will make use of the context data and allow any
+arbitrary <i>from</i> and <i>to</i> strings to be used. This time we will use a
+<i>closure filter</i>. To reflect its enhanced role, the filter is called
+<pre>
+<span class="w">Subst</span></code>
+.</p>
+<pre>
+<a name="package-Subst"></a>    package <span class="i">Subst</span> <span class="sc">;</span>
+
+    <a class="l_k" href="../../functions/use.html">use</a> <span class="w">Filter::Util::Call</span> <span class="sc">;</span>
+    <a class="l_k" href="../../functions/use.html">use</a> <span class="w">Carp</span> <span class="sc">;</span>
+
+<a name="import"></a>    sub <span class="m">import</span>
+    <span class="s">{</span>
+        <span class="i">croak</span><span class="s">(</span><span class="q">&quot;usage: use Subst qw(from to)&quot;</span><span class="s">)</span>
+            <a class="l_k" href="../../functions/unless.html">unless</a> <span class="i">@_</span> == <span class="n">3</span> <span class="sc">;</span>
+        <a class="l_k" href="../../functions/my.html">my</a> <span class="s">(</span><span class="i">$self</span><span class="cm">,</span> <span class="i">$from</span><span class="cm">,</span> <span class="i">$to</span><span class="s">)</span> = <span class="i">@_</span> <span class="sc">;</span>
+        <span class="i">filter_add</span><span class="s">(</span>
+            <a class="l_k" href="../../functions/sub.html">sub</a> 
+            <span class="s">{</span>
+                <a class="l_k" href="../../functions/my.html">my</a> <span class="s">(</span><span class="i">$status</span><span class="s">)</span> <span class="sc">;</span>
+                <span class="q">s/$from/$to/</span>
+                    <a class="l_k" href="../../functions/if.html">if</a> <span class="s">(</span><span class="i">$status</span> = <span class="i">filter_read</span><span class="s">(</span><span class="s">)</span><span class="s">)</span> &gt; <span class="n">0</span> <span class="sc">;</span>
+                <span class="i">$status</span> <span class="sc">;</span>
+            <span class="s">}</span><span class="s">)</span>
+    <span class="s">}</span>
+    <span class="n">1</span> <span class="sc">;</span></pre>
+<p>and is used like this:</p>
+<pre>
+    <a class="l_k" href="../../functions/use.html">use</a> <span class="w">Subst</span> <span class="q">qw(Joe Jim)</span> <span class="sc">;</span>
+    <a class="l_k" href="../../functions/print.html">print</a> <span class="q">&quot;Where is Joe?\n&quot;</span> <span class="sc">;</span></pre>
+<a id="Example-3%3a-Using-the-context-within-the-filter"></a><h3 class='h3' >Example 3: Using the context within the filter</h3>
+<p>Here is a filter which a variation of the <pre>
+<span class="w">Joe2Jim</span></code>
+ filter. As well as
+substituting all occurrences of <pre>
+<span class="q">&quot;Joe&quot;</span></code>
+ to <pre>
+<span class="q">&quot;Jim&quot;</span></code>
+ it keeps a count
+of the number of substitutions made in the context object.</p>
+<p>Once EOF is detected (<pre>
+<span class="i">$status</span></code>
+ is zero) the filter will insert an
+extra line into the source stream. When this extra line is executed it
+will print a count of the number of substitutions actually made.
+Note that <pre>
+<span class="i">$status</span></code>
+ is set to <pre>
+<span class="n">1</span></code>
+ in this case.</p>
+<pre>
+<a name="package-Count"></a>    package <span class="i">Count</span> <span class="sc">;</span>
+
+    <a class="l_k" href="../../functions/use.html">use</a> <span class="w">Filter::Util::Call</span> <span class="sc">;</span>
+
+<a name="filter"></a>    sub <span class="m">filter</span>
+    <span class="s">{</span>
+        <a class="l_k" href="../../functions/my.html">my</a> <span class="s">(</span><span class="i">$self</span><span class="s">)</span> = <span class="i">@_</span> <span class="sc">;</span>
+        <a class="l_k" href="../../functions/my.html">my</a> <span class="s">(</span><span class="i">$status</span><span class="s">)</span> <span class="sc">;</span>
+
+        <a class="l_k" href="../../functions/if.html">if</a> <span class="s">(</span><span class="s">(</span><span class="i">$status</span> = <span class="i">filter_read</span><span class="s">(</span><span class="s">)</span><span class="s">)</span> &gt; <span class="n">0</span> <span class="s">)</span> <span class="s">{</span>
+            <span class="q">s/Joe/Jim/g</span> <span class="sc">;</span>
+	    ++ <span class="i">$$self</span> <span class="sc">;</span>
+        <span class="s">}</span>
+	<a class="l_k" href="../../functions/elsif.html">elsif</a> <span class="s">(</span><span class="i">$$self</span> &gt;= <span class="n">0</span><span class="s">)</span> <span class="s">{</span> <span class="c"># EOF</span>
+            <span class="i">$_</span> = <span class="q">&quot;print q[Made ${$self} substitutions\n]&quot;</span> <span class="sc">;</span>
+            <span class="i">$status</span> = <span class="n">1</span> <span class="sc">;</span>
+	    <span class="i">$$self</span> = <span class="n">-1</span> <span class="sc">;</span>
+        <span class="s">}</span>
+
+        <span class="i">$status</span> <span class="sc">;</span>
+    <span class="s">}</span>
+
+<a name="import"></a>    sub <span class="m">import</span>
+    <span class="s">{</span>
+        <a class="l_k" href="../../functions/my.html">my</a> <span class="s">(</span><span class="i">$self</span><span class="s">)</span> = <span class="i">@_</span> <span class="sc">;</span>
+        <a class="l_k" href="../../functions/my.html">my</a> <span class="s">(</span><span class="i">$count</span><span class="s">)</span> = <span class="n">0</span> <span class="sc">;</span>
+        <span class="i">filter_add</span><span class="s">(</span>\<span class="i">$count</span><span class="s">)</span> <span class="sc">;</span>
+    <span class="s">}</span>
+
+    <span class="n">1</span> <span class="sc">;</span></pre>
+<p>Here is a script which uses it:</p>
+<pre>
+    <a class="l_k" href="../../functions/use.html">use</a> <span class="w">Count</span> <span class="sc">;</span>
+    <a class="l_k" href="../../functions/print.html">print</a> <span class="q">&quot;Hello Joe\n&quot;</span> <span class="sc">;</span>
+    <a class="l_k" href="../../functions/print.html">print</a> <span class="q">&quot;Where is Joe\n&quot;</span> <span class="sc">;</span></pre>
+<p>Outputs:</p>
+<div class="verbatim"><ol><li>    Hello Jim</li><li>    Where is Jim</li><li>    Made 2 substitutions</li></ol></div><a id="Example-4%3a-Using-filter_del"></a><h3 class='h3' >Example 4: Using filter_del</h3>
+<p>Another variation on a theme. This time we will modify the <pre>
+<span class="w">Subst</span></code>
+
+filter to allow a starting and stopping pattern to be specified as well
+as the <i>from</i> and <i>to</i> patterns. If you know the <i>vi</i> editor, it is
+the equivalent of this command:</p>
+<pre>
+    <span class="j">:</span><span class="q">/start/</span><span class="cm">,</span><span class="q">/stop/s</span>/<span class="w">from</span><span class="q">/to/</span></pre>
+<p>When used as a filter we want to invoke it like this:</p>
+<pre>
+    <a class="l_k" href="../../functions/use.html">use</a> <span class="w">NewSubst</span> <span class="q">qw(start stop from to)</span> <span class="sc">;</span></pre>
+<p>Here is the module.</p>
+<pre>
+<a name="package-NewSubst"></a>    package <span class="i">NewSubst</span> <span class="sc">;</span>
+
+    <a class="l_k" href="../../functions/use.html">use</a> <span class="w">Filter::Util::Call</span> <span class="sc">;</span>
+    <a class="l_k" href="../../functions/use.html">use</a> <span class="w">Carp</span> <span class="sc">;</span>
+
+<a name="import"></a>    sub <span class="m">import</span>
+    <span class="s">{</span>
+        <a class="l_k" href="../../functions/my.html">my</a> <span class="s">(</span><span class="i">$self</span><span class="cm">,</span> <span class="i">$start</span><span class="cm">,</span> <span class="i">$stop</span><span class="cm">,</span> <span class="i">$from</span><span class="cm">,</span> <span class="i">$to</span><span class="s">)</span> = <span class="i">@_</span> <span class="sc">;</span>
+        <a class="l_k" href="../../functions/my.html">my</a> <span class="s">(</span><span class="i">$found</span><span class="s">)</span> = <span class="n">0</span> <span class="sc">;</span>
+        <span class="i">croak</span><span class="s">(</span><span class="q">&quot;usage: use Subst qw(start stop from to)&quot;</span><span class="s">)</span>
+            <a class="l_k" href="../../functions/unless.html">unless</a> <span class="i">@_</span> == <span class="n">5</span> <span class="sc">;</span>
+
+        <span class="i">filter_add</span><span class="s">(</span> 
+            <a class="l_k" href="../../functions/sub.html">sub</a> 
+            <span class="s">{</span>
+                <a class="l_k" href="../../functions/my.html">my</a> <span class="s">(</span><span class="i">$status</span><span class="s">)</span> <span class="sc">;</span>
+
+                <a class="l_k" href="../../functions/if.html">if</a> <span class="s">(</span><span class="s">(</span><span class="i">$status</span> = <span class="i">filter_read</span><span class="s">(</span><span class="s">)</span><span class="s">)</span> &gt; <span class="n">0</span><span class="s">)</span> <span class="s">{</span>
+
+                    <span class="i">$found</span> = <span class="n">1</span>
+                        <a class="l_k" href="../../functions/if.html">if</a> <span class="i">$found</span> == <span class="n">0</span> <a class="l_k" href="../../functions/and.html">and</a> <span class="q">/$start/</span> <span class="sc">;</span>
+
+                    <a class="l_k" href="../../functions/if.html">if</a> <span class="s">(</span><span class="i">$found</span><span class="s">)</span> <span class="s">{</span>
+                        <span class="q">s/$from/$to/</span> <span class="sc">;</span>
+                        <span class="i">filter_del</span><span class="s">(</span><span class="s">)</span> <a class="l_k" href="../../functions/if.html">if</a> <span class="q">/$stop/</span> <span class="sc">;</span>
+                    <span class="s">}</span>
+
+                <span class="s">}</span>
+                <span class="i">$status</span> <span class="sc">;</span>
+            <span class="s">}</span> <span class="s">)</span>
+
+    <span class="s">}</span>
+
+    <span class="n">1</span> <span class="sc">;</span></pre>
+<a id="Filter%3a%3aSimple"></a><h2 class='h2' >Filter::Simple</h2>
+<p>If you intend using the Filter::Call functionality, I would strongly
+recommend that you check out Damian Conway's excellent Filter::Simple
+module. Damian's module provides a much cleaner interface than
+Filter::Util::Call. Although it doesn't allow the fine control that
+Filter::Util::Call does, it should be adequate for the majority of
+applications. It's available at</p>
+<div class="verbatim"><ol><li>   http://search.cpan.org/dist/Filter-Simple/</li></ol></div><a id="AUTHOR"></a><h2 class='h2' >AUTHOR</h2>
+<p>Paul Marquess</p>
+<a id="DATE"></a><h2 class='h2' >DATE</h2>
+<p>26th January 1996</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><ul><li><a href="#*use-Filter%3a%3aUtil%3a%3aCall*">*use Filter::Util::Call*</a></li><li><a href="#*import()*">*import()*</a></li><li><a href="#*filter_add()*">*filter_add()*</a></li><li><a href="#*filter()-and-anonymous-sub*">*filter() and anonymous sub*</a></li></ul><li><a href="#EXAMPLES">EXAMPLES</a></li><ul><li><a href="#Example-1%3a-A-simple-filter.">Example 1: A simple filter.</a></li><li><a href="#Example-2%3a-Using-the-context">Example 2: Using the context</a></li><li><a href="#Example-3%3a-Using-the-context-within-the-filter">Example 3: Using the context within the filter</a></li><li><a href="#Example-4%3a-Using-filter_del">Example 4: Using filter_del</a></li></ul><li><a href="#Filter%3a%3aSimple">Filter::Simple</a></li><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#DATE">DATE</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ExtUtils::ParseXS - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>ExtUtils::ParseXS - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.16.1/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.16.1/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.16.1/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.16.1/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.16.1/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.16.1/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.16.1/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.16.1/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.16.1/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.16.1/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.16.1/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.16.1/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.16.1/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.16.1/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.16.1/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../index-modules-E.html">Core modules (E)</a> &gt;
+      
+    
+    ExtUtils::ParseXS
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 16.1 documentation</h1>
+                  </div>
+                  <h1>ExtUtils::ParseXS</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#EXPORT">EXPORT</a></li><li><a href="#FUNCTIONS">FUNCTIONS</a></li><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#COPYRIGHT">COPYRIGHT</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>ExtUtils::ParseXS - converts Perl XS code into C code</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<pre>
+  <a class="l_k" href="../functions/use.html">use</a> <span class="w">ExtUtils::ParseXS</span> <span class="q">qw(process_file)</span><span class="sc">;</span>
+
+  <span class="i">process_file</span><span class="s">(</span> <span class="w">filename</span> <span class="cm">=&gt;</span> <span class="q">&#39;foo.xs&#39;</span> <span class="s">)</span><span class="sc">;</span>
+
+  <span class="i">process_file</span><span class="s">(</span> <span class="w">filename</span> <span class="cm">=&gt;</span> <span class="q">&#39;foo.xs&#39;</span><span class="cm">,</span>
+                <span class="w">output</span> <span class="cm">=&gt;</span> <span class="q">&#39;bar.c&#39;</span><span class="cm">,</span>
+                <span class="q">&#39;C++&#39;</span> <span class="cm">=&gt;</span> <span class="n">1</span><span class="cm">,</span>
+                <span class="w">typemap</span> <span class="cm">=&gt;</span> <span class="q">&#39;path/to/typemap&#39;</span><span class="cm">,</span>
+                <span class="w">hiertype</span> <span class="cm">=&gt;</span> <span class="n">1</span><span class="cm">,</span>
+                <span class="w">except</span> <span class="cm">=&gt;</span> <span class="n">1</span><span class="cm">,</span>
+                <span class="w">prototypes</span> <span class="cm">=&gt;</span> <span class="n">1</span><span class="cm">,</span>
+                <span class="w">versioncheck</span> <span class="cm">=&gt;</span> <span class="n">1</span><span class="cm">,</span>
+                <span class="w">linenumbers</span> <span class="cm">=&gt;</span> <span class="n">1</span><span class="cm">,</span>
+                <span class="w">optimize</span> <span class="cm">=&gt;</span> <span class="n">1</span><span class="cm">,</span>
+                <span class="w">prototypes</span> <span class="cm">=&gt;</span> <span class="n">1</span><span class="cm">,</span>
+              <span class="s">)</span><span class="sc">;</span></pre>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p><pre>
+<span class="w">ExtUtils::ParseXS</span></code>
+ will compile XS code into C code by embedding the constructs
+necessary to let C functions manipulate Perl values and creates the glue
+necessary to let Perl access those functions.  The compiler uses typemaps to
+determine how to map C function parameters and variables to Perl values.</p>
+<p>The compiler will search for typemap files called <i>typemap</i>.  It will use
+the following search path to find default typemaps, with the rightmost
+typemap taking precedence.</p>
+<div class="verbatim"><ol><li>    ../../../typemap:../../typemap:../typemap:typemap</li></ol></div><a id="EXPORT"></a><h2 class='h2' >EXPORT</h2>
+<p>None by default.  <pre>
+<span class="i">process_file</span><span class="s">(</span><span class="s">)</span></code>
+ may be exported upon request.</p>
+<a id="FUNCTIONS"></a><h2 class='h2' >FUNCTIONS</h2>
+<ul>
+<li><a id="process_file()"></a><strong>process_file()</strong>
+<p>This function processes an XS file and sends output to a C file.
+Named parameters control how the processing is done.  The following
+parameters are accepted:</p>
+<ul>
+<li><a id="*C%2b%2b*"></a><strong><strong>C++</strong></strong>
+<p>Adds <pre>
+<span class="w">extern</span> <span class="q">&quot;C&quot;</span></code>
+ to the C code.  Default is false.</p>
+</li>
+<li><a id="*hiertype*"></a><strong><strong>hiertype</strong></strong>
+<p>Retains <pre>
+<span class="w">::</span></code>
+ in type names so that C++ hierarchical types can be
+mapped.  Default is false.</p>
+</li>
+<li><a id="*except*"></a><strong><strong>except</strong></strong>
+<p>Adds exception handling stubs to the C code.  Default is false.</p>
+</li>
+<li><a id="*typemap*"></a><strong><strong>typemap</strong></strong>
+<p>Indicates that a user-supplied typemap should take precedence over the
+default typemaps.  A single typemap may be specified as a string, or
+multiple typemaps can be specified in an array reference, with the
+last typemap having the highest precedence.</p>
+</li>
+<li><a id="*prototypes*"></a><strong><strong>prototypes</strong></strong>
+<p>Generates prototype code for all xsubs.  Default is false.</p>
+</li>
+<li><a id="*versioncheck*"></a><strong><strong>versioncheck</strong></strong>
+<p>Makes sure at run time that the object file (derived from the <code class="inline">.xs</code>
+file) and the <code class="inline">.pm</code> files have the same version number.  Default is
+true.</p>
+</li>
+<li><a id="*linenumbers*"></a><strong><strong>linenumbers</strong></strong>
+<p>Adds <pre>
+<span class="c">#line</span></code>
+ directives to the C output so error messages will look
+like they came from the original XS file.  Default is true.</p>
+</li>
+<li><a id="*optimize*"></a><strong><strong>optimize</strong></strong>
+<p>Enables certain optimizations.  The only optimization that is currently
+affected is the use of <i>target</i>s by the output C code (see <a href="../perlguts.html">perlguts</a>).
+Not optimizing may significantly slow down the generated code, but this is the way
+<strong>xsubpp</strong> of 5.005 and earlier operated.  Default is to optimize.</p>
+</li>
+<li><a id="*inout*"></a><strong><strong>inout</strong></strong>
+<p>Enable recognition of <pre>
+<span class="w">IN</span></code>
+, <pre>
+<span class="w">OUT_LIST</span></code>
+ and <pre>
+<span class="w">INOUT_LIST</span></code>
+
+declarations.  Default is true.</p>
+</li>
+<li><a id="*argtypes*"></a><strong><strong>argtypes</strong></strong>
+<p>Enable recognition of ANSI-like descriptions of function signature.
+Default is true.</p>
+</li>
+<li><a id="*s*"></a><strong><strong>s</strong></strong>
+<p><i>Maintainer note:</i> I have no clue what this does.  Strips function prefixes?</p>
+</li>
+</ul>
+</li>
+<li><a id="errors()"></a><strong>errors()</strong>
+<p>This function returns the number of [a certain kind of] errors
+encountered during processing of the XS file.</p>
+</li>
+</ul>
+<a id="AUTHOR"></a><h2 class='h2' >AUTHOR</h2>
+<p>Based on xsubpp code, written by Larry Wall.</p>
+<p>Maintained by:</p>
+<ul>
+<li>
+<p>Ken Williams, &lt;ken@mathforum.org&gt;</p>
+</li>
+<li>
+<p>David Golden, &lt;dagolden@cpan.org&gt;</p>
+</li>
+<li>
+<p>James Keenan, &lt;jkeenan@cpan.org&gt;</p>
+</li>
+<li>
+<p>Steffen Mueller, &lt;smueller@cpan.org&gt;</p>
+</li>
+</ul>
+<a id="COPYRIGHT"></a><h2 class='h2' >COPYRIGHT</h2>
+<p>Copyright 2002-2012 by Ken Williams, David Golden and other contributors.  All
+rights reserved.</p>
+<p>This library is free software; you can redistribute it and/or
+modify it under the same terms as Perl itself.</p>
+<p>Based on the <pre>
+<span class="w">ExtUtils::xsubpp</span></code>
+ code by Larry Wall and the Perl 5
+Porters, which was released under the same license terms.</p>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<p><a href="../perl.html">perl</a>, ExtUtils::xsubpp, ExtUtils::MakeMaker, <a href="../perlxs.html">perlxs</a>, <a href="../perlxstut.html">perlxstut</a>.</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#EXPORT">EXPORT</a></li><li><a href="#FUNCTIONS">FUNCTIONS</a></li><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#COPYRIGHT">COPYRIGHT</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

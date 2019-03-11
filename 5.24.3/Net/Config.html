@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Net::Config - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>Net::Config - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.24.3/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.24.3/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.24.3/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.24.3/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.24.3/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.24.3/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.24.3/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.24.3/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.24.3/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.24.3/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.24.3/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.24.3/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.24.3/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.24.3/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.24.3/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.24.3/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.24.3/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.24.3/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.24.3/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.24.3/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.24.3/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.24.3/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.24.3/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.24.3/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.24.3/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.24.3/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.24.3/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.24.3/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.24.3/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.24.3/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.24.3/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.24.3/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.24.3/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.24.3/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../index-modules-N.html">Core modules (N)</a> &gt;
+      
+    
+    Net::Config
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 24.3 documentation</h1>
+                  </div>
+                  <h1>Net::Config</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#METHODS">METHODS</a></li><li><a href="#NetConfig-VALUES">NetConfig VALUES</a></li><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#COPYRIGHT">COPYRIGHT</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>Net::Config - Local configuration data for libnet</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<pre>
+    <a class="l_k" href="../functions/use.html">use</a> <span class="w">Net::Config</span> <span class="q">qw(%NetConfig)</span><span class="sc">;</span></pre>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p><pre>
+<span class="w">Net::Config</span></code>
+ holds configuration data for the modules in the libnet
+distribution. During installation you will be asked for these values.</p>
+<p>The configuration data is held globally in a file in the perl installation
+tree, but a user may override any of these values by providing their own. This
+can be done by having a <code class="inline">.libnetrc</code> file in their home directory. This file
+should return a reference to a HASH containing the keys described below.
+For example</p>
+<pre>
+    <span class="c"># .libnetrc</span>
+    <span class="s">{</span>
+        <span class="w">nntp_hosts</span> <span class="cm">=&gt;</span> <span class="s">[</span> <span class="q">&quot;my_preferred_host&quot;</span> <span class="s">]</span><span class="cm">,</span>
+        <span class="w">ph_hosts</span>   <span class="cm">=&gt;</span> <span class="s">[</span> <span class="q">&quot;my_ph_server&quot;</span> <span class="s">]</span><span class="cm">,</span>
+    <span class="s">}</span>
+<a name="__END__"></a>    __END__</pre>
+<a id="METHODS"></a><h2 class='h2' >METHODS</h2>
+<p><pre>
+<span class="w">Net::Config</span></code>
+ defines the following methods. They are methods as they are
+invoked as class methods. This is because <pre>
+<span class="w">Net::Config</span></code>
+ inherits from
+<pre>
+<span class="w">Net::LocalCfg</span></code>
+ so you can override these methods if you want.</p>
+<ul>
+<li><a id="requires_firewall-(-HOST-)"></a><strong>requires_firewall ( HOST )</strong>
+<p>Attempts to determine if a given host is outside your firewall. Possible
+return values are.</p>
+<div class="verbatim"><ol><li>  -1  Cannot lookup hostname</li><li>   0  Host is inside firewall (or there is no ftp_firewall entry)</li><li>   1  Host is outside the firewall</li></ol></div><p>This is done by using hostname lookup and the <pre>
+<span class="w">local_netmask</span></code>
+ entry in
+the configuration data.</p>
+</li>
+</ul>
+<a id="NetConfig-VALUES"></a><h2 class='h2' >NetConfig VALUES</h2>
+<ul>
+<li><a id="nntp_hosts"></a><strong>nntp_hosts</strong>
+</li>
+<li><a id="snpp_hosts"></a><strong>snpp_hosts</strong>
+</li>
+<li><a id="pop3_hosts"></a><strong>pop3_hosts</strong>
+</li>
+<li><a id="smtp_hosts"></a><strong>smtp_hosts</strong>
+</li>
+<li><a id="ph_hosts"></a><strong>ph_hosts</strong>
+</li>
+<li><a id="daytime_hosts"></a><strong>daytime_hosts</strong>
+</li>
+<li><a id="time_hosts"></a><strong>time_hosts</strong>
+<p>Each is a reference to an array of hostnames (in order of preference),
+which should be used for the given protocol</p>
+</li>
+<li><a id="inet_domain"></a><strong>inet_domain</strong>
+<p>Your internet domain name</p>
+</li>
+<li><a id="ftp_firewall"></a><strong>ftp_firewall</strong>
+<p>If you have an FTP proxy firewall (<strong>NOT</strong> an HTTP or SOCKS firewall)
+then this value should be set to the firewall hostname. If your firewall
+does not listen to port 21, then this value should be set to
+<pre>
+<span class="q">&quot;hostname:port&quot;</span></code>
+ (eg <pre>
+<span class="q">&quot;hostname:99&quot;</span></code>
+)</p>
+</li>
+<li><a id="ftp_firewall_type"></a><strong>ftp_firewall_type</strong>
+<p>There are many different ftp firewall products available. But unfortunately
+there is no standard for how to traverse a firewall.  The list below shows the
+sequence of commands that Net::FTP will use</p>
+<pre>
+  <span class="w">user</span>        <span class="w">Username</span> <a class="l_k" href="../functions/for.html">for</a> <span class="w">remote</span> <span class="w">host</span>
+  <span class="w">pass</span>        <span class="w">Password</span> <a class="l_k" href="../functions/for.html">for</a> <span class="w">remote</span> <span class="w">host</span>
+  <span class="w">fwuser</span>      <span class="w">Username</span> <a class="l_k" href="../functions/for.html">for</a> <span class="w">firewall</span>
+  <span class="w">fwpass</span>      <span class="w">Password</span> <a class="l_k" href="../functions/for.html">for</a> <span class="w">firewall</span>
+  <span class="w">remote</span>.<span class="w">host</span> <span class="w">The</span> <span class="w">hostname</span> <span class="w">of</span> <span class="w">the</span> <span class="w">remote</span> <span class="w">ftp</span> <span class="w">server</span></pre>
+<dl>
+<dt>0</dt><dd>
+<p>There is no firewall</p>
+</dd>
+<dt>1</dt><dd>
+<pre>
+     <span class="w">USER</span> <span class="w">user</span><span class="i">@remote</span>.<span class="w">host</span>
+     <span class="w">PASS</span> <span class="w">pass</span></pre>
+</dd>
+<dt>2</dt><dd>
+<pre>
+     <span class="w">USER</span> <span class="w">fwuser</span>
+     <span class="w">PASS</span> <span class="w">fwpass</span>
+     <span class="w">USER</span> <span class="w">user</span><span class="i">@remote</span>.<span class="w">host</span>
+     <span class="w">PASS</span> <span class="w">pass</span></pre>
+</dd>
+<dt>3</dt><dd>
+<pre>
+     <span class="w">USER</span> <span class="w">fwuser</span>
+     <span class="w">PASS</span> <span class="w">fwpass</span>
+     <span class="w">SITE</span> <span class="w">remote</span>.<span class="w">site</span>
+     <span class="w">USER</span> <span class="w">user</span>
+     <span class="w">PASS</span> <span class="w">pass</span></pre>
+</dd>
+<dt>4</dt><dd>
+<pre>
+     <span class="w">USER</span> <span class="w">fwuser</span>
+     <span class="w">PASS</span> <span class="w">fwpass</span>
+     <span class="w">OPEN</span> <span class="w">remote</span>.<span class="w">site</span>
+     <span class="w">USER</span> <span class="w">user</span>
+     <span class="w">PASS</span> <span class="w">pass</span></pre>
+</dd>
+<dt>5</dt><dd>
+<div class="verbatim"><ol><li>     USER user@fwuser@remote.site</li><li>     PASS pass@fwpass</li></ol></div></dd>
+<dt>6</dt><dd>
+<pre>
+     <span class="w">USER</span> <span class="w">fwuser</span><span class="i">@remote</span>.<span class="w">site</span>
+     <span class="w">PASS</span> <span class="w">fwpass</span>
+     <span class="w">USER</span> <span class="w">user</span>
+     <span class="w">PASS</span> <span class="w">pass</span></pre>
+</dd>
+<dt>7</dt><dd>
+<pre>
+     <span class="w">USER</span> <span class="w">user</span><span class="i">@remote</span>.<span class="w">host</span>
+     <span class="w">PASS</span> <span class="w">pass</span>
+     <span class="w">AUTH</span> <span class="w">fwuser</span>
+     <span class="w">RESP</span> <span class="w">fwpass</span></pre>
+</dd>
+</dl>
+</li>
+<li><a id="ftp_ext_passive"></a><strong>ftp_ext_passive</strong>
+</li>
+<li><a id="ftp_int_passive"></a><strong>ftp_int_passive</strong>
+<p>FTP servers can work in passive or active mode. Active mode is when
+you want to transfer data you have to tell the server the address and
+port to connect to.  Passive mode is when the server provide the
+address and port and you establish the connection.</p>
+<p>With some firewalls active mode does not work as the server cannot
+connect to your machine (because you are behind a firewall) and the firewall
+does not re-write the command. In this case you should set <pre>
+<span class="w">ftp_ext_passive</span></code>
+
+to a <i>true</i> value.</p>
+<p>Some servers are configured to only work in passive mode. If you have
+one of these you can force <pre>
+<span class="w">Net::FTP</span></code>
+ to always transfer in passive
+mode; when not going via a firewall, by setting <pre>
+<span class="w">ftp_int_passive</span></code>
+ to
+a <i>true</i> value.</p>
+</li>
+<li><a id="local_netmask"></a><strong>local_netmask</strong>
+<p>A reference to a list of netmask strings in the form <pre>
+<span class="q">&quot;134.99.4.0/24&quot;</span></code>
+.
+These are used by the <pre>
+<span class="w">requires_firewall</span></code>
+ function to determine if a given
+host is inside or outside your firewall.</p>
+</li>
+</ul>
+<p>The following entries are used during installation &amp; testing on the
+libnet package</p>
+<ul>
+<li><a id="test_hosts"></a><strong>test_hosts</strong>
+<p>If true then <pre>
+<span class="w">make</span> <span class="w">test</span></code>
+ may attempt to connect to hosts given in the
+configuration.</p>
+</li>
+<li><a id="test_exists"></a><strong>test_exists</strong>
+<p>If true then <pre>
+<span class="w">Configure</span></code>
+ will check each hostname given that it exists</p>
+</li>
+</ul>
+<a id="AUTHOR"></a><h2 class='h2' >AUTHOR</h2>
+<p>Graham Barr &lt;<i>gbarr@pobox.com</i>&gt;</p>
+<p>Steve Hay &lt;<i>shay@cpan.org</i>&gt; is now maintaining libnet as of version
+1.22_02</p>
+<a id="COPYRIGHT"></a><h2 class='h2' >COPYRIGHT</h2>
+<p>Versions up to 1.11 Copyright (c) 1998-2011 Graham Barr. All rights reserved.
+Changes in Version 1.11_01 onwards Copyright (C) 2013-2014 Steve Hay.  All
+rights reserved.</p>
+<p>This module is free software; you can redistribute it and/or modify it under the
+same terms as Perl itself, i.e. under the terms of either the GNU General Public
+License or the Artistic License, as specified in the <i>LICENCE</i> file.</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#METHODS">METHODS</a></li><li><a href="#NetConfig-VALUES">NetConfig VALUES</a></li><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#COPYRIGHT">COPYRIGHT</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/24/3/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/3/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/3/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/3/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/24/3/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/3/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/3/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/3/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/24/3/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/3/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/3/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/24/3/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/3/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/3/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

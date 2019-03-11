@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="xsubpp - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>xsubpp - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.28.0/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.28.0/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.28.0/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.28.0/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.28.0/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.28.0/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.28.0/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.28.0/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.28.0/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.28.0/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.28.0/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.28.0/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.28.0/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.28.0/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.28.0/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.28.0/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.28.0/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.28.0/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.28.0/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.28.0/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.28.0/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.28.0/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.28.0/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.28.0/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.28.0/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.28.0/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.28.0/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.28.0/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.28.0/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.28.0/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.28.0/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.28.0/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.28.0/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.28.0/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="index-utilities.html">Utilities</a> &gt;
+      
+    
+    xsubpp
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 28.0 documentation</h1>
+                  </div>
+                  <h1>xsubpp</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#OPTIONS">OPTIONS</a></li><li><a href="#ENVIRONMENT">ENVIRONMENT</a></li><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#MODIFICATION-HISTORY">MODIFICATION HISTORY</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>xsubpp - compiler to convert Perl XS code into C code</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<p><strong>xsubpp</strong> [<strong>-v</strong>] [<strong>-except</strong>] [<strong>-s pattern</strong>] [<strong>-prototypes</strong>] [<strong>-noversioncheck</strong>] [<strong>-nolinenumbers</strong>] [<strong>-nooptimize</strong>] [<strong>-typemap typemap</strong>] [<strong>-output filename</strong>]... file.xs</p>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>This compiler is typically run by the makefiles created by <a href="ExtUtils/MakeMaker.html">ExtUtils::MakeMaker</a>
+or by <a href="https://search.cpan.org/perldoc/Module::Build">Module::Build</a> or other Perl module build tools.</p>
+<p><i>xsubpp</i> will compile XS code into C code by embedding the constructs
+necessary to let C functions manipulate Perl values and creates the glue
+necessary to let Perl access those functions.  The compiler uses typemaps to
+determine how to map C function parameters and variables to Perl values.</p>
+<p>The compiler will search for typemap files called <i>typemap</i>.  It will use
+the following search path to find default typemaps, with the rightmost
+typemap taking precedence.</p>
+<div class="verbatim"><ol><li>	../../../typemap:../../typemap:../typemap:typemap</li></ol></div><p>It will also use a default typemap installed as <pre>
+<span class="w">ExtUtils::typemap</span></code>
+.</p>
+<a id="OPTIONS"></a><h2 class='h2' >OPTIONS</h2>
+<p>Note that the <pre>
+<span class="w">XSOPT</span></code>
+ MakeMaker option may be used to add these options to
+any makefiles generated by MakeMaker.</p>
+<ul>
+<li><a id="*-hiertype*"></a><strong><strong>-hiertype</strong></strong>
+<p>Retains '::' in type names so that C++ hierarchical types can be mapped.</p>
+</li>
+<li><a id="*-except*"></a><strong><strong>-except</strong></strong>
+<p>Adds exception handling stubs to the C code.</p>
+</li>
+<li><a id="*-typemap-typemap*"></a><strong><strong>-typemap typemap</strong></strong>
+<p>Indicates that a user-supplied typemap should take precedence over the
+default typemaps.  This option may be used multiple times, with the last
+typemap having the highest precedence.</p>
+</li>
+<li><a id="*-output-filename*"></a><strong><strong>-output filename</strong></strong>
+<p>Specifies the name of the output file to generate.  If no file is
+specified, output will be written to standard output.</p>
+</li>
+<li><a id="*-v*"></a><strong><strong>-v</strong></strong>
+<p>Prints the <i>xsubpp</i> version number to standard output, then exits.</p>
+</li>
+<li><a id="*-prototypes*"></a><strong><strong>-prototypes</strong></strong>
+<p>By default <i>xsubpp</i> will not automatically generate prototype code for
+all xsubs. This flag will enable prototypes.</p>
+</li>
+<li><a id="*-noversioncheck*"></a><strong><strong>-noversioncheck</strong></strong>
+<p>Disables the run time test that determines if the object file (derived
+from the <code class="inline">.xs</code> file) and the <code class="inline">.pm</code> files have the same version
+number.</p>
+</li>
+<li><a id="*-nolinenumbers*"></a><strong><strong>-nolinenumbers</strong></strong>
+<p>Prevents the inclusion of '#line' directives in the output.</p>
+</li>
+<li><a id="*-nooptimize*"></a><strong><strong>-nooptimize</strong></strong>
+<p>Disables certain optimizations.  The only optimization that is currently
+affected is the use of <i>target</i>s by the output C code (see <a href="perlguts.html">perlguts</a>).
+This may significantly slow down the generated code, but this is the way
+<strong>xsubpp</strong> of 5.005 and earlier operated.</p>
+</li>
+<li><a id="*-noinout*"></a><strong><strong>-noinout</strong></strong>
+<p>Disable recognition of <pre>
+<span class="w">IN</span></code>
+, <pre>
+<span class="w">OUT_LIST</span></code>
+ and <pre>
+<span class="w">INOUT_LIST</span></code>
+ declarations.</p>
+</li>
+<li><a id="*-noargtypes*"></a><strong><strong>-noargtypes</strong></strong>
+<p>Disable recognition of ANSI-like descriptions of function signature.</p>
+</li>
+<li><a id="*-C%2b%2b*"></a><strong><strong>-C++</strong></strong>
+<p>Currently doesn't do anything at all.  This flag has been a no-op for
+many versions of perl, at least as far back as perl5.003_07.  It's
+allowed here for backwards compatibility.</p>
+</li>
+<li><a id="*-s%3d...*-or-*-strip%3d...*"></a><strong><strong>-s=...</strong> or <strong>-strip=...</strong></strong>
+<p><i>This option is obscure and discouraged.</i></p>
+<p>If specified, the given string will be stripped off from the beginning
+of the C function name in the generated XS functions (if it starts with that prefix).
+This only applies to XSUBs without <pre>
+<span class="w">CODE</span></code>
+ or <pre>
+<span class="w">PPCODE</span></code>
+ blocks.
+For example, the XS:</p>
+<pre>
+  <span class="w">void</span> <span class="i">foo_bar</span><span class="s">(</span><a class="l_k" href="functions/int.html">int</a> <span class="w">i</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>when <pre>
+<span class="w">xsubpp</span></code>
+ is invoked with <pre>
+-s <span class="w">foo_</span></code>
+ will install a <pre>
+<span class="w">foo_bar</span></code>
+
+function in Perl, but really call <pre>
+<span class="i">bar</span><span class="s">(</span><span class="w">i</span><span class="s">)</span></code>
+ in C. Most of the time,
+this is the opposite of what you want and failure modes are somewhat
+obscure, so please avoid this option where possible.</p>
+</li>
+</ul>
+<a id="ENVIRONMENT"></a><h2 class='h2' >ENVIRONMENT</h2>
+<p>No environment variables are used.</p>
+<a id="AUTHOR"></a><h2 class='h2' >AUTHOR</h2>
+<p>Originally by Larry Wall.  Turned into the <pre>
+<span class="w">ExtUtils::ParseXS</span></code>
+ module
+by Ken Williams.</p>
+<a id="MODIFICATION-HISTORY"></a><h2 class='h2' >MODIFICATION HISTORY</h2>
+<p>See the file <i>Changes</i>.</p>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<p>perl(1), perlxs(1), perlxstut(1), ExtUtils::ParseXS</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#OPTIONS">OPTIONS</a></li><li><a href="#ENVIRONMENT">ENVIRONMENT</a></li><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#MODIFICATION-HISTORY">MODIFICATION HISTORY</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/28/0/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/0/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/0/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/0/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/28/0/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/0/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/0/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/0/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/28/0/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/0/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/0/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/28/0/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/0/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/0/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="TAP::Parser::SourceHandler - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>TAP::Parser::SourceHandler - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.28.1/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.28.1/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.28.1/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.28.1/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.28.1/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.28.1/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.28.1/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.28.1/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.28.1/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.28.1/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.28.1/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.28.1/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.28.1/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.28.1/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.28.1/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../../index-modules-T.html">Core modules (T)</a> &gt;
+      
+    
+    TAP::Parser::SourceHandler
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 28.1 documentation</h1>
+                  </div>
+                  <h1>TAP::Parser::SourceHandler</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#VERSION">VERSION</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#METHODS">METHODS</a></li><ul><li><a href="#Class-Methods">Class Methods</a></li></ul><li><a href="#SUBCLASSING">SUBCLASSING</a></li><ul><li><a href="#Example">Example</a></li></ul><li><a href="#AUTHORS">AUTHORS</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>TAP::Parser::SourceHandler - Base class for different TAP source handlers</p>
+<a id="VERSION"></a><h2 class='h2' >VERSION</h2>
+<p>Version 3.42</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<pre>
+  <span class="c"># abstract class - don&#39;t use directly!</span>
+  <span class="c"># see TAP::Parser::IteratorFactory for general usage</span>
+
+  <span class="c"># must be sub-classed for use</span>
+<a name="package-MySourceHandler"></a>  package <span class="i">MySourceHandler</span><span class="sc">;</span>
+  <a class="l_k" href="../../functions/use.html">use</a> <span class="w">base</span> <span class="q">&#39;TAP::Parser::SourceHandler&#39;</span><span class="sc">;</span>
+<a name="can_handle"></a>  sub <span class="m">can_handle</span>    <span class="s">{</span> <a class="l_k" href="../../functions/return.html">return</a> <span class="i">$confidence_level</span> <span class="s">}</span>
+<a name="make_iterator"></a>  sub <span class="m">make_iterator</span> <span class="s">{</span> <a class="l_k" href="../../functions/return.html">return</a> <span class="i">$iterator</span> <span class="s">}</span>
+
+  <span class="c"># see example below for more details</span></pre>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>This is an abstract base class for <a href="../../TAP/Parser/Source.html">TAP::Parser::Source</a> handlers / handlers.</p>
+<p>A <pre>
+<span class="w">TAP::Parser::SourceHandler</span></code>
+ does whatever is necessary to produce &amp; capture
+a stream of TAP from the <i>raw</i> source, and package it up in a
+<a href="../../TAP/Parser/Iterator.html">TAP::Parser::Iterator</a> for the parser to consume.</p>
+<p><pre>
+<span class="w">SourceHandlers</span></code>
+ must implement the <i>source detection &amp; handling</i> interface
+used by <a href="../../TAP/Parser/IteratorFactory.html">TAP::Parser::IteratorFactory</a>.  At 2 methods, the interface is pretty
+simple: <a href="#can_handle">can_handle</a> and <a href="#make_source">make_source</a>.</p>
+<p>Unless you're writing a new <a href="../../TAP/Parser/SourceHandler.html">TAP::Parser::SourceHandler</a>, a plugin, or
+subclassing <a href="../../TAP/Parser.html">TAP::Parser</a>, you probably won't need to use this module directly.</p>
+<a id="METHODS"></a><h2 class='h2' >METHODS</h2>
+<a id="Class-Methods"></a><h3 class='h3' >Class Methods</h3>
+<a id="can_handle"></a><h4 class='h4' ><pre>
+<span class="w">can_handle</span></code>
+</h4>
+<p><i>Abstract method</i>.</p>
+<pre>
+  <a class="l_k" href="../../functions/my.html">my</a> <span class="i">$vote</span> = <span class="i">$class</span><span class="i">-&gt;can_handle</span><span class="s">(</span> <span class="i">$source</span> <span class="s">)</span><span class="sc">;</span></pre>
+<p><pre>
+<span class="i">$source</span></code>
+ is a <a href="../../TAP/Parser/Source.html">TAP::Parser::Source</a>.</p>
+<p>Returns a number between <pre></code>
+ &amp; <pre>
+<span class="n">1</span></code>
+ reflecting how confidently the raw source
+can be handled.  For example, <pre></code>
+ means the source cannot handle it, <pre>
+<span class="n">0.5</span></code>
+
+means it may be able to, and <pre>
+<span class="n">1</span></code>
+ means it definitely can.  See
+<a href="../../TAP/Parser/IteratorFactory.html#detect_source">detect_source in TAP::Parser::IteratorFactory</a> for details on how this is used.</p>
+<a id="make_iterator"></a><h4 class='h4' ><pre>
+<span class="w">make_iterator</span></code>
+</h4>
+<p><i>Abstract method</i>.</p>
+<pre>
+  <a class="l_k" href="../../functions/my.html">my</a> <span class="i">$iterator</span> = <span class="i">$class</span><span class="i">-&gt;make_iterator</span><span class="s">(</span> <span class="i">$source</span> <span class="s">)</span><span class="sc">;</span></pre>
+<p><pre>
+<span class="i">$source</span></code>
+ is a <a href="../../TAP/Parser/Source.html">TAP::Parser::Source</a>.</p>
+<p>Returns a new <a href="../../TAP/Parser/Iterator.html">TAP::Parser::Iterator</a> object for use by the <a href="../../TAP/Parser.html">TAP::Parser</a>.
+<pre>
+<span class="w">croak</span></code>
+s on error.</p>
+<a id="SUBCLASSING"></a><h2 class='h2' >SUBCLASSING</h2>
+<p>Please see <a href="../../TAP/Parser.html#SUBCLASSING">SUBCLASSING in TAP::Parser</a> for a subclassing overview, and any
+of the subclasses that ship with this module as an example.  What follows is
+a quick overview.</p>
+<p>Start by familiarizing yourself with <a href="../../TAP/Parser/Source.html">TAP::Parser::Source</a> and
+<a href="../../TAP/Parser/IteratorFactory.html">TAP::Parser::IteratorFactory</a>.  <a href="../../TAP/Parser/SourceHandler/RawTAP.html">TAP::Parser::SourceHandler::RawTAP</a> is
+the easiest sub-class to use as an example.</p>
+<p>It's important to point out that if you want your subclass to be automatically
+used by <a href="../../TAP/Parser.html">TAP::Parser</a> you'll have to and make sure it gets loaded somehow.
+If you're using <a href="../../prove.html">prove</a> you can write an <a href="../../App/Prove.html">App::Prove</a> plugin.  If you're
+using <a href="../../TAP/Parser.html">TAP::Parser</a> or <a href="../../TAP/Harness.html">TAP::Harness</a> directly (e.g. through a custom script,
+<a href="../../ExtUtils/MakeMaker.html">ExtUtils::MakeMaker</a>, or <a href="https://search.cpan.org/perldoc/Module::Build">Module::Build</a>) you can use the <pre>
+<span class="w">config</span></code>
+ option
+which will cause <a href="../../TAP/Parser/IteratorFactory.html#load_sources">load_sources in TAP::Parser::IteratorFactory</a> to load your
+subclass).</p>
+<p>Don't forget to register your class with
+<a href="../../TAP/Parser/IteratorFactory.html#register_handler">register_handler in TAP::Parser::IteratorFactory</a>.</p>
+<a id="Example"></a><h3 class='h3' >Example</h3>
+<pre>
+<a name="package-MySourceHandler"></a>  package <span class="i">MySourceHandler</span><span class="sc">;</span>
+
+  <a class="l_k" href="../../functions/use.html">use</a> <span class="w">strict</span><span class="sc">;</span>
+
+  <a class="l_k" href="../../functions/use.html">use</a> <span class="w">MySourceHandler</span><span class="sc">;</span> <span class="c"># see TAP::Parser::SourceHandler</span>
+  <a class="l_k" href="../../functions/use.html">use</a> <span class="w">TAP::Parser::IteratorFactory</span><span class="sc">;</span>
+
+  <a class="l_k" href="../../functions/use.html">use</a> <span class="w">base</span> <span class="q">&#39;TAP::Parser::SourceHandler&#39;</span><span class="sc">;</span>
+
+  <span class="w">TAP::Parser::IteratorFactory</span><span class="w">-&gt;register_handler</span><span class="s">(</span> <span class="w">__PACKAGE__</span> <span class="s">)</span><span class="sc">;</span>
+
+<a name="can_handle"></a>  sub <span class="m">can_handle</span> <span class="s">{</span>
+      <a class="l_k" href="../../functions/my.html">my</a> <span class="s">(</span> <span class="i">$class</span><span class="cm">,</span> <span class="i">$src</span> <span class="s">)</span> = <span class="i">@_</span><span class="sc">;</span>
+      <a class="l_k" href="../../functions/my.html">my</a> <span class="i">$meta</span>   = <span class="i">$src</span><span class="i">-&gt;meta</span><span class="sc">;</span>
+      <a class="l_k" href="../../functions/my.html">my</a> <span class="i">$config</span> = <span class="i">$src</span><span class="i">-&gt;config_for</span><span class="s">(</span> <span class="i">$class</span> <span class="s">)</span><span class="sc">;</span>
+
+      <a class="l_k" href="../../functions/if.html">if</a> <span class="s">(</span><span class="i">$config</span>-&gt;{<span class="w">accept_all</span>}<span class="s">)</span> <span class="s">{</span>
+          <a class="l_k" href="../../functions/return.html">return</a> <span class="n">1.0</span><span class="sc">;</span>
+      <span class="s">}</span> <a class="l_k" href="../../functions/elsif.html">elsif</a> <span class="s">(</span><a class="l_k" href="../../functions/my.html">my</a> <span class="i">$file</span> = <span class="i">$meta</span>-&gt;{<span class="w">file</span>}<span class="s">)</span> <span class="s">{</span>
+          <a class="l_k" href="../../functions/return.html">return</a> <span class="n">0.0</span> <a class="l_k" href="../../functions/unless.html">unless</a> <span class="i">$file</span>-&gt;{<span class="w">exists</span>}<span class="sc">;</span>
+          <a class="l_k" href="../../functions/return.html">return</a> <span class="n">1.0</span> <a class="l_k" href="../../functions/if.html">if</a> <span class="i">$file</span>-&gt;{<span class="w">lc_ext</span>} <a class="l_k" href="../../functions/eq.html">eq</a> <span class="q">&#39;.tap&#39;</span><span class="sc">;</span>
+          <a class="l_k" href="../../functions/return.html">return</a> <span class="n">0.9</span> <a class="l_k" href="../../functions/if.html">if</a> <span class="i">$file</span>-&gt;{<span class="w">shebang</span>} &amp;&amp; <span class="i">$file</span>-&gt;{<span class="w">shebang</span>} =~ <span class="q">/^#!.+tap/</span><span class="sc">;</span>
+          <a class="l_k" href="../../functions/return.html">return</a> <span class="n">0.5</span> <a class="l_k" href="../../functions/if.html">if</a> <span class="i">$file</span>-&gt;{<span class="w">text</span>}<span class="sc">;</span>
+          <a class="l_k" href="../../functions/return.html">return</a> <span class="n">0.1</span> <a class="l_k" href="../../functions/if.html">if</a> <span class="i">$file</span>-&gt;{<span class="w">binary</span>}<span class="sc">;</span>
+      <span class="s">}</span> <a class="l_k" href="../../functions/elsif.html">elsif</a> <span class="s">(</span><span class="i">$meta</span>-&gt;{<span class="w">scalar</span>}<span class="s">)</span> <span class="s">{</span>
+          <a class="l_k" href="../../functions/return.html">return</a> <span class="n">0.8</span> <a class="l_k" href="../../functions/if.html">if</a> <span class="i">$$raw_source_ref</span> =~ <span class="q">/\d\.\.\d/</span><span class="sc">;</span>
+          <a class="l_k" href="../../functions/return.html">return</a> <span class="n">0.6</span> <a class="l_k" href="../../functions/if.html">if</a> <span class="i">$meta</span>-&gt;{<span class="w">has_newlines</span>}<span class="sc">;</span>
+      <span class="s">}</span> <a class="l_k" href="../../functions/elsif.html">elsif</a> <span class="s">(</span><span class="i">$meta</span>-&gt;{<span class="w">array</span>}<span class="s">)</span> <span class="s">{</span>
+          <a class="l_k" href="../../functions/return.html">return</a> <span class="n">0.8</span> <a class="l_k" href="../../functions/if.html">if</a> <span class="i">$meta</span>-&gt;{<span class="w">size</span>} &lt; <span class="n">5</span><span class="sc">;</span>
+          <a class="l_k" href="../../functions/return.html">return</a> <span class="n">0.6</span> <a class="l_k" href="../../functions/if.html">if</a> <span class="i">$raw_source_ref</span>-&gt;[<span class="n">0</span>] =~ <span class="q">/foo/</span><span class="sc">;</span>
+          <a class="l_k" href="../../functions/return.html">return</a> <span class="n">0.5</span><span class="sc">;</span>
+      <span class="s">}</span> <a class="l_k" href="../../functions/elsif.html">elsif</a> <span class="s">(</span><span class="i">$meta</span>-&gt;{<span class="w">hash</span>}<span class="s">)</span> <span class="s">{</span>
+          <a class="l_k" href="../../functions/return.html">return</a> <span class="n">0.6</span> <a class="l_k" href="../../functions/if.html">if</a> <span class="i">$raw_source_ref</span>-&gt;{<span class="w">foo</span>}<span class="sc">;</span>
+          <a class="l_k" href="../../functions/return.html">return</a> <span class="n">0.2</span><span class="sc">;</span>
+      <span class="s">}</span>
+
+      <a class="l_k" href="../../functions/return.html">return</a> <span class="n">0</span><span class="sc">;</span>
+  <span class="s">}</span>
+
+<a name="make_iterator"></a>  sub <span class="m">make_iterator</span> <span class="s">{</span>
+      <a class="l_k" href="../../functions/my.html">my</a> <span class="s">(</span><span class="i">$class</span><span class="cm">,</span> <span class="i">$source</span><span class="s">)</span> = <span class="i">@_</span><span class="sc">;</span>
+      <span class="c"># this is where you manipulate the source and</span>
+      <span class="c"># capture the stream of TAP in an iterator</span>
+      <span class="c"># either pick a TAP::Parser::Iterator::* or write your own...</span>
+      <a class="l_k" href="../../functions/my.html">my</a> <span class="i">$iterator</span> = <span class="w">TAP::Parser::Iterator::Array</span><span class="w">-&gt;new</span><span class="s">(</span><span class="s">[</span> <span class="q">&#39;foo&#39;</span><span class="cm">,</span> <span class="q">&#39;bar&#39;</span> <span class="s">]</span><span class="s">)</span><span class="sc">;</span>
+      <a class="l_k" href="../../functions/return.html">return</a> <span class="i">$iterator</span><span class="sc">;</span>
+  <span class="s">}</span>
+
+  <span class="n">1</span><span class="sc">;</span></pre>
+<a id="AUTHORS"></a><h2 class='h2' >AUTHORS</h2>
+<p>TAPx Developers.</p>
+<p>Source detection stuff added by Steve Purkis</p>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<p><a href="../../TAP/Object.html">TAP::Object</a>,
+<a href="../../TAP/Parser.html">TAP::Parser</a>,
+<a href="../../TAP/Parser/Source.html">TAP::Parser::Source</a>,
+<a href="../../TAP/Parser/Iterator.html">TAP::Parser::Iterator</a>,
+<a href="../../TAP/Parser/IteratorFactory.html">TAP::Parser::IteratorFactory</a>,
+<a href="../../TAP/Parser/SourceHandler/Executable.html">TAP::Parser::SourceHandler::Executable</a>,
+<a href="../../TAP/Parser/SourceHandler/Perl.html">TAP::Parser::SourceHandler::Perl</a>,
+<a href="../../TAP/Parser/SourceHandler/File.html">TAP::Parser::SourceHandler::File</a>,
+<a href="../../TAP/Parser/SourceHandler/Handle.html">TAP::Parser::SourceHandler::Handle</a>,
+<a href="../../TAP/Parser/SourceHandler/RawTAP.html">TAP::Parser::SourceHandler::RawTAP</a></p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#VERSION">VERSION</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#METHODS">METHODS</a></li><ul><li><a href="#Class-Methods">Class Methods</a></li></ul><li><a href="#SUBCLASSING">SUBCLASSING</a></li><ul><li><a href="#Example">Example</a></li></ul><li><a href="#AUTHORS">AUTHORS</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

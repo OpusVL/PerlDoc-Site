@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="perldebguts - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>perldebguts - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.18.1/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.18.1/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.18.1/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.18.1/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.18.1/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.18.1/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.18.1/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.18.1/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.18.1/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.18.1/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.18.1/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.18.1/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.18.1/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.18.1/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.18.1/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="index-internals.html">Internals and C language interface</a> &gt;
+      
+    
+    perldebguts
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 18.1 documentation</h1>
+                  </div>
+                  <h1>perldebguts</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#Debugger-Internals">Debugger Internals</a></li><ul><li><a href="#Writing-Your-Own-Debugger">Writing Your Own Debugger</a></li></ul><li><a href="#Frame-Listing-Output-Examples">Frame Listing Output Examples</a></li><li><a href="#Debugging-Regular-Expressions">Debugging Regular Expressions</a></li><ul><li><a href="#Compile-time-Output">Compile-time Output</a></li><li><a href="#Types-of-Nodes">Types of Nodes</a></li><li><a href="#Run-time-Output">Run-time Output</a></li></ul><li><a href="#Debugging-Perl-Memory-Usage">Debugging Perl Memory Usage</a></li><ul><li><a href="#Using-%24ENV%7bPERL_DEBUG_MSTATS%7d">Using $ENV{PERL_DEBUG_MSTATS}</a></li></ul><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>perldebguts - Guts of Perl debugging</p>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>This is not <a href="perldebug.html">perldebug</a>, which tells you how to use
+the debugger.  This manpage describes low-level details concerning
+the debugger's internals, which range from difficult to impossible
+to understand for anyone who isn't incredibly intimate with Perl's guts.
+Caveat lector.</p>
+<a id="Debugger-Internals"></a><h2 class='h2' >Debugger Internals</h2>
+<p>Perl has special debugging hooks at compile-time and run-time used
+to create debugging environments.  These hooks are not to be confused
+with the <i>perl -Dxxx</i> command described in <a href="perlrun.html">perlrun</a>, which is
+usable only if a special Perl is built per the instructions in the
+<i>INSTALL</i> podpage in the Perl source tree.</p>
+<p>For example, whenever you call Perl's built-in <code class="inline"><a class="l_k" href="functions/caller.html">caller</a></code> function
+from the package <pre>
+<span class="w">DB</span></code>
+, the arguments that the corresponding stack
+frame was called with are copied to the <pre>
+<span class="i">@DB::args</span></code>
+ array.  These
+mechanisms are enabled by calling Perl with the <strong>-d</strong> switch.
+Specifically, the following additional features are enabled
+(cf. <a href="perlvar.html#%24%5eP">$^P in perlvar</a>):</p>
+<ul>
+<li>
+<p>Perl inserts the contents of <pre>
+<span class="i">$ENV</span>{<span class="w">PERL5DB</span>}</code>
+ (or <pre>
+<a class="l_k" href="functions/BEGIN.html">BEGIN</a> <span class="s">{</span><a class="l_k" href="functions/require.html">require</a>
+<span class="q">&#39;perl5db.pl&#39;</span><span class="s">}</span></code>
+ if not present) before the first line of your program.</p>
+</li>
+<li>
+<p>Each array <pre>
+<span class="i">@</span>{<span class="q">&quot;_&lt;$filename&quot;</span>}</code>
+ holds the lines of $filename for a
+file compiled by Perl.  The same is also true for <code class="inline"><a class="l_k" href="functions/eval.html">eval</a></code>ed strings
+that contain subroutines, or which are currently being executed.
+The $filename for <code class="inline"><a class="l_k" href="functions/eval.html">eval</a></code>ed strings looks like <pre>
+<span class="s">(</span><a class="l_k" href="functions/eval.html">eval</a> <span class="n">34</span><span class="s">)</span></code>
+.</p>
+<p>Values in this array are magical in numeric context: they compare
+equal to zero only if the line is not breakable.</p>
+</li>
+<li>
+<p>Each hash <pre>
+<span class="i">%</span>{<span class="q">&quot;_&lt;$filename&quot;</span>}</code>
+ contains breakpoints and actions keyed
+by line number.  Individual entries (as opposed to the whole hash)
+are settable.  Perl only cares about Boolean true here, although
+the values used by <i>perl5db.pl</i> have the form
+<pre>
+<span class="q">&quot;$break_condition\0$action&quot;</span></code>
+.</p>
+<p>The same holds for evaluated strings that contain subroutines, or
+which are currently being executed.  The $filename for <code class="inline"><a class="l_k" href="functions/eval.html">eval</a></code>ed strings
+looks like <pre>
+<span class="s">(</span><a class="l_k" href="functions/eval.html">eval</a> <span class="n">34</span><span class="s">)</span></code>
+.</p>
+</li>
+<li>
+<p>Each scalar <pre>
+<span class="i">$</span>{<span class="q">&quot;_&lt;$filename&quot;</span>}</code>
+ contains <pre>
+<span class="q">&quot;_&lt;$filename&quot;</span></code>
+.  This is
+also the case for evaluated strings that contain subroutines, or
+which are currently being executed.  The $filename for <code class="inline"><a class="l_k" href="functions/eval.html">eval</a></code>ed
+strings looks like <pre>
+<span class="s">(</span><a class="l_k" href="functions/eval.html">eval</a> <span class="n">34</span><span class="s">)</span></code>
+.</p>
+</li>
+<li>
+<p>After each <code class="inline"><a class="l_k" href="functions/require.html">require</a></code>d file is compiled, but before it is executed,
+<pre>
+<span class="i">DB::postponed</span><span class="s">(</span><span class="i">*</span>{<span class="q">&quot;_&lt;$filename&quot;</span>}<span class="s">)</span></code>
+ is called if the subroutine
+<pre>
+<span class="w">DB::postponed</span></code>
+ exists.  Here, the $filename is the expanded name of
+the <code class="inline"><a class="l_k" href="functions/require.html">require</a></code>d file, as found in the values of %INC.</p>
+</li>
+<li>
+<p>After each subroutine <pre>
+<span class="w">subname</span></code>
+ is compiled, the existence of
+<pre>
+<span class="i">$DB::postponed</span>{<span class="w">subname</span>}</code>
+ is checked.  If this key exists,
+<pre>
+<span class="i">DB::postponed</span><span class="s">(</span><span class="w">subname</span><span class="s">)</span></code>
+ is called if the <pre>
+<span class="w">DB::postponed</span></code>
+ subroutine
+also exists.</p>
+</li>
+<li>
+<p>A hash <pre>
+<span class="i">%DB::sub</span></code>
+ is maintained, whose keys are subroutine names
+and whose values have the form <pre>
+<span class="j">filename:</span><span class="w">startline</span>-<span class="w">endline</span></code>
+.
+<pre>
+<span class="w">filename</span></code>
+ has the form <pre>
+<span class="s">(</span><a class="l_k" href="functions/eval.html">eval</a> <span class="n">34</span><span class="s">)</span></code>
+ for subroutines defined inside
+<code class="inline"><a class="l_k" href="functions/eval.html">eval</a></code>s.</p>
+</li>
+<li>
+<p>When the execution of your program reaches a point that can hold a
+breakpoint, the <pre>
+<span class="i">DB::DB</span><span class="s">(</span><span class="s">)</span></code>
+ subroutine is called if any of the variables
+<pre>
+<span class="i">$DB::trace</span></code>
+, <pre>
+<span class="i">$DB::single</span></code>
+, or <pre>
+<span class="i">$DB::signal</span></code>
+ is true.  These variables
+are not <code class="inline"><a class="l_k" href="functions/local.html">local</a></code>izable.  This feature is disabled when executing
+inside <pre>
+<span class="i">DB::DB</span><span class="s">(</span><span class="s">)</span></code>
+, including functions called from it 
+unless <pre>
+<span class="i">$^D</span> &amp; <span class="s">(</span><span class="n">1</span>&lt;&lt;<span class="n">30</span><span class="s">)</span></code>
+ is true.</p>
+</li>
+<li>
+<p>When execution of the program reaches a subroutine call, a call to
+<pre>
+<span class="i">&amp;DB::sub</span></code>
+(<i>args</i>) is made instead, with <pre>
+<span class="i">$DB::sub</span></code>
+ holding the
+name of the called subroutine. (This doesn't happen if the subroutine
+was compiled in the <pre>
+<span class="w">DB</span></code>
+ package.)</p>
+</li>
+</ul>
+<p>Note that if <pre>
+<span class="i">&amp;DB::sub</span></code>
+ needs external data for it to work, no
+subroutine call is possible without it. As an example, the standard
+debugger's <pre>
+<span class="i">&amp;DB::sub</span></code>
+ depends on the <pre>
+<span class="i">$DB::deep</span></code>
+ variable
+(it defines how many levels of recursion deep into the debugger you can go
+before a mandatory break).  If <pre>
+<span class="i">$DB::deep</span></code>
+ is not defined, subroutine
+calls are not possible, even though <pre>
+<span class="i">&amp;DB::sub</span></code>
+ exists.</p>
+<a id="Writing-Your-Own-Debugger"></a><h3 class='h3' >Writing Your Own Debugger</h3>
+<a id="Environment-Variables"></a><h4 class='h4' >Environment Variables</h4>
+<p>The <pre>
+<span class="w">PERL5DB</span></code>
+ environment variable can be used to define a debugger.
+For example, the minimal "working" debugger (it actually doesn't do anything)
+consists of one line:</p>
+<pre>
+<a name="DB::DB"></a>  sub <span class="m">DB::DB</span> <span class="s">{</span><span class="s">}</span></pre>
+<p>It can easily be defined like this:</p>
+<div class="verbatim"><ol><li>  $ PERL5DB="sub DB::DB {}" perl -d your-script</li></ol></div><p>Another brief debugger, slightly more useful, can be created
+with only the line:</p>
+<pre>
+<a name="DB::DB"></a>  sub <span class="m">DB::DB</span> <span class="s">{</span><a class="l_k" href="functions/print.html">print</a> ++<span class="i">$i</span><span class="sc">;</span> <a class="l_k" href="functions/scalar.html">scalar</a> <span class="q">&lt;STDIN&gt;</span><span class="s">}</span></pre>
+<p>This debugger prints a number which increments for each statement
+encountered and waits for you to hit a newline before continuing
+to the next statement.</p>
+<p>The following debugger is actually useful:</p>
+<pre>
+  <span class="s">{</span>
+<a name="package-DB"></a>    package <span class="i">DB</span><span class="sc">;</span>
+<a name="DB"></a>    sub <span class="m">DB</span>  <span class="s">{</span><span class="s">}</span>
+<a name="sub"></a>    sub <span class="m">sub</span> <span class="s">{</span><a class="l_k" href="functions/print.html">print</a> ++<span class="i">$i</span><span class="cm">,</span> <span class="q">&quot; $sub\n&quot;</span><span class="sc">;</span> <span class="i">&amp;$sub</span><span class="s">}</span>
+<a name="package-main"></a>  <span class="s">}</span></pre>
+<p>It prints the sequence number of each subroutine call and the name of the
+called subroutine.  Note that <pre>
+<span class="i">&amp;DB::sub</span></code>
+ is being compiled into the
+package <pre>
+<span class="w">DB</span></code>
+ through the use of the <code class="inline"><a class="l_k" href="functions/package.html">package</a></code> directive.</p>
+<p>When it starts, the debugger reads your rc file (<i>./.perldb</i> or
+<i>~/.perldb</i> under Unix), which can set important options.
+(A subroutine (<pre>
+<span class="i">&amp;afterinit</span></code>
+) can be defined here as well; it is executed
+after the debugger completes its own initialization.)</p>
+<p>After the rc file is read, the debugger reads the PERLDB_OPTS
+environment variable and uses it to set debugger options. The
+contents of this variable are treated as if they were the argument
+of an <pre>
+<span class="w">o</span> ...</code>
+ debugger command (q.v. in <a href="perldebug.html#Configurable-Options">Configurable Options in perldebug</a>).</p>
+<a id="Debugger-Internal-Variables"></a><h4 class='h4' >Debugger Internal Variables</h4>
+<p>In addition to the file and subroutine-related variables mentioned above,
+the debugger also maintains various magical internal variables.</p>
+<ul>
+<li>
+<p><pre>
+<span class="i">@DB::dbline</span></code>
+ is an alias for <pre>
+<span class="i">@</span>{<span class="q">&quot;::_&lt;current_file&quot;</span>}</code>
+, which
+holds the lines of the currently-selected file (compiled by Perl), either
+explicitly chosen with the debugger's <pre>
+<span class="w">f</span></code>
+ command, or implicitly by flow
+of execution.</p>
+<p>Values in this array are magical in numeric context: they compare
+equal to zero only if the line is not breakable.</p>
+</li>
+<li>
+<p><pre>
+<span class="i">%DB::dbline</span></code>
+ is an alias for <pre>
+<span class="i">%</span>{<span class="q">&quot;::_&lt;current_file&quot;</span>}</code>
+, which
+contains breakpoints and actions keyed by line number in
+the currently-selected file, either explicitly chosen with the
+debugger's <pre>
+<span class="w">f</span></code>
+ command, or implicitly by flow of execution.</p>
+<p>As previously noted, individual entries (as opposed to the whole hash)
+are settable.  Perl only cares about Boolean true here, although
+the values used by <i>perl5db.pl</i> have the form
+<pre>
+<span class="q">&quot;$break_condition\0$action&quot;</span></code>
+.</p>
+</li>
+</ul>
+<a id="Debugger-Customization-Functions"></a><h4 class='h4' >Debugger Customization Functions</h4>
+<p>Some functions are provided to simplify customization.</p>
+<ul>
+<li>
+<p>See <a href="perldebug.html#Configurable-Options">Configurable Options in perldebug</a> for a description of options parsed by
+<pre>
+<span class="i">DB::parse_options</span><span class="s">(</span><span class="w">string</span><span class="s">)</span></code>
+.</p>
+</li>
+<li>
+<p><pre>
+<span class="i">DB::dump_trace</span><span class="s">(</span><span class="w">skip</span><span class="s">[</span><span class="cm">,</span><span class="w">count</span><span class="s">]</span><span class="s">)</span></code>
+ skips the specified number of frames
+and returns a list containing information about the calling frames (all
+of them, if <pre>
+<span class="w">count</span></code>
+ is missing).  Each entry is reference to a hash
+with keys <pre>
+<span class="w">context</span></code>
+ (either <code class="inline">.</code>, <pre>
+<span class="i">$</span></code>
+, or <pre>
+<span class="i">@</span></code>
+), <code class="inline"><a class="l_k" href="functions/sub.html">sub</a></code> (subroutine
+name, or info about <code class="inline"><a class="l_k" href="functions/eval.html">eval</a></code>), <pre>
+<span class="w">args</span></code>
+ (<code class="inline"><a class="l_k" href="functions/undef.html">undef</a></code> or a reference to
+an array), <pre>
+<span class="w">file</span></code>
+, and <pre>
+<span class="w">line</span></code>
+.</p>
+</li>
+<li>
+<p><pre>
+<span class="i">DB::print_trace</span><span class="s">(</span><span class="w">FH</span><span class="cm">,</span> <span class="w">skip</span><span class="s">[</span><span class="cm">,</span> <span class="w">count</span><span class="s">[</span><span class="cm">,</span> <span class="w">short</span><span class="s">]</span><span class="s">]</span><span class="s">)</span></code>
+ prints
+formatted info about caller frames.  The last two functions may be
+convenient as arguments to <code class="inline">&lt;</code>, <pre>
+&lt;&lt;</code>
+ commands.</p>
+</li>
+</ul>
+<p>Note that any variables and functions that are not documented in
+this manpages (or in <a href="perldebug.html">perldebug</a>) are considered for internal   
+use only, and as such are subject to change without notice.</p>
+<a id="Frame-Listing-Output-Examples"></a><h2 class='h2' >Frame Listing Output Examples</h2>
+<p>The <pre>
+<span class="w">frame</span></code>
+ option can be used to control the output of frame 
+information.  For example, contrast this expression trace:</p>
+<div class="verbatim"><ol><li> $ perl -de 42</li><li> Stack dump during die enabled outside of evals.</li><li></li><li> Loading DB routines from perl5db.pl patch level 0.94</li><li> Emacs support available.</li><li></li><li> Enter h or 'h h' for help.</li><li></li><li> main::(-e:1):   0</li><li>   DB&lt;1&gt; sub foo { 14 }</li><li></li><li>   DB&lt;2&gt; sub bar { 3 }</li><li></li><li>   DB&lt;3&gt; t print foo() * bar()</li><li> main::((eval 172):3):   print foo() + bar();</li><li> main::foo((eval 168):2):</li><li> main::bar((eval 170):2):</li><li> 42</li></ol></div><p>with this one, once the <pre>
+<span class="w">o</span></code>
+ption <pre>
+<span class="w">frame</span>=<span class="n">2</span></code>
+ has been set:</p>
+<div class="verbatim"><ol><li>   DB&lt;4&gt; o f=2</li><li>                frame = '2'</li><li>   DB&lt;5&gt; t print foo() * bar()</li><li> 3:      foo() * bar()</li><li> entering main::foo</li><li>  2:     sub foo { 14 };</li><li> exited main::foo</li><li> entering main::bar</li><li>  2:     sub bar { 3 };</li><li> exited main::bar</li><li> 42</li></ol></div><p>By way of demonstration, we present below a laborious listing
+resulting from setting your <pre>
+<span class="w">PERLDB_OPTS</span></code>
+ environment variable to
+the value <pre>
+<span class="w">f</span>=<span class="w">n</span> <span class="w">N</span></code>
+, and running <i>perl -d -V</i> from the command line.
+Examples using various values of <pre>
+<span class="w">n</span></code>
+ are shown to give you a feel
+for the difference between settings.  Long though it may be, this
+is not a complete listing, but only excerpts.</p>
+<dl>
+<dt>1</dt><dd>
+<pre>
+  <span class="w">entering</span> <span class="w">main::BEGIN</span>
+   <span class="w">entering</span> <span class="w">Config::BEGIN</span>
+    <span class="w">Package</span> <span class="w">lib</span>/<span class="w">Exporter</span>.<span class="w">pm</span>.
+    <span class="w">Package</span> <span class="w">lib</span>/<span class="w">Carp</span>.<span class="w">pm</span>.
+   <span class="w">Package</span> <span class="w">lib</span>/<span class="w">Config</span>.<span class="w">pm</span>.
+   <span class="w">entering</span> <span class="w">Config::TIEHASH</span>
+   <span class="w">entering</span> <span class="w">Exporter::import</span>
+    <span class="w">entering</span> <span class="w">Exporter::export</span>
+  <span class="w">entering</span> <span class="w">Config::myconfig</span>
+   <span class="w">entering</span> <span class="w">Config::FETCH</span>
+   <span class="w">entering</span> <span class="w">Config::FETCH</span>
+   <span class="w">entering</span> <span class="w">Config::FETCH</span>
+   <span class="w">entering</span> <span class="w">Config::FETCH</span></pre>
+</dd>
+<dt>2</dt><dd>
+<pre>
+  <span class="w">entering</span> <span class="w">main::BEGIN</span>
+   <span class="w">entering</span> <span class="w">Config::BEGIN</span>
+    <span class="w">Package</span> <span class="w">lib</span>/<span class="w">Exporter</span>.<span class="w">pm</span>.
+    <span class="w">Package</span> <span class="w">lib</span>/<span class="w">Carp</span>.<span class="w">pm</span>.
+   <span class="w">exited</span> <span class="w">Config::BEGIN</span>
+   <span class="w">Package</span> <span class="w">lib</span>/<span class="w">Config</span>.<span class="w">pm</span>.
+   <span class="w">entering</span> <span class="w">Config::TIEHASH</span>
+   <span class="w">exited</span> <span class="w">Config::TIEHASH</span>
+   <span class="w">entering</span> <span class="w">Exporter::import</span>
+    <span class="w">entering</span> <span class="w">Exporter::export</span>
+    <span class="w">exited</span> <span class="w">Exporter::export</span>
+   <span class="w">exited</span> <span class="w">Exporter::import</span>
+  <span class="w">exited</span> <span class="w">main::BEGIN</span>
+  <span class="w">entering</span> <span class="w">Config::myconfig</span>
+   <span class="w">entering</span> <span class="w">Config::FETCH</span>
+   <span class="w">exited</span> <span class="w">Config::FETCH</span>
+   <span class="w">entering</span> <span class="w">Config::FETCH</span>
+   <span class="w">exited</span> <span class="w">Config::FETCH</span>
+   <span class="w">entering</span> <span class="w">Config::FETCH</span></pre>
+</dd>
+<dt>3</dt><dd>
+<div class="verbatim"><ol><li>  in  $=main::BEGIN() from /dev/null:0</li><li>   in  $=Config::BEGIN() from lib/Config.pm:2</li><li>    Package lib/Exporter.pm.</li><li>    Package lib/Carp.pm.</li><li>   Package lib/Config.pm.</li><li>   in  $=Config::TIEHASH('Config') from lib/Config.pm:644</li><li>   in  $=Exporter::import('Config', 'myconfig', 'config_vars') from /dev/null:0</li><li>    in  $=Exporter::export('Config', 'main', 'myconfig', 'config_vars') from li</li><li>  in  @=Config::myconfig() from /dev/null:0</li><li>   in  $=Config::FETCH(ref(Config), 'package') from lib/Config.pm:574</li><li>   in  $=Config::FETCH(ref(Config), 'baserev') from lib/Config.pm:574</li><li>   in  $=Config::FETCH(ref(Config), 'PERL_VERSION') from lib/Config.pm:574</li><li>   in  $=Config::FETCH(ref(Config), 'PERL_SUBVERSION') from lib/Config.pm:574</li><li>   in  $=Config::FETCH(ref(Config), 'osname') from lib/Config.pm:574</li><li>   in  $=Config::FETCH(ref(Config), 'osvers') from lib/Config.pm:574</li></ol></div></dd>
+<dt>4</dt><dd>
+<div class="verbatim"><ol><li>  in  $=main::BEGIN() from /dev/null:0</li><li>   in  $=Config::BEGIN() from lib/Config.pm:2</li><li>    Package lib/Exporter.pm.</li><li>    Package lib/Carp.pm.</li><li>   out $=Config::BEGIN() from lib/Config.pm:0</li><li>   Package lib/Config.pm.</li><li>   in  $=Config::TIEHASH('Config') from lib/Config.pm:644</li><li>   out $=Config::TIEHASH('Config') from lib/Config.pm:644</li><li>   in  $=Exporter::import('Config', 'myconfig', 'config_vars') from /dev/null:0</li><li>    in  $=Exporter::export('Config', 'main', 'myconfig', 'config_vars') from lib/</li><li>    out $=Exporter::export('Config', 'main', 'myconfig', 'config_vars') from lib/</li><li>   out $=Exporter::import('Config', 'myconfig', 'config_vars') from /dev/null:0</li><li>  out $=main::BEGIN() from /dev/null:0</li><li>  in  @=Config::myconfig() from /dev/null:0</li><li>   in  $=Config::FETCH(ref(Config), 'package') from lib/Config.pm:574</li><li>   out $=Config::FETCH(ref(Config), 'package') from lib/Config.pm:574</li><li>   in  $=Config::FETCH(ref(Config), 'baserev') from lib/Config.pm:574</li><li>   out $=Config::FETCH(ref(Config), 'baserev') from lib/Config.pm:574</li><li>   in  $=Config::FETCH(ref(Config), 'PERL_VERSION') from lib/Config.pm:574</li><li>   out $=Config::FETCH(ref(Config), 'PERL_VERSION') from lib/Config.pm:574</li><li>   in  $=Config::FETCH(ref(Config), 'PERL_SUBVERSION') from lib/Config.pm:574</li></ol></div></dd>
+<dt>5</dt><dd>
+<div class="verbatim"><ol><li>  in  $=main::BEGIN() from /dev/null:0</li><li>   in  $=Config::BEGIN() from lib/Config.pm:2</li><li>    Package lib/Exporter.pm.</li><li>    Package lib/Carp.pm.</li><li>   out $=Config::BEGIN() from lib/Config.pm:0</li><li>   Package lib/Config.pm.</li><li>   in  $=Config::TIEHASH('Config') from lib/Config.pm:644</li><li>   out $=Config::TIEHASH('Config') from lib/Config.pm:644</li><li>   in  $=Exporter::import('Config', 'myconfig', 'config_vars') from /dev/null:0</li><li>    in  $=Exporter::export('Config', 'main', 'myconfig', 'config_vars') from lib/E</li><li>    out $=Exporter::export('Config', 'main', 'myconfig', 'config_vars') from lib/E</li><li>   out $=Exporter::import('Config', 'myconfig', 'config_vars') from /dev/null:0</li><li>  out $=main::BEGIN() from /dev/null:0</li><li>  in  @=Config::myconfig() from /dev/null:0</li><li>   in  $=Config::FETCH('Config=HASH(0x1aa444)', 'package') from lib/Config.pm:574</li><li>   out $=Config::FETCH('Config=HASH(0x1aa444)', 'package') from lib/Config.pm:574</li><li>   in  $=Config::FETCH('Config=HASH(0x1aa444)', 'baserev') from lib/Config.pm:574</li><li>   out $=Config::FETCH('Config=HASH(0x1aa444)', 'baserev') from lib/Config.pm:574</li></ol></div></dd>
+<dt>6</dt><dd>
+<div class="verbatim"><ol><li>  in  $=CODE(0x15eca4)() from /dev/null:0</li><li>   in  $=CODE(0x182528)() from lib/Config.pm:2</li><li>    Package lib/Exporter.pm.</li><li>   out $=CODE(0x182528)() from lib/Config.pm:0</li><li>   scalar context return from CODE(0x182528): undef</li><li>   Package lib/Config.pm.</li><li>   in  $=Config::TIEHASH('Config') from lib/Config.pm:628</li><li>   out $=Config::TIEHASH('Config') from lib/Config.pm:628</li><li>   scalar context return from Config::TIEHASH:   empty hash</li><li>   in  $=Exporter::import('Config', 'myconfig', 'config_vars') from /dev/null:0</li><li>    in  $=Exporter::export('Config', 'main', 'myconfig', 'config_vars') from lib/Exporter.pm:171</li><li>    out $=Exporter::export('Config', 'main', 'myconfig', 'config_vars') from lib/Exporter.pm:171</li><li>    scalar context return from Exporter::export: ''</li><li>   out $=Exporter::import('Config', 'myconfig', 'config_vars') from /dev/null:0</li><li>   scalar context return from Exporter::import: ''</li></ol></div></dd>
+</dl>
+<p>In all cases shown above, the line indentation shows the call tree.
+If bit 2 of <pre>
+<span class="w">frame</span></code>
+ is set, a line is printed on exit from a
+subroutine as well.  If bit 4 is set, the arguments are printed
+along with the caller info.  If bit 8 is set, the arguments are
+printed even if they are tied or references.  If bit 16 is set, the
+return value is printed, too.</p>
+<p>When a package is compiled, a line like this</p>
+<pre>
+    <span class="w">Package</span> <span class="w">lib</span>/<span class="w">Carp</span>.<span class="w">pm</span>.</pre>
+<p>is printed with proper indentation.</p>
+<a id="Debugging-Regular-Expressions"></a><h2 class='h2' >Debugging Regular Expressions</h2>
+<p>There are two ways to enable debugging output for regular expressions.</p>
+<p>If your perl is compiled with <pre>
+-<span class="w">DDEBUGGING</span></code>
+, you may use the
+<strong>-Dr</strong> flag on the command line.</p>
+<p>Otherwise, one can <pre>
+<a class="l_k" href="functions/use.html">use</a> <span class="w">re</span> <span class="q">&#39;debug&#39;</span></code>
+, which has effects at
+compile time and run time.  Since Perl 5.9.5, this pragma is lexically
+scoped.</p>
+<a id="Compile-time-Output"></a><h3 class='h3' >Compile-time Output</h3>
+<p>The debugging output at compile time looks like this:</p>
+<div class="verbatim"><ol><li>  Compiling REx '[bc]d(ef*g)+h[ij]k$'</li><li>  size 45 Got 364 bytes for offset annotations.</li><li>  first at 1</li><li>  rarest char g at 0</li><li>  rarest char d at 0</li><li>     1: ANYOF[bc](12)</li><li>    12: EXACT &lt;d&gt;(14)</li><li>    14: CURLYX[0] {1,32767}(28)</li><li>    16:   OPEN1(18)</li><li>    18:     EXACT &lt;e&gt;(20)</li><li>    20:     STAR(23)</li><li>    21:       EXACT &lt;f&gt;(0)</li><li>    23:     EXACT &lt;g&gt;(25)</li><li>    25:   CLOSE1(27)</li><li>    27:   WHILEM[1/1](0)</li><li>    28: NOTHING(29)</li><li>    29: EXACT &lt;h&gt;(31)</li><li>    31: ANYOF[ij](42)</li><li>    42: EXACT &lt;k&gt;(44)</li><li>    44: EOL(45)</li><li>    45: END(0)</li><li>  anchored 'de' at 1 floating 'gh' at 3..2147483647 (checking floating) </li><li>        stclass 'ANYOF[bc]' minlen 7 </li><li>  Offsets: [45]</li><li>  	1[4] 0[0] 0[0] 0[0] 0[0] 0[0] 0[0] 0[0] 0[0] 0[0] 0[0] 5[1]</li><li>  	0[0] 12[1] 0[0] 6[1] 0[0] 7[1] 0[0] 9[1] 8[1] 0[0] 10[1] 0[0]</li><li>  	11[1] 0[0] 12[0] 12[0] 13[1] 0[0] 14[4] 0[0] 0[0] 0[0] 0[0]</li><li>  	0[0] 0[0] 0[0] 0[0] 0[0] 0[0] 18[1] 0[0] 19[1] 20[0]  </li><li>  Omitting $` $&amp; $' support.</li></ol></div><p>The first line shows the pre-compiled form of the regex.  The second
+shows the size of the compiled form (in arbitrary units, usually
+4-byte words) and the total number of bytes allocated for the
+offset/length table, usually 4+<pre>
+<span class="w">size</span></code>
+*8.  The next line shows the
+label <i>id</i> of the first node that does a match.</p>
+<p>The</p>
+<div class="verbatim"><ol><li>  anchored 'de' at 1 floating 'gh' at 3..2147483647 (checking floating) </li><li>        stclass 'ANYOF[bc]' minlen 7</li></ol></div><p>line (split into two lines above) contains optimizer
+information.  In the example shown, the optimizer found that the match 
+should contain a substring <pre>
+<span class="w">de</span></code>
+ at offset 1, plus substring <pre>
+<span class="w">gh</span></code>
+
+at some offset between 3 and infinity.  Moreover, when checking for
+these substrings (to abandon impossible matches quickly), Perl will check
+for the substring <pre>
+<span class="w">gh</span></code>
+ before checking for the substring <pre>
+<span class="w">de</span></code>
+.  The
+optimizer may also use the knowledge that the match starts (at the
+<pre>
+<span class="w">first</span></code>
+ <i>id</i>) with a character class, and no string 
+shorter than 7 characters can possibly match.</p>
+<p>The fields of interest which may appear in this line are</p>
+<ul>
+<li><a id="anchored-_STRING_-at-_POS_"></a><strong><pre>
+<span class="w">anchored</span></code>
+ <i>STRING</i> <pre>
+<span class="w">at</span></code>
+ <i>POS</i></strong>
+</li>
+<li><a id="floating-_STRING_-at-_POS1..POS2_"></a><strong><pre>
+<span class="w">floating</span></code>
+ <i>STRING</i> <pre>
+<span class="w">at</span></code>
+ <i>POS1..POS2</i></strong>
+<p>See above.</p>
+</li>
+<li><a id="matching-floating%2fanchored"></a><strong><pre>
+<span class="w">matching</span> <span class="w">floating</span>/<span class="w">anchored</span></code>
+</strong>
+<p>Which substring to check first.</p>
+</li>
+<li><a id="minlen"></a><strong><pre>
+<span class="w">minlen</span></code>
+</strong>
+<p>The minimal length of the match.</p>
+</li>
+<li><a id="stclass-_TYPE_"></a><strong><pre>
+<span class="w">stclass</span></code>
+ <i>TYPE</i></strong>
+<p>Type of first matching node.</p>
+</li>
+<li><a id="noscan"></a><strong><pre>
+<span class="w">noscan</span></code>
+</strong>
+<p>Don't scan for the found substrings.</p>
+</li>
+<li><a id="isall"></a><strong><pre>
+<span class="w">isall</span></code>
+</strong>
+<p>Means that the optimizer information is all that the regular
+expression contains, and thus one does not need to enter the regex engine at
+all.</p>
+</li>
+<li><a id="GPOS"></a><strong><pre>
+<span class="w">GPOS</span></code>
+</strong>
+<p>Set if the pattern contains <pre>
+\<span class="w">G</span></code>
+.</p>
+</li>
+<li><a id="plus"></a><strong><pre>
+<span class="w">plus</span></code>
+</strong>
+<p>Set if the pattern starts with a repeated char (as in <code class="inline"><a class="l_k" href="functions/x.html">x+y</a></code>).</p>
+</li>
+<li><a id="implicit"></a><strong><pre>
+<span class="w">implicit</span></code>
+</strong>
+<p>Set if the pattern starts with <code class="inline">.*</code>.</p>
+</li>
+<li><a id="with-eval"></a><strong><pre>
+<span class="w">with</span> <a class="l_k" href="functions/eval.html">eval</a></code>
+</strong>
+<p>Set if the pattern contain eval-groups, such as <code class="inline">(?{ code })</code> and
+<pre>
+<span class="s">(</span><span class="q">??</span><span class="s">{</span> <span class="w">code</span> <span class="s">}</span><span class="s">)</span></code>
+.</p>
+</li>
+<li><a id="anchored(TYPE)"></a><strong><pre>
+<span class="i">anchored</span><span class="s">(</span><span class="w">TYPE</span><span class="s">)</span></code>
+</strong>
+<p>If the pattern may match only at a handful of places, with <pre>
+<span class="w">TYPE</span></code>
+
+being <pre>
+<span class="w">BOL</span></code>
+, <pre>
+<span class="w">MBOL</span></code>
+, or <pre>
+<span class="w">GPOS</span></code>
+.  See the table below.</p>
+</li>
+</ul>
+<p>If a substring is known to match at end-of-line only, it may be
+followed by <pre>
+<span class="i">$</span></code>
+, as in <code class="inline">floating 'k'$</code>.</p>
+<p>The optimizer-specific information is used to avoid entering (a slow) regex
+engine on strings that will not definitely match.  If the <pre>
+<span class="w">isall</span></code>
+ flag
+is set, a call to the regex engine may be avoided even when the optimizer
+found an appropriate place for the match.</p>
+<p>Above the optimizer section is the list of <i>nodes</i> of the compiled
+form of the regex.  Each line has format</p>
+<p><pre>
+   </code>
+<i>id</i>: <i>TYPE</i> <i>OPTIONAL-INFO</i> (<i>next-id</i>)</p>
+<a id="Types-of-Nodes"></a><h3 class='h3' >Types of Nodes</h3>
+<p>Here are the possible types, with short descriptions:</p>
+<div class="verbatim"><ol><li> # TYPE arg-description [num-args] [longjump-len] DESCRIPTION</li><li></li><li> # Exit points</li><li></li><li> END                no         End of program.</li><li> SUCCEED            no         Return from a subroutine, basically.</li><li></li><li> # Anchors:</li><li></li><li> BOL                no         Match "" at beginning of line.</li><li> MBOL               no         Same, assuming multiline.</li><li> SBOL               no         Same, assuming singleline.</li><li> EOS                no         Match "" at end of string.</li><li> EOL                no         Match "" at end of line.</li><li> MEOL               no         Same, assuming multiline.</li><li> SEOL               no         Same, assuming singleline.</li><li> BOUND              no         Match "" at any word boundary using</li><li>                               native charset semantics for non-utf8</li><li> BOUNDL             no         Match "" at any locale word boundary</li><li> BOUNDU             no         Match "" at any word boundary using</li><li>                               Unicode semantics</li><li> BOUNDA             no         Match "" at any word boundary using ASCII</li><li>                               semantics</li><li> NBOUND             no         Match "" at any word non-boundary using</li><li>                               native charset semantics for non-utf8</li><li> NBOUNDL            no         Match "" at any locale word non-boundary</li><li> NBOUNDU            no         Match "" at any word non-boundary using</li><li>                               Unicode semantics</li><li> NBOUNDA            no         Match "" at any word non-boundary using</li><li>                               ASCII semantics</li><li> GPOS               no         Matches where last m//g left off.</li><li></li><li> # [Special] alternatives:</li><li></li><li> REG_ANY            no         Match any one character (except newline).</li><li> SANY               no         Match any one character.</li><li> CANY               no         Match any one byte.</li><li> ANYOF              sv         Match character in (or not in) this</li><li>                               class, single char match only</li><li> ANYOF_WARN_SUPER   sv         Match character in (or not in) this</li><li>                               class, warn (if enabled) upon matching a</li><li>                               char above Unicode max;</li><li> ANYOF_SYNTHETIC    sv         Synthetic start class</li><li></li><li> POSIXD             none       Some [[:class:]] under /d; the FLAGS</li><li>                               field gives which one</li><li> POSIXL             none       Some [[:class:]] under /l; the FLAGS</li><li>                               field gives which one</li><li> POSIXU             none       Some [[:class:]] under /u; the FLAGS</li><li>                               field gives which one</li><li> POSIXA             none       Some [[:class:]] under /a; the FLAGS</li><li>                               field gives which one</li><li> NPOSIXD            none       complement of POSIXD, [[:^class:]]</li><li> NPOSIXL            none       complement of POSIXL, [[:^class:]]</li><li> NPOSIXU            none       complement of POSIXU, [[:^class:]]</li><li> NPOSIXA            none       complement of POSIXA, [[:^class:]]</li><li></li><li> CLUMP              no         Match any extended grapheme cluster</li><li>                               sequence</li><li></li><li> # Alternation</li><li></li><li> # BRANCH        The set of branches constituting a single choice are</li><li> #               hooked together with their "next" pointers, since</li><li> #               precedence prevents anything being concatenated to</li><li> #               any individual branch.  The "next" pointer of the last</li><li> #               BRANCH in a choice points to the thing following the</li><li> #               whole choice.  This is also where the final "next"</li><li> #               pointer of each individual branch points; each branch</li><li> #               starts with the operand node of a BRANCH node.</li><li> #</li><li> BRANCH             node       Match this alternative, or the next...</li><li></li><li> # Back pointer</li><li></li><li> # BACK          Normal "next" pointers all implicitly point forward;</li><li> #               BACK exists to make loop structures possible.</li><li> # not used</li><li> BACK               no         Match "", "next" ptr points backward.</li><li></li><li> # Literals</li><li></li><li> EXACT              str        Match this string (preceded by length).</li><li> EXACTF             str        Match this non-UTF-8 string (not</li><li>                               guaranteed to be folded) using /id rules</li><li>                               (w/len).</li><li> EXACTFL            str        Match this string (not guaranteed to be</li><li>                               folded) using /il rules (w/len).</li><li> EXACTFU            str        Match this string (folded iff in UTF-8,</li><li>                               length in folding doesn't change if not</li><li>                               in UTF-8) using /iu rules (w/len).</li><li> EXACTFA            str        Match this string (not guaranteed to be</li><li>                               folded) using /iaa rules (w/len).</li><li> EXACTFU_SS         str        Match this string (folded iff in UTF-8,</li><li>                               length in folding may change even if not</li><li>                               in UTF-8) using /iu rules (w/len).</li><li> EXACTFU_TRICKYFOLD str        Match this folded UTF-8 string using /iu</li><li>                               rules</li><li></li><li> # Do nothing types</li><li></li><li> NOTHING            no         Match empty string.</li><li> # A variant of above which delimits a group, thus stops optimizations</li><li> TAIL               no         Match empty string. Can jump here from</li><li>                               outside.</li><li></li><li> # Loops</li><li></li><li> # STAR,PLUS    '?', and complex '*' and '+', are implemented as</li><li> #               circular BRANCH structures using BACK.  Simple cases</li><li> #               (one character per match) are implemented with STAR</li><li> #               and PLUS for speed and to minimize recursive plunges.</li><li> #</li><li> STAR               node       Match this (simple) thing 0 or more</li><li>                               times.</li><li> PLUS               node       Match this (simple) thing 1 or more</li><li>                               times.</li><li></li><li> CURLY              sv 2       Match this simple thing {n,m} times.</li><li> CURLYN             no 2       Capture next-after-this simple thing</li><li> CURLYM             no 2       Capture this medium-complex thing {n,m}</li><li>                               times.</li><li> CURLYX             sv 2       Match this complex thing {n,m} times.</li><li></li><li> # This terminator creates a loop structure for CURLYX</li><li> WHILEM             no         Do curly processing and see if rest</li><li>                               matches.</li><li></li><li> # Buffer related</li><li></li><li> # OPEN,CLOSE,GROUPP     ...are numbered at compile time.</li><li> OPEN               num 1      Mark this point in input as start of #n.</li><li> CLOSE              num 1      Analogous to OPEN.</li><li></li><li> REF                num 1      Match some already matched string</li><li> REFF               num 1      Match already matched string, folded</li><li>                               using native charset semantics for non-</li><li>                               utf8</li><li> REFFL              num 1      Match already matched string, folded in</li><li>                               loc.</li><li> REFFU              num 1      Match already matched string, folded</li><li>                               using unicode semantics for non-utf8</li><li> REFFA              num 1      Match already matched string, folded</li><li>                               using unicode semantics for non-utf8, no</li><li>                               mixing ASCII, non-ASCII</li><li></li><li> # Named references.  Code in regcomp.c assumes that these all are after</li><li> # the numbered references</li><li> NREF               no-sv 1    Match some already matched string</li><li> NREFF              no-sv 1    Match already matched string, folded</li><li>                               using native charset semantics for non-</li><li>                               utf8</li><li> NREFFL             no-sv 1    Match already matched string, folded in</li><li>                               loc.</li><li> NREFFU             num 1      Match already matched string, folded</li><li>                               using unicode semantics for non-utf8</li><li> NREFFA             num 1      Match already matched string, folded</li><li>                               using unicode semantics for non-utf8, no</li><li>                               mixing ASCII, non-ASCII</li><li></li><li> IFMATCH            off 1 2    Succeeds if the following matches.</li><li> UNLESSM            off 1 2    Fails if the following matches.</li><li> SUSPEND            off 1 1    "Independent" sub-RE.</li><li> IFTHEN             off 1 1    Switch, should be preceded by switcher.</li><li> GROUPP             num 1      Whether the group matched.</li><li></li><li> # Support for long RE</li><li></li><li> LONGJMP            off 1 1    Jump far away.</li><li> BRANCHJ            off 1 1    BRANCH with long offset.</li><li></li><li> # The heavy worker</li><li></li><li> EVAL               evl 1      Execute some Perl code.</li><li></li><li> # Modifiers</li><li></li><li> MINMOD             no         Next operator is not greedy.</li><li> LOGICAL            no         Next opcode should set the flag only.</li><li></li><li> # This is not used yet</li><li> RENUM              off 1 1    Group with independently numbered parens.</li><li></li><li> # Trie Related</li><li></li><li> # Behave the same as A|LIST|OF|WORDS would. The '..C' variants</li><li> # have inline charclass data (ascii only), the 'C' store it in the</li><li> # structure.</li><li></li><li> TRIE               trie 1     Match many EXACT(F[ALU]?)? at once.</li><li>                               flags==type</li><li> TRIEC              trie       Same as TRIE, but with embedded charclass</li><li>                    charclass  data</li><li></li><li> AHOCORASICK        trie 1     Aho Corasick stclass. flags==type</li><li> AHOCORASICKC       trie       Same as AHOCORASICK, but with embedded</li><li>                    charclass  charclass data</li><li></li><li> # Regex Subroutines</li><li> GOSUB              num/ofs 2L recurse to paren arg1 at (signed) ofs</li><li>                               arg2</li><li> GOSTART            no         recurse to start of pattern</li><li></li><li> # Special conditionals</li><li> NGROUPP            no-sv 1    Whether the group matched.</li><li> INSUBP             num 1      Whether we are in a specific recurse.</li><li> DEFINEP            none 1     Never execute directly.</li><li></li><li> # Backtracking Verbs</li><li> ENDLIKE            none       Used only for the type field of verbs</li><li> OPFAIL             none       Same as (?!)</li><li> ACCEPT             parno 1    Accepts the current matched string.</li><li></li><li> # Verbs With Arguments</li><li> VERB               no-sv 1    Used only for the type field of verbs</li><li> PRUNE              no-sv 1    Pattern fails at this startpoint if no-</li><li>                               backtracking through this</li><li> MARKPOINT          no-sv 1    Push the current location for rollback by</li><li>                               cut.</li><li> SKIP               no-sv 1    On failure skip forward (to the mark)</li><li>                               before retrying</li><li> COMMIT             no-sv 1    Pattern fails outright if backtracking</li><li>                               through this</li><li> CUTGROUP           no-sv 1    On failure go to the next alternation in</li><li>                               the group</li><li></li><li> # Control what to keep in $&amp;.</li><li> KEEPS              no         $&amp; begins here.</li><li></li><li> # New charclass like patterns</li><li> LNBREAK            none       generic newline pattern</li><li></li><li> # SPECIAL  REGOPS</li><li></li><li> # This is not really a node, but an optimized away piece of a "long"</li><li> # node.  To simplify debugging output, we mark it as if it were a node</li><li> OPTIMIZED          off        Placeholder for dump.</li><li></li><li> # Special opcode with the property that no opcode in a compiled program</li><li> # will ever be of this type. Thus it can be used as a flag value that</li><li> # no other opcode has been seen. END is used similarly, in that an END</li><li> # node cant be optimized. So END implies "unoptimizable" and PSEUDO</li><li> # mean "not seen anything to optimize yet".</li><li> PSEUDO             off        Pseudo opcode for internal use.</li></ol></div><p>Following the optimizer information is a dump of the offset/length
+table, here split across several lines:</p>
+<pre>
+  <span class="j">Offsets:</span> <span class="s">[</span><span class="n">45</span><span class="s">]</span>
+  	<span class="n">1</span><span class="s">[</span><span class="n">4</span><span class="s">]</span> <span class="n">0</span><span class="s">[</span><span class="n">0</span><span class="s">]</span> <span class="n">0</span><span class="s">[</span><span class="n">0</span><span class="s">]</span> <span class="n">0</span><span class="s">[</span><span class="n">0</span><span class="s">]</span> <span class="n">0</span><span class="s">[</span><span class="n">0</span><span class="s">]</span> <span class="n">0</span><span class="s">[</span><span class="n">0</span><span class="s">]</span> <span class="n">0</span><span class="s">[</span><span class="n">0</span><span class="s">]</span> <span class="n">0</span><span class="s">[</span><span class="n">0</span><span class="s">]</span> <span class="n">0</span><span class="s">[</span><span class="n">0</span><span class="s">]</span> <span class="n">0</span><span class="s">[</span><span class="n">0</span><span class="s">]</span> <span class="n">0</span><span class="s">[</span><span class="n">0</span><span class="s">]</span> <span class="n">5</span><span class="s">[</span><span class="n">1</span><span class="s">]</span>
+  	<span class="n">0</span><span class="s">[</span><span class="n">0</span><span class="s">]</span> <span class="n">12</span><span class="s">[</span><span class="n">1</span><span class="s">]</span> <span class="n">0</span><span class="s">[</span><span class="n">0</span><span class="s">]</span> <span class="n">6</span><span class="s">[</span><span class="n">1</span><span class="s">]</span> <span class="n">0</span><span class="s">[</span><span class="n">0</span><span class="s">]</span> <span class="n">7</span><span class="s">[</span><span class="n">1</span><span class="s">]</span> <span class="n">0</span><span class="s">[</span><span class="n">0</span><span class="s">]</span> <span class="n">9</span><span class="s">[</span><span class="n">1</span><span class="s">]</span> <span class="n">8</span><span class="s">[</span><span class="n">1</span><span class="s">]</span> <span class="n">0</span><span class="s">[</span><span class="n">0</span><span class="s">]</span> <span class="n">10</span><span class="s">[</span><span class="n">1</span><span class="s">]</span> <span class="n">0</span><span class="s">[</span><span class="n">0</span><span class="s">]</span>
+  	<span class="n">11</span><span class="s">[</span><span class="n">1</span><span class="s">]</span> <span class="n">0</span><span class="s">[</span><span class="n">0</span><span class="s">]</span> <span class="n">12</span><span class="s">[</span><span class="n">0</span><span class="s">]</span> <span class="n">12</span><span class="s">[</span><span class="n">0</span><span class="s">]</span> <span class="n">13</span><span class="s">[</span><span class="n">1</span><span class="s">]</span> <span class="n">0</span><span class="s">[</span><span class="n">0</span><span class="s">]</span> <span class="n">14</span><span class="s">[</span><span class="n">4</span><span class="s">]</span> <span class="n">0</span><span class="s">[</span><span class="n">0</span><span class="s">]</span> <span class="n">0</span><span class="s">[</span><span class="n">0</span><span class="s">]</span> <span class="n">0</span><span class="s">[</span><span class="n">0</span><span class="s">]</span> <span class="n">0</span><span class="s">[</span><span class="n">0</span><span class="s">]</span>
+  	<span class="n">0</span><span class="s">[</span><span class="n">0</span><span class="s">]</span> <span class="n">0</span><span class="s">[</span><span class="n">0</span><span class="s">]</span> <span class="n">0</span><span class="s">[</span><span class="n">0</span><span class="s">]</span> <span class="n">0</span><span class="s">[</span><span class="n">0</span><span class="s">]</span> <span class="n">0</span><span class="s">[</span><span class="n">0</span><span class="s">]</span> <span class="n">0</span><span class="s">[</span><span class="n">0</span><span class="s">]</span> <span class="n">18</span><span class="s">[</span><span class="n">1</span><span class="s">]</span> <span class="n">0</span><span class="s">[</span><span class="n">0</span><span class="s">]</span> <span class="n">19</span><span class="s">[</span><span class="n">1</span><span class="s">]</span> <span class="n">20</span><span class="s">[</span><span class="n">0</span><span class="s">]</span></pre>
+<p>The first line here indicates that the offset/length table contains 45
+entries.  Each entry is a pair of integers, denoted by <pre>
+<span class="w">offset</span><span class="s">[</span><a class="l_k" href="functions/length.html">length</a><span class="s">]</span></code>
+.
+Entries are numbered starting with 1, so entry #1 here is <pre>
+<span class="n">1</span><span class="s">[</span><span class="n">4</span><span class="s">]</span></code>
+ and
+entry #12 is <pre>
+<span class="n">5</span><span class="s">[</span><span class="n">1</span><span class="s">]</span></code>
+.  <pre>
+<span class="n">1</span><span class="s">[</span><span class="n">4</span><span class="s">]</span></code>
+ indicates that the node labeled <code class="inline">1:</code>
+(the <code class="inline">1: ANYOF[bc]</code>) begins at character position 1 in the
+pre-compiled form of the regex, and has a length of 4 characters.
+<pre>
+<span class="n">5</span><span class="s">[</span><span class="n">1</span><span class="s">]</span></code>
+ in position 12 
+indicates that the node labeled <code class="inline">12:</code>
+(the <code class="inline">12: EXACT &lt;d&gt;</code>) begins at character position 5 in the
+pre-compiled form of the regex, and has a length of 1 character.
+<pre>
+<span class="n">12</span><span class="s">[</span><span class="n">1</span><span class="s">]</span></code>
+ in position 14 
+indicates that the node labeled <code class="inline">14:</code>
+(the <code class="inline">14: CURLYX[0] {1,32767}</code>) begins at character position 12 in the
+pre-compiled form of the regex, and has a length of 1 character---that
+is, it corresponds to the <pre>
++</code>
+ symbol in the precompiled regex.</p>
+<p><pre>
+<span class="n">0</span><span class="s">[</span><span class="n">0</span><span class="s">]</span></code>
+ items indicate that there is no corresponding node.</p>
+<a id="Run-time-Output"></a><h3 class='h3' >Run-time Output</h3>
+<p>First of all, when doing a match, one may get no run-time output even
+if debugging is enabled.  This means that the regex engine was never
+entered and that all of the job was therefore done by the optimizer.</p>
+<p>If the regex engine was entered, the output may look like this:</p>
+<div class="verbatim"><ol><li>  Matching '[bc]d(ef*g)+h[ij]k$' against 'abcdefg__gh__'</li><li>    Setting an EVAL scope, savestack=3</li><li>     2 &lt;ab&gt; &lt;cdefg__gh_&gt;    |  1: ANYOF</li><li>     3 &lt;abc&gt; &lt;defg__gh_&gt;    | 11: EXACT &lt;d&gt;</li><li>     4 &lt;abcd&gt; &lt;efg__gh_&gt;    | 13: CURLYX {1,32767}</li><li>     4 &lt;abcd&gt; &lt;efg__gh_&gt;    | 26:   WHILEM</li><li>				0 out of 1..32767  cc=effff31c</li><li>     4 &lt;abcd&gt; &lt;efg__gh_&gt;    | 15:     OPEN1</li><li>     4 &lt;abcd&gt; &lt;efg__gh_&gt;    | 17:     EXACT &lt;e&gt;</li><li>     5 &lt;abcde&gt; &lt;fg__gh_&gt;    | 19:     STAR</li><li>			     EXACT &lt;f&gt; can match 1 times out of 32767...</li><li>    Setting an EVAL scope, savestack=3</li><li>     6 &lt;bcdef&gt; &lt;g__gh__&gt;    | 22:       EXACT &lt;g&gt;</li><li>     7 &lt;bcdefg&gt; &lt;__gh__&gt;    | 24:       CLOSE1</li><li>     7 &lt;bcdefg&gt; &lt;__gh__&gt;    | 26:       WHILEM</li><li>				    1 out of 1..32767  cc=effff31c</li><li>    Setting an EVAL scope, savestack=12</li><li>     7 &lt;bcdefg&gt; &lt;__gh__&gt;    | 15:         OPEN1</li><li>     7 &lt;bcdefg&gt; &lt;__gh__&gt;    | 17:         EXACT &lt;e&gt;</li><li>       restoring \1 to 4(4)..7</li><li>				    failed, try continuation...</li><li>     7 &lt;bcdefg&gt; &lt;__gh__&gt;    | 27:         NOTHING</li><li>     7 &lt;bcdefg&gt; &lt;__gh__&gt;    | 28:         EXACT &lt;h&gt;</li><li>				    failed...</li><li>				failed...</li></ol></div><p>The most significant information in the output is about the particular <i>node</i>
+of the compiled regex that is currently being tested against the target string.
+The format of these lines is</p>
+<p><pre>
+    </code>
+<i>STRING-OFFSET</i> &lt;<i>PRE-STRING</i>&gt; &lt;<i>POST-STRING</i>&gt;   |<i>ID</i>:  <i>TYPE</i></p>
+<p>The <i>TYPE</i> info is indented with respect to the backtracking level.
+Other incidental information appears interspersed within.</p>
+<a id="Debugging-Perl-Memory-Usage"></a><h2 class='h2' >Debugging Perl Memory Usage</h2>
+<p>Perl is a profligate wastrel when it comes to memory use.  There
+is a saying that to estimate memory usage of Perl, assume a reasonable
+algorithm for memory allocation, multiply that estimate by 10, and
+while you still may miss the mark, at least you won't be quite so
+astonished.  This is not absolutely true, but may provide a good
+grasp of what happens.</p>
+<p>Assume that an integer cannot take less than 20 bytes of memory, a
+float cannot take less than 24 bytes, a string cannot take less
+than 32 bytes (all these examples assume 32-bit architectures, the
+result are quite a bit worse on 64-bit architectures).  If a variable
+is accessed in two of three different ways (which require an integer,
+a float, or a string), the memory footprint may increase yet another
+20 bytes.  A sloppy malloc(3) implementation can inflate these
+numbers dramatically.</p>
+<p>On the opposite end of the scale, a declaration like</p>
+<pre>
+  sub <span class="m">foo</span><span class="sc">;</span></pre>
+<p>may take up to 500 bytes of memory, depending on which release of Perl
+you're running.</p>
+<p>Anecdotal estimates of source-to-compiled code bloat suggest an
+eightfold increase.  This means that the compiled form of reasonable
+(normally commented, properly indented etc.) code will take
+about eight times more space in memory than the code took
+on disk.</p>
+<p>The <strong>-DL</strong> command-line switch is obsolete since circa Perl 5.6.0
+(it was available only if Perl was built with <pre>
+-<span class="w">DDEBUGGING</span></code>
+).
+The switch was used to track Perl's memory allocations and possible
+memory leaks.  These days the use of malloc debugging tools like
+<i>Purify</i> or <i>valgrind</i> is suggested instead.  See also
+<a href="perlhacktips.html#PERL_MEM_LOG">PERL_MEM_LOG in perlhacktips</a>.</p>
+<p>One way to find out how much memory is being used by Perl data
+structures is to install the Devel::Size module from CPAN: it gives
+you the minimum number of bytes required to store a particular data
+structure.  Please be mindful of the difference between the size()
+and total_size().</p>
+<p>If Perl has been compiled using Perl's malloc you can analyze Perl
+memory usage by setting $ENV{PERL_DEBUG_MSTATS}.</p>
+<a id="Using-%24ENV%7bPERL_DEBUG_MSTATS%7d"></a><h3 class='h3' >Using <pre>
+<span class="i">$ENV</span>{<span class="w">PERL_DEBUG_MSTATS</span>}</code>
+</h3>
+<p>If your perl is using Perl's malloc() and was compiled with the
+necessary switches (this is the default), then it will print memory
+usage statistics after compiling your code when <pre>
+<span class="i">$ENV</span>{<span class="w">PERL_DEBUG_MSTATS</span>}
+&gt; <span class="n">1</span></code>
+, and before termination of the program when <pre>
+<span class="i">$ENV</span>{<span class="w">PERL_DEBUG_MSTATS</span>} &gt;= <span class="n">1</span></code>
+.  The report format is similar to
+the following example:</p>
+<div class="verbatim"><ol><li>  $ PERL_DEBUG_MSTATS=2 perl -e "require Carp"</li><li>  Memory allocation statistics after compilation: (buckets 4(4)..8188(8192)</li><li>     14216 free:   130   117    28     7     9   0   2     2   1 0 0</li><li>		437    61    36     0     5</li><li>     60924 used:   125   137   161    55     7   8   6    16   2 0 1</li><li>		 74   109   304    84    20</li><li>  Total sbrk(): 77824/21:119. Odd ends: pad+heads+chain+tail: 0+636+0+2048.</li><li>  Memory allocation statistics after execution:   (buckets 4(4)..8188(8192)</li><li>     30888 free:   245    78    85    13     6   2   1     3   2 0 1</li><li>		315   162    39    42    11</li><li>    175816 used:   265   176  1112   111    26  22  11    27   2 1 1</li><li>		196   178  1066   798    39</li><li>  Total sbrk(): 215040/47:145. Odd ends: pad+heads+chain+tail: 0+2192+0+6144.</li></ol></div><p>It is possible to ask for such a statistic at arbitrary points in
+your execution using the mstat() function out of the standard
+Devel::Peek module.</p>
+<p>Here is some explanation of that format:</p>
+<ul>
+<li><a id="buckets-SMALLEST(APPROX)..GREATEST(APPROX)"></a><strong><pre>
+<span class="w">buckets</span> <span class="i">SMALLEST</span><span class="s">(</span><span class="w">APPROX</span><span class="s">)</span>..<span class="i">GREATEST</span><span class="s">(</span><span class="w">APPROX</span><span class="s">)</span></code>
+</strong>
+<p>Perl's malloc() uses bucketed allocations.  Every request is rounded
+up to the closest bucket size available, and a bucket is taken from
+the pool of buckets of that size.</p>
+<p>The line above describes the limits of buckets currently in use.
+Each bucket has two sizes: memory footprint and the maximal size
+of user data that can fit into this bucket.  Suppose in the above
+example that the smallest bucket were size 4.  The biggest bucket
+would have usable size 8188, and the memory footprint would be 8192.</p>
+<p>In a Perl built for debugging, some buckets may have negative usable
+size.  This means that these buckets cannot (and will not) be used.
+For larger buckets, the memory footprint may be one page greater
+than a power of 2.  If so, the corresponding power of two is
+printed in the <pre>
+<span class="w">APPROX</span></code>
+ field above.</p>
+</li>
+<li><a id="Free%2fUsed"></a><strong>Free/Used</strong>
+<p>The 1 or 2 rows of numbers following that correspond to the number
+of buckets of each size between <pre>
+<span class="w">SMALLEST</span></code>
+ and <pre>
+<span class="w">GREATEST</span></code>
+.  In
+the first row, the sizes (memory footprints) of buckets are powers
+of two--or possibly one page greater.  In the second row, if present,
+the memory footprints of the buckets are between the memory footprints
+of two buckets "above".</p>
+<p>For example, suppose under the previous example, the memory footprints
+were</p>
+<div class="verbatim"><ol><li>     free:    8     16    32    64    128  256 512 1024 2048 4096 8192</li><li>	   4     12    24    48    80</li></ol></div><p>With a non-<pre>
+<span class="w">DEBUGGING</span></code>
+ perl, the buckets starting from <pre>
+<span class="n">128</span></code>
+ have
+a 4-byte overhead, and thus an 8192-long bucket may take up to
+8188-byte allocations.</p>
+</li>
+<li><a id="Total-sbrk()%3a-SBRKed%2fSBRKs%3aCONTINUOUS"></a><strong><code class="inline">Total sbrk(): SBRKed/SBRKs:CONTINUOUS</code></strong>
+<p>The first two fields give the total amount of memory perl sbrk(2)ed
+(ess-broken? :-) and number of sbrk(2)s used.  The third number is
+what perl thinks about continuity of returned chunks.  So long as
+this number is positive, malloc() will assume that it is probable
+that sbrk(2) will provide continuous memory.</p>
+<p>Memory allocated by external libraries is not counted.</p>
+</li>
+<li><a id="pad%3a-0"></a><strong><pre>
+<span class="j">pad:</span> <span class="n">0</span></code>
+</strong>
+<p>The amount of sbrk(2)ed memory needed to keep buckets aligned.</p>
+</li>
+<li><a id="heads%3a-2192"></a><strong><pre>
+<span class="j">heads:</span> <span class="n">2192</span></code>
+</strong>
+<p>Although memory overhead of bigger buckets is kept inside the bucket, for
+smaller buckets, it is kept in separate areas.  This field gives the
+total size of these areas.</p>
+</li>
+<li><a id="chain%3a-0"></a><strong><pre>
+<span class="j">chain:</span> <span class="n">0</span></code>
+</strong>
+<p>malloc() may want to subdivide a bigger bucket into smaller buckets.
+If only a part of the deceased bucket is left unsubdivided, the rest
+is kept as an element of a linked list.  This field gives the total
+size of these chunks.</p>
+</li>
+<li><a id="tail%3a-6144"></a><strong><pre>
+<span class="j">tail:</span> <span class="n">6144</span></code>
+</strong>
+<p>To minimize the number of sbrk(2)s, malloc() asks for more memory.  This
+field gives the size of the yet unused part, which is sbrk(2)ed, but
+never touched.</p>
+</li>
+</ul>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<p><a href="perldebug.html">perldebug</a>,
+<a href="perlguts.html">perlguts</a>,
+<a href="perlrun.html">perlrun</a>
+<a href="re.html">re</a>,
+and
+<a href="https://search.cpan.org/perldoc/Devel::DProf">Devel::DProf</a>.</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#Debugger-Internals">Debugger Internals</a></li><ul><li><a href="#Writing-Your-Own-Debugger">Writing Your Own Debugger</a></li></ul><li><a href="#Frame-Listing-Output-Examples">Frame Listing Output Examples</a></li><li><a href="#Debugging-Regular-Expressions">Debugging Regular Expressions</a></li><ul><li><a href="#Compile-time-Output">Compile-time Output</a></li><li><a href="#Types-of-Nodes">Types of Nodes</a></li><li><a href="#Run-time-Output">Run-time Output</a></li></ul><li><a href="#Debugging-Perl-Memory-Usage">Debugging Perl Memory Usage</a></li><ul><li><a href="#Using-%24ENV%7bPERL_DEBUG_MSTATS%7d">Using $ENV{PERL_DEBUG_MSTATS}</a></li></ul><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

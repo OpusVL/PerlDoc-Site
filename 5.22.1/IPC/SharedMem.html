@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="IPC::SharedMem - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>IPC::SharedMem - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.22.1/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.22.1/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.22.1/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.22.1/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.22.1/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.22.1/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.22.1/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.22.1/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.22.1/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.22.1/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.22.1/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.22.1/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.22.1/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.22.1/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.22.1/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../index-modules-I.html">Core modules (I)</a> &gt;
+      
+    
+    IPC::SharedMem
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 22.1 documentation</h1>
+                  </div>
+                  <h1>IPC::SharedMem</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#METHODS">METHODS</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#AUTHORS">AUTHORS</a></li><li><a href="#COPYRIGHT">COPYRIGHT</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>IPC::SharedMem - SysV Shared Memory IPC object class</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<pre>
+    <a class="l_k" href="../functions/use.html">use</a> <span class="w">IPC::SysV</span> <span class="q">qw(IPC_PRIVATE S_IRUSR S_IWUSR)</span><span class="sc">;</span>
+    <a class="l_k" href="../functions/use.html">use</a> <span class="w">IPC::SharedMem</span><span class="sc">;</span>
+
+    <span class="i">$shm</span> = <span class="w">IPC::SharedMem</span><span class="w">-&gt;new</span><span class="s">(</span><span class="w">IPC_PRIVATE</span><span class="cm">,</span> <span class="n">8</span><span class="cm">,</span> <span class="w">S_IRWXU</span><span class="s">)</span><span class="sc">;</span>
+
+    <span class="i">$shm</span><span class="i">-&gt;write</span><span class="s">(</span><a class="l_k" href="../functions/pack.html">pack</a><span class="s">(</span><span class="q">&quot;S&quot;</span><span class="cm">,</span> <span class="n">4711</span><span class="s">)</span><span class="cm">,</span> <span class="n">2</span><span class="cm">,</span> <span class="n">2</span><span class="s">)</span><span class="sc">;</span>
+
+    <span class="i">$data</span> = <span class="i">$shm</span><span class="i">-&gt;read</span><span class="s">(</span><span class="n">0</span><span class="cm">,</span> <span class="n">2</span><span class="s">)</span><span class="sc">;</span>
+
+    <span class="i">$ds</span> = <span class="i">$shm</span><span class="i">-&gt;stat</span><span class="sc">;</span>
+
+    <span class="i">$shm</span><span class="i">-&gt;remove</span><span class="sc">;</span></pre>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>A class providing an object based interface to SysV IPC shared memory.</p>
+<a id="METHODS"></a><h2 class='h2' >METHODS</h2>
+<ul>
+<li><a id="new-(-KEY-%2c-SIZE-%2c-FLAGS-)"></a><strong>new ( KEY , SIZE , FLAGS )</strong>
+<p>Creates a new shared memory segment of <pre>
+<span class="w">SIZE</span></code>
+ bytes size associated
+with <pre>
+<span class="w">KEY</span></code>
+. A new segment is created if</p>
+<ul>
+<li>
+<p><pre>
+<span class="w">KEY</span></code>
+ is equal to <pre>
+<span class="w">IPC_PRIVATE</span></code>
+</p>
+</li>
+<li>
+<p><pre>
+<span class="w">KEY</span></code>
+ does not already have a shared memory segment associated
+with it, and <code class="inline"><i>FLAGS</i> &amp; IPC_CREAT</code> is true.</p>
+</li>
+</ul>
+<p>On creation of a new shared memory segment <pre>
+<span class="w">FLAGS</span></code>
+ is used to
+set the permissions.  Be careful not to set any flags that the
+Sys V IPC implementation does not allow: in some systems setting
+execute bits makes the operations fail.</p>
+</li>
+<li><a id="id"></a><strong>id</strong>
+<p>Returns the shared memory identifier.</p>
+</li>
+<li><a id="read-(-POS%2c-SIZE-)"></a><strong>read ( POS, SIZE )</strong>
+<p>Read <pre>
+<span class="w">SIZE</span></code>
+ bytes from the shared memory segment at <pre>
+<span class="w">POS</span></code>
+. Returns
+the string read, or <code class="inline"><a class="l_k" href="../functions/undef.html">undef</a></code> if there was an error. The return value
+becomes tainted. See <a href="../functions/shmread.html">shmread</a>.</p>
+</li>
+<li><a id="write-(-STRING%2c-POS%2c-SIZE-)"></a><strong>write ( STRING, POS, SIZE )</strong>
+<p>Write <pre>
+<span class="w">SIZE</span></code>
+ bytes to the shared memory segment at <pre>
+<span class="w">POS</span></code>
+. Returns
+true if successful, or false if there is an error. See <a href="../functions/shmwrite.html">shmwrite</a>.</p>
+</li>
+<li><a id="remove"></a><strong>remove</strong>
+<p>Remove the shared memory segment from the system or mark it as
+removed as long as any processes are still attached to it.</p>
+</li>
+<li><a id="is_removed"></a><strong>is_removed</strong>
+<p>Returns true if the shared memory segment has been removed or
+marked for removal.</p>
+</li>
+<li><a id="stat"></a><strong>stat</strong>
+<p>Returns an object of type <pre>
+<span class="w">IPC::SharedMem::stat</span></code>
+ which is a sub-class
+of <pre>
+<span class="w">Class::Struct</span></code>
+. It provides the following fields. For a description
+of these fields see you system documentation.</p>
+<pre>
+    <span class="w">uid</span>
+    <span class="w">gid</span>
+    <span class="w">cuid</span>
+    <span class="w">cgid</span>
+    <span class="w">mode</span>
+    <span class="w">segsz</span>
+    <span class="w">lpid</span>
+    <span class="w">cpid</span>
+    <span class="w">nattch</span>
+    <span class="w">atime</span>
+    <span class="w">dtime</span>
+    <span class="w">ctime</span></pre>
+</li>
+<li><a id="attach-(-%5bFLAG%5d-)"></a><strong>attach ( [FLAG] )</strong>
+<p>Permanently attach to the shared memory segment. When a <pre>
+<span class="w">IPC::SharedMem</span></code>
+
+object is attached, it will use <a href="https://search.cpan.org/perldoc/memread">memread</a> and <a href="https://search.cpan.org/perldoc/memwrite">memwrite</a> instead of
+<a href="../functions/shmread.html">shmread</a> and <a href="../functions/shmwrite.html">shmwrite</a> for accessing the shared memory segment.
+Returns true if successful, or false on error. See <a href="https://search.cpan.org/perldoc/shmat">shmat</a>.</p>
+</li>
+<li><a id="detach"></a><strong>detach</strong>
+<p>Detach from the shared memory segment that previously has been attached
+to. Returns true if successful, or false on error. See <a href="https://search.cpan.org/perldoc/shmdt">shmdt</a>.</p>
+</li>
+<li><a id="addr"></a><strong>addr</strong>
+<p>Returns the address of the shared memory that has been attached to in a
+format suitable for use with <code class="inline"><a class="l_k" href="../functions/pack.html">pack('P')</a></code>. Returns <code class="inline"><a class="l_k" href="../functions/undef.html">undef</a></code> if the shared
+memory has not been attached.</p>
+</li>
+</ul>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<p><a href="../IPC/SysV.html">IPC::SysV</a>, <a href="../Class/Struct.html">Class::Struct</a></p>
+<a id="AUTHORS"></a><h2 class='h2' >AUTHORS</h2>
+<p>Marcus Holland-Moritz &lt;mhx@cpan.org&gt;</p>
+<a id="COPYRIGHT"></a><h2 class='h2' >COPYRIGHT</h2>
+<p>Version 2.x, Copyright (C) 2007-2013, Marcus Holland-Moritz.</p>
+<p>Version 1.x, Copyright (c) 1997, Graham Barr.</p>
+<p>This program is free software; you can redistribute it and/or
+modify it under the same terms as Perl itself.</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#METHODS">METHODS</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#AUTHORS">AUTHORS</a></li><li><a href="#COPYRIGHT">COPYRIGHT</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

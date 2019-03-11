@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Text::Wrap - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>Text::Wrap - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.24.4/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.24.4/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.24.4/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.24.4/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.24.4/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.24.4/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.24.4/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.24.4/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.24.4/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.24.4/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.24.4/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.24.4/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.24.4/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.24.4/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.24.4/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../index-modules-T.html">Core modules (T)</a> &gt;
+      
+    
+    Text::Wrap
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 24.4 documentation</h1>
+                  </div>
+                  <h1>Text::Wrap</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#OVERRIDES">OVERRIDES</a></li><li><a href="#EXAMPLES">EXAMPLES</a></li><li><a href="#SUBVERSION">SUBVERSION</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#LICENSE">LICENSE</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>Text::Wrap - line wrapping to form simple paragraphs</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<p><strong>Example 1</strong></p>
+<pre>
+	<a class="l_k" href="../functions/use.html">use</a> <span class="w">Text::Wrap</span><span class="sc">;</span>
+
+	<span class="i">$initial_tab</span> = <span class="q">&quot;\t&quot;</span><span class="sc">;</span>	<span class="c"># Tab before first line</span>
+	<span class="i">$subsequent_tab</span> = <span class="q">&quot;&quot;</span><span class="sc">;</span>	<span class="c"># All other lines flush left</span>
+
+	<a class="l_k" href="../functions/print.html">print</a> <span class="i">wrap</span><span class="s">(</span><span class="i">$initial_tab</span><span class="cm">,</span> <span class="i">$subsequent_tab</span><span class="cm">,</span> <span class="i">@text</span><span class="s">)</span><span class="sc">;</span>
+	<a class="l_k" href="../functions/print.html">print</a> <span class="i">fill</span><span class="s">(</span><span class="i">$initial_tab</span><span class="cm">,</span> <span class="i">$subsequent_tab</span><span class="cm">,</span> <span class="i">@text</span><span class="s">)</span><span class="sc">;</span>
+
+	<span class="i">$lines</span> = <span class="i">wrap</span><span class="s">(</span><span class="i">$initial_tab</span><span class="cm">,</span> <span class="i">$subsequent_tab</span><span class="cm">,</span> <span class="i">@text</span><span class="s">)</span><span class="sc">;</span>
+
+	<span class="i">@paragraphs</span> = <span class="i">fill</span><span class="s">(</span><span class="i">$initial_tab</span><span class="cm">,</span> <span class="i">$subsequent_tab</span><span class="cm">,</span> <span class="i">@text</span><span class="s">)</span><span class="sc">;</span></pre>
+<p><strong>Example 2</strong></p>
+<pre>
+	<a class="l_k" href="../functions/use.html">use</a> <span class="w">Text::Wrap</span> <span class="q">qw(wrap $columns $huge)</span><span class="sc">;</span>
+
+	<span class="i">$columns</span> = <span class="n">132</span><span class="sc">;</span>		<span class="c"># Wrap at 132 characters</span>
+	<span class="i">$huge</span> = <span class="q">&#39;die&#39;</span><span class="sc">;</span>
+	<span class="i">$huge</span> = <span class="q">&#39;wrap&#39;</span><span class="sc">;</span>
+	<span class="i">$huge</span> = <span class="q">&#39;overflow&#39;</span><span class="sc">;</span></pre>
+<p><strong>Example 3</strong></p>
+<pre>
+	<a class="l_k" href="../functions/use.html">use</a> <span class="w">Text::Wrap</span><span class="sc">;</span>
+
+	<span class="i">$Text::Wrap::columns</span> = <span class="n">72</span><span class="sc">;</span>
+	<a class="l_k" href="../functions/print.html">print</a> <span class="i">wrap</span><span class="s">(</span><span class="q">&#39;&#39;</span><span class="cm">,</span> <span class="q">&#39;&#39;</span><span class="cm">,</span> <span class="i">@text</span><span class="s">)</span><span class="sc">;</span></pre>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p><pre>
+<span class="i">Text::Wrap::wrap</span><span class="s">(</span><span class="s">)</span></code>
+ is a very simple paragraph formatter.  It formats a
+single paragraph at a time by breaking lines at word boundaries.
+Indentation is controlled for the first line (<pre>
+<span class="i">$initial_tab</span></code>
+) and
+all subsequent lines (<pre>
+<span class="i">$subsequent_tab</span></code>
+) independently.  Please note: 
+<pre>
+<span class="i">$initial_tab</span></code>
+ and <pre>
+<span class="i">$subsequent_tab</span></code>
+ are the literal strings that will
+be used: it is unlikely you would want to pass in a number.</p>
+<p><pre>
+<span class="i">Text::Wrap::fill</span><span class="s">(</span><span class="s">)</span></code>
+ is a simple multi-paragraph formatter.  It formats
+each paragraph separately and then joins them together when it's done.  It
+will destroy any whitespace in the original text.  It breaks text into
+paragraphs by looking for whitespace after a newline.  In other respects,
+it acts like wrap().</p>
+<p><pre>
+<span class="i">wrap</span><span class="s">(</span><span class="s">)</span></code>
+ compresses trailing whitespace into one newline, and <pre>
+<span class="i">fill</span><span class="s">(</span><span class="s">)</span></code>
+
+deletes all trailing whitespace.</p>
+<p>Both <pre>
+<span class="i">wrap</span><span class="s">(</span><span class="s">)</span></code>
+ and <pre>
+<span class="i">fill</span><span class="s">(</span><span class="s">)</span></code>
+ return a single string.</p>
+<p>Unlike the old Unix fmt(1) utility, this module correctly accounts for
+any Unicode combining characters (such as diacriticals) that may occur
+in each line for both expansion and unexpansion.  These are overstrike
+characters that do not increment the logical position.  Make sure
+you have the appropriate Unicode settings enabled.</p>
+<a id="OVERRIDES"></a><h2 class='h2' >OVERRIDES</h2>
+<p><pre>
+<span class="i">Text::Wrap::wrap</span><span class="s">(</span><span class="s">)</span></code>
+ has a number of variables that control its behavior.
+Because other modules might be using <pre>
+<span class="i">Text::Wrap::wrap</span><span class="s">(</span><span class="s">)</span></code>
+ it is suggested
+that you leave these variables alone!  If you can't do that, then 
+use <pre>
+<a class="l_k" href="../functions/local.html">local</a><span class="s">(</span><span class="i">$Text::Wrap::VARIABLE</span><span class="s">)</span> = <span class="w">YOURVALUE</span></code>
+ when you change the
+values so that the original value is restored.  This <code class="inline"><a class="l_k" href="../functions/local.html">local()</a></code> trick
+will not work if you import the variable into your own namespace.</p>
+<p>Lines are wrapped at <pre>
+<span class="i">$Text::Wrap::columns</span></code>
+ columns (default value: 76).
+<pre>
+<span class="i">$Text::Wrap::columns</span></code>
+ should be set to the full width of your output
+device.  In fact, every resulting line will have length of no more than
+<pre>
+<span class="i">$columns</span> - <span class="n">1</span></code>
+.</p>
+<p>It is possible to control which characters terminate words by
+modifying <pre>
+<span class="i">$Text::Wrap::break</span></code>
+. Set this to a string such as
+<pre>
+<span class="q">&#39;[\s:]&#39;</span></code>
+ (to break before spaces or colons) or a pre-compiled regexp
+such as <code class="inline"><a class="l_k" href="../functions/qr.html">qr/[\s']/</a></code> (to break before spaces or apostrophes). The
+default is simply <pre>
+<span class="q">&#39;\s&#39;</span></code>
+; that is, words are terminated by spaces.
+(This means, among other things, that trailing punctuation  such as
+full stops or commas stay with the word they are "attached" to.)
+Setting <pre>
+<span class="i">$Text::Wrap::break</span></code>
+ to a regular expression that doesn't
+eat any characters (perhaps just a forward look-ahead assertion) will
+cause warnings.</p>
+<p>Beginner note: In example 2, above <pre>
+<span class="i">$columns</span></code>
+ is imported into
+the local namespace, and set locally.  In example 3,
+<pre>
+<span class="i">$Text::Wrap::columns</span></code>
+ is set in its own namespace without importing it.</p>
+<p><pre>
+<span class="i">Text::Wrap::wrap</span><span class="s">(</span><span class="s">)</span></code>
+ starts its work by expanding all the tabs in its
+input into spaces.  The last thing it does it to turn spaces back
+into tabs.  If you do not want tabs in your results, set 
+<pre>
+<span class="i">$Text::Wrap::unexpand</span></code>
+ to a false value.  Likewise if you do not
+want to use 8-character tabstops, set <pre>
+<span class="i">$Text::Wrap::tabstop</span></code>
+ to
+the number of characters you do want for your tabstops.</p>
+<p>If you want to separate your lines with something other than <pre>
+\<span class="w">n</span></code>
+
+then set <pre>
+<span class="i">$Text::Wrap::separator</span></code>
+ to your preference.  This replaces
+all newlines with <pre>
+<span class="i">$Text::Wrap::separator</span></code>
+.  If you just want to 
+preserve existing newlines but add new breaks with something else, set
+<pre>
+<span class="i">$Text::Wrap::separator2</span></code>
+ instead.</p>
+<p>When words that are longer than <pre>
+<span class="i">$columns</span></code>
+ are encountered, they
+are broken up.  <pre>
+<span class="i">wrap</span><span class="s">(</span><span class="s">)</span></code>
+ adds a <pre>
+<span class="q">&quot;\n&quot;</span></code>
+ at column <pre>
+<span class="i">$columns</span></code>
+.
+This behavior can be overridden by setting <pre>
+<span class="i">$huge</span></code>
+ to
+'die' or to 'overflow'.  When set to 'die', large words will cause
+<code class="inline"><a class="l_k" href="../functions/die.html">die()</a></code> to be called.  When set to 'overflow', large words will be
+left intact.</p>
+<p>Historical notes: 'die' used to be the default value of
+<pre>
+<span class="i">$huge</span></code>
+.  Now, 'wrap' is the default value.</p>
+<a id="EXAMPLES"></a><h2 class='h2' >EXAMPLES</h2>
+<p>Code:</p>
+<div class="verbatim"><ol><li>  print wrap("\t","",&lt;&lt;END);</li><li>  This is a bit of text that forms </li><li>  a normal book-style indented paragraph</li><li>  END</li></ol></div><p>Result:</p>
+<pre>
+  <span class="q">&quot;	This is a bit of text that forms</span>
+  <span class="q">  a normal book-style indented paragraph   </span>
+  <span class="q">  &quot;</span></pre>
+<p>Code:</p>
+<pre>
+  <span class="i">$Text::Wrap::columns</span>=<span class="n">20</span><span class="sc">;</span>
+  <span class="i">$Text::Wrap::separator</span>=<span class="q">&quot;|&quot;</span><span class="sc">;</span>
+  <a class="l_k" href="../functions/print.html">print</a> <span class="i">wrap</span><span class="s">(</span><span class="q">&quot;&quot;</span><span class="cm">,</span><span class="q">&quot;&quot;</span><span class="cm">,</span><span class="q">&quot;This is a bit of text that forms a normal book-style paragraph&quot;</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>Result:</p>
+<pre>
+  <span class="q">&quot;This is a bit of|text that forms a|normal book-style|paragraph&quot;</span></pre>
+<a id="SUBVERSION"></a><h2 class='h2' >SUBVERSION</h2>
+<p>This module comes in two flavors: one for modern perls (5.10 and above)
+and one for ancient obsolete perls.  The version for modern perls has
+support for Unicode.  The version for old perls does not.  You can tell
+which version you have installed by looking at <pre>
+<span class="i">$Text::Wrap::SUBVERSION</span></code>
+:
+it is <pre>
+<span class="w">old</span></code>
+ for obsolete perls and <pre>
+<span class="w">modern</span></code>
+ for current perls.</p>
+<p>This man page is for the version for modern perls and so that's probably
+what you've got.</p>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<p>For correct handling of East Asian half- and full-width characters, 
+see <a href="https://search.cpan.org/perldoc/Text::WrapI18N">Text::WrapI18N</a>.  For more detailed controls: <a href="https://search.cpan.org/perldoc/Text::Format">Text::Format</a>.</p>
+<a id="AUTHOR"></a><h2 class='h2' >AUTHOR</h2>
+<p>David Muir Sharnoff &lt;cpan@dave.sharnoff.org&gt; with help from Tim Pierce and
+many many others.</p>
+<a id="LICENSE"></a><h2 class='h2' >LICENSE</h2>
+<p>Copyright (C) 1996-2009 David Muir Sharnoff.  
+Copyright (C) 2012-2013 Google, Inc.
+This module may be modified, used, copied, and redistributed at your own risk.
+Although allowed by the preceding license, please do not publicly
+redistribute modified versions of this code with the name "Text::Wrap"
+unless it passes the unmodified Text::Wrap test suite.</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#OVERRIDES">OVERRIDES</a></li><li><a href="#EXAMPLES">EXAMPLES</a></li><li><a href="#SUBVERSION">SUBVERSION</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#LICENSE">LICENSE</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/24/4/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/4/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/4/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/4/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/24/4/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/4/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/4/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/4/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/24/4/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/4/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/4/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/24/4/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/4/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/4/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="perldgux - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>perldgux - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.18.2/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.18.2/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.18.2/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.18.2/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.18.2/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.18.2/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.18.2/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.18.2/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.18.2/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.18.2/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.18.2/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.18.2/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.18.2/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.18.2/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.18.2/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.18.2/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.18.2/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.18.2/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.18.2/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.18.2/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.18.2/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.18.2/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.18.2/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.18.2/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.18.2/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.18.2/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.18.2/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.18.2/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.18.2/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.18.2/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.18.2/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.18.2/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.18.2/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.18.2/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="index-platforms.html">Platform specific</a> &gt;
+      
+    
+    perldgux
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 18.2 documentation</h1>
+                  </div>
+                  <h1>perldgux</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#BUILDING-PERL-ON-DG%2fUX">BUILDING PERL ON DG/UX</a></li><ul><li><a href="#Non-threaded-Perl-on-DG%2fUX">Non-threaded Perl on DG/UX</a></li><li><a href="#Threaded-Perl-on-DG%2fUX">Threaded Perl on DG/UX</a></li><li><a href="#Testing-Perl-on-DG%2fUX">Testing Perl on DG/UX</a></li><li><a href="#Installing-the-built-perl-on-DG%2fUX">Installing the built perl on DG/UX</a></li></ul><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>perldgux - Perl under DG/UX.</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<p>One can read this document in the following formats:</p>
+<pre>
+        <span class="w">man</span> <span class="w">perldgux</span>
+        <span class="w">view</span> <span class="w">perl</span> <span class="w">perldgux</span>
+        <span class="w">explorer</span> <span class="w">perldgux</span>.<span class="w">html</span>
+        <span class="w">info</span> <span class="w">perldgux</span></pre>
+<p>to list some (not all may be available simultaneously), or it may
+be read <i>as is</i>: as <i>README.dgux</i>.</p>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>Perl 5.7/8.x for DG/UX ix86 R4.20MU0x</p>
+<a id="BUILDING-PERL-ON-DG%2fUX"></a><h2 class='h2' >BUILDING PERL ON DG/UX</h2>
+<a id="Non-threaded-Perl-on-DG%2fUX"></a><h3 class='h3' >Non-threaded Perl on DG/UX</h3>
+<p>Just run ./Configure script from the top directory.
+Then give "make" to compile.</p>
+<a id="Threaded-Perl-on-DG%2fUX"></a><h3 class='h3' >Threaded Perl on DG/UX</h3>
+<p>If you are using as compiler GCC-2.95.x rev(DG/UX)
+an easy solution for configuring perl in your DG/UX
+machine is to run the command:</p>
+<p>./Configure -Dusethreads -Duseithreads -Dusedevel -des</p>
+<p>This will automatically accept all the defaults and
+in particular /usr/local/ as installation directory.
+Note that GCC-2.95.x rev(DG/UX) knows the switch
+-pthread which allows it to link correctly DG/UX's
+-lthread library.</p>
+<p>If you want to change the installation directory or
+have a standard DG/UX with C compiler GCC-2.7.2.x
+then you have no choice than to do an interactive
+build by issuing the command:</p>
+<p>./Configure -Dusethreads -Duseithreads</p>
+<p>In particular with GCC-2.7.2.x accept all the defaults
+and *watch* out for the message:</p>
+<div class="verbatim"><ol><li>    Any additional ld flags (NOT including libraries)? [ -pthread]</li></ol></div><p>Instead of -pthread put here -lthread. CGCC-2.7.2.x
+that comes with the DG/UX OS does NOT know the -pthread
+switch. So your build will fail if you choose the defaults.
+After configuration is done correctly give "make" to compile.</p>
+<a id="Testing-Perl-on-DG%2fUX"></a><h3 class='h3' >Testing Perl on DG/UX</h3>
+<p>Issuing a "make test" will run all the tests. 
+If the test lib/ftmp-security gives you as a result
+something like</p>
+<div class="verbatim"><ol><li>    lib/ftmp-security....File::Temp::_gettemp:</li><li>    Parent directory (/tmp/) is not safe (sticky bit not set</li><li>    when world writable?) at lib/ftmp-security.t line 100</li></ol></div><p>don't panic and just set the sticky bit in your /tmp
+directory by doing the following as root:</p>
+<p>cd /
+chmod +t /tmp (=set the sticky bit to /tmp).</p>
+<p>Then rerun the tests. This time all must be OK.</p>
+<a id="Installing-the-built-perl-on-DG%2fUX"></a><h3 class='h3' >Installing the built perl on DG/UX</h3>
+<p>Run the command "make install"</p>
+<a id="AUTHOR"></a><h2 class='h2' >AUTHOR</h2>
+<p>Takis Psarogiannakopoulos
+University of Cambridge
+Centre for Mathematical Sciences
+Department of Pure Mathematics
+Wilberforce road
+Cambridge CB3 0WB , UK
+email &lt;takis@XFree86.Org&gt;</p>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<p>perl(1).</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#BUILDING-PERL-ON-DG%2fUX">BUILDING PERL ON DG/UX</a></li><ul><li><a href="#Non-threaded-Perl-on-DG%2fUX">Non-threaded Perl on DG/UX</a></li><li><a href="#Threaded-Perl-on-DG%2fUX">Threaded Perl on DG/UX</a></li><li><a href="#Testing-Perl-on-DG%2fUX">Testing Perl on DG/UX</a></li><li><a href="#Installing-the-built-perl-on-DG%2fUX">Installing the built perl on DG/UX</a></li></ul><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/2/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/2/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/2/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/2/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/2/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/2/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/2/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/2/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/2/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/2/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/2/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/2/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/2/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/2/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

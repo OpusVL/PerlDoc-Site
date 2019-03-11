@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="TAP::Parser::YAMLish::Reader - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>TAP::Parser::YAMLish::Reader - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.22.0/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.22.0/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.22.0/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.22.0/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.22.0/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.22.0/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.22.0/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.22.0/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.22.0/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.22.0/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.22.0/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.22.0/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.22.0/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.22.0/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.22.0/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../../../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../../../index-modules-T.html">Core modules (T)</a> &gt;
+      
+    
+    TAP::Parser::YAMLish::Reader
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 22.0 documentation</h1>
+                  </div>
+                  <h1>TAP::Parser::YAMLish::Reader</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#VERSION">VERSION</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#METHODS">METHODS</a></li><ul><li><a href="#Class-Methods">Class Methods</a></li><li><a href="#Instance-Methods">Instance Methods</a></li></ul><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#COPYRIGHT">COPYRIGHT</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>TAP::Parser::YAMLish::Reader - Read YAMLish data from iterator</p>
+<a id="VERSION"></a><h2 class='h2' >VERSION</h2>
+<p>Version 3.35</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>Note that parts of this code were derived from <a href="https://search.cpan.org/perldoc/YAML::Tiny">YAML::Tiny</a> with the
+permission of Adam Kennedy.</p>
+<a id="METHODS"></a><h2 class='h2' >METHODS</h2>
+<a id="Class-Methods"></a><h3 class='h3' >Class Methods</h3>
+<a id="new"></a><h4 class='h4' ><pre>
+<span class="w">new</span></code>
+</h4>
+<p>The constructor <pre>
+<span class="w">new</span></code>
+ creates and returns an empty
+<pre>
+<span class="w">TAP::Parser::YAMLish::Reader</span></code>
+ object.</p>
+<pre>
+ <a class="l_k" href="../../../functions/my.html">my</a> <span class="i">$reader</span> = <span class="w">TAP::Parser::YAMLish::Reader</span><span class="w">-&gt;new</span><span class="sc">;</span></pre>
+<a id="Instance-Methods"></a><h3 class='h3' >Instance Methods</h3>
+<a id="read"></a><h4 class='h4' ><code class="inline"><a class="l_k" href="../../../functions/read.html">read</a></code></h4>
+<pre>
+ <a class="l_k" href="../../../functions/my.html">my</a> <span class="i">$got</span> = <span class="i">$reader</span><span class="i">-&gt;read</span><span class="s">(</span><span class="i">$iterator</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>Read YAMLish from a <a href="../../../TAP/Parser/Iterator.html">TAP::Parser::Iterator</a> and return the data structure it
+represents.</p>
+<a id="get_raw"></a><h4 class='h4' ><pre>
+<span class="w">get_raw</span></code>
+</h4>
+<pre>
+ <a class="l_k" href="../../../functions/my.html">my</a> <span class="i">$source</span> = <span class="i">$reader</span><span class="i">-&gt;get_source</span><span class="sc">;</span></pre>
+<p>Return the raw YAMLish source from the most recent <code class="inline"><a class="l_k" href="../../../functions/read.html">read</a></code>.</p>
+<a id="AUTHOR"></a><h2 class='h2' >AUTHOR</h2>
+<p>Andy Armstrong, &lt;andy@hexten.net&gt;</p>
+<p>Adam Kennedy wrote <a href="https://search.cpan.org/perldoc/YAML::Tiny">YAML::Tiny</a> which provided the template and many of
+the YAML matching regular expressions for this module.</p>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<p><a href="https://search.cpan.org/perldoc/YAML::Tiny">YAML::Tiny</a>, <a href="https://search.cpan.org/perldoc/YAML">YAML</a>, <a href="https://search.cpan.org/perldoc/YAML::Syck">YAML::Syck</a>, <a href="https://search.cpan.org/perldoc/Config::Tiny">Config::Tiny</a>, <a href="https://search.cpan.org/perldoc/CSS::Tiny">CSS::Tiny</a>,
+<a href="http://use.perl.org/~Alias/journal/29427">http://use.perl.org/~Alias/journal/29427</a></p>
+<a id="COPYRIGHT"></a><h2 class='h2' >COPYRIGHT</h2>
+<p>Copyright 2007-2011 Andy Armstrong.</p>
+<p>Portions copyright 2006-2008 Adam Kennedy.</p>
+<p>This program is free software; you can redistribute
+it and/or modify it under the same terms as Perl itself.</p>
+<p>The full text of the license can be found in the
+LICENSE file included with this module.</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#VERSION">VERSION</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#METHODS">METHODS</a></li><ul><li><a href="#Class-Methods">Class Methods</a></li><li><a href="#Instance-Methods">Instance Methods</a></li></ul><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#COPYRIGHT">COPYRIGHT</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

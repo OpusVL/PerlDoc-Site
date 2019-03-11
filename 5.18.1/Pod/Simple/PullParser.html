@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Pod::Simple::PullParser - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>Pod::Simple::PullParser - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.18.1/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.18.1/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.18.1/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.18.1/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.18.1/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.18.1/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.18.1/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.18.1/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.18.1/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.18.1/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.18.1/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.18.1/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.18.1/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.18.1/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.18.1/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../../index-modules-P.html">Core modules (P)</a> &gt;
+      
+    
+    Pod::Simple::PullParser
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 18.1 documentation</h1>
+                  </div>
+                  <h1>Pod::Simple::PullParser</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#METHODS">METHODS</a></li><li><a href="#NOTE">NOTE</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#SUPPORT">SUPPORT</a></li><li><a href="#COPYRIGHT-AND-DISCLAIMERS">COPYRIGHT AND DISCLAIMERS</a></li><li><a href="#AUTHOR">AUTHOR</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>Pod::Simple::PullParser -- a pull-parser interface to parsing Pod</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<pre>
+ <a class="l_k" href="../../functions/my.html">my</a> <span class="i">$parser</span> = <span class="w">SomePodProcessor</span><span class="w">-&gt;new</span><span class="sc">;</span>
+ <span class="i">$parser</span><span class="i">-&gt;set_source</span><span class="s">(</span> <span class="q">&quot;whatever.pod&quot;</span> <span class="s">)</span><span class="sc">;</span>
+ <span class="i">$parser</span><span class="i">-&gt;run</span><span class="sc">;</span></pre>
+<p>Or:</p>
+<pre>
+ <a class="l_k" href="../../functions/my.html">my</a> <span class="i">$parser</span> = <span class="w">SomePodProcessor</span><span class="w">-&gt;new</span><span class="sc">;</span>
+ <span class="i">$parser</span><span class="i">-&gt;set_source</span><span class="s">(</span> <span class="i">$some_filehandle_object</span> <span class="s">)</span><span class="sc">;</span>
+ <span class="i">$parser</span><span class="i">-&gt;run</span><span class="sc">;</span></pre>
+<p>Or:</p>
+<pre>
+ <a class="l_k" href="../../functions/my.html">my</a> <span class="i">$parser</span> = <span class="w">SomePodProcessor</span><span class="w">-&gt;new</span><span class="sc">;</span>
+ <span class="i">$parser</span><span class="i">-&gt;set_source</span><span class="s">(</span> \<span class="i">$document_source</span> <span class="s">)</span><span class="sc">;</span>
+ <span class="i">$parser</span><span class="i">-&gt;run</span><span class="sc">;</span></pre>
+<p>Or:</p>
+<pre>
+ <a class="l_k" href="../../functions/my.html">my</a> <span class="i">$parser</span> = <span class="w">SomePodProcessor</span><span class="w">-&gt;new</span><span class="sc">;</span>
+ <span class="i">$parser</span><span class="i">-&gt;set_source</span><span class="s">(</span> \<span class="i">@document_lines</span> <span class="s">)</span><span class="sc">;</span>
+ <span class="i">$parser</span><span class="i">-&gt;run</span><span class="sc">;</span></pre>
+<p>And elsewhere:</p>
+<pre>
+ <a class="l_k" href="../../functions/require.html">require</a> <span class="n">5</span><span class="sc">;</span>
+<a name="package-SomePodProcessor"></a> package <span class="i">SomePodProcessor</span><span class="sc">;</span>
+ <a class="l_k" href="../../functions/use.html">use</a> <span class="w">strict</span><span class="sc">;</span>
+ <a class="l_k" href="../../functions/use.html">use</a> <span class="w">base</span> <span class="q">qw(Pod::Simple::PullParser)</span><span class="sc">;</span>
+
+<a name="run"></a> sub <span class="m">run</span> <span class="s">{</span>
+   <a class="l_k" href="../../functions/my.html">my</a> <span class="i">$self</span> = <a class="l_k" href="../../functions/shift.html">shift</a><span class="sc">;</span>
+  <span class="j">Token:</span>
+   <a class="l_k" href="../../functions/while.html">while</a><span class="s">(</span><a class="l_k" href="../../functions/my.html">my</a> <span class="i">$token</span> = <span class="i">$self</span><span class="i">-&gt;get_token</span><span class="s">)</span> <span class="s">{</span>
+     ...<span class="w">process</span> <a class="l_k" href="../../functions/each.html">each</a> <span class="w">token</span>...
+   <span class="s">}</span>
+ <span class="s">}</span></pre>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>This class is for using Pod::Simple to build a Pod processor -- but
+one that uses an interface based on a stream of token objects,
+instead of based on events.</p>
+<p>This is a subclass of <a href="../../Pod/Simple.html">Pod::Simple</a> and inherits all its methods.</p>
+<p>A subclass of Pod::Simple::PullParser should define a <pre>
+<span class="w">run</span></code>
+ method
+that calls <pre>
+<span class="i">$token</span> = <span class="i">$parser</span><span class="i">-&gt;get_token</span></code>
+ to pull tokens.</p>
+<p>See the source for Pod::Simple::RTF for an example of a formatter
+that uses Pod::Simple::PullParser.</p>
+<a id="METHODS"></a><h2 class='h2' >METHODS</h2>
+<ul>
+<li><a id="my-%24token-%3d-%24parser-%3eget_token"></a><strong>my $token = $parser-&gt;get_token</strong>
+<p>This returns the next token object (which will be of a subclass of
+<a href="../../Pod/Simple/PullParserToken.html">Pod::Simple::PullParserToken</a>), or undef if the parser-stream has hit
+the end of the document.</p>
+</li>
+<li><a id="%24parser-%3eunget_token(-%24token-)"></a><strong>$parser-&gt;unget_token( $token )</strong>
+</li>
+<li><a id="%24parser-%3eunget_token(-%24token1%2c-%24token2%2c-...-)"></a><strong>$parser-&gt;unget_token( $token1, $token2, ... )</strong>
+<p>This restores the token object(s) to the front of the parser stream.</p>
+</li>
+</ul>
+<p>The source has to be set before you can parse anything.  The lowest-level
+way is to call <pre>
+<span class="w">set_source</span></code>
+:</p>
+<ul>
+<li><a id="%24parser-%3eset_source(-%24filename-)"></a><strong>$parser-&gt;set_source( $filename )</strong>
+</li>
+<li><a id="%24parser-%3eset_source(-%24filehandle_object-)"></a><strong>$parser-&gt;set_source( $filehandle_object )</strong>
+</li>
+<li><a id="%24parser-%3eset_source(-%5c%24document_source-)"></a><strong>$parser-&gt;set_source( \$document_source )</strong>
+</li>
+<li><a id="%24parser-%3eset_source(-%5c%40document_lines-)"></a><strong>$parser-&gt;set_source( \@document_lines )</strong>
+</li>
+</ul>
+<p>Or you can call these methods, which Pod::Simple::PullParser has defined
+to work just like Pod::Simple's same-named methods:</p>
+<ul>
+<li><a id="%24parser-%3eparse_file(...)"></a><strong>$parser-&gt;parse_file(...)</strong>
+</li>
+<li><a id="%24parser-%3eparse_string_document(...)"></a><strong>$parser-&gt;parse_string_document(...)</strong>
+</li>
+<li><a id="%24parser-%3efilter(...)"></a><strong>$parser-&gt;filter(...)</strong>
+</li>
+<li><a id="%24parser-%3eparse_from_file(...)"></a><strong>$parser-&gt;parse_from_file(...)</strong>
+</li>
+</ul>
+<p>For those to work, the Pod-processing subclass of
+Pod::Simple::PullParser has to have defined a $parser-&gt;run method --
+so it is advised that all Pod::Simple::PullParser subclasses do so.
+See the Synopsis above, or the source for Pod::Simple::RTF.</p>
+<p>Authors of formatter subclasses might find these methods useful to
+call on a parser object that you haven't started pulling tokens
+from yet:</p>
+<ul>
+<li><a id="my-%24title_string-%3d-%24parser-%3eget_title"></a><strong>my $title_string = $parser-&gt;get_title</strong>
+<p>This tries to get the title string out of $parser, by getting some tokens,
+and scanning them for the title, and then ungetting them so that you can
+process the token-stream from the beginning.</p>
+<p>For example, suppose you have a document that starts out:</p>
+<div class="verbatim"><ol><li>  =head1 NAME</li><li></li><li>  Hoo::Boy::Wowza -- Stuff B&lt;wow&gt; yeah!</li></ol></div><p>$parser-&gt;get_title on that document will return "Hoo::Boy::Wowza --
+Stuff wow yeah!". If the document starts with:</p>
+<div class="verbatim"><ol><li>  =head1 Name</li><li></li><li>  Hoo::Boy::W00t -- Stuff B&lt;w00t&gt; yeah!</li></ol></div><p>Then you'll need to pass the <pre>
+<span class="w">nocase</span></code>
+ option in order to recognize "Name":</p>
+<pre>
+  <span class="i">$parser</span><span class="i">-&gt;get_title</span><span class="s">(</span><span class="w">nocase</span> <span class="cm">=&gt;</span> <span class="n">1</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>In cases where get_title can't find the title, it will return empty-string
+("").</p>
+</li>
+<li><a id="my-%24title_string-%3d-%24parser-%3eget_short_title"></a><strong>my $title_string = $parser-&gt;get_short_title</strong>
+<p>This is just like get_title, except that it returns just the modulename, if
+the title seems to be of the form "SomeModuleName -- description".</p>
+<p>For example, suppose you have a document that starts out:</p>
+<div class="verbatim"><ol><li>  =head1 NAME</li><li></li><li>  Hoo::Boy::Wowza -- Stuff B&lt;wow&gt; yeah!</li></ol></div><p>then $parser-&gt;get_short_title on that document will return
+"Hoo::Boy::Wowza".</p>
+<p>But if the document starts out:</p>
+<div class="verbatim"><ol><li>  =head1 NAME</li><li></li><li>  Hooboy, stuff B&lt;wow&gt; yeah!</li></ol></div><p>then $parser-&gt;get_short_title on that document will return "Hooboy,
+stuff wow yeah!". If the document starts with:</p>
+<div class="verbatim"><ol><li>  =head1 Name</li><li></li><li>  Hoo::Boy::W00t -- Stuff B&lt;w00t&gt; yeah!</li></ol></div><p>Then you'll need to pass the <pre>
+<span class="w">nocase</span></code>
+ option in order to recognize "Name":</p>
+<pre>
+  <span class="i">$parser</span><span class="i">-&gt;get_short_title</span><span class="s">(</span><span class="w">nocase</span> <span class="cm">=&gt;</span> <span class="n">1</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>If the title can't be found, then get_short_title returns empty-string
+("").</p>
+</li>
+<li><a id="%24author_name---%3d-%24parser-%3eget_author"></a><strong>$author_name   = $parser-&gt;get_author</strong>
+<p>This works like get_title except that it returns the contents of the
+"=head1 AUTHOR\n\nParagraph...\n" section, assuming that that section
+isn't terribly long. To recognize a "=head1 Author\n\nParagraph\n"
+section, pass the <pre>
+<span class="w">nocase</span></code>
+ otpion:</p>
+<pre>
+  <span class="i">$parser</span><span class="i">-&gt;get_author</span><span class="s">(</span><span class="w">nocase</span> <span class="cm">=&gt;</span> <span class="n">1</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>(This method tolerates "AUTHORS" instead of "AUTHOR" too.)</p>
+</li>
+<li><a id="%24description_name-%3d-%24parser-%3eget_description"></a><strong>$description_name = $parser-&gt;get_description</strong>
+<p>This works like get_title except that it returns the contents of the
+"=head1 DESCRIPTION\n\nParagraph...\n" section, assuming that that section
+isn't terribly long. To recognize a "=head1 Description\n\nParagraph\n"
+section, pass the <pre>
+<span class="w">nocase</span></code>
+ otpion:</p>
+<pre>
+  <span class="i">$parser</span><span class="i">-&gt;get_description</span><span class="s">(</span><span class="w">nocase</span> <span class="cm">=&gt;</span> <span class="n">1</span><span class="s">)</span><span class="sc">;</span></pre>
+</li>
+<li><a id="%24version_block-%3d-%24parser-%3eget_version"></a><strong>$version_block = $parser-&gt;get_version</strong>
+<p>This works like get_title except that it returns the contents of
+the "=head1 VERSION\n\n[BIG BLOCK]\n" block.  Note that this does NOT
+return the module's <pre>
+<span class="i">$VERSION</span></code>
+!! To recognize a
+"=head1 Version\n\n[BIG BLOCK]\n" section, pass the <pre>
+<span class="w">nocase</span></code>
+ otpion:</p>
+<pre>
+  <span class="i">$parser</span><span class="i">-&gt;get_version</span><span class="s">(</span><span class="w">nocase</span> <span class="cm">=&gt;</span> <span class="n">1</span><span class="s">)</span><span class="sc">;</span></pre>
+</li>
+</ul>
+<a id="NOTE"></a><h2 class='h2' >NOTE</h2>
+<p>You don't actually <i>have</i> to define a <pre>
+<span class="w">run</span></code>
+ method.  If you're
+writing a Pod-formatter class, you should define a <pre>
+<span class="w">run</span></code>
+ just so
+that users can call <pre>
+<span class="w">parse_file</span></code>
+ etc, but you don't <i>have</i> to.</p>
+<p>And if you're not writing a formatter class, but are instead just
+writing a program that does something simple with a Pod::PullParser
+object (and not an object of a subclass), then there's no reason to
+bother subclassing to add a <pre>
+<span class="w">run</span></code>
+ method.</p>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<p><a href="../../Pod/Simple.html">Pod::Simple</a></p>
+<p><a href="../../Pod/Simple/PullParserToken.html">Pod::Simple::PullParserToken</a> -- and its subclasses
+<a href="../../Pod/Simple/PullParserStartToken.html">Pod::Simple::PullParserStartToken</a>,
+<a href="../../Pod/Simple/PullParserTextToken.html">Pod::Simple::PullParserTextToken</a>, and
+<a href="../../Pod/Simple/PullParserEndToken.html">Pod::Simple::PullParserEndToken</a>.</p>
+<p><a href="https://search.cpan.org/perldoc/HTML::TokeParser">HTML::TokeParser</a>, which inspired this.</p>
+<a id="SUPPORT"></a><h2 class='h2' >SUPPORT</h2>
+<p>Questions or discussion about POD and Pod::Simple should be sent to the
+pod-people@perl.org mail list. Send an empty email to
+pod-people-subscribe@perl.org to subscribe.</p>
+<p>This module is managed in an open GitHub repository,
+<a href="https://github.com/theory/pod-simple/">https://github.com/theory/pod-simple/</a>. Feel free to fork and contribute, or
+to clone <a href="git://github.com/theory/pod-simple.git">git://github.com/theory/pod-simple.git</a> and send patches!</p>
+<p>Patches against Pod::Simple are welcome. Please send bug reports to
+&lt;bug-pod-simple@rt.cpan.org&gt;.</p>
+<a id="COPYRIGHT-AND-DISCLAIMERS"></a><h2 class='h2' >COPYRIGHT AND DISCLAIMERS</h2>
+<p>Copyright (c) 2002 Sean M. Burke.</p>
+<p>This library is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.</p>
+<p>This program is distributed in the hope that it will be useful, but
+without any warranty; without even the implied warranty of
+merchantability or fitness for a particular purpose.</p>
+<a id="AUTHOR"></a><h2 class='h2' >AUTHOR</h2>
+<p>Pod::Simple was created by Sean M. Burke &lt;sburke@cpan.org&gt;.
+But don't bother him, he's retired.</p>
+<p>Pod::Simple is maintained by:</p>
+<ul>
+<li><a id="*-Allison-Randal-allison%40perl.org"></a><strong>Allison Randal <pre>
+<span class="w">allison</span><span class="i">@perl</span>.<span class="w">org</span></code>
+</strong>
+</li>
+<li><a id="*-Hans-Dieter-Pearcey-hdp%40cpan.org"></a><strong>Hans Dieter Pearcey <pre>
+<span class="w">hdp</span><span class="i">@cpan</span>.<span class="w">org</span></code>
+</strong>
+</li>
+<li><a id="*-David-E.-Wheeler-dwheeler%40cpan.org"></a><strong>David E. Wheeler <pre>
+<span class="w">dwheeler</span><span class="i">@cpan</span>.<span class="w">org</span></code>
+</strong>
+</li>
+</ul>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#METHODS">METHODS</a></li><li><a href="#NOTE">NOTE</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#SUPPORT">SUPPORT</a></li><li><a href="#COPYRIGHT-AND-DISCLAIMERS">COPYRIGHT AND DISCLAIMERS</a></li><li><a href="#AUTHOR">AUTHOR</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

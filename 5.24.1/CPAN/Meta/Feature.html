@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CPAN::Meta::Feature - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>CPAN::Meta::Feature - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.24.1/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.24.1/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.24.1/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.24.1/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.24.1/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.24.1/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.24.1/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.24.1/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.24.1/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.24.1/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.24.1/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.24.1/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.24.1/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.24.1/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.24.1/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../../index-modules-C.html">Core modules (C)</a> &gt;
+      
+    
+    CPAN::Meta::Feature
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 24.1 documentation</h1>
+                  </div>
+                  <h1>CPAN::Meta::Feature</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#VERSION">VERSION</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#METHODS">METHODS</a></li><ul><li><a href="#new">new</a></li><li><a href="#identifier">identifier</a></li><li><a href="#description">description</a></li><li><a href="#prereqs">prereqs</a></li></ul><li><a href="#BUGS">BUGS</a></li><li><a href="#AUTHORS">AUTHORS</a></li><li><a href="#COPYRIGHT-AND-LICENSE">COPYRIGHT AND LICENSE</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>CPAN::Meta::Feature - an optional feature provided by a CPAN distribution</p>
+<a id="VERSION"></a><h2 class='h2' >VERSION</h2>
+<p>version 2.150005</p>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>A CPAN::Meta::Feature object describes an optional feature offered by a CPAN
+distribution and specified in the distribution's <i>META.json</i> (or <i>META.yml</i>)
+file.</p>
+<p>For the most part, this class will only be used when operating on the result of
+the <pre>
+<span class="w">feature</span></code>
+ or <pre>
+<span class="w">features</span></code>
+ methods on a <a href="../../CPAN/Meta.html">CPAN::Meta</a> object.</p>
+<a id="METHODS"></a><h2 class='h2' >METHODS</h2>
+<a id="new"></a><h3 class='h3' >new</h3>
+<pre>
+  <a class="l_k" href="../../functions/my.html">my</a> <span class="i">$feature</span> = <span class="w">CPAN::Meta::Feature</span><span class="w">-&gt;new</span><span class="s">(</span> <span class="i">$identifier</span> <span class="cm">=&gt;</span> \<span class="i">%spec</span> <span class="s">)</span><span class="sc">;</span></pre>
+<p>This returns a new Feature object.  The <pre>
+<span class="i">%spec</span></code>
+ argument to the constructor
+should be the same as the value of the <pre>
+<span class="w">optional_feature</span></code>
+ entry in the
+distmeta.  It must contain entries for <pre>
+<span class="w">description</span></code>
+ and <pre>
+<span class="w">prereqs</span></code>
+.</p>
+<a id="identifier"></a><h3 class='h3' >identifier</h3>
+<p>This method returns the feature's identifier.</p>
+<a id="description"></a><h3 class='h3' >description</h3>
+<p>This method returns the feature's long description.</p>
+<a id="prereqs"></a><h3 class='h3' >prereqs</h3>
+<p>This method returns the feature's prerequisites as a <a href="../../CPAN/Meta/Prereqs.html">CPAN::Meta::Prereqs</a>
+object.</p>
+<a id="BUGS"></a><h2 class='h2' >BUGS</h2>
+<p>Please report any bugs or feature using the CPAN Request Tracker.
+Bugs can be submitted through the web interface at
+<a href="http://rt.cpan.org/Dist/Display.html?Queue=CPAN-Meta">http://rt.cpan.org/Dist/Display.html?Queue=CPAN-Meta</a></p>
+<p>When submitting a bug or request, please include a test-file or a patch to an
+existing test-file that illustrates the bug or desired feature.</p>
+<a id="AUTHORS"></a><h2 class='h2' >AUTHORS</h2>
+<ul>
+<li>
+<p>David Golden &lt;dagolden@cpan.org&gt;</p>
+</li>
+<li>
+<p>Ricardo Signes &lt;rjbs@cpan.org&gt;</p>
+</li>
+</ul>
+<a id="COPYRIGHT-AND-LICENSE"></a><h2 class='h2' >COPYRIGHT AND LICENSE</h2>
+<p>This software is copyright (c) 2010 by David Golden and Ricardo Signes.</p>
+<p>This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#VERSION">VERSION</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#METHODS">METHODS</a></li><ul><li><a href="#new">new</a></li><li><a href="#identifier">identifier</a></li><li><a href="#description">description</a></li><li><a href="#prereqs">prereqs</a></li></ul><li><a href="#BUGS">BUGS</a></li><li><a href="#AUTHORS">AUTHORS</a></li><li><a href="#COPYRIGHT-AND-LICENSE">COPYRIGHT AND LICENSE</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Encode::Alias - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>Encode::Alias - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.16.0/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.16.0/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.16.0/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.16.0/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.16.0/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.16.0/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.16.0/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.16.0/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.16.0/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.16.0/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.16.0/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.16.0/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.16.0/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.16.0/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.16.0/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../index-modules-E.html">Core modules (E)</a> &gt;
+      
+    
+    Encode::Alias
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 16.0 documentation</h1>
+                  </div>
+                  <h1>Encode::Alias</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><ul><li><a href="#Alias-overloading">Alias overloading</a></li></ul><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>Encode::Alias - alias definitions to encodings</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<pre>
+  <a class="l_k" href="../functions/use.html">use</a> <span class="w">Encode</span><span class="sc">;</span>
+  <a class="l_k" href="../functions/use.html">use</a> <span class="w">Encode::Alias</span><span class="sc">;</span>
+  <span class="i">define_alias</span><span class="s">(</span> <span class="q">&quot;newName&quot;</span> <span class="cm">=&gt;</span> <span class="w">ENCODING</span><span class="s">)</span><span class="sc">;</span>
+  <span class="i">define_alias</span><span class="s">(</span> <span class="q">qr/.../</span> <span class="cm">=&gt;</span> <span class="w">ENCODING</span><span class="s">)</span><span class="sc">;</span>
+  <span class="i">define_alias</span><span class="s">(</span> <a class="l_k" href="../functions/sub.html">sub</a> <span class="s">{</span> <a class="l_k" href="../functions/return.html">return</a> <span class="w">ENCODING</span> <a class="l_k" href="../functions/if.html">if</a> ...<span class="sc">;</span> <span class="s">}</span> <span class="s">)</span><span class="sc">;</span></pre>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>Allows newName to be used as an alias for ENCODING. ENCODING may be
+either the name of an encoding or an encoding object (as described 
+in <a href="../Encode.html">Encode</a>).</p>
+<p>Currently the first argument to define_alias() can be specified in the
+following ways:</p>
+<ul>
+<li><a id="As-a-simple-string."></a><strong>As a simple string.</strong>
+</li>
+<li><a id="As-a-qr%2f%2f-compiled-regular-expression%2c-e.g.%3a"></a><strong>As a qr// compiled regular expression, e.g.:</strong>
+<pre>
+  <span class="i">define_alias</span><span class="s">(</span> <span class="q">qr/^iso8859-(\d+)$/i</span> <span class="cm">=&gt;</span> <span class="q">&#39;&quot;iso-8859-$1&quot;&#39;</span> <span class="s">)</span><span class="sc">;</span></pre>
+<p>In this case, if <i>ENCODING</i> is not a reference, it is <code class="inline"><a class="l_k" href="../functions/eval.html">eval</a></code>-ed
+in order to allow <pre>
+<span class="i">$1</span></code>
+ etc. to be substituted.  The example is one
+way to alias names as used in X11 fonts to the MIME names for the
+iso-8859-* family.  Note the double quotes inside the single quotes.</p>
+<p>(or, you don't have to do this yourself because this example is predefined)</p>
+<p>If you are using a regex here, you have to use the quotes as shown or
+it won't work.  Also note that regex handling is tricky even for the
+experienced.  Use this feature with caution.</p>
+</li>
+<li><a id="As-a-code-reference%2c-e.g.%3a"></a><strong>As a code reference, e.g.:</strong>
+<pre>
+  <span class="i">define_alias</span><span class="s">(</span> <a class="l_k" href="../functions/sub.html">sub</a> <span class="s">{</span><a class="l_k" href="../functions/shift.html">shift</a> =~ <span class="q">/^iso8859-(\d+)$/i</span> ? <span class="q">&quot;iso-8859-$1&quot;</span> <span class="co">:</span> <a class="l_k" href="../functions/undef.html">undef</a> <span class="s">}</span> <span class="s">)</span><span class="sc">;</span></pre>
+<p>The same effect as the example above in a different way.  The coderef
+takes the alias name as an argument and returns a canonical name on
+success or undef if not.  Note the second argument is ignored if provided.
+Use this with even more caution than the regex version.</p>
+</li>
+</ul>
+<a id="Changes-in-code-reference-aliasing"></a><h4 class='h4' >Changes in code reference aliasing</h4>
+<p>As of Encode 1.87, the older form</p>
+<pre>
+  <span class="i">define_alias</span><span class="s">(</span> <a class="l_k" href="../functions/sub.html">sub</a> <span class="s">{</span> <a class="l_k" href="../functions/return.html">return</a>  <span class="q">/^iso8859-(\d+)$/i</span> ? <span class="q">&quot;iso-8859-$1&quot;</span> <span class="co">:</span> <a class="l_k" href="../functions/undef.html">undef</a> <span class="s">}</span> <span class="s">)</span><span class="sc">;</span></pre>
+<p>no longer works.</p>
+<p>Encode up to 1.86 internally used "local $_" to implement ths older
+form.  But consider the code below;</p>
+<pre>
+  <a class="l_k" href="../functions/use.html">use</a> <span class="w">Encode</span><span class="sc">;</span>
+  <span class="i">$_</span> = <span class="q">&quot;eeeee&quot;</span> <span class="sc">;</span>
+  <a class="l_k" href="../functions/while.html">while</a> <span class="s">(</span><span class="q">/(e)/g</span><span class="s">)</span> <span class="s">{</span>
+    <a class="l_k" href="../functions/my.html">my</a> <span class="i">$utf</span> = <span class="i">decode</span><span class="s">(</span><span class="q">&#39;aliased-encoding-name&#39;</span><span class="cm">,</span> <span class="i">$1</span><span class="s">)</span><span class="sc">;</span>
+    <a class="l_k" href="../functions/print.html">print</a> <span class="q">&quot;position:&quot;</span><span class="cm">,</span><a class="l_k" href="../functions/pos.html">pos</a><span class="cm">,</span><span class="q">&quot;\n&quot;</span><span class="sc">;</span>
+  <span class="s">}</span></pre>
+<p>Prior to Encode 1.86 this fails because of "local $_".</p>
+<a id="Alias-overloading"></a><h3 class='h3' >Alias overloading</h3>
+<p>You can override predefined aliases by simply applying define_alias().
+The new alias is always evaluated first, and when necessary,
+define_alias() flushes the internal cache to make the new definition
+available.</p>
+<pre>
+  <span class="c"># redirect SHIFT_JIS to MS/IBM Code Page 932, which is a</span>
+  <span class="c"># superset of SHIFT_JIS</span>
+
+  <span class="i">define_alias</span><span class="s">(</span> <span class="q">qr/shift.*jis$/i</span>  <span class="cm">=&gt;</span> <span class="q">&#39;&quot;cp932&quot;&#39;</span> <span class="s">)</span><span class="sc">;</span>
+  <span class="i">define_alias</span><span class="s">(</span> <span class="q">qr/sjis$/i</span>        <span class="cm">=&gt;</span> <span class="q">&#39;&quot;cp932&quot;&#39;</span> <span class="s">)</span><span class="sc">;</span></pre>
+<p>If you want to zap all predefined aliases, you can use</p>
+<pre>
+  <span class="w">Encode::Alias</span><span class="w">-&gt;undef_aliases</span><span class="sc">;</span></pre>
+<p>to do so.  And</p>
+<pre>
+  <span class="w">Encode::Alias</span><span class="w">-&gt;init_aliases</span><span class="sc">;</span></pre>
+<p>gets the factory settings back.</p>
+<p>Note that define_alias() will not be able to override the canonical name
+of encodings. Encodings are first looked up by canonical name before
+potential aliases are tried.</p>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<p><a href="../Encode.html">Encode</a>, <a href="../Encode/Supported.html">Encode::Supported</a></p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><ul><li><a href="#Alias-overloading">Alias overloading</a></li></ul><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

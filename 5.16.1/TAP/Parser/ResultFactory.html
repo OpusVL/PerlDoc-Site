@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="TAP::Parser::ResultFactory - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>TAP::Parser::ResultFactory - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.16.1/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.16.1/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.16.1/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.16.1/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.16.1/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.16.1/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.16.1/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.16.1/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.16.1/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.16.1/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.16.1/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.16.1/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.16.1/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.16.1/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.16.1/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../../index-modules-T.html">Core modules (T)</a> &gt;
+      
+    
+    TAP::Parser::ResultFactory
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 16.1 documentation</h1>
+                  </div>
+                  <h1>TAP::Parser::ResultFactory</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#VERSION">VERSION</a></li><ul><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#METHODS">METHODS</a></li><li><a href="#Class-Methods">Class Methods</a></li></ul><li><a href="#SUBCLASSING">SUBCLASSING</a></li><ul><li><a href="#Example">Example</a></li></ul><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>TAP::Parser::ResultFactory - Factory for creating TAP::Parser output objects</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<pre>
+  <a class="l_k" href="../../functions/use.html">use</a> <span class="w">TAP::Parser::ResultFactory</span><span class="sc">;</span>
+  <a class="l_k" href="../../functions/my.html">my</a> <span class="i">$token</span>   = <span class="s">{</span>...<span class="s">}</span><span class="sc">;</span>
+  <a class="l_k" href="../../functions/my.html">my</a> <span class="i">$factory</span> = <span class="w">TAP::Parser::ResultFactory</span><span class="w">-&gt;new</span><span class="sc">;</span>
+  <a class="l_k" href="../../functions/my.html">my</a> <span class="i">$result</span>  = <span class="i">$factory</span><span class="i">-&gt;make_result</span><span class="s">(</span> <span class="i">$token</span> <span class="s">)</span><span class="sc">;</span></pre>
+<a id="VERSION"></a><h2 class='h2' >VERSION</h2>
+<p>Version 3.23</p>
+<a id="DESCRIPTION"></a><h3 class='h3' >DESCRIPTION</h3>
+<p>This is a simple factory class which returns a <a href="../../TAP/Parser/Result.html">TAP::Parser::Result</a> subclass
+representing the current bit of test data from TAP (usually a single line).
+It is used primarily by <a href="../../TAP/Parser/Grammar.html">TAP::Parser::Grammar</a>.  Unless you're subclassing,
+you probably won't need to use this module directly.</p>
+<a id="METHODS"></a><h3 class='h3' >METHODS</h3>
+<a id="Class-Methods"></a><h3 class='h3' >Class Methods</h3>
+<a id="new"></a><h4 class='h4' ><pre>
+<span class="w">new</span></code>
+</h4>
+<p>Creates a new factory class.
+<i>Note:</i> You currently don't need to instantiate a factory in order to use it.</p>
+<a id="make_result"></a><h4 class='h4' ><pre>
+<span class="w">make_result</span></code>
+</h4>
+<p>Returns an instance the appropriate class for the test token passed in.</p>
+<pre>
+  <a class="l_k" href="../../functions/my.html">my</a> <span class="i">$result</span> = <span class="w">TAP::Parser::ResultFactory</span><span class="w">-&gt;make_result</span><span class="s">(</span><span class="i">$token</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>Can also be called as an instance method.</p>
+<a id="class_for"></a><h4 class='h4' ><pre>
+<span class="w">class_for</span></code>
+</h4>
+<p>Takes one argument: <pre>
+<span class="i">$type</span></code>
+.  Returns the class for this $type, or <pre>
+<span class="w">croak</span></code>
+s
+with an error.</p>
+<a id="register_type"></a><h4 class='h4' ><pre>
+<span class="w">register_type</span></code>
+</h4>
+<p>Takes two arguments: <pre>
+<span class="i">$type</span></code>
+, <pre>
+<span class="i">$class</span></code>
+</p>
+<p>This lets you override an existing type with your own custom type, or register
+a completely new type, eg:</p>
+<pre>
+  <span class="c"># create a custom result type:</span>
+<a name="package-MyResult"></a>  package <span class="i">MyResult</span><span class="sc">;</span>
+  <a class="l_k" href="../../functions/use.html">use</a> <span class="w">strict</span><span class="sc">;</span>
+  <a class="l_k" href="../../functions/use.html">use</a> <span class="w">vars</span> <span class="q">qw(@ISA)</span><span class="sc">;</span>
+  <span class="i">@ISA</span> = <span class="q">&#39;TAP::Parser::Result&#39;</span><span class="sc">;</span>
+
+  <span class="c"># register with the factory:</span>
+  <span class="w">TAP::Parser::ResultFactory</span><span class="w">-&gt;register_type</span><span class="s">(</span> <span class="q">&#39;my_type&#39;</span> <span class="cm">=&gt;</span> <span class="w">__PACKAGE__</span> <span class="s">)</span><span class="sc">;</span>
+
+  <span class="c"># use it:</span>
+  <a class="l_k" href="../../functions/my.html">my</a> <span class="i">$r</span> = <span class="w">TAP::Parser::ResultFactory</span>-&gt;<span class="s">(</span> <span class="s">{</span> <span class="w">type</span> <span class="cm">=&gt;</span> <span class="q">&#39;my_type&#39;</span> <span class="s">}</span> <span class="s">)</span><span class="sc">;</span></pre>
+<p>Your custom type should then be picked up automatically by the <a href="../../TAP/Parser.html">TAP::Parser</a>.</p>
+<a id="SUBCLASSING"></a><h2 class='h2' >SUBCLASSING</h2>
+<p>Please see <a href="../../TAP/Parser.html#SUBCLASSING">SUBCLASSING in TAP::Parser</a> for a subclassing overview.</p>
+<p>There are a few things to bear in mind when creating your own
+<pre>
+<span class="w">ResultFactory</span></code>
+:</p>
+<dl>
+<dt>1</dt><dd>
+<p>The factory itself is never instantiated (this <i>may</i> change in the future).
+This means that <pre>
+<span class="w">_initialize</span></code>
+ is never called.</p>
+</dd>
+<dt>2</dt><dd>
+<p><pre>
+<span class="w">TAP::Parser::Result</span><span class="w">-&gt;new</span></code>
+ is never called, $tokens are reblessed.
+This <i>will</i> change in a future version!</p>
+</dd>
+<dt>3</dt><dd>
+<p><a href="../../TAP/Parser/Result.html">TAP::Parser::Result</a> subclasses will register themselves with
+<a href="../../TAP/Parser/ResultFactory.html">TAP::Parser::ResultFactory</a> directly:</p>
+<pre>
+<a name="package-MyFooResult"></a>  package <span class="i">MyFooResult</span><span class="sc">;</span>
+  <span class="w">TAP::Parser::ResultFactory</span><span class="w">-&gt;register_type</span><span class="s">(</span> <span class="w">foo</span> <span class="cm">=&gt;</span> <span class="w">__PACKAGE__</span> <span class="s">)</span><span class="sc">;</span></pre>
+<p>Of course, it's up to you to decide whether or not to ignore them.</p>
+</dd>
+</dl>
+<a id="Example"></a><h3 class='h3' >Example</h3>
+<pre>
+<a name="package-MyResultFactory"></a>  package <span class="i">MyResultFactory</span><span class="sc">;</span>
+
+  <a class="l_k" href="../../functions/use.html">use</a> <span class="w">strict</span><span class="sc">;</span>
+  <a class="l_k" href="../../functions/use.html">use</a> <span class="w">vars</span> <span class="q">&#39;@ISA&#39;</span><span class="sc">;</span>
+
+  <a class="l_k" href="../../functions/use.html">use</a> <span class="w">MyResult</span><span class="sc">;</span>
+  <a class="l_k" href="../../functions/use.html">use</a> <span class="w">TAP::Parser::ResultFactory</span><span class="sc">;</span>
+
+  <span class="i">@ISA</span> = <span class="q">qw( TAP::Parser::ResultFactory )</span><span class="sc">;</span>
+
+  <span class="c"># force all results to be &#39;MyResult&#39;</span>
+<a name="class_for"></a>  sub <span class="m">class_for</span> <span class="s">{</span>
+    <a class="l_k" href="../../functions/return.html">return</a> <span class="q">&#39;MyResult&#39;</span><span class="sc">;</span>
+  <span class="s">}</span>
+
+  <span class="n">1</span><span class="sc">;</span></pre>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<p><a href="../../TAP/Parser.html">TAP::Parser</a>,
+<a href="../../TAP/Parser/Result.html">TAP::Parser::Result</a>,
+<a href="../../TAP/Parser/Grammar.html">TAP::Parser::Grammar</a></p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#VERSION">VERSION</a></li><ul><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#METHODS">METHODS</a></li><li><a href="#Class-Methods">Class Methods</a></li></ul><li><a href="#SUBCLASSING">SUBCLASSING</a></li><ul><li><a href="#Example">Example</a></li></ul><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

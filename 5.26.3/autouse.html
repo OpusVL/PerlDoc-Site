@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="autouse - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>autouse - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.26.3/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.26.3/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.26.3/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.26.3/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.26.3/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.26.3/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.26.3/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.26.3/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.26.3/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.26.3/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.26.3/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.26.3/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.26.3/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.26.3/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.26.3/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.26.3/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.26.3/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.26.3/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.26.3/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.26.3/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.26.3/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.26.3/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.26.3/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.26.3/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.26.3/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.26.3/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.26.3/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.26.3/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.26.3/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.26.3/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.26.3/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.26.3/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.26.3/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.26.3/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="index-pragmas.html">Pragmas</a> &gt;
+      
+    
+    autouse
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 26.3 documentation</h1>
+                  </div>
+                  <h1>autouse</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#WARNING">WARNING</a></li><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>autouse - postpone load of modules until a function is used</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<pre>
+  <a class="l_k" href="functions/use.html">use</a> <span class="w">autouse</span> <span class="q">&#39;Carp&#39;</span> <span class="cm">=&gt;</span> <span class="q">qw(carp croak)</span><span class="sc">;</span>
+  <span class="w">carp</span> <span class="q">&quot;this carp was predeclared and autoused &quot;</span><span class="sc">;</span></pre>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>If the module <pre>
+<span class="w">Module</span></code>
+ is already loaded, then the declaration</p>
+<pre>
+  <a class="l_k" href="functions/use.html">use</a> <span class="w">autouse</span> <span class="q">&#39;Module&#39;</span> <span class="cm">=&gt;</span> <span class="q">qw(func1 func2($;$))</span><span class="sc">;</span></pre>
+<p>is equivalent to</p>
+<pre>
+  <a class="l_k" href="functions/use.html">use</a> <span class="w">Module</span> <span class="q">qw(func1 func2)</span><span class="sc">;</span></pre>
+<p>if <pre>
+<span class="w">Module</span></code>
+ defines func2() with prototype <code class="inline">($;$)</code>, and func1() has
+no prototypes.  (At least if <pre>
+<span class="w">Module</span></code>
+ uses <pre>
+<span class="w">Exporter</span></code>
+'s <code class="inline"><a class="l_k" href="functions/import.html">import</a></code>,
+otherwise it is a fatal error.)</p>
+<p>If the module <pre>
+<span class="w">Module</span></code>
+ is not loaded yet, then the above declaration
+declares functions func1() and func2() in the current package.  When
+these functions are called, they load the package <pre>
+<span class="w">Module</span></code>
+ if needed,
+and substitute themselves with the correct definitions.</p>
+<a id="WARNING"></a><h2 class='h2' >WARNING</h2>
+<p>Using <pre>
+<span class="w">autouse</span></code>
+ will move important steps of your program's execution
+from compile time to runtime.  This can</p>
+<ul>
+<li>
+<p>Break the execution of your program if the module you <pre>
+<span class="w">autouse</span></code>
+d has
+some initialization which it expects to be done early.</p>
+</li>
+<li>
+<p>hide bugs in your code since important checks (like correctness of
+prototypes) is moved from compile time to runtime.  In particular, if
+the prototype you specified on <pre>
+<span class="w">autouse</span></code>
+ line is wrong, you will not
+find it out until the corresponding function is executed.  This will be
+very unfortunate for functions which are not always called (note that
+for such functions <pre>
+<span class="w">autouse</span></code>
+ing gives biggest win, for a workaround
+see below).</p>
+</li>
+</ul>
+<p>To alleviate the second problem (partially) it is advised to write
+your scripts like this:</p>
+<pre>
+  <a class="l_k" href="functions/use.html">use</a> <span class="w">Module</span><span class="sc">;</span>
+  <a class="l_k" href="functions/use.html">use</a> <span class="w">autouse</span> <span class="w">Module</span> <span class="cm">=&gt;</span> <span class="q">qw(carp($) croak(&amp;$))</span><span class="sc">;</span>
+  <span class="w">carp</span> <span class="q">&quot;this carp was predeclared and autoused &quot;</span><span class="sc">;</span></pre>
+<p>The first line ensures that the errors in your argument specification
+are found early.  When you ship your application you should comment
+out the first line, since it makes the second one useless.</p>
+<a id="AUTHOR"></a><h2 class='h2' >AUTHOR</h2>
+<p>Ilya Zakharevich (ilya@math.ohio-state.edu)</p>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<p>perl(1).</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#WARNING">WARNING</a></li><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/26/3/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/3/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/3/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/3/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/26/3/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/3/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/3/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/3/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/26/3/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/3/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/3/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/26/3/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/3/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/3/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

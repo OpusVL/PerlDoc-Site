@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="I18N::Langinfo - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>I18N::Langinfo - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.16.1/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.16.1/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.16.1/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.16.1/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.16.1/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.16.1/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.16.1/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.16.1/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.16.1/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.16.1/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.16.1/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.16.1/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.16.1/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.16.1/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.16.1/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../index-modules-I.html">Core modules (I)</a> &gt;
+      
+    
+    I18N::Langinfo
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 16.1 documentation</h1>
+                  </div>
+                  <h1>I18N::Langinfo</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><ul><li><a href="#EXPORT">EXPORT</a></li></ul><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#COPYRIGHT-AND-LICENSE">COPYRIGHT AND LICENSE</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>I18N::Langinfo - query locale information</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<pre>
+  <a class="l_k" href="../functions/use.html">use</a> <span class="w">I18N::Langinfo</span><span class="sc">;</span></pre>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>The langinfo() function queries various locale information that can be
+used to localize output and user interfaces.  The langinfo() requires
+one numeric argument that identifies the locale constant to query:
+if no argument is supplied, <pre>
+<span class="i">$_</span></code>
+ is used.  The numeric constants
+appropriate to be used as arguments are exportable from I18N::Langinfo.</p>
+<p>The following example will import the langinfo() function itself and
+three constants to be used as arguments to langinfo(): a constant for
+the abbreviated first day of the week (the numbering starts from
+Sunday = 1) and two more constants for the affirmative and negative
+answers for a yes/no question in the current locale.</p>
+<pre>
+    <a class="l_k" href="../functions/use.html">use</a> <span class="w">I18N::Langinfo</span> <span class="q">qw(langinfo ABDAY_1 YESSTR NOSTR)</span><span class="sc">;</span>
+
+    <a class="l_k" href="../functions/my.html">my</a> <span class="s">(</span><span class="i">$abday_1</span><span class="cm">,</span> <span class="i">$yesstr</span><span class="cm">,</span> <span class="i">$nostr</span><span class="s">)</span> = <a class="l_k" href="../functions/map.html">map</a> <span class="s">{</span> <span class="w">langinfo</span> <span class="s">}</span> <span class="q">qw(ABDAY_1 YESSTR NOSTR)</span><span class="sc">;</span>
+
+    <a class="l_k" href="../functions/print.html">print</a> <span class="q">&quot;$abday_1? [$yesstr/$nostr] &quot;</span><span class="sc">;</span></pre>
+<p>In other words, in the "C" (or English) locale the above will probably
+print something like:</p>
+<div class="verbatim"><ol><li>    Sun? [yes/no]</li></ol></div><p>but under a French locale</p>
+<div class="verbatim"><ol><li>    dim? [oui/non]</li></ol></div><p>The usually available constants are</p>
+<pre>
+    <span class="w">ABDAY_1</span> <span class="w">ABDAY_2</span> <span class="w">ABDAY_3</span> <span class="w">ABDAY_4</span> <span class="w">ABDAY_5</span> <span class="w">ABDAY_6</span> <span class="w">ABDAY_7</span>
+    <span class="w">ABMON_1</span> <span class="w">ABMON_2</span> <span class="w">ABMON_3</span> <span class="w">ABMON_4</span> <span class="w">ABMON_5</span> <span class="w">ABMON_6</span>
+    <span class="w">ABMON_7</span> <span class="w">ABMON_8</span> <span class="w">ABMON_9</span> <span class="w">ABMON_10</span> <span class="w">ABMON_11</span> <span class="w">ABMON_12</span>
+    <span class="w">DAY_1</span> <span class="w">DAY_2</span> <span class="w">DAY_3</span> <span class="w">DAY_4</span> <span class="w">DAY_5</span> <span class="w">DAY_6</span> <span class="w">DAY_7</span>
+    <span class="w">MON_1</span> <span class="w">MON_2</span> <span class="w">MON_3</span> <span class="w">MON_4</span> <span class="w">MON_5</span> <span class="w">MON_6</span>
+    <span class="w">MON_7</span> <span class="w">MON_8</span> <span class="w">MON_9</span> <span class="w">MON_10</span> <span class="w">MON_11</span> <span class="w">MON_12</span></pre>
+<p>for abbreviated and full length days of the week and months of the year,</p>
+<pre>
+    <span class="w">D_T_FMT</span> <span class="w">D_FMT</span> <span class="w">T_FMT</span></pre>
+<p>for the date-time, date, and time formats used by the strftime() function
+(see <a href="../POSIX.html">POSIX</a>)</p>
+<pre>
+    <span class="w">AM_STR</span> <span class="w">PM_STR</span> <span class="w">T_FMT_AMPM</span></pre>
+<p>for the locales for which it makes sense to have ante meridiem and post
+meridiem time formats,</p>
+<pre>
+    <span class="w">CODESET</span> <span class="w">CRNCYSTR</span> <span class="w">RADIXCHAR</span></pre>
+<p>for the character code set being used (such as "ISO8859-1", "cp850",
+"koi8-r", "sjis", "utf8", etc.), for the currency string, for the
+radix character used between the integer and the fractional part
+of decimal numbers (yes, this is redundant with POSIX::localeconv())</p>
+<pre>
+    <span class="w">YESSTR</span> <span class="w">YESEXPR</span> <span class="w">NOSTR</span> <span class="w">NOEXPR</span></pre>
+<p>for the affirmative and negative responses and expressions, and</p>
+<pre>
+    <span class="w">ERA</span> <span class="w">ERA_D_FMT</span> <span class="w">ERA_D_T_FMT</span> <span class="w">ERA_T_FMT</span></pre>
+<p>for the Japanese Emperor eras (naturally only defined under Japanese locales).</p>
+<p>See your <i>langinfo(3)</i> for more information about the available
+constants.  (Often this means having to look directly at the
+<i>langinfo.h</i> C header file.)</p>
+<p>Note that unfortunately none of the above constants are guaranteed
+to be available on a particular platform.  To be on the safe side
+you can wrap the import in an eval like this:</p>
+<pre>
+    <a class="l_k" href="../functions/eval.html">eval</a> <span class="s">{</span>
+        <a class="l_k" href="../functions/require.html">require</a> <span class="w">I18N::Langinfo</span><span class="sc">;</span>
+        <span class="w">I18N::Langinfo</span><span class="w">-&gt;import</span><span class="s">(</span><span class="q">qw(langinfo CODESET)</span><span class="s">)</span><span class="sc">;</span>
+        <span class="i">$codeset</span> = <span class="i">langinfo</span><span class="s">(</span><span class="i">CODESET</span><span class="s">(</span><span class="s">)</span><span class="s">)</span><span class="sc">;</span> <span class="c"># note the ()</span>
+    <span class="s">}</span><span class="sc">;</span>
+    <a class="l_k" href="../functions/if.html">if</a> <span class="s">(</span>!<span class="i">$@</span><span class="s">)</span> <span class="s">{</span> ... <span class="w">failed</span> ... <span class="s">}</span></pre>
+<a id="EXPORT"></a><h3 class='h3' >EXPORT</h3>
+<p>By default only the <pre>
+<span class="i">langinfo</span><span class="s">(</span><span class="s">)</span></code>
+ function is exported.</p>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<p><a href="../perllocale.html">perllocale</a>, <a href="../POSIX.html#localeconv">localeconv in POSIX</a>, <a href="../POSIX.html#setlocale">setlocale in POSIX</a>, <i>nl_langinfo(3)</i>.</p>
+<p>The langinfo() is just a wrapper for the C nl_langinfo() interface.</p>
+<a id="AUTHOR"></a><h2 class='h2' >AUTHOR</h2>
+<p>Jarkko Hietaniemi, &lt;jhi@hut.fi&gt;</p>
+<a id="COPYRIGHT-AND-LICENSE"></a><h2 class='h2' >COPYRIGHT AND LICENSE</h2>
+<p>Copyright 2001 by Jarkko Hietaniemi</p>
+<p>This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><ul><li><a href="#EXPORT">EXPORT</a></li></ul><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#COPYRIGHT-AND-LICENSE">COPYRIGHT AND LICENSE</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

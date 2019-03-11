@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Net::Time - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>Net::Time - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.28.1/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.28.1/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.28.1/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.28.1/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.28.1/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.28.1/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.28.1/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.28.1/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.28.1/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.28.1/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.28.1/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.28.1/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.28.1/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.28.1/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.28.1/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../index-modules-N.html">Core modules (N)</a> &gt;
+      
+    
+    Net::Time
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 28.1 documentation</h1>
+                  </div>
+                  <h1>Net::Time</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#COPYRIGHT">COPYRIGHT</a></li><li><a href="#LICENCE">LICENCE</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>Net::Time - time and daytime network client interface</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<pre>
+    <a class="l_k" href="../functions/use.html">use</a> <span class="w">Net::Time</span> <span class="q">qw(inet_time inet_daytime)</span><span class="sc">;</span>
+
+    <a class="l_k" href="../functions/print.html">print</a> <span class="i">inet_time</span><span class="s">(</span><span class="s">)</span><span class="sc">;</span>          <span class="c"># use default host from Net::Config</span>
+    <a class="l_k" href="../functions/print.html">print</a> <span class="i">inet_time</span><span class="s">(</span><span class="q">&#39;localhost&#39;</span><span class="s">)</span><span class="sc">;</span>
+    <a class="l_k" href="../functions/print.html">print</a> <span class="i">inet_time</span><span class="s">(</span><span class="q">&#39;localhost&#39;</span><span class="cm">,</span> <span class="q">&#39;tcp&#39;</span><span class="s">)</span><span class="sc">;</span>
+
+    <a class="l_k" href="../functions/print.html">print</a> <span class="i">inet_daytime</span><span class="s">(</span><span class="s">)</span><span class="sc">;</span>       <span class="c"># use default host from Net::Config</span>
+    <a class="l_k" href="../functions/print.html">print</a> <span class="i">inet_daytime</span><span class="s">(</span><span class="q">&#39;localhost&#39;</span><span class="s">)</span><span class="sc">;</span>
+    <a class="l_k" href="../functions/print.html">print</a> <span class="i">inet_daytime</span><span class="s">(</span><span class="q">&#39;localhost&#39;</span><span class="cm">,</span> <span class="q">&#39;tcp&#39;</span><span class="s">)</span><span class="sc">;</span></pre>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p><pre>
+<span class="w">Net::Time</span></code>
+ provides subroutines that obtain the time on a remote machine.</p>
+<ul>
+<li><a id="inet_time-(-%5bHOST-%5b%2c-PROTOCOL-%5b%2c-TIMEOUT%5d%5d%5d)"></a><strong>inet_time ( [HOST [, PROTOCOL [, TIMEOUT]]])</strong>
+<p>Obtain the time on <pre>
+<span class="w">HOST</span></code>
+, or some default host if <pre>
+<span class="w">HOST</span></code>
+ is not given
+or not defined, using the protocol as defined in RFC868. The optional
+argument <pre>
+<span class="w">PROTOCOL</span></code>
+ should define the protocol to use, either <pre>
+<span class="w">tcp</span></code>
+ or
+<pre>
+<span class="w">udp</span></code>
+. The result will be a time value in the same units as returned
+by time() or <i>undef</i> upon failure.</p>
+</li>
+<li><a id="inet_daytime-(-%5bHOST-%5b%2c-PROTOCOL-%5b%2c-TIMEOUT%5d%5d%5d)"></a><strong>inet_daytime ( [HOST [, PROTOCOL [, TIMEOUT]]])</strong>
+<p>Obtain the time on <pre>
+<span class="w">HOST</span></code>
+, or some default host if <pre>
+<span class="w">HOST</span></code>
+ is not given
+or not defined, using the protocol as defined in RFC867. The optional
+argument <pre>
+<span class="w">PROTOCOL</span></code>
+ should define the protocol to use, either <pre>
+<span class="w">tcp</span></code>
+ or
+<pre>
+<span class="w">udp</span></code>
+. The result will be an ASCII string or <i>undef</i> upon failure.</p>
+</li>
+</ul>
+<a id="AUTHOR"></a><h2 class='h2' >AUTHOR</h2>
+<p>Graham Barr &lt;<i>gbarr@pobox.com</i>&gt;.</p>
+<p>Steve Hay &lt;<i>shay@cpan.org</i>&gt; is now maintaining libnet as of version
+1.22_02.</p>
+<a id="COPYRIGHT"></a><h2 class='h2' >COPYRIGHT</h2>
+<p>Copyright (C) 1995-2004 Graham Barr.  All rights reserved.</p>
+<p>Copyright (C) 2014 Steve Hay.  All rights reserved.</p>
+<a id="LICENCE"></a><h2 class='h2' >LICENCE</h2>
+<p>This module is free software; you can redistribute it and/or modify it under the
+same terms as Perl itself, i.e. under the terms of either the GNU General Public
+License or the Artistic License, as specified in the <i>LICENCE</i> file.</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#COPYRIGHT">COPYRIGHT</a></li><li><a href="#LICENCE">LICENCE</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

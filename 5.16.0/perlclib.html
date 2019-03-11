@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="perlclib - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>perlclib - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.16.0/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.16.0/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.16.0/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.16.0/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.16.0/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.16.0/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.16.0/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.16.0/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.16.0/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.16.0/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.16.0/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.16.0/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.16.0/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.16.0/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.16.0/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="index-internals.html">Internals and C language interface</a> &gt;
+      
+    
+    perlclib
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 16.0 documentation</h1>
+                  </div>
+                  <h1>perlclib</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><ul><li><a href="#Conventions">Conventions</a></li><li><a href="#File-Operations">File Operations</a></li><li><a href="#File-Input-and-Output">File Input and Output</a></li><li><a href="#File-Positioning">File Positioning</a></li><li><a href="#Memory-Management-and-String-Handling">Memory Management and String Handling</a></li><li><a href="#Character-Class-Tests">Character Class Tests</a></li><li><a href="#_stdlib.h_-functions">_stdlib.h_ functions</a></li><li><a href="#Miscellaneous-functions">Miscellaneous functions</a></li></ul><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>perlclib - Internal replacements for standard C library functions</p>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>One thing Perl porters should note is that <i>perl</i> doesn't tend to use that
+much of the C standard library internally; you'll see very little use of, 
+for example, the <i>ctype.h</i> functions in there. This is because Perl
+tends to reimplement or abstract standard library functions, so that we
+know exactly how they're going to operate.</p>
+<p>This is a reference card for people who are familiar with the C library
+and who want to do things the Perl way; to tell them which functions
+they ought to use instead of the more normal C functions.</p>
+<a id="Conventions"></a><h3 class='h3' >Conventions</h3>
+<p>In the following tables:</p>
+<ul>
+<li><a id="t"></a><strong><pre>
+<span class="w">t</span></code>
+</strong>
+<p>is a type.</p>
+</li>
+<li><a id="p"></a><strong><pre>
+<span class="w">p</span></code>
+</strong>
+<p>is a pointer.</p>
+</li>
+<li><a id="n"></a><strong><pre>
+<span class="w">n</span></code>
+</strong>
+<p>is a number.</p>
+</li>
+<li><a id="s"></a><strong><code class="inline"><a class="l_k" href="functions/s.html">s</a></code></strong>
+<p>is a string.</p>
+</li>
+</ul>
+<p><pre>
+<span class="w">sv</span></code>
+, <pre>
+<span class="w">av</span></code>
+, <pre>
+<span class="w">hv</span></code>
+, etc. represent variables of their respective types.</p>
+<a id="File-Operations"></a><h3 class='h3' >File Operations</h3>
+<p>Instead of the <i>stdio.h</i> functions, you should use the Perl abstraction
+layer. Instead of <pre>
+<span class="w">FILE</span>*</code>
+ types, you need to be handling <pre>
+<span class="w">PerlIO</span>*</code>
+
+types.  Don't forget that with the new PerlIO layered I/O abstraction 
+<pre>
+<span class="w">FILE</span>*</code>
+ types may not even be available. See also the <pre>
+<span class="w">perlapio</span></code>
+
+documentation for more information about the following functions:</p>
+<div class="verbatim"><ol><li>    Instead Of:                 Use:</li><li></li><li>    stdin                       PerlIO_stdin()</li><li>    stdout                      PerlIO_stdout()</li><li>    stderr                      PerlIO_stderr()</li><li></li><li>    fopen(fn, mode)             PerlIO_open(fn, mode)</li><li>    freopen(fn, mode, stream)   PerlIO_reopen(fn, mode, perlio) (Deprecated)</li><li>    fflush(stream)              PerlIO_flush(perlio)</li><li>    fclose(stream)              PerlIO_close(perlio)</li></ol></div><a id="File-Input-and-Output"></a><h3 class='h3' >File Input and Output</h3>
+<div class="verbatim"><ol><li>    Instead Of:                 Use:</li><li></li><li>    fprintf(stream, fmt, ...)   PerlIO_printf(perlio, fmt, ...)</li><li></li><li>    [f]getc(stream)             PerlIO_getc(perlio)</li><li>    [f]putc(stream, n)          PerlIO_putc(perlio, n)</li><li>    ungetc(n, stream)           PerlIO_ungetc(perlio, n)</li></ol></div><p>Note that the PerlIO equivalents of <pre>
+<span class="w">fread</span></code>
+ and <pre>
+<span class="w">fwrite</span></code>
+ are slightly
+different from their C library counterparts:</p>
+<div class="verbatim"><ol><li>    fread(p, size, n, stream)   PerlIO_read(perlio, buf, numbytes)</li><li>    fwrite(p, size, n, stream)  PerlIO_write(perlio, buf, numbytes)</li><li></li><li>    fputs(s, stream)            PerlIO_puts(perlio, s)</li></ol></div><p>There is no equivalent to <pre>
+<span class="w">fgets</span></code>
+; one should use <pre>
+<span class="w">sv_gets</span></code>
+ instead:</p>
+<div class="verbatim"><ol><li>    fgets(s, n, stream)         sv_gets(sv, perlio, append)</li></ol></div><a id="File-Positioning"></a><h3 class='h3' >File Positioning</h3>
+<div class="verbatim"><ol><li>    Instead Of:                 Use:</li><li></li><li>    feof(stream)                PerlIO_eof(perlio)</li><li>    fseek(stream, n, whence)    PerlIO_seek(perlio, n, whence)</li><li>    rewind(stream)              PerlIO_rewind(perlio)</li><li></li><li>    fgetpos(stream, p)          PerlIO_getpos(perlio, sv)</li><li>    fsetpos(stream, p)          PerlIO_setpos(perlio, sv)</li><li></li><li>    ferror(stream)              PerlIO_error(perlio)</li><li>    clearerr(stream)            PerlIO_clearerr(perlio)</li></ol></div><a id="Memory-Management-and-String-Handling"></a><h3 class='h3' >Memory Management and String Handling</h3>
+<div class="verbatim"><ol><li>    Instead Of:                 	Use:</li><li></li><li>    t* p = malloc(n)            	Newx(id, p, n, t)</li><li>    t* p = calloc(n, s)         	Newxz(id, p, n, t)</li><li>    p = realloc(p, n)           	Renew(p, n, t)</li><li>    memcpy(dst, src, n)         	Copy(src, dst, n, t)</li><li>    memmove(dst, src, n)        	Move(src, dst, n, t)</li><li>    memcpy(dst, src, sizeof(t))		StructCopy(src, dst, t)</li><li>    memset(dst, 0, n * sizeof(t))	Zero(dst, n, t)</li><li>    memzero(dst, 0)			Zero(dst, n, char)</li><li>    free(p)             	        Safefree(p)</li><li></li><li>    strdup(p)                   savepv(p)</li><li>    strndup(p, n)               savepvn(p, n) (Hey, strndup doesn't exist!)</li><li></li><li>    strstr(big, little)         instr(big, little)</li><li>    strcmp(s1, s2)              strLE(s1, s2) / strEQ(s1, s2) / strGT(s1,s2)</li><li>    strncmp(s1, s2, n)          strnNE(s1, s2, n) / strnEQ(s1, s2, n)</li></ol></div><p>Notice the different order of arguments to <pre>
+<span class="w">Copy</span></code>
+ and <pre>
+<span class="w">Move</span></code>
+ than used
+in <pre>
+<span class="w">memcpy</span></code>
+ and <pre>
+<span class="w">memmove</span></code>
+.</p>
+<p>Most of the time, though, you'll want to be dealing with SVs internally
+instead of raw <pre>
+<span class="w">char</span> *</code>
+ strings:</p>
+<div class="verbatim"><ol><li>    strlen(s)                   sv_len(sv)</li><li>    strcpy(dt, src)             sv_setpv(sv, s)</li><li>    strncpy(dt, src, n)         sv_setpvn(sv, s, n)</li><li>    strcat(dt, src)             sv_catpv(sv, s)</li><li>    strncat(dt, src)            sv_catpvn(sv, s)</li><li>    sprintf(s, fmt, ...)        sv_setpvf(sv, fmt, ...)</li></ol></div><p>Note also the existence of <pre>
+<span class="w">sv_catpvf</span></code>
+ and <pre>
+<span class="w">sv_vcatpvfn</span></code>
+, combining
+concatenation with formatting.</p>
+<p>Sometimes instead of zeroing the allocated heap by using Newxz() you
+should consider "poisoning" the data.  This means writing a bit
+pattern into it that should be illegal as pointers (and floating point
+numbers), and also hopefully surprising enough as integers, so that
+any code attempting to use the data without forethought will break
+sooner rather than later.  Poisoning can be done using the Poison()
+macros, which have similar arguments to Zero():</p>
+<div class="verbatim"><ol><li>    PoisonWith(dst, n, t, b)    scribble memory with byte b</li><li>    PoisonNew(dst, n, t)        equal to PoisonWith(dst, n, t, 0xAB)</li><li>    PoisonFree(dst, n, t)       equal to PoisonWith(dst, n, t, 0xEF)</li><li>    Poison(dst, n, t)           equal to PoisonFree(dst, n, t)</li></ol></div><a id="Character-Class-Tests"></a><h3 class='h3' >Character Class Tests</h3>
+<p>There are two types of character class tests that Perl implements: one
+type deals in <pre>
+<span class="w">char</span></code>
+s and are thus <strong>not</strong> Unicode aware (and hence
+deprecated unless you <strong>know</strong> you should use them) and the other type
+deal in <pre>
+<span class="w">UV</span></code>
+s and know about Unicode properties. In the following
+table, <pre>
+<span class="w">c</span></code>
+ is a <pre>
+<span class="w">char</span></code>
+, and <pre>
+<span class="w">u</span></code>
+ is a Unicode codepoint.</p>
+<div class="verbatim"><ol><li>    Instead Of:                 Use:            But better use:</li><li></li><li>    isalnum(c)                  isALNUM(c)      isALNUM_uni(u)</li><li>    isalpha(c)                  isALPHA(c)      isALPHA_uni(u)</li><li>    iscntrl(c)                  isCNTRL(c)      isCNTRL_uni(u)</li><li>    isdigit(c)                  isDIGIT(c)      isDIGIT_uni(u)</li><li>    isgraph(c)                  isGRAPH(c)      isGRAPH_uni(u)</li><li>    islower(c)                  isLOWER(c)      isLOWER_uni(u)</li><li>    isprint(c)                  isPRINT(c)      isPRINT_uni(u)</li><li>    ispunct(c)                  isPUNCT(c)      isPUNCT_uni(u)</li><li>    isspace(c)                  isSPACE(c)      isSPACE_uni(u)</li><li>    isupper(c)                  isUPPER(c)      isUPPER_uni(u)</li><li>    isxdigit(c)                 isXDIGIT(c)     isXDIGIT_uni(u)</li><li></li><li>    tolower(c)                  toLOWER(c)      toLOWER_uni(u)</li><li>    toupper(c)                  toUPPER(c)      toUPPER_uni(u)</li></ol></div><a id="_stdlib.h_-functions"></a><h3 class='h3' ><i>stdlib.h</i> functions</h3>
+<div class="verbatim"><ol><li>    Instead Of:                 Use: </li><li></li><li>    atof(s)                     Atof(s)</li><li>    atol(s)                     Atol(s)</li><li>    strtod(s, &amp;p)               Nothing.  Just don't use it.</li><li>    strtol(s, &amp;p, n)            Strtol(s, &amp;p, n)</li><li>    strtoul(s, &amp;p, n)           Strtoul(s, &amp;p, n)</li></ol></div><p>Notice also the <pre>
+<span class="w">grok_bin</span></code>
+, <pre>
+<span class="w">grok_hex</span></code>
+, and <pre>
+<span class="w">grok_oct</span></code>
+ functions in
+<i>numeric.c</i> for converting strings representing numbers in the respective
+bases into <pre>
+<span class="w">NV</span></code>
+s.</p>
+<p>In theory <pre>
+<span class="w">Strtol</span></code>
+ and <pre>
+<span class="w">Strtoul</span></code>
+ may not be defined if the machine perl is
+built on doesn't actually have strtol and strtoul. But as those 2
+functions are part of the 1989 ANSI C spec we suspect you'll find them
+everywhere by now.</p>
+<div class="verbatim"><ol><li>    int rand()                  double Drand01()</li><li>    srand(n)                    { seedDrand01((Rand_seed_t)n); </li><li>                                  PL_srand_called = TRUE; }</li><li></li><li>    exit(n)                     my_exit(n)</li><li>    system(s)                   Don't. Look at pp_system or use my_popen</li><li></li><li>    getenv(s)                   PerlEnv_getenv(s)</li><li>    setenv(s, val)              my_putenv(s, val)</li></ol></div><a id="Miscellaneous-functions"></a><h3 class='h3' >Miscellaneous functions</h3>
+<p>You should not even <strong>want</strong> to use <i>setjmp.h</i> functions, but if you
+think you do, use the <pre>
+<span class="w">JMPENV</span></code>
+ stack in <i>scope.h</i> instead.</p>
+<p>For <pre>
+<span class="w">signal</span></code>
+/<pre>
+<span class="w">sigaction</span></code>
+, use <pre>
+<span class="i">rsignal</span><span class="s">(</span><span class="w">signo</span><span class="cm">,</span> <span class="w">handler</span><span class="s">)</span></code>
+.</p>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<p><a href="perlapi.html">perlapi</a>, <a href="perlapio.html">perlapio</a>, <a href="perlguts.html">perlguts</a></p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><ul><li><a href="#Conventions">Conventions</a></li><li><a href="#File-Operations">File Operations</a></li><li><a href="#File-Input-and-Output">File Input and Output</a></li><li><a href="#File-Positioning">File Positioning</a></li><li><a href="#Memory-Management-and-String-Handling">Memory Management and String Handling</a></li><li><a href="#Character-Class-Tests">Character Class Tests</a></li><li><a href="#_stdlib.h_-functions">_stdlib.h_ functions</a></li><li><a href="#Miscellaneous-functions">Miscellaneous functions</a></li></ul><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

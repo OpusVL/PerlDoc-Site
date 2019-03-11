@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Pod::Simple::SimpleTree - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>Pod::Simple::SimpleTree - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.28.0/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.28.0/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.28.0/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.28.0/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.28.0/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.28.0/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.28.0/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.28.0/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.28.0/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.28.0/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.28.0/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.28.0/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.28.0/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.28.0/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.28.0/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.28.0/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.28.0/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.28.0/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.28.0/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.28.0/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.28.0/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.28.0/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.28.0/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.28.0/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.28.0/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.28.0/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.28.0/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.28.0/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.28.0/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.28.0/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.28.0/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.28.0/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.28.0/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.28.0/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../../index-modules-P.html">Core modules (P)</a> &gt;
+      
+    
+    Pod::Simple::SimpleTree
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 28.0 documentation</h1>
+                  </div>
+                  <h1>Pod::Simple::SimpleTree</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#METHODS">METHODS</a></li><li><a href="#Tree-Contents">Tree Contents</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#SUPPORT">SUPPORT</a></li><li><a href="#COPYRIGHT-AND-DISCLAIMERS">COPYRIGHT AND DISCLAIMERS</a></li><li><a href="#AUTHOR">AUTHOR</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>Pod::Simple::SimpleTree -- parse Pod into a simple parse tree</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<div class="verbatim"><ol><li>  % cat ptest.pod</li><li></li><li>  =head1 PIE</li><li></li><li>  I like B&lt;pie&gt;!</li><li></li><li>  % perl -MPod::Simple::SimpleTree -MData::Dumper -e \</li><li>     "print Dumper(Pod::Simple::SimpleTree-&gt;new-&gt;parse_file(shift)-&gt;root)" \</li><li>     ptest.pod</li><li></li><li>  $VAR1 = [</li><li>            'Document',</li><li>            { 'start_line' =&gt; 1 },</li><li>            [</li><li>              'head1',</li><li>              { 'start_line' =&gt; 1 },</li><li>              'PIE'</li><li>            ],</li><li>            [</li><li>              'Para',</li><li>              { 'start_line' =&gt; 3 },</li><li>              'I like ',</li><li>              [</li><li>                'B',</li><li>                {},</li><li>                'pie'</li><li>              ],</li><li>              '!'</li><li>            ]</li><li>          ];</li></ol></div><a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>This class is of interest to people writing a Pod processor/formatter.</p>
+<p>This class takes Pod and parses it, returning a parse tree made just
+of arrayrefs, and hashrefs, and strings.</p>
+<p>This is a subclass of <a href="../../Pod/Simple.html">Pod::Simple</a> and inherits all its methods.</p>
+<p>This class is inspired by XML::Parser's "Tree" parsing-style, although
+it doesn't use exactly the same LoL format.</p>
+<a id="METHODS"></a><h2 class='h2' >METHODS</h2>
+<p>At the end of the parse, call <pre>
+<span class="i">$parser</span><span class="i">-&gt;root</span></code>
+ to get the
+tree's top node.</p>
+<a id="Tree-Contents"></a><h2 class='h2' >Tree Contents</h2>
+<p>Every element node in the parse tree is represented by an arrayref of
+the form: <code class="inline">[ <i>elementname</i>, \%attributes, <i>...subnodes...</i> ]</code>.
+See the example tree dump in the Synopsis, above.</p>
+<p>Every text node in the tree is represented by a simple (non-ref)
+string scalar.  So you can test <code class="inline"><a class="l_k" href="../../functions/ref.html">ref($node)</a></code> to see whether you have
+an element node or just a text node.</p>
+<p>The top node in the tree is <code class="inline">[ 'Document', \%attributes,
+<i>...subnodes...</i> ]</code></p>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<p><a href="../../Pod/Simple.html">Pod::Simple</a></p>
+<p><a href="../../perllol.html">perllol</a></p>
+<p><a href="https://search.cpan.org/perldoc/XML::Parser#Tree">The Tree subsubsection in XML::Parser</a></p>
+<a id="SUPPORT"></a><h2 class='h2' >SUPPORT</h2>
+<p>Questions or discussion about POD and Pod::Simple should be sent to the
+pod-people@perl.org mail list. Send an empty email to
+pod-people-subscribe@perl.org to subscribe.</p>
+<p>This module is managed in an open GitHub repository,
+<a href="https://github.com/perl-pod/pod-simple/">https://github.com/perl-pod/pod-simple/</a>. Feel free to fork and contribute, or
+to clone <a href="git://github.com/perl-pod/pod-simple.git">git://github.com/perl-pod/pod-simple.git</a> and send patches!</p>
+<p>Patches against Pod::Simple are welcome. Please send bug reports to
+&lt;bug-pod-simple@rt.cpan.org&gt;.</p>
+<a id="COPYRIGHT-AND-DISCLAIMERS"></a><h2 class='h2' >COPYRIGHT AND DISCLAIMERS</h2>
+<p>Copyright (c) 2002 Sean M. Burke.</p>
+<p>This library is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.</p>
+<p>This program is distributed in the hope that it will be useful, but
+without any warranty; without even the implied warranty of
+merchantability or fitness for a particular purpose.</p>
+<a id="AUTHOR"></a><h2 class='h2' >AUTHOR</h2>
+<p>Pod::Simple was created by Sean M. Burke &lt;sburke@cpan.org&gt;.
+But don't bother him, he's retired.</p>
+<p>Pod::Simple is maintained by:</p>
+<ul>
+<li><a id="*-Allison-Randal-allison%40perl.org"></a><strong>Allison Randal <pre>
+<span class="w">allison</span><span class="i">@perl</span>.<span class="w">org</span></code>
+</strong>
+</li>
+<li><a id="*-Hans-Dieter-Pearcey-hdp%40cpan.org"></a><strong>Hans Dieter Pearcey <pre>
+<span class="w">hdp</span><span class="i">@cpan</span>.<span class="w">org</span></code>
+</strong>
+</li>
+<li><a id="*-David-E.-Wheeler-dwheeler%40cpan.org"></a><strong>David E. Wheeler <pre>
+<span class="w">dwheeler</span><span class="i">@cpan</span>.<span class="w">org</span></code>
+</strong>
+</li>
+</ul>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#METHODS">METHODS</a></li><li><a href="#Tree-Contents">Tree Contents</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#SUPPORT">SUPPORT</a></li><li><a href="#COPYRIGHT-AND-DISCLAIMERS">COPYRIGHT AND DISCLAIMERS</a></li><li><a href="#AUTHOR">AUTHOR</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/28/0/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/0/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/0/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/0/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/28/0/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/0/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/0/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/0/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/28/0/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/0/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/0/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/28/0/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/0/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/0/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

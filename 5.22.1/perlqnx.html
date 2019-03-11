@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="perlqnx - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>perlqnx - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.22.1/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.22.1/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.22.1/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.22.1/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.22.1/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.22.1/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.22.1/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.22.1/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.22.1/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.22.1/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.22.1/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.22.1/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.22.1/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.22.1/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.22.1/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="index-platforms.html">Platform specific</a> &gt;
+      
+    
+    perlqnx
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 22.1 documentation</h1>
+                  </div>
+                  <h1>perlqnx</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><ul><li><a href="#Required-Software-for-Compiling-Perl-on-QNX4">Required Software for Compiling Perl on QNX4</a></li><li><a href="#Outstanding-Issues-with-Perl-on-QNX4">Outstanding Issues with Perl on QNX4</a></li><li><a href="#QNX-auxiliary-files">QNX auxiliary files</a></li><li><a href="#Outstanding-issues-with-perl-under-QNX6">Outstanding issues with perl under QNX6</a></li><li><a href="#Cross-compilation">Cross-compilation</a></li></ul><li><a href="#AUTHOR">AUTHOR</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>perlqnx - Perl version 5 on QNX</p>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>As of perl5.7.2 all tests pass under:</p>
+<div class="verbatim"><ol><li>  QNX 4.24G</li><li>  Watcom 10.6 with Beta/970211.wcc.update.tar.F</li><li>  socket3r.lib Nov21 1996.</li></ol></div><p>As of perl5.8.1 there is at least one test still failing.</p>
+<p>Some tests may complain under known circumstances.</p>
+<p>See below and hints/qnx.sh for more information.</p>
+<p>Under QNX 6.2.0 there are still a few tests which fail.
+See below and hints/qnx.sh for more information.</p>
+<a id="Required-Software-for-Compiling-Perl-on-QNX4"></a><h3 class='h3' >Required Software for Compiling Perl on QNX4</h3>
+<p>As with many unix ports, this one depends on a few "standard"
+unix utilities which are not necessarily standard for QNX4.</p>
+<ul>
+<li><a id="%2fbin%2fsh"></a><strong>/bin/sh</strong>
+<p>This is used heavily by Configure and then by
+perl itself. QNX4's version is fine, but Configure
+will choke on the 16-bit version, so if you are
+running QNX 4.22, link /bin/sh to /bin32/ksh</p>
+</li>
+<li><a id="ar"></a><strong>ar</strong>
+<p>This is the standard unix library builder.
+We use wlib. With Watcom 10.6, when wlib is
+linked as "ar", it behaves like ar and all is
+fine. Under 9.5, a cover is required. One is
+included in ../qnx</p>
+</li>
+<li><a id="nm"></a><strong>nm</strong>
+<p>This is used (optionally) by configure to list
+the contents of libraries. I will generate
+a cover function on the fly in the UU directory.</p>
+</li>
+<li><a id="cpp"></a><strong>cpp</strong>
+<p>Configure and perl need a way to invoke a C
+preprocessor. I have created a simple cover
+for cc which does the right thing. Without this,
+Configure will create its own wrapper which works,
+but it doesn't handle some of the command line arguments
+that perl will throw at it.</p>
+</li>
+<li><a id="make"></a><strong>make</strong>
+<p>You really need GNU make to compile this. GNU make
+ships by default with QNX 4.23, but you can get it
+from quics for earlier versions.</p>
+</li>
+</ul>
+<a id="Outstanding-Issues-with-Perl-on-QNX4"></a><h3 class='h3' >Outstanding Issues with Perl on QNX4</h3>
+<p>There is no support for dynamically linked libraries in QNX4.</p>
+<p>If you wish to compile with the Socket extension, you need
+to have the TCP/IP toolkit, and you need to make sure that
+-lsocket locates the correct copy of socket3r.lib. Beware
+that the Watcom compiler ships with a stub version of
+socket3r.lib which has very little functionality. Also
+beware the order in which wlink searches directories for
+libraries. You may have /usr/lib/socket3r.lib pointing to
+the correct library, but wlink may pick up
+/usr/watcom/10.6/usr/lib/socket3r.lib instead. Make sure
+they both point to the correct library, that is,
+/usr/tcptk/current/usr/lib/socket3r.lib.</p>
+<p>The following tests may report errors under QNX4:</p>
+<p>dist/Cwd/Cwd.t will complain if `pwd` and cwd don't give
+the same results. cwd calls `fullpath -t`, so if you
+cd `fullpath -t` before running the test, it will
+pass.</p>
+<p>lib/File/Find/taint.t will complain if '.' is in your
+PATH. The PATH test is triggered because cwd calls
+`fullpath -t`.</p>
+<p>ext/IO/lib/IO/t/io_sock.t: Subtests 14 and 22 are skipped due to
+the fact that the functionality to read back the non-blocking
+status of a socket is not implemented in QNX's TCP/IP. This has
+been reported to QNX and it may work with later versions of
+TCP/IP.</p>
+<p>t/io/tell.t: Subtest 27 is failing. We are still investigating.</p>
+<a id="QNX-auxiliary-files"></a><h3 class='h3' >QNX auxiliary files</h3>
+<p>The files in the "qnx" directory are:</p>
+<ul>
+<li><a id="qnx%2far"></a><strong>qnx/ar</strong>
+<p>A script that emulates the standard unix archive (aka library)
+utility.  Under Watcom 10.6, ar is linked to wlib and provides the
+expected interface. With Watcom 9.5, a cover function is
+required. This one is fairly crude but has proved adequate for
+compiling perl.</p>
+</li>
+<li><a id="qnx%2fcpp"></a><strong>qnx/cpp</strong>
+<p>A script that provides C preprocessing functionality.  Configure can
+generate a similar cover, but it doesn't handle all the command-line
+options that perl throws at it. This might be reasonably placed in
+/usr/local/bin.</p>
+</li>
+</ul>
+<a id="Outstanding-issues-with-perl-under-QNX6"></a><h3 class='h3' >Outstanding issues with perl under QNX6</h3>
+<p>The following tests are still failing for Perl 5.8.1 under QNX 6.2.0:</p>
+<div class="verbatim"><ol><li>  op/sprintf.........................FAILED at test 91</li><li>  lib/Benchmark......................FAILED at test 26</li></ol></div><p>This is due to a bug in the C library's printf routine.
+printf("'%e'", 0. ) produces '0.000000e+0', but ANSI requires
+'0.000000e+00'. QNX has acknowledged the bug.</p>
+<a id="Cross-compilation"></a><h3 class='h3' >Cross-compilation</h3>
+<p>Perl supports cross-compiling to QNX NTO through the
+Native Development Kit (NDK) for the Blackberry 10.  This means that you
+can cross-compile for both ARM and x86 versions of the platform.</p>
+<a id="Setting-up-a-cross-compilation-environment"></a><h4 class='h4' >Setting up a cross-compilation environment</h4>
+<p>You can download the NDK from
+<a href="http://developer.blackberry.com/native/downloads/">http://developer.blackberry.com/native/downloads/</a>.</p>
+<p>See
+<a href="http://developer.blackberry.com/native/documentation/cascades/getting_started/setting_up.html">http://developer.blackberry.com/native/documentation/cascades/getting_started/setting_up.html</a>
+for instructions to set up your device prior to attempting anything else.</p>
+<p>Once you've installed the NDK and set up your device, all that's
+left to do is setting up the device and the cross-compilation
+environment.  Blackberry provides a script, <pre>
+<span class="w">bbndk</span>-<span class="w">env</span>.<span class="w">sh</span></code>
+ (occasionally
+named something like <pre>
+<span class="w">bbndk</span>-<span class="w">env_10_1_0_4828</span>.<span class="w">sh</span></code>
+) which can be used
+to do this.  However, there's a bit of a snag that we have to work through:
+The script modifies PATH so that 'gcc' or 'ar' point to their
+cross-compilation equivalents, which screws over the build process.</p>
+<p>So instead you'll want to do something like this:</p>
+<div class="verbatim"><ol><li>    $ orig_path=$PATH</li><li>    $ source $location_of_bbndk/bbndk-env*.sh</li><li>    $ export PATH="$orig_path:$PATH"</li></ol></div><p>Besides putting the cross-compiler and the rest of the toolchain in your
+PATH, this will also provide the QNX_TARGET variable, which
+we will pass to Configure through -Dsysroot.</p>
+<a id="Preparing-the-target-system"></a><h4 class='h4' >Preparing the target system</h4>
+<p>It's quite possible that the target system doesn't have a readily
+available /tmp, so it's generall safer to do something like this:</p>
+<div class="verbatim"><ol><li> $ ssh $TARGETUSER@$TARGETHOST 'rm -rf perl; mkdir perl; mkdir perl/tmp'</li><li> $ export TARGETDIR=`ssh $TARGETUSER@$TARGETHOST pwd`/perl</li><li> $ export TARGETENV="export TMPDIR=$TARGETDIR/tmp; "</li></ol></div><p>Later on, we'll pass this to Configure through -Dtargetenv</p>
+<a id="Calling-Configure"></a><h4 class='h4' >Calling Configure</h4>
+<p>If you are targetting an ARM device -- which currently includes the vast 
+majority of phones and tablets -- you'll want to pass
+-Dcc=arm-unknown-nto-qnx8.0.0eabi-gcc to Configure.  Alternatively, if you 
+are targetting an x86 device, or using the simulator provided with the NDK,
+you should specify -Dcc=ntox86-gcc instead.</p>
+<p>A sample Configure invocation looks something like this:</p>
+<div class="verbatim"><ol><li>    ./Configure -des -Dusecrosscompile \</li><li>        -Dsysroot=$QNX_TARGET          \</li><li>        -Dtargetdir=$TARGETDIR         \</li><li>        -Dtargetenv="$TARGETENV"       \</li><li>        -Dcc=ntox86-gcc                \</li><li>        -Dtarghost=... # Usual cross-compilation options</li></ol></div><a id="AUTHOR"></a><h2 class='h2' >AUTHOR</h2>
+<p>Norton T. Allen (allen@huarp.harvard.edu)</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><ul><li><a href="#Required-Software-for-Compiling-Perl-on-QNX4">Required Software for Compiling Perl on QNX4</a></li><li><a href="#Outstanding-Issues-with-Perl-on-QNX4">Outstanding Issues with Perl on QNX4</a></li><li><a href="#QNX-auxiliary-files">QNX auxiliary files</a></li><li><a href="#Outstanding-issues-with-perl-under-QNX6">Outstanding issues with perl under QNX6</a></li><li><a href="#Cross-compilation">Cross-compilation</a></li></ul><li><a href="#AUTHOR">AUTHOR</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

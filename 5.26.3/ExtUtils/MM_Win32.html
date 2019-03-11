@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ExtUtils::MM_Win32 - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>ExtUtils::MM_Win32 - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.26.3/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.26.3/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.26.3/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.26.3/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.26.3/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.26.3/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.26.3/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.26.3/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.26.3/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.26.3/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.26.3/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.26.3/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.26.3/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.26.3/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.26.3/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.26.3/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.26.3/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.26.3/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.26.3/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.26.3/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.26.3/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.26.3/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.26.3/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.26.3/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.26.3/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.26.3/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.26.3/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.26.3/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.26.3/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.26.3/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.26.3/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.26.3/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.26.3/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.26.3/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../index-modules-E.html">Core modules (E)</a> &gt;
+      
+    
+    ExtUtils::MM_Win32
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 26.3 documentation</h1>
+                  </div>
+                  <h1>ExtUtils::MM_Win32</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><ul><li><a href="#Overridden-methods">Overridden methods</a></li></ul></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>ExtUtils::MM_Win32 - methods to override UN*X behaviour in ExtUtils::MakeMaker</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<pre>
+ <a class="l_k" href="../functions/use.html">use</a> <span class="w">ExtUtils::MM_Win32</span><span class="sc">;</span> <span class="c"># Done internally by ExtUtils::MakeMaker if needed</span></pre>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>See ExtUtils::MM_Unix for a documentation of the methods provided
+there. This package overrides the implementation of these methods, not
+the semantics.</p>
+<a id="Overridden-methods"></a><h3 class='h3' >Overridden methods</h3>
+<ul>
+<li><a id="*dlsyms*"></a><strong><strong>dlsyms</strong></strong>
+</li>
+<li><a id="xs_dlsyms_ext"></a><strong>xs_dlsyms_ext</strong>
+<p>On Win32, is <code class="inline">.def</code>.</p>
+</li>
+<li><a id="replace_manpage_separator"></a><strong>replace_manpage_separator</strong>
+<p>Changes the path separator with .</p>
+</li>
+<li><a id="*maybe_command*"></a><strong><strong>maybe_command</strong></strong>
+<p>Since Windows has nothing as simple as an executable bit, we check the
+file extension.</p>
+<p>The PATHEXT env variable will be used to get a list of extensions that
+might indicate a command, otherwise .com, .exe, .bat and .cmd will be
+used by default.</p>
+</li>
+<li><a id="*init_DIRFILESEP*"></a><strong><strong>init_DIRFILESEP</strong></strong>
+<p>Using \ for Windows, except for "gmake" where it is /.</p>
+</li>
+<li><a id="init_tools"></a><strong>init_tools</strong>
+<p>Override some of the slower, portable commands with Windows specific ones.</p>
+</li>
+<li><a id="init_others"></a><strong>init_others</strong>
+<p>Override the default link and compile tools.</p>
+<p>LDLOADLIBS's default is changed to $Config{libs}.</p>
+<p>Adjustments are made for Borland's quirks needing -L to come first.</p>
+</li>
+<li><a id="init_platform"></a><strong>init_platform</strong>
+<p>Add MM_Win32_VERSION.</p>
+</li>
+<li><a id="platform_constants"></a><strong>platform_constants</strong>
+</li>
+<li><a id="specify_shell"></a><strong>specify_shell</strong>
+<p>Set SHELL to $ENV{COMSPEC} only if make is type 'gmake'.</p>
+</li>
+<li><a id="constants"></a><strong>constants</strong>
+<p>Add MAXLINELENGTH for dmake before all the constants are output.</p>
+</li>
+<li><a id="special_targets"></a><strong>special_targets</strong>
+<p>Add .USESHELL target for dmake.</p>
+</li>
+<li><a id="static_lib_pure_cmd"></a><strong>static_lib_pure_cmd</strong>
+<p>Defines how to run the archive utility</p>
+</li>
+<li><a id="dynamic_lib"></a><strong>dynamic_lib</strong>
+<p>Methods are overridden here: not dynamic_lib itself, but the utility
+ones that do the OS-specific work.</p>
+</li>
+<li><a id="extra_clean_files"></a><strong>extra_clean_files</strong>
+<p>Clean out some extra dll.{base,exp} files which might be generated by
+gcc.  Otherwise, take out all *.pdb files.</p>
+</li>
+<li><a id="init_linker"></a><strong>init_linker</strong>
+</li>
+<li><a id="perl_script"></a><strong>perl_script</strong>
+<p>Checks for the perl program under several common perl extensions.</p>
+</li>
+<li><a id="quote_dep"></a><strong>quote_dep</strong>
+</li>
+<li><a id="xs_obj_opt"></a><strong>xs_obj_opt</strong>
+<p>Override to fixup -o flags for MSVC.</p>
+</li>
+<li><a id="pasthru"></a><strong>pasthru</strong>
+<p>All we send is -nologo to nmake to prevent it from printing its damned
+banner.</p>
+</li>
+<li><a id="arch_check-(override)"></a><strong>arch_check (override)</strong>
+<p>Normalize all arguments for consistency of comparison.</p>
+</li>
+<li><a id="oneliner"></a><strong>oneliner</strong>
+<p>These are based on what command.com does on Win98.  They may be wrong
+for other Windows shells, I don't know.</p>
+</li>
+<li><a id="cd"></a><strong>cd</strong>
+<p>dmake can handle Unix style cd'ing but nmake (at least 1.5) cannot.  It
+wants:</p>
+<pre>
+    <span class="w">cd</span> <span class="w">dir1</span>\<span class="w">dir2</span>
+    <span class="w">command</span>
+    <span class="w">another_command</span>
+    <span class="w">cd</span> ..\..</pre>
+</li>
+<li><a id="max_exec_len"></a><strong>max_exec_len</strong>
+<p>nmake 1.50 limits command length to 2048 characters.</p>
+</li>
+<li><a id="os_flavor"></a><strong>os_flavor</strong>
+<p>Windows is Win32.</p>
+</li>
+<li><a id="cflags"></a><strong>cflags</strong>
+<p>Defines the PERLDLL symbol if we are configured for static building since all
+code destined for the perl5xx.dll must be compiled with the PERLDLL symbol
+defined.</p>
+</li>
+<li><a id="make_type"></a><strong>make_type</strong>
+<p>Returns a suitable string describing the type of makefile being written.</p>
+</li>
+</ul>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><ul><li><a href="#Overridden-methods">Overridden methods</a></li></ul></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/26/3/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/3/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/3/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/3/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/26/3/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/3/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/3/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/3/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/26/3/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/3/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/3/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/26/3/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/3/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/3/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

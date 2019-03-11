@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Pod::Escapes - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>Pod::Escapes - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.22.4/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.22.4/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.22.4/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.22.4/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.22.4/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.22.4/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.22.4/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.22.4/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.22.4/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.22.4/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.22.4/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.22.4/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.22.4/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.22.4/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.22.4/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../index-modules-P.html">Core modules (P)</a> &gt;
+      
+    
+    Pod::Escapes
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 22.4 documentation</h1>
+                  </div>
+                  <h1>Pod::Escapes</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#GOODIES">GOODIES</a></li><li><a href="#CAVEATS">CAVEATS</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#REPOSITORY">REPOSITORY</a></li><li><a href="#COPYRIGHT-AND-DISCLAIMERS">COPYRIGHT AND DISCLAIMERS</a></li><li><a href="#AUTHOR">AUTHOR</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>Pod::Escapes - for resolving Pod E&lt;...&gt; sequences</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<div class="verbatim"><ol><li>  use Pod::Escapes qw(e2char);</li><li>  ...la la la, parsing POD, la la la...</li><li>  $text = e2char($e_node-&gt;label);</li><li>  unless(defined $text) {</li><li>    print "Unknown E sequence \"", $e_node-&gt;label, "\"!";</li><li>  }</li><li>  ...else print/interpolate $text...</li></ol></div><a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>This module provides things that are useful in decoding
+Pod E&lt;...&gt; sequences.  Presumably, it should be used
+only by Pod parsers and/or formatters.</p>
+<p>By default, Pod::Escapes exports none of its symbols.  But
+you can request any of them to be exported.
+Either request them individually, as with
+<pre>
+<a class="l_k" href="../functions/use.html">use</a> <span class="w">Pod::Escapes</span> <span class="q">qw(symbolname symbolname2...)</span><span class="sc">;</span></code>
+,
+or you can do <pre>
+<a class="l_k" href="../functions/use.html">use</a> <span class="w">Pod::Escapes</span> <span class="q">qw(:ALL)</span><span class="sc">;</span></code>
+ to get all
+exportable symbols.</p>
+<a id="GOODIES"></a><h2 class='h2' >GOODIES</h2>
+<ul>
+<li><a id="e2char(%24e_content)"></a><strong>e2char($e_content)</strong>
+<p>Given a name or number that could appear in a
+<pre>
+<span class="w">E</span><span class="q">&lt;name_or_num&gt;</span></code>
+ sequence, this returns the string that
+it stands for.  For example, <pre>
+<span class="i">e2char</span><span class="s">(</span><span class="q">&#39;sol&#39;</span><span class="s">)</span></code>
+, <pre>
+<span class="i">e2char</span><span class="s">(</span><span class="q">&#39;47&#39;</span><span class="s">)</span></code>
+,
+<pre>
+<span class="i">e2char</span><span class="s">(</span><span class="q">&#39;0x2F&#39;</span><span class="s">)</span></code>
+, and <pre>
+<span class="i">e2char</span><span class="s">(</span><span class="q">&#39;057&#39;</span><span class="s">)</span></code>
+ all return "/",
+because <pre>
+<span class="w">E</span><span class="q">&lt;sol&gt;</span></code>
+, <pre>
+<span class="w">E</span><span class="q">&lt;47&gt;</span></code>
+, <pre>
+<span class="w">E</span><span class="q">&lt;0x2f&gt;</span></code>
+,
+and <pre>
+<span class="w">E</span><span class="q">&lt;057&gt;</span></code>
+, all mean "/".  If
+the name has no known value (as with a name of "qacute") or is
+syntactically invalid (as with a name of "1/4"), this returns undef.</p>
+</li>
+<li><a id="e2charnum(%24e_content)"></a><strong>e2charnum($e_content)</strong>
+<p>Given a name or number that could appear in a
+<pre>
+<span class="w">E</span><span class="q">&lt;name_or_num&gt;</span></code>
+ sequence, this returns the number of
+the Unicode character that this stands for.  For example,
+<pre>
+<span class="i">e2char</span><span class="s">(</span><span class="q">&#39;sol&#39;</span><span class="s">)</span></code>
+, <pre>
+<span class="i">e2char</span><span class="s">(</span><span class="q">&#39;47&#39;</span><span class="s">)</span></code>
+,
+<pre>
+<span class="i">e2char</span><span class="s">(</span><span class="q">&#39;0x2F&#39;</span><span class="s">)</span></code>
+, and <pre>
+<span class="i">e2char</span><span class="s">(</span><span class="q">&#39;057&#39;</span><span class="s">)</span></code>
+ all return 47,
+because <pre>
+<span class="w">E</span><span class="q">&lt;sol&gt;</span></code>
+, <pre>
+<span class="w">E</span><span class="q">&lt;47&gt;</span></code>
+, <pre>
+<span class="w">E</span><span class="q">&lt;0x2f&gt;</span></code>
+,
+and <pre>
+<span class="w">E</span><span class="q">&lt;057&gt;</span></code>
+, all mean "/", whose Unicode number is 47.  If
+the name has no known value (as with a name of "qacute") or is
+syntactically invalid (as with a name of "1/4"), this returns undef.</p>
+</li>
+<li><a id="%24Name2character%7b_name_%7d"></a><strong>$Name2character{<i>name</i>}</strong>
+<p>Maps from names (as in <code class="inline">E&lt;<i>name</i>&gt;</code>) like "eacute" or "sol"
+to the string that each stands for.  Note that this does not
+include numerics (like "64" or "x981c").  Under old Perl versions
+(before 5.7) you get a "?" in place of characters whose Unicode
+value is over 255.</p>
+</li>
+<li><a id="%24Name2character_number%7b_name_%7d"></a><strong>$Name2character_number{<i>name</i>}</strong>
+<p>Maps from names (as in <code class="inline">E&lt;<i>name</i>&gt;</code>) like "eacute" or "sol"
+to the Unicode value that each stands for.  For example,
+<pre>
+<span class="i">$Name2character_number</span>{<span class="q">&#39;eacute&#39;</span>}</code>
+ is 201, and
+<pre>
+<span class="i">$Name2character_number</span>{<span class="q">&#39;eacute&#39;</span>}</code>
+ is 8364.  You get the correct
+Unicode value, regardless of the version of Perl you're using --
+which differs from <pre>
+<span class="i">%Name2character</span></code>
+'s behavior under pre-5.7 Perls.</p>
+<p>Note that this hash does not
+include numerics (like "64" or "x981c").</p>
+</li>
+<li><a id="%24Latin1Code_to_fallback%7b_integer_%7d"></a><strong>$Latin1Code_to_fallback{<i>integer</i>}</strong>
+<p>For numbers in the range 160 (0x00A0) to 255 (0x00FF), this maps
+from the character code for a Latin-1 character (like 233 for
+lowercase e-acute) to the US-ASCII character that best aproximates
+it (like "e").  You may find this useful if you are rendering
+POD in a format that you think deals well only with US-ASCII
+characters.</p>
+</li>
+<li><a id="%24Latin1Char_to_fallback%7b_character_%7d"></a><strong>$Latin1Char_to_fallback{<i>character</i>}</strong>
+<p>Just as above, but maps from characters (like "\xE9", 
+lowercase e-acute) to characters (like "e").</p>
+</li>
+<li><a id="%24Code2USASCII%7b_integer_%7d"></a><strong>$Code2USASCII{<i>integer</i>}</strong>
+<p>This maps from US-ASCII codes (like 32) to the corresponding
+character (like space, for 32).  Only characters 32 to 126 are
+defined.  This is meant for use by <pre>
+<span class="i">e2char</span><span class="s">(</span><span class="i">$x</span><span class="s">)</span></code>
+ when it senses
+that it's running on a non-ASCII platform (where chr(32) doesn't
+get you a space -- but $Code2USASCII{32} will).  It's
+documented here just in case you might find it useful.</p>
+</li>
+</ul>
+<a id="CAVEATS"></a><h2 class='h2' >CAVEATS</h2>
+<p>On Perl versions before 5.7, Unicode characters with a value
+over 255 (like lambda or emdash) can't be conveyed.  This
+module does work under such early Perl versions, but in the
+place of each such character, you get a "?".  Latin-1
+characters (characters 160-255) are unaffected.</p>
+<p>Under EBCDIC platforms, <pre>
+<span class="i">e2char</span><span class="s">(</span><span class="i">$n</span><span class="s">)</span></code>
+ may not always be the
+same as <code class="inline"><a class="l_k" href="../functions/chr.html">chr(e2charnum($n))</a></code>, and ditto for
+<pre>
+<span class="i">$Name2character</span>{<span class="i">$name</span>}</code>
+ and
+<code class="inline"><a class="l_k" href="../functions/chr.html">chr($Name2character_number{$name})</a></code>, because the strings are returned as
+native, and the numbers are returned as Unicode.
+However, for Perls starting with v5.8, <pre>
+<span class="i">e2char</span><span class="s">(</span><span class="i">$n</span><span class="s">)</span></code>
+ is the same as
+<code class="inline"><a class="l_k" href="../functions/chr.html">chr(utf8::unicode_to_native(e2charnum($n)))</a></code>, and ditto for
+<pre>
+<span class="i">$Name2character</span>{<span class="i">$name</span>}</code>
+ and
+<code class="inline"><a class="l_k" href="../functions/chr.html">chr(utf8::unicode_to_native($Name2character_number{$name}))</a></code>.</p>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<p><a href="https://search.cpan.org/perldoc/Pod::Browser">Pod::Browser</a> - a pod web server based on <a href="https://search.cpan.org/perldoc/Catalyst">Catalyst</a>.</p>
+<p><a href="../Pod/Checker.html">Pod::Checker</a> - check pod documents for syntax errors.</p>
+<p><a href="https://search.cpan.org/perldoc/Pod::Coverage">Pod::Coverage</a> - check if the documentation for a module is comprehensive.</p>
+<p><a href="../perlpod.html">perlpod</a> - description of pod format (for people documenting with pod).</p>
+<p><a href="../perlpodspec.html">perlpodspec</a> - specification of pod format (for people processing it).</p>
+<p><a href="https://search.cpan.org/perldoc/Text::Unidecode">Text::Unidecode</a> - ASCII transliteration of Unicode text.</p>
+<a id="REPOSITORY"></a><h2 class='h2' >REPOSITORY</h2>
+<p><a href="https://github.com/neilbowers/Pod-Escapes">https://github.com/neilbowers/Pod-Escapes</a></p>
+<a id="COPYRIGHT-AND-DISCLAIMERS"></a><h2 class='h2' >COPYRIGHT AND DISCLAIMERS</h2>
+<p>Copyright (c) 2001-2004 Sean M. Burke.  All rights reserved.</p>
+<p>This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.</p>
+<p>This program is distributed in the hope that it will be useful, but
+without any warranty; without even the implied warranty of
+merchantability or fitness for a particular purpose.</p>
+<p>Portions of the data tables in this module are derived from the
+entity declarations in the W3C XHTML specification.</p>
+<p>Currently (October 2001), that's these three:</p>
+<div class="verbatim"><ol><li> http://www.w3.org/TR/xhtml1/DTD/xhtml-lat1.ent</li><li> http://www.w3.org/TR/xhtml1/DTD/xhtml-special.ent</li><li> http://www.w3.org/TR/xhtml1/DTD/xhtml-symbol.ent</li></ol></div><a id="AUTHOR"></a><h2 class='h2' >AUTHOR</h2>
+<p>Sean M. Burke <pre>
+<span class="w">sburke</span><span class="i">@cpan</span>.<span class="w">org</span></code>
+</p>
+<p>Now being maintained by Neil Bowers &lt;neilb@cpan.org&gt;</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#GOODIES">GOODIES</a></li><li><a href="#CAVEATS">CAVEATS</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#REPOSITORY">REPOSITORY</a></li><li><a href="#COPYRIGHT-AND-DISCLAIMERS">COPYRIGHT AND DISCLAIMERS</a></li><li><a href="#AUTHOR">AUTHOR</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/4/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/4/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/4/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/4/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/4/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/4/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/4/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/4/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/4/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/4/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/4/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/4/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/4/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/4/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Test::Builder - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>Test::Builder - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.24.4/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.24.4/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.24.4/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.24.4/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.24.4/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.24.4/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.24.4/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.24.4/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.24.4/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.24.4/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.24.4/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.24.4/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.24.4/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.24.4/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.24.4/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../index-modules-T.html">Core modules (T)</a> &gt;
+      
+    
+    Test::Builder
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 24.4 documentation</h1>
+                  </div>
+                  <h1>Test::Builder</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><ul><li><a href="#Construction">Construction</a></li><li><a href="#Setting-up-tests">Setting up tests</a></li><li><a href="#Running-tests">Running tests</a></li><li><a href="#Other-Testing-Methods">Other Testing Methods</a></li><li><a href="#Test-building-utility-methods">Test building utility methods</a></li><li><a href="#Test-style">Test style</a></li><li><a href="#Output">Output</a></li><li><a href="#Test-Status-and-Info">Test Status and Info</a></li></ul><li><a href="#EXIT-CODES">EXIT CODES</a></li><li><a href="#THREADS">THREADS</a></li><li><a href="#MEMORY">MEMORY</a></li><li><a href="#EXAMPLES">EXAMPLES</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#AUTHORS">AUTHORS</a></li><li><a href="#MAINTAINERS">MAINTAINERS</a></li><li><a href="#COPYRIGHT">COPYRIGHT</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>Test::Builder - Backend for building test libraries</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<pre>
+<a name="package-My::Test::Module"></a>  package <span class="i">My::Test::Module</span><span class="sc">;</span>
+  <a class="l_k" href="../functions/use.html">use</a> <span class="w">base</span> <span class="q">&#39;Test::Builder::Module&#39;</span><span class="sc">;</span>
+
+  <a class="l_k" href="../functions/my.html">my</a> <span class="i">$CLASS</span> = <span class="w">__PACKAGE__</span><span class="sc">;</span>
+
+<a name="ok"></a>  sub <span class="m">ok</span> <span class="s">{</span>
+      <a class="l_k" href="../functions/my.html">my</a><span class="s">(</span><span class="i">$test</span><span class="cm">,</span> <span class="i">$name</span><span class="s">)</span> = <span class="i">@_</span><span class="sc">;</span>
+      <a class="l_k" href="../functions/my.html">my</a> <span class="i">$tb</span> = <span class="i">$CLASS</span><span class="i">-&gt;builder</span><span class="sc">;</span>
+
+      <span class="i">$tb</span><span class="i">-&gt;ok</span><span class="s">(</span><span class="i">$test</span><span class="cm">,</span> <span class="i">$name</span><span class="s">)</span><span class="sc">;</span>
+  <span class="s">}</span></pre>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p><a href="../Test/Simple.html">Test::Simple</a> and <a href="../Test/More.html">Test::More</a> have proven to be popular testing modules,
+but they're not always flexible enough.  Test::Builder provides a
+building block upon which to write your own test libraries <i>which can
+work together</i>.</p>
+<a id="Construction"></a><h3 class='h3' >Construction</h3>
+<ul>
+<li><a id="*new*"></a><strong><strong>new</strong></strong>
+<pre>
+  <a class="l_k" href="../functions/my.html">my</a> <span class="i">$Test</span> = <span class="w">Test::Builder</span><span class="w">-&gt;new</span><span class="sc">;</span></pre>
+<p>Returns a Test::Builder object representing the current state of the
+test.</p>
+<p>Since you only run one test per program <pre>
+<span class="w">new</span></code>
+ always returns the same
+Test::Builder object.  No matter how many times you call <pre>
+<span class="i">new</span><span class="s">(</span><span class="s">)</span></code>
+, you're
+getting the same object.  This is called a singleton.  This is done so that
+multiple modules share such global information as the test counter and
+where test output is going.</p>
+<p>If you want a completely new Test::Builder object different from the
+singleton, use <pre>
+<span class="w">create</span></code>
+.</p>
+</li>
+<li><a id="*create*"></a><strong><strong>create</strong></strong>
+<pre>
+  <a class="l_k" href="../functions/my.html">my</a> <span class="i">$Test</span> = <span class="w">Test::Builder</span><span class="w">-&gt;create</span><span class="sc">;</span></pre>
+<p>Ok, so there can be more than one Test::Builder object and this is how
+you get it.  You might use this instead of <pre>
+<span class="i">new</span><span class="s">(</span><span class="s">)</span></code>
+ if you're testing
+a Test::Builder based module, but otherwise you probably want <pre>
+<span class="w">new</span></code>
+.</p>
+<p><strong>NOTE</strong>: the implementation is not complete.  <pre>
+<span class="w">level</span></code>
+, for example, is
+still shared amongst <strong>all</strong> Test::Builder objects, even ones created using
+this method.  Also, the method name may change in the future.</p>
+</li>
+<li><a id="*child*"></a><strong><strong>child</strong></strong>
+<pre>
+  <a class="l_k" href="../functions/my.html">my</a> <span class="i">$child</span> = <span class="i">$builder</span><span class="i">-&gt;child</span><span class="s">(</span><span class="i">$name_of_child</span><span class="s">)</span><span class="sc">;</span>
+  <span class="i">$child</span><span class="i">-&gt;plan</span><span class="s">(</span> <span class="w">tests</span> <span class="cm">=&gt;</span> <span class="n">4</span> <span class="s">)</span><span class="sc">;</span>
+  <span class="i">$child</span><span class="i">-&gt;ok</span><span class="s">(</span><span class="i">some_code</span><span class="s">(</span><span class="s">)</span><span class="s">)</span><span class="sc">;</span>
+  ...
+  <span class="i">$child</span><span class="i">-&gt;finalize</span><span class="sc">;</span></pre>
+<p>Returns a new instance of <pre>
+<span class="w">Test::Builder</span></code>
+.  Any output from this child will
+be indented four spaces more than the parent's indentation.  When done, the
+<pre>
+<span class="w">finalize</span></code>
+ method <i>must</i> be called explicitly.</p>
+<p>Trying to create a new child with a previous child still active (i.e.,
+<pre>
+<span class="w">finalize</span></code>
+ not called) will <pre>
+<span class="w">croak</span></code>
+.</p>
+<p>Trying to run a test when you have an open child will also <pre>
+<span class="w">croak</span></code>
+ and cause
+the test suite to fail.</p>
+</li>
+<li><a id="*subtest*"></a><strong><strong>subtest</strong></strong>
+<pre>
+    <span class="i">$builder</span><span class="i">-&gt;subtest</span><span class="s">(</span><span class="i">$name</span><span class="cm">,</span> \<span class="i">&amp;subtests</span><span class="cm">,</span> <span class="i">@args</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>See documentation of <pre>
+<span class="w">subtest</span></code>
+ in Test::More.</p>
+<p><pre>
+<span class="w">subtest</span></code>
+ also, and optionally, accepts arguments which will be passed to the
+subtests reference.</p>
+</li>
+<li><a id="*finalize*"></a><strong><strong>finalize</strong></strong>
+<pre>
+  <a class="l_k" href="../functions/my.html">my</a> <span class="i">$ok</span> = <span class="i">$child</span><span class="i">-&gt;finalize</span><span class="sc">;</span></pre>
+<p>When your child is done running tests, you must call <pre>
+<span class="w">finalize</span></code>
+ to clean up
+and tell the parent your pass/fail status.</p>
+<p>Calling <pre>
+<span class="w">finalize</span></code>
+ on a child with open children will <pre>
+<span class="w">croak</span></code>
+.</p>
+<p>If the child falls out of scope before <pre>
+<span class="w">finalize</span></code>
+ is called, a failure
+diagnostic will be issued and the child is considered to have failed.</p>
+<p>No attempt to call methods on a child after <pre>
+<span class="w">finalize</span></code>
+ is called is
+guaranteed to succeed.</p>
+<p>Calling this on the root builder is a no-op.</p>
+</li>
+<li><a id="*parent*"></a><strong><strong>parent</strong></strong>
+<pre>
+ <a class="l_k" href="../functions/if.html">if</a> <span class="s">(</span> <a class="l_k" href="../functions/my.html">my</a> <span class="i">$parent</span> = <span class="i">$builder</span><span class="i">-&gt;parent</span> <span class="s">)</span> <span class="s">{</span>
+     ...
+ <span class="s">}</span></pre>
+<p>Returns the parent <pre>
+<span class="w">Test::Builder</span></code>
+ instance, if any.  Only used with child
+builders for nested TAP.</p>
+</li>
+<li><a id="*name*"></a><strong><strong>name</strong></strong>
+<pre>
+ <span class="w">diag</span> <span class="i">$builder</span><span class="i">-&gt;name</span><span class="sc">;</span></pre>
+<p>Returns the name of the current builder.  Top level builders default to <pre>
+<span class="i">$0</span></code>
+
+(the name of the executable).  Child builders are named via the <pre>
+<span class="w">child</span></code>
+
+method.  If no name is supplied, will be named "Child of $parent-&gt;name".</p>
+</li>
+<li><a id="*reset*"></a><strong><strong>reset</strong></strong>
+<pre>
+  <span class="i">$Test</span><span class="i">-&gt;reset</span><span class="sc">;</span></pre>
+<p>Reinitializes the Test::Builder singleton to its original state.
+Mostly useful for tests run in persistent environments where the same
+test might be run multiple times in the same process.</p>
+</li>
+</ul>
+<a id="Setting-up-tests"></a><h3 class='h3' >Setting up tests</h3>
+<p>These methods are for setting up tests and declaring how many there
+are.  You usually only want to call one of these methods.</p>
+<ul>
+<li><a id="*plan*"></a><strong><strong>plan</strong></strong>
+<pre>
+  <span class="i">$Test</span><span class="i">-&gt;plan</span><span class="s">(</span><span class="q">&#39;no_plan&#39;</span><span class="s">)</span><span class="sc">;</span>
+  <span class="i">$Test</span><span class="i">-&gt;plan</span><span class="s">(</span> <span class="w">skip_all</span> <span class="cm">=&gt;</span> <span class="i">$reason</span> <span class="s">)</span><span class="sc">;</span>
+  <span class="i">$Test</span><span class="i">-&gt;plan</span><span class="s">(</span> <span class="w">tests</span> <span class="cm">=&gt;</span> <span class="i">$num_tests</span> <span class="s">)</span><span class="sc">;</span></pre>
+<p>A convenient way to set up your tests.  Call this and Test::Builder
+will print the appropriate headers and take the appropriate actions.</p>
+<p>If you call <pre>
+<span class="i">plan</span><span class="s">(</span><span class="s">)</span></code>
+, don't call any of the other methods below.</p>
+<p>If a child calls "skip_all" in the plan, a <pre>
+<span class="w">Test::Builder::Exception</span></code>
+ is
+thrown.  Trap this error, call <pre>
+<span class="i">finalize</span><span class="s">(</span><span class="s">)</span></code>
+ and don't run any more tests on
+the child.</p>
+<pre>
+ <a class="l_k" href="../functions/my.html">my</a> <span class="i">$child</span> = <span class="i">$Test</span><span class="i">-&gt;child</span><span class="s">(</span><span class="q">&#39;some child&#39;</span><span class="s">)</span><span class="sc">;</span>
+ <a class="l_k" href="../functions/eval.html">eval</a> <span class="s">{</span> <span class="i">$child</span><span class="i">-&gt;plan</span><span class="s">(</span> <span class="i">$condition</span> ? <span class="s">(</span> <span class="w">skip_all</span> <span class="cm">=&gt;</span> <span class="i">$reason</span> <span class="s">)</span> <span class="co">:</span> <span class="s">(</span> <span class="w">tests</span> <span class="cm">=&gt;</span> <span class="n">3</span> <span class="s">)</span>  <span class="s">)</span> <span class="s">}</span><span class="sc">;</span>
+ <a class="l_k" href="../functions/if.html">if</a> <span class="s">(</span> <a class="l_k" href="../functions/eval.html">eval</a> <span class="s">{</span> <span class="i">$@</span><span class="i">-&gt;isa</span><span class="s">(</span><span class="q">&#39;Test::Builder::Exception&#39;</span><span class="s">)</span> <span class="s">}</span> <span class="s">)</span> <span class="s">{</span>
+    <span class="i">$child</span><span class="i">-&gt;finalize</span><span class="sc">;</span>
+    <a class="l_k" href="../functions/return.html">return</a><span class="sc">;</span>
+ <span class="s">}</span>
+ <span class="c"># run your tests</span></pre>
+</li>
+<li><a id="*expected_tests*"></a><strong><strong>expected_tests</strong></strong>
+<pre>
+    <a class="l_k" href="../functions/my.html">my</a> <span class="i">$max</span> = <span class="i">$Test</span><span class="i">-&gt;expected_tests</span><span class="sc">;</span>
+    <span class="i">$Test</span><span class="i">-&gt;expected_tests</span><span class="s">(</span><span class="i">$max</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>Gets/sets the number of tests we expect this test to run and prints out
+the appropriate headers.</p>
+</li>
+<li><a id="*no_plan*"></a><strong><strong>no_plan</strong></strong>
+<pre>
+  <span class="i">$Test</span><span class="i">-&gt;no_plan</span><span class="sc">;</span></pre>
+<p>Declares that this test will run an indeterminate number of tests.</p>
+</li>
+<li><a id="*done_testing*"></a><strong><strong>done_testing</strong></strong>
+<pre>
+  <span class="i">$Test</span><span class="i">-&gt;done_testing</span><span class="s">(</span><span class="s">)</span><span class="sc">;</span>
+  <span class="i">$Test</span><span class="i">-&gt;done_testing</span><span class="s">(</span><span class="i">$num_tests</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>Declares that you are done testing, no more tests will be run after this point.</p>
+<p>If a plan has not yet been output, it will do so.</p>
+<p>$num_tests is the number of tests you planned to run.  If a numbered
+plan was already declared, and if this contradicts, a failing test
+will be run to reflect the planning mistake.  If <pre>
+<span class="w">no_plan</span></code>
+ was declared,
+this will override.</p>
+<p>If <pre>
+<span class="i">done_testing</span><span class="s">(</span><span class="s">)</span></code>
+ is called twice, the second call will issue a
+failing test.</p>
+<p>If <pre>
+<span class="i">$num_tests</span></code>
+ is omitted, the number of tests run will be used, like
+no_plan.</p>
+<p><pre>
+<span class="i">done_testing</span><span class="s">(</span><span class="s">)</span></code>
+ is, in effect, used when you'd want to use <pre>
+<span class="w">no_plan</span></code>
+, but
+safer. You'd use it like so:</p>
+<pre>
+    <span class="i">$Test</span><span class="i">-&gt;ok</span><span class="s">(</span><span class="i">$a</span> == <span class="i">$b</span><span class="s">)</span><span class="sc">;</span>
+    <span class="i">$Test</span><span class="i">-&gt;done_testing</span><span class="s">(</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>Or to plan a variable number of tests:</p>
+<pre>
+    <a class="l_k" href="../functions/for.html">for</a> <a class="l_k" href="../functions/my.html">my</a> <span class="i">$test</span> <span class="s">(</span><span class="i">@tests</span><span class="s">)</span> <span class="s">{</span>
+        <span class="i">$Test</span><span class="i">-&gt;ok</span><span class="s">(</span><span class="i">$test</span><span class="s">)</span><span class="sc">;</span>
+    <span class="s">}</span>
+    <span class="i">$Test</span><span class="i">-&gt;done_testing</span><span class="s">(</span><a class="l_k" href="../functions/scalar.html">scalar</a> <span class="i">@tests</span><span class="s">)</span><span class="sc">;</span></pre>
+</li>
+<li><a id="*has_plan*"></a><strong><strong>has_plan</strong></strong>
+<pre>
+  <span class="i">$plan</span> = <span class="i">$Test</span><span class="i">-&gt;has_plan</span></pre>
+<p>Find out whether a plan has been defined. <pre>
+<span class="i">$plan</span></code>
+ is either <code class="inline"><a class="l_k" href="../functions/undef.html">undef</a></code> (no plan
+has been set), <pre>
+<span class="w">no_plan</span></code>
+ (indeterminate # of tests) or an integer (the number
+of expected tests).</p>
+</li>
+<li><a id="*skip_all*"></a><strong><strong>skip_all</strong></strong>
+<pre>
+  <span class="i">$Test</span><span class="i">-&gt;skip_all</span><span class="sc">;</span>
+  <span class="i">$Test</span><span class="i">-&gt;skip_all</span><span class="s">(</span><span class="i">$reason</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>Skips all the tests, using the given <pre>
+<span class="i">$reason</span></code>
+.  Exits immediately with 0.</p>
+</li>
+<li><a id="*exported_to*"></a><strong><strong>exported_to</strong></strong>
+<pre>
+  <a class="l_k" href="../functions/my.html">my</a> <span class="i">$pack</span> = <span class="i">$Test</span><span class="i">-&gt;exported_to</span><span class="sc">;</span>
+  <span class="i">$Test</span><span class="i">-&gt;exported_to</span><span class="s">(</span><span class="i">$pack</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>Tells Test::Builder what package you exported your functions to.</p>
+<p>This method isn't terribly useful since modules which share the same
+Test::Builder object might get exported to different packages and only
+the last one will be honored.</p>
+</li>
+</ul>
+<a id="Running-tests"></a><h3 class='h3' >Running tests</h3>
+<p>These actually run the tests, analogous to the functions in Test::More.</p>
+<p>They all return true if the test passed, false if the test failed.</p>
+<p><pre>
+<span class="i">$name</span></code>
+ is always optional.</p>
+<ul>
+<li><a id="*ok*"></a><strong><strong>ok</strong></strong>
+<pre>
+  <span class="i">$Test</span><span class="i">-&gt;ok</span><span class="s">(</span><span class="i">$test</span><span class="cm">,</span> <span class="i">$name</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>Your basic test.  Pass if <pre>
+<span class="i">$test</span></code>
+ is true, fail if $test is false.  Just
+like Test::Simple's <pre>
+<span class="i">ok</span><span class="s">(</span><span class="s">)</span></code>
+.</p>
+</li>
+<li><a id="*is_eq*"></a><strong><strong>is_eq</strong></strong>
+<pre>
+  <span class="i">$Test</span><span class="i">-&gt;is_eq</span><span class="s">(</span><span class="i">$got</span><span class="cm">,</span> <span class="i">$expected</span><span class="cm">,</span> <span class="i">$name</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>Like Test::More's <pre>
+<span class="i">is</span><span class="s">(</span><span class="s">)</span></code>
+.  Checks if <pre>
+<span class="i">$got</span> <a class="l_k" href="../functions/eq.html">eq</a> <span class="i">$expected</span></code>
+.  This is the
+string version.</p>
+<p><code class="inline"><a class="l_k" href="../functions/undef.html">undef</a></code> only ever matches another <code class="inline"><a class="l_k" href="../functions/undef.html">undef</a></code>.</p>
+</li>
+<li><a id="*is_num*"></a><strong><strong>is_num</strong></strong>
+<pre>
+  <span class="i">$Test</span><span class="i">-&gt;is_num</span><span class="s">(</span><span class="i">$got</span><span class="cm">,</span> <span class="i">$expected</span><span class="cm">,</span> <span class="i">$name</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>Like Test::More's <pre>
+<span class="i">is</span><span class="s">(</span><span class="s">)</span></code>
+.  Checks if <pre>
+<span class="i">$got</span> == <span class="i">$expected</span></code>
+.  This is the
+numeric version.</p>
+<p><code class="inline"><a class="l_k" href="../functions/undef.html">undef</a></code> only ever matches another <code class="inline"><a class="l_k" href="../functions/undef.html">undef</a></code>.</p>
+</li>
+<li><a id="*isnt_eq*"></a><strong><strong>isnt_eq</strong></strong>
+<pre>
+  <span class="i">$Test</span><span class="i">-&gt;isnt_eq</span><span class="s">(</span><span class="i">$got</span><span class="cm">,</span> <span class="i">$dont_expect</span><span class="cm">,</span> <span class="i">$name</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>Like <a href="../Test/More.html">Test::More</a>'s <pre>
+<span class="i">isnt</span><span class="s">(</span><span class="s">)</span></code>
+.  Checks if <pre>
+<span class="i">$got</span> <a class="l_k" href="../functions/ne.html">ne</a> <span class="i">$dont_expect</span></code>
+.  This is
+the string version.</p>
+</li>
+<li><a id="*isnt_num*"></a><strong><strong>isnt_num</strong></strong>
+<pre>
+  <span class="i">$Test</span><span class="i">-&gt;isnt_num</span><span class="s">(</span><span class="i">$got</span><span class="cm">,</span> <span class="i">$dont_expect</span><span class="cm">,</span> <span class="i">$name</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>Like <a href="../Test/More.html">Test::More</a>'s <pre>
+<span class="i">isnt</span><span class="s">(</span><span class="s">)</span></code>
+.  Checks if <pre>
+<span class="i">$got</span> <a class="l_k" href="../functions/ne.html">ne</a> <span class="i">$dont_expect</span></code>
+.  This is
+the numeric version.</p>
+</li>
+<li><a id="*like*"></a><strong><strong>like</strong></strong>
+<pre>
+  <span class="i">$Test</span><span class="i">-&gt;like</span><span class="s">(</span><span class="i">$thing</span><span class="cm">,</span> <span class="q">qr/$regex/</span><span class="cm">,</span> <span class="i">$name</span><span class="s">)</span><span class="sc">;</span>
+  <span class="i">$Test</span><span class="i">-&gt;like</span><span class="s">(</span><span class="i">$thing</span><span class="cm">,</span> <span class="q">&#39;/$regex/&#39;</span><span class="cm">,</span> <span class="i">$name</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>Like <a href="../Test/More.html">Test::More</a>'s <pre>
+<span class="i">like</span><span class="s">(</span><span class="s">)</span></code>
+.  Checks if $thing matches the given <pre>
+<span class="i">$regex</span></code>
+.</p>
+</li>
+<li><a id="*unlike*"></a><strong><strong>unlike</strong></strong>
+<pre>
+  <span class="i">$Test</span><span class="i">-&gt;unlike</span><span class="s">(</span><span class="i">$thing</span><span class="cm">,</span> <span class="q">qr/$regex/</span><span class="cm">,</span> <span class="i">$name</span><span class="s">)</span><span class="sc">;</span>
+  <span class="i">$Test</span><span class="i">-&gt;unlike</span><span class="s">(</span><span class="i">$thing</span><span class="cm">,</span> <span class="q">&#39;/$regex/&#39;</span><span class="cm">,</span> <span class="i">$name</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>Like <a href="../Test/More.html">Test::More</a>'s <pre>
+<span class="i">unlike</span><span class="s">(</span><span class="s">)</span></code>
+.  Checks if $thing <strong>does not match</strong> the
+given <pre>
+<span class="i">$regex</span></code>
+.</p>
+</li>
+<li><a id="*cmp_ok*"></a><strong><strong>cmp_ok</strong></strong>
+<pre>
+  <span class="i">$Test</span><span class="i">-&gt;cmp_ok</span><span class="s">(</span><span class="i">$thing</span><span class="cm">,</span> <span class="i">$type</span><span class="cm">,</span> <span class="i">$that</span><span class="cm">,</span> <span class="i">$name</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>Works just like <a href="../Test/More.html">Test::More</a>'s <pre>
+<span class="i">cmp_ok</span><span class="s">(</span><span class="s">)</span></code>
+.</p>
+<pre>
+    <span class="i">$Test</span><span class="i">-&gt;cmp_ok</span><span class="s">(</span><span class="i">$big_num</span><span class="cm">,</span> <span class="q">&#39;!=&#39;</span><span class="cm">,</span> <span class="i">$other_big_num</span><span class="s">)</span><span class="sc">;</span></pre>
+</li>
+</ul>
+<a id="Other-Testing-Methods"></a><h3 class='h3' >Other Testing Methods</h3>
+<p>These are methods which are used in the course of writing a test but are not themselves tests.</p>
+<ul>
+<li><a id="*BAIL_OUT*"></a><strong><strong>BAIL_OUT</strong></strong>
+<pre>
+    <span class="i">$Test</span><span class="i">-&gt;BAIL_OUT</span><span class="s">(</span><span class="i">$reason</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>Indicates to the <a href="../Test/Harness.html">Test::Harness</a> that things are going so badly all
+testing should terminate.  This includes running any additional test
+scripts.</p>
+<p>It will exit with 255.</p>
+</li>
+<li><a id="*skip*"></a><strong><strong>skip</strong></strong>
+<pre>
+    <span class="i">$Test</span><span class="i">-&gt;skip</span><span class="sc">;</span>
+    <span class="i">$Test</span><span class="i">-&gt;skip</span><span class="s">(</span><span class="i">$why</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>Skips the current test, reporting <pre>
+<span class="i">$why</span></code>
+.</p>
+</li>
+<li><a id="*todo_skip*"></a><strong><strong>todo_skip</strong></strong>
+<pre>
+  <span class="i">$Test</span><span class="i">-&gt;todo_skip</span><span class="sc">;</span>
+  <span class="i">$Test</span><span class="i">-&gt;todo_skip</span><span class="s">(</span><span class="i">$why</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>Like <pre>
+<span class="i">skip</span><span class="s">(</span><span class="s">)</span></code>
+, only it will declare the test as failing and TODO.  Similar
+to</p>
+<pre>
+    <a class="l_k" href="../functions/print.html">print</a> <span class="q">&quot;not ok $tnum # TODO $why\n&quot;</span><span class="sc">;</span></pre>
+</li>
+</ul>
+<a id="Test-building-utility-methods"></a><h3 class='h3' >Test building utility methods</h3>
+<p>These methods are useful when writing your own test methods.</p>
+<ul>
+<li><a id="*maybe_regex*"></a><strong><strong>maybe_regex</strong></strong>
+<pre>
+  <span class="i">$Test</span><span class="i">-&gt;maybe_regex</span><span class="s">(</span><span class="q">qr/$regex/</span><span class="s">)</span><span class="sc">;</span>
+  <span class="i">$Test</span><span class="i">-&gt;maybe_regex</span><span class="s">(</span><span class="q">&#39;/$regex/&#39;</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>This method used to be useful back when Test::Builder worked on Perls
+before 5.6 which didn't have qr//.  Now its pretty useless.</p>
+<p>Convenience method for building testing functions that take regular
+expressions as arguments.</p>
+<p>Takes a quoted regular expression produced by <code class="inline"><a class="l_k" href="../functions/qr.html">qr//</a></code>, or a string
+representing a regular expression.</p>
+<p>Returns a Perl value which may be used instead of the corresponding
+regular expression, or <code class="inline"><a class="l_k" href="../functions/undef.html">undef</a></code> if its argument is not recognised.</p>
+<p>For example, a version of <pre>
+<span class="i">like</span><span class="s">(</span><span class="s">)</span></code>
+, sans the useful diagnostic messages,
+could be written as:</p>
+<pre>
+<a name="laconic_like"></a>  sub <span class="m">laconic_like</span> <span class="s">{</span>
+      <a class="l_k" href="../functions/my.html">my</a> <span class="s">(</span><span class="i">$self</span><span class="cm">,</span> <span class="i">$thing</span><span class="cm">,</span> <span class="i">$regex</span><span class="cm">,</span> <span class="i">$name</span><span class="s">)</span> = <span class="i">@_</span><span class="sc">;</span>
+      <a class="l_k" href="../functions/my.html">my</a> <span class="i">$usable_regex</span> = <span class="i">$self</span><span class="i">-&gt;maybe_regex</span><span class="s">(</span><span class="i">$regex</span><span class="s">)</span><span class="sc">;</span>
+      <a class="l_k" href="../functions/die.html">die</a> <span class="q">&quot;expecting regex, found &#39;$regex&#39;\n&quot;</span>
+          <a class="l_k" href="../functions/unless.html">unless</a> <span class="i">$usable_regex</span><span class="sc">;</span>
+      <span class="i">$self</span><span class="i">-&gt;ok</span><span class="s">(</span><span class="i">$thing</span> =~ <span class="q">m/$usable_regex/</span><span class="cm">,</span> <span class="i">$name</span><span class="s">)</span><span class="sc">;</span>
+  <span class="s">}</span></pre>
+</li>
+<li><a id="*is_fh*"></a><strong><strong>is_fh</strong></strong>
+<pre>
+    <a class="l_k" href="../functions/my.html">my</a> <span class="i">$is_fh</span> = <span class="i">$Test</span><span class="i">-&gt;is_fh</span><span class="s">(</span><span class="i">$thing</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>Determines if the given <pre>
+<span class="i">$thing</span></code>
+ can be used as a filehandle.</p>
+</li>
+</ul>
+<a id="Test-style"></a><h3 class='h3' >Test style</h3>
+<ul>
+<li><a id="*level*"></a><strong><strong>level</strong></strong>
+<pre>
+    <span class="i">$Test</span><span class="i">-&gt;level</span><span class="s">(</span><span class="i">$how_high</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>How far up the call stack should <pre>
+<span class="i">$Test</span></code>
+ look when reporting where the
+test failed.</p>
+<p>Defaults to 1.</p>
+<p>Setting <a href="https://search.cpan.org/perldoc/$Test::Builder::Level">$Test::Builder::Level</a> overrides.  This is typically useful
+localized:</p>
+<pre>
+<a name="my_ok"></a>    sub <span class="m">my_ok</span> <span class="s">{</span>
+        <a class="l_k" href="../functions/my.html">my</a> <span class="i">$test</span> = <a class="l_k" href="../functions/shift.html">shift</a><span class="sc">;</span>
+
+        <a class="l_k" href="../functions/local.html">local</a> <span class="i">$Test::Builder::Level</span> = <span class="i">$Test::Builder::Level</span> + <span class="n">1</span><span class="sc">;</span>
+        <span class="i">$TB</span><span class="i">-&gt;ok</span><span class="s">(</span><span class="i">$test</span><span class="s">)</span><span class="sc">;</span>
+    <span class="s">}</span></pre>
+<p>To be polite to other functions wrapping your own you usually want to increment <pre>
+<span class="i">$Level</span></code>
+ rather than set it to a constant.</p>
+</li>
+<li><a id="*use_numbers*"></a><strong><strong>use_numbers</strong></strong>
+<pre>
+    <span class="i">$Test</span><span class="i">-&gt;use_numbers</span><span class="s">(</span><span class="i">$on_or_off</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>Whether or not the test should output numbers.  That is, this if true:</p>
+<div class="verbatim"><ol><li>  ok 1</li><li>  ok 2</li><li>  ok 3</li></ol></div><p>or this if false</p>
+<pre>
+  <span class="w">ok</span>
+  <span class="w">ok</span>
+  <span class="w">ok</span></pre>
+<p>Most useful when you can't depend on the test output order, such as
+when threads or forking is involved.</p>
+<p>Defaults to on.</p>
+</li>
+<li><a id="*no_diag*"></a><strong><strong>no_diag</strong></strong>
+<pre>
+    <span class="i">$Test</span><span class="i">-&gt;no_diag</span><span class="s">(</span><span class="i">$no_diag</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>If set true no diagnostics will be printed.  This includes calls to
+<pre>
+<span class="i">diag</span><span class="s">(</span><span class="s">)</span></code>
+.</p>
+</li>
+<li><a id="*no_ending*"></a><strong><strong>no_ending</strong></strong>
+<pre>
+    <span class="i">$Test</span><span class="i">-&gt;no_ending</span><span class="s">(</span><span class="i">$no_ending</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>Normally, Test::Builder does some extra diagnostics when the test
+ends.  It also changes the exit code as described below.</p>
+<p>If this is true, none of that will be done.</p>
+</li>
+<li><a id="*no_header*"></a><strong><strong>no_header</strong></strong>
+<pre>
+    <span class="i">$Test</span><span class="i">-&gt;no_header</span><span class="s">(</span><span class="i">$no_header</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>If set to true, no "1..N" header will be printed.</p>
+</li>
+</ul>
+<a id="Output"></a><h3 class='h3' >Output</h3>
+<p>Controlling where the test output goes.</p>
+<p>It's ok for your test to change where STDOUT and STDERR point to,
+Test::Builder's default output settings will not be affected.</p>
+<ul>
+<li><a id="*diag*"></a><strong><strong>diag</strong></strong>
+<pre>
+    <span class="i">$Test</span><span class="i">-&gt;diag</span><span class="s">(</span><span class="i">@msgs</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>Prints out the given <pre>
+<span class="i">@msgs</span></code>
+.  Like <code class="inline"><a class="l_k" href="../functions/print.html">print</a></code>, arguments are simply
+appended together.</p>
+<p>Normally, it uses the <pre>
+<span class="i">failure_output</span><span class="s">(</span><span class="s">)</span></code>
+ handle, but if this is for a
+TODO test, the <pre>
+<span class="i">todo_output</span><span class="s">(</span><span class="s">)</span></code>
+ handle is used.</p>
+<p>Output will be indented and marked with a # so as not to interfere
+with test output.  A newline will be put on the end if there isn't one
+already.</p>
+<p>We encourage using this rather than calling print directly.</p>
+<p>Returns false.  Why?  Because <pre>
+<span class="i">diag</span><span class="s">(</span><span class="s">)</span></code>
+ is often used in conjunction with
+a failing test (<pre>
+<span class="i">ok</span><span class="s">(</span><span class="s">)</span> || <span class="i">diag</span><span class="s">(</span><span class="s">)</span></code>
+) it "passes through" the failure.</p>
+<pre>
+    <a class="l_k" href="../functions/return.html">return</a> <span class="i">ok</span><span class="s">(</span>...<span class="s">)</span> || <span class="i">diag</span><span class="s">(</span>...<span class="s">)</span><span class="sc">;</span></pre>
+</li>
+<li><a id="*note*"></a><strong><strong>note</strong></strong>
+<pre>
+    <span class="i">$Test</span><span class="i">-&gt;note</span><span class="s">(</span><span class="i">@msgs</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>Like <pre>
+<span class="i">diag</span><span class="s">(</span><span class="s">)</span></code>
+, but it prints to the <pre>
+<span class="i">output</span><span class="s">(</span><span class="s">)</span></code>
+ handle so it will not
+normally be seen by the user except in verbose mode.</p>
+</li>
+<li><a id="*explain*"></a><strong><strong>explain</strong></strong>
+<pre>
+    <a class="l_k" href="../functions/my.html">my</a> <span class="i">@dump</span> = <span class="i">$Test</span><span class="i">-&gt;explain</span><span class="s">(</span><span class="i">@msgs</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>Will dump the contents of any references in a human readable format.
+Handy for things like...</p>
+<pre>
+    <span class="i">is_deeply</span><span class="s">(</span><span class="i">$have</span><span class="cm">,</span> <span class="i">$want</span><span class="s">)</span> || <span class="w">diag</span> <span class="w">explain</span> <span class="i">$have</span><span class="sc">;</span></pre>
+<p>or</p>
+<pre>
+    <span class="i">is_deeply</span><span class="s">(</span><span class="i">$have</span><span class="cm">,</span> <span class="i">$want</span><span class="s">)</span> || <span class="w">note</span> <span class="w">explain</span> <span class="i">$have</span><span class="sc">;</span></pre>
+</li>
+<li><a id="*output*"></a><strong><strong>output</strong></strong>
+</li>
+<li><a id="*failure_output*"></a><strong><strong>failure_output</strong></strong>
+</li>
+<li><a id="*todo_output*"></a><strong><strong>todo_output</strong></strong>
+<pre>
+    <a class="l_k" href="../functions/my.html">my</a> <span class="i">$filehandle</span> = <span class="i">$Test</span><span class="i">-&gt;output</span><span class="sc">;</span>
+    <span class="i">$Test</span><span class="i">-&gt;output</span><span class="s">(</span><span class="i">$filehandle</span><span class="s">)</span><span class="sc">;</span>
+    <span class="i">$Test</span><span class="i">-&gt;output</span><span class="s">(</span><span class="i">$filename</span><span class="s">)</span><span class="sc">;</span>
+    <span class="i">$Test</span><span class="i">-&gt;output</span><span class="s">(</span>\<span class="i">$scalar</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>These methods control where Test::Builder will print its output.
+They take either an open <pre>
+<span class="i">$filehandle</span></code>
+, a <pre>
+<span class="i">$filename</span></code>
+ to open and write to
+or a <pre>
+<span class="i">$scalar</span></code>
+ reference to append to.  It will always return a <pre>
+<span class="i">$filehandle</span></code>
+.</p>
+<p><strong>output</strong> is where normal "ok/not ok" test output goes.</p>
+<p>Defaults to STDOUT.</p>
+<p><strong>failure_output</strong> is where diagnostic output on test failures and
+<pre>
+<span class="i">diag</span><span class="s">(</span><span class="s">)</span></code>
+ goes.  It is normally not read by Test::Harness and instead is
+displayed to the user.</p>
+<p>Defaults to STDERR.</p>
+<p><pre>
+<span class="w">todo_output</span></code>
+ is used instead of <pre>
+<span class="i">failure_output</span><span class="s">(</span><span class="s">)</span></code>
+ for the
+diagnostics of a failing TODO test.  These will not be seen by the
+user.</p>
+<p>Defaults to STDOUT.</p>
+</li>
+<li><a id="reset_outputs"></a><strong>reset_outputs</strong>
+<pre>
+  <span class="i">$tb</span><span class="i">-&gt;reset_outputs</span><span class="sc">;</span></pre>
+<p>Resets all the output filehandles back to their defaults.</p>
+</li>
+<li><a id="carp"></a><strong>carp</strong>
+<pre>
+  <span class="i">$tb</span><span class="i">-&gt;carp</span><span class="s">(</span><span class="i">@message</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>Warns with <pre>
+<span class="i">@message</span></code>
+ but the message will appear to come from the
+point where the original test function was called (<pre>
+<span class="i">$tb</span><span class="i">-&gt;caller</span></code>
+).</p>
+</li>
+<li><a id="croak"></a><strong>croak</strong>
+<pre>
+  <span class="i">$tb</span><span class="i">-&gt;croak</span><span class="s">(</span><span class="i">@message</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>Dies with <pre>
+<span class="i">@message</span></code>
+ but the message will appear to come from the
+point where the original test function was called (<pre>
+<span class="i">$tb</span><span class="i">-&gt;caller</span></code>
+).</p>
+</li>
+</ul>
+<a id="Test-Status-and-Info"></a><h3 class='h3' >Test Status and Info</h3>
+<ul>
+<li><a id="*current_test*"></a><strong><strong>current_test</strong></strong>
+<pre>
+    <a class="l_k" href="../functions/my.html">my</a> <span class="i">$curr_test</span> = <span class="i">$Test</span><span class="i">-&gt;current_test</span><span class="sc">;</span>
+    <span class="i">$Test</span><span class="i">-&gt;current_test</span><span class="s">(</span><span class="i">$num</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>Gets/sets the current test number we're on.  You usually shouldn't
+have to set this.</p>
+<p>If set forward, the details of the missing tests are filled in as 'unknown'.
+if set backward, the details of the intervening tests are deleted.  You
+can erase history if you really want to.</p>
+</li>
+<li><a id="*is_passing*"></a><strong><strong>is_passing</strong></strong>
+<pre>
+   <a class="l_k" href="../functions/my.html">my</a> <span class="i">$ok</span> = <span class="i">$builder</span><span class="i">-&gt;is_passing</span><span class="sc">;</span></pre>
+<p>Indicates if the test suite is currently passing.</p>
+<p>More formally, it will be false if anything has happened which makes
+it impossible for the test suite to pass.  True otherwise.</p>
+<p>For example, if no tests have run <pre>
+<span class="i">is_passing</span><span class="s">(</span><span class="s">)</span></code>
+ will be true because
+even though a suite with no tests is a failure you can add a passing
+test to it and start passing.</p>
+<p>Don't think about it too much.</p>
+</li>
+<li><a id="*summary*"></a><strong><strong>summary</strong></strong>
+<pre>
+    <a class="l_k" href="../functions/my.html">my</a> <span class="i">@tests</span> = <span class="i">$Test</span><span class="i">-&gt;summary</span><span class="sc">;</span></pre>
+<p>A simple summary of the tests so far.  True for pass, false for fail.
+This is a logical pass/fail, so todos are passes.</p>
+<p>Of course, test #1 is $tests[0], etc...</p>
+</li>
+<li><a id="*details*"></a><strong><strong>details</strong></strong>
+<pre>
+    <a class="l_k" href="../functions/my.html">my</a> <span class="i">@tests</span> = <span class="i">$Test</span><span class="i">-&gt;details</span><span class="sc">;</span></pre>
+<p>Like <pre>
+<span class="i">summary</span><span class="s">(</span><span class="s">)</span></code>
+, but with a lot more detail.</p>
+<div class="verbatim"><ol><li>    $tests[$test_num - 1] = </li><li>            { 'ok'       =&gt; is the test considered a pass?</li><li>              actual_ok  =&gt; did it literally say 'ok'?</li><li>              name       =&gt; name of the test (if any)</li><li>              type       =&gt; type of test (if any, see below).</li><li>              reason     =&gt; reason for the above (if any)</li><li>            };</li></ol></div><p>'ok' is true if Test::Harness will consider the test to be a pass.</p>
+<p>'actual_ok' is a reflection of whether or not the test literally
+printed 'ok' or 'not ok'.  This is for examining the result of 'todo'
+tests.</p>
+<p>'name' is the name of the test.</p>
+<p>'type' indicates if it was a special test.  Normal tests have a type
+of ''.  Type can be one of the following:</p>
+<div class="verbatim"><ol><li>    skip        see skip()</li><li>    todo        see todo()</li><li>    todo_skip   see todo_skip()</li><li>    unknown     see below</li></ol></div><p>Sometimes the Test::Builder test counter is incremented without it
+printing any test output, for example, when <pre>
+<span class="i">current_test</span><span class="s">(</span><span class="s">)</span></code>
+ is changed.
+In these cases, Test::Builder doesn't know the result of the test, so
+its type is 'unknown'.  These details for these tests are filled in.
+They are considered ok, but the name and actual_ok is left <code class="inline"><a class="l_k" href="../functions/undef.html">undef</a></code>.</p>
+<p>For example "not ok 23 - hole count # TODO insufficient donuts" would
+result in this structure:</p>
+<pre>
+    <span class="i">$tests</span>[<span class="n">22</span>] =    <span class="c"># 23 - 1, since arrays start from 0.</span>
+      <span class="s">{</span> <span class="w">ok</span>        <span class="cm">=&gt;</span> <span class="n">1</span><span class="cm">,</span>   <span class="c"># logically, the test passed since its todo</span>
+        <span class="w">actual_ok</span> <span class="cm">=&gt;</span> <span class="n">0</span><span class="cm">,</span>   <span class="c"># in absolute terms, it failed</span>
+        <span class="w">name</span>      <span class="cm">=&gt;</span> <span class="q">&#39;hole count&#39;</span><span class="cm">,</span>
+        <span class="w">type</span>      <span class="cm">=&gt;</span> <span class="q">&#39;todo&#39;</span><span class="cm">,</span>
+        <span class="w">reason</span>    <span class="cm">=&gt;</span> <span class="q">&#39;insufficient donuts&#39;</span>
+      <span class="s">}</span><span class="sc">;</span></pre>
+</li>
+<li><a id="*todo*"></a><strong><strong>todo</strong></strong>
+<pre>
+    <a class="l_k" href="../functions/my.html">my</a> <span class="i">$todo_reason</span> = <span class="i">$Test</span><span class="i">-&gt;todo</span><span class="sc">;</span>
+    <a class="l_k" href="../functions/my.html">my</a> <span class="i">$todo_reason</span> = <span class="i">$Test</span><span class="i">-&gt;todo</span><span class="s">(</span><span class="i">$pack</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>If the current tests are considered "TODO" it will return the reason,
+if any.  This reason can come from a <pre>
+<span class="i">$TODO</span></code>
+ variable or the last call
+to <pre>
+<span class="i">todo_start</span><span class="s">(</span><span class="s">)</span></code>
+.</p>
+<p>Since a TODO test does not need a reason, this function can return an
+empty string even when inside a TODO block.  Use <pre>
+<span class="i">$Test</span><span class="i">-&gt;in_todo</span></code>
+
+to determine if you are currently inside a TODO block.</p>
+<p><pre>
+<span class="i">todo</span><span class="s">(</span><span class="s">)</span></code>
+ is about finding the right package to look for <pre>
+<span class="i">$TODO</span></code>
+ in.  It's
+pretty good at guessing the right package to look at.  It first looks for
+the caller based on <pre>
+<span class="i">$Level</span> + <span class="n">1</span></code>
+, since <pre>
+<span class="i">todo</span><span class="s">(</span><span class="s">)</span></code>
+ is usually called inside
+a test function.  As a last resort it will use <pre>
+<span class="i">exported_to</span><span class="s">(</span><span class="s">)</span></code>
+.</p>
+<p>Sometimes there is some confusion about where <pre>
+<span class="i">todo</span><span class="s">(</span><span class="s">)</span></code>
+ should be looking
+for the <pre>
+<span class="i">$TODO</span></code>
+ variable.  If you want to be sure, tell it explicitly
+what $pack to use.</p>
+</li>
+<li><a id="*find_TODO*"></a><strong><strong>find_TODO</strong></strong>
+<pre>
+    <a class="l_k" href="../functions/my.html">my</a> <span class="i">$todo_reason</span> = <span class="i">$Test</span><span class="i">-&gt;find_TODO</span><span class="s">(</span><span class="s">)</span><span class="sc">;</span>
+    <a class="l_k" href="../functions/my.html">my</a> <span class="i">$todo_reason</span> = <span class="i">$Test</span><span class="i">-&gt;find_TODO</span><span class="s">(</span><span class="i">$pack</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>Like <pre>
+<span class="i">todo</span><span class="s">(</span><span class="s">)</span></code>
+ but only returns the value of <pre>
+<span class="i">$TODO</span></code>
+ ignoring
+<pre>
+<span class="i">todo_start</span><span class="s">(</span><span class="s">)</span></code>
+.</p>
+<p>Can also be used to set <pre>
+<span class="i">$TODO</span></code>
+ to a new value while returning the
+old value:</p>
+<pre>
+    <a class="l_k" href="../functions/my.html">my</a> <span class="i">$old_reason</span> = <span class="i">$Test</span><span class="i">-&gt;find_TODO</span><span class="s">(</span><span class="i">$pack</span><span class="cm">,</span> <span class="n">1</span><span class="cm">,</span> <span class="i">$new_reason</span><span class="s">)</span><span class="sc">;</span></pre>
+</li>
+<li><a id="*in_todo*"></a><strong><strong>in_todo</strong></strong>
+<pre>
+    <a class="l_k" href="../functions/my.html">my</a> <span class="i">$in_todo</span> = <span class="i">$Test</span><span class="i">-&gt;in_todo</span><span class="sc">;</span></pre>
+<p>Returns true if the test is currently inside a TODO block.</p>
+</li>
+<li><a id="*todo_start*"></a><strong><strong>todo_start</strong></strong>
+<pre>
+    <span class="i">$Test</span><span class="i">-&gt;todo_start</span><span class="s">(</span><span class="s">)</span><span class="sc">;</span>
+    <span class="i">$Test</span><span class="i">-&gt;todo_start</span><span class="s">(</span><span class="i">$message</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>This method allows you declare all subsequent tests as TODO tests, up until
+the <pre>
+<span class="w">todo_end</span></code>
+ method has been called.</p>
+<p>The <pre>
+<span class="j">TODO:</span></code>
+ and <pre>
+<span class="i">$TODO</span></code>
+ syntax is generally pretty good about figuring out
+whether or not we're in a TODO test.  However, often we find that this is not
+possible to determine (such as when we want to use <pre>
+<span class="i">$TODO</span></code>
+ but
+the tests are being executed in other packages which can't be inferred
+beforehand).</p>
+<p>Note that you can use this to nest "todo" tests</p>
+<pre>
+ <span class="i">$Test</span><span class="i">-&gt;todo_start</span><span class="s">(</span><span class="q">&#39;working on this&#39;</span><span class="s">)</span><span class="sc">;</span>
+ <span class="c"># lots of code</span>
+ <span class="i">$Test</span><span class="i">-&gt;todo_start</span><span class="s">(</span><span class="q">&#39;working on that&#39;</span><span class="s">)</span><span class="sc">;</span>
+ <span class="c"># more code</span>
+ <span class="i">$Test</span><span class="i">-&gt;todo_end</span><span class="sc">;</span>
+ <span class="i">$Test</span><span class="i">-&gt;todo_end</span><span class="sc">;</span></pre>
+<p>This is generally not recommended, but large testing systems often have weird
+internal needs.</p>
+<p>We've tried to make this also work with the TODO: syntax, but it's not
+guaranteed and its use is also discouraged:</p>
+<pre>
+ <span class="j">TODO:</span> <span class="s">{</span>
+     <a class="l_k" href="../functions/local.html">local</a> <span class="i">$TODO</span> = <span class="q">&#39;We have work to do!&#39;</span><span class="sc">;</span>
+     <span class="i">$Test</span><span class="i">-&gt;todo_start</span><span class="s">(</span><span class="q">&#39;working on this&#39;</span><span class="s">)</span><span class="sc">;</span>
+     <span class="c"># lots of code</span>
+     <span class="i">$Test</span><span class="i">-&gt;todo_start</span><span class="s">(</span><span class="q">&#39;working on that&#39;</span><span class="s">)</span><span class="sc">;</span>
+     <span class="c"># more code</span>
+     <span class="i">$Test</span><span class="i">-&gt;todo_end</span><span class="sc">;</span>
+     <span class="i">$Test</span><span class="i">-&gt;todo_end</span><span class="sc">;</span>
+ <span class="s">}</span></pre>
+<p>Pick one style or another of "TODO" to be on the safe side.</p>
+</li>
+<li><a id="todo_end"></a><strong><pre>
+<span class="w">todo_end</span></code>
+</strong>
+<pre>
+ <span class="i">$Test</span><span class="i">-&gt;todo_end</span><span class="sc">;</span></pre>
+<p>Stops running tests as "TODO" tests.  This method is fatal if called without a
+preceding <pre>
+<span class="w">todo_start</span></code>
+ method call.</p>
+</li>
+<li><a id="*caller*"></a><strong><strong>caller</strong></strong>
+<pre>
+    <a class="l_k" href="../functions/my.html">my</a> <span class="i">$package</span> = <span class="i">$Test</span><span class="i">-&gt;caller</span><span class="sc">;</span>
+    <a class="l_k" href="../functions/my.html">my</a><span class="s">(</span><span class="i">$pack</span><span class="cm">,</span> <span class="i">$file</span><span class="cm">,</span> <span class="i">$line</span><span class="s">)</span> = <span class="i">$Test</span><span class="i">-&gt;caller</span><span class="sc">;</span>
+    <a class="l_k" href="../functions/my.html">my</a><span class="s">(</span><span class="i">$pack</span><span class="cm">,</span> <span class="i">$file</span><span class="cm">,</span> <span class="i">$line</span><span class="s">)</span> = <span class="i">$Test</span><span class="i">-&gt;caller</span><span class="s">(</span><span class="i">$height</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>Like the normal <code class="inline"><a class="l_k" href="../functions/caller.html">caller()</a></code>, except it reports according to your <pre>
+<span class="i">level</span><span class="s">(</span><span class="s">)</span></code>
+.</p>
+<p><pre>
+<span class="i">$height</span></code>
+ will be added to the <pre>
+<span class="i">level</span><span class="s">(</span><span class="s">)</span></code>
+.</p>
+<p>If <code class="inline"><a class="l_k" href="../functions/caller.html">caller()</a></code> winds up off the top of the stack it report the highest context.</p>
+</li>
+</ul>
+<a id="EXIT-CODES"></a><h2 class='h2' >EXIT CODES</h2>
+<p>If all your tests passed, Test::Builder will exit with zero (which is
+normal).  If anything failed it will exit with how many failed.  If
+you run less (or more) tests than you planned, the missing (or extras)
+will be considered failures.  If no tests were ever run Test::Builder
+will throw a warning and exit with 255.  If the test died, even after
+having successfully completed all its tests, it will still be
+considered a failure and will exit with 255.</p>
+<p>So the exit codes are...</p>
+<div class="verbatim"><ol><li>    0                   all tests successful</li><li>    255                 test died or all passed but wrong # of tests run</li><li>    any other number    how many failed (including missing or extras)</li></ol></div><p>If you fail more than 254 tests, it will be reported as 254.</p>
+<a id="THREADS"></a><h2 class='h2' >THREADS</h2>
+<p>In perl 5.8.1 and later, Test::Builder is thread-safe.  The test
+number is shared amongst all threads.  This means if one thread sets
+the test number using <pre>
+<span class="i">current_test</span><span class="s">(</span><span class="s">)</span></code>
+ they will all be effected.</p>
+<p>While versions earlier than 5.8.1 had threads they contain too many
+bugs to support.</p>
+<p>Test::Builder is only thread-aware if threads.pm is loaded <i>before</i>
+Test::Builder.</p>
+<a id="MEMORY"></a><h2 class='h2' >MEMORY</h2>
+<p>An informative hash, accessible via <pre>
+<span class="i">details</span><span class="s">(</span><span class="s">)</span></code>
+, is stored for each
+test you perform.  So memory usage will scale linearly with each test
+run. Although this is not a problem for most test suites, it can
+become an issue if you do large (hundred thousands to million)
+combinatorics tests in the same run.</p>
+<p>In such cases, you are advised to either split the test file into smaller
+ones, or use a reverse approach, doing "normal" (code) compares and
+triggering <pre>
+<span class="i">fail</span><span class="s">(</span><span class="s">)</span></code>
+ should anything go unexpected.</p>
+<p>Future versions of Test::Builder will have a way to turn history off.</p>
+<a id="EXAMPLES"></a><h2 class='h2' >EXAMPLES</h2>
+<p>CPAN can provide the best examples.  <a href="../Test/Simple.html">Test::Simple</a>, <a href="../Test/More.html">Test::More</a>,
+<a href="https://search.cpan.org/perldoc/Test::Exception">Test::Exception</a> and <a href="https://search.cpan.org/perldoc/Test::Differences">Test::Differences</a> all use Test::Builder.</p>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<p><a href="../Test/Simple.html">Test::Simple</a>, <a href="../Test/More.html">Test::More</a>, <a href="../Test/Harness.html">Test::Harness</a></p>
+<a id="AUTHORS"></a><h2 class='h2' >AUTHORS</h2>
+<p>Original code by chromatic, maintained by Michael G Schwern
+&lt;schwern@pobox.com&gt;</p>
+<a id="MAINTAINERS"></a><h2 class='h2' >MAINTAINERS</h2>
+<ul>
+<li><a id="Chad-Granum-%3cexodist%40cpan.org%3e"></a><strong>Chad Granum &lt;exodist@cpan.org&gt;</strong>
+</li>
+</ul>
+<a id="COPYRIGHT"></a><h2 class='h2' >COPYRIGHT</h2>
+<p>Copyright 2002-2008 by chromatic &lt;chromatic@wgz.org&gt; and
+                       Michael G Schwern &lt;schwern@pobox.com&gt;.</p>
+<p>This program is free software; you can redistribute it and/or
+modify it under the same terms as Perl itself.</p>
+<p>See <i><a href="http://www.perl.com/perl/misc/Artistic.html">http://www.perl.com/perl/misc/Artistic.html</a></i></p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><ul><li><a href="#Construction">Construction</a></li><li><a href="#Setting-up-tests">Setting up tests</a></li><li><a href="#Running-tests">Running tests</a></li><li><a href="#Other-Testing-Methods">Other Testing Methods</a></li><li><a href="#Test-building-utility-methods">Test building utility methods</a></li><li><a href="#Test-style">Test style</a></li><li><a href="#Output">Output</a></li><li><a href="#Test-Status-and-Info">Test Status and Info</a></li></ul><li><a href="#EXIT-CODES">EXIT CODES</a></li><li><a href="#THREADS">THREADS</a></li><li><a href="#MEMORY">MEMORY</a></li><li><a href="#EXAMPLES">EXAMPLES</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#AUTHORS">AUTHORS</a></li><li><a href="#MAINTAINERS">MAINTAINERS</a></li><li><a href="#COPYRIGHT">COPYRIGHT</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/24/4/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/4/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/4/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/4/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/24/4/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/4/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/4/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/4/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/24/4/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/4/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/4/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/24/4/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/4/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/4/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

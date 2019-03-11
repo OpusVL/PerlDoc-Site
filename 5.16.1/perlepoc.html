@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="perlepoc - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>perlepoc - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.16.1/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.16.1/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.16.1/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.16.1/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.16.1/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.16.1/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.16.1/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.16.1/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.16.1/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.16.1/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.16.1/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.16.1/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.16.1/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.16.1/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.16.1/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.16.1/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="index-platforms.html">Platform specific</a> &gt;
+      
+    
+    perlepoc
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 16.1 documentation</h1>
+                  </div>
+                  <h1>perlepoc</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#INTRODUCTION">INTRODUCTION</a></li><li><a href="#INSTALLING-PERL-ON-EPOC">INSTALLING PERL ON EPOC</a></li><li><a href="#STARTING-PERL-ON-EPOC">STARTING PERL ON EPOC</a></li><ul><li><a href="#Features-of-Perl-on-Epoc">Features of Perl on Epoc</a></li><li><a href="#Restrictions-of-Perl-on-Epoc">Restrictions of Perl on Epoc</a></li><li><a href="#Compiling-Perl-5-on-the-EPOC-cross-compiling-environment">Compiling Perl 5 on the EPOC cross compiling environment</a></li></ul><li><a href="#SUPPORT-STATUS-OF-PERL-ON-EPOC">SUPPORT STATUS OF PERL ON EPOC</a></li><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#LAST-UPDATE">LAST UPDATE</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>perlepoc - Perl for EPOC</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<p>Perl 5 README file for the EPOC Release 5 operating system.</p>
+<a id="INTRODUCTION"></a><h2 class='h2' >INTRODUCTION</h2>
+<p>EPOC is an OS for palmtops and mobile phones. For more information look
+at: <a href="http://www.symbian.com/">http://www.symbian.com/</a></p>
+<p>This is a port of perl to the epocemx SDK by Eberhard Mattes, which
+itself uses the SDK by symbian. Essentially epocemx it is a POSIX
+look alike environment for the EPOC OS.  For more information look at: 
+<a href="http://epocemx.sourceforge.net/">http://epocemx.sourceforge.net/</a></p>
+<p>perl and epocemx runs on Epoc Release 5 machines: Psion 5mx, 5mx Pro,
+Psion Revo, Psion Netbook and on the Ericsson M128. It may run on Epoc
+Release 3 Hardware (Series 5 classic), too. For more information about
+this hardware please refer to <a href="http://www.psion.com/">http://www.psion.com/</a></p>
+<p>Vendors which like to have support for their devices are free to send
+me a sample.</p>
+<a id="INSTALLING-PERL-ON-EPOC"></a><h2 class='h2' >INSTALLING PERL ON EPOC</h2>
+<p>You can download a ready-to-install version from
+<a href="http://www.oflebbe.de/perl/perl5.html">http://www.oflebbe.de/perl/perl5.html</a></p>
+<p>You will need at least ~6MB free space in order to install and run perl.</p>
+<p>Please install the emxusr.sis package from
+<a href="http://epocemx.sourceforge.net/">http://epocemx.sourceforge.net/</a> first.</p>
+<p>Install perl.sis on the EPOC machine. If you do not know how to do
+that, consult your PsiWin documentation.</p>
+<p>Perl itself and its standard library is using 4 MB disk space.
+Unicode support and some other modules are left out. (For details,
+please look into epoc/createpkg.pl). If you like to use these modules,
+you are free to copy them from a current perl release.</p>
+<a id="STARTING-PERL-ON-EPOC"></a><h2 class='h2' >STARTING PERL ON EPOC</h2>
+<p>Please use the epocemx shell to start perl. perl integrates with the
+conventions of epocemx.</p>
+<a id="Features-of-Perl-on-Epoc"></a><h3 class='h3' >Features of Perl on Epoc</h3>
+<p>The built-in function EPOC::getcwd returns the current directory.</p>
+<a id="Restrictions-of-Perl-on-Epoc"></a><h3 class='h3' >Restrictions of Perl on Epoc</h3>
+<p>Features are left out, because of restrictions of the POSIX support in
+EPOC:</p>
+<ul>
+<li>
+<p>socket IO is only implemented poorly. You can only use sysread and
+syswrite on them. The commands read, write, print, &lt;&gt; do not work for
+sockets. This may change iff epocemx supports sockets.</p>
+</li>
+<li>
+<p>kill, alarm and signals. Do not try to use them. This may be
+impossible to implement on EPOC.</p>
+</li>
+<li>
+<p>select is missing.</p>
+</li>
+<li>
+<p>binmode does not exist. (No CR LF to LF translation for text files)</p>
+</li>
+<li>
+<p>EPOC does not handle the notion of current drive and current
+directory very well (i.e. not at all, but it tries hard to emulate
+one). See PATH.</p>
+</li>
+<li>
+<p>Heap is limited to 4MB.</p>
+</li>
+<li>
+<p>Dynamic loading is not implemented.</p>
+</li>
+</ul>
+<a id="Compiling-Perl-5-on-the-EPOC-cross-compiling-environment"></a><h3 class='h3' >Compiling Perl 5 on the EPOC cross compiling environment</h3>
+<p>Sorry, this is far too short.</p>
+<ul>
+<li>
+<p>You will need the epocemx SDK from Eberhard Mattes.</p>
+</li>
+<li>
+<p>Get the Perl sources from your nearest CPAN site.</p>
+</li>
+<li>
+<p>Unpack the sources.</p>
+</li>
+<li>
+<p>Build a native perl from this sources... Make sure to save the
+miniperl executable as miniperl.native.</p>
+<p>Start again from scratch</p>
+<div class="verbatim"><ol><li>      cp epoc/* .</li><li>      ./Configure -S</li><li>      make </li><li>      cp miniperl.native miniperl</li><li>      touch miniperl.exe</li><li>      make</li><li>      perl createpkg.pl </li><li></li><li>      emxsis perl.pkg perl.sis</li></ol></div></li>
+</ul>
+<a id="SUPPORT-STATUS-OF-PERL-ON-EPOC"></a><h2 class='h2' >SUPPORT STATUS OF PERL ON EPOC</h2>
+<p>I'm offering this port "as is". You can ask me questions, but I can't
+guarantee I'll be able to answer them. Since the port to epocemx is
+quite new, please check the web for updates first.</p>
+<p>Very special thanks to Eberhard Mattes for epocemx.</p>
+<a id="AUTHOR"></a><h2 class='h2' >AUTHOR</h2>
+<p>Olaf Flebbe &lt;olaf@oflebbe.de&gt;
+<a href="http://www.oflebbe.de/perl/perl5.html">http://www.oflebbe.de/perl/perl5.html</a></p>
+<a id="LAST-UPDATE"></a><h2 class='h2' >LAST UPDATE</h2>
+<p>2003-01-18</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#INTRODUCTION">INTRODUCTION</a></li><li><a href="#INSTALLING-PERL-ON-EPOC">INSTALLING PERL ON EPOC</a></li><li><a href="#STARTING-PERL-ON-EPOC">STARTING PERL ON EPOC</a></li><ul><li><a href="#Features-of-Perl-on-Epoc">Features of Perl on Epoc</a></li><li><a href="#Restrictions-of-Perl-on-Epoc">Restrictions of Perl on Epoc</a></li><li><a href="#Compiling-Perl-5-on-the-EPOC-cross-compiling-environment">Compiling Perl 5 on the EPOC cross compiling environment</a></li></ul><li><a href="#SUPPORT-STATUS-OF-PERL-ON-EPOC">SUPPORT STATUS OF PERL ON EPOC</a></li><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#LAST-UPDATE">LAST UPDATE</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/1/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

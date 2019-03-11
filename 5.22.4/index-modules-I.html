@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Core modules (I) - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>Core modules (I) - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.22.4/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.22.4/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.22.4/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.22.4/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.22.4/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.22.4/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.22.4/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.22.4/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.22.4/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.22.4/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.22.4/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.22.4/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.22.4/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.22.4/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.22.4/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.22.4/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="index.html">Home</a>&nbsp; &gt;
+    
+      
+    
+    Core modules (I)
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 22.4 documentation</h1>
+                  </div>
+                  <h1>Core modules (I)</h1>
+<div class="mod_az_list">
+  
+    
+      <a href="index-modules-A.html">A</a>
+    
+    
+      |
+    
+  
+    
+      <a href="index-modules-B.html">B</a>
+    
+    
+      |
+    
+  
+    
+      <a href="index-modules-C.html">C</a>
+    
+    
+      |
+    
+  
+    
+      <a href="index-modules-D.html">D</a>
+    
+    
+      |
+    
+  
+    
+      <a href="index-modules-E.html">E</a>
+    
+    
+      |
+    
+  
+    
+      <a href="index-modules-F.html">F</a>
+    
+    
+      |
+    
+  
+    
+      <a href="index-modules-G.html">G</a>
+    
+    
+      |
+    
+  
+    
+      <a href="index-modules-H.html">H</a>
+    
+    
+      |
+    
+  
+    
+      <a href="index-modules-I.html">I</a>
+    
+    
+      |
+    
+  
+    
+      <a href="index-modules-J.html">J</a>
+    
+    
+      |
+    
+  
+    
+      K
+    
+    
+      |
+    
+  
+    
+      <a href="index-modules-L.html">L</a>
+    
+    
+      |
+    
+  
+    
+      <a href="index-modules-M.html">M</a>
+    
+    
+      |
+    
+  
+    
+      <a href="index-modules-N.html">N</a>
+    
+    
+      |
+    
+  
+    
+      <a href="index-modules-O.html">O</a>
+    
+    
+      |
+    
+  
+    
+      <a href="index-modules-P.html">P</a>
+    
+    
+      |
+    
+  
+    
+      Q
+    
+    
+      |
+    
+  
+    
+      R
+    
+    
+      |
+    
+  
+    
+      <a href="index-modules-S.html">S</a>
+    
+    
+      |
+    
+  
+    
+      <a href="index-modules-T.html">T</a>
+    
+    
+      |
+    
+  
+    
+      <a href="index-modules-U.html">U</a>
+    
+    
+      |
+    
+  
+    
+      V
+    
+    
+      |
+    
+  
+    
+      W
+    
+    
+      |
+    
+  
+    
+      <a href="index-modules-X.html">X</a>
+    
+    
+      |
+    
+  
+    
+      Y
+    
+    
+      |
+    
+  
+    
+      Z
+    
+    
+  
+</div>
+<ul>
+  
+    <li><a href="I18N/Collate.html">I18N::Collate</a></li>
+    
+      - compare 8-bit scalar data according to the current locale
+    
+  
+    <li><a href="I18N/Langinfo.html">I18N::Langinfo</a></li>
+    
+      - query locale information
+    
+  
+    <li><a href="I18N/LangTags.html">I18N::LangTags</a></li>
+    
+      - functions for dealing with RFC3066-style language tags
+    
+  
+    <li><a href="I18N/LangTags/Detect.html">I18N::LangTags::Detect</a></li>
+    
+      - detect the user's language preferences
+    
+  
+    <li><a href="I18N/LangTags/List.html">I18N::LangTags::List</a></li>
+    
+      - tags and names for human languages
+    
+  
+    <li><a href="IO.html">IO</a></li>
+    
+      - load various IO modules
+    
+  
+    <li><a href="IO/Compress/Base.html">IO::Compress::Base</a></li>
+    
+      - Base Class for IO::Compress modules 
+    
+  
+    <li><a href="IO/Compress/Bzip2.html">IO::Compress::Bzip2</a></li>
+    
+      - Write bzip2 files/buffers
+    
+  
+    <li><a href="IO/Compress/Deflate.html">IO::Compress::Deflate</a></li>
+    
+      - Write RFC 1950 files/buffers
+    
+  
+    <li><a href="IO/Compress/Gzip.html">IO::Compress::Gzip</a></li>
+    
+      - Write RFC 1952 files/buffers
+    
+  
+    <li><a href="IO/Compress/RawDeflate.html">IO::Compress::RawDeflate</a></li>
+    
+      - Write RFC 1951 files/buffers
+    
+  
+    <li><a href="IO/Compress/Zip.html">IO::Compress::Zip</a></li>
+    
+      - Write zip files/buffers
+    
+  
+    <li><a href="IO/Dir.html">IO::Dir</a></li>
+    
+      - supply object methods for directory handles
+    
+  
+    <li><a href="IO/File.html">IO::File</a></li>
+    
+      - supply object methods for filehandles
+    
+  
+    <li><a href="IO/Handle.html">IO::Handle</a></li>
+    
+      - supply object methods for I/O handles
+    
+  
+    <li><a href="IO/Pipe.html">IO::Pipe</a></li>
+    
+      - supply object methods for pipes
+    
+  
+    <li><a href="IO/Poll.html">IO::Poll</a></li>
+    
+      - Object interface to system poll call
+    
+  
+    <li><a href="IO/Seekable.html">IO::Seekable</a></li>
+    
+      - supply seek based methods for I/O objects
+    
+  
+    <li><a href="IO/Select.html">IO::Select</a></li>
+    
+      - OO interface to the select system call
+    
+  
+    <li><a href="IO/Socket.html">IO::Socket</a></li>
+    
+      - Object interface to socket communications
+    
+  
+    <li><a href="IO/Socket/INET.html">IO::Socket::INET</a></li>
+    
+      - Object interface for AF_INET domain sockets
+    
+  
+    <li><a href="IO/Socket/IP.html">IO::Socket::IP</a></li>
+    
+      - Family-neutral IP socket supporting both IPv4 and IPv6
+    
+  
+    <li><a href="IO/Socket/UNIX.html">IO::Socket::UNIX</a></li>
+    
+      - Object interface for AF_UNIX domain sockets
+    
+  
+    <li><a href="IO/Uncompress/AnyInflate.html">IO::Uncompress::AnyInflate</a></li>
+    
+      - Uncompress zlib-based (zip, gzip) file/buffer
+    
+  
+    <li><a href="IO/Uncompress/AnyUncompress.html">IO::Uncompress::AnyUncompress</a></li>
+    
+      - Uncompress gzip, zip, bzip2 or lzop file/buffer
+    
+  
+    <li><a href="IO/Uncompress/Base.html">IO::Uncompress::Base</a></li>
+    
+      - Base Class for IO::Uncompress modules 
+    
+  
+    <li><a href="IO/Uncompress/Bunzip2.html">IO::Uncompress::Bunzip2</a></li>
+    
+      - Read bzip2 files/buffers
+    
+  
+    <li><a href="IO/Uncompress/Gunzip.html">IO::Uncompress::Gunzip</a></li>
+    
+      - Read RFC 1952 files/buffers
+    
+  
+    <li><a href="IO/Uncompress/Inflate.html">IO::Uncompress::Inflate</a></li>
+    
+      - Read RFC 1950 files/buffers
+    
+  
+    <li><a href="IO/Uncompress/RawInflate.html">IO::Uncompress::RawInflate</a></li>
+    
+      - Read RFC 1951 files/buffers
+    
+  
+    <li><a href="IO/Uncompress/Unzip.html">IO::Uncompress::Unzip</a></li>
+    
+      - Read zip files/buffers
+    
+  
+    <li><a href="IO/Zlib.html">IO::Zlib</a></li>
+    
+      - IO:: style interface to Compress::Zlib
+    
+  
+    <li><a href="IPC/Cmd.html">IPC::Cmd</a></li>
+    
+      - finding and running system commands made easy
+    
+  
+    <li><a href="IPC/Msg.html">IPC::Msg</a></li>
+    
+      - SysV Msg IPC object class
+    
+  
+    <li><a href="IPC/Open2.html">IPC::Open2</a></li>
+    
+      - open a process for both reading and writing using open2()
+    
+  
+    <li><a href="IPC/Open3.html">IPC::Open3</a></li>
+    
+      - open a process for reading, writing, and error handling using open3()
+    
+  
+    <li><a href="IPC/Semaphore.html">IPC::Semaphore</a></li>
+    
+      - SysV Semaphore IPC object class
+    
+  
+    <li><a href="IPC/SharedMem.html">IPC::SharedMem</a></li>
+    
+      - SysV Shared Memory IPC object class
+    
+  
+    <li><a href="IPC/SysV.html">IPC::SysV</a></li>
+    
+      - System V IPC constants and system calls
+    
+  
+</ul>
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/4/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/4/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/4/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/4/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/4/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/4/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/4/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/4/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/4/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/4/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/4/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/4/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/4/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/4/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

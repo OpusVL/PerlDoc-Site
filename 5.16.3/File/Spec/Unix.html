@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="File::Spec::Unix - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>File::Spec::Unix - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.16.3/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.16.3/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.16.3/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.16.3/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.16.3/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.16.3/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.16.3/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.16.3/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.16.3/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.16.3/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.16.3/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.16.3/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.16.3/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.16.3/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.16.3/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../../index-modules-F.html">Core modules (F)</a> &gt;
+      
+    
+    File::Spec::Unix
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 16.3 documentation</h1>
+                  </div>
+                  <h1>File::Spec::Unix</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#METHODS">METHODS</a></li><li><a href="#COPYRIGHT">COPYRIGHT</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>File::Spec::Unix - File::Spec for Unix, base for other File::Spec modules</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<pre>
+ <a class="l_k" href="../../functions/require.html">require</a> <span class="w">File::Spec::Unix</span><span class="sc">;</span> <span class="c"># Done automatically by File::Spec</span></pre>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>Methods for manipulating file specifications.  Other File::Spec
+modules, such as File::Spec::Mac, inherit from File::Spec::Unix and
+override specific methods.</p>
+<a id="METHODS"></a><h2 class='h2' >METHODS</h2>
+<ul>
+<li><a id="canonpath()"></a><strong>canonpath()</strong>
+<p>No physical check on the filesystem, but a logical cleanup of a
+path. On UNIX eliminates successive slashes and successive "/.".</p>
+<pre>
+    <span class="i">$cpath</span> = <span class="w">File::Spec</span><span class="w">-&gt;canonpath</span><span class="s">(</span> <span class="i">$path</span> <span class="s">)</span> <span class="sc">;</span></pre>
+<p>Note that this does *not* collapse <i>x/../y</i> sections into <i>y</i>.  This
+is by design.  If <i>/foo</i> on your system is a symlink to <i>/bar/baz</i>,
+then <i>/foo/../quux</i> is actually <i>/bar/quux</i>, not <i>/quux</i> as a naive
+<i>../</i>-removal would give you.  If you want to do this kind of
+processing, you probably want <pre>
+<span class="w">Cwd</span></code>
+'s <pre>
+<span class="i">realpath</span><span class="s">(</span><span class="s">)</span></code>
+ function to
+actually traverse the filesystem cleaning up paths like this.</p>
+</li>
+<li><a id="catdir()"></a><strong>catdir()</strong>
+<p>Concatenate two or more directory names to form a complete path ending
+with a directory. But remove the trailing slash from the resulting
+string, because it doesn't look good, isn't necessary and confuses
+OS2. Of course, if this is the root directory, don't cut off the
+trailing slash :-)</p>
+</li>
+<li><a id="catfile"></a><strong>catfile</strong>
+<p>Concatenate one or more directory names and a filename to form a
+complete path ending with a filename</p>
+</li>
+<li><a id="curdir"></a><strong>curdir</strong>
+<p>Returns a string representation of the current directory.  "." on UNIX.</p>
+</li>
+<li><a id="devnull"></a><strong>devnull</strong>
+<p>Returns a string representation of the null device. "/dev/null" on UNIX.</p>
+</li>
+<li><a id="rootdir"></a><strong>rootdir</strong>
+<p>Returns a string representation of the root directory.  "/" on UNIX.</p>
+</li>
+<li><a id="tmpdir"></a><strong>tmpdir</strong>
+<p>Returns a string representation of the first writable directory from
+the following list or the current directory if none from the list are
+writable:</p>
+<pre>
+    <span class="i">$ENV</span>{<span class="w">TMPDIR</span>}
+    /<span class="w">tmp</span></pre>
+<p>If running under taint mode, and if $ENV{TMPDIR}
+is tainted, it is not used.</p>
+</li>
+<li><a id="updir"></a><strong>updir</strong>
+<p>Returns a string representation of the parent directory.  ".." on UNIX.</p>
+</li>
+<li><a id="no_upwards"></a><strong>no_upwards</strong>
+<p>Given a list of file names, strip out those that refer to a parent
+directory. (Does not strip symlinks, only '.', '..', and equivalents.)</p>
+</li>
+<li><a id="case_tolerant"></a><strong>case_tolerant</strong>
+<p>Returns a true or false value indicating, respectively, that alphabetic
+is not or is significant when comparing file specifications.</p>
+</li>
+<li><a id="file_name_is_absolute"></a><strong>file_name_is_absolute</strong>
+<p>Takes as argument a path and returns true if it is an absolute path.</p>
+<p>This does not consult the local filesystem on Unix, Win32, OS/2 or Mac 
+OS (Classic).  It does consult the working environment for VMS (see
+<a href="../../File/Spec/VMS.html#file_name_is_absolute">file_name_is_absolute in File::Spec::VMS</a>).</p>
+</li>
+<li><a id="path"></a><strong>path</strong>
+<p>Takes no argument, returns the environment variable PATH as an array.</p>
+</li>
+<li><a id="join"></a><strong>join</strong>
+<p>join is the same as catfile.</p>
+</li>
+<li><a id="splitpath"></a><strong>splitpath</strong>
+<pre>
+    <span class="s">(</span><span class="i">$volume</span><span class="cm">,</span><span class="i">$directories</span><span class="cm">,</span><span class="i">$file</span><span class="s">)</span> = <span class="w">File::Spec</span><span class="w">-&gt;splitpath</span><span class="s">(</span> <span class="i">$path</span> <span class="s">)</span><span class="sc">;</span>
+    <span class="s">(</span><span class="i">$volume</span><span class="cm">,</span><span class="i">$directories</span><span class="cm">,</span><span class="i">$file</span><span class="s">)</span> = <span class="w">File::Spec</span><span class="w">-&gt;splitpath</span><span class="s">(</span> <span class="i">$path</span><span class="cm">,</span>
+                                                          <span class="i">$no_file</span> <span class="s">)</span><span class="sc">;</span></pre>
+<p>Splits a path into volume, directory, and filename portions. On systems
+with no concept of volume, returns '' for volume.</p>
+<p>For systems with no syntax differentiating filenames from directories, 
+assumes that the last file is a path unless $no_file is true or a 
+trailing separator or /. or /.. is present. On Unix this means that $no_file
+true makes this return ( '', $path, '' ).</p>
+<p>The directory portion may or may not be returned with a trailing '/'.</p>
+<p>The results can be passed to <a href="#catpath()">catpath()</a> to get back a path equivalent to
+(usually identical to) the original path.</p>
+</li>
+<li><a id="splitdir"></a><strong>splitdir</strong>
+<p>The opposite of <a href="#catdir()">catdir()</a>.</p>
+<pre>
+    <span class="i">@dirs</span> = <span class="w">File::Spec</span><span class="w">-&gt;splitdir</span><span class="s">(</span> <span class="i">$directories</span> <span class="s">)</span><span class="sc">;</span></pre>
+<p>$directories must be only the directory portion of the path on systems 
+that have the concept of a volume or that have path syntax that differentiates
+files from directories.</p>
+<p>Unlike just splitting the directories on the separator, empty
+directory names (<pre>
+<span class="q">&#39;&#39;</span></code>
+) can be returned, because these are significant
+on some OSs.</p>
+<p>On Unix,</p>
+<pre>
+    <span class="w">File::Spec</span><span class="w">-&gt;splitdir</span><span class="s">(</span> <span class="q">&quot;/a/b//c/&quot;</span> <span class="s">)</span><span class="sc">;</span></pre>
+<p>Yields:</p>
+<pre>
+    <span class="s">(</span> <span class="q">&#39;&#39;</span><span class="cm">,</span> <span class="q">&#39;a&#39;</span><span class="cm">,</span> <span class="q">&#39;b&#39;</span><span class="cm">,</span> <span class="q">&#39;&#39;</span><span class="cm">,</span> <span class="q">&#39;c&#39;</span><span class="cm">,</span> <span class="q">&#39;&#39;</span> <span class="s">)</span></pre>
+</li>
+<li><a id="catpath()"></a><strong>catpath()</strong>
+<p>Takes volume, directory and file portions and returns an entire path. Under
+Unix, $volume is ignored, and directory and file are concatenated.  A '/' is
+inserted if needed (though if the directory portion doesn't start with
+'/' it is not added).  On other OSs, $volume is significant.</p>
+</li>
+<li><a id="abs2rel"></a><strong>abs2rel</strong>
+<p>Takes a destination path and an optional base path returns a relative path
+from the base path to the destination path:</p>
+<pre>
+    <span class="i">$rel_path</span> = <span class="w">File::Spec</span><span class="w">-&gt;abs2rel</span><span class="s">(</span> <span class="i">$path</span> <span class="s">)</span> <span class="sc">;</span>
+    <span class="i">$rel_path</span> = <span class="w">File::Spec</span><span class="w">-&gt;abs2rel</span><span class="s">(</span> <span class="i">$path</span><span class="cm">,</span> <span class="i">$base</span> <span class="s">)</span> <span class="sc">;</span></pre>
+<p>If $base is not present or '', then <a href="../../Cwd.html">cwd()</a> is used. If $base is
+relative, then it is converted to absolute form using
+<a href="#rel2abs()">rel2abs()</a>. This means that it is taken to be relative to
+<a href="../../Cwd.html">cwd()</a>.</p>
+<p>On systems that have a grammar that indicates filenames, this ignores the 
+$base filename. Otherwise all path components are assumed to be
+directories.</p>
+<p>If $path is relative, it is converted to absolute form using <a href="#rel2abs()">rel2abs()</a>.
+This means that it is taken to be relative to <a href="../../Cwd.html">cwd()</a>.</p>
+<p>No checks against the filesystem are made.  On VMS, there is
+interaction with the working environment, as logicals and
+macros are expanded.</p>
+<p>Based on code written by Shigio Yamaguchi.</p>
+</li>
+<li><a id="rel2abs()"></a><strong>rel2abs()</strong>
+<p>Converts a relative path to an absolute path.</p>
+<pre>
+    <span class="i">$abs_path</span> = <span class="w">File::Spec</span><span class="w">-&gt;rel2abs</span><span class="s">(</span> <span class="i">$path</span> <span class="s">)</span> <span class="sc">;</span>
+    <span class="i">$abs_path</span> = <span class="w">File::Spec</span><span class="w">-&gt;rel2abs</span><span class="s">(</span> <span class="i">$path</span><span class="cm">,</span> <span class="i">$base</span> <span class="s">)</span> <span class="sc">;</span></pre>
+<p>If $base is not present or '', then <a href="../../Cwd.html">cwd()</a> is used. If $base is
+relative, then it is converted to absolute form using
+<a href="#rel2abs()">rel2abs()</a>. This means that it is taken to be relative to
+<a href="../../Cwd.html">cwd()</a>.</p>
+<p>On systems that have a grammar that indicates filenames, this ignores
+the $base filename. Otherwise all path components are assumed to be
+directories.</p>
+<p>If $path is absolute, it is cleaned up and returned using <a href="#canonpath()">canonpath()</a>.</p>
+<p>No checks against the filesystem are made.  On VMS, there is
+interaction with the working environment, as logicals and
+macros are expanded.</p>
+<p>Based on code written by Shigio Yamaguchi.</p>
+</li>
+</ul>
+<a id="COPYRIGHT"></a><h2 class='h2' >COPYRIGHT</h2>
+<p>Copyright (c) 2004 by the Perl 5 Porters.  All rights reserved.</p>
+<p>This program is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.</p>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<p><a href="../../File/Spec.html">File::Spec</a></p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#METHODS">METHODS</a></li><li><a href="#COPYRIGHT">COPYRIGHT</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="do - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>do - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.22.1/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.22.1/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.22.1/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.22.1/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.22.1/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.22.1/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.22.1/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.22.1/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.22.1/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.22.1/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.22.1/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.22.1/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.22.1/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.22.1/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.22.1/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../index-language.html">Language reference</a> &gt;
+      
+        <a href="../index-functions.html">Functions</a> &gt;
+      
+    
+    do
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 22.1 documentation</h1>
+                  </div>
+                  <h1>do</h1>
+<div class="mod_az_list">
+  <a href="/5.22.1/index-functions.html">Perl functions A-Z</a> |
+  <a href="/5.22.1/index-functions-by-cat.html">Perl functions by category</a> |
+  <a href="/5.22.1/perlfunc.html">The 'perlfunc' manpage</a>
+</div>
+
+
+  <!--    -->
+<ul>
+<li><a id="do-BLOCK"></a><strong>do BLOCK</strong>
+<p> </p>
+<p>Not really a function.  Returns the value of the last command in the
+sequence of commands indicated by BLOCK.  When modified by the <code class="inline"><a class="l_k" href="../functions/while.html">while</a></code> or
+<code class="inline"><a class="l_k" href="../functions/until.html">until</a></code> loop modifier, executes the BLOCK once before testing the loop
+condition.  (On other statements the loop modifiers test the conditional
+first.)</p>
+<p><pre>
+<a class="l_k" href="../functions/do.html">do</a> <span class="w">BLOCK</span></code>
+ does <i>not</i> count as a loop, so the loop control statements
+<code class="inline"><a class="l_k" href="../functions/next.html">next</a></code>, <code class="inline"><a class="l_k" href="../functions/last.html">last</a></code>, or <code class="inline"><a class="l_k" href="../functions/redo.html">redo</a></code> cannot be used to leave or restart the block.
+See <a href="../perlsyn.html">perlsyn</a> for alternative strategies.</p>
+</li>
+</ul>
+<ul>
+<li><a id="do-EXPR"></a><strong>do EXPR</strong>
+<p></p>
+<p>Uses the value of EXPR as a filename and executes the contents of the
+file as a Perl script.</p>
+<pre>
+    <a class="l_k" href="../functions/do.html">do</a> <span class="q">&#39;stat.pl&#39;</span><span class="sc">;</span></pre>
+<p>is largely like</p>
+<pre>
+    <a class="l_k" href="../functions/eval.html">eval</a> <span class="q">`cat stat.pl`</span><span class="sc">;</span></pre>
+<p>except that it's more concise, runs no external processes, keeps track of
+the current
+filename for error messages, searches the <pre>
+<span class="i">@INC</span></code>
+ directories, and updates
+<pre>
+<span class="i">%INC</span></code>
+ if the file is found.  See <a href="../perlvar.html#%40INC">@INC in perlvar</a> and <a href="../perlvar.html#%25INC">%INC in perlvar</a> for
+these variables.  It also differs in that code evaluated with <pre>
+<a class="l_k" href="../functions/do.html">do</a> <span class="w">FILENAME</span></code>
+
+cannot see lexicals in the enclosing scope; <pre>
+<a class="l_k" href="../functions/eval.html">eval</a> <span class="w">STRING</span></code>
+ does.  It's the
+same, however, in that it does reparse the file every time you call it,
+so you probably don't want to do this inside a loop.</p>
+<p>If <code class="inline"><a class="l_k" href="../functions/do.html">do</a></code> can read the file but cannot compile it, it returns <code class="inline"><a class="l_k" href="../functions/undef.html">undef</a></code> and sets
+an error message in <pre>
+<span class="i">$@</span></code>
+.  If <code class="inline"><a class="l_k" href="../functions/do.html">do</a></code> cannot read the file, it returns undef
+and sets <pre>
+<span class="i">$!</span></code>
+ to the error.  Always check <pre>
+<span class="i">$@</span></code>
+ first, as compilation
+could fail in a way that also sets <pre>
+<span class="i">$!</span></code>
+.  If the file is successfully
+compiled, <code class="inline"><a class="l_k" href="../functions/do.html">do</a></code> returns the value of the last expression evaluated.</p>
+<p>Inclusion of library modules is better done with the
+<code class="inline"><a class="l_k" href="../functions/use.html">use</a></code> and <code class="inline"><a class="l_k" href="../functions/require.html">require</a></code> operators, which also do automatic error checking
+and raise an exception if there's a problem.</p>
+<p>You might like to use <code class="inline"><a class="l_k" href="../functions/do.html">do</a></code> to read in a program configuration
+file.  Manual error checking can be done this way:</p>
+<pre>
+    <span class="c"># read in config files: system first, then user</span>
+    <a class="l_k" href="../functions/for.html">for</a> <span class="i">$file</span> <span class="s">(</span><span class="q">&quot;/share/prog/defaults.rc&quot;</span><span class="cm">,</span>
+               <span class="q">&quot;$ENV{HOME}/.someprogrc&quot;</span><span class="s">)</span>
+    <span class="s">{</span>
+        <a class="l_k" href="../functions/unless.html">unless</a> <span class="s">(</span><span class="i">$return</span> = <a class="l_k" href="../functions/do.html">do</a> <span class="i">$file</span><span class="s">)</span> <span class="s">{</span>
+            <a class="l_k" href="../functions/warn.html">warn</a> <span class="q">&quot;couldn&#39;t parse $file: $@&quot;</span> <a class="l_k" href="../functions/if.html">if</a> <span class="i">$@</span><span class="sc">;</span>
+            <a class="l_k" href="../functions/warn.html">warn</a> <span class="q">&quot;couldn&#39;t do $file: $!&quot;</span>    <a class="l_k" href="../functions/unless.html">unless</a> <a class="l_k" href="../functions/defined.html">defined</a> <span class="i">$return</span><span class="sc">;</span>
+            <a class="l_k" href="../functions/warn.html">warn</a> <span class="q">&quot;couldn&#39;t run $file&quot;</span>       <a class="l_k" href="../functions/unless.html">unless</a> <span class="i">$return</span><span class="sc">;</span>
+        <span class="s">}</span>
+    <span class="s">}</span></pre>
+</li>
+</ul>
+
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

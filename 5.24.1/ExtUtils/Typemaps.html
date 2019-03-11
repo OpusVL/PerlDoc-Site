@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ExtUtils::Typemaps - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>ExtUtils::Typemaps - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.24.1/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.24.1/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.24.1/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.24.1/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.24.1/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.24.1/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.24.1/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.24.1/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.24.1/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.24.1/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.24.1/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.24.1/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.24.1/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.24.1/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.24.1/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../index-modules-E.html">Core modules (E)</a> &gt;
+      
+    
+    ExtUtils::Typemaps
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 24.1 documentation</h1>
+                  </div>
+                  <h1>ExtUtils::Typemaps</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#METHODS">METHODS</a></li><ul><li><a href="#new">new</a></li><li><a href="#file">file</a></li><li><a href="#add_typemap">add_typemap</a></li><li><a href="#add_inputmap">add_inputmap</a></li><li><a href="#add_outputmap">add_outputmap</a></li><li><a href="#add_string">add_string</a></li><li><a href="#remove_typemap">remove_typemap</a></li><li><a href="#remove_inputmap">remove_inputmap</a></li><li><a href="#remove_inputmap">remove_inputmap</a></li><li><a href="#get_typemap">get_typemap</a></li><li><a href="#get_inputmap">get_inputmap</a></li><li><a href="#get_outputmap">get_outputmap</a></li><li><a href="#write">write</a></li><li><a href="#as_string">as_string</a></li><li><a href="#as_embedded_typemap">as_embedded_typemap</a></li><li><a href="#merge">merge</a></li><li><a href="#is_empty">is_empty</a></li><li><a href="#list_mapped_ctypes">list_mapped_ctypes</a></li><li><a href="#_get_typemap_hash">_get_typemap_hash</a></li><li><a href="#_get_inputmap_hash">_get_inputmap_hash</a></li><li><a href="#_get_outputmap_hash">_get_outputmap_hash</a></li><li><a href="#_get_prototype_hash">_get_prototype_hash</a></li><li><a href="#clone">clone</a></li><li><a href="#tidy_type">tidy_type</a></li></ul><li><a href="#CAVEATS">CAVEATS</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#COPYRIGHT-%26-LICENSE">COPYRIGHT & LICENSE</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>ExtUtils::Typemaps - Read/Write/Modify Perl/XS typemap files</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<pre>
+  <span class="c"># read/create file</span>
+  <a class="l_k" href="../functions/my.html">my</a> <span class="i">$typemap</span> = <span class="w">ExtUtils::Typemaps</span><span class="w">-&gt;new</span><span class="s">(</span><span class="w">file</span> <span class="cm">=&gt;</span> <span class="q">&#39;typemap&#39;</span><span class="s">)</span><span class="sc">;</span>
+  <span class="c"># alternatively create an in-memory typemap</span>
+  <span class="c"># $typemap = ExtUtils::Typemaps-&gt;new();</span>
+  <span class="c"># alternatively create an in-memory typemap by parsing a string</span>
+  <span class="c"># $typemap = ExtUtils::Typemaps-&gt;new(string =&gt; $sometypemap);</span>
+  
+  <span class="c"># add a mapping</span>
+  <span class="i">$typemap</span><span class="i">-&gt;add_typemap</span><span class="s">(</span><span class="w">ctype</span> <span class="cm">=&gt;</span> <span class="q">&#39;NV&#39;</span><span class="cm">,</span> <span class="w">xstype</span> <span class="cm">=&gt;</span> <span class="q">&#39;T_NV&#39;</span><span class="s">)</span><span class="sc">;</span>
+  <span class="i">$typemap</span><span class="i">-&gt;add_inputmap</span><span class="s">(</span>
+     <span class="w">xstype</span> <span class="cm">=&gt;</span> <span class="q">&#39;T_NV&#39;</span><span class="cm">,</span> <span class="w">code</span> <span class="cm">=&gt;</span> <span class="q">&#39;$var = ($type)SvNV($arg);&#39;</span>
+  <span class="s">)</span><span class="sc">;</span>
+  <span class="i">$typemap</span><span class="i">-&gt;add_outputmap</span><span class="s">(</span>
+     <span class="w">xstype</span> <span class="cm">=&gt;</span> <span class="q">&#39;T_NV&#39;</span><span class="cm">,</span> <span class="w">code</span> <span class="cm">=&gt;</span> <span class="q">&#39;sv_setnv($arg, (NV)$var);&#39;</span>
+  <span class="s">)</span><span class="sc">;</span>
+  <span class="i">$typemap</span><span class="i">-&gt;add_string</span><span class="s">(</span><span class="w">string</span> <span class="cm">=&gt;</span> <span class="i">$typemapstring</span><span class="s">)</span><span class="sc">;</span>
+                                           <span class="c"># will be parsed and merged</span>
+  
+  <span class="c"># remove a mapping (same for remove_typemap and remove_outputmap...)</span>
+  <span class="i">$typemap</span><span class="i">-&gt;remove_inputmap</span><span class="s">(</span><span class="w">xstype</span> <span class="cm">=&gt;</span> <span class="q">&#39;SomeType&#39;</span><span class="s">)</span><span class="sc">;</span>
+  
+  <span class="c"># save a typemap to a file</span>
+  <span class="i">$typemap</span><span class="i">-&gt;write</span><span class="s">(</span><span class="w">file</span> <span class="cm">=&gt;</span> <span class="q">&#39;anotherfile.map&#39;</span><span class="s">)</span><span class="sc">;</span>
+  
+  <span class="c"># merge the other typemap into this one</span>
+  <span class="i">$typemap</span><span class="i">-&gt;merge</span><span class="s">(</span><span class="w">typemap</span> <span class="cm">=&gt;</span> <span class="i">$another_typemap</span><span class="s">)</span><span class="sc">;</span></pre>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>This module can read, modify, create and write Perl XS typemap files. If you don't know
+what a typemap is, please confer the <a href="../perlxstut.html">perlxstut</a> and <a href="../perlxs.html">perlxs</a> manuals.</p>
+<p>The module is not entirely round-trip safe: For example it currently simply strips all comments.
+The order of entries in the maps is, however, preserved.</p>
+<p>We check for duplicate entries in the typemap, but do not check for missing
+<pre>
+<span class="w">TYPEMAP</span></code>
+ entries for <pre>
+<span class="w">INPUTMAP</span></code>
+ or <pre>
+<span class="w">OUTPUTMAP</span></code>
+ entries since these might be hidden
+in a different typemap.</p>
+<a id="METHODS"></a><h2 class='h2' >METHODS</h2>
+<a id="new"></a><h3 class='h3' >new</h3>
+<p>Returns a new typemap object. Takes an optional <pre>
+<span class="w">file</span></code>
+ parameter.
+If set, the given file will be read. If the file doesn't exist, an empty typemap
+is returned.</p>
+<p>Alternatively, if the <pre>
+<span class="w">string</span></code>
+ parameter is given, the supplied
+string will be parsed instead of a file.</p>
+<a id="file"></a><h3 class='h3' >file</h3>
+<p>Get/set the file that the typemap is written to when the
+<code class="inline"><a class="l_k" href="../functions/write.html">write</a></code> method is called.</p>
+<a id="add_typemap"></a><h3 class='h3' >add_typemap</h3>
+<p>Add a <pre>
+<span class="w">TYPEMAP</span></code>
+ entry to the typemap.</p>
+<p>Required named arguments: The <pre>
+<span class="w">ctype</span></code>
+ (e.g. <pre>
+<span class="w">ctype</span> <span class="cm">=&gt;</span> <span class="q">&#39;double&#39;</span></code>
+)
+and the <pre>
+<span class="w">xstype</span></code>
+ (e.g. <pre>
+<span class="w">xstype</span> <span class="cm">=&gt;</span> <span class="q">&#39;T_NV&#39;</span></code>
+).</p>
+<p>Optional named arguments: <pre>
+<span class="w">replace</span> <span class="cm">=&gt;</span> <span class="n">1</span></code>
+ forces removal/replacement of
+existing <pre>
+<span class="w">TYPEMAP</span></code>
+ entries of the same <pre>
+<span class="w">ctype</span></code>
+. <pre>
+<span class="w">skip</span> <span class="cm">=&gt;</span> <span class="n">1</span></code>
+
+triggers a <i>"first come first serve"</i> logic by which new entries that conflict
+with existing entries are silently ignored.</p>
+<p>As an alternative to the named parameters usage, you may pass in
+an <pre>
+<span class="w">ExtUtils::Typemaps::Type</span></code>
+ object as first argument, a copy of which will be
+added to the typemap. In that case, only the <pre>
+<span class="w">replace</span></code>
+ or <pre>
+<span class="w">skip</span></code>
+ named parameters
+may be used after the object. Example:</p>
+<pre>
+  <span class="i">$map</span><span class="i">-&gt;add_typemap</span><span class="s">(</span><span class="i">$type_obj</span><span class="cm">,</span> <span class="w">replace</span> <span class="cm">=&gt;</span> <span class="n">1</span><span class="s">)</span><span class="sc">;</span></pre>
+<a id="add_inputmap"></a><h3 class='h3' >add_inputmap</h3>
+<p>Add an <pre>
+<span class="w">INPUT</span></code>
+ entry to the typemap.</p>
+<p>Required named arguments:
+The <pre>
+<span class="w">xstype</span></code>
+ (e.g. <pre>
+<span class="w">xstype</span> <span class="cm">=&gt;</span> <span class="q">&#39;T_NV&#39;</span></code>
+)
+and the <pre>
+<span class="w">code</span></code>
+ to associate with it for input.</p>
+<p>Optional named arguments: <pre>
+<span class="w">replace</span> <span class="cm">=&gt;</span> <span class="n">1</span></code>
+ forces removal/replacement of
+existing <pre>
+<span class="w">INPUT</span></code>
+ entries of the same <pre>
+<span class="w">xstype</span></code>
+. <pre>
+<span class="w">skip</span> <span class="cm">=&gt;</span> <span class="n">1</span></code>
+
+triggers a <i>"first come first serve"</i> logic by which new entries that conflict
+with existing entries are silently ignored.</p>
+<p>As an alternative to the named parameters usage, you may pass in
+an <pre>
+<span class="w">ExtUtils::Typemaps::InputMap</span></code>
+ object as first argument, a copy of which will be
+added to the typemap. In that case, only the <pre>
+<span class="w">replace</span></code>
+ or <pre>
+<span class="w">skip</span></code>
+ named parameters
+may be used after the object. Example:</p>
+<pre>
+  <span class="i">$map</span><span class="i">-&gt;add_inputmap</span><span class="s">(</span><span class="i">$type_obj</span><span class="cm">,</span> <span class="w">replace</span> <span class="cm">=&gt;</span> <span class="n">1</span><span class="s">)</span><span class="sc">;</span></pre>
+<a id="add_outputmap"></a><h3 class='h3' >add_outputmap</h3>
+<p>Add an <pre>
+<span class="w">OUTPUT</span></code>
+ entry to the typemap.
+Works exactly the same as <pre>
+<span class="w">add_inputmap</span></code>
+.</p>
+<a id="add_string"></a><h3 class='h3' >add_string</h3>
+<p>Parses a string as a typemap and merge it into the typemap object.</p>
+<p>Required named argument: <pre>
+<span class="w">string</span></code>
+ to specify the string to parse.</p>
+<a id="remove_typemap"></a><h3 class='h3' >remove_typemap</h3>
+<p>Removes a <pre>
+<span class="w">TYPEMAP</span></code>
+ entry from the typemap.</p>
+<p>Required named argument: <pre>
+<span class="w">ctype</span></code>
+ to specify the entry to remove from the typemap.</p>
+<p>Alternatively, you may pass a single <pre>
+<span class="w">ExtUtils::Typemaps::Type</span></code>
+ object.</p>
+<a id="remove_inputmap"></a><h3 class='h3' >remove_inputmap</h3>
+<p>Removes an <pre>
+<span class="w">INPUT</span></code>
+ entry from the typemap.</p>
+<p>Required named argument: <pre>
+<span class="w">xstype</span></code>
+ to specify the entry to remove from the typemap.</p>
+<p>Alternatively, you may pass a single <pre>
+<span class="w">ExtUtils::Typemaps::InputMap</span></code>
+ object.</p>
+<a id="remove_inputmap"></a><h3 class='h3' >remove_inputmap</h3>
+<p>Removes an <pre>
+<span class="w">OUTPUT</span></code>
+ entry from the typemap.</p>
+<p>Required named argument: <pre>
+<span class="w">xstype</span></code>
+ to specify the entry to remove from the typemap.</p>
+<p>Alternatively, you may pass a single <pre>
+<span class="w">ExtUtils::Typemaps::OutputMap</span></code>
+ object.</p>
+<a id="get_typemap"></a><h3 class='h3' >get_typemap</h3>
+<p>Fetches an entry of the TYPEMAP section of the typemap.</p>
+<p>Mandatory named arguments: The <pre>
+<span class="w">ctype</span></code>
+ of the entry.</p>
+<p>Returns the <pre>
+<span class="w">ExtUtils::Typemaps::Type</span></code>
+
+object for the entry if found.</p>
+<a id="get_inputmap"></a><h3 class='h3' >get_inputmap</h3>
+<p>Fetches an entry of the INPUT section of the
+typemap.</p>
+<p>Mandatory named arguments: The <pre>
+<span class="w">xstype</span></code>
+ of the
+entry or the <pre>
+<span class="w">ctype</span></code>
+ of the typemap that can be used to find
+the <pre>
+<span class="w">xstype</span></code>
+. To wit, the following pieces of code
+are equivalent:</p>
+<pre>
+  <a class="l_k" href="../functions/my.html">my</a> <span class="i">$type</span> = <span class="i">$typemap</span><span class="i">-&gt;get_typemap</span><span class="s">(</span><span class="w">ctype</span> <span class="cm">=&gt;</span> <span class="i">$ctype</span><span class="s">)</span>
+  <a class="l_k" href="../functions/my.html">my</a> <span class="i">$input_map</span> = <span class="i">$typemap</span><span class="i">-&gt;get_inputmap</span><span class="s">(</span><span class="w">xstype</span> <span class="cm">=&gt;</span> <span class="i">$type</span><span class="i">-&gt;xstype</span><span class="s">)</span><span class="sc">;</span>
+
+  <a class="l_k" href="../functions/my.html">my</a> <span class="i">$input_map</span> = <span class="i">$typemap</span><span class="i">-&gt;get_inputmap</span><span class="s">(</span><span class="w">ctype</span> <span class="cm">=&gt;</span> <span class="i">$ctype</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>Returns the <pre>
+<span class="w">ExtUtils::Typemaps::InputMap</span></code>
+
+object for the entry if found.</p>
+<a id="get_outputmap"></a><h3 class='h3' >get_outputmap</h3>
+<p>Fetches an entry of the OUTPUT section of the
+typemap.</p>
+<p>Mandatory named arguments: The <pre>
+<span class="w">xstype</span></code>
+ of the
+entry or the <pre>
+<span class="w">ctype</span></code>
+ of the typemap that can be used to
+resolve the <pre>
+<span class="w">xstype</span></code>
+. (See above for an example.)</p>
+<p>Returns the <pre>
+<span class="w">ExtUtils::Typemaps::InputMap</span></code>
+
+object for the entry if found.</p>
+<a id="write"></a><h3 class='h3' >write</h3>
+<p>Write the typemap to a file. Optionally takes a <pre>
+<span class="w">file</span></code>
+ argument. If given, the
+typemap will be written to the specified file. If not, the typemap is written
+to the currently stored file name (see <pre>
+<span class="i">-&gt;file</span></code>
+ above, this defaults to the file
+it was read from if any).</p>
+<a id="as_string"></a><h3 class='h3' >as_string</h3>
+<p>Generates and returns the string form of the typemap.</p>
+<a id="as_embedded_typemap"></a><h3 class='h3' >as_embedded_typemap</h3>
+<p>Generates and returns the string form of the typemap with the
+appropriate prefix around it for verbatim inclusion into an
+XS file as an embedded typemap. This will return a string like</p>
+<div class="verbatim"><ol><li>  TYPEMAP: &lt;&lt;END_OF_TYPEMAP</li><li>  ... typemap here (see as_string) ...</li><li>  END_OF_TYPEMAP</li></ol></div><p>The method takes care not to use a HERE-doc end marker that
+appears in the typemap string itself.</p>
+<a id="merge"></a><h3 class='h3' >merge</h3>
+<p>Merges a given typemap into the object. Note that a failed merge
+operation leaves the object in an inconsistent state so clone it if necessary.</p>
+<p>Mandatory named arguments: Either <pre>
+<span class="w">typemap</span> <span class="cm">=&gt;</span> <span class="i">$another_typemap_obj</span></code>
+
+or <pre>
+<span class="w">file</span> <span class="cm">=&gt;</span> <span class="i">$path_to_typemap_file</span></code>
+ but not both.</p>
+<p>Optional arguments: <pre>
+<span class="w">replace</span> <span class="cm">=&gt;</span> <span class="n">1</span></code>
+ to force replacement
+of existing typemap entries without warning or <pre>
+<span class="w">skip</span> <span class="cm">=&gt;</span> <span class="n">1</span></code>
+
+to skip entries that exist already in the typemap.</p>
+<a id="is_empty"></a><h3 class='h3' >is_empty</h3>
+<p>Returns a bool indicating whether this typemap is entirely empty.</p>
+<a id="list_mapped_ctypes"></a><h3 class='h3' >list_mapped_ctypes</h3>
+<p>Returns a list of the C types that are mappable by
+this typemap object.</p>
+<a id="_get_typemap_hash"></a><h3 class='h3' >_get_typemap_hash</h3>
+<p>Returns a hash mapping the C types to the XS types:</p>
+<pre>
+  <span class="s">{</span>
+    <span class="q">&#39;char **&#39;</span> <span class="cm">=&gt;</span> <span class="q">&#39;T_PACKEDARRAY&#39;</span><span class="cm">,</span>
+    <span class="q">&#39;bool_t&#39;</span> <span class="cm">=&gt;</span> <span class="q">&#39;T_IV&#39;</span><span class="cm">,</span>
+    <span class="q">&#39;AV *&#39;</span> <span class="cm">=&gt;</span> <span class="q">&#39;T_AVREF&#39;</span><span class="cm">,</span>
+    <span class="q">&#39;InputStream&#39;</span> <span class="cm">=&gt;</span> <span class="q">&#39;T_IN&#39;</span><span class="cm">,</span>
+    <span class="q">&#39;double&#39;</span> <span class="cm">=&gt;</span> <span class="q">&#39;T_DOUBLE&#39;</span><span class="cm">,</span>
+    <span class="c"># ...</span>
+  <span class="s">}</span></pre>
+<p>This is documented because it is used by <pre>
+<span class="w">ExtUtils::ParseXS</span></code>
+,
+but it's not intended for general consumption. May be removed
+at any time.</p>
+<a id="_get_inputmap_hash"></a><h3 class='h3' >_get_inputmap_hash</h3>
+<p>Returns a hash mapping the XS types (identifiers) to the
+corresponding INPUT code:</p>
+<div class="verbatim"><ol><li>  {</li><li>    'T_CALLBACK' =&gt; '   $var = make_perl_cb_$type($arg)</li><li>  ',</li><li>    'T_OUT' =&gt; '    $var = IoOFP(sv_2io($arg))</li><li>  ',</li><li>    'T_REF_IV_PTR' =&gt; '   if (sv_isa($arg, \\"${ntype}\\")) {</li><li>    # ...</li><li>  }</li></ol></div><p>This is documented because it is used by <pre>
+<span class="w">ExtUtils::ParseXS</span></code>
+,
+but it's not intended for general consumption. May be removed
+at any time.</p>
+<a id="_get_outputmap_hash"></a><h3 class='h3' >_get_outputmap_hash</h3>
+<p>Returns a hash mapping the XS types (identifiers) to the
+corresponding OUTPUT code:</p>
+<pre>
+  <span class="s">{</span>
+    <span class="q">&#39;T_CALLBACK&#39;</span> <span class="cm">=&gt;</span> <span class="q">&#39;   sv_setpvn($arg, $var.context.value().chp(),</span>
+                <span class="q">                $var.context.value().size());</span>
+  <span class="q">  &#39;</span><span class="cm">,</span>
+    <span class="q">&#39;T_OUT&#39;</span> <span class="cm">=&gt;</span> <span class="q">&#39;    {</span>
+            <span class="q">            GV *gv = newGVgen(&quot;$Package&quot;);</span>
+            <span class="q">            if ( do_open(gv, &quot;+&gt;&amp;&quot;, 3, FALSE, 0, 0, $var) )</span>
+                <span class="q">                sv_setsv(</span>
+                  <span class="q">                  $arg,</span>
+                  <span class="q">                  sv_bless(newRV((SV*)gv), gv_stashpv(&quot;$Package&quot;,1))</span>
+                <span class="q">                );</span>
+            <span class="q">            else</span>
+                <span class="q">                $arg = &amp;PL_sv_undef;</span>
+         <span class="q">         }</span>
+  <span class="q">  &#39;</span><span class="cm">,</span>
+    <span class="c"># ...</span>
+  <span class="s">}</span></pre>
+<p>This is documented because it is used by <pre>
+<span class="w">ExtUtils::ParseXS</span></code>
+,
+but it's not intended for general consumption. May be removed
+at any time.</p>
+<a id="_get_prototype_hash"></a><h3 class='h3' >_get_prototype_hash</h3>
+<p>Returns a hash mapping the C types of the typemap to their
+corresponding prototypes.</p>
+<pre>
+  <span class="s">{</span>
+    <span class="q">&#39;char **&#39;</span> <span class="cm">=&gt;</span> <span class="q">&#39;$&#39;</span><span class="cm">,</span>
+    <span class="q">&#39;bool_t&#39;</span> <span class="cm">=&gt;</span> <span class="q">&#39;$&#39;</span><span class="cm">,</span>
+    <span class="q">&#39;AV *&#39;</span> <span class="cm">=&gt;</span> <span class="q">&#39;$&#39;</span><span class="cm">,</span>
+    <span class="q">&#39;InputStream&#39;</span> <span class="cm">=&gt;</span> <span class="q">&#39;$&#39;</span><span class="cm">,</span>
+    <span class="q">&#39;double&#39;</span> <span class="cm">=&gt;</span> <span class="q">&#39;$&#39;</span><span class="cm">,</span>
+    <span class="c"># ...</span>
+  <span class="s">}</span></pre>
+<p>This is documented because it is used by <pre>
+<span class="w">ExtUtils::ParseXS</span></code>
+,
+but it's not intended for general consumption. May be removed
+at any time.</p>
+<a id="clone"></a><h3 class='h3' >clone</h3>
+<p>Creates and returns a clone of a full typemaps object.</p>
+<p>Takes named parameters: If <pre>
+<span class="w">shallow</span></code>
+ is true,
+the clone will share the actual individual type/input/outputmap objects,
+but not share their storage. Use with caution. Without <pre>
+<span class="w">shallow</span></code>
+,
+the clone will be fully independent.</p>
+<a id="tidy_type"></a><h3 class='h3' >tidy_type</h3>
+<p>Function to (heuristically) canonicalize a C type. Works to some
+degree with C++ types.</p>
+<pre>
+    <span class="i">$halfway_canonical_type</span> = <span class="i">tidy_type</span><span class="s">(</span><span class="i">$ctype</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>Moved from <pre>
+<span class="w">ExtUtils::ParseXS</span></code>
+.</p>
+<a id="CAVEATS"></a><h2 class='h2' >CAVEATS</h2>
+<p>Inherits some evil code from <pre>
+<span class="w">ExtUtils::ParseXS</span></code>
+.</p>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<p>The parser is heavily inspired from the one in <a href="../ExtUtils/ParseXS.html">ExtUtils::ParseXS</a>.</p>
+<p>For details on typemaps: <a href="../perlxstut.html">perlxstut</a>, <a href="../perlxs.html">perlxs</a>.</p>
+<a id="AUTHOR"></a><h2 class='h2' >AUTHOR</h2>
+<p>Steffen Mueller <code class="inline">&lt;smueller@cpan.org</code>&gt;</p>
+<a id="COPYRIGHT-%26-LICENSE"></a><h2 class='h2' >COPYRIGHT &amp; LICENSE</h2>
+<p>Copyright 2009, 2010, 2011, 2012, 2013 Steffen Mueller</p>
+<p>This program is free software; you can redistribute it and/or
+modify it under the same terms as Perl itself.</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#METHODS">METHODS</a></li><ul><li><a href="#new">new</a></li><li><a href="#file">file</a></li><li><a href="#add_typemap">add_typemap</a></li><li><a href="#add_inputmap">add_inputmap</a></li><li><a href="#add_outputmap">add_outputmap</a></li><li><a href="#add_string">add_string</a></li><li><a href="#remove_typemap">remove_typemap</a></li><li><a href="#remove_inputmap">remove_inputmap</a></li><li><a href="#remove_inputmap">remove_inputmap</a></li><li><a href="#get_typemap">get_typemap</a></li><li><a href="#get_inputmap">get_inputmap</a></li><li><a href="#get_outputmap">get_outputmap</a></li><li><a href="#write">write</a></li><li><a href="#as_string">as_string</a></li><li><a href="#as_embedded_typemap">as_embedded_typemap</a></li><li><a href="#merge">merge</a></li><li><a href="#is_empty">is_empty</a></li><li><a href="#list_mapped_ctypes">list_mapped_ctypes</a></li><li><a href="#_get_typemap_hash">_get_typemap_hash</a></li><li><a href="#_get_inputmap_hash">_get_inputmap_hash</a></li><li><a href="#_get_outputmap_hash">_get_outputmap_hash</a></li><li><a href="#_get_prototype_hash">_get_prototype_hash</a></li><li><a href="#clone">clone</a></li><li><a href="#tidy_type">tidy_type</a></li></ul><li><a href="#CAVEATS">CAVEATS</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#COPYRIGHT-%26-LICENSE">COPYRIGHT & LICENSE</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

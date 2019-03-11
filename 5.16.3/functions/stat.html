@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="stat - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>stat - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.16.3/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.16.3/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.16.3/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.16.3/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.16.3/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.16.3/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.16.3/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.16.3/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.16.3/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.16.3/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.16.3/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.16.3/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.16.3/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.16.3/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.16.3/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../index-language.html">Language reference</a> &gt;
+      
+        <a href="../index-functions.html">Functions</a> &gt;
+      
+    
+    stat
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 16.3 documentation</h1>
+                  </div>
+                  <h1>stat</h1>
+<div class="mod_az_list">
+  <a href="/5.16.3/index-functions.html">Perl functions A-Z</a> |
+  <a href="/5.16.3/index-functions-by-cat.html">Perl functions by category</a> |
+  <a href="/5.16.3/perlfunc.html">The 'perlfunc' manpage</a>
+</div>
+
+
+  <!--    -->
+<ul>
+<li><a id="stat-FILEHANDLE"></a><strong>stat FILEHANDLE</strong>
+<p>  </p>
+</li>
+</ul>
+<ul>
+<li><a id="stat-EXPR"></a><strong>stat EXPR</strong>
+</li>
+<li><a id="stat-DIRHANDLE"></a><strong>stat DIRHANDLE</strong>
+</li>
+<li><a id="stat"></a><strong>stat</strong>
+<p>Returns a 13-element list giving the status info for a file, either
+the file opened via FILEHANDLE or DIRHANDLE, or named by EXPR.  If EXPR is 
+omitted, it stats <pre>
+<span class="i">$_</span></code>
+ (not <pre>
+<span class="w">_</span></code>
+!).  Returns the empty list if <code class="inline"><a class="l_k" href="../functions/stat.html">stat</a></code> fails.  Typically
+used as follows:</p>
+<pre>
+    <span class="s">(</span><span class="i">$dev</span><span class="cm">,</span><span class="i">$ino</span><span class="cm">,</span><span class="i">$mode</span><span class="cm">,</span><span class="i">$nlink</span><span class="cm">,</span><span class="i">$uid</span><span class="cm">,</span><span class="i">$gid</span><span class="cm">,</span><span class="i">$rdev</span><span class="cm">,</span><span class="i">$size</span><span class="cm">,</span>
+       <span class="i">$atime</span><span class="cm">,</span><span class="i">$mtime</span><span class="cm">,</span><span class="i">$ctime</span><span class="cm">,</span><span class="i">$blksize</span><span class="cm">,</span><span class="i">$blocks</span><span class="s">)</span>
+           = <a class="l_k" href="../functions/stat.html">stat</a><span class="s">(</span><span class="i">$filename</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>Not all fields are supported on all filesystem types.  Here are the
+meanings of the fields:</p>
+<div class="verbatim"><ol><li>  0 dev      device number of filesystem</li><li>  1 ino      inode number</li><li>  2 mode     file mode  (type and permissions)</li><li>  3 nlink    number of (hard) links to the file</li><li>  4 uid      numeric user ID of file's owner</li><li>  5 gid      numeric group ID of file's owner</li><li>  6 rdev     the device identifier (special files only)</li><li>  7 size     total size of file, in bytes</li><li>  8 atime    last access time in seconds since the epoch</li><li>  9 mtime    last modify time in seconds since the epoch</li><li> 10 ctime    inode change time in seconds since the epoch (*)</li><li> 11 blksize  preferred block size for file system I/O</li><li> 12 blocks   actual number of blocks allocated</li></ol></div><p>(The epoch was at 00:00 January 1, 1970 GMT.)</p>
+<p>(*) Not all fields are supported on all filesystem types.  Notably, the
+ctime field is non-portable.  In particular, you cannot expect it to be a
+"creation time"; see <a href="../perlport.html#Files-and-Filesystems">Files and Filesystems in perlport</a> for details.</p>
+<p>If <code class="inline"><a class="l_k" href="../functions/stat.html">stat</a></code> is passed the special filehandle consisting of an underline, no
+stat is done, but the current contents of the stat structure from the
+last <code class="inline"><a class="l_k" href="../functions/stat.html">stat</a></code>, <code class="inline"><a class="l_k" href="../functions/lstat.html">lstat</a></code>, or filetest are returned.  Example:</p>
+<pre>
+    <a class="l_k" href="../functions/if.html">if</a> <span class="s">(</span>-x <span class="i">$file</span> &amp;&amp; <span class="s">(</span><span class="s">(</span><span class="i">$d</span><span class="s">)</span> = <a class="l_k" href="../functions/stat.html">stat</a><span class="s">(</span><span class="w">_</span><span class="s">)</span><span class="s">)</span> &amp;&amp; <span class="i">$d</span> &lt; <span class="n">0</span><span class="s">)</span> <span class="s">{</span>
+        <a class="l_k" href="../functions/print.html">print</a> <span class="q">&quot;$file is executable NFS file\n&quot;</span><span class="sc">;</span>
+    <span class="s">}</span></pre>
+<p>(This works on machines only for which the device number is negative
+under NFS.)</p>
+<p>Because the mode contains both the file type and its permissions, you
+should mask off the file type portion and (s)printf using a <pre>
+<span class="q">&quot;%o&quot;</span></code>
+
+if you want to see the real permissions.</p>
+<pre>
+    <span class="i">$mode</span> = <span class="s">(</span><a class="l_k" href="../functions/stat.html">stat</a><span class="s">(</span><span class="i">$filename</span><span class="s">)</span><span class="s">)</span>[<span class="n">2</span>]<span class="sc">;</span>
+    <a class="l_k" href="../functions/printf.html">printf</a> <span class="q">&quot;Permissions are %04o\n&quot;</span><span class="cm">,</span> <span class="i">$mode</span> &amp; <span class="n">07777</span><span class="sc">;</span></pre>
+<p>In scalar context, <code class="inline"><a class="l_k" href="../functions/stat.html">stat</a></code> returns a boolean value indicating success
+or failure, and, if successful, sets the information associated with
+the special filehandle <pre>
+<span class="w">_</span></code>
+.</p>
+<p>The <a href="../File/stat.html">File::stat</a> module provides a convenient, by-name access mechanism:</p>
+<pre>
+    <a class="l_k" href="../functions/use.html">use</a> <span class="w">File::stat</span><span class="sc">;</span>
+    <span class="i">$sb</span> = <a class="l_k" href="../functions/stat.html">stat</a><span class="s">(</span><span class="i">$filename</span><span class="s">)</span><span class="sc">;</span>
+    <a class="l_k" href="../functions/printf.html">printf</a> <span class="q">&quot;File is %s, size is %s, perm %04o, mtime %s\n&quot;</span><span class="cm">,</span>
+           <span class="i">$filename</span><span class="cm">,</span> <span class="i">$sb</span><span class="i">-&gt;size</span><span class="cm">,</span> <span class="i">$sb</span><span class="i">-&gt;mode</span> &amp; <span class="n">07777</span><span class="cm">,</span>
+           <a class="l_k" href="../functions/scalar.html">scalar</a> <a class="l_k" href="../functions/localtime.html">localtime</a> <span class="i">$sb</span><span class="i">-&gt;mtime</span><span class="sc">;</span></pre>
+<p>You can import symbolic mode constants (<pre>
+<span class="w">S_IF</span>*</code>
+) and functions
+(<pre>
+<span class="w">S_IS</span>*</code>
+) from the Fcntl module:</p>
+<pre>
+    <a class="l_k" href="../functions/use.html">use</a> <span class="w">Fcntl</span> <span class="q">&#39;:mode&#39;</span><span class="sc">;</span>
+
+    <span class="i">$mode</span> = <span class="s">(</span><a class="l_k" href="../functions/stat.html">stat</a><span class="s">(</span><span class="i">$filename</span><span class="s">)</span><span class="s">)</span>[<span class="n">2</span>]<span class="sc">;</span>
+
+    <span class="i">$user_rwx</span>      = <span class="s">(</span><span class="i">$mode</span> &amp; <span class="w">S_IRWXU</span><span class="s">)</span> &gt;&gt; <span class="n">6</span><span class="sc">;</span>
+    <span class="i">$group_read</span>    = <span class="s">(</span><span class="i">$mode</span> &amp; <span class="w">S_IRGRP</span><span class="s">)</span> &gt;&gt; <span class="n">3</span><span class="sc">;</span>
+    <span class="i">$other_execute</span> =  <span class="i">$mode</span> &amp; <span class="w">S_IXOTH</span><span class="sc">;</span>
+
+    <a class="l_k" href="../functions/printf.html">printf</a> <span class="q">&quot;Permissions are %04o\n&quot;</span><span class="cm">,</span> <span class="i">S_IMODE</span><span class="s">(</span><span class="i">$mode</span><span class="s">)</span><span class="cm">,</span> <span class="q">&quot;\n&quot;</span><span class="sc">;</span>
+
+    <span class="i">$is_setuid</span>     =  <span class="i">$mode</span> &amp; <span class="w">S_ISUID</span><span class="sc">;</span>
+    <span class="i">$is_directory</span>  =  <span class="i">S_ISDIR</span><span class="s">(</span><span class="i">$mode</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>You could write the last two using the <pre>
+-u</code>
+ and <pre>
+-d</code>
+ operators.
+Commonly available <pre>
+<span class="w">S_IF</span>*</code>
+ constants are:</p>
+<pre>
+    <span class="c"># Permissions: read, write, execute, for user, group, others.</span>
+
+    <span class="w">S_IRWXU</span> <span class="w">S_IRUSR</span> <span class="w">S_IWUSR</span> <span class="w">S_IXUSR</span>
+    <span class="w">S_IRWXG</span> <span class="w">S_IRGRP</span> <span class="w">S_IWGRP</span> <span class="w">S_IXGRP</span>
+    <span class="w">S_IRWXO</span> <span class="w">S_IROTH</span> <span class="w">S_IWOTH</span> <span class="w">S_IXOTH</span>
+
+    <span class="c"># Setuid/Setgid/Stickiness/SaveText.</span>
+    <span class="c"># Note that the exact meaning of these is system-dependent.</span>
+
+    <span class="w">S_ISUID</span> <span class="w">S_ISGID</span> <span class="w">S_ISVTX</span> <span class="w">S_ISTXT</span>
+
+    <span class="c"># File types.  Not all are necessarily available on</span>
+    <span class="c"># your system.</span>
+
+    <span class="w">S_IFREG</span> <span class="w">S_IFDIR</span> <span class="w">S_IFLNK</span> <span class="w">S_IFBLK</span> <span class="w">S_IFCHR</span>
+    <span class="w">S_IFIFO</span> <span class="w">S_IFSOCK</span> <span class="w">S_IFWHT</span> <span class="w">S_ENFMT</span>
+
+    <span class="c"># The following are compatibility aliases for S_IRUSR,</span>
+    <span class="c"># S_IWUSR, and S_IXUSR.</span>
+
+    <span class="w">S_IREAD</span> <span class="w">S_IWRITE</span> <span class="w">S_IEXEC</span></pre>
+<p>and the <pre>
+<span class="w">S_IF</span>*</code>
+ functions are</p>
+<div class="verbatim"><ol><li>    S_IMODE($mode)    the part of $mode containing the permission</li><li>                      bits and the setuid/setgid/sticky bits</li><li></li><li>    S_IFMT($mode)     the part of $mode containing the file type</li><li>                      which can be bit-anded with (for example)</li><li>                      S_IFREG or with the following functions</li><li></li><li>    # The operators -f, -d, -l, -b, -c, -p, and -S.</li><li></li><li>    S_ISREG($mode) S_ISDIR($mode) S_ISLNK($mode)</li><li>    S_ISBLK($mode) S_ISCHR($mode) S_ISFIFO($mode) S_ISSOCK($mode)</li><li></li><li>    # No direct -X operator counterpart, but for the first one</li><li>    # the -g operator is often equivalent.  The ENFMT stands for</li><li>    # record flocking enforcement, a platform-dependent feature.</li><li></li><li>    S_ISENFMT($mode) S_ISWHT($mode)</li></ol></div><p>See your native chmod(2) and stat(2) documentation for more details
+about the <pre>
+<span class="w">S_</span>*</code>
+ constants.  To get status info for a symbolic link
+instead of the target file behind the link, use the <code class="inline"><a class="l_k" href="../functions/lstat.html">lstat</a></code> function.</p>
+<p>Portability issues: <a href="../perlport.html#stat">stat in perlport</a>.</p>
+</li>
+</ul>
+
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

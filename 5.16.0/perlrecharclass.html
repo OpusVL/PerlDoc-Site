@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="perlrecharclass - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>perlrecharclass - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.16.0/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.16.0/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.16.0/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.16.0/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.16.0/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.16.0/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.16.0/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.16.0/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.16.0/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.16.0/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.16.0/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.16.0/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.16.0/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.16.0/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.16.0/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="index-language.html">Language reference</a> &gt;
+      
+    
+    perlrecharclass
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 16.0 documentation</h1>
+                  </div>
+                  <h1>perlrecharclass</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME
+</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><ul><li><a href="#The-dot">The dot</a></li><li><a href="#Backslash-sequences">Backslash sequences
+       
+    
+ </a></li><li><a href="#Bracketed-Character-Classes">Bracketed Character Classes</a></li></ul></ul><a id="NAME"></a><h2 class='h2' >NAME
+</h2>
+<p>perlrecharclass - Perl Regular Expression Character Classes</p>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>The top level documentation about Perl regular expressions
+is found in <a href="perlre.html">perlre</a>.</p>
+<p>This manual page discusses the syntax and use of character
+classes in Perl regular expressions.</p>
+<p>A character class is a way of denoting a set of characters
+in such a way that one character of the set is matched.
+It's important to remember that: matching a character class
+consumes exactly one character in the source string. (The source
+string is the string the regular expression is matched against.)</p>
+<p>There are three types of character classes in Perl regular
+expressions: the dot, backslash sequences, and the form enclosed in square
+brackets.  Keep in mind, though, that often the term "character class" is used
+to mean just the bracketed form.  Certainly, most Perl documentation does that.</p>
+<a id="The-dot"></a><h3 class='h3' >The dot</h3>
+<p>The dot (or period), <code class="inline">.</code> is probably the most used, and certainly
+the most well-known character class. By default, a dot matches any
+character, except for the newline. That default can be changed to
+add matching the newline by using the <i>single line</i> modifier: either
+for the entire regular expression with the <code class="inline">/s</code> modifier, or
+locally with <code class="inline">(?s)</code>.  (The experimental <pre>
+\<span class="w">N</span></code>
+ backslash sequence, described
+below, matches any character except newline without regard to the
+<i>single line</i> modifier.)</p>
+<p>Here are some examples:</p>
+<div class="verbatim"><ol><li> "a"  =~  /./       # Match</li><li> "."  =~  /./       # Match</li><li> ""   =~  /./       # No match (dot has to match a character)</li><li> "\n" =~  /./       # No match (dot does not match a newline)</li><li> "\n" =~  /./s      # Match (global 'single line' modifier)</li><li> "\n" =~  /(?s:.)/  # Match (local 'single line' modifier)</li><li> "ab" =~  /^.$/     # No match (dot matches one character)</li></ol></div><a id="Backslash-sequences"></a><h3 class='h3' >Backslash sequences
+       
+    
+ </h3>
+<p>A backslash sequence is a sequence of characters, the first one of which is a
+backslash.  Perl ascribes special meaning to many such sequences, and some of
+these are character classes.  That is, they match a single character each,
+provided that the character belongs to the specific set of characters defined
+by the sequence.</p>
+<p>Here's a list of the backslash sequences that are character classes.  They
+are discussed in more detail below.  (For the backslash sequences that aren't
+character classes, see <a href="perlrebackslash.html">perlrebackslash</a>.)</p>
+<div class="verbatim"><ol><li> \d             Match a decimal digit character.</li><li> \D             Match a non-decimal-digit character.</li><li> \w             Match a "word" character.</li><li> \W             Match a non-"word" character.</li><li> \s             Match a whitespace character.</li><li> \S             Match a non-whitespace character.</li><li> \h             Match a horizontal whitespace character.</li><li> \H             Match a character that isn't horizontal whitespace.</li><li> \v             Match a vertical whitespace character.</li><li> \V             Match a character that isn't vertical whitespace.</li><li> \N             Match a character that isn't a newline.  Experimental.</li><li> \pP, \p{Prop}  Match a character that has the given Unicode property.</li><li> \PP, \P{Prop}  Match a character that doesn't have the Unicode property</li></ol></div><a id="%5cN"></a><h4 class='h4' >\N</h4>
+<p><pre>
+\<span class="w">N</span></code>
+ is new in 5.12, and is experimental.  It, like the dot, matches any
+character that is not a newline. The difference is that <pre>
+\<span class="w">N</span></code>
+ is not influenced
+by the <i>single line</i> regular expression modifier (see <a href="#The-dot">The dot</a> above).  Note
+that the form <pre>
+\<span class="i">N</span><span class="s">{</span>...<span class="s">}</span></code>
+ may mean something completely different.  When the
+<pre>
+<span class="s">{</span>...<span class="s">}</span></code>
+ is a <a href="perlre.html#Quantifiers">quantifier</a>, it means to match a non-newline
+character that many times.  For example, <pre>
+\<span class="i">N</span><span class="s">{</span><span class="n">3</span><span class="s">}</span></code>
+ means to match 3
+non-newlines; <pre>
+\<span class="w">N</span><span class="s">{</span><span class="n">5</span><span class="cm">,</span><span class="s">}</span></code>
+ means to match 5 or more non-newlines.  But if <pre>
+<span class="s">{</span>...<span class="s">}</span></code>
+
+is not a legal quantifier, it is presumed to be a named character.  See
+<a href="charnames.html">charnames</a> for those.  For example, none of <pre>
+\<span class="i">N</span><span class="s">{</span><span class="w">COLON</span><span class="s">}</span></code>
+, <code class="inline">\N{4F}</code>, and
+<pre>
+\<span class="i">N</span><span class="s">{</span><span class="w">F4</span><span class="s">}</span></code>
+ contain legal quantifiers, so Perl will try to find characters whose
+names are respectively <pre>
+<span class="w">COLON</span></code>
+, <code class="inline">4F</code>, and <pre>
+<span class="w">F4</span></code>
+.</p>
+<a id="Digits"></a><h4 class='h4' >Digits</h4>
+<p><pre>
+\<span class="w">d</span></code>
+ matches a single character considered to be a decimal <i>digit</i>.
+If the <code class="inline">/a</code> regular expression modifier is in effect, it matches [0-9].
+Otherwise, it
+matches anything that is matched by <pre>
+\<span class="i">p</span><span class="s">{</span><span class="w">Digit</span><span class="s">}</span></code>
+, which includes [0-9].
+(An unlikely possible exception is that under locale matching rules, the
+current locale might not have [0-9] matched by <pre>
+\<span class="w">d</span></code>
+, and/or might match
+other characters whose code point is less than 256.  Such a locale
+definition would be in violation of the C language standard, but Perl
+doesn't currently assume anything in regard to this.)</p>
+<p>What this means is that unless the <code class="inline">/a</code> modifier is in effect <pre>
+\<span class="w">d</span></code>
+ not
+only matches the digits '0' - '9', but also Arabic, Devanagari, and
+digits from other languages.  This may cause some confusion, and some
+security issues.</p>
+<p>Some digits that <pre>
+\<span class="w">d</span></code>
+ matches look like some of the [0-9] ones, but
+have different values.  For example, BENGALI DIGIT FOUR (U+09EA) looks
+very much like an ASCII DIGIT EIGHT (U+0038).  An application that
+is expecting only the ASCII digits might be misled, or if the match is
+<pre>
+\<span class="w">d</span>+</code>
+, the matched string might contain a mixture of digits from
+different writing systems that look like they signify a number different
+than they actually do.  <a href="Unicode/UCD.html#num()">num() in Unicode::UCD</a> can
+be used to safely
+calculate the value, returning <code class="inline"><a class="l_k" href="functions/undef.html">undef</a></code> if the input string contains
+such a mixture.</p>
+<p>What <pre>
+\<span class="i">p</span><span class="s">{</span><span class="w">Digit</span><span class="s">}</span></code>
+ means (and hence <pre>
+\<span class="w">d</span></code>
+ except under the <code class="inline">/a</code>
+modifier) is <pre>
+\<span class="i">p</span><span class="s">{</span><span class="w">General_Category</span>=<span class="w">Decimal_Number</span><span class="s">}</span></code>
+, or synonymously,
+<pre>
+\<span class="i">p</span><span class="s">{</span><span class="w">General_Category</span>=<span class="w">Digit</span><span class="s">}</span></code>
+.  Starting with Unicode version 4.1, this
+is the same set of characters matched by <pre>
+\<span class="i">p</span><span class="s">{</span><span class="w">Numeric_Type</span>=<span class="w">Decimal</span><span class="s">}</span></code>
+.
+But Unicode also has a different property with a similar name,
+<pre>
+\<span class="i">p</span><span class="s">{</span><span class="w">Numeric_Type</span>=<span class="w">Digit</span><span class="s">}</span></code>
+, which matches a completely different set of
+characters.  These characters are things such as <pre>
+<span class="w">CIRCLED</span> <span class="w">DIGIT</span> <span class="w">ONE</span></code>
+
+or subscripts, or are from writing systems that lack all ten digits.</p>
+<p>The design intent is for <pre>
+\<span class="w">d</span></code>
+ to exactly match the set of characters
+that can safely be used with "normal" big-endian positional decimal
+syntax, where, for example 123 means one 'hundred', plus two 'tens',
+plus three 'ones'.  This positional notation does not necessarily apply
+to characters that match the other type of "digit",
+<pre>
+\<span class="i">p</span><span class="s">{</span><span class="w">Numeric_Type</span>=<span class="w">Digit</span><span class="s">}</span></code>
+, and so <pre>
+\<span class="w">d</span></code>
+ doesn't match them.</p>
+<p>The Tamil digits (U+0BE6 - U+0BEF) can also legally be
+used in old-style Tamil numbers in which they would appear no more than
+one in a row, separated by characters that mean "times 10", "times 100",
+etc.  (See <a href="http://www.unicode.org/notes/tn21">http://www.unicode.org/notes/tn21</a>.)</p>
+<p>Any character not matched by <pre>
+\<span class="w">d</span></code>
+ is matched by <pre>
+\<span class="w">D</span></code>
+.</p>
+<a id="Word-characters"></a><h4 class='h4' >Word characters</h4>
+<p>A <pre>
+\<span class="w">w</span></code>
+ matches a single alphanumeric character (an alphabetic character, or a
+decimal digit) or a connecting punctuation character, such as an
+underscore ("_").  It does not match a whole word.  To match a whole
+word, use <pre>
+\<span class="w">w</span>+</code>
+.  This isn't the same thing as matching an English word, but
+in the ASCII range it is the same as a string of Perl-identifier
+characters.</p>
+<ul>
+<li><a id="If-the-%2fa-modifier-is-in-effect-..."></a><strong>If the <code class="inline">/a</code> modifier is in effect ...</strong>
+<p><pre>
+\<span class="w">w</span></code>
+ matches the 63 characters [a-zA-Z0-9_].</p>
+</li>
+<li><a id="otherwise-..."></a><strong>otherwise ...</strong>
+<ul>
+<li><a id="For-code-points-above-255-..."></a><strong>For code points above 255 ...</strong>
+<p><pre>
+\<span class="w">w</span></code>
+ matches the same as <pre>
+\<span class="i">p</span><span class="s">{</span><span class="w">Word</span><span class="s">}</span></code>
+ matches in this range.  That is,
+it matches Thai letters, Greek letters, etc.  This includes connector
+punctuation (like the underscore) which connect two words together, or
+diacritics, such as a <pre>
+<span class="w">COMBINING</span> <span class="w">TILDE</span></code>
+ and the modifier letters, which
+are generally used to add auxiliary markings to letters.</p>
+</li>
+<li><a id="For-code-points-below-256-..."></a><strong>For code points below 256 ...</strong>
+<ul>
+<li><a id="if-locale-rules-are-in-effect-..."></a><strong>if locale rules are in effect ...</strong>
+<p><pre>
+\<span class="w">w</span></code>
+ matches the platform's native underscore character plus whatever
+the locale considers to be alphanumeric.</p>
+</li>
+<li><a id="if-Unicode-rules-are-in-effect-or-if-on-an-EBCDIC-platform-..."></a><strong>if Unicode rules are in effect or if on an EBCDIC platform ...</strong>
+<p><pre>
+\<span class="w">w</span></code>
+ matches exactly what <pre>
+\<span class="i">p</span><span class="s">{</span><span class="w">Word</span><span class="s">}</span></code>
+ matches.</p>
+</li>
+<li><a id="otherwise-..."></a><strong>otherwise ...</strong>
+<p><pre>
+\<span class="w">w</span></code>
+ matches [a-zA-Z0-9_].</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Which rules apply are determined as described in <a href="perlre.html#Which-character-set-modifier-is-in-effect%3f">Which character set modifier is in effect? in perlre</a>.</p>
+<p>There are a number of security issues with the full Unicode list of word
+characters.  See <a href="http://unicode.org/reports/tr36">http://unicode.org/reports/tr36</a>.</p>
+<p>Also, for a somewhat finer-grained set of characters that are in programming
+language identifiers beyond the ASCII range, you may wish to instead use the
+more customized <a href="#Unicode-Properties">Unicode Properties</a>, <pre>
+\<span class="i">p</span><span class="s">{</span><span class="w">ID_Start</span><span class="s">}</span></code>
+,
+<pre>
+\<span class="i">p</span><span class="s">{</span><span class="w">ID_Continue</span><span class="s">}</span></code>
+, <pre>
+\<span class="i">p</span><span class="s">{</span><span class="w">XID_Start</span><span class="s">}</span></code>
+, and <pre>
+\<span class="i">p</span><span class="s">{</span><span class="w">XID_Continue</span><span class="s">}</span></code>
+.  See
+<a href="http://unicode.org/reports/tr31">http://unicode.org/reports/tr31</a>.</p>
+<p>Any character not matched by <pre>
+\<span class="w">w</span></code>
+ is matched by <pre>
+\<span class="w">W</span></code>
+.</p>
+<a id="Whitespace"></a><h4 class='h4' >Whitespace</h4>
+<p><code class="inline">\s</code> matches any single character considered whitespace.</p>
+<ul>
+<li><a id="If-the-%2fa-modifier-is-in-effect-..."></a><strong>If the <code class="inline">/a</code> modifier is in effect ...</strong>
+<p><code class="inline">\s</code> matches the 5 characters [\t\n\f\r ]; that is, the horizontal tab,
+the newline, the form feed, the carriage return, and the space.  (Note
+that it doesn't match the vertical tab, <pre>
+\<span class="w">cK</span></code>
+ on ASCII platforms.)</p>
+</li>
+<li><a id="otherwise-..."></a><strong>otherwise ...</strong>
+<ul>
+<li><a id="For-code-points-above-255-..."></a><strong>For code points above 255 ...</strong>
+<p><code class="inline">\s</code> matches exactly the code points above 255 shown with an "s" column
+in the table below.</p>
+</li>
+<li><a id="For-code-points-below-256-..."></a><strong>For code points below 256 ...</strong>
+<ul>
+<li><a id="if-locale-rules-are-in-effect-..."></a><strong>if locale rules are in effect ...</strong>
+<p><code class="inline">\s</code> matches whatever the locale considers to be whitespace.  Note that
+this is likely to include the vertical space, unlike non-locale <code class="inline">\s</code>
+matching.</p>
+</li>
+<li><a id="if-Unicode-rules-are-in-effect-or-if-on-an-EBCDIC-platform-..."></a><strong>if Unicode rules are in effect or if on an EBCDIC platform ...</strong>
+<p><code class="inline">\s</code> matches exactly the characters shown with an "s" column in the
+table below.</p>
+</li>
+<li><a id="otherwise-..."></a><strong>otherwise ...</strong>
+<p><code class="inline">\s</code> matches [\t\n\f\r ].
+Note that this list doesn't include the non-breaking space.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Which rules apply are determined as described in <a href="perlre.html#Which-character-set-modifier-is-in-effect%3f">Which character set modifier is in effect? in perlre</a>.</p>
+<p>Any character not matched by <code class="inline">\s</code> is matched by <pre>
+\<span class="w">S</span></code>
+.</p>
+<p><pre>
+\<span class="w">h</span></code>
+ matches any character considered horizontal whitespace;
+this includes the platform's space and tab characters and several others
+listed in the table below.  <pre>
+\<span class="w">H</span></code>
+ matches any character
+not considered horizontal whitespace.  They use the platform's native
+character set, and do not consider any locale that may otherwise be in
+use.</p>
+<p><pre>
+\<span class="w">v</span></code>
+ matches any character considered vertical whitespace;
+this includes the platform's carriage return and line feed characters (newline)
+plus several other characters, all listed in the table below.
+<pre>
+\<span class="w">V</span></code>
+ matches any character not considered vertical whitespace.
+They use the platform's native character set, and do not consider any
+locale that may otherwise be in use.</p>
+<p><pre>
+\<span class="w">R</span></code>
+ matches anything that can be considered a newline under Unicode
+rules. It's not a character class, as it can match a multi-character
+sequence. Therefore, it cannot be used inside a bracketed character
+class; use <pre>
+\<span class="w">v</span></code>
+ instead (vertical whitespace).  It uses the platform's
+native character set, and does not consider any locale that may
+otherwise be in use.
+Details are discussed in <a href="perlrebackslash.html">perlrebackslash</a>.</p>
+<p>Note that unlike <code class="inline">\s</code> (and <pre>
+\<span class="w">d</span></code>
+ and <pre>
+\<span class="w">w</span></code>
+), <pre>
+\<span class="w">h</span></code>
+ and <pre>
+\<span class="w">v</span></code>
+ always match
+the same characters, without regard to other factors, such as the active
+locale or whether the source string is in UTF-8 format.</p>
+<p>One might think that <code class="inline">\s</code> is equivalent to <pre>
+<span class="s">[</span>\<span class="w">h</span>\<span class="w">v</span><span class="s">]</span></code>
+. This is not true.
+The difference is that the vertical tab (<pre>
+<span class="q">&quot;\x0b&quot;</span></code>
+) is not matched by
+<code class="inline">\s</code>; it is however considered vertical whitespace.</p>
+<p>The following table is a complete listing of characters matched by
+<code class="inline">\s</code>, <pre>
+\<span class="w">h</span></code>
+ and <pre>
+\<span class="w">v</span></code>
+ as of Unicode 6.0.</p>
+<p>The first column gives the Unicode code point of the character (in hex format),
+the second column gives the (Unicode) name. The third column indicates
+by which class(es) the character is matched (assuming no locale or EBCDIC code
+page is in effect that changes the <code class="inline">\s</code> matching).</p>
+<div class="verbatim"><ol><li> 0x0009        CHARACTER TABULATION   h s</li><li> 0x000a              LINE FEED (LF)    vs</li><li> 0x000b             LINE TABULATION    v</li><li> 0x000c              FORM FEED (FF)    vs</li><li> 0x000d        CARRIAGE RETURN (CR)    vs</li><li> 0x0020                       SPACE   h s</li><li> 0x0085             NEXT LINE (NEL)    vs  [1]</li><li> 0x00a0              NO-BREAK SPACE   h s  [1]</li><li> 0x1680            OGHAM SPACE MARK   h s</li><li> 0x180e   MONGOLIAN VOWEL SEPARATOR   h s</li><li> 0x2000                     EN QUAD   h s</li><li> 0x2001                     EM QUAD   h s</li><li> 0x2002                    EN SPACE   h s</li><li> 0x2003                    EM SPACE   h s</li><li> 0x2004          THREE-PER-EM SPACE   h s</li><li> 0x2005           FOUR-PER-EM SPACE   h s</li><li> 0x2006            SIX-PER-EM SPACE   h s</li><li> 0x2007                FIGURE SPACE   h s</li><li> 0x2008           PUNCTUATION SPACE   h s</li><li> 0x2009                  THIN SPACE   h s</li><li> 0x200a                  HAIR SPACE   h s</li><li> 0x2028              LINE SEPARATOR    vs</li><li> 0x2029         PARAGRAPH SEPARATOR    vs</li><li> 0x202f       NARROW NO-BREAK SPACE   h s</li><li> 0x205f   MEDIUM MATHEMATICAL SPACE   h s</li><li> 0x3000           IDEOGRAPHIC SPACE   h s</li></ol></div><ul>
+<li><a id="%5b1%5d"></a><strong>[1]</strong>
+<p>NEXT LINE and NO-BREAK SPACE may or may not match <code class="inline">\s</code> depending
+on the rules in effect.  See
+<a href="#Whitespace">the beginning of this section</a>.</p>
+</li>
+</ul>
+<a id="Unicode-Properties"></a><h4 class='h4' >Unicode Properties</h4>
+<p><pre>
+\<span class="w">pP</span></code>
+ and <pre>
+\<span class="i">p</span><span class="s">{</span><span class="w">Prop</span><span class="s">}</span></code>
+ are character classes to match characters that fit given
+Unicode properties.  One letter property names can be used in the <pre>
+\<span class="w">pP</span></code>
+ form,
+with the property name following the <pre>
+\<span class="w">p</span></code>
+, otherwise, braces are required.
+When using braces, there is a single form, which is just the property name
+enclosed in the braces, and a compound form which looks like <pre>
+\<span class="i">p</span><span class="s">{</span><span class="w">name</span>=<span class="w">value</span><span class="s">}</span></code>
+,
+which means to match if the property "name" for the character has that particular
+"value".
+For instance, a match for a number can be written as <pre>
+<span class="q">/\pN/</span></code>
+ or as
+<pre>
+<span class="q">/\p{Number}/</span></code>
+, or as <pre>
+<span class="q">/\p{Number=True}/</span></code>
+.
+Lowercase letters are matched by the property <i>Lowercase_Letter</i> which
+has the short form <i>Ll</i>. They need the braces, so are written as <pre>
+<span class="q">/\p{Ll}/</span></code>
+ or
+<pre>
+<span class="q">/\p{Lowercase_Letter}/</span></code>
+, or <pre>
+<span class="q">/\p{General_Category=Lowercase_Letter}/</span></code>
+
+(the underscores are optional).
+<pre>
+<span class="q">/\pLl/</span></code>
+ is valid, but means something different.
+It matches a two character string: a letter (Unicode property <pre>
+\<span class="w">pL</span></code>
+),
+followed by a lowercase <pre>
+<span class="w">l</span></code>
+.</p>
+<p>If neither the <code class="inline">/a</code> modifier nor locale rules are in effect, the use of
+a Unicode property will force the regular expression into using Unicode
+rules.</p>
+<p>Note that almost all properties are immune to case-insensitive matching.
+That is, adding a <code class="inline">/i</code> regular expression modifier does not change what
+they match.  There are two sets that are affected.  The first set is
+<pre>
+<span class="w">Uppercase_Letter</span></code>
+,
+<pre>
+<span class="w">Lowercase_Letter</span></code>
+,
+and <pre>
+<span class="w">Titlecase_Letter</span></code>
+,
+all of which match <pre>
+<span class="w">Cased_Letter</span></code>
+ under <code class="inline">/i</code> matching.
+The second set is
+<pre>
+<span class="w">Uppercase</span></code>
+,
+<pre>
+<span class="w">Lowercase</span></code>
+,
+and <pre>
+<span class="w">Titlecase</span></code>
+,
+all of which match <pre>
+<span class="w">Cased</span></code>
+ under <code class="inline">/i</code> matching.
+(The difference between these sets is that some things, such as Roman
+numerals, come in both upper and lower case, so they are <pre>
+<span class="w">Cased</span></code>
+, but
+aren't considered to be letters, so they aren't <pre>
+<span class="w">Cased_Letter</span></code>
+s. They're
+actually <pre>
+<span class="w">Letter_Number</span></code>
+s.)
+This set also includes its subsets <pre>
+<span class="w">PosixUpper</span></code>
+ and <pre>
+<span class="w">PosixLower</span></code>
+, both
+of which under <code class="inline">/i</code> match <pre>
+<span class="w">PosixAlpha</span></code>
+.</p>
+<p>For more details on Unicode properties, see <a href="perlunicode.html#Unicode-Character-Properties">Unicode Character Properties in perlunicode</a>; for a
+complete list of possible properties, see
+<a href="perluniprops.html#Properties-accessible-through-%5cp%7b%7d-and-%5cP%7b%7d">Properties accessible through \p{} and \P{} in perluniprops</a>,
+which notes all forms that have <code class="inline">/i</code> differences.
+It is also possible to define your own properties. This is discussed in
+<a href="perlunicode.html#User-Defined-Character-Properties">User-Defined Character Properties in perlunicode</a>.</p>
+<p>Unicode properties are defined (surprise!) only on Unicode code points.
+A warning is raised and all matches fail on non-Unicode code points
+(those above the legal Unicode maximum of 0x10FFFF).  This can be
+somewhat surprising,</p>
+<pre>
+ <a class="l_k" href="functions/chr.html">chr</a><span class="s">(</span><span class="n">0x110000</span><span class="s">)</span> =~ \<span class="i">p</span><span class="s">{</span><span class="w">ASCII_Hex_Digit</span>=<span class="w">True</span><span class="s">}</span>      <span class="c"># Fails.</span>
+ <a class="l_k" href="functions/chr.html">chr</a><span class="s">(</span><span class="n">0x110000</span><span class="s">)</span> =~ \<span class="i">p</span><span class="s">{</span><span class="w">ASCII_Hex_Digit</span>=<span class="w">False</span><span class="s">}</span>     <span class="c"># Also fails!</span></pre>
+<p>Even though these two matches might be thought of as complements, they
+are so only on Unicode code points.</p>
+<h5 class='h5'>Examples</h5>
+<div class="verbatim"><ol><li> "a"  =~  /\w/      # Match, "a" is a 'word' character.</li><li> "7"  =~  /\w/      # Match, "7" is a 'word' character as well.</li><li> "a"  =~  /\d/      # No match, "a" isn't a digit.</li><li> "7"  =~  /\d/      # Match, "7" is a digit.</li><li> " "  =~  /\s/      # Match, a space is whitespace.</li><li> "a"  =~  /\D/      # Match, "a" is a non-digit.</li><li> "7"  =~  /\D/      # No match, "7" is not a non-digit.</li><li> " "  =~  /\S/      # No match, a space is not non-whitespace.</li><li></li><li> " "  =~  /\h/      # Match, space is horizontal whitespace.</li><li> " "  =~  /\v/      # No match, space is not vertical whitespace.</li><li> "\r" =~  /\v/      # Match, a return is vertical whitespace.</li><li></li><li> "a"  =~  /\pL/     # Match, "a" is a letter.</li><li> "a"  =~  /\p{Lu}/  # No match, /\p{Lu}/ matches upper case letters.</li><li></li><li> "\x{0e0b}" =~ /\p{Thai}/  # Match, \x{0e0b} is the character</li><li>                           # 'THAI CHARACTER SO SO', and that's in</li><li>                           # Thai Unicode class.</li><li> "a"  =~  /\P{Lao}/ # Match, as "a" is not a Laotian character.</li></ol></div><p>It is worth emphasizing that <pre>
+\<span class="w">d</span></code>
+, <pre>
+\<span class="w">w</span></code>
+, etc, match single characters, not
+complete numbers or words. To match a number (that consists of digits),
+use <pre>
+\<span class="w">d</span>+</code>
+; to match a word, use <pre>
+\<span class="w">w</span>+</code>
+.  But be aware of the security
+considerations in doing so, as mentioned above.</p>
+<a id="Bracketed-Character-Classes"></a><h3 class='h3' >Bracketed Character Classes</h3>
+<p>The third form of character class you can use in Perl regular expressions
+is the bracketed character class.  In its simplest form, it lists the characters
+that may be matched, surrounded by square brackets, like this: <pre>
+<span class="s">[</span><span class="w">aeiou</span><span class="s">]</span></code>
+.
+This matches one of <pre>
+<span class="w">a</span></code>
+, <pre>
+<span class="w">e</span></code>
+, <pre>
+<span class="w">i</span></code>
+, <pre>
+<span class="w">o</span></code>
+ or <pre>
+<span class="w">u</span></code>
+.  Like the other
+character classes, exactly one character is matched.* To match
+a longer string consisting of characters mentioned in the character
+class, follow the character class with a <a href="perlre.html#Quantifiers">quantifier</a>.  For
+instance, <pre>
+<span class="s">[</span><span class="w">aeiou</span><span class="s">]</span>+</code>
+ matches one or more lowercase English vowels.</p>
+<p>Repeating a character in a character class has no
+effect; it's considered to be in the set only once.</p>
+<p>Examples:</p>
+<div class="verbatim"><ol><li> "e"  =~  /[aeiou]/        # Match, as "e" is listed in the class.</li><li> "p"  =~  /[aeiou]/        # No match, "p" is not listed in the class.</li><li> "ae" =~  /^[aeiou]$/      # No match, a character class only matches</li><li>                           # a single character.</li><li> "ae" =~  /^[aeiou]+$/     # Match, due to the quantifier.</li><li></li><li> -------</li></ol></div><p>* There is an exception to a bracketed character class matching a
+single character only.  When the class is to match caselessly under <code class="inline">/i</code>
+matching rules, and a character inside the class matches a
+multiple-character sequence caselessly under Unicode rules, the class
+(when not <a href="#Negation">inverted</a>) will also match that sequence.  For
+example, Unicode says that the letter <pre>
+<span class="w">LATIN</span> <span class="w">SMALL</span> <span class="w">LETTER</span> <span class="w">SHARP</span> <span class="w">S</span></code>
+
+should match the sequence <pre>
+<span class="w">ss</span></code>
+ under <code class="inline">/i</code> rules.  Thus,</p>
+<div class="verbatim"><ol><li> 'ss' =~ /\A\N{LATIN SMALL LETTER SHARP S}\z/i             # Matches</li><li> 'ss' =~ /\A[aeioust\N{LATIN SMALL LETTER SHARP S}]\z/i    # Matches</li></ol></div><a id="Special-Characters-Inside-a-Bracketed-Character-Class"></a><h4 class='h4' >Special Characters Inside a Bracketed Character Class</h4>
+<p>Most characters that are meta characters in regular expressions (that
+is, characters that carry a special meaning like <code class="inline">.</code>, <pre>
+<span class="i">*</span></code>
+, or <code class="inline">(</code>) lose
+their special meaning and can be used inside a character class without
+the need to escape them. For instance, <pre>
+<span class="s">[</span><span class="s">(</span><span class="s">)</span><span class="s">]</span></code>
+ matches either an opening
+parenthesis, or a closing parenthesis, and the parens inside the character
+class don't group or capture.</p>
+<p>Characters that may carry a special meaning inside a character class are:
+<pre>
+\</code>
+, <code class="inline">^</code>, <pre>
+-</code>
+, <code class="inline">[</code> and <code class="inline">]</code>, and are discussed below. They can be
+escaped with a backslash, although this is sometimes not needed, in which
+case the backslash may be omitted.</p>
+<p>The sequence <pre>
+\<span class="w">b</span></code>
+ is special inside a bracketed character class. While
+outside the character class, <pre>
+\<span class="w">b</span></code>
+ is an assertion indicating a point
+that does not have either two word characters or two non-word characters
+on either side, inside a bracketed character class, <pre>
+\<span class="w">b</span></code>
+ matches a
+backspace character.</p>
+<p>The sequences
+<pre>
+\<span class="w">a</span></code>
+,
+<pre>
+\<span class="w">c</span></code>
+,
+<pre>
+\<span class="w">e</span></code>
+,
+<pre>
+\<span class="w">f</span></code>
+,
+<pre>
+\<span class="w">n</span></code>
+,
+<code class="inline">\N{<i>NAME</i>}</code>,
+<code class="inline">\N{U+<i>hex char</i>}</code>,
+<pre>
+\<span class="w">r</span></code>
+,
+<pre>
+\<span class="w">t</span></code>
+,
+and
+<pre>
+\<span class="w">x</span></code>
+
+are also special and have the same meanings as they do outside a
+bracketed character class.  (However, inside a bracketed character
+class, if <code class="inline">\N{<i>NAME</i>}</code> expands to a sequence of characters, only the first
+one in the sequence is used, with a warning.)</p>
+<p>Also, a backslash followed by two or three octal digits is considered an octal
+number.</p>
+<p>A <code class="inline">[</code> is not special inside a character class, unless it's the start of a
+POSIX character class (see <a href="#POSIX-Character-Classes">POSIX Character Classes</a> below). It normally does
+not need escaping.</p>
+<p>A <code class="inline">]</code> is normally either the end of a POSIX character class (see
+<a href="#POSIX-Character-Classes">POSIX Character Classes</a> below), or it signals the end of the bracketed
+character class.  If you want to include a <code class="inline">]</code> in the set of characters, you
+must generally escape it.</p>
+<p>However, if the <code class="inline">]</code> is the <i>first</i> (or the second if the first
+character is a caret) character of a bracketed character class, it
+does not denote the end of the class (as you cannot have an empty class)
+and is considered part of the set of characters that can be matched without
+escaping.</p>
+<p>Examples:</p>
+<div class="verbatim"><ol><li> "+"   =~ /[+?*]/     #  Match, "+" in a character class is not special.</li><li> "\cH" =~ /[\b]/      #  Match, \b inside in a character class</li><li>                      #  is equivalent to a backspace.</li><li> "]"   =~ /[][]/      #  Match, as the character class contains.</li><li>                      #  both [ and ].</li><li> "[]"  =~ /[[]]/      #  Match, the pattern contains a character class</li><li>                      #  containing just ], and the character class is</li><li>                      #  followed by a ].</li></ol></div><a id="Character-Ranges"></a><h4 class='h4' >Character Ranges</h4>
+<p>It is not uncommon to want to match a range of characters. Luckily, instead
+of listing all characters in the range, one may use the hyphen (<pre>
+-</code>
+).
+If inside a bracketed character class you have two characters separated
+by a hyphen, it's treated as if all characters between the two were in
+the class. For instance, <pre>
+<span class="s">[</span><span class="n">0</span>-<span class="n">9</span><span class="s">]</span></code>
+ matches any ASCII digit, and <code class="inline">[a-m]</code>
+matches any lowercase letter from the first half of the ASCII alphabet.</p>
+<p>Note that the two characters on either side of the hyphen are not
+necessarily both letters or both digits. Any character is possible,
+although not advisable.  <code class="inline">['-?]</code> contains a range of characters, but
+most people will not know which characters that means.  Furthermore,
+such ranges may lead to portability problems if the code has to run on
+a platform that uses a different character set, such as EBCDIC.</p>
+<p>If a hyphen in a character class cannot syntactically be part of a range, for
+instance because it is the first or the last character of the character class,
+or if it immediately follows a range, the hyphen isn't special, and so is
+considered a character to be matched literally.  If you want a hyphen in
+your set of characters to be matched and its position in the class is such
+that it could be considered part of a range, you must escape that hyphen
+with a backslash.</p>
+<p>Examples:</p>
+<div class="verbatim"><ol><li> [a-z]       #  Matches a character that is a lower case ASCII letter.</li><li> [a-fz]      #  Matches any letter between 'a' and 'f' (inclusive) or</li><li>             #  the letter 'z'.</li><li> [-z]        #  Matches either a hyphen ('-') or the letter 'z'.</li><li> [a-f-m]     #  Matches any letter between 'a' and 'f' (inclusive), the</li><li>             #  hyphen ('-'), or the letter 'm'.</li><li> ['-?]       #  Matches any of the characters  '()*+,-./0123456789:;&lt;=&gt;?</li><li>             #  (But not on an EBCDIC platform).</li></ol></div><a id="Negation"></a><h4 class='h4' >Negation</h4>
+<p>It is also possible to instead list the characters you do not want to
+match. You can do so by using a caret (<code class="inline">^</code>) as the first character in the
+character class. For instance, <code class="inline">[^a-z]</code> matches any character that is not a
+lowercase ASCII letter, which therefore includes more than a million
+Unicode code points.  The class is said to be "negated" or "inverted".</p>
+<p>This syntax make the caret a special character inside a bracketed character
+class, but only if it is the first character of the class. So if you want
+the caret as one of the characters to match, either escape the caret or
+else don't list it first.</p>
+<p>In inverted bracketed character classes, Perl ignores the Unicode rules
+that normally say that certain characters should match a sequence of
+multiple characters under caseless <code class="inline">/i</code> matching.  Following those
+rules could lead to highly confusing situations:</p>
+<pre>
+ <span class="q">&quot;ss&quot;</span> =~ <span class="q">/^[^\xDF]+$/ui</span><span class="sc">;</span>   <span class="c"># Matches!</span></pre>
+<p>This should match any sequences of characters that aren't <pre>
+\<span class="w">xDF</span></code>
+ nor
+what <pre>
+\<span class="w">xDF</span></code>
+ matches under <code class="inline">/i</code>.  <pre>
+<span class="q">&quot;s&quot;</span></code>
+ isn't <pre>
+\<span class="w">xDF</span></code>
+, but Unicode
+says that <pre>
+<span class="q">&quot;ss&quot;</span></code>
+ is what <pre>
+\<span class="w">xDF</span></code>
+ matches under <code class="inline">/i</code>.  So which one
+"wins"? Do you fail the match because the string has <pre>
+<span class="w">ss</span></code>
+ or accept it
+because it has an <code class="inline"><a class="l_k" href="functions/s.html">s</a></code> followed by another <code class="inline"><a class="l_k" href="functions/s.html">s</a></code>?  Perl has chosen the
+latter.</p>
+<p>Examples:</p>
+<div class="verbatim"><ol><li> "e"  =~  /[^aeiou]/   #  No match, the 'e' is listed.</li><li> "x"  =~  /[^aeiou]/   #  Match, as 'x' isn't a lowercase vowel.</li><li> "^"  =~  /[^^]/       #  No match, matches anything that isn't a caret.</li><li> "^"  =~  /[x^]/       #  Match, caret is not special here.</li></ol></div><a id="Backslash-Sequences"></a><h4 class='h4' >Backslash Sequences</h4>
+<p>You can put any backslash sequence character class (with the exception of
+<pre>
+\<span class="w">N</span></code>
+ and <pre>
+\<span class="w">R</span></code>
+) inside a bracketed character class, and it will act just
+as if you had put all characters matched by the backslash sequence inside the
+character class. For instance, <pre>
+<span class="s">[</span><span class="w">a</span>-f\<span class="w">d</span><span class="s">]</span></code>
+ matches any decimal digit, or any
+of the lowercase letters between 'a' and 'f' inclusive.</p>
+<p><pre>
+\<span class="w">N</span></code>
+ within a bracketed character class must be of the forms <code class="inline">\N{<i>name</i>}</code>
+or <code class="inline">\N{U+<i>hex char</i>}</code>, and NOT be the form that matches non-newlines,
+for the same reason that a dot <code class="inline">.</code> inside a bracketed character class loses
+its special meaning: it matches nearly anything, which generally isn't what you
+want to happen.</p>
+<p>Examples:</p>
+<div class="verbatim"><ol><li> /[\p{Thai}\d]/     # Matches a character that is either a Thai</li><li>                    # character, or a digit.</li><li> /[^\p{Arabic}()]/  # Matches a character that is neither an Arabic</li><li>                    # character, nor a parenthesis.</li></ol></div><p>Backslash sequence character classes cannot form one of the endpoints
+of a range.  Thus, you can't say:</p>
+<pre>
+ <span class="q">/[\p{Thai}-\d]/</span>     <span class="c"># Wrong!</span></pre>
+<a id="POSIX-Character-Classes"></a><h4 class='h4' >POSIX Character Classes
+  
+      
+      </h4>
+<p>POSIX character classes have the form <code class="inline">[:class:]</code>, where <i>class</i> is
+name, and the <code class="inline">[:</code> and <code class="inline">:]</code> delimiters. POSIX character classes only appear
+<i>inside</i> bracketed character classes, and are a convenient and descriptive
+way of listing a group of characters.</p>
+<p>Be careful about the syntax,</p>
+<div class="verbatim"><ol><li> # Correct:</li><li> $string =~ /[[:alpha:]]/</li><li></li><li> # Incorrect (will warn):</li><li> $string =~ /[:alpha:]/</li></ol></div><p>The latter pattern would be a character class consisting of a colon,
+and the letters <pre>
+<span class="w">a</span></code>
+, <pre>
+<span class="w">l</span></code>
+, <pre>
+<span class="w">p</span></code>
+ and <pre>
+<span class="w">h</span></code>
+.
+POSIX character classes can be part of a larger bracketed character class.
+For example,</p>
+<div class="verbatim"><ol><li> [01[:alpha:]%]</li></ol></div><p>is valid and matches '0', '1', any alphabetic character, and the percent sign.</p>
+<p>Perl recognizes the following POSIX character classes:</p>
+<div class="verbatim"><ol><li> alpha  Any alphabetical character ("[A-Za-z]").</li><li> alnum  Any alphanumeric character. ("[A-Za-z0-9]")</li><li> ascii  Any character in the ASCII character set.</li><li> blank  A GNU extension, equal to a space or a horizontal tab ("\t").</li><li> cntrl  Any control character.  See Note [2] below.</li><li> digit  Any decimal digit ("[0-9]"), equivalent to "\d".</li><li> graph  Any printable character, excluding a space.  See Note [3] below.</li><li> lower  Any lowercase character ("[a-z]").</li><li> print  Any printable character, including a space.  See Note [4] below.</li><li> punct  Any graphical character excluding "word" characters.  Note [5].</li><li> space  Any whitespace character. "\s" plus the vertical tab ("\cK").</li><li> upper  Any uppercase character ("[A-Z]").</li><li> word   A Perl extension ("[A-Za-z0-9_]"), equivalent to "\w".</li><li> xdigit Any hexadecimal digit ("[0-9a-fA-F]").</li></ol></div><p>Most POSIX character classes have two Unicode-style <pre>
+\<span class="w">p</span></code>
+ property
+counterparts.  (They are not official Unicode properties, but Perl extensions
+derived from official Unicode properties.)  The table below shows the relation
+between POSIX character classes and these counterparts.</p>
+<p>One counterpart, in the column labelled "ASCII-range Unicode" in
+the table, matches only characters in the ASCII character set.</p>
+<p>The other counterpart, in the column labelled "Full-range Unicode", matches any
+appropriate characters in the full Unicode character set.  For example,
+<pre>
+\<span class="i">p</span><span class="s">{</span><span class="w">Alpha</span><span class="s">}</span></code>
+ matches not just the ASCII alphabetic characters, but any
+character in the entire Unicode character set considered alphabetic.
+An entry in the column labelled "backslash sequence" is a (short)
+equivalent.</p>
+<div class="verbatim"><ol><li> [[:...:]]      ASCII-range          Full-range  backslash  Note</li><li>                 Unicode              Unicode     sequence</li><li> -----------------------------------------------------</li><li>   alpha      \p{PosixAlpha}       \p{XPosixAlpha}</li><li>   alnum      \p{PosixAlnum}       \p{XPosixAlnum}</li><li>   ascii      \p{ASCII}</li><li>   blank      \p{PosixBlank}       \p{XPosixBlank}  \h      [1]</li><li>                                   or \p{HorizSpace}        [1]</li><li>   cntrl      \p{PosixCntrl}       \p{XPosixCntrl}          [2]</li><li>   digit      \p{PosixDigit}       \p{XPosixDigit}  \d</li><li>   graph      \p{PosixGraph}       \p{XPosixGraph}          [3]</li><li>   lower      \p{PosixLower}       \p{XPosixLower}</li><li>   print      \p{PosixPrint}       \p{XPosixPrint}          [4]</li><li>   punct      \p{PosixPunct}       \p{XPosixPunct}          [5]</li><li>              \p{PerlSpace}        \p{XPerlSpace}   \s      [6]</li><li>   space      \p{PosixSpace}       \p{XPosixSpace}          [6]</li><li>   upper      \p{PosixUpper}       \p{XPosixUpper}</li><li>   word       \p{PosixWord}        \p{XPosixWord}   \w</li><li>   xdigit     \p{PosixXDigit}      \p{XPosixXDigit}</li></ol></div><ul>
+<li><a id="%5b1%5d"></a><strong>[1]</strong>
+<p><pre>
+\<span class="i">p</span><span class="s">{</span><span class="w">Blank</span><span class="s">}</span></code>
+ and <pre>
+\<span class="i">p</span><span class="s">{</span><span class="w">HorizSpace</span><span class="s">}</span></code>
+ are synonyms.</p>
+</li>
+<li><a id="%5b2%5d"></a><strong>[2]</strong>
+<p>Control characters don't produce output as such, but instead usually control
+the terminal somehow: for example, newline and backspace are control characters.
+In the ASCII range, characters whose code points are between 0 and 31 inclusive,
+plus 127 (<pre>
+<span class="w">DEL</span></code>
+) are control characters.</p>
+<p>On EBCDIC platforms, it is likely that the code page will define <code class="inline">[[:cntrl:]]</code>
+to be the EBCDIC equivalents of the ASCII controls, plus the controls
+that in Unicode have code pointss from 128 through 159.</p>
+</li>
+<li><a id="%5b3%5d"></a><strong>[3]</strong>
+<p>Any character that is <i>graphical</i>, that is, visible. This class consists
+of all alphanumeric characters and all punctuation characters.</p>
+</li>
+<li><a id="%5b4%5d"></a><strong>[4]</strong>
+<p>All printable characters, which is the set of all graphical characters
+plus those whitespace characters which are not also controls.</p>
+</li>
+<li><a id="%5b5%5d"></a><strong>[5]</strong>
+<p><pre>
+\<span class="i">p</span><span class="s">{</span><span class="w">PosixPunct</span><span class="s">}</span></code>
+ and <code class="inline">[[:punct:]]</code> in the ASCII range match all
+non-controls, non-alphanumeric, non-space characters:
+<code class="inline">[-!"#$%&amp;'()*+,./:;&lt;=&gt;?@[\\\]^_`{|}~]</code> (although if a locale is in effect,
+it could alter the behavior of <code class="inline">[[:punct:]]</code>).</p>
+<p>The similarly named property, <pre>
+\<span class="i">p</span><span class="s">{</span><span class="w">Punct</span><span class="s">}</span></code>
+, matches a somewhat different
+set in the ASCII range, namely
+<code class="inline">[-!"#%&amp;'()*,./:;?@[\\\]_{}]</code>.  That is, it is missing the nine
+characters <code class="inline">[$+&lt;=&gt;^`|~]</code>.
+This is because Unicode splits what POSIX considers to be punctuation into two
+categories, Punctuation and Symbols.</p>
+<p><pre>
+\<span class="i">p</span><span class="s">{</span><span class="w">XPosixPunct</span><span class="s">}</span></code>
+ and (under Unicode rules) <code class="inline">[[:punct:]]</code>, match what
+<pre>
+\<span class="i">p</span><span class="s">{</span><span class="w">PosixPunct</span><span class="s">}</span></code>
+ matches in the ASCII range, plus what <pre>
+\<span class="i">p</span><span class="s">{</span><span class="w">Punct</span><span class="s">}</span></code>
+
+matches.  This is different than strictly matching according to
+<pre>
+\<span class="i">p</span><span class="s">{</span><span class="w">Punct</span><span class="s">}</span></code>
+.  Another way to say it is that
+if Unicode rules are in effect, <code class="inline">[[:punct:]]</code> matches all characters
+that Unicode considers punctuation, plus all ASCII-range characters that
+Unicode considers symbols.</p>
+</li>
+<li><a id="%5b6%5d"></a><strong>[6]</strong>
+<p><pre>
+\<span class="i">p</span><span class="s">{</span><span class="w">SpacePerl</span><span class="s">}</span></code>
+ and <pre>
+\<span class="i">p</span><span class="s">{</span><span class="w">Space</span><span class="s">}</span></code>
+ differ only in that in non-locale
+matching, <pre>
+\<span class="i">p</span><span class="s">{</span><span class="w">Space</span><span class="s">}</span></code>
+ additionally
+matches the vertical tab, <pre>
+\<span class="w">cK</span></code>
+.   Same for the two ASCII-only range forms.</p>
+</li>
+</ul>
+<p>There are various other synonyms that can be used besides the names
+listed in the table.  For example, <pre>
+\<span class="i">p</span><span class="s">{</span><span class="w">PosixAlpha</span><span class="s">}</span></code>
+ can be written as
+<pre>
+\<span class="i">p</span><span class="s">{</span><span class="w">Alpha</span><span class="s">}</span></code>
+.  All are listed in
+<a href="perluniprops.html#Properties-accessible-through-%5cp%7b%7d-and-%5cP%7b%7d">Properties accessible through \p{} and \P{} in perluniprops</a>,
+plus all characters matched by each ASCII-range property.</p>
+<p>Both the <pre>
+\<span class="w">p</span></code>
+ counterparts always assume Unicode rules are in effect.
+On ASCII platforms, this means they assume that the code points from 128
+to 255 are Latin-1, and that means that using them under locale rules is
+unwise unless the locale is guaranteed to be Latin-1 or UTF-8.  In contrast, the
+POSIX character classes are useful under locale rules.  They are
+affected by the actual rules in effect, as follows:</p>
+<ul>
+<li><a id="If-the-%2fa-modifier%2c-is-in-effect-..."></a><strong>If the <code class="inline">/a</code> modifier, is in effect ...</strong>
+<p>Each of the POSIX classes matches exactly the same as their ASCII-range
+counterparts.</p>
+</li>
+<li><a id="otherwise-..."></a><strong>otherwise ...</strong>
+<ul>
+<li><a id="For-code-points-above-255-..."></a><strong>For code points above 255 ...</strong>
+<p>The POSIX class matches the same as its Full-range counterpart.</p>
+</li>
+<li><a id="For-code-points-below-256-..."></a><strong>For code points below 256 ...</strong>
+<ul>
+<li><a id="if-locale-rules-are-in-effect-..."></a><strong>if locale rules are in effect ...</strong>
+<p>The POSIX class matches according to the locale, except that
+<pre>
+<span class="w">word</span></code>
+ uses the platform's native underscore character, no matter what
+the locale is.</p>
+</li>
+<li><a id="if-Unicode-rules-are-in-effect-or-if-on-an-EBCDIC-platform-..."></a><strong>if Unicode rules are in effect or if on an EBCDIC platform ...</strong>
+<p>The POSIX class matches the same as the Full-range counterpart.</p>
+</li>
+<li><a id="otherwise-..."></a><strong>otherwise ...</strong>
+<p>The POSIX class matches the same as the ASCII range counterpart.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Which rules apply are determined as described in
+<a href="perlre.html#Which-character-set-modifier-is-in-effect%3f">Which character set modifier is in effect? in perlre</a>.</p>
+<p>It is proposed to change this behavior in a future release of Perl so that
+whether or not Unicode rules are in effect would not change the
+behavior:  Outside of locale or an EBCDIC code page, the POSIX classes
+would behave like their ASCII-range counterparts.  If you wish to
+comment on this proposal, send email to <pre>
+<span class="w">perl5</span>-<span class="w">porters</span><span class="i">@perl</span>.<span class="w">org</span></code>
+.</p>
+<h5 class='h5'>Negation of POSIX character classes
+</h5>
+<p>A Perl extension to the POSIX character class is the ability to
+negate it. This is done by prefixing the class name with a caret (<code class="inline">^</code>).
+Some examples:</p>
+<div class="verbatim"><ol><li>     POSIX         ASCII-range     Full-range  backslash</li><li>                    Unicode         Unicode    sequence</li><li> -----------------------------------------------------</li><li> [[:^digit:]]   \P{PosixDigit}  \P{XPosixDigit}   \D</li><li> [[:^space:]]   \P{PosixSpace}  \P{XPosixSpace}</li><li>                \P{PerlSpace}   \P{XPerlSpace}    \S</li><li> [[:^word:]]    \P{PerlWord}    \P{XPosixWord}    \W</li></ol></div><p>The backslash sequence can mean either ASCII- or Full-range Unicode,
+depending on various factors as described in <a href="perlre.html#Which-character-set-modifier-is-in-effect%3f">Which character set modifier is in effect? in perlre</a>.</p>
+<h5 class='h5'>[= =] and [. .]</h5>
+<p>Perl recognizes the POSIX character classes <pre>
+<span class="s">[</span>=<span class="w">class</span>=<span class="s">]</span></code>
+ and
+<code class="inline">[.class.]</code>, but does not (yet?) support them.  Any attempt to use
+either construct raises an exception.</p>
+<h5 class='h5'>Examples</h5>
+<div class="verbatim"><ol><li> /[[:digit:]]/            # Matches a character that is a digit.</li><li> /[01[:lower:]]/          # Matches a character that is either a</li><li>                          # lowercase letter, or '0' or '1'.</li><li> /[[:digit:][:^xdigit:]]/ # Matches a character that can be anything</li><li>			  # except the letters 'a' to 'f'.  This is</li><li>			  # because the main character class is composed</li><li>			  # of two POSIX character classes that are ORed</li><li>			  # together, one that matches any digit, and</li><li>			  # the other that matches anything that isn't a</li><li>			  # hex digit.  The result matches all</li><li>			  # characters except the letters 'a' to 'f' and</li><li>			  # 'A' to 'F'.</li></ol></div>
+
+
+
+      <ul><li><a href="#NAME">NAME
+</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><ul><li><a href="#The-dot">The dot</a></li><li><a href="#Backslash-sequences">Backslash sequences
+       
+    
+ </a></li><li><a href="#Bracketed-Character-Classes">Bracketed Character Classes</a></li></ul></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

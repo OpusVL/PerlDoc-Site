@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="perlbook - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>perlbook - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.20.1/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.20.1/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.20.1/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.20.1/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.20.1/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.20.1/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.20.1/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.20.1/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.20.1/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.20.1/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.20.1/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.20.1/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.20.1/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.20.1/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.20.1/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="index-overview.html">Overview</a> &gt;
+      
+    
+    perlbook
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 20.1 documentation</h1>
+                  </div>
+                  <h1>perlbook</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><ul><li><a href="#The-most-popular-books">The most popular books</a></li><li><a href="#References">References</a></li><li><a href="#Tutorials">Tutorials</a></li><li><a href="#Task-Oriented">Task-Oriented</a></li><li><a href="#Special-Topics">Special Topics</a></li><li><a href="#Free-(as-in-beer)-books">Free (as in beer) books</a></li><li><a href="#Other-interesting%2c-non-Perl-books">Other interesting, non-Perl books</a></li><li><a href="#A-note-on-freshness">A note on freshness</a></li><li><a href="#Get-your-book-listed">Get your book listed</a></li></ul></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>perlbook - Books about and related to Perl</p>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>There are many books on Perl and Perl-related. A few of these are
+good, some are OK, but many aren't worth your money. There is a list
+of these books, some with extensive reviews, at <a href="http://books.perl.org/">http://books.perl.org/</a>
+. We list some of the books here, and while listing a book implies our
+endorsement, don't think that not including a book means anything.</p>
+<p>Most of these books are available online through Safari Books Online
+( <a href="http://safaribooksonline.com/">http://safaribooksonline.com/</a> ).</p>
+<a id="The-most-popular-books"></a><h3 class='h3' >The most popular books</h3>
+<p>The major reference book on Perl, written by the creator of Perl, is
+<i>Programming Perl</i>:</p>
+<ul>
+<li><a id="_Programming-Perl_-(the-%22Camel-Book%22)%3a"></a><strong><i>Programming Perl</i> (the "Camel Book"):</strong>
+<div class="verbatim"><ol><li>	by Tom Christiansen, brian d foy, Larry Wall with Jon Orwant</li><li>	ISBN 978-0-596-00492-7 [4th edition February 2012]</li><li>	ISBN 978-1-4493-9890-3 [ebook]</li><li>	http://oreilly.com/catalog/9780596004927</li></ol></div></li>
+</ul>
+<p>The Ram is a cookbook with hundreds of examples of using Perl to
+accomplish specific tasks:</p>
+<ul>
+<li><a id="_The-Perl-Cookbook_-(the-%22Ram-Book%22)%3a"></a><strong><i>The Perl Cookbook</i> (the "Ram Book"):</strong>
+<div class="verbatim"><ol><li>	by Tom Christiansen and Nathan Torkington,</li><li>	    with Foreword by Larry Wall</li><li>	ISBN 978-0-596-00313-5 [2nd Edition August 2003]</li><li>	http://oreilly.com/catalog/9780596003135/</li></ol></div></li>
+</ul>
+<p>If you want to learn the basics of Perl, you might start with the
+Llama book, which assumes that you already know a little about
+programming:</p>
+<ul>
+<li><a id="_Learning-Perl_--(the-%22Llama-Book%22)"></a><strong><i>Learning Perl</i>  (the "Llama Book")</strong>
+<div class="verbatim"><ol><li>	by Randal L. Schwartz, Tom Phoenix, and brian d foy</li><li>	ISBN 978-1-4493-0358-7 [6th edition June 2011]</li><li>	http://oreilly.com/catalog/0636920018452</li></ol></div></li>
+</ul>
+<p>The tutorial started in the Llama continues in the Alpaca, which
+introduces the intermediate features of references, data structures,
+object-oriented programming, and modules:</p>
+<ul>
+<li><a id="_Intermediate-Perl_-(the-%22Alpaca-Book%22)"></a><strong><i>Intermediate Perl</i> (the "Alpaca Book")</strong>
+<div class="verbatim"><ol><li>	by Randal L. Schwartz and brian d foy, with Tom Phoenix</li><li>		foreword by Damian Conway</li><li>	ISBN 978-1-4493-9309-0 [2nd edition August 2012]</li><li>	http://oreilly.com/catalog/0636920012689/</li></ol></div></li>
+</ul>
+<a id="References"></a><h3 class='h3' >References</h3>
+<p>You might want to keep these desktop references close by your keyboard:</p>
+<ul>
+<li><a id="_Perl-5-Pocket-Reference_"></a><strong><i>Perl 5 Pocket Reference</i></strong>
+<div class="verbatim"><ol><li>	by Johan Vromans</li><li>	ISBN 978-1-4493-0370-9 [5th edition July 2011]</li><li>	ISBN 978-1-4493-0813-1 [ebook]</li><li>	http://oreilly.com/catalog/0636920018476/</li></ol></div></li>
+<li><a id="_Perl-Debugger-Pocket-Reference_"></a><strong><i>Perl Debugger Pocket Reference</i></strong>
+<div class="verbatim"><ol><li>	by Richard Foley</li><li>	ISBN 978-0-596-00503-0 [1st edition January 2004]</li><li>	http://oreilly.com/catalog/9780596005030/</li></ol></div></li>
+<li><a id="_Regular-Expression-Pocket-Reference_"></a><strong><i>Regular Expression Pocket Reference</i></strong>
+<div class="verbatim"><ol><li>	by Tony Stubblebine</li><li>	ISBN 978-0-596-51427-3 [July 2007]</li><li>	http://oreilly.com/catalog/9780596514273/</li></ol></div></li>
+</ul>
+<a id="Tutorials"></a><h3 class='h3' >Tutorials</h3>
+<ul>
+<li><a id="_Beginning-Perl_"></a><strong><i>Beginning Perl</i></strong>
+<div class="verbatim"><ol><li>	by James Lee</li><li>	ISBN 1-59059-391-X [3rd edition April 2010]</li><li>	http://www.apress.com/9781430227939</li></ol></div></li>
+<li><a id="_Learning-Perl_"></a><strong><i>Learning Perl</i></strong>
+<div class="verbatim"><ol><li>	by Randal L. Schwartz, Tom Phoenix, and brian d foy</li><li>	ISBN 978-0-596-52010-6 [5th edition June 2008]</li><li>	http://oreilly.com/catalog/9780596520106</li></ol></div></li>
+<li><a id="_Intermediate-Perl_-(the-%22Alpaca-Book%22)"></a><strong><i>Intermediate Perl</i> (the "Alpaca Book")</strong>
+<div class="verbatim"><ol><li>	by Randal L. Schwartz and brian d foy, with Tom Phoenix</li><li>		foreword by Damian Conway</li><li>	ISBN 0-596-10206-2 [1st edition March 2006]</li><li>	http://oreilly.com/catalog/9780596102067</li></ol></div></li>
+<li><a id="_Mastering-Perl_"></a><strong><i>Mastering Perl</i></strong>
+<div class="verbatim"><ol><li>	by brian d foy</li><li>	ISBN 978-0-596-10206-7 [1st edition July 2007]</li><li>	http://www.oreilly.com/catalog/9780596527242</li></ol></div></li>
+<li><a id="_Effective-Perl-Programming_"></a><strong><i>Effective Perl Programming</i></strong>
+<div class="verbatim"><ol><li>	by Joseph N. Hall, Joshua A. McAdams, brian d foy</li><li>	ISBN 0-321-49694-9 [2nd edition 2010]</li><li>	http://www.effectiveperlprogramming.com/</li></ol></div></li>
+</ul>
+<a id="Task-Oriented"></a><h3 class='h3' >Task-Oriented</h3>
+<ul>
+<li><a id="_Writing-Perl-Modules-for-CPAN_"></a><strong><i>Writing Perl Modules for CPAN</i></strong>
+<div class="verbatim"><ol><li>	by Sam Tregar</li><li>	ISBN 1-59059-018-X [1st edition August 2002]</li><li>	http://www.apress.com/9781590590188</li></ol></div></li>
+<li><a id="_The-Perl-Cookbook_"></a><strong><i>The Perl Cookbook</i></strong>
+<div class="verbatim"><ol><li>	by Tom Christiansen and Nathan Torkington</li><li>	    with foreword by Larry Wall</li><li>	ISBN 1-56592-243-3 [2nd edition August 2003]</li><li>	http://oreilly.com/catalog/9780596003135</li></ol></div></li>
+<li><a id="_Automating-System-Administration-with-Perl_"></a><strong><i>Automating System Administration with Perl</i></strong>
+<div class="verbatim"><ol><li>	by David N. Blank-Edelman</li><li>	ISBN 978-0-596-00639-6 [2nd edition May 2009]</li><li>	http://oreilly.com/catalog/9780596006396</li></ol></div></li>
+<li><a id="_Real-World-SQL-Server-Administration-with-Perl_"></a><strong><i>Real World SQL Server Administration with Perl</i></strong>
+<div class="verbatim"><ol><li>	by Linchi Shea</li><li>	ISBN 1-59059-097-X [1st edition July 2003]</li><li>	http://www.apress.com/9781590590973</li></ol></div></li>
+</ul>
+<a id="Special-Topics"></a><h3 class='h3' >Special Topics</h3>
+<ul>
+<li><a id="_Regular-Expressions-Cookbook_"></a><strong><i>Regular Expressions Cookbook</i></strong>
+<div class="verbatim"><ol><li>	by Jan Goyvaerts and Steven Levithan</li><li>	ISBN 978-0-596-52069-4 [May 2009]</li><li>	http://oreilly.com/catalog/9780596520694</li></ol></div></li>
+<li><a id="_Programming-the-Perl-DBI_"></a><strong><i>Programming the Perl DBI</i></strong>
+<div class="verbatim"><ol><li>	by Tim Bunce and Alligator Descartes</li><li>	ISBN 978-1-56592-699-8 [February 2000]</li><li>	http://oreilly.com/catalog/9781565926998</li></ol></div></li>
+<li><a id="_Perl-Best-Practices_"></a><strong><i>Perl Best Practices</i></strong>
+<div class="verbatim"><ol><li>	by Damian Conway</li><li>	ISBN: 978-0-596-00173-5 [1st edition July 2005]</li><li>	http://oreilly.com/catalog/9780596001735</li></ol></div></li>
+<li><a id="_Higher-Order-Perl_"></a><strong><i>Higher-Order Perl</i></strong>
+<div class="verbatim"><ol><li>	by Mark-Jason Dominus</li><li>	ISBN: 1-55860-701-3 [1st edition March 2005]</li><li>	http://hop.perl.plover.com/</li></ol></div></li>
+<li><a id="_Mastering-Regular-Expressions_"></a><strong><i>Mastering Regular Expressions</i></strong>
+<div class="verbatim"><ol><li>	by Jeffrey E. F. Friedl</li><li>	ISBN 978-0-596-52812-6 [3rd edition August 2006]</li><li>	http://oreilly.com/catalog/9780596528126</li></ol></div></li>
+<li><a id="_Network-Programming-with-Perl_"></a><strong><i>Network Programming with Perl</i></strong>
+<div class="verbatim"><ol><li>	by Lincoln Stein</li><li>	ISBN 0-201-61571-1 [1st edition 2001]</li><li>	http://www.pearsonhighered.com/educator/product/Network-Programming-with-Perl/9780201615715.page</li></ol></div></li>
+<li><a id="_Perl-Template-Toolkit_"></a><strong><i>Perl Template Toolkit</i></strong>
+<div class="verbatim"><ol><li>	by Darren Chamberlain, Dave Cross, and Andy Wardley</li><li>	ISBN 978-0-596-00476-7 [December 2003]</li><li>	http://oreilly.com/catalog/9780596004767</li></ol></div></li>
+<li><a id="_Object-Oriented-Perl_"></a><strong><i>Object Oriented Perl</i></strong>
+<div class="verbatim"><ol><li>	by Damian Conway</li><li>	    with foreword by Randal L. Schwartz</li><li>	ISBN 1-884777-79-1 [1st edition August 1999]</li><li>	http://www.manning.com/conway/</li></ol></div></li>
+<li><a id="_Data-Munging-with-Perl_"></a><strong><i>Data Munging with Perl</i></strong>
+<div class="verbatim"><ol><li>	by Dave Cross</li><li>	ISBN 1-930110-00-6 [1st edition 2001]</li><li>	http://www.manning.com/cross</li></ol></div></li>
+<li><a id="_Mastering-Perl%2fTk_"></a><strong><i>Mastering Perl/Tk</i></strong>
+<div class="verbatim"><ol><li>	by Steve Lidie and Nancy Walsh</li><li>	ISBN 978-1-56592-716-2 [1st edition January 2002]</li><li>	http://oreilly.com/catalog/9781565927162</li></ol></div></li>
+<li><a id="_Extending-and-Embedding-Perl_"></a><strong><i>Extending and Embedding Perl</i></strong>
+<div class="verbatim"><ol><li>	by Tim Jenness and Simon Cozens</li><li>	ISBN 1-930110-82-0 [1st edition August 2002]</li><li>	http://www.manning.com/jenness</li></ol></div></li>
+<li><a id="_Pro-Perl-Debugging_"></a><strong><i>Pro Perl Debugging</i></strong>
+<div class="verbatim"><ol><li>	by Richard Foley with Andy Lester</li><li>	ISBN 1-59059-454-1 [1st edition July 2005]</li><li>	http://www.apress.com/9781590594544</li></ol></div></li>
+</ul>
+<a id="Free-(as-in-beer)-books"></a><h3 class='h3' >Free (as in beer) books</h3>
+<p>Some of these books are available as free downloads.</p>
+<p><i>Higher-Order Perl</i>: <a href="http://hop.perl.plover.com/">http://hop.perl.plover.com/</a></p>
+<a id="Other-interesting%2c-non-Perl-books"></a><h3 class='h3' >Other interesting, non-Perl books</h3>
+<p>You might notice several familiar Perl concepts in this collection of
+ACM columns from Jon Bentley. The similarity to the title of the major
+Perl book (which came later) is not completely accidental:</p>
+<ul>
+<li><a id="_Programming-Pearls_"></a><strong><i>Programming Pearls</i></strong>
+<div class="verbatim"><ol><li>	by Jon Bentley</li><li>	ISBN 978-0-201-65788-3 [2 edition, October 1999]</li></ol></div></li>
+<li><a id="_More-Programming-Pearls_"></a><strong><i>More Programming Pearls</i></strong>
+<pre>
+	<span class="w">by</span> <span class="w">Jon</span> <span class="w">Bentley</span>
+	<span class="w">ISBN</span> <span class="n">0</span>-<span class="n">201</span>-<span class="n">11889</span>-<span class="n">0</span> <span class="s">[</span><span class="w">January</span> <span class="n">1988</span><span class="s">]</span></pre>
+</li>
+</ul>
+<a id="A-note-on-freshness"></a><h3 class='h3' >A note on freshness</h3>
+<p>Each version of Perl comes with the documentation that was current at
+the time of release. This poses a problem for content such as book
+lists. There are probably very nice books published after this list
+was included in your Perl release, and you can check the latest
+released version at <a href="http://perldoc.perl.org/perlbook.html">http://perldoc.perl.org/perlbook.html</a> .</p>
+<p>Some of the books we've listed appear almost ancient in internet
+scale, but we've included those books because they still describe the
+current way of doing things. Not everything in Perl changes every day.
+Many of the beginner-level books, too, go over basic features and
+techniques that are still valid today. In general though, we try to
+limit this list to books published in the past five years.</p>
+<a id="Get-your-book-listed"></a><h3 class='h3' >Get your book listed</h3>
+<p>If your Perl book isn't listed and you think it should be, let us know.</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><ul><li><a href="#The-most-popular-books">The most popular books</a></li><li><a href="#References">References</a></li><li><a href="#Tutorials">Tutorials</a></li><li><a href="#Task-Oriented">Task-Oriented</a></li><li><a href="#Special-Topics">Special Topics</a></li><li><a href="#Free-(as-in-beer)-books">Free (as in beer) books</a></li><li><a href="#Other-interesting%2c-non-Perl-books">Other interesting, non-Perl books</a></li><li><a href="#A-note-on-freshness">A note on freshness</a></li><li><a href="#Get-your-book-listed">Get your book listed</a></li></ul></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

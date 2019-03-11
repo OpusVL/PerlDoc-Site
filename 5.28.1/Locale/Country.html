@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Locale::Country - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>Locale::Country - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.28.1/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.28.1/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.28.1/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.28.1/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.28.1/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.28.1/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.28.1/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.28.1/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.28.1/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.28.1/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.28.1/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.28.1/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.28.1/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.28.1/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.28.1/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../index-modules-L.html">Core modules (L)</a> &gt;
+      
+    
+    Locale::Country
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 28.1 documentation</h1>
+                  </div>
+                  <h1>Locale::Country</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#ROUTINES">ROUTINES</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#COPYRIGHT">COPYRIGHT</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>Locale::Country - module for dealing with country code sets</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<pre>
+   <a class="l_k" href="../functions/use.html">use</a> <span class="w">Locale::Country</span><span class="sc">;</span>
+
+   <span class="i">$name</span> = <span class="i">code2country</span><span class="s">(</span><span class="w">CODE</span><span class="s">)</span><span class="sc">;</span>
+   <span class="i">$code</span> = <span class="i">country2code</span><span class="s">(</span><span class="w">NAME</span><span class="s">)</span><span class="sc">;</span>
+
+   <span class="i">@codes</span>   = <span class="i">all_country_codes</span><span class="s">(</span><span class="s">)</span><span class="sc">;</span>
+   <span class="i">@names</span>   = <span class="i">all_country_names</span><span class="s">(</span><span class="s">)</span><span class="sc">;</span></pre>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>This module provides access to country code sets.</p>
+<p>Please refer to the <a href="../Locale/Codes/Types.html">Locale::Codes::Types</a> document for a description
+of the code sets available.</p>
+<p>Most of the routines take an optional additional argument which
+specifies the code set to use. The code set can be specified using the
+name of a code set, or the perl constant specified in the above
+document.  If not specified, the default code set will be used.</p>
+<a id="ROUTINES"></a><h2 class='h2' >ROUTINES</h2>
+<p>All routines in this module call the appropriate method in the
+<a href="../Locale/Codes.html">Locale::Codes</a> module, using an object of type: country
+Please refer to the documentation of the <a href="../Locale/Codes.html">Locale::Codes</a> module
+for details about each function.</p>
+<p>The following functions are exported automatically:</p>
+<ul>
+<li><a id="*code2country(CODE-%5b%2cCODESET%5d-%5b%2c'retired'%5d)*"></a><strong><strong>code2country(CODE [,CODESET] [,'retired'])</strong></strong>
+<p>See <strong>code2name</strong> in <a href="../Locale/Codes.html">Locale::Codes</a></p>
+</li>
+<li><a id="*country2code(NAME-%5b%2cCODESET%5d-%5b%2c'retired'%5d)*"></a><strong><strong>country2code(NAME [,CODESET] [,'retired'])</strong></strong>
+<p>See <strong>name2code</strong> in <a href="../Locale/Codes.html">Locale::Codes</a></p>
+</li>
+<li><a id="*country_code2code(CODE-%2cCODESET-%2cCODESET2)*"></a><strong><strong>country_code2code(CODE ,CODESET ,CODESET2)</strong></strong>
+<p>See <strong>code2code</strong> in <a href="../Locale/Codes.html">Locale::Codes</a></p>
+</li>
+<li><a id="*all_country_codes(%5bCODESET%5d-%5b%2c'retired'%5d)*"></a><strong><strong>all_country_codes([CODESET] [,'retired'])</strong></strong>
+<p>See <strong>all_codes</strong> in <a href="../Locale/Codes.html">Locale::Codes</a></p>
+</li>
+<li><a id="*all_country_names(%5bCODESET%5d-%5b%2c'retired'%5d)*"></a><strong><strong>all_country_names([CODESET] [,'retired'])</strong></strong>
+<p>See <strong>all_names</strong> in <a href="../Locale/Codes.html">Locale::Codes</a></p>
+</li>
+</ul>
+<p>The following functions are not exported and must be called fully
+qualified with the package name:</p>
+<ul>
+<li><a id="*Locale%3a%3aCountry%3a%3ashow_errors(FLAG)*"></a><strong><strong>Locale::Country::show_errors(FLAG)</strong></strong>
+<p>By default, invalid input will produce empty results, but no errors.  By
+passing in a non-zero value of FLAG, errors will be produced.</p>
+<p>See <strong>show_errors</strong> in <a href="../Locale/Codes.html">Locale::Codes</a> but note that the default for
+the non-OO modules are to NOT produce errors.</p>
+</li>
+<li><a id="*Locale%3a%3aCountry%3a%3arename_country(CODE-%2cNEW_NAME-%5b%2cCODESET%5d)*"></a><strong><strong>Locale::Country::rename_country(CODE ,NEW_NAME [,CODESET])</strong></strong>
+<p>See <strong>rename_code</strong> in <a href="../Locale/Codes.html">Locale::Codes</a></p>
+</li>
+<li><a id="*Locale%3a%3aCountry%3a%3aadd_country(CODE-%2cNAME-%5b%2cCODESET%5d)*"></a><strong><strong>Locale::Country::add_country(CODE ,NAME [,CODESET])</strong></strong>
+<p>See <strong>add_code</strong> in <a href="../Locale/Codes.html">Locale::Codes</a></p>
+</li>
+<li><a id="*Locale%3a%3aCountry%3a%3adelete_country(CODE-%5b%2cCODESET%5d)*"></a><strong><strong>Locale::Country::delete_country(CODE [,CODESET])</strong></strong>
+<p>See <strong>delete_code</strong> in <a href="../Locale/Codes.html">Locale::Codes</a></p>
+</li>
+<li><a id="*Locale%3a%3aCountry%3a%3aadd_country_alias(NAME-%2cNEW_NAME)*"></a><strong><strong>Locale::Country::add_country_alias(NAME ,NEW_NAME)</strong></strong>
+<p>See <strong>add_alias</strong> in <a href="../Locale/Codes.html">Locale::Codes</a></p>
+</li>
+<li><a id="*Locale%3a%3aCountry%3a%3adelete_country_alias(NAME)*"></a><strong><strong>Locale::Country::delete_country_alias(NAME)</strong></strong>
+<p>See <strong>delete_alias</strong> in <a href="../Locale/Codes.html">Locale::Codes</a></p>
+</li>
+<li><a id="*Locale%3a%3aCountry%3a%3arename_country_code(CODE-%2cNEW_CODE-%5b%2cCODESET%5d)*"></a><strong><strong>Locale::Country::rename_country_code(CODE ,NEW_CODE [,CODESET])</strong></strong>
+<p>See <strong>replace_code</strong> in <a href="../Locale/Codes.html">Locale::Codes</a></p>
+</li>
+<li><a id="*Locale%3a%3aCountry%3a%3aadd_country_code_alias(CODE-%2cNEW_CODE-%5b%2cCODESET%5d)*"></a><strong><strong>Locale::Country::add_country_code_alias(CODE ,NEW_CODE [,CODESET])</strong></strong>
+<p>See <strong>add_code_alias</strong> in <a href="../Locale/Codes.html">Locale::Codes</a></p>
+</li>
+<li><a id="*Locale%3a%3aCountry%3a%3adelete_country_code_alias(CODE-%5b%2cCODESET%5d)*"></a><strong><strong>Locale::Country::delete_country_code_alias(CODE [,CODESET])</strong></strong>
+<p>See <strong>delete_code_alias</strong> in <a href="../Locale/Codes.html">Locale::Codes</a></p>
+</li>
+</ul>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<ul>
+<li><a id="the-Locale%3a%3aCodes-manpage"></a><strong><a href="../Locale/Codes.html">Locale::Codes</a></strong>
+<p>The Locale-Codes distribution.</p>
+</li>
+</ul>
+<a id="AUTHOR"></a><h2 class='h2' >AUTHOR</h2>
+<p>See Locale::Codes for full author history.</p>
+<p>Currently maintained by Sullivan Beck (sbeck@cpan.org).</p>
+<a id="COPYRIGHT"></a><h2 class='h2' >COPYRIGHT</h2>
+<div class="verbatim"><ol><li>   Copyright (c) 2011-2018 Sullivan Beck</li></ol></div><p>This module is free software; you can redistribute it and/or
+modify it under the same terms as Perl itself.</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#ROUTINES">ROUTINES</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#COPYRIGHT">COPYRIGHT</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

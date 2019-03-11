@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Pod::PlainText - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>Pod::PlainText - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.24.0/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.24.0/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.24.0/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.24.0/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.24.0/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.24.0/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.24.0/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.24.0/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.24.0/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.24.0/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.24.0/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.24.0/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.24.0/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.24.0/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.24.0/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.24.0/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.24.0/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.24.0/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.24.0/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.24.0/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.24.0/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.24.0/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.24.0/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.24.0/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.24.0/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.24.0/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.24.0/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.24.0/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.24.0/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.24.0/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.24.0/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.24.0/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.24.0/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.24.0/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../index-modules-P.html">Core modules (P)</a> &gt;
+      
+    
+    Pod::PlainText
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 24.0 documentation</h1>
+                  </div>
+                  <h1>Pod::PlainText</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#DIAGNOSTICS">DIAGNOSTICS</a></li><li><a href="#RESTRICTIONS">RESTRICTIONS</a></li><li><a href="#NOTES">NOTES</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#AUTHOR">AUTHOR</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>Pod::PlainText - Convert POD data to formatted ASCII text</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<pre>
+    <a class="l_k" href="../functions/use.html">use</a> <span class="w">Pod::PlainText</span><span class="sc">;</span>
+    <a class="l_k" href="../functions/my.html">my</a> <span class="i">$parser</span> = <span class="w">Pod::PlainText</span><span class="w">-&gt;new</span> <span class="s">(</span><span class="w">sentence</span> <span class="cm">=&gt;</span> <span class="n">0</span><span class="cm">,</span> <span class="w">width</span> <span class="cm">=&gt;</span> <span class="n">78</span><span class="s">)</span><span class="sc">;</span>
+
+    <span class="c"># Read POD from STDIN and write to STDOUT.</span>
+    <span class="i">$parser</span><span class="i">-&gt;parse_from_filehandle</span><span class="sc">;</span>
+
+    <span class="c"># Read POD from file.pod and write to file.txt.</span>
+    <span class="i">$parser</span><span class="i">-&gt;parse_from_file</span> <span class="s">(</span><span class="q">&#39;file.pod&#39;</span><span class="cm">,</span> <span class="q">&#39;file.txt&#39;</span><span class="s">)</span><span class="sc">;</span></pre>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p><strong>NOTE: This module is considered legacy; modern Perl releases (5.18 and
+higher) are going to remove Pod-Parser from core and use <a href="https://search.cpan.org/perldoc/Pod-Simple">Pod-Simple</a>
+for all things POD.</strong></p>
+<p>Pod::PlainText is a module that can convert documentation in the POD format (the
+preferred language for documenting Perl) into formatted ASCII.  It uses no
+special formatting controls or codes whatsoever, and its output is therefore
+suitable for nearly any device.</p>
+<p>As a derived class from Pod::Parser, Pod::PlainText supports the same methods and
+interfaces.  See <a href="../Pod/Parser.html">Pod::Parser</a> for all the details; briefly, one creates a
+new parser with <pre>
+<span class="w">Pod::PlainText</span><span class="w">-&gt;new</span><span class="s">(</span><span class="s">)</span></code>
+ and then calls either
+parse_from_filehandle() or parse_from_file().</p>
+<p>new() can take options, in the form of key/value pairs, that control the
+behavior of the parser.  The currently recognized options are:</p>
+<ul>
+<li><a id="alt"></a><strong>alt</strong>
+<p>If set to a true value, selects an alternate output format that, among other
+things, uses a different heading style and marks <pre>
+<span class="pd">=item</span></code>
+ entries with a
+colon in the left margin.  Defaults to false.</p>
+</li>
+<li><a id="indent"></a><strong>indent</strong>
+<p>The number of spaces to indent regular text, and the default indentation for
+<pre>
+<span class="pd">=over</span></code>
+ blocks.  Defaults to 4.</p>
+</li>
+<li><a id="loose"></a><strong>loose</strong>
+<p>If set to a true value, a blank line is printed after a <pre>
+<span class="pd">=headN</span></code>
+ headings.
+If set to false (the default), no blank line is printed after <pre>
+<span class="pd">=headN</span></code>
+.
+This is the default because it's the expected formatting for manual pages;
+if you're formatting arbitrary text documents, setting this to true may
+result in more pleasing output.</p>
+</li>
+<li><a id="sentence"></a><strong>sentence</strong>
+<p>If set to a true value, Pod::PlainText will assume that each sentence ends in two
+spaces, and will try to preserve that spacing.  If set to false, all
+consecutive whitespace in non-verbatim paragraphs is compressed into a
+single space.  Defaults to true.</p>
+</li>
+<li><a id="width"></a><strong>width</strong>
+<p>The column at which to wrap text on the right-hand side.  Defaults to 76.</p>
+</li>
+</ul>
+<p>The standard Pod::Parser method parse_from_filehandle() takes up to two
+arguments, the first being the file handle to read POD from and the second
+being the file handle to write the formatted output to.  The first defaults
+to STDIN if not given, and the second defaults to STDOUT.  The method
+parse_from_file() is almost identical, except that its two arguments are the
+input and output disk files instead.  See <a href="../Pod/Parser.html">Pod::Parser</a> for the specific
+details.</p>
+<a id="DIAGNOSTICS"></a><h2 class='h2' >DIAGNOSTICS</h2>
+<ul>
+<li><a id="Bizarre-space-in-item"></a><strong>Bizarre space in item</strong>
+<p>(W) Something has gone wrong in internal <pre>
+<span class="pd">=item</span></code>
+ processing.  This message
+indicates a bug in Pod::PlainText; you should never see it.</p>
+</li>
+<li><a id="Can't-open-%25s-for-reading%3a-%25s"></a><strong>Can't open %s for reading: %s</strong>
+<p>(F) Pod::PlainText was invoked via the compatibility mode pod2text() interface
+and the input file it was given could not be opened.</p>
+</li>
+<li><a id="Unknown-escape%3a-%25s"></a><strong>Unknown escape: %s</strong>
+<p>(W) The POD source contained an <pre>
+<span class="w">E</span>&lt;&gt;</code>
+ escape that Pod::PlainText didn't
+know about.</p>
+</li>
+<li><a id="Unknown-sequence%3a-%25s"></a><strong>Unknown sequence: %s</strong>
+<p>(W) The POD source contained a non-standard internal sequence (something of
+the form <pre>
+<span class="w">X</span>&lt;&gt;</code>
+) that Pod::PlainText didn't know about.</p>
+</li>
+<li><a id="Unmatched-%3dback"></a><strong>Unmatched =back</strong>
+<p>(W) Pod::PlainText encountered a <pre>
+<span class="pd">=back</span></code>
+ command that didn't correspond to an
+<pre>
+<span class="pd">=over</span></code>
+ command.</p>
+</li>
+</ul>
+<a id="RESTRICTIONS"></a><h2 class='h2' >RESTRICTIONS</h2>
+<p>Embedded Ctrl-As (octal 001) in the input will be mapped to spaces on
+output, due to an internal implementation detail.</p>
+<a id="NOTES"></a><h2 class='h2' >NOTES</h2>
+<p>This is a replacement for an earlier Pod::Text module written by Tom
+Christiansen.  It has a revamped interface, since it now uses Pod::Parser,
+but an interface roughly compatible with the old Pod::Text::pod2text()
+function is still available.  Please change to the new calling convention,
+though.</p>
+<p>The original Pod::Text contained code to do formatting via termcap
+sequences, although it wasn't turned on by default and it was problematic to
+get it to work at all.  This rewrite doesn't even try to do that, but a
+subclass of it does.  Look for <a href="../Pod/Text/Termcap.html">Pod::Text::Termcap</a>.</p>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<p><strong>Pod::PlainText</strong> is part of the <a href="../Pod/Parser.html">Pod::Parser</a> distribution.</p>
+<p><a href="../Pod/Parser.html">Pod::Parser</a>, <a href="../Pod/Text/Termcap.html">Pod::Text::Termcap</a>,
+pod2text(1)</p>
+<a id="AUTHOR"></a><h2 class='h2' >AUTHOR</h2>
+<p>Please report bugs using <a href="http://rt.cpan.org">http://rt.cpan.org</a>.</p>
+<p>Russ Allbery &lt;rra@stanford.edu&gt;, based <i>very</i> heavily on the
+original Pod::Text by Tom Christiansen &lt;tchrist@mox.perl.com&gt; and
+its conversion to Pod::Parser by Brad Appleton
+&lt;bradapp@enteract.com&gt;.</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#DIAGNOSTICS">DIAGNOSTICS</a></li><li><a href="#RESTRICTIONS">RESTRICTIONS</a></li><li><a href="#NOTES">NOTES</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#AUTHOR">AUTHOR</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/24/0/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/0/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/0/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/0/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/24/0/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/0/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/0/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/0/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/24/0/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/0/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/0/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/24/0/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/0/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/0/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

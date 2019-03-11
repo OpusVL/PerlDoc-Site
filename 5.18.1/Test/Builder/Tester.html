@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Test::Builder::Tester - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>Test::Builder::Tester - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.18.1/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.18.1/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.18.1/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.18.1/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.18.1/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.18.1/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.18.1/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.18.1/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.18.1/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.18.1/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.18.1/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.18.1/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.18.1/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.18.1/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.18.1/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../../index-modules-T.html">Core modules (T)</a> &gt;
+      
+    
+    Test::Builder::Tester
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 18.1 documentation</h1>
+                  </div>
+                  <h1>Test::Builder::Tester</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><ul><li><a href="#Functions">Functions</a></li></ul><li><a href="#BUGS">BUGS</a></li><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#NOTES">NOTES</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>Test::Builder::Tester - test testsuites that have been built with
+Test::Builder</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<pre>
+    <a class="l_k" href="../../functions/use.html">use</a> <span class="w">Test::Builder::Tester</span> <span class="w">tests</span> <span class="cm">=&gt;</span> <span class="n">1</span><span class="sc">;</span>
+    <a class="l_k" href="../../functions/use.html">use</a> <span class="w">Test::More</span><span class="sc">;</span>
+
+    <span class="i">test_out</span><span class="s">(</span><span class="q">&quot;not ok 1 - foo&quot;</span><span class="s">)</span><span class="sc">;</span>
+    <span class="i">test_fail</span><span class="s">(</span><span class="n">+1</span><span class="s">)</span><span class="sc">;</span>
+    <span class="i">fail</span><span class="s">(</span><span class="q">&quot;foo&quot;</span><span class="s">)</span><span class="sc">;</span>
+    <span class="i">test_test</span><span class="s">(</span><span class="q">&quot;fail works&quot;</span><span class="s">)</span><span class="sc">;</span></pre>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>A module that helps you test testing modules that are built with
+<strong>Test::Builder</strong>.</p>
+<p>The testing system is designed to be used by performing a three step
+process for each test you wish to test.  This process starts with using
+<pre>
+<span class="w">test_out</span></code>
+ and <pre>
+<span class="w">test_err</span></code>
+ in advance to declare what the testsuite you
+are testing will output with <strong>Test::Builder</strong> to stdout and stderr.</p>
+<p>You then can run the test(s) from your test suite that call
+<strong>Test::Builder</strong>.  At this point the output of <strong>Test::Builder</strong> is
+safely captured by <strong>Test::Builder::Tester</strong> rather than being
+interpreted as real test output.</p>
+<p>The final stage is to call <pre>
+<span class="w">test_test</span></code>
+ that will simply compare what you
+predeclared to what <strong>Test::Builder</strong> actually outputted, and report the
+results back with a "ok" or "not ok" (with debugging) to the normal
+output.</p>
+<a id="Functions"></a><h3 class='h3' >Functions</h3>
+<p>These are the six methods that are exported as default.</p>
+<ul>
+<li><a id="test_out"></a><strong>test_out</strong>
+</li>
+<li><a id="test_err"></a><strong>test_err</strong>
+<p>Procedures for predeclaring the output that your test suite is
+expected to produce until <pre>
+<span class="w">test_test</span></code>
+ is called.  These procedures
+automatically assume that each line terminates with "\n".  So</p>
+<pre>
+   <span class="i">test_out</span><span class="s">(</span><span class="q">&quot;ok 1&quot;</span><span class="cm">,</span><span class="q">&quot;ok 2&quot;</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>is the same as</p>
+<pre>
+   <span class="i">test_out</span><span class="s">(</span><span class="q">&quot;ok 1\nok 2&quot;</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>which is even the same as</p>
+<pre>
+   <span class="i">test_out</span><span class="s">(</span><span class="q">&quot;ok 1&quot;</span><span class="s">)</span><span class="sc">;</span>
+   <span class="i">test_out</span><span class="s">(</span><span class="q">&quot;ok 2&quot;</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>Once <pre>
+<span class="w">test_out</span></code>
+ or <pre>
+<span class="w">test_err</span></code>
+ (or <pre>
+<span class="w">test_fail</span></code>
+ or <pre>
+<span class="w">test_diag</span></code>
+) have
+been called, all further output from <strong>Test::Builder</strong> will be
+captured by <strong>Test::Builder::Tester</strong>.  This means that you will not
+be able perform further tests to the normal output in the normal way
+until you call <pre>
+<span class="w">test_test</span></code>
+ (well, unless you manually meddle with the
+output filehandles)</p>
+</li>
+<li><a id="test_fail"></a><strong>test_fail</strong>
+<p>Because the standard failure message that <strong>Test::Builder</strong> produces
+whenever a test fails will be a common occurrence in your test error
+output, and because it has changed between Test::Builder versions, rather
+than forcing you to call <pre>
+<span class="w">test_err</span></code>
+ with the string all the time like
+so</p>
+<pre>
+    <span class="i">test_err</span><span class="s">(</span><span class="q">&quot;# Failed test ($0 at line &quot;</span>.<span class="i">line_num</span><span class="s">(</span><span class="n">+1</span><span class="s">)</span>.<span class="q">&quot;)&quot;</span><span class="s">)</span><span class="sc">;</span></pre>
+<p><pre>
+<span class="w">test_fail</span></code>
+ exists as a convenience function that can be called
+instead.  It takes one argument, the offset from the current line that
+the line that causes the fail is on.</p>
+<pre>
+    <span class="i">test_fail</span><span class="s">(</span><span class="n">+1</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>This means that the example in the synopsis could be rewritten
+more simply as:</p>
+<pre>
+   <span class="i">test_out</span><span class="s">(</span><span class="q">&quot;not ok 1 - foo&quot;</span><span class="s">)</span><span class="sc">;</span>
+   <span class="i">test_fail</span><span class="s">(</span><span class="n">+1</span><span class="s">)</span><span class="sc">;</span>
+   <span class="i">fail</span><span class="s">(</span><span class="q">&quot;foo&quot;</span><span class="s">)</span><span class="sc">;</span>
+   <span class="i">test_test</span><span class="s">(</span><span class="q">&quot;fail works&quot;</span><span class="s">)</span><span class="sc">;</span></pre>
+</li>
+<li><a id="test_diag"></a><strong>test_diag</strong>
+<p>As most of the remaining expected output to the error stream will be
+created by Test::Builder's <pre>
+<span class="w">diag</span></code>
+ function, <strong>Test::Builder::Tester</strong>
+provides a convenience function <pre>
+<span class="w">test_diag</span></code>
+ that you can use instead of
+<pre>
+<span class="w">test_err</span></code>
+.</p>
+<p>The <pre>
+<span class="w">test_diag</span></code>
+ function prepends comment hashes and spacing to the
+start and newlines to the end of the expected output passed to it and
+adds it to the list of expected error output.  So, instead of writing</p>
+<pre>
+   <span class="i">test_err</span><span class="s">(</span><span class="q">&quot;# Couldn&#39;t open file&quot;</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>you can write</p>
+<pre>
+   <span class="i">test_diag</span><span class="s">(</span><span class="q">&quot;Couldn&#39;t open file&quot;</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>Remember that <strong>Test::Builder</strong>'s diag function will not add newlines to
+the end of output and test_diag will. So to check</p>
+<pre>
+   <span class="w">Test::Builder</span><span class="w">-&gt;new</span><span class="w">-&gt;diag</span><span class="s">(</span><span class="q">&quot;foo\n&quot;</span><span class="cm">,</span><span class="q">&quot;bar\n&quot;</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>You would do</p>
+<pre>
+  <span class="i">test_diag</span><span class="s">(</span><span class="q">&quot;foo&quot;</span><span class="cm">,</span><span class="q">&quot;bar&quot;</span><span class="s">)</span></pre>
+<p>without the newlines.</p>
+</li>
+<li><a id="test_test"></a><strong>test_test</strong>
+<p>Actually performs the output check testing the tests, comparing the
+data (with <code class="inline"><a class="l_k" href="../../functions/eq.html">eq</a></code>) that we have captured from <strong>Test::Builder</strong> against
+that that was declared with <pre>
+<span class="w">test_out</span></code>
+ and <pre>
+<span class="w">test_err</span></code>
+.</p>
+<p>This takes name/value pairs that effect how the test is run.</p>
+<ul>
+<li><a id="title-(synonym-'name'%2c-'label')"></a><strong>title (synonym 'name', 'label')</strong>
+<p>The name of the test that will be displayed after the <pre>
+<span class="w">ok</span></code>
+ or <pre>
+<a class="l_k" href="../../functions/not.html">not</a>
+<span class="w">ok</span></code>
+.</p>
+</li>
+<li><a id="skip_out"></a><strong>skip_out</strong>
+<p>Setting this to a true value will cause the test to ignore if the
+output sent by the test to the output stream does not match that
+declared with <pre>
+<span class="w">test_out</span></code>
+.</p>
+</li>
+<li><a id="skip_err"></a><strong>skip_err</strong>
+<p>Setting this to a true value will cause the test to ignore if the
+output sent by the test to the error stream does not match that
+declared with <pre>
+<span class="w">test_err</span></code>
+.</p>
+</li>
+</ul>
+<p>As a convenience, if only one argument is passed then this argument
+is assumed to be the name of the test (as in the above examples.)</p>
+<p>Once <pre>
+<span class="w">test_test</span></code>
+ has been run test output will be redirected back to
+the original filehandles that <strong>Test::Builder</strong> was connected to
+(probably STDOUT and STDERR,) meaning any further tests you run
+will function normally and cause success/errors for <strong>Test::Harness</strong>.</p>
+</li>
+<li><a id="line_num"></a><strong>line_num</strong>
+<p>A utility function that returns the line number that the function was
+called on.  You can pass it an offset which will be added to the
+result.  This is very useful for working out the correct text of
+diagnostic functions that contain line numbers.</p>
+<p>Essentially this is the same as the <code class="inline"><a class="l_k" href="../../functions/__LINE__.html">__LINE__</a></code> macro, but the
+<pre>
+<span class="i">line_num</span><span class="s">(</span><span class="n">+3</span><span class="s">)</span></code>
+ idiom is arguably nicer.</p>
+</li>
+</ul>
+<p>In addition to the six exported functions there exists one
+function that can only be accessed with a fully qualified function
+call.</p>
+<ul>
+<li><a id="color"></a><strong>color</strong>
+<p>When <pre>
+<span class="w">test_test</span></code>
+ is called and the output that your tests generate
+does not match that which you declared, <pre>
+<span class="w">test_test</span></code>
+ will print out
+debug information showing the two conflicting versions.  As this
+output itself is debug information it can be confusing which part of
+the output is from <pre>
+<span class="w">test_test</span></code>
+ and which was the original output from
+your original tests.  Also, it may be hard to spot things like
+extraneous whitespace at the end of lines that may cause your test to
+fail even though the output looks similar.</p>
+<p>To assist you <pre>
+<span class="w">test_test</span></code>
+ can colour the background of the debug
+information to disambiguate the different types of output. The debug
+output will have its background coloured green and red.  The green
+part represents the text which is the same between the executed and
+actual output, the red shows which part differs.</p>
+<p>The <pre>
+<span class="w">color</span></code>
+ function determines if colouring should occur or not.
+Passing it a true or false value will enable or disable colouring
+respectively, and the function called with no argument will return the
+current setting.</p>
+<p>To enable colouring from the command line, you can use the
+<strong>Text::Builder::Tester::Color</strong> module like so:</p>
+<pre>
+   <span class="w">perl</span> -<span class="w">Mlib</span>=<span class="w">Text::Builder::Tester::Color</span> <span class="w">test</span>.<span class="w">t</span></pre>
+<p>Or by including the <strong>Test::Builder::Tester::Color</strong> module directly in
+the PERL5LIB.</p>
+</li>
+</ul>
+<a id="BUGS"></a><h2 class='h2' >BUGS</h2>
+<p>Calls <code class="inline">&lt;Test::Builder-</code>no_ending&gt;&gt; turning off the ending tests.
+This is needed as otherwise it will trip out because we've run more
+tests than we strictly should have and it'll register any failures we
+had that we were testing for as real failures.</p>
+<p>The color function doesn't work unless <strong>Term::ANSIColor</strong> is
+compatible with your terminal.</p>
+<p>Bugs (and requests for new features) can be reported to the author
+though the CPAN RT system:
+<a href="http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Test-Builder-Tester">http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Test-Builder-Tester</a></p>
+<a id="AUTHOR"></a><h2 class='h2' >AUTHOR</h2>
+<p>Copyright Mark Fowler &lt;mark@twoshortplanks.com&gt; 2002, 2004.</p>
+<p>Some code taken from <strong>Test::More</strong> and <strong>Test::Catch</strong>, written by by
+Michael G Schwern &lt;schwern@pobox.com&gt;.  Hence, those parts
+Copyright Micheal G Schwern 2001.  Used and distributed with
+permission.</p>
+<p>This program is free software; you can redistribute it
+and/or modify it under the same terms as Perl itself.</p>
+<a id="NOTES"></a><h2 class='h2' >NOTES</h2>
+<p>Thanks to Richard Clamp &lt;richardc@unixbeard.net&gt; for letting
+me use his testing system to try this module out on.</p>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<p><a href="../../Test/Builder.html">Test::Builder</a>, <a href="../../Test/Builder/Tester/Color.html">Test::Builder::Tester::Color</a>, <a href="../../Test/More.html">Test::More</a>.</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><ul><li><a href="#Functions">Functions</a></li></ul><li><a href="#BUGS">BUGS</a></li><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#NOTES">NOTES</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

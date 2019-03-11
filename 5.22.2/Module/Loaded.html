@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Module::Loaded - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>Module::Loaded - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.22.2/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.22.2/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.22.2/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.22.2/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.22.2/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.22.2/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.22.2/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.22.2/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.22.2/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.22.2/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.22.2/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.22.2/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.22.2/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.22.2/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.22.2/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.22.2/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.22.2/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.22.2/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.22.2/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.22.2/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.22.2/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.22.2/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.22.2/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.22.2/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.22.2/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.22.2/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.22.2/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.22.2/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.22.2/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.22.2/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.22.2/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.22.2/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.22.2/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.22.2/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../index-modules-M.html">Core modules (M)</a> &gt;
+      
+    
+    Module::Loaded
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 22.2 documentation</h1>
+                  </div>
+                  <h1>Module::Loaded</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#FUNCTIONS">FUNCTIONS</a></li><ul><li><a href="#%24bool-%3d-mark_as_loaded(-PACKAGE-)%3b">$bool = mark_as_loaded( PACKAGE );</a></li><li><a href="#%24bool-%3d-mark_as_unloaded(-PACKAGE-)%3b">$bool = mark_as_unloaded( PACKAGE );</a></li><li><a href="#%24loc-%3d-is_loaded(-PACKAGE-)%3b">$loc = is_loaded( PACKAGE );</a></li></ul><li><a href="#BUG-REPORTS">BUG REPORTS</a></li><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#COPYRIGHT">COPYRIGHT</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>Module::Loaded - mark modules as loaded or unloaded</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<pre>
+    <a class="l_k" href="../functions/use.html">use</a> <span class="w">Module::Loaded</span><span class="sc">;</span>
+
+    <span class="i">$bool</span> = <span class="i">mark_as_loaded</span><span class="s">(</span><span class="q">&#39;Foo&#39;</span><span class="s">)</span><span class="sc">;</span>   <span class="c"># Foo.pm is now marked as loaded</span>
+    <span class="i">$loc</span>  = <span class="i">is_loaded</span><span class="s">(</span><span class="q">&#39;Foo&#39;</span><span class="s">)</span><span class="sc">;</span>        <span class="c"># location of Foo.pm set to the</span>
+                                     <span class="c"># loaders location</span>
+    <a class="l_k" href="../functions/eval.html">eval</a> <span class="q">&quot;require &#39;Foo&#39;&quot;</span><span class="sc">;</span>            <span class="c"># is now a no-op</span>
+
+    <span class="i">$bool</span> = <span class="i">mark_as_unloaded</span><span class="s">(</span><span class="q">&#39;Foo&#39;</span><span class="s">)</span><span class="sc">;</span> <span class="c"># Foo.pm no longer marked as loaded</span>
+    <a class="l_k" href="../functions/eval.html">eval</a> <span class="q">&quot;require &#39;Foo&#39;&quot;</span><span class="sc">;</span>            <span class="c"># Will try to find Foo.pm in @INC</span></pre>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>When testing applications, often you find yourself needing to provide
+functionality in your test environment that would usually be provided
+by external modules. Rather than munging the <pre>
+<span class="i">%INC</span></code>
+ by hand to mark
+these external modules as loaded, so they are not attempted to be loaded
+by perl, this module offers you a very simple way to mark modules as
+loaded and/or unloaded.</p>
+<a id="FUNCTIONS"></a><h2 class='h2' >FUNCTIONS</h2>
+<a id="%24bool-%3d-mark_as_loaded(-PACKAGE-)%3b"></a><h3 class='h3' >$bool = mark_as_loaded( PACKAGE );</h3>
+<p>Marks the package as loaded to perl. <pre>
+<span class="w">PACKAGE</span></code>
+ can be a bareword or
+string.</p>
+<p>If the module is already loaded, <pre>
+<span class="w">mark_as_loaded</span></code>
+ will carp about
+this and tell you from where the <pre>
+<span class="w">PACKAGE</span></code>
+ has been loaded already.</p>
+<a id="%24bool-%3d-mark_as_unloaded(-PACKAGE-)%3b"></a><h3 class='h3' >$bool = mark_as_unloaded( PACKAGE );</h3>
+<p>Marks the package as unloaded to perl, which is the exact opposite
+of <pre>
+<span class="w">mark_as_loaded</span></code>
+. <pre>
+<span class="w">PACKAGE</span></code>
+ can be a bareword or string.</p>
+<p>If the module is already unloaded, <pre>
+<span class="w">mark_as_unloaded</span></code>
+ will carp about
+this and tell you the <pre>
+<span class="w">PACKAGE</span></code>
+ has been unloaded already.</p>
+<a id="%24loc-%3d-is_loaded(-PACKAGE-)%3b"></a><h3 class='h3' >$loc = is_loaded( PACKAGE );</h3>
+<p><pre>
+<span class="w">is_loaded</span></code>
+ tells you if <pre>
+<span class="w">PACKAGE</span></code>
+ has been marked as loaded yet.
+<pre>
+<span class="w">PACKAGE</span></code>
+ can be a bareword or string.</p>
+<p>It returns falls if <pre>
+<span class="w">PACKAGE</span></code>
+ has not been loaded yet and the location
+from where it is said to be loaded on success.</p>
+<a id="BUG-REPORTS"></a><h2 class='h2' >BUG REPORTS</h2>
+<p>Please report bugs or other issues to &lt;bug-module-loaded@rt.cpan.org&lt;gt&gt;.</p>
+<a id="AUTHOR"></a><h2 class='h2' >AUTHOR</h2>
+<p>This module by Jos Boumans &lt;kane@cpan.org&gt;.</p>
+<a id="COPYRIGHT"></a><h2 class='h2' >COPYRIGHT</h2>
+<p>This library is free software; you may redistribute and/or modify it
+under the same terms as Perl itself.</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#FUNCTIONS">FUNCTIONS</a></li><ul><li><a href="#%24bool-%3d-mark_as_loaded(-PACKAGE-)%3b">$bool = mark_as_loaded( PACKAGE );</a></li><li><a href="#%24bool-%3d-mark_as_unloaded(-PACKAGE-)%3b">$bool = mark_as_unloaded( PACKAGE );</a></li><li><a href="#%24loc-%3d-is_loaded(-PACKAGE-)%3b">$loc = is_loaded( PACKAGE );</a></li></ul><li><a href="#BUG-REPORTS">BUG REPORTS</a></li><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#COPYRIGHT">COPYRIGHT</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/2/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/2/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/2/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/2/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/2/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/2/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/2/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/2/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/2/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/2/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/2/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/2/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/2/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/2/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

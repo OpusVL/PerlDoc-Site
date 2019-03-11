@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="B::Xref - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>B::Xref - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.22.0/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.22.0/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.22.0/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.22.0/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.22.0/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.22.0/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.22.0/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.22.0/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.22.0/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.22.0/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.22.0/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.22.0/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.22.0/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.22.0/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.22.0/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../index-modules-B.html">Core modules (B)</a> &gt;
+      
+    
+    B::Xref
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 22.0 documentation</h1>
+                  </div>
+                  <h1>B::Xref</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#OPTIONS">OPTIONS</a></li><li><a href="#BUGS">BUGS</a></li><li><a href="#AUTHOR">AUTHOR</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>B::Xref - Generates cross reference reports for Perl programs</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<p>perl -MO=Xref[,OPTIONS] foo.pl</p>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>The B::Xref module is used to generate a cross reference listing of all
+definitions and uses of variables, subroutines and formats in a Perl program.
+It is implemented as a backend for the Perl compiler.</p>
+<p>The report generated is in the following format:</p>
+<pre>
+    <span class="w">File</span> <span class="w">filename1</span>
+      <span class="w">Subroutine</span> <span class="w">subname1</span>
+	<span class="w">Package</span> <span class="w">package1</span>
+	  <span class="w">object1</span>        <span class="w">line</span> <span class="w">numbers</span>
+	  <span class="w">object2</span>        <span class="w">line</span> <span class="w">numbers</span>
+	  ...
+	<span class="w">Package</span> <span class="w">package2</span>
+	...</pre>
+<p>Each <strong>File</strong> section reports on a single file. Each <strong>Subroutine</strong> section
+reports on a single subroutine apart from the special cases
+"(definitions)" and "(main)". These report, respectively, on subroutine
+definitions found by the initial symbol table walk and on the main part of
+the program or module external to all subroutines.</p>
+<p>The report is then grouped by the <strong>Package</strong> of each variable,
+subroutine or format with the special case "(lexicals)" meaning
+lexical variables. Each <strong>object</strong> name (implicitly qualified by its
+containing <strong>Package</strong>) includes its type character(s) at the beginning
+where possible. Lexical variables are easier to track and even
+included dereferencing information where possible.</p>
+<p>The <pre>
+<span class="w">line</span> <span class="w">numbers</span></code>
+ are a comma separated list of line numbers (some
+preceded by code letters) where that object is used in some way.
+Simple uses aren't preceded by a code letter. Introductions (such as
+where a lexical is first defined with <code class="inline"><a class="l_k" href="../functions/my.html">my</a></code>) are indicated with the
+letter "i". Subroutine and method calls are indicated by the character
+"&amp;".  Subroutine definitions are indicated by "s" and format
+definitions by "f".</p>
+<p>For instance, here's part of the report from the <i>pod2man</i> program that
+comes with Perl:</p>
+<div class="verbatim"><ol><li>  Subroutine clear_noremap</li><li>    Package (lexical)</li><li>      $ready_to_print   i1069, 1079</li><li>    Package main</li><li>      $&amp;                1086</li><li>      $.                1086</li><li>      $0                1086</li><li>      $1                1087</li><li>      $2                1085, 1085</li><li>      $3                1085, 1085</li><li>      $ARGV             1086</li><li>      %HTML_Escapes     1085, 1085</li></ol></div><p>This shows the variables used in the subroutine <pre>
+<span class="w">clear_noremap</span></code>
+.  The
+variable <pre>
+<span class="i">$ready_to_print</span></code>
+ is a my() (lexical) variable,
+<strong>i</strong>ntroduced (first declared with my()) on line 1069, and used on
+line 1079.  The variable <pre>
+<span class="i">$&amp;</span></code>
+ from the main package is used on 1086,
+and so on.</p>
+<p>A line number may be prefixed by a single letter:</p>
+<ul>
+<li><a id="i"></a><strong>i</strong>
+<p>Lexical variable introduced (declared with my()) for the first time.</p>
+</li>
+<li><a id="%26"></a><strong>&amp;</strong>
+<p>Subroutine or method call.</p>
+</li>
+<li><a id="s"></a><strong>s</strong>
+<p>Subroutine defined.</p>
+</li>
+<li><a id="r"></a><strong>r</strong>
+<p>Format defined.</p>
+</li>
+</ul>
+<p>The most useful option the cross referencer has is to save the report
+to a separate file.  For instance, to save the report on
+<i>myperlprogram</i> to the file <i>report</i>:</p>
+<pre>
+  <span class="i">$ perl</span> -<span class="w">MO</span>=<span class="w">Xref</span><span class="cm">,</span>-<span class="w">oreport</span> <span class="w">myperlprogram</span></pre>
+<a id="OPTIONS"></a><h2 class='h2' >OPTIONS</h2>
+<p>Option words are separated by commas (not whitespace) and follow the
+usual conventions of compiler backend options.</p>
+<ul>
+<li><a id="-oFILENAME"></a><strong><pre>
+-<span class="w">oFILENAME</span></code>
+</strong>
+<p>Directs output to <pre>
+<span class="w">FILENAME</span></code>
+ instead of standard output.</p>
+</li>
+<li><a id="-r"></a><strong><pre>
+-r</code>
+</strong>
+<p>Raw output. Instead of producing a human-readable report, outputs a line
+in machine-readable form for each definition/use of a variable/sub/format.</p>
+</li>
+<li><a id="-d"></a><strong><pre>
+-d</code>
+</strong>
+<p>Don't output the "(definitions)" sections.</p>
+</li>
+<li><a id="-D%5btO%5d"></a><strong><pre>
+-<span class="w">D</span><span class="s">[</span><span class="w">tO</span><span class="s">]</span></code>
+</strong>
+<p>(Internal) debug options, probably only useful if <pre>
+-r</code>
+ included.
+The <pre>
+<span class="w">t</span></code>
+ option prints the object on the top of the stack as it's
+being tracked. The <pre>
+<span class="w">O</span></code>
+ option prints each operator as it's being
+processed in the execution order of the program.</p>
+</li>
+</ul>
+<a id="BUGS"></a><h2 class='h2' >BUGS</h2>
+<p>Non-lexical variables are quite difficult to track through a program.
+Sometimes the type of a non-lexical variable's use is impossible to
+determine. Introductions of non-lexical non-scalars don't seem to be
+reported properly.</p>
+<a id="AUTHOR"></a><h2 class='h2' >AUTHOR</h2>
+<p>Malcolm Beattie, mbeattie@sable.ox.ac.uk.</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#OPTIONS">OPTIONS</a></li><li><a href="#BUGS">BUGS</a></li><li><a href="#AUTHOR">AUTHOR</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

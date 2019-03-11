@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="IO::Handle - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>IO::Handle - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.20.1/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.20.1/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.20.1/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.20.1/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.20.1/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.20.1/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.20.1/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.20.1/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.20.1/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.20.1/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.20.1/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.20.1/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.20.1/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.20.1/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.20.1/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../index-modules-I.html">Core modules (I)</a> &gt;
+      
+    
+    IO::Handle
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 20.1 documentation</h1>
+                  </div>
+                  <h1>IO::Handle</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#CONSTRUCTOR">CONSTRUCTOR</a></li><li><a href="#METHODS">METHODS</a></li><li><a href="#NOTE">NOTE</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#BUGS">BUGS</a></li><li><a href="#HISTORY">HISTORY</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>IO::Handle - supply object methods for I/O handles</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<pre>
+    <a class="l_k" href="../functions/use.html">use</a> <span class="w">IO::Handle</span><span class="sc">;</span>
+
+    <span class="i">$io</span> = <span class="w">IO::Handle</span><span class="w">-&gt;new</span><span class="s">(</span><span class="s">)</span><span class="sc">;</span>
+    <a class="l_k" href="../functions/if.html">if</a> <span class="s">(</span><span class="i">$io</span><span class="i">-&gt;fdopen</span><span class="s">(</span><a class="l_k" href="../functions/fileno.html">fileno</a><span class="s">(</span><span class="w">STDIN</span><span class="s">)</span><span class="cm">,</span><span class="q">&quot;r&quot;</span><span class="s">)</span><span class="s">)</span> <span class="s">{</span>
+        <a class="l_k" href="../functions/print.html">print</a> <span class="i">$io</span><span class="i">-&gt;getline</span><span class="sc">;</span>
+        <span class="i">$io</span><span class="i">-&gt;close</span><span class="sc">;</span>
+    <span class="s">}</span>
+
+    <span class="i">$io</span> = <span class="w">IO::Handle</span><span class="w">-&gt;new</span><span class="s">(</span><span class="s">)</span><span class="sc">;</span>
+    <a class="l_k" href="../functions/if.html">if</a> <span class="s">(</span><span class="i">$io</span><span class="i">-&gt;fdopen</span><span class="s">(</span><a class="l_k" href="../functions/fileno.html">fileno</a><span class="s">(</span><span class="w">STDOUT</span><span class="s">)</span><span class="cm">,</span><span class="q">&quot;w&quot;</span><span class="s">)</span><span class="s">)</span> <span class="s">{</span>
+        <span class="i">$io</span><span class="i">-&gt;print</span><span class="s">(</span><span class="q">&quot;Some text\n&quot;</span><span class="s">)</span><span class="sc">;</span>
+    <span class="s">}</span>
+
+    <span class="c"># setvbuf is not available by default on Perls 5.8.0 and later.</span>
+    <a class="l_k" href="../functions/use.html">use</a> <span class="w">IO::Handle</span> <span class="q">&#39;_IOLBF&#39;</span><span class="sc">;</span>
+    <span class="i">$io</span><span class="i">-&gt;setvbuf</span><span class="s">(</span><span class="i">$buffer_var</span><span class="cm">,</span> <span class="w">_IOLBF</span><span class="cm">,</span> <span class="n">1024</span><span class="s">)</span><span class="sc">;</span>
+
+    <a class="l_k" href="../functions/undef.html">undef</a> <span class="i">$io</span><span class="sc">;</span>       <span class="c"># automatically closes the file if it&#39;s open</span>
+
+    <span class="w">autoflush</span> <span class="w">STDOUT</span> <span class="n">1</span><span class="sc">;</span></pre>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p><pre>
+<span class="w">IO::Handle</span></code>
+ is the base class for all other IO handle classes. It is
+not intended that objects of <pre>
+<span class="w">IO::Handle</span></code>
+ would be created directly,
+but instead <pre>
+<span class="w">IO::Handle</span></code>
+ is inherited from by several other classes
+in the IO hierarchy.</p>
+<p>If you are reading this documentation, looking for a replacement for
+the <pre>
+<span class="w">FileHandle</span></code>
+ package, then I suggest you read the documentation
+for <pre>
+<span class="w">IO::File</span></code>
+ too.</p>
+<a id="CONSTRUCTOR"></a><h2 class='h2' >CONSTRUCTOR</h2>
+<ul>
+<li><a id="new-()"></a><strong>new ()</strong>
+<p>Creates a new <pre>
+<span class="w">IO::Handle</span></code>
+ object.</p>
+</li>
+<li><a id="new_from_fd-(-FD%2c-MODE-)"></a><strong>new_from_fd ( FD, MODE )</strong>
+<p>Creates an <pre>
+<span class="w">IO::Handle</span></code>
+ like <pre>
+<span class="w">new</span></code>
+ does.
+It requires two parameters, which are passed to the method <pre>
+<span class="w">fdopen</span></code>
+;
+if the fdopen fails, the object is destroyed. Otherwise, it is returned
+to the caller.</p>
+</li>
+</ul>
+<a id="METHODS"></a><h2 class='h2' >METHODS</h2>
+<p>See <a href="../perlfunc.html">perlfunc</a> for complete descriptions of each of the following
+supported <pre>
+<span class="w">IO::Handle</span></code>
+ methods, which are just front ends for the
+corresponding built-in functions:</p>
+<div class="verbatim"><ol><li>    $io-&gt;close</li><li>    $io-&gt;eof</li><li>    $io-&gt;fcntl( FUNCTION, SCALAR )</li><li>    $io-&gt;fileno</li><li>    $io-&gt;format_write( [FORMAT_NAME] )</li><li>    $io-&gt;getc</li><li>    $io-&gt;ioctl( FUNCTION, SCALAR )</li><li>    $io-&gt;read ( BUF, LEN, [OFFSET] )</li><li>    $io-&gt;print ( ARGS )</li><li>    $io-&gt;printf ( FMT, [ARGS] )</li><li>    $io-&gt;say ( ARGS )</li><li>    $io-&gt;stat</li><li>    $io-&gt;sysread ( BUF, LEN, [OFFSET] )</li><li>    $io-&gt;syswrite ( BUF, [LEN, [OFFSET]] )</li><li>    $io-&gt;truncate ( LEN )</li></ol></div><p>See <a href="../perlvar.html">perlvar</a> for complete descriptions of each of the following
+supported <pre>
+<span class="w">IO::Handle</span></code>
+ methods.  All of them return the previous
+value of the attribute and takes an optional single argument that when
+given will set the value.  If no argument is given the previous value
+is unchanged (except for $io-&gt;autoflush will actually turn ON
+autoflush by default).</p>
+<div class="verbatim"><ol><li>    $io-&gt;autoflush ( [BOOL] )                         $|</li><li>    $io-&gt;format_page_number( [NUM] )                  $%</li><li>    $io-&gt;format_lines_per_page( [NUM] )               $=</li><li>    $io-&gt;format_lines_left( [NUM] )                   $-</li><li>    $io-&gt;format_name( [STR] )                         $~</li><li>    $io-&gt;format_top_name( [STR] )                     $^</li><li>    $io-&gt;input_line_number( [NUM])                    $.</li></ol></div><p>The following methods are not supported on a per-filehandle basis.</p>
+<div class="verbatim"><ol><li>    IO::Handle-&gt;format_line_break_characters( [STR] ) $:</li><li>    IO::Handle-&gt;format_formfeed( [STR])               $^L</li><li>    IO::Handle-&gt;output_field_separator( [STR] )       $,</li><li>    IO::Handle-&gt;output_record_separator( [STR] )      $\</li><li></li><li>    IO::Handle-&gt;input_record_separator( [STR] )       $/</li></ol></div><p>Furthermore, for doing normal I/O you might need these:</p>
+<ul>
+<li><a id="%24io-%3efdopen-(-FD%2c-MODE-)"></a><strong>$io-&gt;fdopen ( FD, MODE )</strong>
+<p><pre>
+<span class="w">fdopen</span></code>
+ is like an ordinary <code class="inline"><a class="l_k" href="../functions/open.html">open</a></code> except that its first parameter
+is not a filename but rather a file handle name, an IO::Handle object,
+or a file descriptor number.  (For the documentation of the <code class="inline"><a class="l_k" href="../functions/open.html">open</a></code>
+method, see <a href="../IO/File.html">IO::File</a>.)</p>
+</li>
+<li><a id="%24io-%3eopened"></a><strong>$io-&gt;opened</strong>
+<p>Returns true if the object is currently a valid file descriptor, false
+otherwise.</p>
+</li>
+<li><a id="%24io-%3egetline"></a><strong>$io-&gt;getline</strong>
+<p>This works like &lt;$io&gt; described in <a href="../perlop.html#I%2fO-Operators">I/O Operators in perlop</a>
+except that it's more readable and can be safely called in a
+list context but still returns just one line.  If used as the conditional
++within a <code class="inline"><a class="l_k" href="../functions/while.html">while</a></code> or C-style <code class="inline"><a class="l_k" href="../functions/for.html">for</a></code> loop, however, you will need to
++emulate the functionality of &lt;$io&gt; with <pre>
+<a class="l_k" href="../functions/defined.html">defined</a><span class="s">(</span><span class="i">$_</span> = <span class="i">$io</span><span class="i">-&gt;getline</span><span class="s">)</span></code>
+.</p>
+</li>
+<li><a id="%24io-%3egetlines"></a><strong>$io-&gt;getlines</strong>
+<p>This works like &lt;$io&gt; when called in a list context to read all
+the remaining lines in a file, except that it's more readable.
+It will also croak() if accidentally called in a scalar context.</p>
+</li>
+<li><a id="%24io-%3eungetc-(-ORD-)"></a><strong>$io-&gt;ungetc ( ORD )</strong>
+<p>Pushes a character with the given ordinal value back onto the given
+handle's input stream.  Only one character of pushback per handle is
+guaranteed.</p>
+</li>
+<li><a id="%24io-%3ewrite-(-BUF%2c-LEN-%5b%2c-OFFSET-%5d-)"></a><strong>$io-&gt;write ( BUF, LEN [, OFFSET ] )</strong>
+<p>This <code class="inline"><a class="l_k" href="../functions/write.html">write</a></code> is somewhat like <code class="inline"><a class="l_k" href="../functions/write.html">write</a></code> found in C, in that it is the
+opposite of read. The wrapper for the perl <code class="inline"><a class="l_k" href="../functions/write.html">write</a></code> function is
+called <pre>
+<span class="w">format_write</span></code>
+. However, whilst the C <code class="inline"><a class="l_k" href="../functions/write.html">write</a></code> function returns
+the number of bytes written, this <code class="inline"><a class="l_k" href="../functions/write.html">write</a></code> function simply returns true
+if successful (like <code class="inline"><a class="l_k" href="../functions/print.html">print</a></code>). A more C-like <code class="inline"><a class="l_k" href="../functions/write.html">write</a></code> is <code class="inline"><a class="l_k" href="../functions/syswrite.html">syswrite</a></code>
+(see above).</p>
+</li>
+<li><a id="%24io-%3eerror"></a><strong>$io-&gt;error</strong>
+<p>Returns a true value if the given handle has experienced any errors
+since it was opened or since the last call to <pre>
+<span class="w">clearerr</span></code>
+, or if the
+handle is invalid. It only returns false for a valid handle with no
+outstanding errors.</p>
+</li>
+<li><a id="%24io-%3eclearerr"></a><strong>$io-&gt;clearerr</strong>
+<p>Clear the given handle's error indicator. Returns -1 if the handle is
+invalid, 0 otherwise.</p>
+</li>
+<li><a id="%24io-%3esync"></a><strong>$io-&gt;sync</strong>
+<p><pre>
+<span class="w">sync</span></code>
+ synchronizes a file's in-memory state  with  that  on the
+physical medium. <pre>
+<span class="w">sync</span></code>
+ does not operate at the perlio api level, but
+operates on the file descriptor (similar to sysread, sysseek and
+systell). This means that any data held at the perlio api level will not
+be synchronized. To synchronize data that is buffered at the perlio api
+level you must use the flush method. <pre>
+<span class="w">sync</span></code>
+ is not implemented on all
+platforms. Returns "0 but true" on success, <code class="inline"><a class="l_k" href="../functions/undef.html">undef</a></code> on error, <code class="inline"><a class="l_k" href="../functions/undef.html">undef</a></code>
+for an invalid handle. See <i>fsync(3c)</i>.</p>
+</li>
+<li><a id="%24io-%3eflush"></a><strong>$io-&gt;flush</strong>
+<p><pre>
+<span class="w">flush</span></code>
+ causes perl to flush any buffered data at the perlio api level.
+Any unread data in the buffer will be discarded, and any unwritten data
+will be written to the underlying file descriptor. Returns "0 but true"
+on success, <code class="inline"><a class="l_k" href="../functions/undef.html">undef</a></code> on error.</p>
+</li>
+<li><a id="%24io-%3eprintflush-(-ARGS-)"></a><strong>$io-&gt;printflush ( ARGS )</strong>
+<p>Turns on autoflush, print ARGS and then restores the autoflush status of the
+<pre>
+<span class="w">IO::Handle</span></code>
+ object. Returns the return value from print.</p>
+</li>
+<li><a id="%24io-%3eblocking-(-%5b-BOOL-%5d-)"></a><strong>$io-&gt;blocking ( [ BOOL ] )</strong>
+<p>If called with an argument <pre>
+<span class="w">blocking</span></code>
+ will turn on non-blocking IO if
+<pre>
+<span class="w">BOOL</span></code>
+ is false, and turn it off if <pre>
+<span class="w">BOOL</span></code>
+ is true.</p>
+<p><pre>
+<span class="w">blocking</span></code>
+ will return the value of the previous setting, or the
+current setting if <pre>
+<span class="w">BOOL</span></code>
+ is not given.</p>
+<p>If an error occurs <pre>
+<span class="w">blocking</span></code>
+ will return undef and <pre>
+<span class="i">$!</span></code>
+ will be set.</p>
+</li>
+</ul>
+<p>If the C functions setbuf() and/or setvbuf() are available, then
+<pre>
+<span class="w">IO::Handle::setbuf</span></code>
+ and <pre>
+<span class="w">IO::Handle::setvbuf</span></code>
+ set the buffering
+policy for an IO::Handle.  The calling sequences for the Perl functions
+are the same as their C counterparts--including the constants <pre>
+<span class="w">_IOFBF</span></code>
+,
+<pre>
+<span class="w">_IOLBF</span></code>
+, and <pre>
+<span class="w">_IONBF</span></code>
+ for setvbuf()--except that the buffer parameter
+specifies a scalar variable to use as a buffer. You should only
+change the buffer before any I/O, or immediately after calling flush.</p>
+<p>WARNING: The IO::Handle::setvbuf() is not available by default on
+Perls 5.8.0 and later because setvbuf() is rather specific to using
+the stdio library, while Perl prefers the new perlio subsystem instead.</p>
+<p>WARNING: A variable used as a buffer by <pre>
+<span class="w">setbuf</span></code>
+ or <pre>
+<span class="w">setvbuf</span></code>
+ <strong>must not
+be modified</strong> in any way until the IO::Handle is closed or <pre>
+<span class="w">setbuf</span></code>
+ or
+<pre>
+<span class="w">setvbuf</span></code>
+ is called again, or memory corruption may result! Remember that
+the order of global destruction is undefined, so even if your buffer
+variable remains in scope until program termination, it may be undefined
+before the file IO::Handle is closed. Note that you need to import the
+constants <pre>
+<span class="w">_IOFBF</span></code>
+, <pre>
+<span class="w">_IOLBF</span></code>
+, and <pre>
+<span class="w">_IONBF</span></code>
+ explicitly. Like C, setbuf
+returns nothing. setvbuf returns "0 but true", on success, <code class="inline"><a class="l_k" href="../functions/undef.html">undef</a></code> on
+failure.</p>
+<p>Lastly, there is a special method for working under <strong>-T</strong> and setuid/gid
+scripts:</p>
+<ul>
+<li><a id="%24io-%3euntaint"></a><strong>$io-&gt;untaint</strong>
+<p>Marks the object as taint-clean, and as such data read from it will also
+be considered taint-clean. Note that this is a very trusting action to
+take, and appropriate consideration for the data source and potential
+vulnerability should be kept in mind. Returns 0 on success, -1 if setting
+the taint-clean flag failed. (eg invalid handle)</p>
+</li>
+</ul>
+<a id="NOTE"></a><h2 class='h2' >NOTE</h2>
+<p>An <pre>
+<span class="w">IO::Handle</span></code>
+ object is a reference to a symbol/GLOB reference (see
+the <pre>
+<span class="w">Symbol</span></code>
+ package).  Some modules that
+inherit from <pre>
+<span class="w">IO::Handle</span></code>
+ may want to keep object related variables
+in the hash table part of the GLOB. In an attempt to prevent modules
+trampling on each other I propose the that any such module should prefix
+its variables with its own name separated by _'s. For example the IO::Socket
+module keeps a <pre>
+<span class="w">timeout</span></code>
+ variable in 'io_socket_timeout'.</p>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<p><a href="../perlfunc.html">perlfunc</a>, 
+<a href="../perlop.html#I%2fO-Operators">I/O Operators in perlop</a>,
+<a href="../IO/File.html">IO::File</a></p>
+<a id="BUGS"></a><h2 class='h2' >BUGS</h2>
+<p>Due to backwards compatibility, all filehandles resemble objects
+of class <pre>
+<span class="w">IO::Handle</span></code>
+, or actually classes derived from that class.
+They actually aren't.  Which means you can't derive your own 
+class from <pre>
+<span class="w">IO::Handle</span></code>
+ and inherit those methods.</p>
+<a id="HISTORY"></a><h2 class='h2' >HISTORY</h2>
+<p>Derived from FileHandle.pm by Graham Barr &lt;<i>gbarr@pobox.com</i>&gt;</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#CONSTRUCTOR">CONSTRUCTOR</a></li><li><a href="#METHODS">METHODS</a></li><li><a href="#NOTE">NOTE</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#BUGS">BUGS</a></li><li><a href="#HISTORY">HISTORY</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="App::Prove - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>App::Prove - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.18.1/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.18.1/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.18.1/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.18.1/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.18.1/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.18.1/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.18.1/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.18.1/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.18.1/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.18.1/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.18.1/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.18.1/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.18.1/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.18.1/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.18.1/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../index-modules-A.html">Core modules (A)</a> &gt;
+      
+    
+    App::Prove
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 18.1 documentation</h1>
+                  </div>
+                  <h1>App::Prove</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#VERSION">VERSION</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#METHODS">METHODS</a></li><ul><li><a href="#Class-Methods">Class Methods</a></li><li><a href="#Attributes">Attributes</a></li></ul><li><a href="#PLUGINS">PLUGINS</a></li><ul><li><a href="#Sample-Plugin">Sample Plugin</a></li></ul><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>App::Prove - Implements the <pre>
+<span class="w">prove</span></code>
+ command.</p>
+<a id="VERSION"></a><h2 class='h2' >VERSION</h2>
+<p>Version 3.26</p>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p><a href="../Test/Harness.html">Test::Harness</a> provides a command, <pre>
+<span class="w">prove</span></code>
+, which runs a TAP based
+test suite and prints a report. The <pre>
+<span class="w">prove</span></code>
+ command is a minimal
+wrapper around an instance of this module.</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<pre>
+    <a class="l_k" href="../functions/use.html">use</a> <span class="w">App::Prove</span><span class="sc">;</span>
+
+    <a class="l_k" href="../functions/my.html">my</a> <span class="i">$app</span> = <span class="w">App::Prove</span><span class="w">-&gt;new</span><span class="sc">;</span>
+    <span class="i">$app</span><span class="i">-&gt;process_args</span><span class="s">(</span><span class="i">@ARGV</span><span class="s">)</span><span class="sc">;</span>
+    <span class="i">$app</span><span class="i">-&gt;run</span><span class="sc">;</span></pre>
+<a id="METHODS"></a><h2 class='h2' >METHODS</h2>
+<a id="Class-Methods"></a><h3 class='h3' >Class Methods</h3>
+<a id="new"></a><h4 class='h4' ><pre>
+<span class="w">new</span></code>
+</h4>
+<p>Create a new <pre>
+<span class="w">App::Prove</span></code>
+. Optionally a hash ref of attribute
+initializers may be passed.</p>
+<a id="state_class"></a><h4 class='h4' ><pre>
+<span class="w">state_class</span></code>
+</h4>
+<p>Getter/setter for the name of the class used for maintaining state.  This
+class should either subclass from <pre>
+<span class="w">App::Prove::State</span></code>
+ or provide an identical
+interface.</p>
+<a id="state_manager"></a><h4 class='h4' ><pre>
+<span class="w">state_manager</span></code>
+</h4>
+<p>Getter/setter for the instance of the <pre>
+<span class="w">state_class</span></code>
+.</p>
+<a id="add_rc_file"></a><h4 class='h4' ><pre>
+<span class="w">add_rc_file</span></code>
+</h4>
+<pre>
+    <span class="i">$prove</span><span class="i">-&gt;add_rc_file</span><span class="s">(</span><span class="q">&#39;myproj/.proverc&#39;</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>Called before <pre>
+<span class="w">process_args</span></code>
+ to prepend the contents of an rc file to
+the options.</p>
+<a id="process_args"></a><h4 class='h4' ><pre>
+<span class="w">process_args</span></code>
+</h4>
+<pre>
+    <span class="i">$prove</span><span class="i">-&gt;process_args</span><span class="s">(</span><span class="i">@args</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>Processes the command-line arguments. Attributes will be set
+appropriately. Any filenames may be found in the <pre>
+<span class="w">argv</span></code>
+ attribute.</p>
+<p>Dies on invalid arguments.</p>
+<a id="run"></a><h4 class='h4' ><pre>
+<span class="w">run</span></code>
+</h4>
+<p>Perform whatever actions the command line args specified. The <pre>
+<span class="w">prove</span></code>
+
+command line tool consists of the following code:</p>
+<pre>
+    <a class="l_k" href="../functions/use.html">use</a> <span class="w">App::Prove</span><span class="sc">;</span>
+
+    <a class="l_k" href="../functions/my.html">my</a> <span class="i">$app</span> = <span class="w">App::Prove</span><span class="w">-&gt;new</span><span class="sc">;</span>
+    <span class="i">$app</span><span class="i">-&gt;process_args</span><span class="s">(</span><span class="i">@ARGV</span><span class="s">)</span><span class="sc">;</span>
+    <a class="l_k" href="../functions/exit.html">exit</a><span class="s">(</span> <span class="i">$app</span><span class="i">-&gt;run</span> ? <span class="n">0</span> <span class="co">:</span> <span class="n">1</span> <span class="s">)</span><span class="sc">;</span>  <span class="c"># if you need the exit code</span></pre>
+<a id="require_harness"></a><h4 class='h4' ><pre>
+<span class="w">require_harness</span></code>
+</h4>
+<p>Load a harness replacement class.</p>
+<pre>
+  <span class="i">$prove</span><span class="i">-&gt;require_harness</span><span class="s">(</span><span class="i">$for</span> <span class="cm">=&gt;</span> <span class="i">$class_name</span><span class="s">)</span><span class="sc">;</span></pre>
+<a id="print_version"></a><h4 class='h4' ><pre>
+<span class="w">print_version</span></code>
+</h4>
+<p>Display the version numbers of the loaded <a href="../TAP/Harness.html">TAP::Harness</a> and the
+current Perl.</p>
+<a id="Attributes"></a><h3 class='h3' >Attributes</h3>
+<p>After command line parsing the following attributes reflect the values
+of the corresponding command line switches. They may be altered before
+calling <pre>
+<span class="w">run</span></code>
+.</p>
+<ul>
+<li><a id="archive"></a><strong><pre>
+<span class="w">archive</span></code>
+</strong>
+</li>
+<li><a id="argv"></a><strong><pre>
+<span class="w">argv</span></code>
+</strong>
+</li>
+<li><a id="backwards"></a><strong><pre>
+<span class="w">backwards</span></code>
+</strong>
+</li>
+<li><a id="blib"></a><strong><pre>
+<span class="w">blib</span></code>
+</strong>
+</li>
+<li><a id="color"></a><strong><pre>
+<span class="w">color</span></code>
+</strong>
+</li>
+<li><a id="directives"></a><strong><pre>
+<span class="w">directives</span></code>
+</strong>
+</li>
+<li><a id="dry"></a><strong><pre>
+<span class="w">dry</span></code>
+</strong>
+</li>
+<li><a id="exec"></a><strong><code class="inline"><a class="l_k" href="../functions/exec.html">exec</a></code></strong>
+</li>
+<li><a id="extensions"></a><strong><pre>
+<span class="w">extensions</span></code>
+</strong>
+</li>
+<li><a id="failures"></a><strong><pre>
+<span class="w">failures</span></code>
+</strong>
+</li>
+<li><a id="comments"></a><strong><pre>
+<span class="w">comments</span></code>
+</strong>
+</li>
+<li><a id="formatter"></a><strong><pre>
+<span class="w">formatter</span></code>
+</strong>
+</li>
+<li><a id="harness"></a><strong><pre>
+<span class="w">harness</span></code>
+</strong>
+</li>
+<li><a id="ignore_exit"></a><strong><pre>
+<span class="w">ignore_exit</span></code>
+</strong>
+</li>
+<li><a id="includes"></a><strong><pre>
+<span class="w">includes</span></code>
+</strong>
+</li>
+<li><a id="jobs"></a><strong><pre>
+<span class="w">jobs</span></code>
+</strong>
+</li>
+<li><a id="lib"></a><strong><pre>
+<span class="w">lib</span></code>
+</strong>
+</li>
+<li><a id="merge"></a><strong><pre>
+<span class="w">merge</span></code>
+</strong>
+</li>
+<li><a id="modules"></a><strong><pre>
+<span class="w">modules</span></code>
+</strong>
+</li>
+<li><a id="parse"></a><strong><pre>
+<span class="w">parse</span></code>
+</strong>
+</li>
+<li><a id="plugins"></a><strong><pre>
+<span class="w">plugins</span></code>
+</strong>
+</li>
+<li><a id="quiet"></a><strong><pre>
+<span class="w">quiet</span></code>
+</strong>
+</li>
+<li><a id="really_quiet"></a><strong><pre>
+<span class="w">really_quiet</span></code>
+</strong>
+</li>
+<li><a id="recurse"></a><strong><pre>
+<span class="w">recurse</span></code>
+</strong>
+</li>
+<li><a id="rules"></a><strong><pre>
+<span class="w">rules</span></code>
+</strong>
+</li>
+<li><a id="show_count"></a><strong><pre>
+<span class="w">show_count</span></code>
+</strong>
+</li>
+<li><a id="show_help"></a><strong><pre>
+<span class="w">show_help</span></code>
+</strong>
+</li>
+<li><a id="show_man"></a><strong><pre>
+<span class="w">show_man</span></code>
+</strong>
+</li>
+<li><a id="show_version"></a><strong><pre>
+<span class="w">show_version</span></code>
+</strong>
+</li>
+<li><a id="shuffle"></a><strong><pre>
+<span class="w">shuffle</span></code>
+</strong>
+</li>
+<li><a id="state"></a><strong><code class="inline"><a class="l_k" href="../functions/state.html">state</a></code></strong>
+</li>
+<li><a id="state_class"></a><strong><pre>
+<span class="w">state_class</span></code>
+</strong>
+</li>
+<li><a id="taint_fail"></a><strong><pre>
+<span class="w">taint_fail</span></code>
+</strong>
+</li>
+<li><a id="taint_warn"></a><strong><pre>
+<span class="w">taint_warn</span></code>
+</strong>
+</li>
+<li><a id="test_args"></a><strong><pre>
+<span class="w">test_args</span></code>
+</strong>
+</li>
+<li><a id="timer"></a><strong><pre>
+<span class="w">timer</span></code>
+</strong>
+</li>
+<li><a id="verbose"></a><strong><pre>
+<span class="w">verbose</span></code>
+</strong>
+</li>
+<li><a id="warnings_fail"></a><strong><pre>
+<span class="w">warnings_fail</span></code>
+</strong>
+</li>
+<li><a id="warnings_warn"></a><strong><pre>
+<span class="w">warnings_warn</span></code>
+</strong>
+</li>
+<li><a id="tapversion"></a><strong><pre>
+<span class="w">tapversion</span></code>
+</strong>
+</li>
+<li><a id="trap"></a><strong><pre>
+<span class="w">trap</span></code>
+</strong>
+</li>
+</ul>
+<a id="PLUGINS"></a><h2 class='h2' >PLUGINS</h2>
+<p><pre>
+<span class="w">App::Prove</span></code>
+ provides support for 3rd-party plugins.  These are currently
+loaded at run-time, <i>after</i> arguments have been parsed (so you can not
+change the way arguments are processed, sorry), typically with the
+<code class="inline">-P<i>plugin</i></code> switch, eg:</p>
+<pre>
+  <span class="w">prove</span> -<span class="w">PMyPlugin</span></pre>
+<p>This will search for a module named <pre>
+<span class="w">App::Prove::Plugin::MyPlugin</span></code>
+, or failing
+that, <pre>
+<span class="w">MyPlugin</span></code>
+.  If the plugin can't be found, <pre>
+<span class="w">prove</span></code>
+ will complain &amp; exit.</p>
+<p>You can pass an argument to your plugin by appending an <pre>
+=</code>
+ after the plugin
+name, eg <pre>
+-<span class="w">PMyPlugin</span>=<span class="w">foo</span></code>
+.  You can pass multiple arguments using commas:</p>
+<pre>
+  <span class="w">prove</span> -<span class="w">PMyPlugin</span>=<span class="w">foo</span><span class="cm">,</span><span class="w">bar</span><span class="cm">,</span><span class="w">baz</span></pre>
+<p>These are passed in to your plugin's <pre>
+<span class="i">load</span><span class="s">(</span><span class="s">)</span></code>
+ class method (if it has one),
+along with a reference to the <pre>
+<span class="w">App::Prove</span></code>
+ object that is invoking your plugin:</p>
+<pre>
+<a name="load"></a>  sub <span class="m">load</span> <span class="s">{</span>
+      <a class="l_k" href="../functions/my.html">my</a> <span class="s">(</span><span class="i">$class</span><span class="cm">,</span> <span class="i">$p</span><span class="s">)</span> = <span class="i">@_</span><span class="sc">;</span>
+
+      <a class="l_k" href="../functions/my.html">my</a> <span class="i">@args</span> = <span class="i">@</span>{ <span class="i">$p</span>-&gt;{<span class="w">args</span>} }<span class="sc">;</span>
+      <span class="c"># @args will contain ( &#39;foo&#39;, &#39;bar&#39;, &#39;baz&#39; )</span>
+      <span class="i">$p</span>-&gt;{<span class="w">app_prove</span>}<span class="i">-&gt;do_something</span><span class="sc">;</span>
+      ...
+  <span class="s">}</span></pre>
+<p>Note that the user's arguments are also passed to your plugin's <code class="inline"><a class="l_k" href="../functions/import.html">import()</a></code>
+function as a list, eg:</p>
+<pre>
+<a name="import"></a>  sub <span class="m">import</span> <span class="s">{</span>
+      <a class="l_k" href="../functions/my.html">my</a> <span class="s">(</span><span class="i">$class</span><span class="cm">,</span> <span class="i">@args</span><span class="s">)</span> = <span class="i">@_</span><span class="sc">;</span>
+      <span class="c"># @args will contain ( &#39;foo&#39;, &#39;bar&#39;, &#39;baz&#39; )</span>
+      ...
+  <span class="s">}</span></pre>
+<p>This is for backwards compatibility, and may be deprecated in the future.</p>
+<a id="Sample-Plugin"></a><h3 class='h3' >Sample Plugin</h3>
+<p>Here's a sample plugin, for your reference:</p>
+<pre>
+<a name="package-App::Prove::Plugin::Foo"></a>  package <span class="i">App::Prove::Plugin::Foo</span><span class="sc">;</span>
+
+  <span class="c"># Sample plugin, try running with:</span>
+  <span class="c"># prove -PFoo=bar -r -j3</span>
+  <span class="c"># prove -PFoo -Q</span>
+  <span class="c"># prove -PFoo=bar,My::Formatter</span>
+
+  <a class="l_k" href="../functions/use.html">use</a> <span class="w">strict</span><span class="sc">;</span>
+  <a class="l_k" href="../functions/use.html">use</a> <span class="w">warnings</span><span class="sc">;</span>
+
+<a name="load"></a>  sub <span class="m">load</span> <span class="s">{</span>
+      <a class="l_k" href="../functions/my.html">my</a> <span class="s">(</span><span class="i">$class</span><span class="cm">,</span> <span class="i">$p</span><span class="s">)</span> = <span class="i">@_</span><span class="sc">;</span>
+      <a class="l_k" href="../functions/my.html">my</a> <span class="i">@args</span> = <span class="i">@</span>{ <span class="i">$p</span>-&gt;{<span class="w">args</span>} }<span class="sc">;</span>
+      <a class="l_k" href="../functions/my.html">my</a> <span class="i">$app</span>  = <span class="i">$p</span>-&gt;{<span class="w">app_prove</span>}<span class="sc">;</span>
+
+      <a class="l_k" href="../functions/print.html">print</a> <span class="q">&quot;loading plugin: $class, args: &quot;</span><span class="cm">,</span> <a class="l_k" href="../functions/join.html">join</a><span class="s">(</span><span class="q">&#39;, &#39;</span><span class="cm">,</span> <span class="i">@args</span> <span class="s">)</span><span class="cm">,</span> <span class="q">&quot;\n&quot;</span><span class="sc">;</span>
+
+      <span class="c"># turn on verbosity</span>
+      <span class="i">$app</span><span class="i">-&gt;verbose</span><span class="s">(</span> <span class="n">1</span> <span class="s">)</span><span class="sc">;</span>
+
+      <span class="c"># set the formatter?</span>
+      <span class="i">$app</span><span class="i">-&gt;formatter</span><span class="s">(</span> <span class="i">$args</span>[<span class="n">1</span>] <span class="s">)</span> <a class="l_k" href="../functions/if.html">if</a> <span class="i">@args</span> &gt; <span class="n">1</span><span class="sc">;</span>
+
+      <span class="c"># print some of App::Prove&#39;s state:</span>
+      <a class="l_k" href="../functions/for.html">for</a> <a class="l_k" href="../functions/my.html">my</a> <span class="i">$attr</span> <span class="s">(</span><span class="q">qw( jobs quiet really_quiet recurse verbose )</span><span class="s">)</span> <span class="s">{</span>
+          <a class="l_k" href="../functions/my.html">my</a> <span class="i">$val</span> = <span class="i">$app</span><span class="i">-&gt;$attr</span><span class="sc">;</span>
+          <span class="i">$val</span>    = <span class="q">&#39;undef&#39;</span> <a class="l_k" href="../functions/unless.html">unless</a> <a class="l_k" href="../functions/defined.html">defined</a><span class="s">(</span> <span class="i">$val</span> <span class="s">)</span><span class="sc">;</span>
+          <a class="l_k" href="../functions/print.html">print</a> <span class="q">&quot;$attr: $val\n&quot;</span><span class="sc">;</span>
+      <span class="s">}</span>
+
+      <a class="l_k" href="../functions/return.html">return</a> <span class="n">1</span><span class="sc">;</span>
+  <span class="s">}</span>
+
+  <span class="n">1</span><span class="sc">;</span></pre>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<p><a href="../prove.html">prove</a>, <a href="../TAP/Harness.html">TAP::Harness</a></p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#VERSION">VERSION</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#METHODS">METHODS</a></li><ul><li><a href="#Class-Methods">Class Methods</a></li><li><a href="#Attributes">Attributes</a></li></ul><li><a href="#PLUGINS">PLUGINS</a></li><ul><li><a href="#Sample-Plugin">Sample Plugin</a></li></ul><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

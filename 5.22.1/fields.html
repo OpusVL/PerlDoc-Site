@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="fields - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>fields - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.22.1/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.22.1/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.22.1/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.22.1/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.22.1/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.22.1/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.22.1/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.22.1/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.22.1/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.22.1/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.22.1/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.22.1/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.22.1/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.22.1/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.22.1/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="index-pragmas.html">Pragmas</a> &gt;
+      
+    
+    fields
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 22.1 documentation</h1>
+                  </div>
+                  <h1>fields</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>fields - compile-time class fields</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<pre>
+    <span class="s">{</span>
+<a name="package-Foo"></a>        package <span class="i">Foo</span><span class="sc">;</span>
+        <a class="l_k" href="functions/use.html">use</a> <span class="w">fields</span> <span class="q">qw(foo bar _Foo_private)</span><span class="sc">;</span>
+<a name="new"></a>        sub <span class="m">new</span> <span class="s">{</span>
+            <a class="l_k" href="functions/my.html">my</a> <span class="w">Foo</span> <span class="i">$self</span> = <a class="l_k" href="functions/shift.html">shift</a><span class="sc">;</span>
+            <a class="l_k" href="functions/unless.html">unless</a> <span class="s">(</span><a class="l_k" href="functions/ref.html">ref</a> <span class="i">$self</span><span class="s">)</span> <span class="s">{</span>
+                <span class="i">$self</span> = <span class="i">fields::new</span><span class="s">(</span><span class="i">$self</span><span class="s">)</span><span class="sc">;</span>
+                <span class="i">$self</span>-&gt;{<span class="w">_Foo_private</span>} = <span class="q">&quot;this is Foo&#39;s secret&quot;</span><span class="sc">;</span>
+            <span class="s">}</span>
+            <span class="i">$self</span>-&gt;{<span class="w">foo</span>} = <span class="n">10</span><span class="sc">;</span>
+            <span class="i">$self</span>-&gt;{<span class="w">bar</span>} = <span class="n">20</span><span class="sc">;</span>
+            <a class="l_k" href="functions/return.html">return</a> <span class="i">$self</span><span class="sc">;</span>
+        <span class="s">}</span>
+<a name="package-main"></a>    <span class="s">}</span>
+
+    <a class="l_k" href="functions/my.html">my</a> <span class="i">$var</span> = <span class="w">Foo</span><span class="w">-&gt;new</span><span class="sc">;</span>
+    <span class="i">$var</span>-&gt;{<span class="w">foo</span>} = <span class="n">42</span><span class="sc">;</span>
+
+    <span class="c"># this will generate a run-time error</span>
+    <span class="i">$var</span>-&gt;{<span class="w">zap</span>} = <span class="n">42</span><span class="sc">;</span>
+
+    <span class="c"># this will generate a compile-time error</span>
+    <a class="l_k" href="functions/my.html">my</a> <span class="w">Foo</span> <span class="i">$foo</span> = <span class="w">Foo</span><span class="w">-&gt;new</span><span class="sc">;</span>
+    <span class="i">$foo</span>-&gt;{<span class="w">zap</span>} = <span class="n">24</span><span class="sc">;</span>
+
+    <span class="c"># subclassing</span>
+    <span class="s">{</span>
+<a name="package-Bar"></a>        package <span class="i">Bar</span><span class="sc">;</span>
+        <a class="l_k" href="functions/use.html">use</a> <span class="w">base</span> <span class="q">&#39;Foo&#39;</span><span class="sc">;</span>
+        <a class="l_k" href="functions/use.html">use</a> <span class="w">fields</span> <span class="q">qw(baz _Bar_private)</span><span class="sc">;</span>        <span class="c"># not shared with Foo</span>
+<a name="new-1"></a>        sub <span class="m">new</span> <span class="s">{</span>
+            <a class="l_k" href="functions/my.html">my</a> <span class="i">$class</span> = <a class="l_k" href="functions/shift.html">shift</a><span class="sc">;</span>
+            <a class="l_k" href="functions/my.html">my</a> <span class="i">$self</span> = <span class="i">fields::new</span><span class="s">(</span><span class="i">$class</span><span class="s">)</span><span class="sc">;</span>
+            <span class="i">$self</span><span class="i">-&gt;SUPER::new</span><span class="s">(</span><span class="s">)</span><span class="sc">;</span>                <span class="c"># init base fields</span>
+            <span class="i">$self</span>-&gt;{<span class="w">baz</span>} = <span class="n">10</span><span class="sc">;</span>                  <span class="c"># init own fields</span>
+            <span class="i">$self</span>-&gt;{<span class="w">_Bar_private</span>} = <span class="q">&quot;this is Bar&#39;s secret&quot;</span><span class="sc">;</span>
+            <a class="l_k" href="functions/return.html">return</a> <span class="i">$self</span><span class="sc">;</span>
+        <span class="s">}</span>
+<a name="package-main-1"></a>    <span class="s">}</span></pre>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>The <pre>
+<span class="w">fields</span></code>
+ pragma enables compile-time and run-time verified class
+fields.</p>
+<p>NOTE: The current implementation keeps the declared fields in the %FIELDS
+hash of the calling package, but this may change in future versions.
+Do <strong>not</strong> update the %FIELDS hash directly, because it must be created
+at compile-time for it to be fully useful, as is done by this pragma.</p>
+<p>If a typed lexical variable (<pre>
+<a class="l_k" href="functions/my.html">my</a> <span class="w">Class</span>
+<span class="i">$var</span></code>
+) holding a reference is used to access a
+hash element and a package with the same name as the type has
+declared class fields using this pragma, then the hash key is
+verified at compile time.  If the variables are not typed, access is
+only checked at run time.</p>
+<p>The related <pre>
+<span class="w">base</span></code>
+ pragma will combine fields from base classes and any
+fields declared using the <pre>
+<span class="w">fields</span></code>
+ pragma.  This enables field
+inheritance to work properly.  Inherited fields can be overridden but
+will generate a warning if warnings are enabled.</p>
+<p><strong>Only valid for Perl 5.8.x and earlier:</strong> Field names that start with an
+underscore character are made private to the class and are not visible
+to subclasses.</p>
+<p>Also, <strong>in Perl 5.8.x and earlier</strong>, this pragma uses pseudo-hashes, the
+effect being that you can have objects with named fields which are as
+compact and as fast arrays to access, as long as the objects are
+accessed through properly typed variables.</p>
+<p>The following functions are supported:</p>
+<ul>
+<li><a id="new"></a><strong>new</strong>
+<p>fields::new() creates and blesses a hash comprised of the fields declared
+using the <pre>
+<span class="w">fields</span></code>
+ pragma into the specified class.  It is the
+recommended way to construct a fields-based object.</p>
+<p>This makes it possible to write a constructor like this:</p>
+<pre>
+<a name="package-Critter::Sounds"></a>    package <span class="i">Critter::Sounds</span><span class="sc">;</span>
+    <a class="l_k" href="functions/use.html">use</a> <span class="w">fields</span> <span class="q">qw(cat dog bird)</span><span class="sc">;</span>
+
+<a name="new"></a>    sub <span class="m">new</span> <span class="s">{</span>
+        <a class="l_k" href="functions/my.html">my</a> <span class="i">$self</span> = <a class="l_k" href="functions/shift.html">shift</a><span class="sc">;</span>
+        <span class="i">$self</span> = <span class="i">fields::new</span><span class="s">(</span><span class="i">$self</span><span class="s">)</span> <a class="l_k" href="functions/unless.html">unless</a> <a class="l_k" href="functions/ref.html">ref</a> <span class="i">$self</span><span class="sc">;</span>
+        <span class="i">$self</span>-&gt;{<span class="w">cat</span>} = <span class="q">&#39;meow&#39;</span><span class="sc">;</span>                      <span class="c"># scalar element</span>
+        <span class="i">@$self</span>{<span class="q">&#39;dog&#39;</span><span class="cm">,</span><span class="q">&#39;bird&#39;</span>} = <span class="s">(</span><span class="q">&#39;bark&#39;</span><span class="cm">,</span><span class="q">&#39;tweet&#39;</span><span class="s">)</span><span class="sc">;</span>    <span class="c"># slice</span>
+        <a class="l_k" href="functions/return.html">return</a> <span class="i">$self</span><span class="sc">;</span>
+    <span class="s">}</span></pre>
+</li>
+<li><a id="phash"></a><strong>phash</strong>
+<p><strong>This function only works in Perl 5.8.x and earlier.</strong>  Pseudo-hashes
+were removed from Perl as of 5.10.  Consider using restricted hashes or
+fields::new() instead (which itself uses restricted hashes under 5.10+).
+See <a href="Hash/Util.html">Hash::Util</a>.  Using fields::phash() under 5.10 or higher will
+cause an error.</p>
+<p>fields::phash() can be used to create and initialize a plain (unblessed)
+pseudo-hash.  This function should always be used instead of creating
+pseudo-hashes directly.</p>
+<p>If the first argument is a reference to an array, the pseudo-hash will
+be created with keys from that array.  If a second argument is supplied,
+it must also be a reference to an array whose elements will be used as
+the values.  If the second array contains less elements than the first,
+the trailing elements of the pseudo-hash will not be initialized.
+This makes it particularly useful for creating a pseudo-hash from
+subroutine arguments:</p>
+<pre>
+<a name="dogtag"></a>    sub <span class="m">dogtag</span> <span class="s">{</span>
+       <a class="l_k" href="functions/my.html">my</a> <span class="i">$tag</span> = <span class="i">fields::phash</span><span class="s">(</span><span class="s">[</span><span class="q">qw(name rank ser_num)</span><span class="s">]</span><span class="cm">,</span> <span class="s">[</span><span class="i">@_</span><span class="s">]</span><span class="s">)</span><span class="sc">;</span>
+    <span class="s">}</span></pre>
+<p>fields::phash() also accepts a list of key-value pairs that will
+be used to construct the pseudo hash.  Examples:</p>
+<pre>
+    <a class="l_k" href="functions/my.html">my</a> <span class="i">$tag</span> = <span class="i">fields::phash</span><span class="s">(</span><span class="w">name</span> <span class="cm">=&gt;</span> <span class="q">&quot;Joe&quot;</span><span class="cm">,</span>
+                            <span class="w">rank</span> <span class="cm">=&gt;</span> <span class="q">&quot;captain&quot;</span><span class="cm">,</span>
+                            <span class="w">ser_num</span> <span class="cm">=&gt;</span> <span class="n">42</span><span class="s">)</span><span class="sc">;</span>
+
+    <a class="l_k" href="functions/my.html">my</a> <span class="i">$pseudohash</span> = <span class="i">fields::phash</span><span class="s">(</span><span class="i">%args</span><span class="s">)</span><span class="sc">;</span></pre>
+</li>
+</ul>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<p><a href="base.html">base</a>, <a href="Hash/Util.html">Hash::Util</a></p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="XSLoader - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>XSLoader - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.22.0/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.22.0/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.22.0/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.22.0/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.22.0/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.22.0/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.22.0/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.22.0/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.22.0/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.22.0/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.22.0/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.22.0/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.22.0/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.22.0/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.22.0/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="index-modules-X.html">Core modules (X)</a> &gt;
+      
+    
+    XSLoader
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 22.0 documentation</h1>
+                  </div>
+                  <h1>XSLoader</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#VERSION">VERSION</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><ul><li><a href="#Migration-from-DynaLoader">Migration from DynaLoader</a></li><li><a href="#Backward-compatible-boilerplate">Backward compatible boilerplate</a></li></ul><li><a href="#Order-of-initialization%3a-early-load()">Order of initialization: early load()</a></li><ul><li><a href="#The-most-hairy-case">The most hairy case</a></li></ul><li><a href="#DIAGNOSTICS">DIAGNOSTICS</a></li><li><a href="#LIMITATIONS">LIMITATIONS</a></li><li><a href="#KNOWN-BUGS">KNOWN BUGS</a></li><li><a href="#BUGS">BUGS</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#AUTHORS">AUTHORS</a></li><li><a href="#COPYRIGHT-%26-LICENSE">COPYRIGHT & LICENSE</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>XSLoader - Dynamically load C libraries into Perl code</p>
+<a id="VERSION"></a><h2 class='h2' >VERSION</h2>
+<p>Version 0.17</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<pre>
+<a name="package-YourPackage"></a>    package <span class="i">YourPackage</span><span class="sc">;</span>
+    <a class="l_k" href="functions/require.html">require</a> <span class="w">XSLoader</span><span class="sc">;</span>
+
+    <span class="i">XSLoader::load</span><span class="s">(</span><span class="s">)</span><span class="sc">;</span></pre>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>This module defines a standard <i>simplified</i> interface to the dynamic
+linking mechanisms available on many platforms.  Its primary purpose is
+to implement cheap automatic dynamic loading of Perl modules.</p>
+<p>For a more complicated interface, see <a href="DynaLoader.html">DynaLoader</a>.  Many (most)
+features of <pre>
+<span class="w">DynaLoader</span></code>
+ are not implemented in <pre>
+<span class="w">XSLoader</span></code>
+, like for
+example the <pre>
+<span class="w">dl_load_flags</span></code>
+, not honored by <pre>
+<span class="w">XSLoader</span></code>
+.</p>
+<a id="Migration-from-DynaLoader"></a><h3 class='h3' >Migration from <pre>
+<span class="w">DynaLoader</span></code>
+</h3>
+<p>A typical module using <a href="DynaLoader.html">DynaLoader</a> starts like this:</p>
+<pre>
+<a name="package-YourPackage"></a>    package <span class="i">YourPackage</span><span class="sc">;</span>
+    <a class="l_k" href="functions/require.html">require</a> <span class="w">DynaLoader</span><span class="sc">;</span>
+
+    <a class="l_k" href="functions/our.html">our</a> <span class="i">@ISA</span> = <span class="q">qw( OnePackage OtherPackage DynaLoader )</span><span class="sc">;</span>
+    <a class="l_k" href="functions/our.html">our</a> <span class="i">$VERSION</span> = <span class="q">&#39;0.01&#39;</span><span class="sc">;</span>
+    <span class="w">bootstrap</span> <span class="w">YourPackage</span> <span class="i">$VERSION</span><span class="sc">;</span></pre>
+<p>Change this to</p>
+<pre>
+<a name="package-YourPackage"></a>    package <span class="i">YourPackage</span><span class="sc">;</span>
+    <a class="l_k" href="functions/use.html">use</a> <span class="w">XSLoader</span><span class="sc">;</span>
+
+    <a class="l_k" href="functions/our.html">our</a> <span class="i">@ISA</span> = <span class="q">qw( OnePackage OtherPackage )</span><span class="sc">;</span>
+    <a class="l_k" href="functions/our.html">our</a> <span class="i">$VERSION</span> = <span class="q">&#39;0.01&#39;</span><span class="sc">;</span>
+    <span class="w">XSLoader::load</span> <span class="q">&#39;YourPackage&#39;</span><span class="cm">,</span> <span class="i">$VERSION</span><span class="sc">;</span></pre>
+<p>In other words: replace <pre>
+<a class="l_k" href="functions/require.html">require</a> <span class="w">DynaLoader</span></code>
+ by <pre>
+<a class="l_k" href="functions/use.html">use</a> <span class="w">XSLoader</span></code>
+, remove
+<pre>
+<span class="w">DynaLoader</span></code>
+ from <pre>
+<span class="i">@ISA</span></code>
+, change <pre>
+<span class="w">bootstrap</span></code>
+ by <pre>
+<span class="w">XSLoader::load</span></code>
+.  Do not
+forget to quote the name of your package on the <pre>
+<span class="w">XSLoader::load</span></code>
+ line,
+and add comma (<pre>
+<span class="cm">,</span></code>
+) before the arguments (<pre>
+<span class="i">$VERSION</span></code>
+ above).</p>
+<p>Of course, if <pre>
+<span class="i">@ISA</span></code>
+ contained only <pre>
+<span class="w">DynaLoader</span></code>
+, there is no need to have
+the <pre>
+<span class="i">@ISA</span></code>
+ assignment at all; moreover, if instead of <code class="inline"><a class="l_k" href="functions/our.html">our</a></code> one uses the
+more backward-compatible</p>
+<pre>
+    <a class="l_k" href="functions/use.html">use</a> <span class="w">vars</span> <span class="q">qw($VERSION @ISA)</span><span class="sc">;</span></pre>
+<p>one can remove this reference to <pre>
+<span class="i">@ISA</span></code>
+ together with the <pre>
+<span class="i">@ISA</span></code>
+ assignment.</p>
+<p>If no <pre>
+<span class="i">$VERSION</span></code>
+ was specified on the <pre>
+<span class="w">bootstrap</span></code>
+ line, the last line becomes</p>
+<pre>
+    <span class="w">XSLoader::load</span> <span class="q">&#39;YourPackage&#39;</span><span class="sc">;</span></pre>
+<p>If the call to <pre>
+<span class="w">load</span></code>
+ is from <pre>
+<span class="w">YourPackage</span></code>
+, then that can be further
+simplified to</p>
+<pre>
+    <span class="i">XSLoader::load</span><span class="s">(</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>as <pre>
+<span class="w">load</span></code>
+ will use <code class="inline"><a class="l_k" href="functions/caller.html">caller</a></code> to determine the package.</p>
+<a id="Backward-compatible-boilerplate"></a><h3 class='h3' >Backward compatible boilerplate</h3>
+<p>If you want to have your cake and eat it too, you need a more complicated
+boilerplate.</p>
+<pre>
+<a name="package-YourPackage"></a>    package <span class="i">YourPackage</span><span class="sc">;</span>
+    <a class="l_k" href="functions/use.html">use</a> <span class="w">vars</span> <span class="q">qw($VERSION @ISA)</span><span class="sc">;</span>
+
+    <span class="i">@ISA</span> = <span class="q">qw( OnePackage OtherPackage )</span><span class="sc">;</span>
+    <span class="i">$VERSION</span> = <span class="q">&#39;0.01&#39;</span><span class="sc">;</span>
+    <a class="l_k" href="functions/eval.html">eval</a> <span class="s">{</span>
+       <a class="l_k" href="functions/require.html">require</a> <span class="w">XSLoader</span><span class="sc">;</span>
+       <span class="i">XSLoader::load</span><span class="s">(</span><span class="q">&#39;YourPackage&#39;</span><span class="cm">,</span> <span class="i">$VERSION</span><span class="s">)</span><span class="sc">;</span>
+       <span class="n">1</span><span class="sc">;</span>
+    <span class="s">}</span> <a class="l_k" href="functions/or.html">or</a> <a class="l_k" href="functions/do.html">do</a> <span class="s">{</span>
+       <a class="l_k" href="functions/require.html">require</a> <span class="w">DynaLoader</span><span class="sc">;</span>
+       <a class="l_k" href="functions/push.html">push</a> <span class="i">@ISA</span><span class="cm">,</span> <span class="q">&#39;DynaLoader&#39;</span><span class="sc">;</span>
+       <span class="w">bootstrap</span> <span class="w">YourPackage</span> <span class="i">$VERSION</span><span class="sc">;</span>
+    <span class="s">}</span><span class="sc">;</span></pre>
+<p>The parentheses about <pre>
+<span class="i">XSLoader::load</span><span class="s">(</span><span class="s">)</span></code>
+ arguments are needed since we replaced
+<pre>
+<a class="l_k" href="functions/use.html">use</a> <span class="w">XSLoader</span></code>
+ by <code class="inline"><a class="l_k" href="functions/require.html">require</a></code>, so the compiler does not know that a function
+<pre>
+<span class="i">XSLoader::load</span><span class="s">(</span><span class="s">)</span></code>
+ is present.</p>
+<p>This boilerplate uses the low-overhead <pre>
+<span class="w">XSLoader</span></code>
+ if present; if used with
+an antique Perl which has no <pre>
+<span class="w">XSLoader</span></code>
+, it falls back to using <pre>
+<span class="w">DynaLoader</span></code>
+.</p>
+<a id="Order-of-initialization%3a-early-load()"></a><h2 class='h2' >Order of initialization: early load()</h2>
+<p><i>Skip this section if the XSUB functions are supposed to be called from other
+modules only; read it only if you call your XSUBs from the code in your module,
+or have a <pre>
+<span class="j">BOOT:</span></code>
+ section in your XS file (see <a href="perlxs.html#The-BOOT%3a-Keyword">The BOOT: Keyword in perlxs</a>).
+What is described here is equally applicable to the <a href="DynaLoader.html">DynaLoader</a>
+interface.</i></p>
+<p>A sufficiently complicated module using XS would have both Perl code (defined
+in <i>YourPackage.pm</i>) and XS code (defined in <i>YourPackage.xs</i>).  If this
+Perl code makes calls into this XS code, and/or this XS code makes calls to
+the Perl code, one should be careful with the order of initialization.</p>
+<p>The call to <pre>
+<span class="i">XSLoader::load</span><span class="s">(</span><span class="s">)</span></code>
+ (or <pre>
+<span class="i">bootstrap</span><span class="s">(</span><span class="s">)</span></code>
+) calls the module's
+bootstrap code. For modules build by <i>xsubpp</i> (nearly all modules) this
+has three side effects:</p>
+<ul>
+<li>
+<p>A sanity check is done to ensure that the versions of the <i>.pm</i> and the
+(compiled) <i>.xs</i> parts are compatible. If <pre>
+<span class="i">$VERSION</span></code>
+ was specified, this
+is used for the check. If not specified, it defaults to
+<pre>
+<span class="i">$XS_VERSION</span> // <span class="i">$VERSION</span></code>
+ (in the module's namespace)</p>
+</li>
+<li>
+<p>the XSUBs are made accessible from Perl</p>
+</li>
+<li>
+<p>if a <pre>
+<span class="j">BOOT:</span></code>
+ section was present in the <i>.xs</i> file, the code there is called.</p>
+</li>
+</ul>
+<p>Consequently, if the code in the <i>.pm</i> file makes calls to these XSUBs, it is
+convenient to have XSUBs installed before the Perl code is defined; for
+example, this makes prototypes for XSUBs visible to this Perl code.
+Alternatively, if the <pre>
+<span class="j">BOOT:</span></code>
+ section makes calls to Perl functions (or
+uses Perl variables) defined in the <i>.pm</i> file, they must be defined prior to
+the call to <pre>
+<span class="i">XSLoader::load</span><span class="s">(</span><span class="s">)</span></code>
+ (or <pre>
+<span class="i">bootstrap</span><span class="s">(</span><span class="s">)</span></code>
+).</p>
+<p>The first situation being much more frequent, it makes sense to rewrite the
+boilerplate as</p>
+<pre>
+<a name="package-YourPackage"></a>    package <span class="i">YourPackage</span><span class="sc">;</span>
+    <a class="l_k" href="functions/use.html">use</a> <span class="w">XSLoader</span><span class="sc">;</span>
+    <a class="l_k" href="functions/use.html">use</a> <span class="w">vars</span> <span class="q">qw($VERSION @ISA)</span><span class="sc">;</span>
+
+    <a class="l_k" href="functions/BEGIN.html">BEGIN</a> <span class="s">{</span>
+       <span class="i">@ISA</span> = <span class="q">qw( OnePackage OtherPackage )</span><span class="sc">;</span>
+       <span class="i">$VERSION</span> = <span class="q">&#39;0.01&#39;</span><span class="sc">;</span>
+
+       <span class="c"># Put Perl code used in the BOOT: section here</span>
+
+       <span class="w">XSLoader::load</span> <span class="q">&#39;YourPackage&#39;</span><span class="cm">,</span> <span class="i">$VERSION</span><span class="sc">;</span>
+    <span class="s">}</span>
+
+    <span class="c"># Put Perl code making calls into XSUBs here</span></pre>
+<a id="The-most-hairy-case"></a><h3 class='h3' >The most hairy case</h3>
+<p>If the interdependence of your <pre>
+<span class="j">BOOT:</span></code>
+ section and Perl code is
+more complicated than this (e.g., the <pre>
+<span class="j">BOOT:</span></code>
+ section makes calls to Perl
+functions which make calls to XSUBs with prototypes), get rid of the <pre>
+<span class="j">BOOT:</span></code>
+
+section altogether.  Replace it with a function <pre>
+<span class="i">onBOOT</span><span class="s">(</span><span class="s">)</span></code>
+, and call it like
+this:</p>
+<pre>
+<a name="package-YourPackage"></a>    package <span class="i">YourPackage</span><span class="sc">;</span>
+    <a class="l_k" href="functions/use.html">use</a> <span class="w">XSLoader</span><span class="sc">;</span>
+    <a class="l_k" href="functions/use.html">use</a> <span class="w">vars</span> <span class="q">qw($VERSION @ISA)</span><span class="sc">;</span>
+
+    <a class="l_k" href="functions/BEGIN.html">BEGIN</a> <span class="s">{</span>
+       <span class="i">@ISA</span> = <span class="q">qw( OnePackage OtherPackage )</span><span class="sc">;</span>
+       <span class="i">$VERSION</span> = <span class="q">&#39;0.01&#39;</span><span class="sc">;</span>
+       <span class="w">XSLoader::load</span> <span class="q">&#39;YourPackage&#39;</span><span class="cm">,</span> <span class="i">$VERSION</span><span class="sc">;</span>
+    <span class="s">}</span>
+
+    <span class="c"># Put Perl code used in onBOOT() function here; calls to XSUBs are</span>
+    <span class="c"># prototype-checked.</span>
+
+    <span class="w">onBOOT</span><span class="sc">;</span>
+
+    <span class="c"># Put Perl initialization code assuming that XS is initialized here</span></pre>
+<a id="DIAGNOSTICS"></a><h2 class='h2' >DIAGNOSTICS</h2>
+<ul>
+<li><a id="Can't-find-'%25s'-symbol-in-%25s"></a><strong><code class="inline">Can't find '%s' symbol in %s</code></strong>
+<p><strong>(F)</strong> The bootstrap symbol could not be found in the extension module.</p>
+</li>
+<li><a id="Can't-load-'%25s'-for-module-%25s%3a-%25s"></a><strong><code class="inline">Can't load '%s' for module %s: %s</code></strong>
+<p><strong>(F)</strong> The loading or initialisation of the extension module failed.
+The detailed error follows.</p>
+</li>
+<li><a id="Undefined-symbols-present-after-loading-%25s%3a-%25s"></a><strong><code class="inline">Undefined symbols present after loading %s: %s</code></strong>
+<p><strong>(W)</strong> As the message says, some symbols stay undefined although the
+extension module was correctly loaded and initialised. The list of undefined
+symbols follows.</p>
+</li>
+</ul>
+<a id="LIMITATIONS"></a><h2 class='h2' >LIMITATIONS</h2>
+<p>To reduce the overhead as much as possible, only one possible location
+is checked to find the extension DLL (this location is where <pre>
+<span class="w">make</span> <span class="w">install</span></code>
+
+would put the DLL).  If not found, the search for the DLL is transparently
+delegated to <pre>
+<span class="w">DynaLoader</span></code>
+, which looks for the DLL along the <pre>
+<span class="i">@INC</span></code>
+ list.</p>
+<p>In particular, this is applicable to the structure of <pre>
+<span class="i">@INC</span></code>
+ used for testing
+not-yet-installed extensions.  This means that running uninstalled extensions
+may have much more overhead than running the same extensions after
+<pre>
+<span class="w">make</span> <span class="w">install</span></code>
+.</p>
+<a id="KNOWN-BUGS"></a><h2 class='h2' >KNOWN BUGS</h2>
+<p>The new simpler way to call <pre>
+<span class="i">XSLoader::load</span><span class="s">(</span><span class="s">)</span></code>
+ with no arguments at all
+does not work on Perl 5.8.4 and 5.8.5.</p>
+<a id="BUGS"></a><h2 class='h2' >BUGS</h2>
+<p>Please report any bugs or feature requests via the perlbug(1) utility.</p>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<p><a href="DynaLoader.html">DynaLoader</a></p>
+<a id="AUTHORS"></a><h2 class='h2' >AUTHORS</h2>
+<p>Ilya Zakharevich originally extracted <pre>
+<span class="w">XSLoader</span></code>
+ from <pre>
+<span class="w">DynaLoader</span></code>
+.</p>
+<p>CPAN version is currently maintained by S&#xe9;bastien Aperghis-Tramoni
+&lt;sebastien@aperghis.net&gt;.</p>
+<p>Previous maintainer was Michael G Schwern &lt;schwern@pobox.com&gt;.</p>
+<a id="COPYRIGHT-%26-LICENSE"></a><h2 class='h2' >COPYRIGHT &amp; LICENSE</h2>
+<p>Copyright (C) 1990-2011 by Larry Wall and others.</p>
+<p>This program is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#VERSION">VERSION</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><ul><li><a href="#Migration-from-DynaLoader">Migration from DynaLoader</a></li><li><a href="#Backward-compatible-boilerplate">Backward compatible boilerplate</a></li></ul><li><a href="#Order-of-initialization%3a-early-load()">Order of initialization: early load()</a></li><ul><li><a href="#The-most-hairy-case">The most hairy case</a></li></ul><li><a href="#DIAGNOSTICS">DIAGNOSTICS</a></li><li><a href="#LIMITATIONS">LIMITATIONS</a></li><li><a href="#KNOWN-BUGS">KNOWN BUGS</a></li><li><a href="#BUGS">BUGS</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#AUTHORS">AUTHORS</a></li><li><a href="#COPYRIGHT-%26-LICENSE">COPYRIGHT & LICENSE</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

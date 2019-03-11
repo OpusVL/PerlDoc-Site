@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="perlmpeix - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>perlmpeix - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.16.0/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.16.0/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.16.0/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.16.0/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.16.0/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.16.0/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.16.0/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.16.0/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.16.0/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.16.0/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.16.0/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.16.0/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.16.0/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.16.0/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.16.0/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="index-platforms.html">Platform specific</a> &gt;
+      
+    
+    perlmpeix
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 16.0 documentation</h1>
+                  </div>
+                  <h1>perlmpeix</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#NOTE">NOTE</a></li><li><a href="#What's-New-in-Perl-for-MPE%2fiX">What's New in Perl for MPE/iX</a></li><li><a href="#Welcome-to-Perl%2fiX">Welcome to Perl/iX</a></li><li><a href="#System-Requirements-for-Perl%2fiX">System Requirements for Perl/iX</a></li><li><a href="#How-to-Obtain-Perl%2fiX">How to Obtain Perl/iX</a></li><li><a href="#Perl%2fiX-Distribution-Contents-Highlights">Perl/iX Distribution Contents Highlights</a></li><li><a href="#How-to-Compile-Perl%2fiX">How to Compile Perl/iX</a></li><li><a href="#Getting-Started-with-Perl%2fiX">Getting Started with Perl/iX</a></li><li><a href="#MPE%2fiX-Implementation-Considerations">MPE/iX Implementation Considerations</a></li><li><a href="#Known-Perl%2fiX-Bugs-Under-Investigation">Known Perl/iX Bugs Under Investigation</a></li><li><a href="#Perl%2fiX-To-Do-List">Perl/iX To-Do List</a></li><li><a href="#Perl%2fiX-Change-History">Perl/iX Change History</a></li><li><a href="#AUTHOR">AUTHOR</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>perlmpeix - Perl/iX for HP e3000 MPE</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<div class="verbatim"><ol><li>   http://www.bixby.org/mark/perlix.html</li><li>   Perl language for MPE</li><li>   Last updated January 12, 2006 @ 2100 UTC</li></ol></div><a id="NOTE"></a><h2 class='h2' >NOTE</h2>
+<p>This is a podified version of what used to be on the above-mentioned web page,
+podified by Jarkko Hietaniemi 2001-Jan-01.</p>
+<a id="What's-New-in-Perl-for-MPE%2fiX"></a><h2 class='h2' >What's New in Perl for MPE/iX</h2>
+<p>January 12, 2006</p>
+<ul>
+<li>
+<p>Updated for perl-5.8.8 and perl-5.9.3 by Ken Hirsch.</p>
+<p>Simplified the build process by using the MPEAUTOCONF
+functionality in Mark Klein's ld.</p>
+<p>If you build this from scratch, make sure you have a version
+of ld which supports it.  In the shell, type</p>
+<div class="verbatim"><ol><li>  ld --help</li><li>    and look for AUTOCONF or MPEAUTOCONF near the bottom</li><li></li><li>  or do this:</li><li>  ld --help 2&gt;&amp;1 | grep AUTOCONF</li></ol></div><p>If you see don't see AUTOCONF or MPEAUTOCONF, make sure you get a new
+version.</p>
+<p>You also do not have to use mpeix/relink after building, so the
+recommend sequence is:</p>
+<div class="verbatim"><ol><li>  ./Configure -de</li><li></li><li>      # or ./Configure -de -Dusedevel </li><li>      # if you're building a development version</li><li></li><li>  make</li><li>  make test</li><li>     # if you run this in a job, do "make test_notty"</li><li></li><li>  make install</li></ol></div><p>Be prepared for a wait. These take much longer on MPE/iX than on a Unix
+system, because of a slow forking, mostly.  On a lightly-loaded HP3000
+Series 979 running MPE/iX 7.5:</p>
+<div class="verbatim"><ol><li>    Configure: 1 hour</li><li>    make:      1 hour 15 minutes</li><li>    make test  1 hour 45 minutes</li></ol></div><p>Various socket problems were fixed in mpeix.c.</p>
+<p>Mark Klein provided a fixed sigsetjmp (that works with dynamic
+libraries) in mpeix_setjmp.c</p>
+</li>
+</ul>
+<p>June 1, 2000</p>
+<ul>
+<li>
+<p>Rebuilt to be compatible with mod_perl.  If you plan on using
+mod_perl, you MUST download and install this version of Perl/iX!</p>
+</li>
+<li>
+<p>uselargefiles="undef": not available in MPE for POSIX files yet.</p>
+</li>
+<li>
+<p>Now bundled with various add-on packages:</p>
+<ul>
+<li>
+<p>libnet (as seen on CPAN)</p>
+</li>
+<li>
+<p>libwww-perl (LWP) which lets Perl programs behave like web browsers:</p>
+</li>
+<li>
+<p>mod_perl (just the perl portion; the actual DSO will be released
+soon with Apache/iX 1.3.12 from bixby.org).  This module allows you to
+write high performance persistent Perl CGI scripts and all sorts of
+cool things. (<a href="http://perl.apache.org/">http://perl.apache.org/</a>)</p>
+<p>and much much more hiding under /PERL/PUB/.cpan/</p>
+</li>
+<li>
+<p>The CPAN module now works for automatic downloading and
+installing of add-on packages:</p>
+<div class="verbatim"><ol><li>    1. export FTP_PASSIVE=1</li><li>    2. perl -MCPAN -e shell</li><li>    3. Ignore any terminal I/O related complaints!</li></ol></div><p>(<a href="http://search.cpan.org/dist/CPAN/">http://search.cpan.org/dist/CPAN/</a>)</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>May 20, 2000</p>
+<ul>
+<li>
+<p>Updated to version 5.6.0.  Builds straight out of the box on MPE/iX.</p>
+</li>
+<li>
+<p>Perl's getpwnam() function which had regressed to being
+unimplemented on MPE is now implemented once again.</p>
+</li>
+</ul>
+<p>September 17, 1999</p>
+<ul>
+<li>
+<p>Migrated from cccd.edu to bixby.org.</p>
+</li>
+</ul>
+<a id="Welcome-to-Perl%2fiX"></a><h2 class='h2' >Welcome to Perl/iX</h2>
+<p>This is the official home page for the HP e3000 MPE/iX
+( <a href="http://www.hp.com/go/e3000">http://www.hp.com/go/e3000</a> ) port of the Perl scripting
+language ( <a href="http://www.perl.com/">http://www.perl.com/</a> ) which gives you all of the power of C,
+awk, sed, and sh in a single language. Check here for the latest news,
+implemented functionality, known bugs, to-do list, etc. Status reports
+about major milestones will also be posted to the HP3000-L mailing list
+( <a href="http://www.lsoft.com/scripts/wl.exe?SL1=HP3000-L&amp;H=RAVEN.UTC.EDU">http://www.lsoft.com/scripts/wl.exe?SL1=HP3000-L&amp;H=RAVEN.UTC.EDU</a> ) and
+its associated gatewayed newsgroup comp.sys.hp.mpe.</p>
+<p>I'm doing this port because I can't live without Perl on the Unix
+machines that I administer, and I want to have the same power
+available to me on MPE.</p>
+<p>Please send your comments, questions, and bug reports directly to me,
+Mark Bixby ( <a href="http://www.bixby.org/mark/">http://www.bixby.org/mark/</a> ). Or just post them to HP3000-L.</p>
+<p>The platform I'm using to do this port is an HP 3000 957RX running
+MPE/iX 6.0 and using the GNU gcc C compiler
+( <a href="http://jazz.external.hp.com/src/gnu/gnuframe.html">http://jazz.external.hp.com/src/gnu/gnuframe.html</a> ).</p>
+<p>The combined porting wisdom from all of my ports can be found in my
+MPE/iX Porting Guide (<a href="http://www.bixby.org/mark/porting.html">http://www.bixby.org/mark/porting.html</a>).</p>
+<p>IMPORTANT NOTICE: Yes, I do work for the HP CSY R&amp;D lab, but ALL of
+the software you download from bixby.org is my personal freeware that
+is NOT supported by HP.</p>
+<a id="System-Requirements-for-Perl%2fiX"></a><h2 class='h2' >System Requirements for Perl/iX</h2>
+<ul>
+<li>
+<p>MPE/iX 5.5 or later. This version of Perl/iX does NOT run on
+MPE/iX 5.0 or earlier, nor does it run on "classic" MPE/V machines.</p>
+</li>
+<li>
+<p>If you wish to recompile Perl, you must install both GNUCORE and
+GNUGCC from jazz (<a href="http://jazz.external.hp.com/src/gnu/gnuframe.html">http://jazz.external.hp.com/src/gnu/gnuframe.html</a>).</p>
+</li>
+<li>
+<p>Perl/iX will be happier on MPE/iX 5.5 if you install the MPEKX40B
+extended POSIX filename characters patch, but this is optional.</p>
+</li>
+<li>
+<p>Patch LBCJXT6A is required on MPE/iX 5.5 machines in order to
+prevent Perl/iX from dying with an unresolved external reference
+to _getenv_libc.</p>
+</li>
+<li>
+<p>If you will be compiling Perl/iX yourself, you will also need
+Syslog/iX ( <a href="http://www.bixby.org/mark/syslogix.html">http://www.bixby.org/mark/syslogix.html</a> ) and the
+/BIND/PUB/include and /BIND/PUB/lib portions of BIND/iX
+( <a href="http://www.bixby.org/mark/bindix.html">http://www.bixby.org/mark/bindix.html</a> ).</p>
+</li>
+</ul>
+<a id="How-to-Obtain-Perl%2fiX"></a><h2 class='h2' >How to Obtain Perl/iX</h2>
+<dl>
+<dt>1.</dt><dd>
+<p>Download Perl using either FTP.ARPA.SYS or some other client</p>
+</dd>
+<dt>2.</dt><dd>
+<p>Extract the installation script</p>
+</dd>
+<dt>3.</dt><dd>
+<p>Edit the installation script</p>
+</dd>
+<dt>4.</dt><dd>
+<p>Run the installation script</p>
+</dd>
+<dt>5.</dt><dd>
+<p>Convert your *.a system archive libraries to *.sl shared libraries</p>
+</dd>
+</dl>
+<p>Download Perl using FTP.ARPA.SYS from your HP 3000 (the preferred
+method).....</p>
+<div class="verbatim"><ol><li>    :HELLO MANAGER.SYS</li><li>    :XEQ FTP.ARPA.SYS</li><li>    open ftp.bixby.org</li><li>    anonymous</li><li>    your@email.address</li><li>    bytestream</li><li>    cd /pub/mpe</li><li>    get perl-5.6.0-mpe.tar.Z /tmp/perl.tar.Z;disc=2147483647</li><li>    exit</li></ol></div><p>.....Or download using some other generic web or ftp client (the alternate
+method)</p>
+<p>Download the following files (make sure that you use "binary mode" or
+whatever client feature that is 8-bit clean):</p>
+<ul>
+<li>
+<p>Perl from</p>
+<div class="verbatim"><ol><li>    http://www.bixby.org/ftp/pub/mpe/perl-5.6.0-mpe.tar.Z</li></ol></div><p>or</p>
+<div class="verbatim"><ol><li>    ftp://ftp.bixby.org/pub/mpe/perl-5.6.0-mpe.tar.Z</li></ol></div></li>
+<li>
+<p>Upload those files to your HP 3000 in an 8-bit clean bytestream manner to:</p>
+<div class="verbatim"><ol><li>    /tmp/perl.tar.Z</li></ol></div></li>
+<li>
+<p>Then extract the installation script (after both download methods)</p>
+<div class="verbatim"><ol><li>    :CHDIR /tmp</li><li>    :XEQ TAR.HPBIN.SYS 'xvfopz /tmp/perl.tar.Z INSTALL'</li></ol></div></li>
+<li>
+<p>Edit the installation script</p>
+<p>Examine the accounting structure creation commands and modify if
+necessary (adding additional capabilities, choosing a non-system
+volume set, etc).</p>
+<pre>
+    <span class="j">:</span><span class="w">XEQ</span> <span class="w">VI</span>.<span class="w">HPBIN</span>.<span class="w">SYS</span> /<span class="w">tmp</span>/<span class="w">INSTALL</span></pre>
+</li>
+<li>
+<p>Run the installation script.</p>
+<p>The accounting structure will be created and then all files will be
+extracted from the archive.</p>
+<pre>
+    <span class="j">:</span><span class="w">XEQ</span> <span class="w">SH</span>.<span class="w">HPBIN</span>.<span class="w">SYS</span> /<span class="w">tmp</span>/<span class="w">INSTALL</span></pre>
+</li>
+<li>
+<p>Convert your *.a system archive libraries to *.sl shared libraries</p>
+<p>You only have to do this ONCE on your MPE/iX 5.5 machine in order to
+convert /lib/lib*.a and /usr/lib/lib*.a libraries to their *.sl
+equivalents.  This step should not be necessary on MPE/iX 6.0 or later
+machines because the 6.0 or later update process does it for you.</p>
+<pre>
+    <span class="j">:</span><span class="w">XEQ</span> <span class="w">SH</span>.<span class="w">HPBIN</span>.<span class="w">SYS</span> /<span class="w">PERL</span>/<span class="w">PUB</span>/<span class="w">LIBSHP3K</span></pre>
+</li>
+</ul>
+<a id="Perl%2fiX-Distribution-Contents-Highlights"></a><h2 class='h2' >Perl/iX Distribution Contents Highlights</h2>
+<ul>
+<li><a id="README"></a><strong>README</strong>
+<p>The file you're reading now.</p>
+</li>
+<li><a id="INSTALL"></a><strong>INSTALL</strong>
+<p>Perl/iX Installation script.</p>
+</li>
+<li><a id="LIBSHP3K"></a><strong>LIBSHP3K</strong>
+<p>Script to convert *.a system archive libraries to *.sl shared libraries.</p>
+</li>
+<li><a id="PERL"></a><strong>PERL</strong>
+<p>Perl NMPRG executable.  A version-numbered backup copy also
+exists.  You might wish to "ln -s /PERL/PUB/PERL /usr/local/bin/perl".</p>
+</li>
+<li><a id=".cpan%2f"></a><strong>.cpan/</strong>
+<p>Much add-on source code downloaded with the CPAN module.</p>
+</li>
+<li><a id="lib%2f"></a><strong>lib/</strong>
+<p>Perl libraries, both core and add-on.</p>
+</li>
+<li><a id="man%2f"></a><strong>man/</strong>
+<p>Perl man page documentation.</p>
+</li>
+<li><a id="public_html%2ffeedback.cgi"></a><strong>public_html/feedback.cgi</strong>
+<p>Sample feedback CGI form written in Perl.</p>
+</li>
+<li><a id="src%2fperl-5.6.0-mpe"></a><strong>src/perl-5.6.0-mpe</strong>
+<p>Source code.</p>
+</li>
+</ul>
+<a id="How-to-Compile-Perl%2fiX"></a><h2 class='h2' >How to Compile Perl/iX</h2>
+<dl>
+<dt>1.</dt><dd>
+<p>cd src/perl-5.6.0-mpe</p>
+</dd>
+<dt>2.</dt><dd>
+<p>Read the INSTALL file for the official instructions</p>
+</dd>
+<dt>3.</dt><dd>
+<p>./Configure -d</p>
+</dd>
+<dt>4.</dt><dd>
+<p>make</p>
+</dd>
+<dt>5.</dt><dd>
+<p>./mpeix/relink</p>
+</dd>
+<dt>6.</dt><dd>
+<p>make test (expect approximately 15 out of 11306 subtests to fail,
+mostly due to MPE not supporting hard links, UDP socket problems,
+and handling exit() return codes improperly)</p>
+</dd>
+<dt>7.</dt><dd>
+<p>make install</p>
+</dd>
+<dt>8.</dt><dd>
+<p>Optionally create symbolic links that point to the Perl
+executable, i.e. ln -s /PERL/PUB/PERL /usr/local/bin/perl</p>
+</dd>
+</dl>
+<p>The summary test results from "cd t; ./perl -I../lib harness":</p>
+<div class="verbatim"><ol><li>  Failed Test  Status Wstat Total Fail  Failed  List of failed</li><li>  ---------------------------------------------------------------------------</li><li>  io/fs.t                      29    8  27.59%  2-5, 7-9, 11</li><li>  io/openpid.t                 10    1  10.00%  7</li><li>  lib/io_sock.t                14    1   7.14%  13</li><li>  lib/io_udp.t                  7    2  28.57%  3, 5</li><li>  lib/posix.t                  27    1   3.70%  12</li><li>  op/lex_assign.t             187    1   0.53%  13</li><li>  op/stat.t                    58    1   1.72%  3</li><li>  15 tests and 94 subtests skipped.</li><li>  Failed 7/236 test scripts, 97.03% okay. 15/11306 subtests failed, 99.87% okay.</li></ol></div><a id="Getting-Started-with-Perl%2fiX"></a><h2 class='h2' >Getting Started with Perl/iX</h2>
+<p>Create your Perl script files with "#!/PERL/PUB/perl" (or an
+equivalent symbolic link) as the first line.  Use the chmod command to
+make sure that your script has execute permission. Run your script!</p>
+<p>Be sure to take a look at the CPAN module list
+( <a href="http://www.cpan.org/CPAN.html">http://www.cpan.org/CPAN.html</a> ). A wide variety of free Perl software
+is available.  You can automatically download these packages by using
+the CPAN module ( <a href="http://search.cpan.org/dist/CPAN/">http://search.cpan.org/dist/CPAN/</a> ).</p>
+<a id="MPE%2fiX-Implementation-Considerations"></a><h2 class='h2' >MPE/iX Implementation Considerations</h2>
+<p>There some minor functionality issues to be aware of when comparing
+Perl for Unix (Perl/UX) to Perl/iX:</p>
+<ul>
+<li>
+<p>MPE gcc/ld doesn't properly support linking NMPRG executables against
+NMXL dynamic libraries, so you must manually run mpeix/relink after
+each re-build of Perl.</p>
+</li>
+<li>
+<p>Perl/iX File::Copy will use MPE's /bin/cp command to copy files by
+name in order to preserve file attributes like file code.</p>
+</li>
+<li>
+<p>MPE (and thus Perl/iX) lacks support for setgrent(), endgrent(),
+setpwent(), endpwent().</p>
+</li>
+<li>
+<p>MPE (and thus Perl/iX) lacks support for hard links.</p>
+</li>
+<li>
+<p>MPE requires GETPRIVMODE() in order to bind() to ports less than 1024.
+Perl/iX will call GETPRIVMODE() automatically on your behalf if you
+attempt to bind() to these low-numbered ports.  Note that the Perl/iX
+executable and the PERL account do not normally have CAP=PM, so if you
+will be bind()-ing to these privileged ports, you will manually need
+to add PM capability as appropriate.</p>
+</li>
+<li>
+<p>MPE requires that you bind() to an IP address of zero.  Perl/iX
+automatically replaces the IP address that you pass to bind() with
+a zero.</p>
+</li>
+<li>
+<p>MPE requires GETPRIVMODE() in order to setuid().  There are too many
+calls to setuid() within Perl/iX, so I have not attempted an automatic
+GETPRIVMODE() solution similar to bind().</p>
+</li>
+</ul>
+<a id="Known-Perl%2fiX-Bugs-Under-Investigation"></a><h2 class='h2' >Known Perl/iX Bugs Under Investigation</h2>
+<p>None.</p>
+<a id="Perl%2fiX-To-Do-List"></a><h2 class='h2' >Perl/iX To-Do List</h2>
+<ul>
+<li>
+<p>Make setuid()/setgid() support work.</p>
+</li>
+<li>
+<p>Make sure that fcntl() against a socket descriptor is redirected to sfcntl().</p>
+</li>
+<li>
+<p>Add support for Berkeley DB once I've finished porting Berkeley DB.</p>
+</li>
+<li>
+<p>Write an MPE XS extension library containing miscellaneous important
+MPE functions like GETPRIVMODE(), GETUSERMODE(), and sfcntl().</p>
+</li>
+</ul>
+<a id="Perl%2fiX-Change-History"></a><h2 class='h2' >Perl/iX Change History</h2>
+<p>May 6, 1999</p>
+<ul>
+<li>
+<p>Patch LBCJXT6A is required on MPE/iX 5.5 machines in order to prevent
+Perl/iX from dying with an unresolved external reference to _getenv_libc.</p>
+</li>
+</ul>
+<p>April 7, 1999</p>
+<ul>
+<li>
+<p>Updated to version 5.005_03.</p>
+</li>
+<li>
+<p>The official source distribution once again compiles "straight out
+of the box" for MPE.</p>
+</li>
+<li>
+<p>The current incarnation of the 5.5 POSIX filename extended
+characters patch is now MPEKX40B.</p>
+</li>
+<li>
+<p>The LIBSHP3K *.a -&gt; *.sl library conversion script is now included
+as /PERL/PUB/LIBSHP3K.</p>
+</li>
+</ul>
+<p>November 20, 1998</p>
+<ul>
+<li>
+<p>Updated to version 5.005_02.</p>
+</li>
+<li>
+<p>Fixed a DynaLoader bug that was unable to load symbols from relative
+path name libraries.</p>
+</li>
+<li>
+<p>Fixed a .xs compilation bug where the mpeixish.sh include file wasn't
+being installed into the proper directory.</p>
+</li>
+<li>
+<p>All bugfixes will be submitted back to the official Perl developers.</p>
+</li>
+<li>
+<p>The current incarnation of the POSIX filename extended characters
+patch is now MPEKXJ3A.</p>
+</li>
+</ul>
+<p>August 14, 1998</p>
+<ul>
+<li>
+<p>The previous POSIX filename extended characters patch MPEKX44C has
+been superseded by MPEKXB5A.</p>
+</li>
+</ul>
+<p>August 7, 1998</p>
+<ul>
+<li>
+<p>The previous POSIX filename extended characters patch MPEKX76A has
+been superseded by MPEKX44C.</p>
+</li>
+</ul>
+<p>July 28, 1998</p>
+<ul>
+<li>
+<p>Updated to version 5.005_01.</p>
+</li>
+</ul>
+<p>July 23, 1998</p>
+<ul>
+<li>
+<p>Updated to version 5.005 (production release).  The public
+freeware sources are now 100% MPE-ready "straight out of the box".</p>
+</li>
+</ul>
+<p>July 17, 1998</p>
+<ul>
+<li>
+<p>Updated to version 5.005b1 (public beta release).  The public
+freeware sources are now 99.9% MPE-ready.  By installing and
+testing this beta on your own HP3000, you will be helping to
+insure that the final release of 5.005 will be 100% MPE-ready and
+100% bug free.</p>
+</li>
+<li>
+<p>My MPE binary release is now extracted using my standard INSTALL script.</p>
+</li>
+</ul>
+<p>July 15, 1998</p>
+<ul>
+<li>
+<p>Changed startperl to #!/PERL/PUB/perl so that Perl will recognize
+scripts more easily and efficiently.</p>
+</li>
+</ul>
+<p>July 8, 1998</p>
+<ul>
+<li>
+<p>Updated to version 5.004_70 (internal developer release) which is now
+MPE-ready.  The next public freeware release of Perl should compile
+"straight out of the box" on MPE.  Note that this version of Perl/iX
+was strictly internal to me and never publicly released.  Note that
+[21]BIND/iX is now required (well, the include files and libbind.a) if
+you wish to compile Perl/iX.</p>
+</li>
+</ul>
+<p>November 6, 1997</p>
+<ul>
+<li>
+<p>Updated to version 5.004_04.  No changes in MPE-specific functionality.</p>
+</li>
+</ul>
+<p>October 16, 1997</p>
+<ul>
+<li>
+<p>Added Demos section to the Perl/iX home page so you can see some
+sample Perl applications running on my 3000.</p>
+</li>
+</ul>
+<p>October 3, 1997</p>
+<ul>
+<li>
+<p>Added System Requirements section to the Perl/iX home page just so the
+prerequisites stand out more. Various other home page tweaks.</p>
+</li>
+</ul>
+<p>October 2, 1997</p>
+<ul>
+<li>
+<p>Initial public release.</p>
+</li>
+</ul>
+<p>September 1997</p>
+<ul>
+<li>
+<p>Porting begins.</p>
+</li>
+</ul>
+<a id="AUTHOR"></a><h2 class='h2' >AUTHOR</h2>
+<p>Mark Bixby, <a href="http://www.bixby.org/mark/">http://www.bixby.org/mark/</a></p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#NOTE">NOTE</a></li><li><a href="#What's-New-in-Perl-for-MPE%2fiX">What's New in Perl for MPE/iX</a></li><li><a href="#Welcome-to-Perl%2fiX">Welcome to Perl/iX</a></li><li><a href="#System-Requirements-for-Perl%2fiX">System Requirements for Perl/iX</a></li><li><a href="#How-to-Obtain-Perl%2fiX">How to Obtain Perl/iX</a></li><li><a href="#Perl%2fiX-Distribution-Contents-Highlights">Perl/iX Distribution Contents Highlights</a></li><li><a href="#How-to-Compile-Perl%2fiX">How to Compile Perl/iX</a></li><li><a href="#Getting-Started-with-Perl%2fiX">Getting Started with Perl/iX</a></li><li><a href="#MPE%2fiX-Implementation-Considerations">MPE/iX Implementation Considerations</a></li><li><a href="#Known-Perl%2fiX-Bugs-Under-Investigation">Known Perl/iX Bugs Under Investigation</a></li><li><a href="#Perl%2fiX-To-Do-List">Perl/iX To-Do List</a></li><li><a href="#Perl%2fiX-Change-History">Perl/iX Change History</a></li><li><a href="#AUTHOR">AUTHOR</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

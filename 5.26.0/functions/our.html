@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="our - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>our - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.26.0/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.26.0/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.26.0/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.26.0/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.26.0/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.26.0/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.26.0/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.26.0/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.26.0/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.26.0/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.26.0/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.26.0/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.26.0/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.26.0/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.26.0/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.26.0/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.26.0/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.26.0/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.26.0/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.26.0/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.26.0/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.26.0/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.26.0/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.26.0/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.26.0/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.26.0/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.26.0/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.26.0/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.26.0/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.26.0/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.26.0/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.26.0/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.26.0/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.26.0/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../index-language.html">Language reference</a> &gt;
+      
+        <a href="../index-functions.html">Functions</a> &gt;
+      
+    
+    our
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 26.0 documentation</h1>
+                  </div>
+                  <h1>our</h1>
+<div class="mod_az_list">
+  <a href="/5.26.0/index-functions.html">Perl functions A-Z</a> |
+  <a href="/5.26.0/index-functions-by-cat.html">Perl functions by category</a> |
+  <a href="/5.26.0/perlfunc.html">The 'perlfunc' manpage</a>
+</div>
+
+
+  <!--    -->
+<ul>
+<li><a id="our-VARLIST"></a><strong>our VARLIST</strong>
+<p> </p>
+</li>
+</ul>
+<ul>
+<li><a id="our-TYPE-VARLIST"></a><strong>our TYPE VARLIST</strong>
+</li>
+<li><a id="our-VARLIST-%3a-ATTRS"></a><strong>our VARLIST : ATTRS</strong>
+</li>
+<li><a id="our-TYPE-VARLIST-%3a-ATTRS"></a><strong>our TYPE VARLIST : ATTRS</strong>
+<p><a href="#our-VARLIST">our</a> makes a lexical alias to a package (i.e. global)
+variable of the same name in the current package for use within the
+current lexical scope.</p>
+<p><a href="#our-VARLIST">our</a> has the same scoping rules as
+<a href="#my-VARLIST">my</a> or <a href="#state-VARLIST">state</a>, meaning that it is
+only valid within a lexical scope.  Unlike <a href="#my-VARLIST">my</a> and
+<a href="#state-VARLIST">state</a>, which both declare new (lexical) variables,
+<a href="#our-VARLIST">our</a> only creates an alias to an existing variable: a
+package variable of the same name.</p>
+<p>This means that when <pre>
+<a class="l_k" href="../functions/use.html">use</a> <span class="w">strict</span> <span class="q">&#39;vars&#39;</span></code>
+ is in effect, <a href="#our-VARLIST">our</a> lets you use a package variable without qualifying it with the
+package name, but only within the lexical scope of the
+<a href="#our-VARLIST">our</a> declaration.  This applies immediately--even
+within the same statement.</p>
+<pre>
+<a name="package-Foo"></a>    package <span class="i">Foo</span><span class="sc">;</span>
+    <a class="l_k" href="../functions/use.html">use</a> <span class="w">strict</span><span class="sc">;</span>
+
+    <span class="i">$Foo::foo</span> = <span class="n">23</span><span class="sc">;</span>
+
+    <span class="s">{</span>
+        <a class="l_k" href="../functions/our.html">our</a> <span class="i">$foo</span><span class="sc">;</span>   <span class="c"># alias to $Foo::foo</span>
+        <a class="l_k" href="../functions/print.html">print</a> <span class="i">$foo</span><span class="sc">;</span> <span class="c"># prints 23</span>
+    <span class="s">}</span>
+
+    <a class="l_k" href="../functions/print.html">print</a> <span class="i">$Foo::foo</span><span class="sc">;</span> <span class="c"># prints 23</span>
+
+    <a class="l_k" href="../functions/print.html">print</a> <span class="i">$foo</span><span class="sc">;</span> <span class="c"># ERROR: requires explicit package name</span></pre>
+<p>This works even if the package variable has not been used before, as
+package variables spring into existence when first used.</p>
+<pre>
+<a name="package-Foo"></a>    package <span class="i">Foo</span><span class="sc">;</span>
+    <a class="l_k" href="../functions/use.html">use</a> <span class="w">strict</span><span class="sc">;</span>
+
+    <a class="l_k" href="../functions/our.html">our</a> <span class="i">$foo</span> = <span class="n">23</span><span class="sc">;</span>   <span class="c"># just like $Foo::foo = 23</span>
+
+    <a class="l_k" href="../functions/print.html">print</a> <span class="i">$Foo::foo</span><span class="sc">;</span> <span class="c"># prints 23</span></pre>
+<p>Because the variable becomes legal immediately under <pre>
+<a class="l_k" href="../functions/use.html">use</a> <span class="w">strict</span> <span class="q">&#39;vars&#39;</span></code>
+, so
+long as there is no variable with that name is already in scope, you can then
+reference the package variable again even within the same statement.</p>
+<pre>
+<a name="package-Foo"></a>    package <span class="i">Foo</span><span class="sc">;</span>
+    <a class="l_k" href="../functions/use.html">use</a> <span class="w">strict</span><span class="sc">;</span>
+
+    <a class="l_k" href="../functions/my.html">my</a>  <span class="i">$foo</span> = <span class="i">$foo</span><span class="sc">;</span> <span class="c"># error, undeclared $foo on right-hand side</span>
+    <a class="l_k" href="../functions/our.html">our</a> <span class="i">$foo</span> = <span class="i">$foo</span><span class="sc">;</span> <span class="c"># no errors</span></pre>
+<p>If more than one variable is listed, the list must be placed
+in parentheses.</p>
+<pre>
+    <a class="l_k" href="../functions/our.html">our</a><span class="s">(</span><span class="i">$bar</span><span class="cm">,</span> <span class="i">$baz</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>An <a href="#our-VARLIST">our</a> declaration declares an alias for a package
+variable that will be visible
+across its entire lexical scope, even across package boundaries.  The
+package in which the variable is entered is determined at the point
+of the declaration, not at the point of use.  This means the following
+behavior holds:</p>
+<pre>
+<a name="package-Foo"></a>    package <span class="i">Foo</span><span class="sc">;</span>
+    <a class="l_k" href="../functions/our.html">our</a> <span class="i">$bar</span><span class="sc">;</span>      <span class="c"># declares $Foo::bar for rest of lexical scope</span>
+    <span class="i">$bar</span> = <span class="n">20</span><span class="sc">;</span>
+
+<a name="package-Bar"></a>    package <span class="i">Bar</span><span class="sc">;</span>
+    <a class="l_k" href="../functions/print.html">print</a> <span class="i">$bar</span><span class="sc">;</span>    <span class="c"># prints 20, as it refers to $Foo::bar</span></pre>
+<p>Multiple <a href="#our-VARLIST">our</a> declarations with the same name in the
+same lexical
+scope are allowed if they are in different packages.  If they happen
+to be in the same package, Perl will emit warnings if you have asked
+for them, just like multiple <a href="#my-VARLIST">my</a> declarations.  Unlike
+a second <a href="#my-VARLIST">my</a> declaration, which will bind the name to a
+fresh variable, a second <a href="#our-VARLIST">our</a> declaration in the same
+package, in the same scope, is merely redundant.</p>
+<pre>
+    <a class="l_k" href="../functions/use.html">use</a> <span class="w">warnings</span><span class="sc">;</span>
+<a name="package-Foo"></a>    package <span class="i">Foo</span><span class="sc">;</span>
+    <a class="l_k" href="../functions/our.html">our</a> <span class="i">$bar</span><span class="sc">;</span>      <span class="c"># declares $Foo::bar for rest of lexical scope</span>
+    <span class="i">$bar</span> = <span class="n">20</span><span class="sc">;</span>
+
+<a name="package-Bar"></a>    package <span class="i">Bar</span><span class="sc">;</span>
+    <a class="l_k" href="../functions/our.html">our</a> <span class="i">$bar</span> = <span class="n">30</span><span class="sc">;</span> <span class="c"># declares $Bar::bar for rest of lexical scope</span>
+    <a class="l_k" href="../functions/print.html">print</a> <span class="i">$bar</span><span class="sc">;</span>    <span class="c"># prints 30</span>
+
+    <a class="l_k" href="../functions/our.html">our</a> <span class="i">$bar</span><span class="sc">;</span>      <span class="c"># emits warning but has no other effect</span>
+    <a class="l_k" href="../functions/print.html">print</a> <span class="i">$bar</span><span class="sc">;</span>    <span class="c"># still prints 30</span></pre>
+<p>An <a href="#our-VARLIST">our</a> declaration may also have a list of attributes
+associated with it.</p>
+<p>The exact semantics and interface of TYPE and ATTRS are still
+evolving.  TYPE is currently bound to the use of the <a href="../fields.html">fields</a> pragma,
+and attributes are handled using the <a href="../attributes.html">attributes</a> pragma, or, starting
+from Perl 5.8.0, also via the <a href="../Attribute/Handlers.html">Attribute::Handlers</a> module.  See
+<a href="../perlsub.html#Private-Variables-via-my()">Private Variables via my() in perlsub</a> for details.</p>
+<p>Note that with a parenthesised list, <a href="#undef-EXPR">undef</a> can be used
+as a dummy placeholder, for example to skip assignment of initial
+values:</p>
+<pre>
+    <a class="l_k" href="../functions/our.html">our</a> <span class="s">(</span> <a class="l_k" href="../functions/undef.html">undef</a><span class="cm">,</span> <span class="i">$min</span><span class="cm">,</span> <span class="i">$hour</span> <span class="s">)</span> = <a class="l_k" href="../functions/localtime.html">localtime</a><span class="sc">;</span></pre>
+<p><a href="#our-VARLIST">our</a> differs from <a href="../vars.html"> use vars </a>, which allows
+use of an unqualified name <i>only</i> within the affected package, but
+across scopes.</p>
+</li>
+</ul>
+
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/26/0/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/0/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/0/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/0/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/26/0/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/0/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/0/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/0/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/26/0/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/0/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/0/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/26/0/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/0/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/0/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

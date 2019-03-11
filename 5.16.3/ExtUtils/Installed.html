@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ExtUtils::Installed - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>ExtUtils::Installed - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.16.3/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.16.3/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.16.3/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.16.3/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.16.3/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.16.3/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.16.3/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.16.3/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.16.3/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.16.3/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.16.3/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.16.3/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.16.3/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.16.3/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.16.3/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.16.3/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../index-modules-E.html">Core modules (E)</a> &gt;
+      
+    
+    ExtUtils::Installed
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 16.3 documentation</h1>
+                  </div>
+                  <h1>ExtUtils::Installed</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#USAGE">USAGE</a></li><li><a href="#METHODS">METHODS</a></li><li><a href="#EXAMPLE">EXAMPLE</a></li><li><a href="#AUTHOR">AUTHOR</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>ExtUtils::Installed - Inventory management of installed modules</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<pre>
+   <a class="l_k" href="../functions/use.html">use</a> <span class="w">ExtUtils::Installed</span><span class="sc">;</span>
+   <a class="l_k" href="../functions/my.html">my</a> <span class="s">(</span><span class="i">$inst</span><span class="s">)</span> = <span class="w">ExtUtils::Installed</span><span class="w">-&gt;new</span><span class="s">(</span> <span class="w">skip_cwd</span> <span class="cm">=&gt;</span> <span class="n">1</span> <span class="s">)</span><span class="sc">;</span>
+   <a class="l_k" href="../functions/my.html">my</a> <span class="s">(</span><span class="i">@modules</span><span class="s">)</span> = <span class="i">$inst</span><span class="i">-&gt;modules</span><span class="s">(</span><span class="s">)</span><span class="sc">;</span>
+   <a class="l_k" href="../functions/my.html">my</a> <span class="s">(</span><span class="i">@missing</span><span class="s">)</span> = <span class="i">$inst</span><span class="i">-&gt;validate</span><span class="s">(</span><span class="q">&quot;DBI&quot;</span><span class="s">)</span><span class="sc">;</span>
+   <a class="l_k" href="../functions/my.html">my</a> <span class="i">$all_files</span> = <span class="i">$inst</span><span class="i">-&gt;files</span><span class="s">(</span><span class="q">&quot;DBI&quot;</span><span class="s">)</span><span class="sc">;</span>
+   <a class="l_k" href="../functions/my.html">my</a> <span class="i">$files_below_usr_local</span> = <span class="i">$inst</span><span class="i">-&gt;files</span><span class="s">(</span><span class="q">&quot;DBI&quot;</span><span class="cm">,</span> <span class="q">&quot;all&quot;</span><span class="cm">,</span> <span class="q">&quot;/usr/local&quot;</span><span class="s">)</span><span class="sc">;</span>
+   <a class="l_k" href="../functions/my.html">my</a> <span class="i">$all_dirs</span> = <span class="i">$inst</span><span class="i">-&gt;directories</span><span class="s">(</span><span class="q">&quot;DBI&quot;</span><span class="s">)</span><span class="sc">;</span>
+   <a class="l_k" href="../functions/my.html">my</a> <span class="i">$dirs_below_usr_local</span> = <span class="i">$inst</span><span class="i">-&gt;directory_tree</span><span class="s">(</span><span class="q">&quot;DBI&quot;</span><span class="cm">,</span> <span class="q">&quot;prog&quot;</span><span class="s">)</span><span class="sc">;</span>
+   <a class="l_k" href="../functions/my.html">my</a> <span class="i">$packlist</span> = <span class="i">$inst</span><span class="i">-&gt;packlist</span><span class="s">(</span><span class="q">&quot;DBI&quot;</span><span class="s">)</span><span class="sc">;</span></pre>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>ExtUtils::Installed  provides a standard way to find out what core and module
+files have been installed.  It uses the information stored in .packlist files
+created during installation to provide this information.  In addition it
+provides facilities to classify the installed files and to extract directory
+information from the .packlist files.</p>
+<a id="USAGE"></a><h2 class='h2' >USAGE</h2>
+<p>The new() function searches for all the installed .packlists on the system, and
+stores their contents. The .packlists can be queried with the functions
+described below. Where it searches by default is determined by the settings found
+in <pre>
+<span class="i">%Config::Config</span></code>
+, and what the value is of the PERL5LIB environment variable.</p>
+<a id="METHODS"></a><h2 class='h2' >METHODS</h2>
+<p>Unless specified otherwise all method can be called as class methods, or as object
+methods. If called as class methods then the "default" object will be used, and if
+necessary created using the current processes %Config and @INC.  See the
+'default' option to new() for details.</p>
+<ul>
+<li><a id="new()"></a><strong>new()</strong>
+<p>This takes optional named parameters. Without parameters, this
+searches for all the installed .packlists on the system using
+information from <pre>
+<span class="i">%Config::Config</span></code>
+ and the default module search
+paths <pre>
+<span class="i">@INC</span></code>
+. The packlists are read using the
+<a href="../ExtUtils/Packlist.html">ExtUtils::Packlist</a> module.</p>
+<p>If the named parameter <pre>
+<span class="w">skip_cwd</span></code>
+ is true, the current directory <code class="inline">.</code> will
+be stripped from <pre>
+<span class="i">@INC</span></code>
+ before searching for .packlists.  This keeps
+ExtUtils::Installed from finding modules installed in other perls that
+happen to be located below the current directory.</p>
+<p>If the named parameter <pre>
+<span class="w">config_override</span></code>
+ is specified,
+it should be a reference to a hash which contains all information
+usually found in <pre>
+<span class="i">%Config::Config</span></code>
+. For example, you can obtain
+the configuration information for a separate perl installation and
+pass that in.</p>
+<pre>
+    <a class="l_k" href="../functions/my.html">my</a> <span class="i">$yoda_cfg</span>  = <span class="i">get_fake_config</span><span class="s">(</span><span class="q">&#39;yoda&#39;</span><span class="s">)</span><span class="sc">;</span>
+    <a class="l_k" href="../functions/my.html">my</a> <span class="i">$yoda_inst</span> =
+               <span class="w">ExtUtils::Installed</span><span class="w">-&gt;new</span><span class="s">(</span><span class="w">config_override</span><span class="cm">=&gt;</span><span class="i">$yoda_cfg</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>Similarly, the parameter <pre>
+<span class="w">inc_override</span></code>
+ may be a reference to an
+array which is used in place of the default module search paths
+from <pre>
+<span class="i">@INC</span></code>
+.</p>
+<pre>
+    <a class="l_k" href="../functions/use.html">use</a> <span class="w">Config</span><span class="sc">;</span>
+    <a class="l_k" href="../functions/my.html">my</a> <span class="i">@dirs</span> = <a class="l_k" href="../functions/split.html">split</a><span class="s">(</span><span class="q">/\Q$Config{path_sep}\E/</span><span class="cm">,</span> <span class="i">$ENV</span>{<span class="w">PERL5LIB</span>}<span class="s">)</span><span class="sc">;</span>
+    <a class="l_k" href="../functions/my.html">my</a> <span class="i">$p5libs</span> = <span class="w">ExtUtils::Installed</span><span class="w">-&gt;new</span><span class="s">(</span><span class="w">inc_override</span><span class="cm">=&gt;</span>\<span class="i">@dirs</span><span class="s">)</span><span class="sc">;</span></pre>
+<p><strong>Note</strong>: You probably do not want to use these options alone, almost always
+you will want to set both together.</p>
+<p>The parameter <pre>
+<span class="w">extra_libs</span></code>
+ can be used to specify <strong>additional</strong> paths to
+search for installed modules. For instance</p>
+<pre>
+    <a class="l_k" href="../functions/my.html">my</a> <span class="i">$installed</span> =
+             <span class="w">ExtUtils::Installed</span><span class="w">-&gt;new</span><span class="s">(</span><span class="w">extra_libs</span><span class="cm">=&gt;</span><span class="s">[</span><span class="q">&quot;/my/lib/path&quot;</span><span class="s">]</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>This should only be necessary if <code class="inline">/my/lib/path</code> is not in PERL5LIB.</p>
+<p>Finally there is the 'default', and the related 'default_get' and 'default_set'
+options. These options control the "default" object which is provided by the
+class interface to the methods. Setting <pre>
+<span class="w">default_get</span></code>
+ to true tells the constructor
+to return the default object if it is defined. Setting <pre>
+<span class="w">default_set</span></code>
+ to true tells
+the constructor to make the default object the constructed object. Setting the
+<code class="inline"><a class="l_k" href="../functions/default.html">default</a></code> option is like setting both to true. This is used primarily internally
+and probably isn't interesting to any real user.</p>
+</li>
+<li><a id="modules()"></a><strong>modules()</strong>
+<p>This returns a list of the names of all the installed modules.  The perl 'core'
+is given the special name 'Perl'.</p>
+</li>
+<li><a id="files()"></a><strong>files()</strong>
+<p>This takes one mandatory parameter, the name of a module.  It returns a list of
+all the filenames from the package.  To obtain a list of core perl files, use
+the module name 'Perl'.  Additional parameters are allowed.  The first is one
+of the strings "prog", "doc" or "all", to select either just program files,
+just manual files or all files.  The remaining parameters are a list of
+directories. The filenames returned will be restricted to those under the
+specified directories.</p>
+</li>
+<li><a id="directories()"></a><strong>directories()</strong>
+<p>This takes one mandatory parameter, the name of a module.  It returns a list of
+all the directories from the package.  Additional parameters are allowed.  The
+first is one of the strings "prog", "doc" or "all", to select either just
+program directories, just manual directories or all directories.  The remaining
+parameters are a list of directories. The directories returned will be
+restricted to those under the specified directories.  This method returns only
+the leaf directories that contain files from the specified module.</p>
+</li>
+<li><a id="directory_tree()"></a><strong>directory_tree()</strong>
+<p>This is identical in operation to directories(), except that it includes all the
+intermediate directories back up to the specified directories.</p>
+</li>
+<li><a id="validate()"></a><strong>validate()</strong>
+<p>This takes one mandatory parameter, the name of a module.  It checks that all
+the files listed in the modules .packlist actually exist, and returns a list of
+any missing files.  If an optional second argument which evaluates to true is
+given any missing files will be removed from the .packlist</p>
+</li>
+<li><a id="packlist()"></a><strong>packlist()</strong>
+<p>This returns the ExtUtils::Packlist object for the specified module.</p>
+</li>
+<li><a id="version()"></a><strong>version()</strong>
+<p>This returns the version number for the specified module.</p>
+</li>
+</ul>
+<a id="EXAMPLE"></a><h2 class='h2' >EXAMPLE</h2>
+<p>See the example in <a href="../ExtUtils/Packlist.html">ExtUtils::Packlist</a>.</p>
+<a id="AUTHOR"></a><h2 class='h2' >AUTHOR</h2>
+<p>Alan Burlison &lt;Alan.Burlison@uk.sun.com&gt;</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#USAGE">USAGE</a></li><li><a href="#METHODS">METHODS</a></li><li><a href="#EXAMPLE">EXAMPLE</a></li><li><a href="#AUTHOR">AUTHOR</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/3/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

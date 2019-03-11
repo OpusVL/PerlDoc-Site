@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Module::Metadata - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>Module::Metadata - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.18.0/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.18.0/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.18.0/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.18.0/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.18.0/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.18.0/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.18.0/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.18.0/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.18.0/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.18.0/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.18.0/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.18.0/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.18.0/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.18.0/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.18.0/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.18.0/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.18.0/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.18.0/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.18.0/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.18.0/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.18.0/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.18.0/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.18.0/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.18.0/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.18.0/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.18.0/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.18.0/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.18.0/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.18.0/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.18.0/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.18.0/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.18.0/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.18.0/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.18.0/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../index-modules-M.html">Core modules (M)</a> &gt;
+      
+    
+    Module::Metadata
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 18.0 documentation</h1>
+                  </div>
+                  <h1>Module::Metadata</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#USAGE">USAGE</a></li><ul><li><a href="#Class-methods">Class methods</a></li><li><a href="#Object-methods">Object methods</a></li></ul><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#COPYRIGHT-%26-LICENSE">COPYRIGHT & LICENSE</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>Module::Metadata - Gather package and POD information from perl module files</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<pre>
+  <a class="l_k" href="../functions/use.html">use</a> <span class="w">Module::Metadata</span><span class="sc">;</span>
+
+  <span class="c"># information about a .pm file</span>
+  <a class="l_k" href="../functions/my.html">my</a> <span class="i">$info</span> = <span class="w">Module::Metadata</span><span class="w">-&gt;new_from_file</span><span class="s">(</span> <span class="i">$file</span> <span class="s">)</span><span class="sc">;</span>
+  <a class="l_k" href="../functions/my.html">my</a> <span class="i">$version</span> = <span class="i">$info</span><span class="i">-&gt;version</span><span class="sc">;</span>
+
+  <span class="c"># CPAN META &#39;provides&#39; field for .pm files in a directory</span>
+  <a class="l_k" href="../functions/my.html">my</a> <span class="i">$provides</span> = <span class="w">Module::Metadata</span><span class="w">-&gt;provides</span><span class="s">(</span>
+    <span class="w">dir</span> <span class="cm">=&gt;</span> <span class="q">&#39;lib&#39;</span><span class="cm">,</span> <span class="w">version</span> <span class="cm">=&gt;</span> <span class="n">2</span>
+  <span class="s">)</span><span class="sc">;</span></pre>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>This module provides a standard way to gather metadata about a .pm file
+without executing unsafe code.</p>
+<a id="USAGE"></a><h2 class='h2' >USAGE</h2>
+<a id="Class-methods"></a><h3 class='h3' >Class methods</h3>
+<ul>
+<li><a id="new_from_file(%24filename%2c-collect_pod-%3d%3e-1)"></a><strong><pre>
+<span class="i">new_from_file</span><span class="s">(</span><span class="i">$filename</span><span class="cm">,</span> <span class="w">collect_pod</span> <span class="cm">=&gt;</span> <span class="n">1</span><span class="s">)</span></code>
+</strong>
+<p>Constructs a <pre>
+<span class="w">Module::Metadata</span></code>
+ object given the path to a file.  Returns
+undef if the filename does not exist.</p>
+<p><pre>
+<span class="w">collect_pod</span></code>
+ is a optional boolean argument that determines whether POD
+data is collected and stored for reference.  POD data is not collected by
+default.  POD headings are always collected.</p>
+<p>If the file begins by an UTF-8, UTF-16BE or UTF-16LE byte-order mark, then
+it is skipped before processing, and the content of the file is also decoded
+appropriately starting from perl 5.8.</p>
+</li>
+<li><a id="new_from_handle(%24handle%2c-%24filename%2c-collect_pod-%3d%3e-1)"></a><strong><pre>
+<span class="i">new_from_handle</span><span class="s">(</span><span class="i">$handle</span><span class="cm">,</span> <span class="i">$filename</span><span class="cm">,</span> <span class="w">collect_pod</span> <span class="cm">=&gt;</span> <span class="n">1</span><span class="s">)</span></code>
+</strong>
+<p>This works just like <pre>
+<span class="w">new_from_file</span></code>
+, except that a handle can be provided
+as the first argument.</p>
+<p>Note that there is no validation to confirm that the handle is a handle or
+something that can act like one.  Passing something that isn't a handle will
+cause a exception when trying to read from it.  The <pre>
+<span class="w">filename</span></code>
+ argument is
+mandatory or undef will be returned.</p>
+<p>You are responsible for setting the decoding layers on <pre>
+<span class="i">$handle</span></code>
+ if
+required.</p>
+</li>
+<li><a id="new_from_module(%24module%2c-collect_pod-%3d%3e-1%2c-inc-%3d%3e-%5c%40dirs)"></a><strong><pre>
+<span class="i">new_from_module</span><span class="s">(</span><span class="i">$module</span><span class="cm">,</span> <span class="w">collect_pod</span> <span class="cm">=&gt;</span> <span class="n">1</span><span class="cm">,</span> <span class="w">inc</span> <span class="cm">=&gt;</span> \<span class="i">@dirs</span><span class="s">)</span></code>
+</strong>
+<p>Constructs a <pre>
+<span class="w">Module::Metadata</span></code>
+ object given a module or package name.
+Returns undef if the module cannot be found.</p>
+<p>In addition to accepting the <pre>
+<span class="w">collect_pod</span></code>
+ argument as described above,
+this method accepts a <pre>
+<span class="w">inc</span></code>
+ argument which is a reference to an array of
+directories to search for the module.  If none are given, the default is
+@INC.</p>
+<p>If the file that contains the module begins by an UTF-8, UTF-16BE or
+UTF-16LE byte-order mark, then it is skipped before processing, and the
+content of the file is also decoded appropriately starting from perl 5.8.</p>
+</li>
+<li><a id="find_module_by_name(%24module%2c-%5c%40dirs)"></a><strong><pre>
+<span class="i">find_module_by_name</span><span class="s">(</span><span class="i">$module</span><span class="cm">,</span> \<span class="i">@dirs</span><span class="s">)</span></code>
+</strong>
+<p>Returns the path to a module given the module or package name. A list
+of directories can be passed in as an optional parameter, otherwise
+@INC is searched.</p>
+<p>Can be called as either an object or a class method.</p>
+</li>
+<li><a id="find_module_dir_by_name(%24module%2c-%5c%40dirs)"></a><strong><pre>
+<span class="i">find_module_dir_by_name</span><span class="s">(</span><span class="i">$module</span><span class="cm">,</span> \<span class="i">@dirs</span><span class="s">)</span></code>
+</strong>
+<p>Returns the entry in <pre>
+<span class="i">@dirs</span></code>
+ (or <pre>
+<span class="i">@INC</span></code>
+ by default) that contains
+the module <pre>
+<span class="i">$module</span></code>
+. A list of directories can be passed in as an
+optional parameter, otherwise @INC is searched.</p>
+<p>Can be called as either an object or a class method.</p>
+</li>
+<li><a id="provides(-%25options-)"></a><strong><pre>
+<span class="i">provides</span><span class="s">(</span> <span class="i">%options</span> <span class="s">)</span></code>
+</strong>
+<p>This is a convenience wrapper around <pre>
+<span class="w">package_versions_from_directory</span></code>
+
+to generate a CPAN META <pre>
+<span class="w">provides</span></code>
+ data structure.  It takes key/value
+pairs.  Valid option keys include:</p>
+<ul>
+<li><a id="version-*(required)*"></a><strong>version <strong>(required)</strong></strong>
+<p>Specifies which version of the <a href="../CPAN/Meta/Spec.html">CPAN::Meta::Spec</a> should be used as
+the format of the <pre>
+<span class="w">provides</span></code>
+ output.  Currently only '1.4' and '2'
+are supported (and their format is identical).  This may change in
+the future as the definition of <pre>
+<span class="w">provides</span></code>
+ changes.</p>
+<p>The <pre>
+<span class="w">version</span></code>
+ option is required.  If it is omitted or if
+an unsupported version is given, then <pre>
+<span class="w">provides</span></code>
+ will throw an error.</p>
+</li>
+<li><a id="dir"></a><strong>dir</strong>
+<p>Directory to search recursively for <i>.pm</i> files.  May not be specified with
+<pre>
+<span class="w">files</span></code>
+.</p>
+</li>
+<li><a id="files"></a><strong>files</strong>
+<p>Array reference of files to examine.  May not be specified with <pre>
+<span class="w">dir</span></code>
+.</p>
+</li>
+<li><a id="prefix"></a><strong>prefix</strong>
+<p>String to prepend to the <pre>
+<span class="w">file</span></code>
+ field of the resulting output. This defaults
+to <i>lib</i>, which is the common case for most CPAN distributions with their
+<i>.pm</i> files in <i>lib</i>.  This option ensures the META information has the
+correct relative path even when the <pre>
+<span class="w">dir</span></code>
+ or <pre>
+<span class="w">files</span></code>
+ arguments are
+absolute or have relative paths from a location other than the distribution
+root.</p>
+</li>
+</ul>
+<p>For example, given <pre>
+<span class="w">dir</span></code>
+ of 'lib' and <pre>
+<span class="w">prefix</span></code>
+ of 'lib', the return value
+is a hashref of the form:</p>
+<pre>
+  <span class="s">{</span>
+    <span class="q">&#39;Package::Name&#39;</span> <span class="cm">=&gt;</span> <span class="s">{</span>
+      <span class="w">version</span> <span class="cm">=&gt;</span> <span class="q">&#39;0.123&#39;</span><span class="cm">,</span>
+      <span class="w">file</span> <span class="cm">=&gt;</span> <span class="q">&#39;lib/Package/Name.pm&#39;</span>
+    <span class="s">}</span><span class="cm">,</span>
+    <span class="q">&#39;OtherPackage::Name&#39;</span> <span class="cm">=&gt;</span> ...
+  <span class="s">}</span></pre>
+</li>
+<li><a id="package_versions_from_directory(%24dir%2c-%5c%40files%3f)"></a><strong><code class="inline">package_versions_from_directory($dir, \@files?)</code></strong>
+<p>Scans <pre>
+<span class="i">$dir</span></code>
+ for .pm files (unless <pre>
+<span class="i">@files</span></code>
+ is given, in which case looks
+for those files in <pre>
+<span class="i">$dir</span></code>
+ - and reads each file for packages and versions,
+returning a hashref of the form:</p>
+<pre>
+  <span class="s">{</span>
+    <span class="q">&#39;Package::Name&#39;</span> <span class="cm">=&gt;</span> <span class="s">{</span>
+      <span class="w">version</span> <span class="cm">=&gt;</span> <span class="q">&#39;0.123&#39;</span><span class="cm">,</span>
+      <span class="w">file</span> <span class="cm">=&gt;</span> <span class="q">&#39;Package/Name.pm&#39;</span>
+    <span class="s">}</span><span class="cm">,</span>
+    <span class="q">&#39;OtherPackage::Name&#39;</span> <span class="cm">=&gt;</span> ...
+  <span class="s">}</span></pre>
+<p>The <pre>
+<span class="w">DB</span></code>
+ and <pre>
+<span class="w">main</span></code>
+ packages are always omitted, as are any "private"
+packages that have leading underscores in the namespace (e.g.
+<pre>
+<span class="w">Foo::_private</span></code>
+)</p>
+<p>Note that the file path is relative to <pre>
+<span class="i">$dir</span></code>
+ if that is specified.
+This <strong>must not</strong> be used directly for CPAN META <pre>
+<span class="w">provides</span></code>
+.  See
+the <pre>
+<span class="w">provides</span></code>
+ method instead.</p>
+</li>
+<li><a id="log_info-(internal)"></a><strong><pre>
+<span class="w">log_info</span> <span class="s">(</span><span class="w">internal</span><span class="s">)</span></code>
+</strong>
+<p>Used internally to perform logging; imported from Log::Contextual if
+Log::Contextual has already been loaded, otherwise simply calls warn.</p>
+</li>
+</ul>
+<a id="Object-methods"></a><h3 class='h3' >Object methods</h3>
+<ul>
+<li><a id="name()"></a><strong><pre>
+<span class="i">name</span><span class="s">(</span><span class="s">)</span></code>
+</strong>
+<p>Returns the name of the package represented by this module. If there
+are more than one packages, it makes a best guess based on the
+filename. If it's a script (i.e. not a *.pm) the package name is
+'main'.</p>
+</li>
+<li><a id="version(%24package)"></a><strong><pre>
+<span class="i">version</span><span class="s">(</span><span class="i">$package</span><span class="s">)</span></code>
+</strong>
+<p>Returns the version as defined by the $VERSION variable for the
+package as returned by the <pre>
+<span class="w">name</span></code>
+ method if no arguments are
+given. If given the name of a package it will attempt to return the
+version of that package if it is specified in the file.</p>
+</li>
+<li><a id="filename()"></a><strong><pre>
+<span class="i">filename</span><span class="s">(</span><span class="s">)</span></code>
+</strong>
+<p>Returns the absolute path to the file.</p>
+</li>
+<li><a id="packages_inside()"></a><strong><pre>
+<span class="i">packages_inside</span><span class="s">(</span><span class="s">)</span></code>
+</strong>
+<p>Returns a list of packages. Note: this is a raw list of packages
+discovered (or assumed, in the case of <pre>
+<span class="w">main</span></code>
+).  It is not
+filtered for <pre>
+<span class="w">DB</span></code>
+, <pre>
+<span class="w">main</span></code>
+ or private packages the way the
+<pre>
+<span class="w">provides</span></code>
+ method does.</p>
+</li>
+<li><a id="pod_inside()"></a><strong><pre>
+<span class="i">pod_inside</span><span class="s">(</span><span class="s">)</span></code>
+</strong>
+<p>Returns a list of POD sections.</p>
+</li>
+<li><a id="contains_pod()"></a><strong><pre>
+<span class="i">contains_pod</span><span class="s">(</span><span class="s">)</span></code>
+</strong>
+<p>Returns true if there is any POD in the file.</p>
+</li>
+<li><a id="pod(%24section)"></a><strong><pre>
+<span class="i">pod</span><span class="s">(</span><span class="i">$section</span><span class="s">)</span></code>
+</strong>
+<p>Returns the POD data in the given section.</p>
+</li>
+</ul>
+<a id="AUTHOR"></a><h2 class='h2' >AUTHOR</h2>
+<p>Original code from Module::Build::ModuleInfo by Ken Williams
+&lt;kwilliams@cpan.org&gt;, Randy W. Sims &lt;RandyS@ThePierianSpring.org&gt;</p>
+<p>Released as Module::Metadata by Matt S Trout (mst) &lt;mst@shadowcat.co.uk&gt; with
+assistance from David Golden (xdg) &lt;dagolden@cpan.org&gt;.</p>
+<a id="COPYRIGHT-%26-LICENSE"></a><h2 class='h2' >COPYRIGHT &amp; LICENSE</h2>
+<p>Original code Copyright (c) 2001-2011 Ken Williams.
+Additional code Copyright (c) 2010-2011 Matt Trout and David Golden.
+All rights reserved.</p>
+<p>This library is free software; you can redistribute it and/or
+modify it under the same terms as Perl itself.</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#USAGE">USAGE</a></li><ul><li><a href="#Class-methods">Class methods</a></li><li><a href="#Object-methods">Object methods</a></li></ul><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#COPYRIGHT-%26-LICENSE">COPYRIGHT & LICENSE</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/0/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/0/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/0/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/0/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/0/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/0/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/0/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/0/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/0/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/0/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/0/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/0/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/0/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/0/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

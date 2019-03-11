@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="TAP::Parser::Aggregator - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>TAP::Parser::Aggregator - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.16.0/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.16.0/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.16.0/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.16.0/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.16.0/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.16.0/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.16.0/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.16.0/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.16.0/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.16.0/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.16.0/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.16.0/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.16.0/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.16.0/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.16.0/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.16.0/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../../index-modules-T.html">Core modules (T)</a> &gt;
+      
+    
+    TAP::Parser::Aggregator
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 16.0 documentation</h1>
+                  </div>
+                  <h1>TAP::Parser::Aggregator</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#VERSION">VERSION</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#METHODS">METHODS</a></li><ul><li><a href="#Class-Methods">Class Methods</a></li><li><a href="#Instance-Methods">Instance Methods</a></li><li><a href="#Summary-methods">Summary methods</a></li></ul><li><a href="#See-Also">See Also</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>TAP::Parser::Aggregator - Aggregate TAP::Parser results</p>
+<a id="VERSION"></a><h2 class='h2' >VERSION</h2>
+<p>Version 3.23</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<div class="verbatim"><ol><li>    use TAP::Parser::Aggregator;</li><li></li><li>    my $aggregate = TAP::Parser::Aggregator-&gt;new;</li><li>    $aggregate-&gt;add( 't/00-load.t', $load_parser );</li><li>    $aggregate-&gt;add( 't/10-lex.t',  $lex_parser  );</li><li></li><li>    my $summary = &lt;&lt;'END_SUMMARY';</li><li>    Passed:  %s</li><li>    Failed:  %s</li><li>    Unexpectedly succeeded: %s</li><li>    END_SUMMARY</li><li>    printf $summary,</li><li>           scalar $aggregate-&gt;passed,</li><li>           scalar $aggregate-&gt;failed,</li><li>           scalar $aggregate-&gt;todo_passed;</li></ol></div><a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p><pre>
+<span class="w">TAP::Parser::Aggregator</span></code>
+ collects parser objects and allows
+reporting/querying their aggregate results.</p>
+<a id="METHODS"></a><h2 class='h2' >METHODS</h2>
+<a id="Class-Methods"></a><h3 class='h3' >Class Methods</h3>
+<a id="new"></a><h4 class='h4' ><pre>
+<span class="w">new</span></code>
+</h4>
+<pre>
+ <a class="l_k" href="../../functions/my.html">my</a> <span class="i">$aggregate</span> = <span class="w">TAP::Parser::Aggregator</span><span class="w">-&gt;new</span><span class="sc">;</span></pre>
+<p>Returns a new <pre>
+<span class="w">TAP::Parser::Aggregator</span></code>
+ object.</p>
+<a id="Instance-Methods"></a><h3 class='h3' >Instance Methods</h3>
+<a id="add"></a><h4 class='h4' ><pre>
+<span class="w">add</span></code>
+</h4>
+<pre>
+  <span class="i">$aggregate</span><span class="i">-&gt;add</span><span class="s">(</span> <span class="i">$description</span> <span class="cm">=&gt;</span> <span class="i">$parser</span> <span class="s">)</span><span class="sc">;</span></pre>
+<p>The <pre>
+<span class="i">$description</span></code>
+ is usually a test file name (but only by
+convention.)  It is used as a unique identifier (see e.g.
+<a href="#parsers">parsers</a>.)  Reusing a description is a fatal error.</p>
+<p>The <pre>
+<span class="i">$parser</span></code>
+ is a <a href="../../TAP/Parser.html">TAP::Parser</a> object.</p>
+<a id="parsers"></a><h4 class='h4' ><pre>
+<span class="w">parsers</span></code>
+</h4>
+<pre>
+  <a class="l_k" href="../../functions/my.html">my</a> <span class="i">$count</span>   = <span class="i">$aggregate</span><span class="i">-&gt;parsers</span><span class="sc">;</span>
+  <a class="l_k" href="../../functions/my.html">my</a> <span class="i">@parsers</span> = <span class="i">$aggregate</span><span class="i">-&gt;parsers</span><span class="sc">;</span>
+  <a class="l_k" href="../../functions/my.html">my</a> <span class="i">@parsers</span> = <span class="i">$aggregate</span><span class="i">-&gt;parsers</span><span class="s">(</span><span class="i">@descriptions</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>In scalar context without arguments, this method returns the number of parsers
+aggregated.  In list context without arguments, returns the parsers in the
+order they were added.</p>
+<p>If <pre>
+<span class="i">@descriptions</span></code>
+ is given, these correspond to the keys used in each
+call to the add() method.  Returns an array of the requested parsers (in
+the requested order) in list context or an array reference in scalar
+context.</p>
+<p>Requesting an unknown identifier is a fatal error.</p>
+<a id="descriptions"></a><h4 class='h4' ><pre>
+<span class="w">descriptions</span></code>
+</h4>
+<p>Get an array of descriptions in the order in which they were added to
+the aggregator.</p>
+<a id="start"></a><h4 class='h4' ><pre>
+<span class="w">start</span></code>
+</h4>
+<p>Call <pre>
+<span class="w">start</span></code>
+ immediately before adding any results to the aggregator.
+Among other times it records the start time for the test run.</p>
+<a id="stop"></a><h4 class='h4' ><pre>
+<span class="w">stop</span></code>
+</h4>
+<p>Call <pre>
+<span class="w">stop</span></code>
+ immediately after adding all test results to the aggregator.</p>
+<a id="elapsed"></a><h4 class='h4' ><pre>
+<span class="w">elapsed</span></code>
+</h4>
+<p>Elapsed returns a <a href="../../Benchmark.html">Benchmark</a> object that represents the running time
+of the aggregated tests. In order for <pre>
+<span class="w">elapsed</span></code>
+ to be valid you must
+call <pre>
+<span class="w">start</span></code>
+ before running the tests and <pre>
+<span class="w">stop</span></code>
+ immediately
+afterwards.</p>
+<a id="elapsed_timestr"></a><h4 class='h4' ><pre>
+<span class="w">elapsed_timestr</span></code>
+</h4>
+<p>Returns a formatted string representing the runtime returned by
+<pre>
+<span class="i">elapsed</span><span class="s">(</span><span class="s">)</span></code>
+.  This lets the caller not worry about Benchmark.</p>
+<a id="all_passed"></a><h4 class='h4' ><pre>
+<span class="w">all_passed</span></code>
+</h4>
+<p>Return true if all the tests passed and no parse errors were detected.</p>
+<a id="get_status"></a><h4 class='h4' ><pre>
+<span class="w">get_status</span></code>
+</h4>
+<p>Get a single word describing the status of the aggregated tests.
+Depending on the outcome of the tests returns 'PASS', 'FAIL' or
+'NOTESTS'. This token is understood by <a href="https://search.cpan.org/perldoc/CPAN::Reporter">CPAN::Reporter</a>.</p>
+<a id="Summary-methods"></a><h3 class='h3' >Summary methods</h3>
+<p>Each of the following methods will return the total number of corresponding
+tests if called in scalar context.  If called in list context, returns the
+descriptions of the parsers which contain the corresponding tests (see <pre>
+<span class="w">add</span></code>
+
+for an explanation of description.</p>
+<ul>
+<li><a id="*-failed"></a><strong>failed</strong>
+</li>
+<li><a id="*-parse_errors"></a><strong>parse_errors</strong>
+</li>
+<li><a id="*-passed"></a><strong>passed</strong>
+</li>
+<li><a id="*-planned"></a><strong>planned</strong>
+</li>
+<li><a id="*-skipped"></a><strong>skipped</strong>
+</li>
+<li><a id="*-todo"></a><strong>todo</strong>
+</li>
+<li><a id="*-todo_passed"></a><strong>todo_passed</strong>
+</li>
+<li><a id="*-wait"></a><strong>wait</strong>
+</li>
+<li><a id="*-exit"></a><strong>exit</strong>
+</li>
+</ul>
+<p>For example, to find out how many tests unexpectedly succeeded (TODO tests
+which passed when they shouldn't):</p>
+<pre>
+ <a class="l_k" href="../../functions/my.html">my</a> <span class="i">$count</span>        = <span class="i">$aggregate</span><span class="i">-&gt;todo_passed</span><span class="sc">;</span>
+ <a class="l_k" href="../../functions/my.html">my</a> <span class="i">@descriptions</span> = <span class="i">$aggregate</span><span class="i">-&gt;todo_passed</span><span class="sc">;</span></pre>
+<p>Note that <code class="inline"><a class="l_k" href="../../functions/wait.html">wait</a></code> and <code class="inline"><a class="l_k" href="../../functions/exit.html">exit</a></code> are the totals of the wait and exit
+statuses of each of the tests. These values are totalled only to provide
+a true value if any of them are non-zero.</p>
+<a id="total"></a><h4 class='h4' ><pre>
+<span class="w">total</span></code>
+</h4>
+<pre>
+  <a class="l_k" href="../../functions/my.html">my</a> <span class="i">$tests_run</span> = <span class="i">$aggregate</span><span class="i">-&gt;total</span><span class="sc">;</span></pre>
+<p>Returns the total number of tests run.</p>
+<a id="has_problems"></a><h4 class='h4' ><pre>
+<span class="w">has_problems</span></code>
+</h4>
+<pre>
+  <a class="l_k" href="../../functions/if.html">if</a> <span class="s">(</span> <span class="i">$parser</span><span class="i">-&gt;has_problems</span> <span class="s">)</span> <span class="s">{</span>
+      ...
+  <span class="s">}</span></pre>
+<p>Identical to <pre>
+<span class="w">has_errors</span></code>
+, but also returns true if any TODO tests
+unexpectedly succeeded.  This is more akin to "warnings".</p>
+<a id="has_errors"></a><h4 class='h4' ><pre>
+<span class="w">has_errors</span></code>
+</h4>
+<pre>
+  <a class="l_k" href="../../functions/if.html">if</a> <span class="s">(</span> <span class="i">$parser</span><span class="i">-&gt;has_errors</span> <span class="s">)</span> <span class="s">{</span>
+      ...
+  <span class="s">}</span></pre>
+<p>Returns true if <i>any</i> of the parsers failed.  This includes:</p>
+<ul>
+<li><a id="*-Failed-tests"></a><strong>Failed tests</strong>
+</li>
+<li><a id="*-Parse-errors"></a><strong>Parse errors</strong>
+</li>
+<li><a id="*-Bad-exit-or-wait-status"></a><strong>Bad exit or wait status</strong>
+</li>
+</ul>
+<a id="todo_failed"></a><h4 class='h4' ><pre>
+<span class="w">todo_failed</span></code>
+</h4>
+<pre>
+  <span class="c"># deprecated in favor of &#39;todo_passed&#39;.  This method was horribly misnamed.</span></pre>
+<p>This was a badly misnamed method.  It indicates which TODO tests unexpectedly
+succeeded.  Will now issue a warning and call <pre>
+<span class="w">todo_passed</span></code>
+.</p>
+<a id="See-Also"></a><h2 class='h2' >See Also</h2>
+<p><a href="../../TAP/Parser.html">TAP::Parser</a></p>
+<p><a href="../../TAP/Harness.html">TAP::Harness</a></p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#VERSION">VERSION</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#METHODS">METHODS</a></li><ul><li><a href="#Class-Methods">Class Methods</a></li><li><a href="#Instance-Methods">Instance Methods</a></li><li><a href="#Summary-methods">Summary methods</a></li></ul><li><a href="#See-Also">See Also</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/0/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

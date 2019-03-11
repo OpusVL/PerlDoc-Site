@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Module::CoreList::Utils - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>Module::CoreList::Utils - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.24.1/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.24.1/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.24.1/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.24.1/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.24.1/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.24.1/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.24.1/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.24.1/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.24.1/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.24.1/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.24.1/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.24.1/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.24.1/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.24.1/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.24.1/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../../index-modules-M.html">Core modules (M)</a> &gt;
+      
+    
+    Module::CoreList::Utils
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 24.1 documentation</h1>
+                  </div>
+                  <h1>Module::CoreList::Utils</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#FUNCTIONS-API">FUNCTIONS API</a></li><li><a href="#DATA-STRUCTURES">DATA STRUCTURES</a></li><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#LICENSE">LICENSE</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>Module::CoreList::Utils - what utilities shipped with versions of perl</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<pre>
+ <a class="l_k" href="../../functions/use.html">use</a> <span class="w">Module::CoreList::Utils</span><span class="sc">;</span>
+
+ <a class="l_k" href="../../functions/print.html">print</a> <span class="i">$Module::CoreList::Utils::utilities</span>{<span class="n">5.009003</span>}{<span class="w">ptar</span>}<span class="sc">;</span> <span class="c"># prints 1</span>
+
+ <a class="l_k" href="../../functions/print.html">print</a> <span class="i">Module::CoreList::Utils</span><span class="i">-&gt;first_release</span><span class="s">(</span><span class="q">&#39;corelist&#39;</span><span class="s">)</span><span class="sc">;</span>
+ <span class="c"># prints 5.008009</span>
+
+ <a class="l_k" href="../../functions/print.html">print</a> <span class="i">Module::CoreList::Utils</span><span class="i">-&gt;first_release_by_date</span><span class="s">(</span><span class="q">&#39;corelist&#39;</span><span class="s">)</span><span class="sc">;</span>
+ <span class="c"># prints 5.009002</span></pre>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>Module::CoreList::Utils provides information on which core and dual-life utilities shipped
+with each version of <a href="../../perl.html">perl</a>.</p>
+<p>It provides a number of mechanisms for querying this information.</p>
+<p>There is a functional programming API available for programmers to query
+information.</p>
+<p>Programmers may also query the contained hash structure to find relevant
+information.</p>
+<a id="FUNCTIONS-API"></a><h2 class='h2' >FUNCTIONS API</h2>
+<p>These are the functions that are available, they may either be called as functions or class methods:</p>
+<pre>
+  <span class="i">Module::CoreList::Utils::first_release</span><span class="s">(</span><span class="q">&#39;corelist&#39;</span><span class="s">)</span><span class="sc">;</span> <span class="c"># as a function</span>
+
+  <span class="w">Module::CoreList::Utils</span><span class="w">-&gt;first_release</span><span class="s">(</span><span class="q">&#39;corelist&#39;</span><span class="s">)</span><span class="sc">;</span> <span class="c"># class method</span></pre>
+<ul>
+<li><a id="utilities"></a><strong><pre>
+<span class="w">utilities</span></code>
+</strong>
+<p>Requires a perl version as an argument, returns a list of utilities that shipped with
+that version of perl, or undef/empty list if that perl doesn't exist.</p>
+</li>
+<li><a id="first_release(-UTILITY-)"></a><strong><pre>
+<span class="i">first_release</span><span class="s">(</span> <span class="w">UTILITY</span> <span class="s">)</span></code>
+</strong>
+<p>Requires a UTILITY name as an argument, returns the perl version when that utility first
+appeared in core as ordered by perl version number or undef ( in scalar context )
+or an empty list ( in list context ) if that utility is not in core.</p>
+</li>
+<li><a id="first_release_by_date(-UTILITY-)"></a><strong><pre>
+<span class="i">first_release_by_date</span><span class="s">(</span> <span class="w">UTILITY</span> <span class="s">)</span></code>
+</strong>
+<p>Requires a UTILITY name as an argument, returns the perl version when that utility first
+appeared in core as ordered by release date or undef ( in scalar context )
+or an empty list ( in list context ) if that utility is not in core.</p>
+</li>
+<li><a id="removed_from(-UTILITY-)"></a><strong><pre>
+<span class="i">removed_from</span><span class="s">(</span> <span class="w">UTILITY</span> <span class="s">)</span></code>
+</strong>
+<p>Takes a UTILITY name as an argument, returns the first perl version where that utility
+was removed from core. Returns undef if the given utility was never in core or remains
+in core.</p>
+</li>
+<li><a id="removed_from_by_date(-UTILITY-)"></a><strong><pre>
+<span class="i">removed_from_by_date</span><span class="s">(</span> <span class="w">UTILITY</span> <span class="s">)</span></code>
+</strong>
+<p>Takes a UTILITY name as an argument, returns the first perl version by release date where that
+utility was removed from core. Returns undef if the given utility was never in core or remains
+in core.</p>
+</li>
+</ul>
+<a id="DATA-STRUCTURES"></a><h2 class='h2' >DATA STRUCTURES</h2>
+<p>These are the hash data structures that are available:</p>
+<ul>
+<li><a id="%25Module%3a%3aCoreList%3a%3aUtils%3a%3autilities"></a><strong><pre>
+<span class="i">%Module::CoreList::Utils::utilities</span></code>
+</strong>
+<p>A hash of hashes that is keyed on perl version as indicated
+in $].  The second level hash is utility / defined pairs.</p>
+</li>
+</ul>
+<a id="AUTHOR"></a><h2 class='h2' >AUTHOR</h2>
+<p>Chris <pre>
+<span class="w">BinGOs</span></code>
+ Williams &lt;chris@bingosnet.co.uk&gt;</p>
+<p>Currently maintained by the perl 5 porters &lt;perl5-porters@perl.org&gt;.</p>
+<p>This module is the result of archaeology undertaken during QA Hackathon
+in Lancaster, April 2013.</p>
+<a id="LICENSE"></a><h2 class='h2' >LICENSE</h2>
+<p>Copyright (C) 2013 Chris Williams.  All Rights Reserved.</p>
+<p>This module is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.</p>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<p><a href="../../corelist.html">corelist</a>, <a href="../../Module/CoreList.html">Module::CoreList</a>, <a href="../../perl.html">perl</a>, <a href="http://perlpunks.de/corelist">http://perlpunks.de/corelist</a></p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#FUNCTIONS-API">FUNCTIONS API</a></li><li><a href="#DATA-STRUCTURES">DATA STRUCTURES</a></li><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#LICENSE">LICENSE</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

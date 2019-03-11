@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ExtUtils::Command - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>ExtUtils::Command - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.24.1/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.24.1/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.24.1/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.24.1/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.24.1/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.24.1/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.24.1/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.24.1/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.24.1/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.24.1/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.24.1/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.24.1/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.24.1/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.24.1/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.24.1/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../index-modules-E.html">Core modules (E)</a> &gt;
+      
+    
+    ExtUtils::Command
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 24.1 documentation</h1>
+                  </div>
+                  <h1>ExtUtils::Command</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><ul><li><a href="#FUNCTIONS">FUNCTIONS</a></li></ul><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#AUTHOR">AUTHOR</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>ExtUtils::Command - utilities to replace common UNIX commands in Makefiles etc.</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<div class="verbatim"><ol><li>  perl -MExtUtils::Command -e cat files... &gt; destination</li><li>  perl -MExtUtils::Command -e mv source... destination</li><li>  perl -MExtUtils::Command -e cp source... destination</li><li>  perl -MExtUtils::Command -e touch files...</li><li>  perl -MExtUtils::Command -e rm_f files...</li><li>  perl -MExtUtils::Command -e rm_rf directories...</li><li>  perl -MExtUtils::Command -e mkpath directories...</li><li>  perl -MExtUtils::Command -e eqtime source destination</li><li>  perl -MExtUtils::Command -e test_f file</li><li>  perl -MExtUtils::Command -e test_d directory</li><li>  perl -MExtUtils::Command -e chmod mode files...</li><li>  ...</li></ol></div><a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>The module is used to replace common UNIX commands.  In all cases the
+functions work from @ARGV rather than taking arguments.  This makes
+them easier to deal with in Makefiles.  Call them like this:</p>
+<pre>
+  <span class="w">perl</span> -<span class="w">MExtUtils::Command</span> -e <span class="w">some_command</span> <span class="w">some</span> <span class="w">files</span> <span class="w">to</span> <span class="w">work</span> <span class="w">on</span></pre>
+<p>and <i>NOT</i> like this:</p>
+<pre>
+  <span class="w">perl</span> -<span class="w">MExtUtils::Command</span> -e <span class="q">&#39;some_command qw(some files to work on)&#39;</span></pre>
+<p>For that use <a href="https://search.cpan.org/perldoc/Shell::Command">Shell::Command</a>.</p>
+<p>Filenames with * and ? will be glob expanded.</p>
+<a id="FUNCTIONS"></a><h3 class='h3' >FUNCTIONS</h3>
+<ul>
+<li><a id="cat"></a><strong>cat</strong>
+<pre>
+    <span class="w">cat</span> <span class="w">file</span> ...</pre>
+<p>Concatenates all files mentioned on command line to STDOUT.</p>
+</li>
+<li><a id="eqtime"></a><strong>eqtime</strong>
+<pre>
+    <span class="w">eqtime</span> <span class="w">source</span> <span class="w">destination</span></pre>
+<p>Sets modified time of destination to that of source.</p>
+</li>
+<li><a id="rm_rf"></a><strong>rm_rf</strong>
+<pre>
+    <span class="w">rm_rf</span> <span class="w">files</span> <a class="l_k" href="../functions/or.html">or</a> <span class="w">directories</span> ...</pre>
+<p>Removes files and directories - recursively (even if readonly)</p>
+</li>
+<li><a id="rm_f"></a><strong>rm_f</strong>
+<pre>
+    <span class="w">rm_f</span> <span class="w">file</span> ...</pre>
+<p>Removes files (even if readonly)</p>
+</li>
+<li><a id="touch"></a><strong>touch</strong>
+<pre>
+    <span class="w">touch</span> <span class="w">file</span> ...</pre>
+<p>Makes files exist, with current timestamp</p>
+</li>
+<li><a id="mv"></a><strong>mv</strong>
+<pre>
+    <span class="w">mv</span> <span class="w">source_file</span> <span class="w">destination_file</span>
+    <span class="w">mv</span> <span class="w">source_file</span> <span class="w">source_file</span> <span class="w">destination_dir</span></pre>
+<p>Moves source to destination.  Multiple sources are allowed if
+destination is an existing directory.</p>
+<p>Returns true if all moves succeeded, false otherwise.</p>
+</li>
+<li><a id="cp"></a><strong>cp</strong>
+<pre>
+    <span class="w">cp</span> <span class="w">source_file</span> <span class="w">destination_file</span>
+    <span class="w">cp</span> <span class="w">source_file</span> <span class="w">source_file</span> <span class="w">destination_dir</span></pre>
+<p>Copies sources to the destination.  Multiple sources are allowed if
+destination is an existing directory.</p>
+<p>Returns true if all copies succeeded, false otherwise.</p>
+</li>
+<li><a id="chmod"></a><strong>chmod</strong>
+<pre>
+    <a class="l_k" href="../functions/chmod.html">chmod</a> <span class="w">mode</span> <span class="w">files</span> ...</pre>
+<p>Sets UNIX like permissions 'mode' on all the files.  e.g. 0666</p>
+</li>
+<li><a id="mkpath"></a><strong>mkpath</strong>
+<pre>
+    <span class="w">mkpath</span> <span class="w">directory</span> ...</pre>
+<p>Creates directories, including any parent directories.</p>
+</li>
+<li><a id="test_f"></a><strong>test_f</strong>
+<pre>
+    <span class="w">test_f</span> <span class="w">file</span></pre>
+<p>Tests if a file exists.  <i>Exits</i> with 0 if it does, 1 if it does not (ie.
+shell's idea of true and false).</p>
+</li>
+<li><a id="test_d"></a><strong>test_d</strong>
+<pre>
+    <span class="w">test_d</span> <span class="w">directory</span></pre>
+<p>Tests if a directory exists.  <i>Exits</i> with 0 if it does, 1 if it does
+not (ie. shell's idea of true and false).</p>
+</li>
+<li><a id="dos2unix"></a><strong>dos2unix</strong>
+<pre>
+    <span class="w">dos2unix</span> <span class="w">files</span> <a class="l_k" href="../functions/or.html">or</a> <span class="w">dirs</span> ...</pre>
+<p>Converts DOS and OS/2 linefeeds to Unix style recursively.</p>
+</li>
+</ul>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<p>Shell::Command which is these same functions but take arguments normally.</p>
+<a id="AUTHOR"></a><h2 class='h2' >AUTHOR</h2>
+<p>Nick Ing-Simmons <pre>
+<span class="w">ni</span>-s<span class="i">@cpan</span>.<span class="w">org</span></code>
+</p>
+<p>Maintained by Michael G Schwern <pre>
+<span class="w">schwern</span><span class="i">@pobox</span>.<span class="w">com</span></code>
+ within the
+ExtUtils-MakeMaker package and, as a separate CPAN package, by
+Randy Kobes <pre>
+<span class="w">r</span>.<span class="w">kobes</span><span class="i">@uwinnipeg</span>.<span class="w">ca</span></code>
+.</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><ul><li><a href="#FUNCTIONS">FUNCTIONS</a></li></ul><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#AUTHOR">AUTHOR</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

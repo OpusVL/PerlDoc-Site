@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="-X - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>-X - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.20.3/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.20.3/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.20.3/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.20.3/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.20.3/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.20.3/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.20.3/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.20.3/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.20.3/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.20.3/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.20.3/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.20.3/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.20.3/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.20.3/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.20.3/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../index-language.html">Language reference</a> &gt;
+      
+        <a href="../index-functions.html">Functions</a> &gt;
+      
+    
+    -X
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 20.3 documentation</h1>
+                  </div>
+                  <h1>-X</h1>
+<div class="mod_az_list">
+  <a href="/5.20.3/index-functions.html">Perl functions A-Z</a> |
+  <a href="/5.20.3/index-functions-by-cat.html">Perl functions by category</a> |
+  <a href="/5.20.3/perlfunc.html">The 'perlfunc' manpage</a>
+</div>
+
+
+  <!--    -->
+<ul>
+<li><a id="-X-FILEHANDLE"></a><strong>-X FILEHANDLE</strong>
+<p>
+</p>
+</li>
+</ul>
+<ul>
+<li><a id="-X-EXPR"></a><strong>-X EXPR</strong>
+</li>
+<li><a id="-X-DIRHANDLE"></a><strong>-X DIRHANDLE</strong>
+</li>
+<li><a id="-X"></a><strong>-X</strong>
+<p>A file test, where X is one of the letters listed below.  This unary
+operator takes one argument, either a filename, a filehandle, or a dirhandle, 
+and tests the associated file to see if something is true about it.  If the
+argument is omitted, tests <pre>
+<span class="i">$_</span></code>
+, except for <pre>
+-t</code>
+, which tests STDIN.
+Unless otherwise documented, it returns <pre>
+<span class="n">1</span></code>
+ for true and <pre>
+<span class="q">&#39;&#39;</span></code>
+ for false.
+If the file doesn't exist or can't be examined, it returns <code class="inline"><a class="l_k" href="../functions/undef.html">undef</a></code> and
+sets <pre>
+<span class="i">$!</span></code>
+ (errno).  Despite the funny names, precedence is the same as any
+other named unary operator.  The operator may be any of:</p>
+<div class="verbatim"><ol><li>    -r  File is readable by effective uid/gid.</li><li>    -w  File is writable by effective uid/gid.</li><li>    -x  File is executable by effective uid/gid.</li><li>    -o  File is owned by effective uid.</li><li></li><li>    -R  File is readable by real uid/gid.</li><li>    -W  File is writable by real uid/gid.</li><li>    -X  File is executable by real uid/gid.</li><li>    -O  File is owned by real uid.</li><li></li><li>    -e  File exists.</li><li>    -z  File has zero size (is empty).</li><li>    -s  File has nonzero size (returns size in bytes).</li><li></li><li>    -f  File is a plain file.</li><li>    -d  File is a directory.</li><li>    -l  File is a symbolic link (false if symlinks aren't</li><li>        supported by the file system).</li><li>    -p  File is a named pipe (FIFO), or Filehandle is a pipe.</li><li>    -S  File is a socket.</li><li>    -b  File is a block special file.</li><li>    -c  File is a character special file.</li><li>    -t  Filehandle is opened to a tty.</li><li></li><li>    -u  File has setuid bit set.</li><li>    -g  File has setgid bit set.</li><li>    -k  File has sticky bit set.</li><li></li><li>    -T  File is an ASCII or UTF-8 text file (heuristic guess).</li><li>    -B  File is a "binary" file (opposite of -T).</li><li></li><li>    -M  Script start time minus file modification time, in days.</li><li>    -A  Same for access time.</li><li>    -C  Same for inode change time (Unix, may differ for other</li><li>	platforms)</li></ol></div><p>Example:</p>
+<pre>
+    <a class="l_k" href="../functions/while.html">while</a> <span class="s">(</span>&lt;&gt;<span class="s">)</span> <span class="s">{</span>
+        <a class="l_k" href="../functions/chomp.html">chomp</a><span class="sc">;</span>
+        <a class="l_k" href="../functions/next.html">next</a> <a class="l_k" href="../functions/unless.html">unless</a> -f <span class="i">$_</span><span class="sc">;</span>  <span class="c"># ignore specials</span>
+        <span class="c">#...</span>
+    <span class="s">}</span></pre>
+<p>Note that <code class="inline">-s/a/b/</code> does not do a negated substitution.  Saying
+<pre>
+-<a class="l_k" href="../functions/exp.html">exp</a><span class="s">(</span><span class="i">$foo</span><span class="s">)</span></code>
+ still works as expected, however: only single letters
+following a minus are interpreted as file tests.</p>
+<p>These operators are exempt from the "looks like a function rule" described
+above.  That is, an opening parenthesis after the operator does not affect
+how much of the following code constitutes the argument.  Put the opening
+parentheses before the operator to separate it from code that follows (this
+applies only to operators with higher precedence than unary operators, of
+course):</p>
+<div class="verbatim"><ol><li>    -s($file) + 1024   # probably wrong; same as -s($file + 1024)</li><li>    (-s $file) + 1024  # correct</li></ol></div><p>The interpretation of the file permission operators <pre>
+-r</code>
+, <pre>
+-R</code>
+,
+<pre>
+-w</code>
+, <pre>
+-W</code>
+, <pre>
+-x</code>
+, and <code class="inline"><a class="l_k" href="../functions/-X.html">-X</a></code> is by default based solely on the mode
+of the file and the uids and gids of the user.  There may be other
+reasons you can't actually read, write, or execute the file: for
+example network filesystem access controls, ACLs (access control lists),
+read-only filesystems, and unrecognized executable formats.  Note
+that the use of these six specific operators to verify if some operation
+is possible is usually a mistake, because it may be open to race
+conditions.</p>
+<p>Also note that, for the superuser on the local filesystems, the <pre>
+-r</code>
+,
+<pre>
+-R</code>
+, <pre>
+-w</code>
+, and <pre>
+-W</code>
+ tests always return 1, and <pre>
+-x</code>
+ and <code class="inline"><a class="l_k" href="../functions/-X.html">-X</a></code> return 1
+if any execute bit is set in the mode.  Scripts run by the superuser
+may thus need to do a stat() to determine the actual mode of the file,
+or temporarily set their effective uid to something else.</p>
+<p>If you are using ACLs, there is a pragma called <pre>
+<span class="w">filetest</span></code>
+ that may
+produce more accurate results than the bare stat() mode bits.
+When under <pre>
+<a class="l_k" href="../functions/use.html">use</a> <span class="w">filetest</span> <span class="q">&#39;access&#39;</span></code>
+ the above-mentioned filetests
+test whether the permission can(not) be granted using the
+access(2) family of system calls.  Also note that the <pre>
+-x</code>
+ and <code class="inline"><a class="l_k" href="../functions/-X.html">-X</a></code> may
+under this pragma return true even if there are no execute permission
+bits set (nor any extra execute permission ACLs).  This strangeness is
+due to the underlying system calls' definitions.  Note also that, due to
+the implementation of <pre>
+<a class="l_k" href="../functions/use.html">use</a> <span class="w">filetest</span> <span class="q">&#39;access&#39;</span></code>
+, the <pre>
+<span class="w">_</span></code>
+ special
+filehandle won't cache the results of the file tests when this pragma is
+in effect.  Read the documentation for the <pre>
+<span class="w">filetest</span></code>
+ pragma for more
+information.</p>
+<p>The <pre>
+-T</code>
+ and <pre>
+-B</code>
+ switches work as follows.  The first block or so of
+the file is examined to see if it is valid UTF-8 that includes non-ASCII
+characters.  If, so it's a <pre>
+-T</code>
+ file.  Otherwise, that same portion of
+the file is examined for odd characters such as strange control codes or
+characters with the high bit set.  If more than a third of the
+characters are strange, it's a <pre>
+-B</code>
+ file; otherwise it's a <pre>
+-T</code>
+ file.
+Also, any file containing a zero byte in the examined portion is
+considered a binary file.  (If executed within the scope of a <a href="../perllocale.html">use locale</a> which includes <pre>
+<span class="w">LC_CTYPE</span></code>
+, odd characters are
+anything that isn't a printable nor space in the current locale.)  If
+<pre>
+-T</code>
+ or <pre>
+-B</code>
+ is used on a filehandle, the current IO buffer is
+examined
+rather than the first block.  Both <pre>
+-T</code>
+ and <pre>
+-B</code>
+ return true on an empty
+file, or a file at EOF when testing a filehandle.  Because you have to
+read a file to do the <pre>
+-T</code>
+ test, on most occasions you want to use a <pre>
+-f</code>
+
+against the file first, as in <pre>
+<a class="l_k" href="../functions/next.html">next</a> <a class="l_k" href="../functions/unless.html">unless</a> -f <span class="i">$file</span> &amp;&amp; -T <span class="i">$file</span></code>
+.</p>
+<p>If any of the file tests (or either the <code class="inline"><a class="l_k" href="../functions/stat.html">stat</a></code> or <code class="inline"><a class="l_k" href="../functions/lstat.html">lstat</a></code> operator) is given
+the special filehandle consisting of a solitary underline, then the stat
+structure of the previous file test (or stat operator) is used, saving
+a system call.  (This doesn't work with <pre>
+-t</code>
+, and you need to remember
+that lstat() and <pre>
+-l</code>
+ leave values in the stat structure for the
+symbolic link, not the real file.)  (Also, if the stat buffer was filled by
+an <code class="inline"><a class="l_k" href="../functions/lstat.html">lstat</a></code> call, <pre>
+-T</code>
+ and <pre>
+-B</code>
+ will reset it with the results of <pre>
+<a class="l_k" href="../functions/stat.html">stat</a> <span class="w">_</span></code>
+).
+Example:</p>
+<pre>
+    <a class="l_k" href="../functions/print.html">print</a> <span class="q">&quot;Can do.\n&quot;</span> <a class="l_k" href="../functions/if.html">if</a> -r <span class="i">$a</span> || -w <span class="i">_</span> || -x <span class="i">_</span><span class="sc">;</span>
+
+    <a class="l_k" href="../functions/stat.html">stat</a><span class="s">(</span><span class="i">$filename</span><span class="s">)</span><span class="sc">;</span>
+    <a class="l_k" href="../functions/print.html">print</a> <span class="q">&quot;Readable\n&quot;</span> <a class="l_k" href="../functions/if.html">if</a> -r <span class="i">_</span><span class="sc">;</span>
+    <a class="l_k" href="../functions/print.html">print</a> <span class="q">&quot;Writable\n&quot;</span> <a class="l_k" href="../functions/if.html">if</a> -w <span class="i">_</span><span class="sc">;</span>
+    <a class="l_k" href="../functions/print.html">print</a> <span class="q">&quot;Executable\n&quot;</span> <a class="l_k" href="../functions/if.html">if</a> -x <span class="i">_</span><span class="sc">;</span>
+    <a class="l_k" href="../functions/print.html">print</a> <span class="q">&quot;Setuid\n&quot;</span> <a class="l_k" href="../functions/if.html">if</a> -u <span class="i">_</span><span class="sc">;</span>
+    <a class="l_k" href="../functions/print.html">print</a> <span class="q">&quot;Setgid\n&quot;</span> <a class="l_k" href="../functions/if.html">if</a> -g <span class="i">_</span><span class="sc">;</span>
+    <a class="l_k" href="../functions/print.html">print</a> <span class="q">&quot;Sticky\n&quot;</span> <a class="l_k" href="../functions/if.html">if</a> -k <span class="i">_</span><span class="sc">;</span>
+    <a class="l_k" href="../functions/print.html">print</a> <span class="q">&quot;Text\n&quot;</span> <a class="l_k" href="../functions/if.html">if</a> -T <span class="i">_</span><span class="sc">;</span>
+    <a class="l_k" href="../functions/print.html">print</a> <span class="q">&quot;Binary\n&quot;</span> <a class="l_k" href="../functions/if.html">if</a> -B <span class="i">_</span><span class="sc">;</span></pre>
+<p>As of Perl 5.10.0, as a form of purely syntactic sugar, you can stack file
+test operators, in a way that <pre>
+-f -w -x <span class="i">$file</span></code>
+ is equivalent to
+<pre>
+-x <span class="i">$file</span> &amp;&amp; -w <span class="i">_</span> &amp;&amp; -f <span class="i">_</span></code>
+.  (This is only fancy syntax: if you use
+the return value of <pre>
+-f <span class="i">$file</span></code>
+ as an argument to another filetest
+operator, no special magic will happen.)</p>
+<p>Portability issues: <a href="../perlport.html#-X">-X in perlport</a>.</p>
+<p>To avoid confusing would-be users of your code with mysterious
+syntax errors, put something like this at the top of your script:</p>
+<pre>
+    <a class="l_k" href="../functions/use.html">use</a> <span class="n">5.010</span><span class="sc">;</span>  <span class="c"># so filetest ops can stack</span></pre>
+</li>
+</ul>
+
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

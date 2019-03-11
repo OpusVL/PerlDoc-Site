@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="perlamiga - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>perlamiga - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.20.3/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.20.3/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.20.3/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.20.3/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.20.3/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.20.3/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.20.3/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.20.3/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.20.3/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.20.3/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.20.3/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.20.3/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.20.3/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.20.3/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.20.3/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="index-platforms.html">Platform specific</a> &gt;
+      
+    
+    perlamiga
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 20.3 documentation</h1>
+                  </div>
+                  <h1>perlamiga</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#NOTE">NOTE</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><ul><li><a href="#Prerequisites-for-Compiling-Perl-on-AmigaOS">Prerequisites for Compiling Perl on AmigaOS</a></li><li><a href="#Starting-Perl-programs-under-AmigaOS">Starting Perl programs under AmigaOS</a></li><li><a href="#Shortcomings-of-Perl-under-AmigaOS">Shortcomings of Perl under AmigaOS</a></li></ul><li><a href="#INSTALLATION">INSTALLATION</a></li><li><a href="#Accessing-documentation">Accessing documentation</a></li><ul><li><a href="#Manpages-for-Perl-on-AmigaOS">Manpages for Perl on AmigaOS</a></li><li><a href="#Perl-HTML-Documentation-on-AmigaOS">Perl HTML Documentation on AmigaOS</a></li><li><a href="#Perl-GNU-Info-Files-on-AmigaOS">Perl GNU Info Files on AmigaOS</a></li><li><a href="#Perl-LaTeX-Documentation-on-AmigaOS">Perl LaTeX Documentation on AmigaOS</a></li></ul><li><a href="#BUILDING-PERL-ON-AMIGAOS">BUILDING PERL ON AMIGAOS</a></li><ul><li><a href="#Build-Prerequisites-for-Perl-on-AmigaOS">Build Prerequisites for Perl on AmigaOS</a></li><li><a href="#Getting-the-Perl-Source-for-AmigaOS">Getting the Perl Source for AmigaOS</a></li><li><a href="#Making-Perl-on-AmigaOS">Making Perl on AmigaOS</a></li><li><a href="#Testing-Perl-on-AmigaOS">Testing Perl on AmigaOS</a></li><li><a href="#Installing-the-built-Perl-on-AmigaOS">Installing the built Perl on AmigaOS</a></li></ul><li><a href="#PERL-5.8.0-BROKEN-IN-AMIGAOS">PERL 5.8.0 BROKEN IN AMIGAOS</a></li><li><a href="#AUTHORS">AUTHORS</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>perlamiga - Perl under Amiga OS</p>
+<a id="NOTE"></a><h2 class='h2' >NOTE</h2>
+<p><strong>Perl 5.8.0 cannot be built in AmigaOS.  You can use either the
+maintenance release Perl 5.6.1 or the development release Perl 5.7.2
+in AmigaOS.  See <a href="#PERL-5.8.0-BROKEN-IN-AMIGAOS">PERL 5.8.0 BROKEN IN AMIGAOS</a> if you want to help
+fixing this problem.</strong></p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<p>One can read this document in the following formats:</p>
+<pre>
+	<span class="w">man</span> <span class="w">perlamiga</span>
+	<span class="w">multiview</span> <span class="w">perlamiga</span>.<span class="w">guide</span></pre>
+<p>to list some (not all may be available simultaneously), or it may
+be read <i>as is</i>: either as <i>README.amiga</i>, or <i>pod/perlamiga.pod</i>.</p>
+<p>A recent version of perl for the Amiga can be found at the Geek Gadgets
+section of the Aminet:</p>
+<div class="verbatim"><ol><li>      http://www.aminet.net/~aminet/dev/gg</li></ol></div><a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<a id="Prerequisites-for-Compiling-Perl-on-AmigaOS"></a><h3 class='h3' >Prerequisites for Compiling Perl on AmigaOS</h3>
+<ul>
+<li><a id="*Unix-emulation-for-AmigaOS%3a-ixemul.library*"></a><strong><strong>Unix emulation for AmigaOS: ixemul.library</strong></strong>
+<p>You need the Unix emulation for AmigaOS, whose most important part is
+<strong>ixemul.library</strong>. For a minimum setup, get the latest versions
+of the following packages from the Aminet archives
+( <a href="http://www.aminet.net/~aminet/">http://www.aminet.net/~aminet/</a> ):</p>
+<pre>
+	<span class="w">ixemul</span>-<span class="w">bin</span>
+	<span class="w">ixemul</span>-<span class="w">env</span>-<span class="w">bin</span>
+	<span class="w">pdksh</span>-<span class="w">bin</span></pre>
+<p>Note also that this is a minimum setup; you might want to add other
+packages of <strong>ADE</strong> (the <i>Amiga Developers Environment</i>).</p>
+</li>
+<li><a id="*Version-of-Amiga-OS*"></a><strong><strong>Version of Amiga OS</strong></strong>
+<p>You need at the very least AmigaOS version 2.0. Recommended is version 3.1.</p>
+</li>
+</ul>
+<a id="Starting-Perl-programs-under-AmigaOS"></a><h3 class='h3' >Starting Perl programs under AmigaOS</h3>
+<p>Start your Perl program <i>foo</i> with arguments <pre>
+<span class="w">arg1</span> <span class="w">arg2</span> <span class="w">arg3</span></code>
+ the
+same way as on any other platform, by</p>
+<pre>
+	<span class="w">perl</span> <span class="w">foo</span> <span class="w">arg1</span> <span class="w">arg2</span> <span class="w">arg3</span></pre>
+<p>If you want to specify perl options <pre>
+-<span class="w">my_opts</span></code>
+ to the perl itself (as
+opposed to your program), use</p>
+<pre>
+	<span class="w">perl</span> -<span class="w">my_opts</span> <span class="w">foo</span> <span class="w">arg1</span> <span class="w">arg2</span> <span class="w">arg3</span></pre>
+<p>Alternately, you can try to get a replacement for the system's <strong>Execute</strong>
+command that honors the #!/usr/bin/perl syntax in scripts and set the s-Bit
+of your scripts. Then you can invoke your scripts like under UNIX with</p>
+<pre>
+	<span class="w">foo</span> <span class="w">arg1</span> <span class="w">arg2</span> <span class="w">arg3</span></pre>
+<p>(Note that having *nixish full path to perl <i>/usr/bin/perl</i> is not
+necessary, <i>perl</i> would be enough, but having full path would make it
+easier to use your script under *nix.)</p>
+<a id="Shortcomings-of-Perl-under-AmigaOS"></a><h3 class='h3' >Shortcomings of Perl under AmigaOS</h3>
+<p>Perl under AmigaOS lacks some features of perl under UNIX because of
+deficiencies in the UNIX-emulation, most notably:</p>
+<ul>
+<li>
+<p>fork()</p>
+</li>
+<li>
+<p>some features of the UNIX filesystem regarding link count and file dates</p>
+</li>
+<li>
+<p>inplace operation (the -i switch) without backup file</p>
+</li>
+<li>
+<p>umask() works, but the correct permissions are only set when the file is
+finally close()d</p>
+</li>
+</ul>
+<a id="INSTALLATION"></a><h2 class='h2' >INSTALLATION</h2>
+<p>Change to the installation directory (most probably ADE:), and
+extract the binary distribution:</p>
+<p>lha -mraxe x perl-$VERSION-bin.lha</p>
+<p>or</p>
+<p>tar xvzpf perl-$VERSION-bin.tgz</p>
+<p>(Of course you need lha or tar and gunzip for this.)</p>
+<p>For installation of the Unix emulation, read the appropriate docs.</p>
+<a id="Accessing-documentation"></a><h2 class='h2' >Accessing documentation</h2>
+<a id="Manpages-for-Perl-on-AmigaOS"></a><h3 class='h3' >Manpages for Perl on AmigaOS</h3>
+<p>If you have <pre>
+<span class="w">man</span></code>
+ installed on your system, and you installed perl
+manpages, use something like this:</p>
+<pre>
+	<span class="w">man</span> <span class="w">perlfunc</span>
+	<span class="w">man</span> <span class="w">less</span>
+	<span class="w">man</span> <span class="w">ExtUtils</span>.<span class="w">MakeMaker</span></pre>
+<p>to access documentation for different components of Perl. Start with</p>
+<pre>
+	<span class="w">man</span> <span class="w">perl</span></pre>
+<p>Note: You have to modify your man.conf file to search for manpages
+in the /ade/lib/perl5/man/man3 directory, or the man pages for the
+perl library will not be found.</p>
+<p>Note that dot (<i>.</i>) is used as a package separator for documentation
+for packages, and as usual, sometimes you need to give the section - <pre>
+<span class="n">3</span></code>
+
+above - to avoid shadowing by the <i>less(1) manpage</i>.</p>
+<a id="Perl-HTML-Documentation-on-AmigaOS"></a><h3 class='h3' >Perl HTML Documentation on AmigaOS</h3>
+<p>If you have some WWW browser available, you can build <strong>HTML</strong> docs.
+Cd to directory with <i>.pod</i> files, and do like this</p>
+<pre>
+	<span class="w">cd</span> /<span class="w">ade</span>/<span class="w">lib</span>/<span class="w">perl5</span>/<span class="w">pod</span>
+	<span class="w">pod2html</span></pre>
+<p>After this you can direct your browser the file <i>perl.html</i> in this
+directory, and go ahead with reading docs.</p>
+<p>Alternatively you may be able to get these docs prebuilt from <pre>
+<span class="w">CPAN</span></code>
+.</p>
+<a id="Perl-GNU-Info-Files-on-AmigaOS"></a><h3 class='h3' >Perl GNU Info Files on AmigaOS</h3>
+<p>Users of <pre>
+<span class="w">Emacs</span></code>
+ would appreciate it very much, especially with
+<pre>
+<span class="w">CPerl</span></code>
+ mode loaded. You need to get latest <pre>
+<span class="w">pod2info</span></code>
+ from <pre>
+<span class="w">CPAN</span></code>
+,
+or, alternately, prebuilt info pages.</p>
+<a id="Perl-LaTeX-Documentation-on-AmigaOS"></a><h3 class='h3' >Perl LaTeX Documentation on AmigaOS</h3>
+<p>Can be constructed using <pre>
+<span class="w">pod2latex</span></code>
+.</p>
+<a id="BUILDING-PERL-ON-AMIGAOS"></a><h2 class='h2' >BUILDING PERL ON AMIGAOS</h2>
+<p>Here we discuss how to build Perl under AmigaOS.</p>
+<a id="Build-Prerequisites-for-Perl-on-AmigaOS"></a><h3 class='h3' >Build Prerequisites for Perl on AmigaOS</h3>
+<p>You need to have the latest <strong>ixemul</strong> (Unix emulation for Amiga)
+from Aminet.</p>
+<a id="Getting-the-Perl-Source-for-AmigaOS"></a><h3 class='h3' >Getting the Perl Source for AmigaOS</h3>
+<p>You can either get the latest perl-for-amiga source from Ninemoons
+and extract it with:</p>
+<pre>
+  <span class="w">tar</span> <span class="w">xvzpf</span> <span class="w">perl</span>-<span class="i">$VERSION</span>-<span class="w">src</span>.<span class="w">tgz</span></pre>
+<p>or get the official source from CPAN:</p>
+<div class="verbatim"><ol><li>  http://www.cpan.org/src/5.0</li></ol></div><p>Extract it like this</p>
+<pre>
+  <span class="w">tar</span> <span class="w">xvzpf</span> <span class="w">perl</span>-<span class="i">$VERSION</span>.<span class="w">tar</span>.<span class="w">gz</span></pre>
+<p>You will see a message about errors while extracting <i>Configure</i>. This
+is normal and expected. (There is a conflict with a similarly-named file
+<i>configure</i>, but it causes no harm.)</p>
+<a id="Making-Perl-on-AmigaOS"></a><h3 class='h3' >Making Perl on AmigaOS</h3>
+<p>Remember to use a hefty wad of stack (I use 2000000)</p>
+<div class="verbatim"><ol><li>  sh configure.gnu --prefix=/gg</li></ol></div><p>Now type</p>
+<pre>
+  <span class="w">make</span> <span class="w">depend</span></pre>
+<p>Now!</p>
+<pre>
+  <span class="w">make</span></pre>
+<a id="Testing-Perl-on-AmigaOS"></a><h3 class='h3' >Testing Perl on AmigaOS</h3>
+<p>Now run</p>
+<pre>
+  <span class="w">make</span> <span class="w">test</span></pre>
+<p>Some tests will be skipped because they need the fork() function:</p>
+<p><i>io/pipe.t</i>, <i>op/fork.t</i>, <i>lib/filehand.t</i>, <i>lib/open2.t</i>, <i>lib/open3.t</i>, 
+<i>lib/io_pipe.t</i>, <i>lib/io_sock.t</i></p>
+<a id="Installing-the-built-Perl-on-AmigaOS"></a><h3 class='h3' >Installing the built Perl on AmigaOS</h3>
+<p>Run</p>
+<pre>
+  <span class="w">make</span> <span class="w">install</span></pre>
+<a id="PERL-5.8.0-BROKEN-IN-AMIGAOS"></a><h2 class='h2' >PERL 5.8.0 BROKEN IN AMIGAOS</h2>
+<p>As told above, Perl 5.6.1 was still good in AmigaOS, as was 5.7.2.
+After Perl 5.7.2 (change #11423, see the Changes file, and the file
+pod/perlhack.pod for how to get the individual changes) Perl dropped
+its internal support for vfork(), and that was very probably the step
+that broke AmigaOS (since the ixemul library has only vfork).  
+The build finally fails when the ext/DynaLoader is being built, and
+PERL ends up as "0" in the produced Makefile, trying to run "0" does
+not quite work.  Also, executing miniperl in backticks seems to
+generate nothing: very probably related to the (v)fork problems.
+<strong>Fixing the breakage requires someone quite familiar with the ixemul
+library, and how one is supposed to run external commands in AmigaOS
+without fork().</strong></p>
+<a id="AUTHORS"></a><h2 class='h2' >AUTHORS</h2>
+<p>Norbert Pueschel, pueschel@imsdd.meb.uni-bonn.de
+Jan-Erik Karlsson, trg@privat.utfors.se</p>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<p>perl(1).</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#NOTE">NOTE</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><ul><li><a href="#Prerequisites-for-Compiling-Perl-on-AmigaOS">Prerequisites for Compiling Perl on AmigaOS</a></li><li><a href="#Starting-Perl-programs-under-AmigaOS">Starting Perl programs under AmigaOS</a></li><li><a href="#Shortcomings-of-Perl-under-AmigaOS">Shortcomings of Perl under AmigaOS</a></li></ul><li><a href="#INSTALLATION">INSTALLATION</a></li><li><a href="#Accessing-documentation">Accessing documentation</a></li><ul><li><a href="#Manpages-for-Perl-on-AmigaOS">Manpages for Perl on AmigaOS</a></li><li><a href="#Perl-HTML-Documentation-on-AmigaOS">Perl HTML Documentation on AmigaOS</a></li><li><a href="#Perl-GNU-Info-Files-on-AmigaOS">Perl GNU Info Files on AmigaOS</a></li><li><a href="#Perl-LaTeX-Documentation-on-AmigaOS">Perl LaTeX Documentation on AmigaOS</a></li></ul><li><a href="#BUILDING-PERL-ON-AMIGAOS">BUILDING PERL ON AMIGAOS</a></li><ul><li><a href="#Build-Prerequisites-for-Perl-on-AmigaOS">Build Prerequisites for Perl on AmigaOS</a></li><li><a href="#Getting-the-Perl-Source-for-AmigaOS">Getting the Perl Source for AmigaOS</a></li><li><a href="#Making-Perl-on-AmigaOS">Making Perl on AmigaOS</a></li><li><a href="#Testing-Perl-on-AmigaOS">Testing Perl on AmigaOS</a></li><li><a href="#Installing-the-built-Perl-on-AmigaOS">Installing the built Perl on AmigaOS</a></li></ul><li><a href="#PERL-5.8.0-BROKEN-IN-AMIGAOS">PERL 5.8.0 BROKEN IN AMIGAOS</a></li><li><a href="#AUTHORS">AUTHORS</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

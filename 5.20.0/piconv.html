@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="piconv - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>piconv - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.20.0/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.20.0/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.20.0/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.20.0/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.20.0/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.20.0/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.20.0/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.20.0/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.20.0/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.20.0/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.20.0/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.20.0/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.20.0/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.20.0/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.20.0/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.20.0/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.20.0/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.20.0/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.20.0/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.20.0/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.20.0/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.20.0/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.20.0/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.20.0/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.20.0/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.20.0/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.20.0/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.20.0/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.20.0/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.20.0/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.20.0/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.20.0/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.20.0/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.20.0/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="index-utilities.html">Utilities</a> &gt;
+      
+    
+    piconv
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 20.0 documentation</h1>
+                  </div>
+                  <h1>piconv</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>piconv -- iconv(1), reinvented in perl</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<pre>
+  <span class="w">piconv</span> <span class="s">[</span>-f <span class="w">from_encoding</span><span class="s">]</span> <span class="s">[</span>-t <span class="w">to_encoding</span><span class="s">]</span>
+         <span class="s">[</span>-p|--<span class="w">perlqq</span>|--<span class="w">htmlcref</span>|--<span class="w">xmlcref</span><span class="s">]</span> <span class="s">[</span>-C <span class="w">N</span>|-c<span class="s">]</span> <span class="s">[</span>-<span class="w">D</span><span class="s">]</span> <span class="s">[</span>-S <span class="w">scheme</span><span class="s">]</span>
+         <span class="s">[</span>-s <span class="w">string</span>|<span class="w">file</span>...<span class="s">]</span>
+  <span class="w">piconv</span> -l
+  <span class="w">piconv</span> -r <span class="w">encoding_alias</span>
+  <span class="w">piconv</span> -<span class="w">h</span></pre>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p><strong>piconv</strong> is perl version of <strong>iconv</strong>, a character encoding converter
+widely available for various Unixen today.  This script was primarily
+a technology demonstrator for Perl 5.8.0, but you can use piconv in the
+place of iconv for virtually any case.</p>
+<p>piconv converts the character encoding of either STDIN or files
+specified in the argument and prints out to STDOUT.</p>
+<p>Here is the list of options.  Some options can be in short format (-f)
+or long (--from) one.</p>
+<ul>
+<li><a id="-f%2c--from-_from_encoding_"></a><strong>-f,--from <i>from_encoding</i></strong>
+<p>Specifies the encoding you are converting from.  Unlike <strong>iconv</strong>,
+this option can be omitted.  In such cases, the current locale is used.</p>
+</li>
+<li><a id="-t%2c--to-_to_encoding_"></a><strong>-t,--to <i>to_encoding</i></strong>
+<p>Specifies the encoding you are converting to.  Unlike <strong>iconv</strong>,
+this option can be omitted.  In such cases, the current locale is used.</p>
+<p>Therefore, when both -f and -t are omitted, <strong>piconv</strong> just acts
+like <strong>cat</strong>.</p>
+</li>
+<li><a id="-s%2c--string-_string_"></a><strong>-s,--string <i>string</i></strong>
+<p>uses <i>string</i> instead of file for the source of text.</p>
+</li>
+<li><a id="-l%2c--list"></a><strong>-l,--list</strong>
+<p>Lists all available encodings, one per line, in case-insensitive
+order.  Note that only the canonical names are listed; many aliases
+exist.  For example, the names are case-insensitive, and many standard
+and common aliases work, such as "latin1" for "ISO-8859-1", or "ibm850"
+instead of "cp850", or "winlatin1" for "cp1252".  See <a href="Encode/Supported.html">Encode::Supported</a>
+for a full discussion.</p>
+</li>
+<li><a id="-r%2c--resolve-_encoding_alias_"></a><strong>-r,--resolve <i>encoding_alias</i></strong>
+<p>Resolve <i>encoding_alias</i> to Encode canonical encoding name.</p>
+</li>
+<li><a id="-C%2c--check-_N_"></a><strong>-C,--check <i>N</i></strong>
+<p>Check the validity of the stream if <i>N</i> = 1.  When <i>N</i> = -1, something
+interesting happens when it encounters an invalid character.</p>
+</li>
+<li><a id="-c"></a><strong>-c</strong>
+<p>Same as <pre>
+-C <span class="n">1</span></code>
+.</p>
+</li>
+<li><a id="-p%2c--perlqq"></a><strong>-p,--perlqq</strong>
+<p>Transliterate characters missing in encoding to \x{HHHH} where HHHH is the
+hexadecimal Unicode code point.</p>
+</li>
+<li><a id="--htmlcref"></a><strong>--htmlcref</strong>
+<p>Transliterate characters missing in encoding to &amp;#NNN; where NNN is the
+decimal Unicode code point.</p>
+</li>
+<li><a id="--xmlcref"></a><strong>--xmlcref</strong>
+<p>Transliterate characters missing in encoding to &amp;#xHHHH; where HHHH is the
+hexadecimal Unicode code point.</p>
+</li>
+<li><a id="-h%2c--help"></a><strong>-h,--help</strong>
+<p>Show usage.</p>
+</li>
+<li><a id="-D%2c--debug"></a><strong>-D,--debug</strong>
+<p>Invokes debugging mode.  Primarily for Encode hackers.</p>
+</li>
+<li><a id="-S%2c--scheme-_scheme_"></a><strong>-S,--scheme <i>scheme</i></strong>
+<p>Selects which scheme is to be used for conversion.  Available schemes
+are as follows:</p>
+<ul>
+<li><a id="from_to"></a><strong>from_to</strong>
+<p>Uses Encode::from_to for conversion.  This is the default.</p>
+</li>
+<li><a id="decode_encode"></a><strong>decode_encode</strong>
+<p>Input strings are decode()d then encode()d.  A straight two-step
+implementation.</p>
+</li>
+<li><a id="perlio"></a><strong>perlio</strong>
+<p>The new perlIO layer is used.  NI-S' favorite.</p>
+<p>You should use this option if you are using UTF-16 and others which
+linefeed is not $/.</p>
+</li>
+</ul>
+<p>Like the <i>-D</i> option, this is also for Encode hackers.</p>
+</li>
+</ul>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<p><i>iconv(1)</i>
+<i>locale(3)</i>
+<a href="Encode.html">Encode</a>
+<a href="Encode/Supported.html">Encode::Supported</a>
+<a href="Encode/Alias.html">Encode::Alias</a>
+<a href="PerlIO.html">PerlIO</a></p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/20/0/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/0/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/0/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/0/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/20/0/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/0/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/0/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/0/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/20/0/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/0/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/0/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/20/0/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/0/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/0/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="perlreref - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>perlreref - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.18.3/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.18.3/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.18.3/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.18.3/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.18.3/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.18.3/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.18.3/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.18.3/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.18.3/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.18.3/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.18.3/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.18.3/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.18.3/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.18.3/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.18.3/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.18.3/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.18.3/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.18.3/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.18.3/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.18.3/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.18.3/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.18.3/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.18.3/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.18.3/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.18.3/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.18.3/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.18.3/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.18.3/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.18.3/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.18.3/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.18.3/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.18.3/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.18.3/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.18.3/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="index-language.html">Language reference</a> &gt;
+      
+    
+    perlreref
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 18.3 documentation</h1>
+                  </div>
+                  <h1>perlreref</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><ul><li><a href="#OPERATORS">OPERATORS</a></li><li><a href="#SYNTAX">SYNTAX</a></li><li><a href="#ESCAPE-SEQUENCES">ESCAPE SEQUENCES</a></li><li><a href="#CHARACTER-CLASSES">CHARACTER CLASSES</a></li><li><a href="#ANCHORS">ANCHORS</a></li><li><a href="#QUANTIFIERS">QUANTIFIERS</a></li><li><a href="#EXTENDED-CONSTRUCTS">EXTENDED CONSTRUCTS</a></li><li><a href="#VARIABLES">VARIABLES</a></li><li><a href="#FUNCTIONS">FUNCTIONS</a></li><li><a href="#TERMINOLOGY">TERMINOLOGY</a></li></ul><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#THANKS">THANKS</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>perlreref - Perl Regular Expressions Reference</p>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>This is a quick reference to Perl's regular expressions.
+For full information see <a href="perlre.html">perlre</a> and <a href="perlop.html">perlop</a>, as well
+as the <a href="#SEE-ALSO">SEE ALSO</a> section in this document.</p>
+<a id="OPERATORS"></a><h3 class='h3' >OPERATORS</h3>
+<p><pre>
+=~</code>
+ determines to which variable the regex is applied.
+In its absence, $_ is used.</p>
+<pre>
+    <span class="i">$var</span> =~ <span class="q">/foo/</span><span class="sc">;</span></pre>
+<p><pre>
+!~</code>
+ determines to which variable the regex is applied,
+and negates the result of the match; it returns
+false if the match succeeds, and true if it fails.</p>
+<pre>
+    <span class="i">$var</span> !~ <span class="q">/foo/</span><span class="sc">;</span></pre>
+<p><code class="inline"><a class="l_k" href="functions/m.html">m/pattern/msixpogcdual</a></code> searches a string for a pattern match,
+applying the given options.</p>
+<div class="verbatim"><ol><li>    m  Multiline mode - ^ and $ match internal lines</li><li>    s  match as a Single line - . matches \n</li><li>    i  case-Insensitive</li><li>    x  eXtended legibility - free whitespace and comments</li><li>    p  Preserve a copy of the matched string -</li><li>       ${^PREMATCH}, ${^MATCH}, ${^POSTMATCH} will be defined.</li><li>    o  compile pattern Once</li><li>    g  Global - all occurrences</li><li>    c  don't reset pos on failed matches when using /g</li><li>    a  restrict \d, \s, \w and [:posix:] to match ASCII only</li><li>    aa (two a's) also /i matches exclude ASCII/non-ASCII</li><li>    l  match according to current locale</li><li>    u  match according to Unicode rules</li><li>    d  match according to native rules unless something indicates</li><li>       Unicode</li></ol></div><p>If 'pattern' is an empty string, the last <i>successfully</i> matched
+regex is used. Delimiters other than '/' may be used for both this
+operator and the following ones. The leading <code class="inline"><a class="l_k" href="functions/m.html">m</a></code> can be omitted
+if the delimiter is '/'.</p>
+<p><code class="inline"><a class="l_k" href="functions/qr.html">qr/pattern/msixpodual</a></code> lets you store a regex in a variable,
+or pass one around. Modifiers as for <code class="inline"><a class="l_k" href="functions/m.html">m//</a></code>, and are stored
+within the regex.</p>
+<p><code class="inline"><a class="l_k" href="functions/s.html">s/pattern/replacement/msixpogcedual</a></code> substitutes matches of
+'pattern' with 'replacement'. Modifiers as for <code class="inline"><a class="l_k" href="functions/m.html">m//</a></code>,
+with two additions:</p>
+<div class="verbatim"><ol><li>    e  Evaluate 'replacement' as an expression</li><li>    r  Return substitution and leave the original string untouched.</li></ol></div><p>'e' may be specified multiple times. 'replacement' is interpreted
+as a double quoted string unless a single-quote (<code class="inline">'</code>) is the delimiter.</p>
+<p><pre>
+<span class="q">?pattern?</span></code>
+ is like <code class="inline"><a class="l_k" href="functions/m.html">m/pattern/</a></code> but matches only once. No alternate
+delimiters can be used.  Must be reset with reset().</p>
+<a id="SYNTAX"></a><h3 class='h3' >SYNTAX</h3>
+<div class="verbatim"><ol><li> \       Escapes the character immediately following it</li><li> .       Matches any single character except a newline (unless /s is</li><li>           used)</li><li> ^       Matches at the beginning of the string (or line, if /m is used)</li><li> $       Matches at the end of the string (or line, if /m is used)</li><li> *       Matches the preceding element 0 or more times</li><li> +       Matches the preceding element 1 or more times</li><li> ?       Matches the preceding element 0 or 1 times</li><li> {...}   Specifies a range of occurrences for the element preceding it</li><li> [...]   Matches any one of the characters contained within the brackets</li><li> (...)   Groups subexpressions for capturing to $1, $2...</li><li> (?:...) Groups subexpressions without capturing (cluster)</li><li> |       Matches either the subexpression preceding or following it</li><li> \g1 or \g{1}, \g2 ...    Matches the text from the Nth group</li><li> \1, \2, \3 ...           Matches the text from the Nth group</li><li> \g-1 or \g{-1}, \g-2 ... Matches the text from the Nth previous group</li><li> \g{name}     Named backreference</li><li> \k&lt;name&gt;     Named backreference</li><li> \k'name'     Named backreference</li><li> (?P=name)    Named backreference (python syntax)</li></ol></div><a id="ESCAPE-SEQUENCES"></a><h3 class='h3' >ESCAPE SEQUENCES</h3>
+<p>These work as in normal strings.</p>
+<div class="verbatim"><ol><li>   \a       Alarm (beep)</li><li>   \e       Escape</li><li>   \f       Formfeed</li><li>   \n       Newline</li><li>   \r       Carriage return</li><li>   \t       Tab</li><li>   \037     Char whose ordinal is the 3 octal digits, max \777</li><li>   \o{2307} Char whose ordinal is the octal number, unrestricted</li><li>   \x7f     Char whose ordinal is the 2 hex digits, max \xFF</li><li>   \x{263a} Char whose ordinal is the hex number, unrestricted</li><li>   \cx      Control-x</li><li>   \N{name} A named Unicode character or character sequence</li><li>   \N{U+263D} A Unicode character by hex ordinal</li><li></li><li>   \l  Lowercase next character</li><li>   \u  Titlecase next character</li><li>   \L  Lowercase until \E</li><li>   \U  Uppercase until \E</li><li>   \F  Foldcase until \E</li><li>   \Q  Disable pattern metacharacters until \E</li><li>   \E  End modification</li></ol></div><p>For Titlecase, see <a href="#Titlecase">Titlecase</a>.</p>
+<p>This one works differently from normal strings:</p>
+<pre>
+   \<span class="w">b</span>  <span class="w">An</span> <span class="w">assertion</span><span class="cm">,</span> <a class="l_k" href="functions/not.html">not</a> <span class="w">backspace</span><span class="cm">,</span> <span class="w">except</span> <span class="w">in</span> <span class="w">a</span> <span class="w">character</span> <span class="w">class</span></pre>
+<a id="CHARACTER-CLASSES"></a><h3 class='h3' >CHARACTER CLASSES</h3>
+<div class="verbatim"><ol><li>   [amy]    Match 'a', 'm' or 'y'</li><li>   [f-j]    Dash specifies "range"</li><li>   [f-j-]   Dash escaped or at start or end means 'dash'</li><li>   [^f-j]   Caret indicates "match any character _except_ these"</li></ol></div><p>The following sequences (except <pre>
+\<span class="w">N</span></code>
+) work within or without a character class.
+The first six are locale aware, all are Unicode aware. See <a href="perllocale.html">perllocale</a>
+and <a href="perlunicode.html">perlunicode</a> for details.</p>
+<div class="verbatim"><ol><li>   \d      A digit</li><li>   \D      A nondigit</li><li>   \w      A word character</li><li>   \W      A non-word character</li><li>   \s      A whitespace character</li><li>   \S      A non-whitespace character</li><li>   \h      An horizontal whitespace</li><li>   \H      A non horizontal whitespace</li><li>   \N      A non newline (when not followed by '{NAME}';;</li><li>           not valid in a character class; equivalent to [^\n]; it's</li><li>           like '.' without /s modifier)</li><li>   \v      A vertical whitespace</li><li>   \V      A non vertical whitespace</li><li>   \R      A generic newline           (?&gt;\v|\x0D\x0A)</li><li></li><li>   \C      Match a byte (with Unicode, '.' matches a character)</li><li>   \pP     Match P-named (Unicode) property</li><li>   \p{...} Match Unicode property with name longer than 1 character</li><li>   \PP     Match non-P</li><li>   \P{...} Match lack of Unicode property with name longer than 1 char</li><li>   \X      Match Unicode extended grapheme cluster</li></ol></div><p>POSIX character classes and their Unicode and Perl equivalents:</p>
+<div class="verbatim"><ol><li>            ASCII-         Full-</li><li>   POSIX    range          range    backslash</li><li> [[:...:]]  \p{...}        \p{...}   sequence    Description</li><li></li><li> -----------------------------------------------------------------------</li><li> alnum   PosixAlnum       XPosixAlnum            Alpha plus Digit</li><li> alpha   PosixAlpha       XPosixAlpha            Alphabetic characters</li><li> ascii   ASCII                                   Any ASCII character</li><li> blank   PosixBlank       XPosixBlank   \h       Horizontal whitespace;</li><li>                                                   full-range also</li><li>                                                   written as</li><li>                                                   \p{HorizSpace} (GNU</li><li>                                                   extension)</li><li> cntrl   PosixCntrl       XPosixCntrl            Control characters</li><li> digit   PosixDigit       XPosixDigit   \d       Decimal digits</li><li> graph   PosixGraph       XPosixGraph            Alnum plus Punct</li><li> lower   PosixLower       XPosixLower            Lowercase characters</li><li> print   PosixPrint       XPosixPrint            Graph plus Print, but</li><li>                                                   not any Cntrls</li><li> punct   PosixPunct       XPosixPunct            Punctuation and Symbols</li><li>                                                   in ASCII-range; just</li><li>                                                   punct outside it</li><li> space   PosixSpace       XPosixSpace            [\s\cK]</li><li>         PerlSpace        XPerlSpace    \s       Perl's whitespace def'n</li><li> upper   PosixUpper       XPosixUpper            Uppercase characters</li><li> word    PosixWord        XPosixWord    \w       Alnum + Unicode marks +</li><li>                                                   connectors, like '_'</li><li>                                                   (Perl extension)</li><li> xdigit  ASCII_Hex_Digit  XPosixDigit            Hexadecimal digit,</li><li>                                                    ASCII-range is</li><li>                                                    [0-9A-Fa-f]</li></ol></div><p>Also, various synonyms like <pre>
+\<span class="i">p</span><span class="s">{</span><span class="w">Alpha</span><span class="s">}</span></code>
+ for <pre>
+\<span class="i">p</span><span class="s">{</span><span class="w">XPosixAlpha</span><span class="s">}</span></code>
+; all listed
+in <a href="perluniprops.html#Properties-accessible-through-%5cp%7b%7d-and-%5cP%7b%7d">Properties accessible through \p{} and \P{} in perluniprops</a></p>
+<p>Within a character class:</p>
+<div class="verbatim"><ol><li>    POSIX      traditional   Unicode</li><li>  [:digit:]       \d        \p{Digit}</li><li>  [:^digit:]      \D        \P{Digit}</li></ol></div><a id="ANCHORS"></a><h3 class='h3' >ANCHORS</h3>
+<p>All are zero-width assertions.</p>
+<div class="verbatim"><ol><li>   ^  Match string start (or line, if /m is used)</li><li>   $  Match string end (or line, if /m is used) or before newline</li><li>   \b Match word boundary (between \w and \W)</li><li>   \B Match except at word boundary (between \w and \w or \W and \W)</li><li>   \A Match string start (regardless of /m)</li><li>   \Z Match string end (before optional newline)</li><li>   \z Match absolute string end</li><li>   \G Match where previous m//g left off</li><li>   \K Keep the stuff left of the \K, don't include it in $&amp;</li></ol></div><a id="QUANTIFIERS"></a><h3 class='h3' >QUANTIFIERS</h3>
+<p>Quantifiers are greedy by default and match the <strong>longest</strong> leftmost.</p>
+<div class="verbatim"><ol><li>   Maximal Minimal Possessive Allowed range</li><li>   ------- ------- ---------- -------------</li><li>   {n,m}   {n,m}?  {n,m}+     Must occur at least n times</li><li>                              but no more than m times</li><li>   {n,}    {n,}?   {n,}+      Must occur at least n times</li><li>   {n}     {n}?    {n}+       Must occur exactly n times</li><li>   *       *?      *+         0 or more times (same as {0,})</li><li>   +       +?      ++         1 or more times (same as {1,})</li><li>   ?       ??      ?+         0 or 1 time (same as {0,1})</li></ol></div><p>The possessive forms (new in Perl 5.10) prevent backtracking: what gets
+matched by a pattern with a possessive quantifier will not be backtracked
+into, even if that causes the whole match to fail.</p>
+<p>There is no quantifier <pre>
+<span class="s">{</span><span class="cm">,</span><span class="w">n</span><span class="s">}</span></code>
+. That's interpreted as a literal string.</p>
+<a id="EXTENDED-CONSTRUCTS"></a><h3 class='h3' >EXTENDED CONSTRUCTS</h3>
+<div class="verbatim"><ol><li>   (?#text)          A comment</li><li>   (?:...)           Groups subexpressions without capturing (cluster)</li><li>   (?pimsx-imsx:...) Enable/disable option (as per m// modifiers)</li><li>   (?=...)           Zero-width positive lookahead assertion</li><li>   (?!...)           Zero-width negative lookahead assertion</li><li>   (?&lt;=...)          Zero-width positive lookbehind assertion</li><li>   (?&lt;!...)          Zero-width negative lookbehind assertion</li><li>   (?&gt;...)           Grab what we can, prohibit backtracking</li><li>   (?|...)           Branch reset</li><li>   (?&lt;name&gt;...)      Named capture</li><li>   (?'name'...)      Named capture</li><li>   (?P&lt;name&gt;...)     Named capture (python syntax)</li><li>   (?{ code })       Embedded code, return value becomes $^R</li><li>   (??{ code })      Dynamic regex, return value used as regex</li><li>   (?N)              Recurse into subpattern number N</li><li>   (?-N), (?+N)      Recurse into Nth previous/next subpattern</li><li>   (?R), (?0)        Recurse at the beginning of the whole pattern</li><li>   (?&amp;name)          Recurse into a named subpattern</li><li>   (?P&gt;name)         Recurse into a named subpattern (python syntax)</li><li>   (?(cond)yes|no)</li><li>   (?(cond)yes)      Conditional expression, where "cond" can be:</li><li>                     (?=pat)   look-ahead</li><li>                     (?!pat)   negative look-ahead</li><li>                     (?&lt;=pat)  look-behind</li><li>                     (?&lt;!pat)  negative look-behind</li><li>                     (N)       subpattern N has matched something</li><li>                     (&lt;name&gt;)  named subpattern has matched something</li><li>                     ('name')  named subpattern has matched something</li><li>                     (?{code}) code condition</li><li>                     (R)       true if recursing</li><li>                     (RN)      true if recursing into Nth subpattern</li><li>                     (R&amp;name)  true if recursing into named subpattern</li><li>                     (DEFINE)  always false, no no-pattern allowed</li></ol></div><a id="VARIABLES"></a><h3 class='h3' >VARIABLES</h3>
+<div class="verbatim"><ol><li>   $_    Default variable for operators to use</li><li></li><li>   $`    Everything prior to matched string</li><li>   $&amp;    Entire matched string</li><li>   $'    Everything after to matched string</li><li></li><li>   ${^PREMATCH}   Everything prior to matched string</li><li>   ${^MATCH}      Entire matched string</li><li>   ${^POSTMATCH}  Everything after to matched string</li></ol></div><p>The use of <pre>
+<span class="i">$`</span></code>
+, <pre>
+<span class="i">$&amp;</span></code>
+ or <pre>
+<span class="i">$&#39;</span></code>
+ will slow down <strong>all</strong> regex use
+within your program. Consult <a href="perlvar.html">perlvar</a> for <pre>
+<span class="i">@-</span></code>
+
+to see equivalent expressions that won't cause slow down.
+See also <a href="https://search.cpan.org/perldoc/Devel::SawAmpersand">Devel::SawAmpersand</a>. Starting with Perl 5.10, you
+can also use the equivalent variables <pre>
+<span class="i">$</span>{<span class="w">^PREMATCH</span>}</code>
+, <pre>
+<span class="i">$</span>{<span class="w">^MATCH</span>}</code>
+
+and <pre>
+<span class="i">$</span>{<span class="w">^POSTMATCH</span>}</code>
+, but for them to be defined, you have to
+specify the <code class="inline">/p</code> (preserve) modifier on your regular expression.</p>
+<div class="verbatim"><ol><li>   $1, $2 ...  hold the Xth captured expr</li><li>   $+    Last parenthesized pattern match</li><li>   $^N   Holds the most recently closed capture</li><li>   $^R   Holds the result of the last (?{...}) expr</li><li>   @-    Offsets of starts of groups. $-[0] holds start of whole match</li><li>   @+    Offsets of ends of groups. $+[0] holds end of whole match</li><li>   %+    Named capture groups</li><li>   %-    Named capture groups, as array refs</li></ol></div><p>Captured groups are numbered according to their <i>opening</i> paren.</p>
+<a id="FUNCTIONS"></a><h3 class='h3' >FUNCTIONS</h3>
+<div class="verbatim"><ol><li>   lc          Lowercase a string</li><li>   lcfirst     Lowercase first char of a string</li><li>   uc          Uppercase a string</li><li>   ucfirst     Titlecase first char of a string</li><li>   fc          Foldcase a string</li><li></li><li>   pos         Return or set current match position</li><li>   quotemeta   Quote metacharacters</li><li>   reset       Reset ?pattern? status</li><li>   study       Analyze string for optimizing matching</li><li></li><li>   split       Use a regex to split a string into parts</li></ol></div><p>The first five of these are like the escape sequences <pre>
+\<span class="w">L</span></code>
+, <pre>
+\<span class="w">l</span></code>
+,
+<pre>
+\<span class="w">U</span></code>
+, <pre>
+\<span class="w">u</span></code>
+, and <pre>
+\<span class="w">F</span></code>
+.  For Titlecase, see <a href="#Titlecase">Titlecase</a>; For
+Foldcase, see <a href="#Foldcase">Foldcase</a>.</p>
+<a id="TERMINOLOGY"></a><h3 class='h3' >TERMINOLOGY</h3>
+<a id="Titlecase"></a><h4 class='h4' >Titlecase</h4>
+<p>Unicode concept which most often is equal to uppercase, but for
+certain characters like the German "sharp s" there is a difference.</p>
+<a id="Foldcase"></a><h4 class='h4' >Foldcase</h4>
+<p>Unicode form that is useful when comparing strings regardless of case,
+as certain characters have compex one-to-many case mappings. Primarily a
+variant of lowercase.</p>
+<a id="AUTHOR"></a><h2 class='h2' >AUTHOR</h2>
+<p>Iain Truskett. Updated by the Perl 5 Porters.</p>
+<p>This document may be distributed under the same terms as Perl itself.</p>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<ul>
+<li>
+<p><a href="perlretut.html">perlretut</a> for a tutorial on regular expressions.</p>
+</li>
+<li>
+<p><a href="perlrequick.html">perlrequick</a> for a rapid tutorial.</p>
+</li>
+<li>
+<p><a href="perlre.html">perlre</a> for more details.</p>
+</li>
+<li>
+<p><a href="perlvar.html">perlvar</a> for details on the variables.</p>
+</li>
+<li>
+<p><a href="perlop.html">perlop</a> for details on the operators.</p>
+</li>
+<li>
+<p><a href="perlfunc.html">perlfunc</a> for details on the functions.</p>
+</li>
+<li>
+<p><a href="perlfaq6.html">perlfaq6</a> for FAQs on regular expressions.</p>
+</li>
+<li>
+<p><a href="perlrebackslash.html">perlrebackslash</a> for a reference on backslash sequences.</p>
+</li>
+<li>
+<p><a href="perlrecharclass.html">perlrecharclass</a> for a reference on character classes.</p>
+</li>
+<li>
+<p>The <a href="re.html">re</a> module to alter behaviour and aid
+debugging.</p>
+</li>
+<li>
+<p><a href="perldebug.html#Debugging-Regular-Expressions">Debugging Regular Expressions in perldebug</a></p>
+</li>
+<li>
+<p><a href="perluniintro.html">perluniintro</a>, <a href="perlunicode.html">perlunicode</a>, <a href="charnames.html">charnames</a> and <a href="perllocale.html">perllocale</a>
+for details on regexes and internationalisation.</p>
+</li>
+<li>
+<p><i>Mastering Regular Expressions</i> by Jeffrey Friedl
+(<i><a href="http://oreilly.com/catalog/9780596528126/">http://oreilly.com/catalog/9780596528126/</a></i>) for a thorough grounding and
+reference on the topic.</p>
+</li>
+</ul>
+<a id="THANKS"></a><h2 class='h2' >THANKS</h2>
+<p>David P.C. Wollmann,
+Richard Soderberg,
+Sean M. Burke,
+Tom Christiansen,
+Jim Cromie,
+and
+Jeffrey Goff
+for useful advice.</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><ul><li><a href="#OPERATORS">OPERATORS</a></li><li><a href="#SYNTAX">SYNTAX</a></li><li><a href="#ESCAPE-SEQUENCES">ESCAPE SEQUENCES</a></li><li><a href="#CHARACTER-CLASSES">CHARACTER CLASSES</a></li><li><a href="#ANCHORS">ANCHORS</a></li><li><a href="#QUANTIFIERS">QUANTIFIERS</a></li><li><a href="#EXTENDED-CONSTRUCTS">EXTENDED CONSTRUCTS</a></li><li><a href="#VARIABLES">VARIABLES</a></li><li><a href="#FUNCTIONS">FUNCTIONS</a></li><li><a href="#TERMINOLOGY">TERMINOLOGY</a></li></ul><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#THANKS">THANKS</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/3/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/3/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/3/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/3/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/3/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/3/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/3/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/3/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/3/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/3/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/3/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/3/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/3/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/3/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

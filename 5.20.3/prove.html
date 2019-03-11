@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="prove - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>prove - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.20.3/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.20.3/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.20.3/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.20.3/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.20.3/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.20.3/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.20.3/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.20.3/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.20.3/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.20.3/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.20.3/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.20.3/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.20.3/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.20.3/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.20.3/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="index-utilities.html">Utilities</a> &gt;
+      
+    
+    prove
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 20.3 documentation</h1>
+                  </div>
+                  <h1>prove</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#USAGE">USAGE</a></li><li><a href="#OPTIONS">OPTIONS</a></li><li><a href="#NOTES">NOTES</a></li><ul><li><a href="#.proverc">.proverc</a></li><li><a href="#Reading-from-STDIN">Reading from STDIN</a></li><li><a href="#Default-Test-Directory">Default Test Directory</a></li><li><a href="#Colored-Test-Output">Colored Test Output</a></li><li><a href="#Exit-Code">Exit Code</a></li><li><a href="#Arguments-to-Tests">Arguments to Tests</a></li><li><a href="#--exec">--exec</a></li><li><a href="#--merge">--merge</a></li><li><a href="#--trap">--trap</a></li><li><a href="#--state">--state</a></li><li><a href="#--rules">--rules</a></li><li><a href="#%40INC">@INC</a></li><li><a href="#Taint-Mode">Taint Mode</a></li></ul><li><a href="#FORMATTERS">FORMATTERS</a></li><li><a href="#SOURCE-HANDLERS">SOURCE HANDLERS</a></li><li><a href="#PLUGINS">PLUGINS</a></li><ul><li><a href="#Available-Plugins">Available Plugins</a></li><li><a href="#Writing-Plugins">Writing Plugins</a></li></ul></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>prove - Run tests through a TAP harness.</p>
+<a id="USAGE"></a><h2 class='h2' >USAGE</h2>
+<pre>
+ <span class="w">prove</span> <span class="s">[</span><span class="w">options</span><span class="s">]</span> <span class="s">[</span><span class="w">files</span> <a class="l_k" href="functions/or.html">or</a> <span class="w">directories</span><span class="s">]</span></pre>
+<a id="OPTIONS"></a><h2 class='h2' >OPTIONS</h2>
+<p>Boolean options:</p>
+<div class="verbatim"><ol><li> -v,  --verbose         Print all test lines.</li><li> -l,  --lib             Add 'lib' to the path for your tests (-Ilib).</li><li> -b,  --blib            Add 'blib/lib' and 'blib/arch' to the path for</li><li>                        your tests</li><li> -s,  --shuffle         Run the tests in random order.</li><li> -c,  --color           Colored test output (default).</li><li>      --nocolor         Do not color test output.</li><li>      --count           Show the X/Y test count when not verbose</li><li>                        (default)</li><li>      --nocount         Disable the X/Y test count.</li><li> -D   --dry             Dry run. Show test that would have run.</li><li> -f,  --failures        Show failed tests.</li><li> -o,  --comments        Show comments.</li><li>      --ignore-exit     Ignore exit status from test scripts.</li><li> -m,  --merge           Merge test scripts' STDERR with their STDOUT.</li><li> -r,  --recurse         Recursively descend into directories.</li><li>      --reverse         Run the tests in reverse order.</li><li> -q,  --quiet           Suppress some test output while running tests.</li><li> -Q,  --QUIET           Only print summary results.</li><li> -p,  --parse           Show full list of TAP parse errors, if any.</li><li>      --directives      Only show results with TODO or SKIP directives.</li><li>      --timer           Print elapsed time after each test.</li><li>      --trap            Trap Ctrl-C and print summary on interrupt.</li><li>      --normalize       Normalize TAP output in verbose output</li><li> -T                     Enable tainting checks.</li><li> -t                     Enable tainting warnings.</li><li> -W                     Enable fatal warnings.</li><li> -w                     Enable warnings.</li><li> -h,  --help            Display this help</li><li> -?,                    Display this help</li><li> -H,  --man             Longer manpage for prove</li><li>      --norc            Don't process default .proverc</li></ol></div><p>Options that take arguments:</p>
+<div class="verbatim"><ol><li> -I                     Library paths to include.</li><li> -P                     Load plugin (searches App::Prove::Plugin::*.)</li><li> -M                     Load a module.</li><li> -e,  --exec            Interpreter to run the tests ('' for compiled</li><li>                        tests.)</li><li>      --ext             Set the extension for tests (default '.t')</li><li>      --harness         Define test harness to use.  See TAP::Harness.</li><li>      --formatter       Result formatter to use. See FORMATTERS.</li><li>      --source          Load and/or configure a SourceHandler. See</li><li>                        SOURCE HANDLERS.</li><li> -a,  --archive out.tgz Store the resulting TAP in an archive file.</li><li> -j,  --jobs N          Run N test jobs in parallel (try 9.)</li><li>      --state=opts      Control prove's persistent state.</li><li>      --rc=rcfile       Process options from rcfile</li><li>      --rules           Rules for parallel vs sequential processing.</li></ol></div><a id="NOTES"></a><h2 class='h2' >NOTES</h2>
+<a id=".proverc"></a><h3 class='h3' >.proverc</h3>
+<p>If <i>~/.proverc</i> or <i>./.proverc</i> exist they will be read and any
+options they contain processed before the command line options. Options
+in <i>.proverc</i> are specified in the same way as command line options:</p>
+<pre>
+    <span class="c"># .proverc</span>
+    --<span class="w">state</span>=<span class="w">hot</span><span class="cm">,</span><span class="w">fast</span><span class="cm">,</span><span class="w">save</span>
+    -<span class="w">j9</span></pre>
+<p>Additional option files may be specified with the <pre>
+--<span class="w">rc</span></code>
+ option.
+Default option file processing is disabled by the <pre>
+--<span class="w">norc</span></code>
+ option.</p>
+<p>Under Windows and VMS the option file is named <i>_proverc</i> rather than
+<i>.proverc</i> and is sought only in the current directory.</p>
+<a id="Reading-from-STDIN"></a><h3 class='h3' >Reading from <pre>
+<span class="w">STDIN</span></code>
+</h3>
+<p>If you have a list of tests (or URLs, or anything else you want to test) in a
+file, you can add them to your tests by using a '-':</p>
+<div class="verbatim"><ol><li> prove - &lt; my_list_of_things_to_test.txt</li></ol></div><p>See the <pre>
+<span class="w">README</span></code>
+ in the <pre>
+<span class="w">examples</span></code>
+ directory of this distribution.</p>
+<a id="Default-Test-Directory"></a><h3 class='h3' >Default Test Directory</h3>
+<p>If no files or directories are supplied, <pre>
+<span class="w">prove</span></code>
+ looks for all files
+matching the pattern <code class="inline">t/*.t</code>.</p>
+<a id="Colored-Test-Output"></a><h3 class='h3' >Colored Test Output</h3>
+<p>Colored test output using <a href="TAP/Formatter/Color.html">TAP::Formatter::Color</a> is the default, but 
+if output is not to a terminal, color is disabled. You can override this by 
+adding the <pre>
+--<span class="w">color</span></code>
+ switch.</p>
+<p>Color support requires <a href="Term/ANSIColor.html">Term::ANSIColor</a> on Unix-like platforms and
+<a href="https://search.cpan.org/perldoc/Win32::Console">Win32::Console</a> on windows. If the necessary module is not installed
+colored output will not be available.</p>
+<a id="Exit-Code"></a><h3 class='h3' >Exit Code</h3>
+<p>If the tests fail <pre>
+<span class="w">prove</span></code>
+ will exit with non-zero status.</p>
+<a id="Arguments-to-Tests"></a><h3 class='h3' >Arguments to Tests</h3>
+<p>It is possible to supply arguments to tests. To do so separate them from
+prove's own arguments with the arisdottle, '::'. For example</p>
+<div class="verbatim"><ol><li> prove -v t/mytest.t :: --url http://example.com</li></ol></div><p>would run <i>t/mytest.t</i> with the options '--url <a href="http://example.com">http://example.com</a>'.
+When running multiple tests they will each receive the same arguments.</p>
+<a id="--exec"></a><h3 class='h3' ><pre>
+--<a class="l_k" href="functions/exec.html">exec</a></code>
+</h3>
+<p>Normally you can just pass a list of Perl tests and the harness will know how
+to execute them.  However, if your tests are not written in Perl or if you
+want all tests invoked exactly the same way, use the <pre>
+-e</code>
+, or <pre>
+--<a class="l_k" href="functions/exec.html">exec</a></code>
+
+switch:</p>
+<div class="verbatim"><ol><li> prove --exec '/usr/bin/ruby -w' t/</li><li> prove --exec '/usr/bin/perl -Tw -mstrict -Ilib' t/</li><li> prove --exec '/path/to/my/customer/exec'</li></ol></div><a id="--merge"></a><h3 class='h3' ><pre>
+--<span class="w">merge</span></code>
+</h3>
+<p>If you need to make sure your diagnostics are displayed in the correct
+order relative to test results you can use the <pre>
+--<span class="w">merge</span></code>
+ option to
+merge the test scripts' STDERR into their STDOUT.</p>
+<p>This guarantees that STDOUT (where the test results appear) and STDERR
+(where the diagnostics appear) will stay in sync. The harness will
+display any diagnostics your tests emit on STDERR.</p>
+<p>Caveat: this is a bit of a kludge. In particular note that if anything
+that appears on STDERR looks like a test result the test harness will
+get confused. Use this option only if you understand the consequences
+and can live with the risk.</p>
+<a id="--trap"></a><h3 class='h3' ><pre>
+--<span class="w">trap</span></code>
+</h3>
+<p>The <pre>
+--<span class="w">trap</span></code>
+ option will attempt to trap SIGINT (Ctrl-C) during a test
+run and display the test summary even if the run is interrupted</p>
+<a id="--state"></a><h3 class='h3' ><pre>
+--<span class="w">state</span></code>
+</h3>
+<p>You can ask <pre>
+<span class="w">prove</span></code>
+ to remember the state of previous test runs and
+select and/or order the tests to be run based on that saved state.</p>
+<p>The <pre>
+--<span class="w">state</span></code>
+ switch requires an argument which must be a comma
+separated list of one or more of the following options.</p>
+<ul>
+<li><a id="last"></a><strong><code class="inline"><a class="l_k" href="functions/last.html">last</a></code></strong>
+<p>Run the same tests as the last time the state was saved. This makes it
+possible, for example, to recreate the ordering of a shuffled test.</p>
+<div class="verbatim"><ol><li>    # Run all tests in random order</li><li>    $ prove -b --state=save --shuffle</li><li></li><li>    # Run them again in the same order</li><li>    $ prove -b --state=last</li></ol></div></li>
+<li><a id="failed"></a><strong><pre>
+<span class="w">failed</span></code>
+</strong>
+<p>Run only the tests that failed on the last run.</p>
+<div class="verbatim"><ol><li>    # Run all tests</li><li>    $ prove -b --state=save</li><li></li><li>    # Run failures</li><li>    $ prove -b --state=failed</li></ol></div><p>If you also specify the <pre>
+<span class="w">save</span></code>
+ option newly passing tests will be
+excluded from subsequent runs.</p>
+<div class="verbatim"><ol><li>    # Repeat until no more failures</li><li>    $ prove -b --state=failed,save</li></ol></div></li>
+<li><a id="passed"></a><strong><pre>
+<span class="w">passed</span></code>
+</strong>
+<p>Run only the passed tests from last time. Useful to make sure that no
+new problems have been introduced.</p>
+</li>
+<li><a id="all"></a><strong><pre>
+<span class="w">all</span></code>
+</strong>
+<p>Run all tests in normal order. Multple options may be specified, so to
+run all tests with the failures from last time first:</p>
+<div class="verbatim"><ol><li>    $ prove -b --state=failed,all,save</li></ol></div></li>
+<li><a id="hot"></a><strong><pre>
+<span class="w">hot</span></code>
+</strong>
+<p>Run the tests that most recently failed first. The last failure time of
+each test is stored. The <pre>
+<span class="w">hot</span></code>
+ option causes tests to be run in most-recent-
+failure order.</p>
+<div class="verbatim"><ol><li>    $ prove -b --state=hot,save</li></ol></div><p>Tests that have never failed will not be selected. To run all tests with
+the most recently failed first use</p>
+<div class="verbatim"><ol><li>    $ prove -b --state=hot,all,save</li></ol></div><p>This combination of options may also be specified thus</p>
+<div class="verbatim"><ol><li>    $ prove -b --state=adrian</li></ol></div></li>
+<li><a id="todo"></a><strong><pre>
+<span class="w">todo</span></code>
+</strong>
+<p>Run any tests with todos.</p>
+</li>
+<li><a id="slow"></a><strong><pre>
+<span class="w">slow</span></code>
+</strong>
+<p>Run the tests in slowest to fastest order. This is useful in conjunction
+with the <pre>
+-<span class="w">j</span></code>
+ parallel testing switch to ensure that your slowest tests
+start running first.</p>
+<div class="verbatim"><ol><li>    $ prove -b --state=slow -j9</li></ol></div></li>
+<li><a id="fast"></a><strong><pre>
+<span class="w">fast</span></code>
+</strong>
+<p>Run test tests in fastest to slowest order.</p>
+</li>
+<li><a id="new"></a><strong><pre>
+<span class="w">new</span></code>
+</strong>
+<p>Run the tests in newest to oldest order based on the modification times
+of the test scripts.</p>
+</li>
+<li><a id="old"></a><strong><pre>
+<span class="w">old</span></code>
+</strong>
+<p>Run the tests in oldest to newest order.</p>
+</li>
+<li><a id="fresh"></a><strong><pre>
+<span class="w">fresh</span></code>
+</strong>
+<p>Run those test scripts that have been modified since the last test run.</p>
+</li>
+<li><a id="save"></a><strong><pre>
+<span class="w">save</span></code>
+</strong>
+<p>Save the state on exit. The state is stored in a file called <i>.prove</i>
+(<i>_prove</i> on Windows and VMS) in the current directory.</p>
+</li>
+</ul>
+<p>The <pre>
+--<span class="w">state</span></code>
+ switch may be used more than once.</p>
+<div class="verbatim"><ol><li>    $ prove -b --state=hot --state=all,save</li></ol></div><a id="--rules"></a><h3 class='h3' >--rules</h3>
+<p>The <pre>
+--<span class="w">rules</span></code>
+ option is used to control which tests are run sequentially and
+which are run in parallel, if the <pre>
+--<span class="w">jobs</span></code>
+ option is specified. The option may
+be specified multiple times, and the order matters.</p>
+<p>The most practical use is likely to specify that some tests are not
+"parallel-ready".  Since mentioning a file with --rules doesn't cause it to
+be selected to run as a test, you can "set and forget" some rules preferences in
+your .proverc file. Then you'll be able to take maximum advantage of the
+performance benefits of parallel testing, while some exceptions are still run
+in parallel.</p>
+<a id="--rules-examples"></a><h4 class='h4' >--rules examples</h4>
+<div class="verbatim"><ol><li>    # All tests are allowed to run in parallel, except those starting with "p"</li><li>    --rules='seq=t/p*.t' --rules='par=**'</li><li></li><li>    # All tests must run in sequence except those starting with "p", which should be run parallel</li><li>    --rules='par=t/p*.t'</li></ol></div><a id="--rules-resolution"></a><h4 class='h4' >--rules resolution</h4>
+<ul>
+<li><a id="*-By-default%2c-all-tests-are-eligible-to-be-run-in-parallel.-Specifying-any-of-your-own-rules-removes-this-one."></a><strong>By default, all tests are eligible to be run in parallel. Specifying any of your own rules removes this one.</strong>
+</li>
+<li><a id="*-%22First-match-wins%22.-The-first-rule-that-matches-a-test-will-be-the-one-that-applies."></a><strong>"First match wins". The first rule that matches a test will be the one that applies.</strong>
+</li>
+<li><a id="*-Any-test-which-does-not-match-a-rule-will-be-run-in-sequence-at-the-end-of-the-run."></a><strong>Any test which does not match a rule will be run in sequence at the end of the run.</strong>
+</li>
+<li><a id="*-The-existence-of-a-rule-does-not-imply-selecting-a-test.-You-must-still-specify-the-tests-to-run."></a><strong>The existence of a rule does not imply selecting a test. You must still specify the tests to run.</strong>
+</li>
+<li><a id="*-Specifying-a-rule-to-allow-tests-to-run-in-parallel-does-not-make-them-run-in-parallel.-You-still-need-specify-the-number-of-parallel-jobs-in-your-Harness-object."></a><strong>Specifying a rule to allow tests to run in parallel does not make them run in parallel. You still need specify the number of parallel <pre>
+<span class="w">jobs</span></code>
+ in your Harness object.</strong>
+</li>
+</ul>
+<a id="--rules-Glob-style-pattern-matching"></a><h4 class='h4' >--rules Glob-style pattern matching</h4>
+<p>We implement our own glob-style pattern matching for --rules. Here are the
+supported patterns:</p>
+<div class="verbatim"><ol><li>    ** is any number of characters, including /, within a pathname</li><li>    * is zero or more characters within a filename/directory name</li><li>    ? is exactly one character within a filename/directory name</li><li>    {foo,bar,baz} is any of foo, bar or baz.</li><li>    \ is an escape character</li></ol></div><a id="More-advanced-specifications-for-parallel-vs-sequence-run-rules"></a><h4 class='h4' >More advanced specifications for parallel vs sequence run rules</h4>
+<p>If you need more advanced management of what runs in parallel vs in sequence, see
+the associated 'rules' documentation in <a href="TAP/Harness.html">TAP::Harness</a> and <a href="TAP/Parser/Scheduler.html">TAP::Parser::Scheduler</a>.
+If what's possible directly through <pre>
+<span class="w">prove</span></code>
+ is not sufficient, you can write your own
+harness to access these features directly.</p>
+<a id="%40INC"></a><h3 class='h3' >@INC</h3>
+<p>prove introduces a separation between "options passed to the perl which
+runs prove" and "options passed to the perl which runs tests"; this
+distinction is by design. Thus the perl which is running a test starts
+with the default <pre>
+<span class="i">@INC</span></code>
+. Additional library directories can be added
+via the <pre>
+<span class="w">PERL5LIB</span></code>
+ environment variable, via -Ifoo in <pre>
+<span class="w">PERL5OPT</span></code>
+ or
+via the <pre>
+-<span class="w">Ilib</span></code>
+ option to <i>prove</i>.</p>
+<a id="Taint-Mode"></a><h3 class='h3' >Taint Mode</h3>
+<p>Normally when a Perl program is run in taint mode the contents of the
+<pre>
+<span class="w">PERL5LIB</span></code>
+ environment variable do not appear in <pre>
+<span class="i">@INC</span></code>
+.</p>
+<p>Because <pre>
+<span class="w">PERL5LIB</span></code>
+ is often used during testing to add build
+directories to <pre>
+<span class="i">@INC</span></code>
+ prove passes the names of any directories found
+in <pre>
+<span class="w">PERL5LIB</span></code>
+ as -I switches. The net effect of this is that
+<pre>
+<span class="w">PERL5LIB</span></code>
+ is honoured even when prove is run in taint mode.</p>
+<a id="FORMATTERS"></a><h2 class='h2' >FORMATTERS</h2>
+<p>You can load a custom <a href="https://search.cpan.org/perldoc/TAP::Parser::Formatter">TAP::Parser::Formatter</a>:</p>
+<div class="verbatim"><ol><li>  prove --formatter MyFormatter</li></ol></div><a id="SOURCE-HANDLERS"></a><h2 class='h2' >SOURCE HANDLERS</h2>
+<p>You can load custom <a href="TAP/Parser/SourceHandler.html">TAP::Parser::SourceHandler</a>s, to change the way the
+parser interprets particular <i>sources</i> of TAP.</p>
+<div class="verbatim"><ol><li>  prove --source MyHandler --source YetAnother t</li></ol></div><p>If you want to provide config to the source you can use:</p>
+<div class="verbatim"><ol><li>  prove --source MyCustom \</li><li>        --source Perl --perl-option 'foo=bar baz' --perl-option avg=0.278 \</li><li>        --source File --file-option extensions=.txt --file-option extensions=.tmp t</li><li>        --source pgTAP --pgtap-option pset=format=html --pgtap-option pset=border=2</li></ol></div><p>Each <pre>
+--<span class="i">$source</span>-<span class="w">option</span></code>
+ option must specify a key/value pair separated by an
+<pre>
+=</code>
+. If an option can take multiple values, just specify it multiple times,
+as with the <pre>
+<span class="w">extensions</span>=</code>
+ examples above. If the option should be a hash
+reference, specify the value as a second pair separated by a <pre>
+=</code>
+, as in the
+<pre>
+<span class="w">pset</span>=</code>
+ examples above (escape <pre>
+=</code>
+ with a backslash).</p>
+<p>All <pre>
+--<span class="w">sources</span></code>
+ are combined into a hash, and passed to <a href="TAP/Harness.html#new">new in TAP::Harness</a>'s
+<pre>
+<span class="w">sources</span></code>
+ parameter.</p>
+<p>See <a href="TAP/Parser/IteratorFactory.html">TAP::Parser::IteratorFactory</a> for more details on how configuration is
+passed to <i>SourceHandlers</i>.</p>
+<a id="PLUGINS"></a><h2 class='h2' >PLUGINS</h2>
+<p>Plugins can be loaded using the <code class="inline">-P<i>plugin</i></code> syntax, eg:</p>
+<pre>
+  <span class="w">prove</span> -<span class="w">PMyPlugin</span></pre>
+<p>This will search for a module named <pre>
+<span class="w">App::Prove::Plugin::MyPlugin</span></code>
+, or failing
+that, <pre>
+<span class="w">MyPlugin</span></code>
+.  If the plugin can't be found, <pre>
+<span class="w">prove</span></code>
+ will complain &amp; exit.</p>
+<p>You can pass arguments to your plugin by appending <pre>
+<span class="pd">=arg1,arg2,etc</span></code>
+ to the
+plugin name:</p>
+<pre>
+  <span class="w">prove</span> -<span class="w">PMyPlugin</span>=<span class="w">fou</span><span class="cm">,</span><span class="w">du</span><span class="cm">,</span><span class="w">fafa</span></pre>
+<p>Please check individual plugin documentation for more details.</p>
+<a id="Available-Plugins"></a><h3 class='h3' >Available Plugins</h3>
+<p>For an up-to-date list of plugins available, please check CPAN:</p>
+<p><a href="http://search.cpan.org/search?query=App%3A%3AProve+Plugin">http://search.cpan.org/search?query=App%3A%3AProve+Plugin</a></p>
+<a id="Writing-Plugins"></a><h3 class='h3' >Writing Plugins</h3>
+<p>Please see <a href="App/Prove.html#PLUGINS">PLUGINS in App::Prove</a>.</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#USAGE">USAGE</a></li><li><a href="#OPTIONS">OPTIONS</a></li><li><a href="#NOTES">NOTES</a></li><ul><li><a href="#.proverc">.proverc</a></li><li><a href="#Reading-from-STDIN">Reading from STDIN</a></li><li><a href="#Default-Test-Directory">Default Test Directory</a></li><li><a href="#Colored-Test-Output">Colored Test Output</a></li><li><a href="#Exit-Code">Exit Code</a></li><li><a href="#Arguments-to-Tests">Arguments to Tests</a></li><li><a href="#--exec">--exec</a></li><li><a href="#--merge">--merge</a></li><li><a href="#--trap">--trap</a></li><li><a href="#--state">--state</a></li><li><a href="#--rules">--rules</a></li><li><a href="#%40INC">@INC</a></li><li><a href="#Taint-Mode">Taint Mode</a></li></ul><li><a href="#FORMATTERS">FORMATTERS</a></li><li><a href="#SOURCE-HANDLERS">SOURCE HANDLERS</a></li><li><a href="#PLUGINS">PLUGINS</a></li><ul><li><a href="#Available-Plugins">Available Plugins</a></li><li><a href="#Writing-Plugins">Writing Plugins</a></li></ul></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

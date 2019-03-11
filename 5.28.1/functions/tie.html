@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="tie - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>tie - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.28.1/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.28.1/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.28.1/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.28.1/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.28.1/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.28.1/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.28.1/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.28.1/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.28.1/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.28.1/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.28.1/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.28.1/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.28.1/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.28.1/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.28.1/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../index-language.html">Language reference</a> &gt;
+      
+        <a href="../index-functions.html">Functions</a> &gt;
+      
+    
+    tie
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 28.1 documentation</h1>
+                  </div>
+                  <h1>tie</h1>
+<div class="mod_az_list">
+  <a href="/5.28.1/index-functions.html">Perl functions A-Z</a> |
+  <a href="/5.28.1/index-functions-by-cat.html">Perl functions by category</a> |
+  <a href="/5.28.1/perlfunc.html">The 'perlfunc' manpage</a>
+</div>
+
+
+  <!--    -->
+<ul>
+<li><a id="tie-VARIABLE%2cCLASSNAME%2cLIST"></a><strong>tie VARIABLE,CLASSNAME,LIST</strong>
+<p></p>
+<p>This function binds a variable to a package class that will provide the
+implementation for the variable.  VARIABLE is the name of the variable
+to be enchanted.  CLASSNAME is the name of a class implementing objects
+of correct type.  Any additional arguments are passed to the
+appropriate constructor
+method of the class (meaning <pre>
+<span class="w">TIESCALAR</span></code>
+, <pre>
+<span class="w">TIEHANDLE</span></code>
+, <pre>
+<span class="w">TIEARRAY</span></code>
+,
+or <pre>
+<span class="w">TIEHASH</span></code>
+).  Typically these are arguments such as might be passed
+to the <i>dbm_open(3)</i> function of C.  The object returned by the
+constructor is also returned by the
+<a href="#tie-VARIABLE%2cCLASSNAME%2cLIST">tie</a> function, which would be useful
+if you want to access other methods in CLASSNAME.</p>
+<p>Note that functions such as <a href="#keys-HASH">keys</a> and
+<a href="#values-HASH">values</a> may return huge lists when used on large
+objects, like DBM files.  You may prefer to use the <a href="#each-HASH">each</a> function to iterate over such.  Example:</p>
+<pre>
+    <span class="c"># print out history file offsets</span>
+    <a class="l_k" href="../functions/use.html">use</a> <span class="w">NDBM_File</span><span class="sc">;</span>
+    <a class="l_k" href="../functions/tie.html">tie</a><span class="s">(</span><a class="l_k" href="../functions/my.html">my</a> <span class="i">%HIST</span><span class="cm">,</span> <span class="q">&#39;NDBM_File&#39;</span><span class="cm">,</span> <span class="q">&#39;/usr/lib/news/history&#39;</span><span class="cm">,</span> <span class="n">1</span><span class="cm">,</span> <span class="n">0</span><span class="s">)</span><span class="sc">;</span>
+    <a class="l_k" href="../functions/while.html">while</a> <span class="s">(</span><a class="l_k" href="../functions/my.html">my</a> <span class="s">(</span><span class="i">$key</span><span class="cm">,</span><span class="i">$val</span><span class="s">)</span> = <a class="l_k" href="../functions/each.html">each</a> <span class="i">%HIST</span><span class="s">)</span> <span class="s">{</span>
+        <a class="l_k" href="../functions/print.html">print</a> <span class="i">$key</span><span class="cm">,</span> <span class="q">&#39; = &#39;</span><span class="cm">,</span> <a class="l_k" href="../functions/unpack.html">unpack</a><span class="s">(</span><span class="q">&#39;L&#39;</span><span class="cm">,</span> <span class="i">$val</span><span class="s">)</span><span class="cm">,</span> <span class="q">&quot;\n&quot;</span><span class="sc">;</span>
+    <span class="s">}</span></pre>
+<p>A class implementing a hash should have the following methods:</p>
+<pre>
+    <span class="w">TIEHASH</span> <span class="w">classname</span><span class="cm">,</span> <span class="w">LIST</span>
+    <span class="w">FETCH</span> <span class="w">this</span><span class="cm">,</span> <span class="w">key</span>
+    <span class="w">STORE</span> <span class="w">this</span><span class="cm">,</span> <span class="w">key</span><span class="cm">,</span> <span class="w">value</span>
+    <span class="w">DELETE</span> <span class="w">this</span><span class="cm">,</span> <span class="w">key</span>
+    <span class="w">CLEAR</span> <span class="w">this</span>
+    <span class="w">EXISTS</span> <span class="w">this</span><span class="cm">,</span> <span class="w">key</span>
+    <span class="w">FIRSTKEY</span> <span class="w">this</span>
+    <span class="w">NEXTKEY</span> <span class="w">this</span><span class="cm">,</span> <span class="w">lastkey</span>
+    <span class="w">SCALAR</span> <span class="w">this</span>
+    <a class="l_k" href="../functions/DESTROY.html">DESTROY</a> <span class="w">this</span>
+    <span class="w">UNTIE</span> <span class="w">this</span></pre>
+<p>A class implementing an ordinary array should have the following methods:</p>
+<pre>
+    <span class="w">TIEARRAY</span> <span class="w">classname</span><span class="cm">,</span> <span class="w">LIST</span>
+    <span class="w">FETCH</span> <span class="w">this</span><span class="cm">,</span> <span class="w">key</span>
+    <span class="w">STORE</span> <span class="w">this</span><span class="cm">,</span> <span class="w">key</span><span class="cm">,</span> <span class="w">value</span>
+    <span class="w">FETCHSIZE</span> <span class="w">this</span>
+    <span class="w">STORESIZE</span> <span class="w">this</span><span class="cm">,</span> <span class="w">count</span>
+    <span class="w">CLEAR</span> <span class="w">this</span>
+    <span class="w">PUSH</span> <span class="w">this</span><span class="cm">,</span> <span class="w">LIST</span>
+    <span class="w">POP</span> <span class="w">this</span>
+    <span class="w">SHIFT</span> <span class="w">this</span>
+    <span class="w">UNSHIFT</span> <span class="w">this</span><span class="cm">,</span> <span class="w">LIST</span>
+    <span class="w">SPLICE</span> <span class="w">this</span><span class="cm">,</span> <span class="w">offset</span><span class="cm">,</span> <a class="l_k" href="../functions/length.html">length</a><span class="cm">,</span> <span class="w">LIST</span>
+    <span class="w">EXTEND</span> <span class="w">this</span><span class="cm">,</span> <span class="w">count</span>
+    <span class="w">DELETE</span> <span class="w">this</span><span class="cm">,</span> <span class="w">key</span>
+    <span class="w">EXISTS</span> <span class="w">this</span><span class="cm">,</span> <span class="w">key</span>
+    <a class="l_k" href="../functions/DESTROY.html">DESTROY</a> <span class="w">this</span>
+    <span class="w">UNTIE</span> <span class="w">this</span></pre>
+<p>A class implementing a filehandle should have the following methods:</p>
+<div class="verbatim"><ol><li>    TIEHANDLE classname, LIST</li><li>    READ this, scalar, length, offset</li><li>    READLINE this</li><li>    GETC this</li><li>    WRITE this, scalar, length, offset</li><li>    PRINT this, LIST</li><li>    PRINTF this, format, LIST</li><li>    BINMODE this</li><li>    EOF this</li><li>    FILENO this</li><li>    SEEK this, position, whence</li><li>    TELL this</li><li>    OPEN this, mode, LIST</li><li>    CLOSE this</li><li>    DESTROY this</li><li>    UNTIE this</li></ol></div><p>A class implementing a scalar should have the following methods:</p>
+<pre>
+    <span class="w">TIESCALAR</span> <span class="w">classname</span><span class="cm">,</span> <span class="w">LIST</span>
+    <span class="w">FETCH</span> <span class="w">this</span><span class="cm">,</span>
+    <span class="w">STORE</span> <span class="w">this</span><span class="cm">,</span> <span class="w">value</span>
+    <a class="l_k" href="../functions/DESTROY.html">DESTROY</a> <span class="w">this</span>
+    <span class="w">UNTIE</span> <span class="w">this</span></pre>
+<p>Not all methods indicated above need be implemented.  See <a href="../perltie.html">perltie</a>,
+<a href="../Tie/Hash.html">Tie::Hash</a>, <a href="../Tie/Array.html">Tie::Array</a>, <a href="../Tie/Scalar.html">Tie::Scalar</a>, and <a href="../Tie/Handle.html">Tie::Handle</a>.</p>
+<p>Unlike <a href="#dbmopen-HASH%2cDBNAME%2cMASK">dbmopen</a>, the
+<a href="#tie-VARIABLE%2cCLASSNAME%2cLIST">tie</a> function will not
+<a href="#use-Module-VERSION-LIST">use</a> or <a href="#require-VERSION">require</a> a
+module for you; you need to do that explicitly yourself.  See <a href="https://search.cpan.org/perldoc/DB_File">DB_File</a>
+or the <a href="../Config.html">Config</a> module for interesting
+<a href="#tie-VARIABLE%2cCLASSNAME%2cLIST">tie</a> implementations.</p>
+<p>For further details see <a href="../perltie.html">perltie</a>, <a href="#tied-VARIABLE">tied</a>.</p>
+</li>
+</ul>
+
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

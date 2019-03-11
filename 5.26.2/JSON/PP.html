@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="JSON::PP - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>JSON::PP - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.26.2/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.26.2/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.26.2/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.26.2/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.26.2/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.26.2/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.26.2/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.26.2/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.26.2/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.26.2/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.26.2/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.26.2/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.26.2/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.26.2/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.26.2/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.26.2/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.26.2/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.26.2/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.26.2/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.26.2/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.26.2/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.26.2/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.26.2/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.26.2/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.26.2/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.26.2/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.26.2/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.26.2/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.26.2/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.26.2/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.26.2/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.26.2/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.26.2/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.26.2/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../index-modules-J.html">Core modules (J)</a> &gt;
+      
+    
+    JSON::PP
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 26.2 documentation</h1>
+                  </div>
+                  <h1>JSON::PP</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#VERSION">VERSION</a></li><li><a href="#NOTE">NOTE</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><ul><li><a href="#FEATURES">FEATURES</a></li></ul><li><a href="#FUNCTIONAL-INTERFACE">FUNCTIONAL INTERFACE</a></li><ul><li><a href="#encode_json">encode_json</a></li><li><a href="#decode_json">decode_json</a></li><li><a href="#JSON%3a%3aPP%3a%3ais_bool">JSON::PP::is_bool</a></li><li><a href="#JSON%3a%3aPP%3a%3atrue">JSON::PP::true</a></li><li><a href="#JSON%3a%3aPP%3a%3afalse">JSON::PP::false</a></li><li><a href="#JSON%3a%3aPP%3a%3anull">JSON::PP::null</a></li></ul><li><a href="#HOW-DO-I-DECODE-A-DATA-FROM-OUTER-AND-ENCODE-TO-OUTER">HOW DO I DECODE A DATA FROM OUTER AND ENCODE TO OUTER</a></li><li><a href="#METHODS">METHODS</a></li><ul><li><a href="#new">new</a></li><li><a href="#ascii">ascii</a></li><li><a href="#latin1">latin1</a></li><li><a href="#utf8">utf8</a></li><li><a href="#pretty">pretty</a></li><li><a href="#indent">indent</a></li><li><a href="#space_before">space_before</a></li><li><a href="#space_after">space_after</a></li><li><a href="#relaxed">relaxed</a></li><li><a href="#canonical">canonical</a></li><li><a href="#allow_nonref">allow_nonref</a></li><li><a href="#allow_unknown">allow_unknown</a></li><li><a href="#allow_blessed">allow_blessed</a></li><li><a href="#convert_blessed">convert_blessed</a></li><li><a href="#filter_json_object">filter_json_object</a></li><li><a href="#filter_json_single_key_object">filter_json_single_key_object</a></li><li><a href="#shrink">shrink</a></li><li><a href="#max_depth">max_depth</a></li><li><a href="#max_size">max_size</a></li><li><a href="#encode">encode</a></li><li><a href="#decode">decode</a></li><li><a href="#decode_prefix">decode_prefix</a></li></ul><li><a href="#INCREMENTAL-PARSING">INCREMENTAL PARSING</a></li><ul><li><a href="#incr_parse">incr_parse</a></li><li><a href="#incr_text">incr_text</a></li><li><a href="#incr_skip">incr_skip</a></li><li><a href="#incr_reset">incr_reset</a></li></ul><li><a href="#JSON%3a%3aPP-OWN-METHODS">JSON::PP OWN METHODS</a></li><ul><li><a href="#allow_singlequote">allow_singlequote</a></li><li><a href="#allow_barekey">allow_barekey</a></li><li><a href="#allow_bignum">allow_bignum</a></li><li><a href="#loose">loose</a></li><li><a href="#escape_slash">escape_slash</a></li><li><a href="#indent_length">indent_length</a></li><li><a href="#sort_by">sort_by</a></li></ul><li><a href="#INTERNAL">INTERNAL</a></li><li><a href="#MAPPING">MAPPING</a></li><ul><li><a href="#JSON--%3e-PERL">JSON -> PERL</a></li><li><a href="#PERL--%3e-JSON">PERL -> JSON</a></li></ul><li><a href="#UNICODE-HANDLING-ON-PERLS">UNICODE HANDLING ON PERLS</a></li><ul><li><a href="#Perl-5.8-and-later">Perl 5.8 and later</a></li><li><a href="#Perl-5.6">Perl 5.6</a></li><li><a href="#Perl-5.005">Perl 5.005</a></li></ul><li><a href="#TODO">TODO</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#COPYRIGHT-AND-LICENSE">COPYRIGHT AND LICENSE</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>JSON::PP - JSON::XS compatible pure-Perl module.</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<pre>
+ <a class="l_k" href="../functions/use.html">use</a> <span class="w">JSON::PP</span><span class="sc">;</span>
+
+ <span class="c"># exported functions, they croak on error</span>
+ <span class="c"># and expect/generate UTF-8</span>
+
+ <span class="i">$utf8_encoded_json_text</span> = <span class="w">encode_json</span> <span class="i">$perl_hash_or_arrayref</span><span class="sc">;</span>
+ <span class="i">$perl_hash_or_arrayref</span>  = <span class="w">decode_json</span> <span class="i">$utf8_encoded_json_text</span><span class="sc">;</span>
+
+ <span class="c"># OO-interface</span>
+
+ <span class="i">$coder</span> = <span class="w">JSON::PP</span><span class="w">-&gt;new</span><span class="w">-&gt;ascii</span><span class="w">-&gt;pretty</span><span class="w">-&gt;allow_nonref</span><span class="sc">;</span>
+ 
+ <span class="i">$json_text</span>   = <span class="i">$json</span><span class="i">-&gt;encode</span><span class="s">(</span> <span class="i">$perl_scalar</span> <span class="s">)</span><span class="sc">;</span>
+ <span class="i">$perl_scalar</span> = <span class="i">$json</span><span class="i">-&gt;decode</span><span class="s">(</span> <span class="i">$json_text</span> <span class="s">)</span><span class="sc">;</span>
+ 
+ <span class="i">$pretty_printed</span> = <span class="i">$json</span><span class="i">-&gt;pretty</span><span class="i">-&gt;encode</span><span class="s">(</span> <span class="i">$perl_scalar</span> <span class="s">)</span><span class="sc">;</span> <span class="c"># pretty-printing</span>
+ 
+ <span class="c"># Note that JSON version 2.0 and above will automatically use</span>
+ <span class="c"># JSON::XS or JSON::PP, so you should be able to just:</span>
+ 
+ <a class="l_k" href="../functions/use.html">use</a> <span class="w">JSON</span><span class="sc">;</span></pre>
+<a id="VERSION"></a><h2 class='h2' >VERSION</h2>
+<pre>
+    <span class="n">2.27400</span></pre>
+<p><a href="https://search.cpan.org/perldoc/JSON::XS">JSON::XS</a> 2.27 (~2.30) compatible.</p>
+<a id="NOTE"></a><h2 class='h2' >NOTE</h2>
+<p>JSON::PP had been included in JSON distribution (CPAN module).
+It was a perl core module in Perl 5.14.</p>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>This module is <a href="https://search.cpan.org/perldoc/JSON::XS">JSON::XS</a> compatible pure Perl module.
+(Perl 5.8 or later is recommended)</p>
+<p>JSON::XS is the fastest and most proper JSON module on CPAN.
+It is written by Marc Lehmann in C, so must be compiled and
+installed in the used environment.</p>
+<p>JSON::PP is a pure-Perl module and has compatibility to JSON::XS.</p>
+<a id="FEATURES"></a><h3 class='h3' >FEATURES</h3>
+<ul>
+<li><a id="*-correct-unicode-handling"></a><strong>correct unicode handling</strong>
+<p>This module knows how to handle Unicode (depending on Perl version).</p>
+<p>See to <a href="https://search.cpan.org/perldoc/JSON::XS#A-FEW-NOTES-ON-UNICODE-AND-PERL">A FEW NOTES ON UNICODE AND PERL in JSON::XS</a> and <a href="#UNICODE-HANDLING-ON-PERLS">UNICODE HANDLING ON PERLS</a>.</p>
+</li>
+<li><a id="*-round-trip-integrity"></a><strong>round-trip integrity</strong>
+<p>When you serialise a perl data structure using only data types supported
+by JSON and Perl, the deserialised data structure is identical on the Perl
+level. (e.g. the string "2.0" doesn't suddenly become "2" just because
+it looks like a number). There <i>are</i> minor exceptions to this, read the
+MAPPING section below to learn about those.</p>
+</li>
+<li><a id="*-strict-checking-of-JSON-correctness"></a><strong>strict checking of JSON correctness</strong>
+<p>There is no guessing, no generating of illegal JSON texts by default,
+and only JSON is accepted as input by default (the latter is a security feature).
+But when some options are set, loose checking features are available.</p>
+</li>
+</ul>
+<a id="FUNCTIONAL-INTERFACE"></a><h2 class='h2' >FUNCTIONAL INTERFACE</h2>
+<p>Some documents are copied and modified from <a href="https://search.cpan.org/perldoc/JSON::XS#FUNCTIONAL-INTERFACE">FUNCTIONAL INTERFACE in JSON::XS</a>.</p>
+<a id="encode_json"></a><h3 class='h3' >encode_json</h3>
+<pre>
+    <span class="i">$json_text</span> = <span class="w">encode_json</span> <span class="i">$perl_scalar</span></pre>
+<p>Converts the given Perl data structure to a UTF-8 encoded, binary string.</p>
+<p>This function call is functionally identical to:</p>
+<pre>
+    <span class="i">$json_text</span> = <span class="w">JSON::PP</span><span class="w">-&gt;new</span><span class="w">-&gt;utf8</span><span class="w">-&gt;encode</span><span class="s">(</span><span class="i">$perl_scalar</span><span class="s">)</span></pre>
+<a id="decode_json"></a><h3 class='h3' >decode_json</h3>
+<pre>
+    <span class="i">$perl_scalar</span> = <span class="w">decode_json</span> <span class="i">$json_text</span></pre>
+<p>The opposite of <pre>
+<span class="w">encode_json</span></code>
+: expects an UTF-8 (binary) string and tries
+to parse that as an UTF-8 encoded JSON text, returning the resulting
+reference.</p>
+<p>This function call is functionally identical to:</p>
+<pre>
+    <span class="i">$perl_scalar</span> = <span class="w">JSON::PP</span><span class="w">-&gt;new</span><span class="w">-&gt;utf8</span><span class="w">-&gt;decode</span><span class="s">(</span><span class="i">$json_text</span><span class="s">)</span></pre>
+<a id="JSON%3a%3aPP%3a%3ais_bool"></a><h3 class='h3' >JSON::PP::is_bool</h3>
+<pre>
+    <span class="i">$is_boolean</span> = <span class="i">JSON::PP::is_bool</span><span class="s">(</span><span class="i">$scalar</span><span class="s">)</span></pre>
+<p>Returns true if the passed scalar represents either JSON::PP::true or
+JSON::PP::false, two constants that act like <pre>
+<span class="n">1</span></code>
+ and <pre></code>
+ respectively
+and are also used to represent JSON <pre>
+<span class="w">true</span></code>
+ and <pre>
+<span class="w">false</span></code>
+ in Perl strings.</p>
+<a id="JSON%3a%3aPP%3a%3atrue"></a><h3 class='h3' >JSON::PP::true</h3>
+<p>Returns JSON true value which is blessed object.
+It <pre>
+<span class="w">isa</span></code>
+ JSON::PP::Boolean object.</p>
+<a id="JSON%3a%3aPP%3a%3afalse"></a><h3 class='h3' >JSON::PP::false</h3>
+<p>Returns JSON false value which is blessed object.
+It <pre>
+<span class="w">isa</span></code>
+ JSON::PP::Boolean object.</p>
+<a id="JSON%3a%3aPP%3a%3anull"></a><h3 class='h3' >JSON::PP::null</h3>
+<p>Returns <code class="inline"><a class="l_k" href="../functions/undef.html">undef</a></code>.</p>
+<p>See <a href="https://search.cpan.org/perldoc/MAPPING">MAPPING</a>, below, for more information on how JSON values are mapped to
+Perl.</p>
+<a id="HOW-DO-I-DECODE-A-DATA-FROM-OUTER-AND-ENCODE-TO-OUTER"></a><h2 class='h2' >HOW DO I DECODE A DATA FROM OUTER AND ENCODE TO OUTER</h2>
+<p>This section supposes that your perl version is 5.8 or later.</p>
+<p>If you know a JSON text from an outer world - a network, a file content, and so on,
+is encoded in UTF-8, you should use <pre>
+<span class="w">decode_json</span></code>
+ or <pre>
+<span class="w">JSON</span></code>
+ module object
+with <pre>
+<span class="w">utf8</span></code>
+ enabled. And the decoded result will contain UNICODE characters.</p>
+<pre>
+  <span class="c"># from network</span>
+  <a class="l_k" href="../functions/my.html">my</a> <span class="i">$json</span>        = <span class="w">JSON::PP</span><span class="w">-&gt;new</span><span class="w">-&gt;utf8</span><span class="sc">;</span>
+  <a class="l_k" href="../functions/my.html">my</a> <span class="i">$json_text</span>   = <span class="w">CGI</span><span class="w">-&gt;new</span><span class="w">-&gt;param</span><span class="s">(</span> <span class="q">&#39;json_data&#39;</span> <span class="s">)</span><span class="sc">;</span>
+  <a class="l_k" href="../functions/my.html">my</a> <span class="i">$perl_scalar</span> = <span class="i">$json</span><span class="i">-&gt;decode</span><span class="s">(</span> <span class="i">$json_text</span> <span class="s">)</span><span class="sc">;</span>
+  
+  <span class="c"># from file content</span>
+  <a class="l_k" href="../functions/local.html">local</a> <span class="i">$/</span><span class="sc">;</span>
+  <a class="l_k" href="../functions/open.html">open</a><span class="s">(</span> <a class="l_k" href="../functions/my.html">my</a> <span class="i">$fh</span><span class="cm">,</span> <span class="q">&#39;&lt;&#39;</span><span class="cm">,</span> <span class="q">&#39;json.data&#39;</span> <span class="s">)</span><span class="sc">;</span>
+  <span class="i">$json_text</span>   = <span class="q">&lt;$fh&gt;</span><span class="sc">;</span>
+  <span class="i">$perl_scalar</span> = <span class="i">decode_json</span><span class="s">(</span> <span class="i">$json_text</span> <span class="s">)</span><span class="sc">;</span></pre>
+<p>If an outer data is not encoded in UTF-8, firstly you should <pre>
+<span class="w">decode</span></code>
+ it.</p>
+<pre>
+  <a class="l_k" href="../functions/use.html">use</a> <span class="w">Encode</span><span class="sc">;</span>
+  <a class="l_k" href="../functions/local.html">local</a> <span class="i">$/</span><span class="sc">;</span>
+  <a class="l_k" href="../functions/open.html">open</a><span class="s">(</span> <a class="l_k" href="../functions/my.html">my</a> <span class="i">$fh</span><span class="cm">,</span> <span class="q">&#39;&lt;&#39;</span><span class="cm">,</span> <span class="q">&#39;json.data&#39;</span> <span class="s">)</span><span class="sc">;</span>
+  <a class="l_k" href="../functions/my.html">my</a> <span class="i">$encoding</span> = <span class="q">&#39;cp932&#39;</span><span class="sc">;</span>
+  <a class="l_k" href="../functions/my.html">my</a> <span class="i">$unicode_json_text</span> = <span class="i">decode</span><span class="s">(</span> <span class="i">$encoding</span><span class="cm">,</span> <span class="q">&lt;$fh&gt;</span> <span class="s">)</span><span class="sc">;</span> <span class="c"># UNICODE</span>
+  
+  <span class="c"># or you can write the below code.</span>
+  <span class="c">#</span>
+  <span class="c"># open( my $fh, &quot;&lt;:encoding($encoding)&quot;, &#39;json.data&#39; );</span>
+  <span class="c"># $unicode_json_text = &lt;$fh&gt;;</span></pre>
+<p>In this case, <pre>
+<span class="i">$unicode_json_text</span></code>
+ is of course UNICODE string.
+So you <strong>cannot</strong> use <pre>
+<span class="w">decode_json</span></code>
+ nor <pre>
+<span class="w">JSON</span></code>
+ module object with <pre>
+<span class="w">utf8</span></code>
+ enabled.
+Instead of them, you use <pre>
+<span class="w">JSON</span></code>
+ module object with <pre>
+<span class="w">utf8</span></code>
+ disable.</p>
+<pre>
+  <span class="i">$perl_scalar</span> = <span class="i">$json</span><span class="i">-&gt;utf8</span><span class="s">(</span><span class="n">0</span><span class="s">)</span><span class="i">-&gt;decode</span><span class="s">(</span> <span class="i">$unicode_json_text</span> <span class="s">)</span><span class="sc">;</span></pre>
+<p>Or <pre>
+<span class="w">encode</span> <span class="q">&#39;utf8&#39;</span></code>
+ and <pre>
+<span class="w">decode_json</span></code>
+:</p>
+<pre>
+  <span class="i">$perl_scalar</span> = <span class="i">decode_json</span><span class="s">(</span> <span class="i">encode</span><span class="s">(</span> <span class="q">&#39;utf8&#39;</span><span class="cm">,</span> <span class="i">$unicode_json_text</span> <span class="s">)</span> <span class="s">)</span><span class="sc">;</span>
+  <span class="c"># this way is not efficient.</span></pre>
+<p>And now, you want to convert your <pre>
+<span class="i">$perl_scalar</span></code>
+ into JSON data and
+send it to an outer world - a network or a file content, and so on.</p>
+<p>Your data usually contains UNICODE strings and you want the converted data to be encoded
+in UTF-8, you should use <pre>
+<span class="w">encode_json</span></code>
+ or <pre>
+<span class="w">JSON</span></code>
+ module object with <pre>
+<span class="w">utf8</span></code>
+ enabled.</p>
+<pre>
+  <a class="l_k" href="../functions/print.html">print</a> <span class="i">encode_json</span><span class="s">(</span> <span class="i">$perl_scalar</span> <span class="s">)</span><span class="sc">;</span> <span class="c"># to a network? file? or display?</span>
+  <span class="c"># or</span>
+  <a class="l_k" href="../functions/print.html">print</a> <span class="i">$json</span><span class="i">-&gt;utf8</span><span class="i">-&gt;encode</span><span class="s">(</span> <span class="i">$perl_scalar</span> <span class="s">)</span><span class="sc">;</span></pre>
+<p>If <pre>
+<span class="i">$perl_scalar</span></code>
+ does not contain UNICODE but <pre>
+<span class="i">$encoding</span></code>
+-encoded strings
+for some reason, then its characters are regarded as <strong>latin1</strong> for perl
+(because it does not concern with your $encoding).
+You <strong>cannot</strong> use <pre>
+<span class="w">encode_json</span></code>
+ nor <pre>
+<span class="w">JSON</span></code>
+ module object with <pre>
+<span class="w">utf8</span></code>
+ enabled.
+Instead of them, you use <pre>
+<span class="w">JSON</span></code>
+ module object with <pre>
+<span class="w">utf8</span></code>
+ disable.
+Note that the resulted text is a UNICODE string but no problem to print it.</p>
+<pre>
+  <span class="c"># $perl_scalar contains $encoding encoded string values</span>
+  <span class="i">$unicode_json_text</span> = <span class="i">$json</span><span class="i">-&gt;utf8</span><span class="s">(</span><span class="n">0</span><span class="s">)</span><span class="i">-&gt;encode</span><span class="s">(</span> <span class="i">$perl_scalar</span> <span class="s">)</span><span class="sc">;</span>
+  <span class="c"># $unicode_json_text consists of characters less than 0x100</span>
+  <a class="l_k" href="../functions/print.html">print</a> <span class="i">$unicode_json_text</span><span class="sc">;</span></pre>
+<p>Or <pre>
+<span class="w">decode</span> <span class="i">$encoding</span></code>
+ all string values and <pre>
+<span class="w">encode_json</span></code>
+:</p>
+<pre>
+  <span class="i">$perl_scalar</span>-&gt;{ <span class="w">foo</span> } = <span class="i">decode</span><span class="s">(</span> <span class="i">$encoding</span><span class="cm">,</span> <span class="i">$perl_scalar</span>-&gt;{ <span class="w">foo</span> } <span class="s">)</span><span class="sc">;</span>
+  <span class="c"># ... do it to each string values, then encode_json</span>
+  <span class="i">$json_text</span> = <span class="i">encode_json</span><span class="s">(</span> <span class="i">$perl_scalar</span> <span class="s">)</span><span class="sc">;</span></pre>
+<p>This method is a proper way but probably not efficient.</p>
+<p>See to <a href="../Encode.html">Encode</a>, <a href="../perluniintro.html">perluniintro</a>.</p>
+<a id="METHODS"></a><h2 class='h2' >METHODS</h2>
+<p>Basically, check to <a href="https://search.cpan.org/perldoc/JSON">JSON</a> or <a href="https://search.cpan.org/perldoc/JSON::XS">JSON::XS</a>.</p>
+<a id="new"></a><h3 class='h3' >new</h3>
+<pre>
+    <span class="i">$json</span> = <span class="w">JSON::PP</span><span class="w">-&gt;new</span></pre>
+<p>Returns a new JSON::PP object that can be used to de/encode JSON
+strings.</p>
+<p>All boolean flags described below are by default <i>disabled</i>.</p>
+<p>The mutators for flags all return the JSON object again and thus calls can
+be chained:</p>
+<div class="verbatim"><ol><li>   my $json = JSON::PP-&gt;new-&gt;utf8-&gt;space_after-&gt;encode({a =&gt; [1,2]})</li><li>   =&gt; {"a": [1, 2]}</li></ol></div><a id="ascii"></a><h3 class='h3' >ascii</h3>
+<div class="verbatim"><ol><li>    $json = $json-&gt;ascii([$enable])</li><li>    </li><li>    $enabled = $json-&gt;get_ascii</li></ol></div><p>If $enable is true (or missing), then the encode method will not generate characters outside
+the code range 0..127. Any Unicode characters outside that range will be escaped using either
+a single \uXXXX or a double \uHHHH\uLLLLL escape sequence, as per RFC4627.
+(See to <a href="https://search.cpan.org/perldoc/JSON::XS#OBJECT-ORIENTED-INTERFACE">OBJECT-ORIENTED INTERFACE in JSON::XS</a>).</p>
+<p>In Perl 5.005, there is no character having high value (more than 255).
+See to <a href="#UNICODE-HANDLING-ON-PERLS">UNICODE HANDLING ON PERLS</a>.</p>
+<p>If $enable is false, then the encode method will not escape Unicode characters unless
+required by the JSON syntax or other flags. This results in a faster and more compact format.</p>
+<pre>
+  <span class="w">JSON::PP</span><span class="w">-&gt;new</span><span class="w">-&gt;ascii</span><span class="s">(</span><span class="n">1</span><span class="s">)</span><span class="i">-&gt;encode</span><span class="s">(</span><span class="s">[</span><a class="l_k" href="../functions/chr.html">chr</a> <span class="n">0x10401</span><span class="s">]</span><span class="s">)</span>
+  <span class="cm">=&gt;</span> <span class="s">[</span><span class="q">&quot;\ud801\udc01&quot;</span><span class="s">]</span></pre>
+<a id="latin1"></a><h3 class='h3' >latin1</h3>
+<div class="verbatim"><ol><li>    $json = $json-&gt;latin1([$enable])</li><li>    </li><li>    $enabled = $json-&gt;get_latin1</li></ol></div><p>If $enable is true (or missing), then the encode method will encode the resulting JSON
+text as latin1 (or iso-8859-1), escaping any characters outside the code range 0..255.</p>
+<p>If $enable is false, then the encode method will not escape Unicode characters
+unless required by the JSON syntax or other flags.</p>
+<div class="verbatim"><ol><li>  JSON::XS-&gt;new-&gt;latin1-&gt;encode (["\x{89}\x{abc}"]</li><li>  =&gt; ["\x{89}\\u0abc"]    # (perl syntax, U+abc escaped, U+89 not)</li></ol></div><p>See to <a href="#UNICODE-HANDLING-ON-PERLS">UNICODE HANDLING ON PERLS</a>.</p>
+<a id="utf8"></a><h3 class='h3' >utf8</h3>
+<div class="verbatim"><ol><li>    $json = $json-&gt;utf8([$enable])</li><li>    </li><li>    $enabled = $json-&gt;get_utf8</li></ol></div><p>If $enable is true (or missing), then the encode method will encode the JSON result
+into UTF-8, as required by many protocols, while the decode method expects to be handled
+an UTF-8-encoded string. Please note that UTF-8-encoded strings do not contain any
+characters outside the range 0..255, they are thus useful for bytewise/binary I/O.</p>
+<p>(In Perl 5.005, any character outside the range 0..255 does not exist.
+See to <a href="#UNICODE-HANDLING-ON-PERLS">UNICODE HANDLING ON PERLS</a>.)</p>
+<p>In future versions, enabling this option might enable autodetection of the UTF-16 and UTF-32
+encoding families, as described in RFC4627.</p>
+<p>If $enable is false, then the encode method will return the JSON string as a (non-encoded)
+Unicode string, while decode expects thus a Unicode string. Any decoding or encoding
+(e.g. to UTF-8 or UTF-16) needs to be done yourself, e.g. using the Encode module.</p>
+<p>Example, output UTF-16BE-encoded JSON:</p>
+<pre>
+  <a class="l_k" href="../functions/use.html">use</a> <span class="w">Encode</span><span class="sc">;</span>
+  <span class="i">$jsontext</span> = <span class="w">encode</span> <span class="q">&quot;UTF-16BE&quot;</span><span class="cm">,</span> <span class="w">JSON::PP</span><span class="w">-&gt;new</span><span class="w">-&gt;encode</span> <span class="s">(</span><span class="i">$object</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>Example, decode UTF-32LE-encoded JSON:</p>
+<pre>
+  <a class="l_k" href="../functions/use.html">use</a> <span class="w">Encode</span><span class="sc">;</span>
+  <span class="i">$object</span> = <span class="w">JSON::PP</span><span class="w">-&gt;new</span><span class="w">-&gt;decode</span> <span class="s">(</span><span class="w">decode</span> <span class="q">&quot;UTF-32LE&quot;</span><span class="cm">,</span> <span class="i">$jsontext</span><span class="s">)</span><span class="sc">;</span></pre>
+<a id="pretty"></a><h3 class='h3' >pretty</h3>
+<pre>
+    <span class="i">$json</span> = <span class="i">$json</span><span class="i">-&gt;pretty</span><span class="s">(</span><span class="s">[</span><span class="i">$enable</span><span class="s">]</span><span class="s">)</span></pre>
+<p>This enables (or disables) all of the <pre>
+<span class="w">indent</span></code>
+, <pre>
+<span class="w">space_before</span></code>
+ and
+<pre>
+<span class="w">space_after</span></code>
+ flags in one call to generate the most readable
+(or most compact) form possible.</p>
+<p>Equivalent to:</p>
+<pre>
+   <span class="i">$json</span><span class="i">-&gt;indent</span><span class="i">-&gt;space_before</span><span class="i">-&gt;space_after</span></pre>
+<a id="indent"></a><h3 class='h3' >indent</h3>
+<div class="verbatim"><ol><li>    $json = $json-&gt;indent([$enable])</li><li>    </li><li>    $enabled = $json-&gt;get_indent</li></ol></div><p>The default indent space length is three.
+You can use <pre>
+<span class="w">indent_length</span></code>
+ to change the length.</p>
+<a id="space_before"></a><h3 class='h3' >space_before</h3>
+<div class="verbatim"><ol><li>    $json = $json-&gt;space_before([$enable])</li><li>    </li><li>    $enabled = $json-&gt;get_space_before</li></ol></div><p>If <pre>
+<span class="i">$enable</span></code>
+ is true (or missing), then the <pre>
+<span class="w">encode</span></code>
+ method will add an extra
+optional space before the <pre>
+<span class="j">:</span></code>
+ separating keys from values in JSON objects.</p>
+<p>If <pre>
+<span class="i">$enable</span></code>
+ is false, then the <pre>
+<span class="w">encode</span></code>
+ method will not add any extra
+space at those places.</p>
+<p>This setting has no effect when decoding JSON texts.</p>
+<p>Example, space_before enabled, space_after and indent disabled:</p>
+<div class="verbatim"><ol><li>   {"key" :"value"}</li></ol></div><a id="space_after"></a><h3 class='h3' >space_after</h3>
+<div class="verbatim"><ol><li>    $json = $json-&gt;space_after([$enable])</li><li>    </li><li>    $enabled = $json-&gt;get_space_after</li></ol></div><p>If <pre>
+<span class="i">$enable</span></code>
+ is true (or missing), then the <pre>
+<span class="w">encode</span></code>
+ method will add an extra
+optional space after the <pre>
+<span class="j">:</span></code>
+ separating keys from values in JSON objects
+and extra whitespace after the <pre>
+<span class="cm">,</span></code>
+ separating key-value pairs and array
+members.</p>
+<p>If <pre>
+<span class="i">$enable</span></code>
+ is false, then the <pre>
+<span class="w">encode</span></code>
+ method will not add any extra
+space at those places.</p>
+<p>This setting has no effect when decoding JSON texts.</p>
+<p>Example, space_before and indent disabled, space_after enabled:</p>
+<div class="verbatim"><ol><li>   {"key": "value"}</li></ol></div><a id="relaxed"></a><h3 class='h3' >relaxed</h3>
+<div class="verbatim"><ol><li>    $json = $json-&gt;relaxed([$enable])</li><li>    </li><li>    $enabled = $json-&gt;get_relaxed</li></ol></div><p>If <pre>
+<span class="i">$enable</span></code>
+ is true (or missing), then <pre>
+<span class="w">decode</span></code>
+ will accept some
+extensions to normal JSON syntax (see below). <pre>
+<span class="w">encode</span></code>
+ will not be
+affected in anyway. <i>Be aware that this option makes you accept invalid
+JSON texts as if they were valid!</i>. I suggest only to use this option to
+parse application-specific files written by humans (configuration files,
+resource files etc.)</p>
+<p>If <pre>
+<span class="i">$enable</span></code>
+ is false (the default), then <pre>
+<span class="w">decode</span></code>
+ will only accept
+valid JSON texts.</p>
+<p>Currently accepted extensions are:</p>
+<ul>
+<li><a id="*-list-items-can-have-an-end-comma"></a><strong>list items can have an end-comma</strong>
+<p>JSON <i>separates</i> array elements and key-value pairs with commas. This
+can be annoying if you write JSON texts manually and want to be able to
+quickly append elements, so this extension accepts comma at the end of
+such items not just between them:</p>
+<div class="verbatim"><ol><li>   [</li><li>      1,</li><li>      2, &lt;- this comma not normally allowed</li><li>   ]</li><li>   {</li><li>      "k1": "v1",</li><li>      "k2": "v2", &lt;- this comma not normally allowed</li><li>   }</li></ol></div></li>
+<li><a id="*-shell-style-'%23'-comments"></a><strong>shell-style '#'-comments</strong>
+<p>Whenever JSON allows whitespace, shell-style comments are additionally
+allowed. They are terminated by the first carriage-return or line-feed
+character, after which more white-space and comments are allowed.</p>
+<pre>
+  <span class="s">[</span>
+     <span class="n">1</span><span class="cm">,</span> <span class="c"># this comment not allowed in JSON</span>
+        <span class="c"># neither this one...</span>
+  <span class="s">]</span></pre>
+</li>
+</ul>
+<a id="canonical"></a><h3 class='h3' >canonical</h3>
+<div class="verbatim"><ol><li>    $json = $json-&gt;canonical([$enable])</li><li>    </li><li>    $enabled = $json-&gt;get_canonical</li></ol></div><p>If <pre>
+<span class="i">$enable</span></code>
+ is true (or missing), then the <pre>
+<span class="w">encode</span></code>
+ method will output JSON objects
+by sorting their keys. This is adding a comparatively high overhead.</p>
+<p>If <pre>
+<span class="i">$enable</span></code>
+ is false, then the <pre>
+<span class="w">encode</span></code>
+ method will output key-value
+pairs in the order Perl stores them (which will likely change between runs
+of the same script).</p>
+<p>This option is useful if you want the same data structure to be encoded as
+the same JSON text (given the same overall settings). If it is disabled,
+the same hash might be encoded differently even if contains the same data,
+as key-value pairs have no inherent ordering in Perl.</p>
+<p>This setting has no effect when decoding JSON texts.</p>
+<p>If you want your own sorting routine, you can give a code reference
+or a subroutine name to <pre>
+<span class="w">sort_by</span></code>
+. See to <pre>
+<span class="w">JSON::PP</span> <span class="w">OWN</span> <span class="w">METHODS</span></code>
+.</p>
+<a id="allow_nonref"></a><h3 class='h3' >allow_nonref</h3>
+<div class="verbatim"><ol><li>    $json = $json-&gt;allow_nonref([$enable])</li><li>    </li><li>    $enabled = $json-&gt;get_allow_nonref</li></ol></div><p>If <pre>
+<span class="i">$enable</span></code>
+ is true (or missing), then the <pre>
+<span class="w">encode</span></code>
+ method can convert a
+non-reference into its corresponding string, number or null JSON value,
+which is an extension to RFC4627. Likewise, <pre>
+<span class="w">decode</span></code>
+ will accept those JSON
+values instead of croaking.</p>
+<p>If <pre>
+<span class="i">$enable</span></code>
+ is false, then the <pre>
+<span class="w">encode</span></code>
+ method will croak if it isn't
+passed an arrayref or hashref, as JSON texts must either be an object
+or array. Likewise, <pre>
+<span class="w">decode</span></code>
+ will croak if given something that is not a
+JSON object or array.</p>
+<pre>
+   <span class="w">JSON::PP</span><span class="w">-&gt;new</span><span class="w">-&gt;allow_nonref</span><span class="w">-&gt;encode</span> <span class="s">(</span><span class="q">&quot;Hello, World!&quot;</span><span class="s">)</span>
+   <span class="cm">=&gt;</span> <span class="q">&quot;Hello, World!&quot;</span></pre>
+<a id="allow_unknown"></a><h3 class='h3' >allow_unknown</h3>
+<div class="verbatim"><ol><li>    $json = $json-&gt;allow_unknown ([$enable])</li><li>    </li><li>    $enabled = $json-&gt;get_allow_unknown</li></ol></div><p>If $enable is true (or missing), then "encode" will *not* throw an
+exception when it encounters values it cannot represent in JSON (for
+example, filehandles) but instead will encode a JSON "null" value.
+Note that blessed objects are not included here and are handled
+separately by c&lt;allow_nonref&gt;.</p>
+<p>If $enable is false (the default), then "encode" will throw an
+exception when it encounters anything it cannot encode as JSON.</p>
+<p>This option does not affect "decode" in any way, and it is
+recommended to leave it off unless you know your communications
+partner.</p>
+<a id="allow_blessed"></a><h3 class='h3' >allow_blessed</h3>
+<div class="verbatim"><ol><li>    $json = $json-&gt;allow_blessed([$enable])</li><li>    </li><li>    $enabled = $json-&gt;get_allow_blessed</li></ol></div><p>If <pre>
+<span class="i">$enable</span></code>
+ is true (or missing), then the <pre>
+<span class="w">encode</span></code>
+ method will not
+barf when it encounters a blessed reference. Instead, the value of the
+<strong>convert_blessed</strong> option will decide whether <pre>
+<span class="w">null</span></code>
+ (<pre>
+<span class="w">convert_blessed</span></code>
+
+disabled or no <pre>
+<span class="w">TO_JSON</span></code>
+ method found) or a representation of the
+object (<pre>
+<span class="w">convert_blessed</span></code>
+ enabled and <pre>
+<span class="w">TO_JSON</span></code>
+ method found) is being
+encoded. Has no effect on <pre>
+<span class="w">decode</span></code>
+.</p>
+<p>If <pre>
+<span class="i">$enable</span></code>
+ is false (the default), then <pre>
+<span class="w">encode</span></code>
+ will throw an
+exception when it encounters a blessed object.</p>
+<a id="convert_blessed"></a><h3 class='h3' >convert_blessed</h3>
+<div class="verbatim"><ol><li>    $json = $json-&gt;convert_blessed([$enable])</li><li>    </li><li>    $enabled = $json-&gt;get_convert_blessed</li></ol></div><p>If <pre>
+<span class="i">$enable</span></code>
+ is true (or missing), then <pre>
+<span class="w">encode</span></code>
+, upon encountering a
+blessed object, will check for the availability of the <pre>
+<span class="w">TO_JSON</span></code>
+ method
+on the object's class. If found, it will be called in scalar context
+and the resulting scalar will be encoded instead of the object. If no
+<pre>
+<span class="w">TO_JSON</span></code>
+ method is found, the value of <pre>
+<span class="w">allow_blessed</span></code>
+ will decide what
+to do.</p>
+<p>The <pre>
+<span class="w">TO_JSON</span></code>
+ method may safely call die if it wants. If <pre>
+<span class="w">TO_JSON</span></code>
+
+returns other blessed objects, those will be handled in the same
+way. <pre>
+<span class="w">TO_JSON</span></code>
+ must take care of not causing an endless recursion cycle
+(== crash) in this case. The name of <pre>
+<span class="w">TO_JSON</span></code>
+ was chosen because other
+methods called by the Perl core (== not by the user of the object) are
+usually in upper case letters and to avoid collisions with the <pre>
+<span class="w">to_json</span></code>
+
+function or method.</p>
+<p>This setting does not yet influence <pre>
+<span class="w">decode</span></code>
+ in any way.</p>
+<p>If <pre>
+<span class="i">$enable</span></code>
+ is false, then the <pre>
+<span class="w">allow_blessed</span></code>
+ setting will decide what
+to do when a blessed object is found.</p>
+<a id="filter_json_object"></a><h3 class='h3' >filter_json_object</h3>
+<pre>
+    <span class="i">$json</span> = <span class="i">$json</span><span class="i">-&gt;filter_json_object</span><span class="s">(</span><span class="s">[</span><span class="i">$coderef</span><span class="s">]</span><span class="s">)</span></pre>
+<p>When <pre>
+<span class="i">$coderef</span></code>
+ is specified, it will be called from <pre>
+<span class="w">decode</span></code>
+ each
+time it decodes a JSON object. The only argument passed to the coderef
+is a reference to the newly-created hash. If the code references returns
+a single scalar (which need not be a reference), this value
+(i.e. a copy of that scalar to avoid aliasing) is inserted into the
+deserialised data structure. If it returns an empty list
+(NOTE: <i>not</i> <code class="inline"><a class="l_k" href="../functions/undef.html">undef</a></code>, which is a valid scalar), the original deserialised
+hash will be inserted. This setting can slow down decoding considerably.</p>
+<p>When <pre>
+<span class="i">$coderef</span></code>
+ is omitted or undefined, any existing callback will
+be removed and <pre>
+<span class="w">decode</span></code>
+ will not change the deserialised hash in any
+way.</p>
+<p>Example, convert all JSON objects into the integer 5:</p>
+<pre>
+   <a class="l_k" href="../functions/my.html">my</a> <span class="i">$js</span> = <span class="w">JSON::PP</span><span class="w">-&gt;new</span><span class="w">-&gt;filter_json_object</span> <span class="s">(</span><a class="l_k" href="../functions/sub.html">sub</a> <span class="s">{</span> <span class="n">5</span> <span class="s">}</span><span class="s">)</span><span class="sc">;</span>
+   <span class="c"># returns [5]</span>
+   <span class="i">$js</span><span class="i">-&gt;decode</span> <span class="s">(</span><span class="q">&#39;[{}]&#39;</span><span class="s">)</span><span class="sc">;</span> <span class="c"># the given subroutine takes a hash reference.</span>
+   <span class="c"># throw an exception because allow_nonref is not enabled</span>
+   <span class="c"># so a lone 5 is not allowed.</span>
+   <span class="i">$js</span><span class="i">-&gt;decode</span> <span class="s">(</span><span class="q">&#39;{&quot;a&quot;:1, &quot;b&quot;:2}&#39;</span><span class="s">)</span><span class="sc">;</span></pre>
+<a id="filter_json_single_key_object"></a><h3 class='h3' >filter_json_single_key_object</h3>
+<pre>
+    <span class="i">$json</span> = <span class="i">$json</span><span class="i">-&gt;filter_json_single_key_object</span><span class="s">(</span><span class="i">$key</span> [<span class="cm">=&gt;</span> <span class="i">$coderef</span>]<span class="s">)</span></pre>
+<p>Works remotely similar to <pre>
+<span class="w">filter_json_object</span></code>
+, but is only called for
+JSON objects having a single key named <pre>
+<span class="i">$key</span></code>
+.</p>
+<p>This <pre>
+<span class="i">$coderef</span></code>
+ is called before the one specified via
+<pre>
+<span class="w">filter_json_object</span></code>
+, if any. It gets passed the single value in the JSON
+object. If it returns a single value, it will be inserted into the data
+structure. If it returns nothing (not even <code class="inline"><a class="l_k" href="../functions/undef.html">undef</a></code> but the empty list),
+the callback from <pre>
+<span class="w">filter_json_object</span></code>
+ will be called next, as if no
+single-key callback were specified.</p>
+<p>If <pre>
+<span class="i">$coderef</span></code>
+ is omitted or undefined, the corresponding callback will be
+disabled. There can only ever be one callback for a given key.</p>
+<p>As this callback gets called less often then the <pre>
+<span class="w">filter_json_object</span></code>
+
+one, decoding speed will not usually suffer as much. Therefore, single-key
+objects make excellent targets to serialise Perl objects into, especially
+as single-key JSON objects are as close to the type-tagged value concept
+as JSON gets (it's basically an ID/VALUE tuple). Of course, JSON does not
+support this in any way, so you need to make sure your data never looks
+like a serialised Perl hash.</p>
+<p>Typical names for the single object key are <pre>
+<span class="w">__class_whatever__</span></code>
+, or
+<code class="inline">$__dollars_are_rarely_used__$</code> or <code class="inline">}ugly_brace_placement</code>, or even
+things like <code class="inline">__class_md5sum(classname)__</code>, to reduce the risk of clashing
+with real hashes.</p>
+<p>Example, decode JSON objects of the form <pre>
+<span class="s">{</span> <span class="q">&quot;__widget__&quot;</span> <span class="cm">=&gt;</span> <span class="q">&lt;id&gt;</span> <span class="s">}</span></code>
+
+into the corresponding <pre>
+<span class="i">$WIDGET</span>{<span class="q">&lt;id&gt;</span>}</code>
+ object:</p>
+<div class="verbatim"><ol><li>   # return whatever is in $WIDGET{5}:</li><li>   JSON::PP</li><li>      -&gt;new</li><li>      -&gt;filter_json_single_key_object (__widget__ =&gt; sub {</li><li>            $WIDGET{ $_[0] }</li><li>         })</li><li>      -&gt;decode ('{"__widget__": 5')</li><li></li><li>   # this can be used with a TO_JSON method in some "widget" class</li><li>   # for serialisation to json:</li><li>   sub WidgetBase::TO_JSON {</li><li>      my ($self) = @_;</li><li></li><li>      unless ($self-&gt;{id}) {</li><li>         $self-&gt;{id} = ..get..some..id..;</li><li>         $WIDGET{$self-&gt;{id}} = $self;</li><li>      }</li><li></li><li>      { __widget__ =&gt; $self-&gt;{id} }</li><li>   }</li></ol></div><a id="shrink"></a><h3 class='h3' >shrink</h3>
+<div class="verbatim"><ol><li>    $json = $json-&gt;shrink([$enable])</li><li>    </li><li>    $enabled = $json-&gt;get_shrink</li></ol></div><p>In JSON::XS, this flag resizes strings generated by either
+<pre>
+<span class="w">encode</span></code>
+ or <pre>
+<span class="w">decode</span></code>
+ to their minimum size possible.
+It will also try to downgrade any strings to octet-form if possible.</p>
+<p>In JSON::PP, it is noop about resizing strings but tries
+<pre>
+<span class="w">utf8::downgrade</span></code>
+ to the returned string by <pre>
+<span class="w">encode</span></code>
+.
+See to <a href="../utf8.html">utf8</a>.</p>
+<p>See to <a href="https://search.cpan.org/perldoc/JSON::XS#OBJECT-ORIENTED-INTERFACE">OBJECT-ORIENTED INTERFACE in JSON::XS</a></p>
+<a id="max_depth"></a><h3 class='h3' >max_depth</h3>
+<div class="verbatim"><ol><li>    $json = $json-&gt;max_depth([$maximum_nesting_depth])</li><li>    </li><li>    $max_depth = $json-&gt;get_max_depth</li></ol></div><p>Sets the maximum nesting level (default <pre>
+<span class="n">512</span></code>
+) accepted while encoding
+or decoding. If a higher nesting level is detected in JSON text or a Perl
+data structure, then the encoder and decoder will stop and croak at that
+point.</p>
+<p>Nesting level is defined by number of hash- or arrayrefs that the encoder
+needs to traverse to reach a given point or the number of <code class="inline">{</code> or <code class="inline">[</code>
+characters without their matching closing parenthesis crossed to reach a
+given character in a string.</p>
+<p>If no argument is given, the highest possible setting will be used, which
+is rarely useful.</p>
+<p>See <a href="https://search.cpan.org/perldoc/JSON::XS#SECURITY-CONSIDERATIONS">SECURITY CONSIDERATIONS in JSON::XS</a> for more info on why this is useful.</p>
+<p>When a large value (100 or more) was set and it de/encodes a deep nested object/text,
+it may raise a warning 'Deep recursion on subroutine' at the perl runtime phase.</p>
+<a id="max_size"></a><h3 class='h3' >max_size</h3>
+<div class="verbatim"><ol><li>    $json = $json-&gt;max_size([$maximum_string_size])</li><li>    </li><li>    $max_size = $json-&gt;get_max_size</li></ol></div><p>Set the maximum length a JSON text may have (in bytes) where decoding is
+being attempted. The default is <pre></code>
+, meaning no limit. When <pre>
+<span class="w">decode</span></code>
+
+is called on a string that is longer then this many bytes, it will not
+attempt to decode the string but throw an exception. This setting has no
+effect on <pre>
+<span class="w">encode</span></code>
+ (yet).</p>
+<p>If no argument is given, the limit check will be deactivated (same as when
+<pre></code>
+ is specified).</p>
+<p>See <a href="https://search.cpan.org/perldoc/JSON::XS#SECURITY-CONSIDERATIONS">SECURITY CONSIDERATIONS in JSON::XS</a> for more info on why this is useful.</p>
+<a id="encode"></a><h3 class='h3' >encode</h3>
+<pre>
+    <span class="i">$json_text</span> = <span class="i">$json</span><span class="i">-&gt;encode</span><span class="s">(</span><span class="i">$perl_scalar</span><span class="s">)</span></pre>
+<p>Converts the given Perl data structure (a simple scalar or a reference
+to a hash or array) to its JSON representation. Simple scalars will be
+converted into JSON string or number sequences, while references to arrays
+become JSON arrays and references to hashes become JSON objects. Undefined
+Perl values (e.g. <code class="inline"><a class="l_k" href="../functions/undef.html">undef</a></code>) become JSON <pre>
+<span class="w">null</span></code>
+ values.
+References to the integers <pre></code>
+ and <pre>
+<span class="n">1</span></code>
+ are converted into <pre>
+<span class="w">true</span></code>
+ and <pre>
+<span class="w">false</span></code>
+.</p>
+<a id="decode"></a><h3 class='h3' >decode</h3>
+<pre>
+    <span class="i">$perl_scalar</span> = <span class="i">$json</span><span class="i">-&gt;decode</span><span class="s">(</span><span class="i">$json_text</span><span class="s">)</span></pre>
+<p>The opposite of <pre>
+<span class="w">encode</span></code>
+: expects a JSON text and tries to parse it,
+returning the resulting simple scalar or reference. Croaks on error.</p>
+<p>JSON numbers and strings become simple Perl scalars. JSON arrays become
+Perl arrayrefs and JSON objects become Perl hashrefs. <pre>
+<span class="w">true</span></code>
+ becomes
+<pre>
+<span class="n">1</span></code>
+ (<pre>
+<span class="w">JSON::true</span></code>
+), <pre>
+<span class="w">false</span></code>
+ becomes <pre></code>
+ (<pre>
+<span class="w">JSON::false</span></code>
+) and
+<pre>
+<span class="w">null</span></code>
+ becomes <code class="inline"><a class="l_k" href="../functions/undef.html">undef</a></code>.</p>
+<a id="decode_prefix"></a><h3 class='h3' >decode_prefix</h3>
+<pre>
+    <span class="s">(</span><span class="i">$perl_scalar</span><span class="cm">,</span> <span class="i">$characters</span><span class="s">)</span> = <span class="i">$json</span><span class="i">-&gt;decode_prefix</span><span class="s">(</span><span class="i">$json_text</span><span class="s">)</span></pre>
+<p>This works like the <pre>
+<span class="w">decode</span></code>
+ method, but instead of raising an exception
+when there is trailing garbage after the first JSON object, it will
+silently stop parsing there and return the number of characters consumed
+so far.</p>
+<pre>
+   <span class="w">JSON</span><span class="w">-&gt;new</span><span class="w">-&gt;decode_prefix</span> <span class="s">(</span><span class="q">&quot;[1] the tail&quot;</span><span class="s">)</span>
+   <span class="cm">=&gt;</span> <span class="s">(</span><span class="s">[</span><span class="s">]</span><span class="cm">,</span> <span class="n">3</span><span class="s">)</span></pre>
+<a id="INCREMENTAL-PARSING"></a><h2 class='h2' >INCREMENTAL PARSING</h2>
+<p>Most of this section are copied and modified from <a href="https://search.cpan.org/perldoc/JSON::XS#INCREMENTAL-PARSING">INCREMENTAL PARSING in JSON::XS</a>.</p>
+<p>In some cases, there is the need for incremental parsing of JSON texts.
+This module does allow you to parse a JSON stream incrementally.
+It does so by accumulating text until it has a full JSON object, which
+it then can decode. This process is similar to using <pre>
+<span class="w">decode_prefix</span></code>
+
+to see if a full JSON object is available, but is much more efficient
+(and can be implemented with a minimum of method calls).</p>
+<p>This module will only attempt to parse the JSON text once it is sure it
+has enough text to get a decisive result, using a very simple but
+truly incremental parser. This means that it sometimes won't stop as
+early as the full parser, for example, it doesn't detect parentheses
+mismatches. The only thing it guarantees is that it starts decoding as
+soon as a syntactically valid JSON text has been seen. This means you need
+to set resource limits (e.g. <pre>
+<span class="w">max_size</span></code>
+) to ensure the parser will stop
+parsing in the presence if syntax errors.</p>
+<p>The following methods implement this incremental parser.</p>
+<a id="incr_parse"></a><h3 class='h3' >incr_parse</h3>
+<div class="verbatim"><ol><li>    $json-&gt;incr_parse( [$string] ) # void context</li><li>    </li><li>    $obj_or_undef = $json-&gt;incr_parse( [$string] ) # scalar context</li><li>    </li><li>    @obj_or_empty = $json-&gt;incr_parse( [$string] ) # list context</li></ol></div><p>This is the central parsing function. It can both append new text and
+extract objects from the stream accumulated so far (both of these
+functions are optional).</p>
+<p>If <pre>
+<span class="i">$string</span></code>
+ is given, then this string is appended to the already
+existing JSON fragment stored in the <pre>
+<span class="i">$json</span></code>
+ object.</p>
+<p>After that, if the function is called in void context, it will simply
+return without doing anything further. This can be used to add more text
+in as many chunks as you want.</p>
+<p>If the method is called in scalar context, then it will try to extract
+exactly <i>one</i> JSON object. If that is successful, it will return this
+object, otherwise it will return <code class="inline"><a class="l_k" href="../functions/undef.html">undef</a></code>. If there is a parse error,
+this method will croak just as <pre>
+<span class="w">decode</span></code>
+ would do (one can then use
+<pre>
+<span class="w">incr_skip</span></code>
+ to skip the erroneous part). This is the most common way of
+using the method.</p>
+<p>And finally, in list context, it will try to extract as many objects
+from the stream as it can find and return them, or the empty list
+otherwise. For this to work, there must be no separators between the JSON
+objects or arrays, instead they must be concatenated back-to-back. If
+an error occurs, an exception will be raised as in the scalar context
+case. Note that in this case, any previously-parsed JSON texts will be
+lost.</p>
+<p>Example: Parse some JSON arrays/objects in a given string and return them.</p>
+<pre>
+    <a class="l_k" href="../functions/my.html">my</a> <span class="i">@objs</span> = <span class="w">JSON</span><span class="w">-&gt;new</span><span class="w">-&gt;incr_parse</span> <span class="s">(</span><span class="q">&quot;[5][7][1,2]&quot;</span><span class="s">)</span><span class="sc">;</span></pre>
+<a id="incr_text"></a><h3 class='h3' >incr_text</h3>
+<pre>
+    <span class="i">$lvalue_string</span> = <span class="i">$json</span><span class="i">-&gt;incr_text</span></pre>
+<p>This method returns the currently stored JSON fragment as an lvalue, that
+is, you can manipulate it. This <i>only</i> works when a preceding call to
+<pre>
+<span class="w">incr_parse</span></code>
+ in <i>scalar context</i> successfully returned an object. Under
+all other circumstances you must not call this function (I mean it.
+although in simple tests it might actually work, it <i>will</i> fail under
+real world conditions). As a special exception, you can also call this
+method before having parsed anything.</p>
+<p>This function is useful in two cases: a) finding the trailing text after a
+JSON object or b) parsing multiple JSON objects separated by non-JSON text
+(such as commas).</p>
+<pre>
+    <span class="i">$json</span><span class="i">-&gt;incr_text</span> =~ <span class="q">s/\s*,\s*//</span><span class="sc">;</span></pre>
+<p>In Perl 5.005, <pre>
+<span class="w">lvalue</span></code>
+ attribute is not available.
+You must write codes like the below:</p>
+<pre>
+    <span class="i">$string</span> = <span class="i">$json</span><span class="i">-&gt;incr_text</span><span class="sc">;</span>
+    <span class="i">$string</span> =~ <span class="q">s/\s*,\s*//</span><span class="sc">;</span>
+    <span class="i">$json</span><span class="i">-&gt;incr_text</span><span class="s">(</span> <span class="i">$string</span> <span class="s">)</span><span class="sc">;</span></pre>
+<a id="incr_skip"></a><h3 class='h3' >incr_skip</h3>
+<pre>
+    <span class="i">$json</span><span class="i">-&gt;incr_skip</span></pre>
+<p>This will reset the state of the incremental parser and will remove the
+parsed text from the input buffer. This is useful after <pre>
+<span class="w">incr_parse</span></code>
+
+died, in which case the input buffer and incremental parser state is left
+unchanged, to skip the text parsed so far and to reset the parse state.</p>
+<a id="incr_reset"></a><h3 class='h3' >incr_reset</h3>
+<pre>
+    <span class="i">$json</span><span class="i">-&gt;incr_reset</span></pre>
+<p>This completely resets the incremental parser, that is, after this call,
+it will be as if the parser had never parsed anything.</p>
+<p>This is useful if you want to repeatedly parse JSON objects and want to
+ignore any trailing data, which means you have to reset the parser after
+each successful decode.</p>
+<p>See to <a href="https://search.cpan.org/perldoc/JSON::XS#INCREMENTAL-PARSING">INCREMENTAL PARSING in JSON::XS</a> for examples.</p>
+<a id="JSON%3a%3aPP-OWN-METHODS"></a><h2 class='h2' >JSON::PP OWN METHODS</h2>
+<a id="allow_singlequote"></a><h3 class='h3' >allow_singlequote</h3>
+<pre>
+    <span class="i">$json</span> = <span class="i">$json</span><span class="i">-&gt;allow_singlequote</span><span class="s">(</span><span class="s">[</span><span class="i">$enable</span><span class="s">]</span><span class="s">)</span></pre>
+<p>If <pre>
+<span class="i">$enable</span></code>
+ is true (or missing), then <pre>
+<span class="w">decode</span></code>
+ will accept
+JSON strings quoted by single quotations that are invalid JSON
+format.</p>
+<div class="verbatim"><ol><li>    $json-&gt;allow_singlequote-&gt;decode({"foo":'bar'});</li><li>    $json-&gt;allow_singlequote-&gt;decode({'foo':"bar"});</li><li>    $json-&gt;allow_singlequote-&gt;decode({'foo':'bar'});</li></ol></div><p>As same as the <pre>
+<span class="w">relaxed</span></code>
+ option, this option may be used to parse
+application-specific files written by humans.</p>
+<a id="allow_barekey"></a><h3 class='h3' >allow_barekey</h3>
+<pre>
+    <span class="i">$json</span> = <span class="i">$json</span><span class="i">-&gt;allow_barekey</span><span class="s">(</span><span class="s">[</span><span class="i">$enable</span><span class="s">]</span><span class="s">)</span></pre>
+<p>If <pre>
+<span class="i">$enable</span></code>
+ is true (or missing), then <pre>
+<span class="w">decode</span></code>
+ will accept
+bare keys of JSON object that are invalid JSON format.</p>
+<p>As same as the <pre>
+<span class="w">relaxed</span></code>
+ option, this option may be used to parse
+application-specific files written by humans.</p>
+<pre>
+    <span class="i">$json</span><span class="i">-&gt;allow_barekey</span><span class="i">-&gt;decode</span><span class="s">(</span><span class="q">&#39;{foo:&quot;bar&quot;}&#39;</span><span class="s">)</span><span class="sc">;</span></pre>
+<a id="allow_bignum"></a><h3 class='h3' >allow_bignum</h3>
+<pre>
+    <span class="i">$json</span> = <span class="i">$json</span><span class="i">-&gt;allow_bignum</span><span class="s">(</span><span class="s">[</span><span class="i">$enable</span><span class="s">]</span><span class="s">)</span></pre>
+<p>If <pre>
+<span class="i">$enable</span></code>
+ is true (or missing), then <pre>
+<span class="w">decode</span></code>
+ will convert
+the big integer Perl cannot handle as integer into a <a href="../Math/BigInt.html">Math::BigInt</a>
+object and convert a floating number (any) into a <a href="../Math/BigFloat.html">Math::BigFloat</a>.</p>
+<p>On the contrary, <pre>
+<span class="w">encode</span></code>
+ converts <pre>
+<span class="w">Math::BigInt</span></code>
+ objects and <pre>
+<span class="w">Math::BigFloat</span></code>
+
+objects into JSON numbers with <pre>
+<span class="w">allow_blessed</span></code>
+ enabled.</p>
+<pre>
+   <span class="i">$json</span><span class="i">-&gt;allow_nonref</span><span class="i">-&gt;allow_blessed</span><span class="i">-&gt;allow_bignum</span><span class="sc">;</span>
+   <span class="i">$bigfloat</span> = <span class="i">$json</span><span class="i">-&gt;decode</span><span class="s">(</span><span class="q">&#39;2.000000000000000000000000001&#39;</span><span class="s">)</span><span class="sc">;</span>
+   <a class="l_k" href="../functions/print.html">print</a> <span class="i">$json</span><span class="i">-&gt;encode</span><span class="s">(</span><span class="i">$bigfloat</span><span class="s">)</span><span class="sc">;</span>
+   <span class="c"># =&gt; 2.000000000000000000000000001</span></pre>
+<p>See to <a href="https://search.cpan.org/perldoc/JSON::XS#MAPPING">MAPPING in JSON::XS</a> about the normal conversion of JSON number.</p>
+<a id="loose"></a><h3 class='h3' >loose</h3>
+<pre>
+    <span class="i">$json</span> = <span class="i">$json</span><span class="i">-&gt;loose</span><span class="s">(</span><span class="s">[</span><span class="i">$enable</span><span class="s">]</span><span class="s">)</span></pre>
+<p>The unescaped [\x00-\x1f\x22\x2f\x5c] strings are invalid in JSON strings
+and the module doesn't allow you to <pre>
+<span class="w">decode</span></code>
+ to these (except for \x2f).
+If <pre>
+<span class="i">$enable</span></code>
+ is true (or missing), then <pre>
+<span class="w">decode</span></code>
+  will accept these
+unescaped strings.</p>
+<pre>
+    <span class="i">$json</span><span class="i">-&gt;loose</span><span class="i">-&gt;decode</span><span class="s">(</span><span class="q">qq|[&quot;abc</span>
+                                   <span class="q">                                   def&quot;]|</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>See <a href="https://search.cpan.org/perldoc/JSON::XS#SECURITY-CONSIDERATIONS">SECURITY CONSIDERATIONS in JSON::XS</a>.</p>
+<a id="escape_slash"></a><h3 class='h3' >escape_slash</h3>
+<pre>
+    <span class="i">$json</span> = <span class="i">$json</span><span class="i">-&gt;escape_slash</span><span class="s">(</span><span class="s">[</span><span class="i">$enable</span><span class="s">]</span><span class="s">)</span></pre>
+<p>According to JSON Grammar, <i>slash</i> (U+002F) is escaped. But default
+JSON::PP (as same as JSON::XS) encodes strings without escaping slash.</p>
+<p>If <pre>
+<span class="i">$enable</span></code>
+ is true (or missing), then <pre>
+<span class="w">encode</span></code>
+ will escape slashes.</p>
+<a id="indent_length"></a><h3 class='h3' >indent_length</h3>
+<pre>
+    <span class="i">$json</span> = <span class="i">$json</span><span class="i">-&gt;indent_length</span><span class="s">(</span><span class="i">$length</span><span class="s">)</span></pre>
+<p>JSON::XS indent space length is 3 and cannot be changed.
+JSON::PP set the indent space length with the given $length.
+The default is 3. The acceptable range is 0 to 15.</p>
+<a id="sort_by"></a><h3 class='h3' >sort_by</h3>
+<div class="verbatim"><ol><li>    $json = $json-&gt;sort_by($function_name)</li><li>    $json = $json-&gt;sort_by($subroutine_ref)</li></ol></div><p>If $function_name or $subroutine_ref are set, its sort routine are used
+in encoding JSON objects.</p>
+<pre>
+   <span class="i">$js</span> = <span class="i">$pc</span><span class="i">-&gt;sort_by</span><span class="s">(</span><a class="l_k" href="../functions/sub.html">sub</a> <span class="s">{</span> <span class="i">$JSON::PP::a</span> <a class="l_k" href="../functions/cmp.html">cmp</a> <span class="i">$JSON::PP::b</span> <span class="s">}</span><span class="s">)</span><span class="i">-&gt;encode</span><span class="s">(</span><span class="i">$obj</span><span class="s">)</span><span class="sc">;</span>
+   <span class="c"># is($js, q|{&quot;a&quot;:1,&quot;b&quot;:2,&quot;c&quot;:3,&quot;d&quot;:4,&quot;e&quot;:5,&quot;f&quot;:6,&quot;g&quot;:7,&quot;h&quot;:8,&quot;i&quot;:9}|);</span>
+
+   <span class="i">$js</span> = <span class="i">$pc</span><span class="i">-&gt;sort_by</span><span class="s">(</span><span class="q">&#39;own_sort&#39;</span><span class="s">)</span><span class="i">-&gt;encode</span><span class="s">(</span><span class="i">$obj</span><span class="s">)</span><span class="sc">;</span>
+   <span class="c"># is($js, q|{&quot;a&quot;:1,&quot;b&quot;:2,&quot;c&quot;:3,&quot;d&quot;:4,&quot;e&quot;:5,&quot;f&quot;:6,&quot;g&quot;:7,&quot;h&quot;:8,&quot;i&quot;:9}|);</span>
+
+<a name="JSON::PP::own_sort"></a>   sub <span class="m">JSON::PP::own_sort</span> <span class="s">{</span> <span class="i">$JSON::PP::a</span> <a class="l_k" href="../functions/cmp.html">cmp</a> <span class="i">$JSON::PP::b</span> <span class="s">}</span></pre>
+<p>As the sorting routine runs in the JSON::PP scope, the given
+subroutine name and the special variables <pre>
+<span class="i">$a</span></code>
+, <pre>
+<span class="i">$b</span></code>
+ will begin
+'JSON::PP::'.</p>
+<p>If $integer is set, then the effect is same as <pre>
+<span class="w">canonical</span></code>
+ on.</p>
+<a id="INTERNAL"></a><h2 class='h2' >INTERNAL</h2>
+<p>For developers.</p>
+<ul>
+<li><a id="PP_encode_box"></a><strong>PP_encode_box</strong>
+<p>Returns</p>
+<pre>
+        <span class="s">{</span>
+            <span class="w">depth</span>        <span class="cm">=&gt;</span> <span class="i">$depth</span><span class="cm">,</span>
+            <span class="w">indent_count</span> <span class="cm">=&gt;</span> <span class="i">$indent_count</span><span class="cm">,</span>
+        <span class="s">}</span></pre>
+</li>
+<li><a id="PP_decode_box"></a><strong>PP_decode_box</strong>
+<p>Returns</p>
+<pre>
+        <span class="s">{</span>
+            <span class="w">text</span>    <span class="cm">=&gt;</span> <span class="i">$text</span><span class="cm">,</span>
+            <span class="w">at</span>      <span class="cm">=&gt;</span> <span class="i">$at</span><span class="cm">,</span>
+            <span class="w">ch</span>      <span class="cm">=&gt;</span> <span class="i">$ch</span><span class="cm">,</span>
+            <span class="w">len</span>     <span class="cm">=&gt;</span> <span class="i">$len</span><span class="cm">,</span>
+            <span class="w">depth</span>   <span class="cm">=&gt;</span> <span class="i">$depth</span><span class="cm">,</span>
+            <span class="w">encoding</span>      <span class="cm">=&gt;</span> <span class="i">$encoding</span><span class="cm">,</span>
+            <span class="w">is_valid_utf8</span> <span class="cm">=&gt;</span> <span class="i">$is_valid_utf8</span><span class="cm">,</span>
+        <span class="s">}</span><span class="sc">;</span></pre>
+</li>
+</ul>
+<a id="MAPPING"></a><h2 class='h2' >MAPPING</h2>
+<p>This section is copied from JSON::XS and modified to <pre>
+<span class="w">JSON::PP</span></code>
+.
+JSON::XS and JSON::PP mapping mechanisms are almost equivalent.</p>
+<p>See to <a href="https://search.cpan.org/perldoc/JSON::XS#MAPPING">MAPPING in JSON::XS</a>.</p>
+<a id="JSON--%3e-PERL"></a><h3 class='h3' >JSON -&gt; PERL</h3>
+<ul>
+<li><a id="object"></a><strong>object</strong>
+<p>A JSON object becomes a reference to a hash in Perl. No ordering of object
+keys is preserved (JSON does not preserver object key ordering itself).</p>
+</li>
+<li><a id="array"></a><strong>array</strong>
+<p>A JSON array becomes a reference to an array in Perl.</p>
+</li>
+<li><a id="string"></a><strong>string</strong>
+<p>A JSON string becomes a string scalar in Perl - Unicode codepoints in JSON
+are represented by the same codepoints in the Perl string, so no manual
+decoding is necessary.</p>
+</li>
+<li><a id="number"></a><strong>number</strong>
+<p>A JSON number becomes either an integer, numeric (floating point) or
+string scalar in perl, depending on its range and any fractional parts. On
+the Perl level, there is no difference between those as Perl handles all
+the conversion details, but an integer may take slightly less memory and
+might represent more values exactly than floating point numbers.</p>
+<p>If the number consists of digits only, <pre>
+<span class="w">JSON</span></code>
+ will try to represent
+it as an integer value. If that fails, it will try to represent it as
+a numeric (floating point) value if that is possible without loss of
+precision. Otherwise it will preserve the number as a string value (in
+which case you lose roundtripping ability, as the JSON number will be
+re-encoded to a JSON string).</p>
+<p>Numbers containing a fractional or exponential part will always be
+represented as numeric (floating point) values, possibly at a loss of
+precision (in which case you might lose perfect roundtripping ability, but
+the JSON number will still be re-encoded as a JSON number).</p>
+<p>Note that precision is not accuracy - binary floating point values cannot
+represent most decimal fractions exactly, and when converting from and to
+floating point, <pre>
+<span class="w">JSON</span></code>
+ only guarantees precision up to but not including
+the least significant bit.</p>
+<p>When <pre>
+<span class="w">allow_bignum</span></code>
+ is enabled, the big integers 
+and the numeric can be optionally converted into <a href="../Math/BigInt.html">Math::BigInt</a> and
+<a href="../Math/BigFloat.html">Math::BigFloat</a> objects.</p>
+</li>
+<li><a id="true%2c-false"></a><strong>true, false</strong>
+<p>These JSON atoms become <pre>
+<span class="w">JSON::PP::true</span></code>
+ and <pre>
+<span class="w">JSON::PP::false</span></code>
+,
+respectively. They are overloaded to act almost exactly like the numbers
+<pre>
+<span class="n">1</span></code>
+ and <pre></code>
+. You can check whether a scalar is a JSON boolean by using
+the <pre>
+<span class="w">JSON::is_bool</span></code>
+ function.</p>
+<div class="verbatim"><ol><li>   print JSON::PP::true . "\n";</li><li>    =&gt; true</li><li>   print JSON::PP::true + 1;</li><li>    =&gt; 1</li><li></li><li>   ok(JSON::true eq  '1');</li><li>   ok(JSON::true == 1);</li></ol></div><p><pre>
+<span class="w">JSON</span></code>
+ will install these missing overloading features to the backend modules.</p>
+</li>
+<li><a id="null"></a><strong>null</strong>
+<p>A JSON null atom becomes <code class="inline"><a class="l_k" href="../functions/undef.html">undef</a></code> in Perl.</p>
+<p><pre>
+<span class="w">JSON::PP::null</span></code>
+ returns <code class="inline"><a class="l_k" href="../functions/undef.html">undef</a></code>.</p>
+</li>
+</ul>
+<a id="PERL--%3e-JSON"></a><h3 class='h3' >PERL -&gt; JSON</h3>
+<p>The mapping from Perl to JSON is slightly more difficult, as Perl is a
+truly typeless language, so we can only guess which JSON type is meant by
+a Perl value.</p>
+<ul>
+<li><a id="hash-references"></a><strong>hash references</strong>
+<p>Perl hash references become JSON objects. As there is no inherent ordering
+in hash keys (or JSON objects), they will usually be encoded in a
+pseudo-random order that can change between runs of the same program but
+stays generally the same within a single run of a program. <pre>
+<span class="w">JSON</span></code>
+
+optionally sort the hash keys (determined by the <i>canonical</i> flag), so
+the same datastructure will serialise to the same JSON text (given same
+settings and version of JSON::XS), but this incurs a runtime overhead
+and is only rarely useful, e.g. when you want to compare some JSON text
+against another for equality.</p>
+</li>
+<li><a id="array-references"></a><strong>array references</strong>
+<p>Perl array references become JSON arrays.</p>
+</li>
+<li><a id="other-references"></a><strong>other references</strong>
+<p>Other unblessed references are generally not allowed and will cause an
+exception to be thrown, except for references to the integers <pre></code>
+ and
+<pre>
+<span class="n">1</span></code>
+, which get turned into <pre>
+<span class="w">false</span></code>
+ and <pre>
+<span class="w">true</span></code>
+ atoms in JSON. You can
+also use <pre>
+<span class="w">JSON::false</span></code>
+ and <pre>
+<span class="w">JSON::true</span></code>
+ to improve readability.</p>
+<pre>
+   <span class="w">to_json</span> <span class="s">[</span>\<span class="n">0</span><span class="cm">,</span><span class="w">JSON::PP::true</span><span class="s">]</span>      <span class="c"># yields [false,true]</span></pre>
+</li>
+<li><a id="JSON%3a%3aPP%3a%3atrue%2c-JSON%3a%3aPP%3a%3afalse%2c-JSON%3a%3aPP%3a%3anull"></a><strong>JSON::PP::true, JSON::PP::false, JSON::PP::null</strong>
+<p>These special values become JSON true and JSON false values,
+respectively. You can also use <pre>
+\<span class="n">1</span></code>
+ and <pre>
+\<span class="n">0</span></code>
+ directly if you want.</p>
+<p>JSON::PP::null returns <code class="inline"><a class="l_k" href="../functions/undef.html">undef</a></code>.</p>
+</li>
+<li><a id="blessed-objects"></a><strong>blessed objects</strong>
+<p>Blessed objects are not directly representable in JSON. See the
+<pre>
+<span class="w">allow_blessed</span></code>
+ and <pre>
+<span class="w">convert_blessed</span></code>
+ methods on various options on
+how to deal with this: basically, you can choose between throwing an
+exception, encoding the reference as if it weren't blessed, or provide
+your own serialiser method.</p>
+<p>See to <a href="https://search.cpan.org/perldoc/convert_blessed">convert_blessed</a>.</p>
+</li>
+<li><a id="simple-scalars"></a><strong>simple scalars</strong>
+<p>Simple Perl scalars (any scalar that is not a reference) are the most
+difficult objects to encode: JSON::XS and JSON::PP will encode undefined scalars as
+JSON <pre>
+<span class="w">null</span></code>
+ values, scalars that have last been used in a string context
+before encoding as JSON strings, and anything else as number value:</p>
+<pre>
+   <span class="c"># dump as number</span>
+   <span class="w">encode_json</span> <span class="s">[</span><span class="n">2</span><span class="s">]</span>                      <span class="c"># yields [2]</span>
+   <span class="w">encode_json</span> <span class="s">[</span><span class="n">-3.0e17</span><span class="s">]</span>                <span class="c"># yields [-3e+17]</span>
+   <a class="l_k" href="../functions/my.html">my</a> <span class="i">$value</span> = <span class="n">5</span><span class="sc">;</span> <span class="w">encode_json</span> <span class="s">[</span><span class="i">$value</span><span class="s">]</span>  <span class="c"># yields [5]</span>
+
+   <span class="c"># used as string, so dump as string</span>
+   <a class="l_k" href="../functions/print.html">print</a> <span class="i">$value</span><span class="sc">;</span>
+   <span class="w">encode_json</span> <span class="s">[</span><span class="i">$value</span><span class="s">]</span>                 <span class="c"># yields [&quot;5&quot;]</span>
+
+   <span class="c"># undef becomes null</span>
+   <span class="w">encode_json</span> <span class="s">[</span><a class="l_k" href="../functions/undef.html">undef</a><span class="s">]</span>                  <span class="c"># yields [null]</span></pre>
+<p>You can force the type to be a string by stringifying it:</p>
+<pre>
+   <a class="l_k" href="../functions/my.html">my</a> <span class="i">$x</span> = <span class="n">3.1</span><span class="sc">;</span> <span class="c"># some variable containing a number</span>
+   <span class="q">&quot;$x&quot;</span><span class="sc">;</span>        <span class="c"># stringified</span>
+   <span class="i">$x</span> .= <span class="q">&quot;&quot;</span><span class="sc">;</span>    <span class="c"># another, more awkward way to stringify</span>
+   <a class="l_k" href="../functions/print.html">print</a> <span class="i">$x</span><span class="sc">;</span>    <span class="c"># perl does it for you, too, quite often</span></pre>
+<p>You can force the type to be a number by numifying it:</p>
+<pre>
+   <a class="l_k" href="../functions/my.html">my</a> <span class="i">$x</span> = <span class="q">&quot;3&quot;</span><span class="sc">;</span> <span class="c"># some variable containing a string</span>
+   <span class="i">$x</span> += <span class="n">0</span><span class="sc">;</span>     <span class="c"># numify it, ensuring it will be dumped as a number</span>
+   <span class="i">$x</span> *= <span class="n">1</span><span class="sc">;</span>     <span class="c"># same thing, the choice is yours.</span></pre>
+<p>You cannot currently force the type in other, less obscure, ways.</p>
+<p>Note that numerical precision has the same meaning as under Perl (so
+binary to decimal conversion follows the same rules as in Perl, which
+can differ to other languages). Also, your perl interpreter might expose
+extensions to the floating point numbers of your platform, such as
+infinities or NaN's - these cannot be represented in JSON, and it is an
+error to pass those in.</p>
+</li>
+<li><a id="Big-Number"></a><strong>Big Number</strong>
+<p>When <pre>
+<span class="w">allow_bignum</span></code>
+ is enabled, 
+<pre>
+<span class="w">encode</span></code>
+ converts <pre>
+<span class="w">Math::BigInt</span></code>
+ objects and <pre>
+<span class="w">Math::BigFloat</span></code>
+
+objects into JSON numbers.</p>
+</li>
+</ul>
+<a id="UNICODE-HANDLING-ON-PERLS"></a><h2 class='h2' >UNICODE HANDLING ON PERLS</h2>
+<p>If you do not know about Unicode on Perl well,
+please check <a href="https://search.cpan.org/perldoc/JSON::XS#A-FEW-NOTES-ON-UNICODE-AND-PERL">A FEW NOTES ON UNICODE AND PERL in JSON::XS</a>.</p>
+<a id="Perl-5.8-and-later"></a><h3 class='h3' >Perl 5.8 and later</h3>
+<p>Perl can handle Unicode and the JSON::PP de/encode methods also work properly.</p>
+<pre>
+    <span class="i">$json</span><span class="i">-&gt;allow_nonref</span><span class="i">-&gt;encode</span><span class="s">(</span><a class="l_k" href="../functions/chr.html">chr</a> <a class="l_k" href="../functions/hex.html">hex</a> <span class="n">3042</span><span class="s">)</span><span class="sc">;</span>
+    <span class="i">$json</span><span class="i">-&gt;allow_nonref</span><span class="i">-&gt;encode</span><span class="s">(</span><a class="l_k" href="../functions/chr.html">chr</a> <a class="l_k" href="../functions/hex.html">hex</a> <span class="n">12345</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>Returns <pre>
+<span class="q">&quot;\u3042&quot;</span></code>
+ and <pre>
+<span class="q">&quot;\ud808\udf45&quot;</span></code>
+ respectively.</p>
+<pre>
+    <span class="i">$json</span><span class="i">-&gt;allow_nonref</span><span class="i">-&gt;decode</span><span class="s">(</span><span class="q">&#39;&quot;\u3042&quot;&#39;</span><span class="s">)</span><span class="sc">;</span>
+    <span class="i">$json</span><span class="i">-&gt;allow_nonref</span><span class="i">-&gt;decode</span><span class="s">(</span><span class="q">&#39;&quot;\ud808\udf45&quot;&#39;</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>Returns UTF-8 encoded strings with UTF8 flag, regarded as <pre>
+<span class="w">U</span>+<span class="n">3042</span></code>
+ and <pre>
+<span class="w">U</span>+<span class="n">12345</span></code>
+.</p>
+<p>Note that the versions from Perl 5.8.0 to 5.8.2, Perl built-in <code class="inline"><a class="l_k" href="../functions/join.html">join</a></code> was broken,
+so JSON::PP wraps the <code class="inline"><a class="l_k" href="../functions/join.html">join</a></code> with a subroutine. Thus JSON::PP works slow in the versions.</p>
+<a id="Perl-5.6"></a><h3 class='h3' >Perl 5.6</h3>
+<p>Perl can handle Unicode and the JSON::PP de/encode methods also work.</p>
+<a id="Perl-5.005"></a><h3 class='h3' >Perl 5.005</h3>
+<p>Perl 5.005 is a byte semantics world -- all strings are sequences of bytes.
+That means the unicode handling is not available.</p>
+<p>In encoding,</p>
+<pre>
+    <span class="i">$json</span><span class="i">-&gt;allow_nonref</span><span class="i">-&gt;encode</span><span class="s">(</span><a class="l_k" href="../functions/chr.html">chr</a> <a class="l_k" href="../functions/hex.html">hex</a> <span class="n">3042</span><span class="s">)</span><span class="sc">;</span>  <span class="c"># hex 3042 is 12354.</span>
+    <span class="i">$json</span><span class="i">-&gt;allow_nonref</span><span class="i">-&gt;encode</span><span class="s">(</span><a class="l_k" href="../functions/chr.html">chr</a> <a class="l_k" href="../functions/hex.html">hex</a> <span class="n">12345</span><span class="s">)</span><span class="sc">;</span> <span class="c"># hex 12345 is 74565.</span></pre>
+<p>Returns <pre>
+<span class="w">B</span></code>
+ and <pre>
+<span class="w">E</span></code>
+, as <code class="inline"><a class="l_k" href="../functions/chr.html">chr</a></code> takes a value more than 255, it treats
+as <pre>
+<span class="i">$value</span> % <span class="n">256</span></code>
+, so the above codes are equivalent to :</p>
+<pre>
+    <span class="i">$json</span><span class="i">-&gt;allow_nonref</span><span class="i">-&gt;encode</span><span class="s">(</span><a class="l_k" href="../functions/chr.html">chr</a> <span class="n">66</span><span class="s">)</span><span class="sc">;</span>
+    <span class="i">$json</span><span class="i">-&gt;allow_nonref</span><span class="i">-&gt;encode</span><span class="s">(</span><a class="l_k" href="../functions/chr.html">chr</a> <span class="n">69</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>In decoding,</p>
+<pre>
+    <span class="i">$json</span><span class="i">-&gt;decode</span><span class="s">(</span><span class="q">&#39;&quot;\u00e3\u0081\u0082&quot;&#39;</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>The returned is a byte sequence <code class="inline">0xE3 0x81 0x82</code> for UTF-8 encoded
+Japanese character (<pre>
+<span class="w">HIRAGANA</span> <span class="w">LETTER</span> <span class="w">A</span></code>
+).
+And if it is represented in Unicode code point, <pre>
+<span class="w">U</span>+<span class="n">3042</span></code>
+.</p>
+<p>Next,</p>
+<pre>
+    <span class="i">$json</span><span class="i">-&gt;decode</span><span class="s">(</span><span class="q">&#39;&quot;\u3042&quot;&#39;</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>We ordinary expect the returned value is a Unicode character <pre>
+<span class="w">U</span>+<span class="n">3042</span></code>
+.
+But here is 5.005 world. This is <code class="inline">0xE3 0x81 0x82</code>.</p>
+<pre>
+    <span class="i">$json</span><span class="i">-&gt;decode</span><span class="s">(</span><span class="q">&#39;&quot;\ud808\udf45&quot;&#39;</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>This is not a character <pre>
+<span class="w">U</span>+<span class="n">12345</span></code>
+ but bytes - <code class="inline">0xf0 0x92 0x8d 0x85</code>.</p>
+<a id="TODO"></a><h2 class='h2' >TODO</h2>
+<ul>
+<li><a id="speed"></a><strong>speed</strong>
+</li>
+<li><a id="memory-saving"></a><strong>memory saving</strong>
+</li>
+</ul>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<p>Most of the document are copied and modified from JSON::XS doc.</p>
+<p><a href="https://search.cpan.org/perldoc/JSON::XS">JSON::XS</a></p>
+<p>RFC4627 (<a href="http://www.ietf.org/rfc/rfc4627.txt">http://www.ietf.org/rfc/rfc4627.txt</a>)</p>
+<a id="AUTHOR"></a><h2 class='h2' >AUTHOR</h2>
+<p>Makamaka Hannyaharamitu, &lt;makamaka[at]cpan.org&gt;</p>
+<a id="COPYRIGHT-AND-LICENSE"></a><h2 class='h2' >COPYRIGHT AND LICENSE</h2>
+<p>Copyright 2007-2016 by Makamaka Hannyaharamitu</p>
+<p>This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#VERSION">VERSION</a></li><li><a href="#NOTE">NOTE</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><ul><li><a href="#FEATURES">FEATURES</a></li></ul><li><a href="#FUNCTIONAL-INTERFACE">FUNCTIONAL INTERFACE</a></li><ul><li><a href="#encode_json">encode_json</a></li><li><a href="#decode_json">decode_json</a></li><li><a href="#JSON%3a%3aPP%3a%3ais_bool">JSON::PP::is_bool</a></li><li><a href="#JSON%3a%3aPP%3a%3atrue">JSON::PP::true</a></li><li><a href="#JSON%3a%3aPP%3a%3afalse">JSON::PP::false</a></li><li><a href="#JSON%3a%3aPP%3a%3anull">JSON::PP::null</a></li></ul><li><a href="#HOW-DO-I-DECODE-A-DATA-FROM-OUTER-AND-ENCODE-TO-OUTER">HOW DO I DECODE A DATA FROM OUTER AND ENCODE TO OUTER</a></li><li><a href="#METHODS">METHODS</a></li><ul><li><a href="#new">new</a></li><li><a href="#ascii">ascii</a></li><li><a href="#latin1">latin1</a></li><li><a href="#utf8">utf8</a></li><li><a href="#pretty">pretty</a></li><li><a href="#indent">indent</a></li><li><a href="#space_before">space_before</a></li><li><a href="#space_after">space_after</a></li><li><a href="#relaxed">relaxed</a></li><li><a href="#canonical">canonical</a></li><li><a href="#allow_nonref">allow_nonref</a></li><li><a href="#allow_unknown">allow_unknown</a></li><li><a href="#allow_blessed">allow_blessed</a></li><li><a href="#convert_blessed">convert_blessed</a></li><li><a href="#filter_json_object">filter_json_object</a></li><li><a href="#filter_json_single_key_object">filter_json_single_key_object</a></li><li><a href="#shrink">shrink</a></li><li><a href="#max_depth">max_depth</a></li><li><a href="#max_size">max_size</a></li><li><a href="#encode">encode</a></li><li><a href="#decode">decode</a></li><li><a href="#decode_prefix">decode_prefix</a></li></ul><li><a href="#INCREMENTAL-PARSING">INCREMENTAL PARSING</a></li><ul><li><a href="#incr_parse">incr_parse</a></li><li><a href="#incr_text">incr_text</a></li><li><a href="#incr_skip">incr_skip</a></li><li><a href="#incr_reset">incr_reset</a></li></ul><li><a href="#JSON%3a%3aPP-OWN-METHODS">JSON::PP OWN METHODS</a></li><ul><li><a href="#allow_singlequote">allow_singlequote</a></li><li><a href="#allow_barekey">allow_barekey</a></li><li><a href="#allow_bignum">allow_bignum</a></li><li><a href="#loose">loose</a></li><li><a href="#escape_slash">escape_slash</a></li><li><a href="#indent_length">indent_length</a></li><li><a href="#sort_by">sort_by</a></li></ul><li><a href="#INTERNAL">INTERNAL</a></li><li><a href="#MAPPING">MAPPING</a></li><ul><li><a href="#JSON--%3e-PERL">JSON -> PERL</a></li><li><a href="#PERL--%3e-JSON">PERL -> JSON</a></li></ul><li><a href="#UNICODE-HANDLING-ON-PERLS">UNICODE HANDLING ON PERLS</a></li><ul><li><a href="#Perl-5.8-and-later">Perl 5.8 and later</a></li><li><a href="#Perl-5.6">Perl 5.6</a></li><li><a href="#Perl-5.005">Perl 5.005</a></li></ul><li><a href="#TODO">TODO</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#COPYRIGHT-AND-LICENSE">COPYRIGHT AND LICENSE</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/26/2/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/2/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/2/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/2/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/26/2/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/2/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/2/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/2/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/26/2/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/2/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/2/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/26/2/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/2/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/26/2/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

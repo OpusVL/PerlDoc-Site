@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Module::Load - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>Module::Load - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.16.2/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.16.2/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.16.2/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.16.2/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.16.2/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.16.2/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.16.2/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.16.2/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.16.2/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.16.2/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.16.2/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.16.2/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.16.2/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.16.2/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.16.2/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.16.2/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../index-modules-M.html">Core modules (M)</a> &gt;
+      
+    
+    Module::Load
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 16.2 documentation</h1>
+                  </div>
+                  <h1>Module::Load</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#Rules">Rules</a></li><li><a href="#Caveats">Caveats</a></li><li><a href="#ACKNOWLEDGEMENTS">ACKNOWLEDGEMENTS</a></li><li><a href="#BUG-REPORTS">BUG REPORTS</a></li><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#COPYRIGHT">COPYRIGHT</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>Module::Load - runtime require of both modules and files</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<div class="verbatim"><ol><li>	use Module::Load;</li><li></li><li>    my $module = 'Data:Dumper';</li><li>    load Data::Dumper;      # loads that module</li><li>    load 'Data::Dumper';    # ditto</li><li>    load $module            # tritto</li><li></li><li>    my $script = 'some/script.pl'</li><li>    load $script;</li><li>    load 'some/script.pl';	# use quotes because of punctuations</li><li></li><li>    load thing;             # try 'thing' first, then 'thing.pm'</li><li></li><li>    load CGI, ':standard'   # like 'use CGI qw[:standard]'</li></ol></div><a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p><pre>
+<span class="w">load</span></code>
+ eliminates the need to know whether you are trying to require
+either a file or a module.</p>
+<p>If you consult <pre>
+<span class="w">perldoc</span> -f <a class="l_k" href="../functions/require.html">require</a></code>
+ you will see that <code class="inline"><a class="l_k" href="../functions/require.html">require</a></code> will
+behave differently when given a bareword or a string.</p>
+<p>In the case of a string, <code class="inline"><a class="l_k" href="../functions/require.html">require</a></code> assumes you are wanting to load a
+file. But in the case of a bareword, it assumes you mean a module.</p>
+<p>This gives nasty overhead when you are trying to dynamically require
+modules at runtime, since you will need to change the module notation
+(<pre>
+<span class="w">Acme::Comment</span></code>
+) to a file notation fitting the particular platform
+you are on.</p>
+<p><pre>
+<span class="w">load</span></code>
+ eliminates the need for this overhead and will just DWYM.</p>
+<a id="Rules"></a><h2 class='h2' >Rules</h2>
+<p><pre>
+<span class="w">load</span></code>
+ has the following rules to decide what it thinks you want:</p>
+<ul>
+<li>
+<p>If the argument has any characters in it other than those matching
+<pre>
+\<span class="w">w</span></code>
+, <pre>
+<span class="j">:</span></code>
+ or <code class="inline">'</code>, it must be a file</p>
+</li>
+<li>
+<p>If the argument matches only <code class="inline">[\w:']</code>, it must be a module</p>
+</li>
+<li>
+<p>If the argument matches only <pre>
+\<span class="w">w</span></code>
+, it could either be a module or a
+file. We will try to find <pre>
+<span class="w">file</span>.<span class="w">pm</span></code>
+ first in <pre>
+<span class="i">@INC</span></code>
+ and if that
+fails, we will try to find <pre>
+<span class="w">file</span></code>
+ in @INC.  If both fail, we die with
+the respective error messages.</p>
+</li>
+</ul>
+<a id="Caveats"></a><h2 class='h2' >Caveats</h2>
+<p>Because of a bug in perl (#19213), at least in version 5.6.1, we have
+to hardcode the path separator for a require on Win32 to be <code class="inline">/</code>, like
+on Unix rather than the Win32 <pre>
+\</code>
+. Otherwise perl will not read its
+own %INC accurately double load files if they are required again, or
+in the worst case, core dump.</p>
+<p><pre>
+<span class="w">Module::Load</span></code>
+ cannot do implicit imports, only explicit imports.
+(in other words, you always have to specify explicitly what you wish
+to import from a module, even if the functions are in that modules'
+<pre>
+<span class="i">@EXPORT</span></code>
+)</p>
+<a id="ACKNOWLEDGEMENTS"></a><h2 class='h2' >ACKNOWLEDGEMENTS</h2>
+<p>Thanks to Jonas B. Nielsen for making explicit imports work.</p>
+<a id="BUG-REPORTS"></a><h2 class='h2' >BUG REPORTS</h2>
+<p>Please report bugs or other issues to &lt;bug-module-load@rt.cpan.org&lt;gt&gt;.</p>
+<a id="AUTHOR"></a><h2 class='h2' >AUTHOR</h2>
+<p>This module by Jos Boumans &lt;kane@cpan.org&gt;.</p>
+<a id="COPYRIGHT"></a><h2 class='h2' >COPYRIGHT</h2>
+<p>This library is free software; you may redistribute and/or modify it
+under the same terms as Perl itself.</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#Rules">Rules</a></li><li><a href="#Caveats">Caveats</a></li><li><a href="#ACKNOWLEDGEMENTS">ACKNOWLEDGEMENTS</a></li><li><a href="#BUG-REPORTS">BUG REPORTS</a></li><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#COPYRIGHT">COPYRIGHT</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/16/2/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="App::Prove::State::Result::Test - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>App::Prove::State::Result::Test - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.20.1/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.20.1/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.20.1/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.20.1/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.20.1/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.20.1/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.20.1/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.20.1/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.20.1/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.20.1/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.20.1/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.20.1/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.20.1/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.20.1/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.20.1/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../../../../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../../../../index-modules-A.html">Core modules (A)</a> &gt;
+      
+    
+    App::Prove::State::Result::Test
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 20.1 documentation</h1>
+                  </div>
+                  <h1>App::Prove::State::Result::Test</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#VERSION">VERSION</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#METHODS">METHODS</a></li><ul><li><a href="#Class-Methods">Class Methods</a></li><li><a href="#Instance-Methods">Instance Methods</a></li></ul></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>App::Prove::State::Result::Test - Individual test results.</p>
+<a id="VERSION"></a><h2 class='h2' >VERSION</h2>
+<p>Version 3.30</p>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>The <pre>
+<span class="w">prove</span></code>
+ command supports a <pre>
+--<span class="w">state</span></code>
+ option that instructs it to
+store persistent state across runs. This module encapsulates the results for a
+single test.</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<div class="verbatim"><ol><li>    # Re-run failed tests</li><li>    $ prove --state=failed,save -rbv</li></ol></div><a id="METHODS"></a><h2 class='h2' >METHODS</h2>
+<a id="Class-Methods"></a><h3 class='h3' >Class Methods</h3>
+<a id="new"></a><h4 class='h4' ><pre>
+<span class="w">new</span></code>
+</h4>
+<a id="Instance-Methods"></a><h3 class='h3' >Instance Methods</h3>
+<a id="name"></a><h4 class='h4' ><pre>
+<span class="w">name</span></code>
+</h4>
+<p>The name of the test.  Usually a filename.</p>
+<a id="elapsed"></a><h4 class='h4' ><pre>
+<span class="w">elapsed</span></code>
+</h4>
+<p>The total elapsed times the test took to run, in seconds from the epoch..</p>
+<a id="generation"></a><h4 class='h4' ><pre>
+<span class="w">generation</span></code>
+</h4>
+<p>The number for the "generation" of the test run.  The first generation is 1
+(one) and subsequent generations are 2, 3, etc.</p>
+<a id="last_pass_time"></a><h4 class='h4' ><pre>
+<span class="w">last_pass_time</span></code>
+</h4>
+<p>The last time the test program passed, in seconds from the epoch.</p>
+<p>Returns <code class="inline"><a class="l_k" href="../../../../functions/undef.html">undef</a></code> if the program has never passed.</p>
+<a id="last_fail_time"></a><h4 class='h4' ><pre>
+<span class="w">last_fail_time</span></code>
+</h4>
+<p>The last time the test suite failed, in seconds from the epoch.</p>
+<p>Returns <code class="inline"><a class="l_k" href="../../../../functions/undef.html">undef</a></code> if the program has never failed.</p>
+<a id="mtime"></a><h4 class='h4' ><pre>
+<span class="w">mtime</span></code>
+</h4>
+<p>Returns the mtime of the test, in seconds from the epoch.</p>
+<a id="raw"></a><h4 class='h4' ><pre>
+<span class="w">raw</span></code>
+</h4>
+<p>Returns a hashref of raw test data, suitable for serialization by YAML.</p>
+<a id="result"></a><h4 class='h4' ><pre>
+<span class="w">result</span></code>
+</h4>
+<p>Currently, whether or not the test suite passed with no 'problems' (such as
+TODO passed).</p>
+<a id="run_time"></a><h4 class='h4' ><pre>
+<span class="w">run_time</span></code>
+</h4>
+<p>The total time it took for the test to run, in seconds.  If <pre>
+<span class="w">Time::HiRes</span></code>
+ is
+available, it will have finer granularity.</p>
+<a id="num_todo"></a><h4 class='h4' ><pre>
+<span class="w">num_todo</span></code>
+</h4>
+<p>The number of tests with TODO directives.</p>
+<a id="sequence"></a><h4 class='h4' ><pre>
+<span class="w">sequence</span></code>
+</h4>
+<p>The order in which this test was run for the given test suite result.</p>
+<a id="total_passes"></a><h4 class='h4' ><pre>
+<span class="w">total_passes</span></code>
+</h4>
+<p>The number of times the test has passed.</p>
+<a id="total_failures"></a><h4 class='h4' ><pre>
+<span class="w">total_failures</span></code>
+</h4>
+<p>The number of times the test has failed.</p>
+<a id="parser"></a><h4 class='h4' ><pre>
+<span class="w">parser</span></code>
+</h4>
+<p>The underlying parser object.  This is useful if you need the full
+information for the test program.</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#VERSION">VERSION</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#METHODS">METHODS</a></li><ul><li><a href="#Class-Methods">Class Methods</a></li><li><a href="#Instance-Methods">Instance Methods</a></li></ul></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

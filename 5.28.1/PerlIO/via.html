@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="PerlIO::via - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>PerlIO::via - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.28.1/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.28.1/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.28.1/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.28.1/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.28.1/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.28.1/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.28.1/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.28.1/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.28.1/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.28.1/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.28.1/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.28.1/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.28.1/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.28.1/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.28.1/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../index-modules-P.html">Core modules (P)</a> &gt;
+      
+    
+    PerlIO::via
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 28.1 documentation</h1>
+                  </div>
+                  <h1>PerlIO::via</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#EXPECTED-METHODS">EXPECTED METHODS</a></li><li><a href="#EXAMPLES">EXAMPLES</a></li><ul><li><a href="#Example---a-Hexadecimal-Handle">Example - a Hexadecimal Handle</a></li></ul></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>PerlIO::via - Helper class for PerlIO layers implemented in perl</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<pre>
+   <a class="l_k" href="../functions/use.html">use</a> <span class="w">PerlIO::via::Layer</span><span class="sc">;</span>
+   <a class="l_k" href="../functions/open.html">open</a><span class="s">(</span><span class="i">$fh</span><span class="cm">,</span><span class="q">&quot;&lt;:via(Layer)&quot;</span><span class="cm">,</span>...<span class="s">)</span><span class="sc">;</span>
+
+   <a class="l_k" href="../functions/use.html">use</a> <span class="w">Some::Other::Package</span><span class="sc">;</span>
+   <a class="l_k" href="../functions/open.html">open</a><span class="s">(</span><span class="i">$fh</span><span class="cm">,</span><span class="q">&quot;&gt;:via(Some::Other::Package)&quot;</span><span class="cm">,</span>...<span class="s">)</span><span class="sc">;</span></pre>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>The PerlIO::via module allows you to develop PerlIO layers in Perl, without
+having to go into the nitty gritty of programming C with XS as the interface
+to Perl.</p>
+<p>One example module, <a href="../PerlIO/via/QuotedPrint.html">PerlIO::via::QuotedPrint</a>, is included with Perl
+5.8.0, and more example modules are available from CPAN, such as
+<a href="https://search.cpan.org/perldoc/PerlIO::via::StripHTML">PerlIO::via::StripHTML</a> and <a href="https://search.cpan.org/perldoc/PerlIO::via::Base64">PerlIO::via::Base64</a>.  The
+PerlIO::via::StripHTML module for instance, allows you to say:</p>
+<pre>
+	<a class="l_k" href="../functions/use.html">use</a> <span class="w">PerlIO::via::StripHTML</span><span class="sc">;</span>
+	<a class="l_k" href="../functions/open.html">open</a><span class="s">(</span> <a class="l_k" href="../functions/my.html">my</a> <span class="i">$fh</span><span class="cm">,</span> <span class="q">&quot;&lt;:via(StripHTML)&quot;</span><span class="cm">,</span> <span class="q">&quot;index.html&quot;</span> <span class="s">)</span><span class="sc">;</span>
+        <a class="l_k" href="../functions/my.html">my</a> <span class="i">@line</span> = <span class="q">&lt;$fh&gt;</span><span class="sc">;</span></pre>
+<p>to obtain the text of an HTML-file in an array with all the HTML-tags
+automagically removed.</p>
+<p>Please note that if the layer is created in the PerlIO::via:: namespace, it
+does <strong>not</strong> have to be fully qualified.  The PerlIO::via module will prefix
+the PerlIO::via:: namespace if the specified modulename does not exist as a
+fully qualified module name.</p>
+<a id="EXPECTED-METHODS"></a><h2 class='h2' >EXPECTED METHODS</h2>
+<p>To create a Perl module that implements a PerlIO layer in Perl (as opposed to
+in C using XS as the interface to Perl), you need to supply some of the
+following subroutines.  It is recommended to create these Perl modules in the
+PerlIO::via:: namespace, so that they can easily be located on CPAN and use
+the default namespace feature of the PerlIO::via module itself.</p>
+<p>Please note that this is an area of recent development in Perl and that the
+interface described here is therefore still subject to change (and hopefully
+will have better documentation and more examples).</p>
+<p>In the method descriptions below <i>$fh</i> will be
+a reference to a glob which can be treated as a perl file handle.
+It refers to the layer below. <i>$fh</i> is not passed if the layer
+is at the bottom of the stack, for this reason and to maintain
+some level of "compatibility" with TIEHANDLE classes it is passed last.</p>
+<ul>
+<li><a id="%24class-%3ePUSHED(%5b%24mode%2c%5b%24fh%5d%5d)"></a><strong>$class-&gt;PUSHED([$mode,[$fh]])</strong>
+<p>Should return an object or the class, or -1 on failure.  (Compare
+TIEHANDLE.)  The arguments are an optional mode string ("r", "w",
+"w+", ...) and a filehandle for the PerlIO layer below.  Mandatory.</p>
+<p>When the layer is pushed as part of an <code class="inline"><a class="l_k" href="../functions/open.html">open</a></code> call, <pre>
+<span class="w">PUSHED</span></code>
+ will be called
+<i>before</i> the actual open occurs, whether that be via <pre>
+<span class="w">OPEN</span></code>
+, <pre>
+<span class="w">SYSOPEN</span></code>
+,
+<pre>
+<span class="w">FDOPEN</span></code>
+ or by letting a lower layer do the open.</p>
+</li>
+<li><a id="%24obj-%3ePOPPED(%5b%24fh%5d)"></a><strong>$obj-&gt;POPPED([$fh])</strong>
+<p>Optional - called when the layer is about to be removed.</p>
+</li>
+<li><a id="%24obj-%3eUTF8(%24belowFlag%2c%5b%24fh%5d)"></a><strong>$obj-&gt;UTF8($belowFlag,[$fh])</strong>
+<p>Optional - if present it will be called immediately after PUSHED has
+returned. It should return a true value if the layer expects data to be
+UTF-8 encoded. If it returns true, the result is as if the caller had done</p>
+<pre>
+   <span class="q">&quot;:via(YourClass):utf8&quot;</span></pre>
+<p>If not present or if it returns false, then the stream is left with
+the UTF-8 flag clear.
+The <i>$belowFlag</i> argument will be true if there is a layer below
+and that layer was expecting UTF-8.</p>
+</li>
+<li><a id="%24obj-%3eOPEN(%24path%2c%24mode%2c%5b%24fh%5d)"></a><strong>$obj-&gt;OPEN($path,$mode,[$fh])</strong>
+<p>Optional - if not present a lower layer does the open.
+If present, called for normal opens after the layer is pushed.
+This function is subject to change as there is no easy way
+to get a lower layer to do the open and then regain control.</p>
+</li>
+<li><a id="%24obj-%3eBINMODE(%5b%24fh%5d)"></a><strong>$obj-&gt;BINMODE([$fh])</strong>
+<p>Optional - if not present the layer is popped on binmode($fh) or when <pre>
+<span class="j">:</span><span class="w">raw</span></code>
+
+is pushed. If present it should return 0 on success, -1 on error, or undef
+to pop the layer.</p>
+</li>
+<li><a id="%24obj-%3eFDOPEN(%24fd%2c%5b%24fh%5d)"></a><strong>$obj-&gt;FDOPEN($fd,[$fh])</strong>
+<p>Optional - if not present a lower layer does the open.
+If present, called after the layer is pushed for opens which pass
+a numeric file descriptor.
+This function is subject to change as there is no easy way
+to get a lower layer to do the open and then regain control.</p>
+</li>
+<li><a id="%24obj-%3eSYSOPEN(%24path%2c%24imode%2c%24perm%2c%5b%24fh%5d)"></a><strong>$obj-&gt;SYSOPEN($path,$imode,$perm,[$fh])</strong>
+<p>Optional - if not present a lower layer does the open.
+If present, called after the layer is pushed for sysopen style opens
+which pass a numeric mode and permissions.
+This function is subject to change as there is no easy way
+to get a lower layer to do the open and then regain control.</p>
+</li>
+<li><a id="%24obj-%3eFILENO(%24fh)"></a><strong>$obj-&gt;FILENO($fh)</strong>
+<p>Returns a numeric value for a Unix-like file descriptor. Returns -1 if
+there isn't one.  Optional.  Default is fileno($fh).</p>
+</li>
+<li><a id="%24obj-%3eREAD(%24buffer%2c%24len%2c%24fh)"></a><strong>$obj-&gt;READ($buffer,$len,$fh)</strong>
+<p>Returns the number of octets placed in $buffer (must be less than or
+equal to $len).  Optional.  Default is to use FILL instead.</p>
+</li>
+<li><a id="%24obj-%3eWRITE(%24buffer%2c%24fh)"></a><strong>$obj-&gt;WRITE($buffer,$fh)</strong>
+<p>Returns the number of octets from $buffer that have been successfully written.</p>
+</li>
+<li><a id="%24obj-%3eFILL(%24fh)"></a><strong>$obj-&gt;FILL($fh)</strong>
+<p>Should return a string to be placed in the buffer.  Optional. If not
+provided, must provide READ or reject handles open for reading in
+PUSHED.</p>
+</li>
+<li><a id="%24obj-%3eCLOSE(%24fh)"></a><strong>$obj-&gt;CLOSE($fh)</strong>
+<p>Should return 0 on success, -1 on error.
+Optional.</p>
+</li>
+<li><a id="%24obj-%3eSEEK(%24posn%2c%24whence%2c%24fh)"></a><strong>$obj-&gt;SEEK($posn,$whence,$fh)</strong>
+<p>Should return 0 on success, -1 on error.
+Optional.  Default is to fail, but that is likely to be changed
+in future.</p>
+</li>
+<li><a id="%24obj-%3eTELL(%24fh)"></a><strong>$obj-&gt;TELL($fh)</strong>
+<p>Returns file position.
+Optional.  Default to be determined.</p>
+</li>
+<li><a id="%24obj-%3eUNREAD(%24buffer%2c%24fh)"></a><strong>$obj-&gt;UNREAD($buffer,$fh)</strong>
+<p>Returns the number of octets from $buffer that have been successfully
+saved to be returned on future FILL/READ calls.  Optional.  Default is
+to push data into a temporary layer above this one.</p>
+</li>
+<li><a id="%24obj-%3eFLUSH(%24fh)"></a><strong>$obj-&gt;FLUSH($fh)</strong>
+<p>Flush any buffered write data.  May possibly be called on readable
+handles too.  Should return 0 on success, -1 on error.</p>
+</li>
+<li><a id="%24obj-%3eSETLINEBUF(%24fh)"></a><strong>$obj-&gt;SETLINEBUF($fh)</strong>
+<p>Optional. No return.</p>
+</li>
+<li><a id="%24obj-%3eCLEARERR(%24fh)"></a><strong>$obj-&gt;CLEARERR($fh)</strong>
+<p>Optional. No return.</p>
+</li>
+<li><a id="%24obj-%3eERROR(%24fh)"></a><strong>$obj-&gt;ERROR($fh)</strong>
+<p>Optional. Returns error state. Default is no error until a mechanism
+to signal error (die?) is worked out.</p>
+</li>
+<li><a id="%24obj-%3eEOF(%24fh)"></a><strong>$obj-&gt;EOF($fh)</strong>
+<p>Optional. Returns end-of-file state. Default is a function of the return
+value of FILL or READ.</p>
+</li>
+</ul>
+<a id="EXAMPLES"></a><h2 class='h2' >EXAMPLES</h2>
+<p>Check the PerlIO::via:: namespace on CPAN for examples of PerlIO layers
+implemented in Perl.  To give you an idea how simple the implementation of
+a PerlIO layer can look, a simple example is included here.</p>
+<a id="Example---a-Hexadecimal-Handle"></a><h3 class='h3' >Example - a Hexadecimal Handle</h3>
+<p>Given the following module, PerlIO::via::Hex :</p>
+<pre>
+<a name="package-PerlIO::via::Hex"></a>    package <span class="i">PerlIO::via::Hex</span><span class="sc">;</span>
+
+<a name="PUSHED"></a>    sub <span class="m">PUSHED</span>
+    <span class="s">{</span>
+     <a class="l_k" href="../functions/my.html">my</a> <span class="s">(</span><span class="i">$class</span><span class="cm">,</span><span class="i">$mode</span><span class="cm">,</span><span class="i">$fh</span><span class="s">)</span> = <span class="i">@_</span><span class="sc">;</span>
+     <span class="c"># When writing we buffer the data</span>
+     <a class="l_k" href="../functions/my.html">my</a> <span class="i">$buf</span> = <span class="q">&#39;&#39;</span><span class="sc">;</span>
+     <a class="l_k" href="../functions/return.html">return</a> <a class="l_k" href="../functions/bless.html">bless</a> \<span class="i">$buf</span><span class="cm">,</span><span class="i">$class</span><span class="sc">;</span>
+    <span class="s">}</span>
+
+<a name="FILL"></a>    sub <span class="m">FILL</span>
+    <span class="s">{</span>
+     <a class="l_k" href="../functions/my.html">my</a> <span class="s">(</span><span class="i">$obj</span><span class="cm">,</span><span class="i">$fh</span><span class="s">)</span> = <span class="i">@_</span><span class="sc">;</span>
+     <a class="l_k" href="../functions/my.html">my</a> <span class="i">$line</span> = <span class="q">&lt;$fh&gt;</span><span class="sc">;</span>
+     <a class="l_k" href="../functions/return.html">return</a> <span class="s">(</span><a class="l_k" href="../functions/defined.html">defined</a> <span class="i">$line</span><span class="s">)</span> ? <a class="l_k" href="../functions/pack.html">pack</a><span class="s">(</span><span class="q">&quot;H*&quot;</span><span class="cm">,</span> <span class="i">$line</span><span class="s">)</span> <span class="co">:</span> <a class="l_k" href="../functions/undef.html">undef</a><span class="sc">;</span>
+    <span class="s">}</span>
+
+<a name="WRITE"></a>    sub <span class="m">WRITE</span>
+    <span class="s">{</span>
+     <a class="l_k" href="../functions/my.html">my</a> <span class="s">(</span><span class="i">$obj</span><span class="cm">,</span><span class="i">$buf</span><span class="cm">,</span><span class="i">$fh</span><span class="s">)</span> = <span class="i">@_</span><span class="sc">;</span>
+     <span class="i">$$obj</span> .= <a class="l_k" href="../functions/unpack.html">unpack</a><span class="s">(</span><span class="q">&quot;H*&quot;</span><span class="cm">,</span> <span class="i">$buf</span><span class="s">)</span><span class="sc">;</span>
+     <a class="l_k" href="../functions/return.html">return</a> <a class="l_k" href="../functions/length.html">length</a><span class="s">(</span><span class="i">$buf</span><span class="s">)</span><span class="sc">;</span>
+    <span class="s">}</span>
+
+<a name="FLUSH"></a>    sub <span class="m">FLUSH</span>
+    <span class="s">{</span>
+     <a class="l_k" href="../functions/my.html">my</a> <span class="s">(</span><span class="i">$obj</span><span class="cm">,</span><span class="i">$fh</span><span class="s">)</span> = <span class="i">@_</span><span class="sc">;</span>
+     <a class="l_k" href="../functions/print.html">print</a> <span class="i">$fh</span> <span class="i">$$obj</span> <a class="l_k" href="../functions/or.html">or</a> <a class="l_k" href="../functions/return.html">return</a> <span class="n">-1</span><span class="sc">;</span>
+     <span class="i">$$obj</span> = <span class="q">&#39;&#39;</span><span class="sc">;</span>
+     <a class="l_k" href="../functions/return.html">return</a> <span class="n">0</span><span class="sc">;</span>
+    <span class="s">}</span>
+
+    <span class="n">1</span><span class="sc">;</span></pre>
+<p>The following code opens up an output handle that will convert any
+output to a hexadecimal dump of the output bytes: for example "A" will
+be converted to "41" (on ASCII-based machines, on EBCDIC platforms
+the "A" will become "c1")</p>
+<pre>
+    <a class="l_k" href="../functions/use.html">use</a> <span class="w">PerlIO::via::Hex</span><span class="sc">;</span>
+    <a class="l_k" href="../functions/open.html">open</a><span class="s">(</span><a class="l_k" href="../functions/my.html">my</a> <span class="i">$fh</span><span class="cm">,</span> <span class="q">&quot;&gt;:via(Hex)&quot;</span><span class="cm">,</span> <span class="q">&quot;foo.hex&quot;</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>and the following code will read the hexdump in and convert it
+on the fly back into bytes:</p>
+<pre>
+    <a class="l_k" href="../functions/open.html">open</a><span class="s">(</span><a class="l_k" href="../functions/my.html">my</a> <span class="i">$fh</span><span class="cm">,</span> <span class="q">&quot;&lt;:via(Hex)&quot;</span><span class="cm">,</span> <span class="q">&quot;foo.hex&quot;</span><span class="s">)</span><span class="sc">;</span></pre>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#EXPECTED-METHODS">EXPECTED METHODS</a></li><li><a href="#EXAMPLES">EXAMPLES</a></li><ul><li><a href="#Example---a-Hexadecimal-Handle">Example - a Hexadecimal Handle</a></li></ul></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

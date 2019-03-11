@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="pod2text - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>pod2text - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.24.4/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.24.4/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.24.4/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.24.4/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.24.4/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.24.4/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.24.4/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.24.4/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.24.4/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.24.4/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.24.4/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.24.4/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.24.4/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.24.4/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.24.4/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.24.4/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="index-utilities.html">Utilities</a> &gt;
+      
+    
+    pod2text
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 24.4 documentation</h1>
+                  </div>
+                  <h1>pod2text</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#OPTIONS">OPTIONS</a></li><li><a href="#EXIT-STATUS">EXIT STATUS</a></li><li><a href="#DIAGNOSTICS">DIAGNOSTICS</a></li><li><a href="#ENVIRONMENT">ENVIRONMENT</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#COPYRIGHT-AND-LICENSE">COPYRIGHT AND LICENSE</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>pod2text - Convert POD data to formatted ASCII text</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<p>pod2text [<strong>-aclostu</strong>] [<strong>--code</strong>] [<strong>--errors</strong>=<i>style</i>] [<strong>-i</strong> <i>indent</i>]
+    [<strong>-q</strong> <i>quotes</i>] [<strong>--nourls</strong>] [<strong>--stderr</strong>] [<strong>-w</strong> <i>width</i>]
+    [<i>input</i> [<i>output</i> ...]]</p>
+<p>pod2text <strong>-h</strong></p>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p><strong>pod2text</strong> is a front-end for Pod::Text and its subclasses.  It uses them
+to generate formatted ASCII text from POD source.  It can optionally use
+either termcap sequences or ANSI color escape sequences to format the text.</p>
+<p><i>input</i> is the file to read for POD source (the POD can be embedded in
+code).  If <i>input</i> isn't given, it defaults to <pre>
+<span class="w">STDIN</span></code>
+.  <i>output</i>, if
+given, is the file to which to write the formatted output.  If <i>output</i>
+isn't given, the formatted output is written to <pre>
+<span class="w">STDOUT</span></code>
+.  Several POD
+files can be processed in the same <strong>pod2text</strong> invocation (saving module
+load and compile times) by providing multiple pairs of <i>input</i> and
+<i>output</i> files on the command line.</p>
+<a id="OPTIONS"></a><h2 class='h2' >OPTIONS</h2>
+<ul>
+<li><a id="*-a*%2c-*--alt*"></a><strong><strong>-a</strong>, <strong>--alt</strong></strong>
+<p>Use an alternate output format that, among other things, uses a different
+heading style and marks <pre>
+<span class="pd">=item</span></code>
+ entries with a colon in the left margin.</p>
+</li>
+<li><a id="*--code*"></a><strong><strong>--code</strong></strong>
+<p>Include any non-POD text from the input file in the output as well.  Useful
+for viewing code documented with POD blocks with the POD rendered and the
+code left intact.</p>
+</li>
+<li><a id="*-c*%2c-*--color*"></a><strong><strong>-c</strong>, <strong>--color</strong></strong>
+<p>Format the output with ANSI color escape sequences.  Using this option
+requires that Term::ANSIColor be installed on your system.</p>
+</li>
+<li><a id="*--errors*%3d_style_"></a><strong><strong>--errors</strong>=<i>style</i></strong>
+<p>Set the error handling style.  <code class="inline"><a class="l_k" href="functions/die.html">die</a></code> says to throw an exception on any
+POD formatting error.  <pre>
+<span class="w">stderr</span></code>
+ says to report errors on standard error,
+but not to throw an exception.  <pre>
+<span class="w">pod</span></code>
+ says to include a POD ERRORS
+section in the resulting documentation summarizing the errors.  <pre>
+<span class="w">none</span></code>
+
+ignores POD errors entirely, as much as possible.</p>
+<p>The default is <code class="inline"><a class="l_k" href="functions/die.html">die</a></code>.</p>
+</li>
+<li><a id="*-i*-_indent_%2c-*--indent%3d*_indent_"></a><strong><strong>-i</strong> <i>indent</i>, <strong>--indent=</strong><i>indent</i></strong>
+<p>Set the number of spaces to indent regular text, and the default indentation
+for <pre>
+<span class="pd">=over</span></code>
+ blocks.  Defaults to 4 spaces if this option isn't given.</p>
+</li>
+<li><a id="*-h*%2c-*--help*"></a><strong><strong>-h</strong>, <strong>--help</strong></strong>
+<p>Print out usage information and exit.</p>
+</li>
+<li><a id="*-l*%2c-*--loose*"></a><strong><strong>-l</strong>, <strong>--loose</strong></strong>
+<p>Print a blank line after a <pre>
+<span class="pd">=head1</span></code>
+ heading.  Normally, no blank line is
+printed after <pre>
+<span class="pd">=head1</span></code>
+, although one is still printed after <pre>
+<span class="pd">=head2</span></code>
+,
+because this is the expected formatting for manual pages; if you're
+formatting arbitrary text documents, using this option is recommended.</p>
+</li>
+<li><a id="*-m*-_width_%2c-*--left-margin*%3d_width_%2c-*--margin*%3d_width_"></a><strong><strong>-m</strong> <i>width</i>, <strong>--left-margin</strong>=<i>width</i>, <strong>--margin</strong>=<i>width</i></strong>
+<p>The width of the left margin in spaces.  Defaults to 0.  This is the margin
+for all text, including headings, not the amount by which regular text is
+indented; for the latter, see <strong>-i</strong> option.</p>
+</li>
+<li><a id="*--nourls*"></a><strong><strong>--nourls</strong></strong>
+<p>Normally, L&lt;&gt; formatting codes with a URL but anchor text are formatted
+to show both the anchor text and the URL.  In other words:</p>
+<div class="verbatim"><ol><li>    L&lt;foo|http://example.com/&gt;</li></ol></div><p>is formatted as:</p>
+<pre>
+    <span class="w">foo</span> <span class="q">&lt;<a href="http://example.com/">http://example.com/</a>&gt;</span></pre>
+<p>This flag, if given, suppresses the URL when anchor text is given, so this
+example would be formatted as just <pre>
+<span class="w">foo</span></code>
+.  This can produce less
+cluttered output in cases where the URLs are not particularly important.</p>
+</li>
+<li><a id="*-o*%2c-*--overstrike*"></a><strong><strong>-o</strong>, <strong>--overstrike</strong></strong>
+<p>Format the output with overstrike printing.  Bold text is rendered as
+character, backspace, character.  Italics and file names are rendered as
+underscore, backspace, character.  Many pagers, such as <strong>less</strong>, know how
+to convert this to bold or underlined text.</p>
+</li>
+<li><a id="*-q*-_quotes_%2c-*--quotes*%3d_quotes_"></a><strong><strong>-q</strong> <i>quotes</i>, <strong>--quotes</strong>=<i>quotes</i></strong>
+<p>Sets the quote marks used to surround C&lt;&gt; text to <i>quotes</i>.  If
+<i>quotes</i> is a single character, it is used as both the left and right
+quote.  Otherwise, it is split in half, and the first half of the string
+is used as the left quote and the second is used as the right quote.</p>
+<p><i>quotes</i> may also be set to the special value <pre>
+<span class="w">none</span></code>
+, in which case no
+quote marks are added around C&lt;&gt; text.</p>
+</li>
+<li><a id="*-s*%2c-*--sentence*"></a><strong><strong>-s</strong>, <strong>--sentence</strong></strong>
+<p>Assume each sentence ends with two spaces and try to preserve that spacing.
+Without this option, all consecutive whitespace in non-verbatim paragraphs
+is compressed into a single space.</p>
+</li>
+<li><a id="*--stderr*"></a><strong><strong>--stderr</strong></strong>
+<p>By default, <strong>pod2text</strong> dies if any errors are detected in the POD input.
+If <strong>--stderr</strong> is given and no <strong>--errors</strong> flag is present, errors are
+sent to standard error, but <strong>pod2text</strong> does not abort.  This is
+equivalent to <pre>
+--<span class="w">errors</span>=<span class="w">stderr</span></code>
+ and is supported for backward
+compatibility.</p>
+</li>
+<li><a id="*-t*%2c-*--termcap*"></a><strong><strong>-t</strong>, <strong>--termcap</strong></strong>
+<p>Try to determine the width of the screen and the bold and underline
+sequences for the terminal from termcap, and use that information in
+formatting the output.  Output will be wrapped at two columns less than the
+width of your terminal device.  Using this option requires that your system
+have a termcap file somewhere where Term::Cap can find it and requires that
+your system support termios.  With this option, the output of <strong>pod2text</strong>
+will contain terminal control sequences for your current terminal type.</p>
+</li>
+<li><a id="*-u*%2c-*--utf8*"></a><strong><strong>-u</strong>, <strong>--utf8</strong></strong>
+<p>By default, <strong>pod2text</strong> tries to use the same output encoding as its input
+encoding (to be backward-compatible with older versions).  This option
+says to instead force the output encoding to UTF-8.</p>
+<p>Be aware that, when using this option, the input encoding of your POD
+source should be properly declared unless it's US-ASCII.  Pod::Simple
+will attempt to guess the encoding and may be successful if it's
+Latin-1 or UTF-8, but it will warn, which by default results in a
+<strong>pod2text</strong> failure.  Use the <pre>
+<span class="pd">=encoding</span></code>
+ command to declare the
+encoding.  See <i>perlpod(1)</i> for more information.</p>
+</li>
+<li><a id="*-w*%2c-*--width%3d*_width_%2c-*-*_width_"></a><strong><strong>-w</strong>, <strong>--width=</strong><i>width</i>, <strong>-</strong><i>width</i></strong>
+<p>The column at which to wrap text on the right-hand side.  Defaults to 76,
+unless <strong>-t</strong> is given, in which case it's two columns less than the width of
+your terminal device.</p>
+</li>
+</ul>
+<a id="EXIT-STATUS"></a><h2 class='h2' >EXIT STATUS</h2>
+<p>As long as all documents processed result in some output, even if that
+output includes errata (a <pre>
+<span class="w">POD</span> <span class="w">ERRORS</span></code>
+ section generated with
+<pre>
+--<span class="w">errors</span>=<span class="w">pod</span></code>
+), <strong>pod2text</strong> will exit with status 0.  If any of the
+documents being processed do not result in an output document, <strong>pod2text</strong>
+will exit with status 1.  If there are syntax errors in a POD document
+being processed and the error handling style is set to the default of
+<code class="inline"><a class="l_k" href="functions/die.html">die</a></code>, <strong>pod2text</strong> will abort immediately with exit status 255.</p>
+<a id="DIAGNOSTICS"></a><h2 class='h2' >DIAGNOSTICS</h2>
+<p>If <strong>pod2text</strong> fails with errors, see <a href="Pod/Text.html">Pod::Text</a> and <a href="Pod/Simple.html">Pod::Simple</a> for
+information about what those errors might mean.  Internally, it can also
+produce the following diagnostics:</p>
+<ul>
+<li><a id="-c-(--color)-requires-Term%3a%3aANSIColor-be-installed"></a><strong>-c (--color) requires Term::ANSIColor be installed</strong>
+<p>(F) <strong>-c</strong> or <strong>--color</strong> were given, but Term::ANSIColor could not be
+loaded.</p>
+</li>
+<li><a id="Unknown-option%3a-%25s"></a><strong>Unknown option: %s</strong>
+<p>(F) An unknown command line option was given.</p>
+</li>
+</ul>
+<p>In addition, other <a href="Getopt/Long.html">Getopt::Long</a> error messages may result from invalid
+command-line options.</p>
+<a id="ENVIRONMENT"></a><h2 class='h2' >ENVIRONMENT</h2>
+<ul>
+<li><a id="COLUMNS"></a><strong>COLUMNS</strong>
+<p>If <strong>-t</strong> is given, <strong>pod2text</strong> will take the current width of your screen
+from this environment variable, if available.  It overrides terminal width
+information in TERMCAP.</p>
+</li>
+<li><a id="TERMCAP"></a><strong>TERMCAP</strong>
+<p>If <strong>-t</strong> is given, <strong>pod2text</strong> will use the contents of this environment
+variable if available to determine the correct formatting sequences for your
+current terminal device.</p>
+</li>
+</ul>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<p><a href="Pod/Text.html">Pod::Text</a>, <a href="Pod/Text/Color.html">Pod::Text::Color</a>, <a href="Pod/Text/Overstrike.html">Pod::Text::Overstrike</a>,
+<a href="Pod/Text/Termcap.html">Pod::Text::Termcap</a>, <a href="Pod/Simple.html">Pod::Simple</a>, <i>perlpod(1)</i></p>
+<p>The current version of this script is always available from its web site at
+<a href="http://www.eyrie.org/~eagle/software/podlators/">http://www.eyrie.org/~eagle/software/podlators/</a>.  It is also part of the
+Perl core distribution as of 5.6.0.</p>
+<a id="AUTHOR"></a><h2 class='h2' >AUTHOR</h2>
+<p>Russ Allbery &lt;rra@cpan.org&gt;.</p>
+<a id="COPYRIGHT-AND-LICENSE"></a><h2 class='h2' >COPYRIGHT AND LICENSE</h2>
+<p>Copyright 1999, 2000, 2001, 2004, 2006, 2008, 2010, 2012, 2013, 2014, 2015,
+2016 Russ Allbery &lt;rra@cpan.org&gt;</p>
+<p>This program is free software; you may redistribute it and/or modify it
+under the same terms as Perl itself.</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#OPTIONS">OPTIONS</a></li><li><a href="#EXIT-STATUS">EXIT STATUS</a></li><li><a href="#DIAGNOSTICS">DIAGNOSTICS</a></li><li><a href="#ENVIRONMENT">ENVIRONMENT</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#COPYRIGHT-AND-LICENSE">COPYRIGHT AND LICENSE</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/24/4/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/4/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/4/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/4/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/24/4/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/4/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/4/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/4/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/24/4/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/4/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/4/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/24/4/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/4/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/4/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

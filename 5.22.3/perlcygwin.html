@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="perlcygwin - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>perlcygwin - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.22.3/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.22.3/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.22.3/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.22.3/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.22.3/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.22.3/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.22.3/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.22.3/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.22.3/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.22.3/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.22.3/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.22.3/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.22.3/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.22.3/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.22.3/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.22.3/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.22.3/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.22.3/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.22.3/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.22.3/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.22.3/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.22.3/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.22.3/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.22.3/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.22.3/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.22.3/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.22.3/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.22.3/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.22.3/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.22.3/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.22.3/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.22.3/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.22.3/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.22.3/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="index-platforms.html">Platform specific</a> &gt;
+      
+    
+    perlcygwin
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 22.3 documentation</h1>
+                  </div>
+                  <h1>perlcygwin</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#PREREQUISITES-FOR-COMPILING-PERL-ON-CYGWIN">PREREQUISITES FOR COMPILING PERL ON CYGWIN</a></li><ul><li><a href="#Cygwin-%3d-GNU%2bCygnus%2bWindows-(Don't-leave-UNIX-without-it)">Cygwin = GNU+Cygnus+Windows (Don't leave UNIX without it)</a></li><li><a href="#Cygwin-Configuration">Cygwin Configuration</a></li></ul><li><a href="#CONFIGURE-PERL-ON-CYGWIN">CONFIGURE PERL ON CYGWIN</a></li><ul><li><a href="#Stripping-Perl-Binaries-on-Cygwin">Stripping Perl Binaries on Cygwin</a></li><li><a href="#Optional-Libraries-for-Perl-on-Cygwin">Optional Libraries for Perl on Cygwin</a></li><li><a href="#Configure-time-Options-for-Perl-on-Cygwin">Configure-time Options for Perl on Cygwin</a></li><li><a href="#Suspicious-Warnings-on-Cygwin">Suspicious Warnings on Cygwin</a></li></ul><li><a href="#MAKE-ON-CYGWIN">MAKE ON CYGWIN</a></li><li><a href="#TEST-ON-CYGWIN">TEST ON CYGWIN</a></li><ul><li><a href="#File-Permissions-on-Cygwin">File Permissions on Cygwin</a></li><li><a href="#NDBM_File-and-ODBM_File-do-not-work-on-FAT-filesystems">NDBM_File and ODBM_File do not work on FAT filesystems</a></li><li><a href="#fork()-failures-in-io_*-tests">fork() failures in io_* tests</a></li></ul><li><a href="#Specific-features-of-the-Cygwin-port">Specific features of the Cygwin port</a></li><ul><li><a href="#Script-Portability-on-Cygwin">Script Portability on Cygwin</a></li><li><a href="#Prebuilt-methods%3a">Prebuilt methods:</a></li></ul><li><a href="#INSTALL-PERL-ON-CYGWIN">INSTALL PERL ON CYGWIN</a></li><li><a href="#MANIFEST-ON-CYGWIN">MANIFEST ON CYGWIN</a></li><li><a href="#BUGS-ON-CYGWIN">BUGS ON CYGWIN</a></li><li><a href="#AUTHORS">AUTHORS</a></li><li><a href="#HISTORY">HISTORY</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>perlcygwin - Perl for Cygwin</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<p>This document will help you configure, make, test and install Perl
+on Cygwin.  This document also describes features of Cygwin that will
+affect how Perl behaves at runtime.</p>
+<p><strong>NOTE:</strong> There are pre-built Perl packages available for Cygwin and a
+version of Perl is provided in the normal Cygwin install.  If you do
+not need to customize the configuration, consider using one of those
+packages.</p>
+<a id="PREREQUISITES-FOR-COMPILING-PERL-ON-CYGWIN"></a><h2 class='h2' >PREREQUISITES FOR COMPILING PERL ON CYGWIN</h2>
+<a id="Cygwin-%3d-GNU%2bCygnus%2bWindows-(Don't-leave-UNIX-without-it)"></a><h3 class='h3' >Cygwin = GNU+Cygnus+Windows (Don't leave UNIX without it)</h3>
+<p>The Cygwin tools are ports of the popular GNU development tools for Win32
+platforms.  They run thanks to the Cygwin library which provides the UNIX
+system calls and environment these programs expect.  More information
+about this project can be found at:</p>
+<p><a href="http://www.cygwin.com/">http://www.cygwin.com/</a></p>
+<p>A recent net or commercial release of Cygwin is required.</p>
+<p>At the time this document was last updated, Cygwin 1.7.16 was current.</p>
+<a id="Cygwin-Configuration"></a><h3 class='h3' >Cygwin Configuration</h3>
+<p>While building Perl some changes may be necessary to your Cygwin setup so
+that Perl builds cleanly.  These changes are <strong>not</strong> required for normal
+Perl usage.</p>
+<p><strong>NOTE:</strong> The binaries that are built will run on all Win32 versions.
+They do not depend on your host system (WinXP/Win2K/Win7) or your
+Cygwin configuration (binary/text mounts, cvgserver).
+The only dependencies come from hard-coded pathnames like <i>/usr/local</i>.
+However, your host system and Cygwin configuration will affect Perl's
+runtime behavior (see <a href="#TEST">TEST</a>).</p>
+<ul>
+<li><a id="*-PATH"></a><strong><pre>
+<span class="w">PATH</span></code>
+</strong>
+<p>Set the <pre>
+<span class="w">PATH</span></code>
+ environment variable so that Configure finds the Cygwin
+versions of programs. Any not-needed Windows directories should be removed or
+moved to the end of your <pre>
+<span class="w">PATH</span></code>
+.</p>
+</li>
+<li><a id="*-_nroff_"></a><strong><i>nroff</i></strong>
+<p>If you do not have <i>nroff</i> (which is part of the <i>groff</i> package),
+Configure will <strong>not</strong> prompt you to install <i>man</i> pages.</p>
+</li>
+</ul>
+<a id="CONFIGURE-PERL-ON-CYGWIN"></a><h2 class='h2' >CONFIGURE PERL ON CYGWIN</h2>
+<p>The default options gathered by Configure with the assistance of
+<i>hints/cygwin.sh</i> will build a Perl that supports dynamic loading
+(which requires a shared <i>cygperl5_16.dll</i>).</p>
+<p>This will run Configure and keep a record:</p>
+<div class="verbatim"><ol><li>  ./Configure 2&gt;&amp;1 | tee log.configure</li></ol></div><p>If you are willing to accept all the defaults run Configure with <strong>-de</strong>.
+However, several useful customizations are available.</p>
+<a id="Stripping-Perl-Binaries-on-Cygwin"></a><h3 class='h3' >Stripping Perl Binaries on Cygwin</h3>
+<p>It is possible to strip the EXEs and DLLs created by the build process.
+The resulting binaries will be significantly smaller.  If you want the
+binaries to be stripped, you can either add a <strong>-s</strong> option when Configure
+prompts you,</p>
+<div class="verbatim"><ol><li>  Any additional ld flags (NOT including libraries)? [none] -s</li><li>  Any special flags to pass to g++ to create a dynamically loaded library?</li><li>  [none] -s</li><li>  Any special flags to pass to gcc to use dynamic linking? [none] -s</li></ol></div><p>or you can edit <i>hints/cygwin.sh</i> and uncomment the relevant variables
+near the end of the file.</p>
+<a id="Optional-Libraries-for-Perl-on-Cygwin"></a><h3 class='h3' >Optional Libraries for Perl on Cygwin</h3>
+<p>Several Perl functions and modules depend on the existence of
+some optional libraries.  Configure will find them if they are
+installed in one of the directories listed as being used for library
+searches.  Pre-built packages for most of these are available from
+the Cygwin installer.</p>
+<ul>
+<li><a id="*--lcrypt"></a><strong><pre>
+-<span class="w">lcrypt</span></code>
+</strong>
+<p>The crypt package distributed with Cygwin is a Linux compatible 56-bit
+DES crypt port by Corinna Vinschen.</p>
+<p>Alternatively, the crypt libraries in GNU libc have been ported to Cygwin.</p>
+<p>As of libcrypt 1.3 (March 2016), you will need to install the
+libcrypt-devel package for Configure to detect crypt().</p>
+</li>
+<li><a id="*--lgdbm_compat-(use-GDBM_File)"></a><strong><pre>
+-<span class="w">lgdbm_compat</span></code>
+ (<pre>
+<a class="l_k" href="functions/use.html">use</a> <span class="w">GDBM_File</span></code>
+)</strong>
+<p>GDBM is available for Cygwin.</p>
+<p>NOTE: The GDBM library only works on NTFS partitions.</p>
+</li>
+<li><a id="*--ldb-(use-DB_File)"></a><strong><pre>
+-<span class="w">ldb</span></code>
+ (<pre>
+<a class="l_k" href="functions/use.html">use</a> <span class="w">DB_File</span></code>
+)</strong>
+<p>BerkeleyDB is available for Cygwin.</p>
+<p>NOTE: The BerkeleyDB library only completely works on NTFS partitions.</p>
+</li>
+<li><a id="*-cygserver-(use-IPC%3a%3aSysV)"></a><strong><pre>
+<span class="w">cygserver</span></code>
+ (<pre>
+<a class="l_k" href="functions/use.html">use</a> <span class="w">IPC::SysV</span></code>
+)</strong>
+<p>A port of SysV IPC is available for Cygwin.</p>
+<p>NOTE: This has <strong>not</strong> been extensively tested.  In particular,
+<pre>
+<span class="w">d_semctl_semun</span></code>
+ is undefined because it fails a Configure test
+and on Win9x the <i>shm*()</i> functions seem to hang.  It also creates
+a compile time dependency because <i>perl.h</i> includes <i>&lt;sys/ipc.h</i>&gt;
+and <i>&lt;sys/sem.h</i>&gt; (which will be required in the future when compiling
+CPAN modules). CURRENTLY NOT SUPPORTED!</p>
+</li>
+<li><a id="*--lutil"></a><strong><pre>
+-<span class="w">lutil</span></code>
+</strong>
+<p>Included with the standard Cygwin netrelease is the inetutils package
+which includes libutil.a.</p>
+</li>
+</ul>
+<a id="Configure-time-Options-for-Perl-on-Cygwin"></a><h3 class='h3' >Configure-time Options for Perl on Cygwin</h3>
+<p>The <i>INSTALL</i> document describes several Configure-time options.  Some of
+these will work with Cygwin, others are not yet possible.  Also, some of
+these are experimental.  You can either select an option when Configure
+prompts you or you can define (undefine) symbols on the command line.</p>
+<ul>
+<li><a id="*--Uusedl"></a><strong><pre>
+-<span class="w">Uusedl</span></code>
+</strong>
+<p>Undefining this symbol forces Perl to be compiled statically.</p>
+</li>
+<li><a id="*--Dusemymalloc"></a><strong><pre>
+-<span class="w">Dusemymalloc</span></code>
+</strong>
+<p>By default Perl does not use the <pre>
+<span class="i">malloc</span><span class="s">(</span><span class="s">)</span></code>
+ included with the Perl source,
+because it was slower and not entirely thread-safe.  If you want to force
+Perl to build with the old -Dusemymalloc define this.</p>
+</li>
+<li><a id="*--Uuseperlio"></a><strong><pre>
+-<span class="w">Uuseperlio</span></code>
+</strong>
+<p>Undefining this symbol disables the PerlIO abstraction.  PerlIO is now the
+default; it is not recommended to disable PerlIO.</p>
+</li>
+<li><a id="*--Dusemultiplicity"></a><strong><pre>
+-<span class="w">Dusemultiplicity</span></code>
+</strong>
+<p>Multiplicity is required when embedding Perl in a C program and using
+more than one interpreter instance.  This is only required when you build
+a not-threaded perl with <pre>
+-<span class="w">Uuseithreads</span></code>
+.</p>
+</li>
+<li><a id="*--Uuse64bitint"></a><strong><pre>
+-<span class="w">Uuse64bitint</span></code>
+</strong>
+<p>By default Perl uses 64 bit integers.  If you want to use smaller 32 bit
+integers, define this symbol.</p>
+</li>
+<li><a id="*--Duselongdouble"></a><strong><pre>
+-<span class="w">Duselongdouble</span></code>
+</strong>
+<p><i>gcc</i> supports long doubles (12 bytes).  However, several additional
+long double math functions are necessary to use them within Perl
+(<i>{atan2, cos, exp, floor, fmod, frexp, isnan, log, modf, pow, sin, sqrt}l,
+strtold</i>).
+These are <strong>not</strong> yet available with newlib, the Cygwin libc.</p>
+</li>
+<li><a id="*--Uuseithreads"></a><strong><pre>
+-<span class="w">Uuseithreads</span></code>
+</strong>
+<p>Define this symbol if you want not-threaded faster perl.</p>
+</li>
+<li><a id="*--Duselargefiles"></a><strong><pre>
+-<span class="w">Duselargefiles</span></code>
+</strong>
+<p>Cygwin uses 64-bit integers for internal size and position calculations,
+this will be correctly detected and defined by Configure.</p>
+</li>
+<li><a id="*--Dmksymlinks"></a><strong><pre>
+-<span class="w">Dmksymlinks</span></code>
+</strong>
+<p>Use this to build perl outside of the source tree.  Details can be
+found in the <i>INSTALL</i> document.  This is the recommended way to
+build perl from sources.</p>
+</li>
+</ul>
+<a id="Suspicious-Warnings-on-Cygwin"></a><h3 class='h3' >Suspicious Warnings on Cygwin</h3>
+<p>You may see some messages during Configure that seem suspicious.</p>
+<ul>
+<li><a id="*-Win9x-and-d_eofnblk"></a><strong>Win9x and <pre>
+<span class="w">d_eofnblk</span></code>
+</strong>
+<p>Win9x does not correctly report <pre>
+<span class="w">EOF</span></code>
+ with a non-blocking read on a
+closed pipe.  You will see the following messages:</p>
+<div class="verbatim"><ol><li>  But it also returns -1 to signal EOF, so be careful!</li><li>  WARNING: you can't distinguish between EOF and no data!</li><li></li><li>  *** WHOA THERE!!! ***</li><li>      The recommended value for $d_eofnblk on this machine was "define"!</li><li>      Keep the recommended value? [y]</li></ol></div><p>At least for consistency with WinNT, you should keep the recommended
+value.</p>
+</li>
+<li><a id="*-Compiler%2fPreprocessor-defines"></a><strong>Compiler/Preprocessor defines</strong>
+<p>The following error occurs because of the Cygwin <pre>
+<span class="c">#define</span></code>
+ of
+<pre>
+<span class="w">_LONG_DOUBLE</span></code>
+:</p>
+<div class="verbatim"><ol><li>  Guessing which symbols your C compiler and preprocessor define...</li><li>  try.c:&lt;line#&gt;: missing binary operator</li></ol></div><p>This failure does not seem to cause any problems.  With older gcc
+versions, "parse error" is reported instead of "missing binary
+operator".</p>
+</li>
+</ul>
+<a id="MAKE-ON-CYGWIN"></a><h2 class='h2' >MAKE ON CYGWIN</h2>
+<p>Simply run <i>make</i> and wait:</p>
+<pre>
+  <span class="w">make</span> <span class="n">2</span>&gt;<span class="i">&amp;1</span> | <span class="w">tee</span> <a class="l_k" href="functions/log.html">log</a>.<span class="w">make</span></pre>
+<a id="TEST-ON-CYGWIN"></a><h2 class='h2' >TEST ON CYGWIN</h2>
+<p>There are two steps to running the test suite:</p>
+<div class="verbatim"><ol><li>  make test 2&gt;&amp;1 | tee log.make-test</li><li></li><li>  cd t; ./perl harness 2&gt;&amp;1 | tee ../log.harness</li></ol></div><p>The same tests are run both times, but more information is provided when
+running as <code class="inline">./perl harness</code>.</p>
+<p>Test results vary depending on your host system and your Cygwin
+configuration.  If a test can pass in some Cygwin setup, it is always
+attempted and explainable test failures are documented.  It is possible
+for Perl to pass all the tests, but it is more likely that some tests
+will fail for one of the reasons listed below.</p>
+<a id="File-Permissions-on-Cygwin"></a><h3 class='h3' >File Permissions on Cygwin</h3>
+<p>UNIX file permissions are based on sets of mode bits for
+{read,write,execute} for each {user,group,other}.  By default Cygwin
+only tracks the Win32 read-only attribute represented as the UNIX file
+user write bit (files are always readable, files are executable if they
+have a <i>.{com,bat,exe}</i> extension or begin with <pre>
+<span class="c">#!</span></code>
+, directories are
+always readable and executable).  On WinNT with the <i>ntea</i> <pre>
+<span class="w">CYGWIN</span></code>
+
+setting, the additional mode bits are stored as extended file attributes.
+On WinNT with the default <i>ntsec</i> <pre>
+<span class="w">CYGWIN</span></code>
+ setting, permissions use the
+standard WinNT security descriptors and access control lists. Without one of
+these options, these tests will fail (listing not updated yet):</p>
+<div class="verbatim"><ol><li>  Failed Test           List of failed</li><li>  ------------------------------------</li><li>  io/fs.t               5, 7, 9-10</li><li>  lib/anydbm.t          2</li><li>  lib/db-btree.t        20</li><li>  lib/db-hash.t         16</li><li>  lib/db-recno.t        18</li><li>  lib/gdbm.t            2</li><li>  lib/ndbm.t            2</li><li>  lib/odbm.t            2</li><li>  lib/sdbm.t            2</li><li>  op/stat.t             9, 20 (.tmp not an executable extension)</li></ol></div><a id="NDBM_File-and-ODBM_File-do-not-work-on-FAT-filesystems"></a><h3 class='h3' >NDBM_File and ODBM_File do not work on FAT filesystems</h3>
+<p>Do not use NDBM_File or ODBM_File on FAT filesystem.  They can be
+built on a FAT filesystem, but many tests will fail:</p>
+<div class="verbatim"><ol><li> ../ext/NDBM_File/ndbm.t       13  3328    71   59  83.10%  1-2 4 16-71</li><li> ../ext/ODBM_File/odbm.t      255 65280    ??   ??       %  ??</li><li> ../lib/AnyDBM_File.t           2   512    12    2  16.67%  1 4</li><li> ../lib/Memoize/t/errors.t      0   139    11    5  45.45%  7-11</li><li> ../lib/Memoize/t/tie_ndbm.t   13  3328     4    4 100.00%  1-4</li><li> run/fresh_perl.t                          97    1   1.03%  91</li></ol></div><p>If you intend to run only on FAT (or if using AnyDBM_File on FAT),
+run Configure with the -Ui_ndbm and -Ui_dbm options to prevent
+NDBM_File and ODBM_File being built.</p>
+<p>With NTFS (and no CYGWIN=nontsec), there should be no problems even if
+perl was built on FAT.</p>
+<a id="fork()-failures-in-io_*-tests"></a><h3 class='h3' ><code class="inline"><a class="l_k" href="functions/fork.html">fork()</a></code> failures in io_* tests</h3>
+<p>A <code class="inline"><a class="l_k" href="functions/fork.html">fork()</a></code> failure may result in the following tests failing:</p>
+<pre>
+  <span class="w">ext</span>/<span class="w">IO</span>/<span class="w">lib</span>/<span class="w">IO</span>/<span class="w">t</span>/<span class="w">io_multihomed</span>.<span class="w">t</span>
+  <span class="w">ext</span>/<span class="w">IO</span>/<span class="w">lib</span>/<span class="w">IO</span>/<span class="w">t</span>/<span class="w">io_sock</span>.<span class="w">t</span>
+  <span class="w">ext</span>/<span class="w">IO</span>/<span class="w">lib</span>/<span class="w">IO</span>/<span class="w">t</span>/<span class="w">io_unix</span>.<span class="w">t</span></pre>
+<p>See comment on fork in <a href="#Miscellaneous">Miscellaneous</a> below.</p>
+<a id="Specific-features-of-the-Cygwin-port"></a><h2 class='h2' >Specific features of the Cygwin port</h2>
+<a id="Script-Portability-on-Cygwin"></a><h3 class='h3' >Script Portability on Cygwin</h3>
+<p>Cygwin does an outstanding job of providing UNIX-like semantics on top of
+Win32 systems.  However, in addition to the items noted above, there are
+some differences that you should know about.  This is a very brief guide
+to portability, more information can be found in the Cygwin documentation.</p>
+<ul>
+<li><a id="*-Pathnames"></a><strong>Pathnames</strong>
+<p>Cygwin pathnames are separated by forward (<i>/</i>) slashes, Universal
+Naming Codes (<i>//UNC</i>) are also supported Since cygwin-1.7 non-POSIX
+pathnames are discouraged.  Names may contain all printable
+characters.</p>
+<p>File names are case insensitive, but case preserving.  A pathname that
+contains a backslash or drive letter is a Win32 pathname, and not
+subject to the translations applied to POSIX style pathnames, but
+cygwin will warn you, so better convert them to POSIX.</p>
+<p>For conversion we have <pre>
+<span class="i">Cygwin::win_to_posix_path</span><span class="s">(</span><span class="s">)</span></code>
+ and
+<pre>
+<span class="i">Cygwin::posix_to_win_path</span><span class="s">(</span><span class="s">)</span></code>
+.</p>
+<p>Since cygwin-1.7 pathnames are UTF-8 encoded.</p>
+</li>
+<li><a id="*-Text%2fBinary"></a><strong>Text/Binary</strong>
+<p>Since cygwin-1.7 textmounts are deprecated and strongly discouraged.</p>
+<p>When a file is opened it is in either text or binary mode.  In text mode
+a file is subject to CR/LF/Ctrl-Z translations.  With Cygwin, the default
+mode for an <code class="inline"><a class="l_k" href="functions/open.html">open()</a></code> is determined by the mode of the mount that underlies
+the file. See <a href="#Cygwin%3a%3ais_binmount">Cygwin::is_binmount</a>(). Perl provides a <code class="inline"><a class="l_k" href="functions/binmode.html">binmode()</a></code> function
+to set binary mode on files that otherwise would be treated as text.
+<code class="inline"><a class="l_k" href="functions/sysopen.html">sysopen()</a></code> with the <pre>
+<span class="w">O_TEXT</span></code>
+ flag sets text mode on files that otherwise
+would be treated as binary:</p>
+<pre>
+    <a class="l_k" href="functions/sysopen.html">sysopen</a><span class="s">(</span><span class="w">FOO</span><span class="cm">,</span> <span class="q">&quot;bar&quot;</span><span class="cm">,</span> <span class="w">O_WRONLY</span>|<span class="w">O_CREAT</span>|<span class="w">O_TEXT</span><span class="s">)</span></pre>
+<p><pre>
+<span class="i">lseek</span><span class="s">(</span><span class="s">)</span></code>
+, <code class="inline"><a class="l_k" href="functions/tell.html">tell()</a></code> and <code class="inline"><a class="l_k" href="functions/sysseek.html">sysseek()</a></code> only work with files opened in binary
+mode.</p>
+<p>The text/binary issue is covered at length in the Cygwin documentation.</p>
+</li>
+<li><a id="*-PerlIO"></a><strong>PerlIO</strong>
+<p>PerlIO overrides the default Cygwin Text/Binary behaviour.  A file will
+always be treated as binary, regardless of the mode of the mount it lives
+on, just like it is in UNIX.  So CR/LF translation needs to be requested in
+either the <code class="inline"><a class="l_k" href="functions/open.html">open()</a></code> call like this:</p>
+<pre>
+  <a class="l_k" href="functions/open.html">open</a><span class="s">(</span><span class="w">FH</span><span class="cm">,</span> <span class="q">&quot;&gt;:crlf&quot;</span><span class="cm">,</span> <span class="q">&quot;out.txt&quot;</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>which will do conversion from LF to CR/LF on the output, or in the
+environment settings (add this to your .bashrc):</p>
+<pre>
+  <span class="w">export</span> <span class="w">PERLIO</span>=<span class="w">crlf</span></pre>
+<p>which will pull in the crlf PerlIO layer which does LF -&gt; CRLF conversion
+on every output generated by perl.</p>
+</li>
+<li><a id="*-_.exe_"></a><strong><i>.exe</i></strong>
+<p>The Cygwin <code class="inline"><a class="l_k" href="functions/stat.html">stat()</a></code>, <code class="inline"><a class="l_k" href="functions/lstat.html">lstat()</a></code> and <code class="inline"><a class="l_k" href="functions/readlink.html">readlink()</a></code> functions make the <i>.exe</i>
+extension transparent by looking for <i>foo.exe</i> when you ask for <i>foo</i>
+(unless a <i>foo</i> also exists).  Cygwin does not require a <i>.exe</i>
+extension, but <i>gcc</i> adds it automatically when building a program.
+However, when accessing an executable as a normal file (e.g., <i>cp</i>
+in a makefile) the <i>.exe</i> is not transparent.  The <i>install</i> program
+included with Cygwin automatically appends a <i>.exe</i> when necessary.</p>
+</li>
+<li><a id="*-Cygwin-vs.-Windows-process-ids"></a><strong>Cygwin vs. Windows process ids</strong>
+<p>Cygwin processes have their own pid, which is different from the
+underlying windows pid.  Most posix compliant Proc functions expect
+the cygwin pid, but several Win32::Process functions expect the
+winpid. E.g. <pre>
+<span class="i">$$</span></code>
+ is the cygwin pid of <i>/usr/bin/perl</i>, which is not
+the winpid.  Use <pre>
+<span class="i">Cygwin::pid_to_winpid</span><span class="s">(</span><span class="s">)</span></code>
+ and <pre>
+<span class="i">Cygwin::winpid_to_pid</span><span class="s">(</span><span class="s">)</span></code>
+
+to translate between them.</p>
+</li>
+<li><a id="*-Cygwin-vs.-Windows-errors"></a><strong>Cygwin vs. Windows errors</strong>
+<p>Under Cygwin, $^E is the same as $!.  When using <a href="https://search.cpan.org/perldoc/Win32">Win32 API Functions</a>,
+use <pre>
+<span class="i">Win32::GetLastError</span><span class="s">(</span><span class="s">)</span></code>
+ to get the last Windows error.</p>
+</li>
+<li><a id="*-rebase-errors-on-fork-or-system"></a><strong>rebase errors on fork or system</strong>
+<p>Using <code class="inline"><a class="l_k" href="functions/fork.html">fork()</a></code> or <code class="inline"><a class="l_k" href="functions/system.html">system()</a></code> out to another perl after loading multiple dlls
+may result on a DLL baseaddress conflict. The internal cygwin error
+looks like like the following:</p>
+<div class="verbatim"><ol><li>  0 [main] perl 8916 child_info_fork::abort: data segment start: parent</li><li>  (0xC1A000) != child(0xA6A000)</li></ol></div><p>or:</p>
+<div class="verbatim"><ol><li>  183 [main] perl 3588 C:\cygwin\bin\perl.exe: *** fatal error - unable to remap</li><li>  C:\cygwin\bin\cygsvn_subr-1-0.dll to same address as parent(0x6FB30000) != 0x6FE60000</li><li>  46 [main] perl 3488 fork: child 3588 - died waiting for dll loading, errno11</li></ol></div><p>See <a href="http://cygwin.com/faq/faq-nochunks.html#faq.using.fixing-fork-failures">http://cygwin.com/faq/faq-nochunks.html#faq.using.fixing-fork-failures</a>
+It helps if not too many DLLs are loaded in memory so the available address space is larger,
+e.g. stopping the MS Internet Explorer might help.</p>
+<p>Use the perlrebase or rebase utilities to resolve the conflicting dll addresses.
+The rebase package is included in the Cygwin setup. Use <i>setup.exe</i>
+from <a href="http://www.cygwin.com/setup.exe">http://www.cygwin.com/setup.exe</a> to install it.</p>
+<p>1. kill all perl processes and run <pre>
+<span class="w">perlrebase</span></code>
+ or</p>
+<p>2. kill all cygwin processes and services, start dash from cmd.exe and run <pre>
+<span class="w">rebaseall</span></code>
+.</p>
+</li>
+<li><a id="*-chown()"></a><strong><code class="inline"><a class="l_k" href="functions/chown.html">chown()</a></code></strong>
+<p>On WinNT <code class="inline"><a class="l_k" href="functions/chown.html">chown()</a></code> can change a file's user and group IDs.  On Win9x <code class="inline"><a class="l_k" href="functions/chown.html">chown()</a></code>
+is a no-op, although this is appropriate since there is no security model.</p>
+</li>
+<li><a id="*-Miscellaneous"></a><strong>Miscellaneous</strong>
+<p>File locking using the <pre>
+<span class="w">F_GETLK</span></code>
+ command to <code class="inline"><a class="l_k" href="functions/fcntl.html">fcntl()</a></code> is a stub that
+returns <pre>
+<span class="w">ENOSYS</span></code>
+.</p>
+<p>Win9x can not <code class="inline"><a class="l_k" href="functions/rename.html">rename()</a></code> an open file (although WinNT can).</p>
+<p>The Cygwin <code class="inline"><a class="l_k" href="functions/chroot.html">chroot()</a></code> implementation has holes (it can not restrict file
+access by native Win32 programs).</p>
+<p>Inplace editing <pre>
+<span class="w">perl</span> -<span class="w">i</span></code>
+ of files doesn't work without doing a backup
+of the file being edited <pre>
+<span class="w">perl</span> -<span class="w">i</span>.<span class="w">bak</span></code>
+ because of windowish restrictions,
+therefore Perl adds the suffix <code class="inline">.bak</code> automatically if you use <pre>
+<span class="w">perl</span> -<span class="w">i</span></code>
+
+without specifying a backup extension.</p>
+</li>
+</ul>
+<a id="Prebuilt-methods%3a"></a><h3 class='h3' >Prebuilt methods:</h3>
+<ul>
+<li><a id="Cwd%3a%3acwd"></a><strong><pre>
+<span class="w">Cwd::cwd</span></code>
+</strong>
+<p>Returns the current working directory.</p>
+</li>
+<li><a id="Cygwin%3a%3apid_to_winpid"></a><strong><pre>
+<span class="w">Cygwin::pid_to_winpid</span></code>
+</strong>
+<p>Translates a cygwin pid to the corresponding Windows pid (which may or
+may not be the same).</p>
+</li>
+<li><a id="Cygwin%3a%3awinpid_to_pid"></a><strong><pre>
+<span class="w">Cygwin::winpid_to_pid</span></code>
+</strong>
+<p>Translates a Windows pid to the corresponding cygwin pid (if any).</p>
+</li>
+<li><a id="Cygwin%3a%3awin_to_posix_path"></a><strong><pre>
+<span class="w">Cygwin::win_to_posix_path</span></code>
+</strong>
+<p>Translates a Windows path to the corresponding cygwin path respecting
+the current mount points. With a second non-null argument returns an
+absolute path. Double-byte characters will not be translated.</p>
+</li>
+<li><a id="Cygwin%3a%3aposix_to_win_path"></a><strong><pre>
+<span class="w">Cygwin::posix_to_win_path</span></code>
+</strong>
+<p>Translates a cygwin path to the corresponding cygwin path respecting
+the current mount points. With a second non-null argument returns an
+absolute path. Double-byte characters will not be translated.</p>
+</li>
+<li><a id="Cygwin%3a%3amount_table()"></a><strong><pre>
+<span class="i">Cygwin::mount_table</span><span class="s">(</span><span class="s">)</span></code>
+</strong>
+<p>Returns an array of [mnt_dir, mnt_fsname, mnt_type, mnt_opts].</p>
+<div class="verbatim"><ol><li>  perl -e 'for $i (Cygwin::mount_table) {print join(" ",@$i),"\n";}'</li><li>  /bin c:\cygwin\bin system binmode,cygexec</li><li>  /usr/bin c:\cygwin\bin system binmode</li><li>  /usr/lib c:\cygwin\lib system binmode</li><li>  / c:\cygwin system binmode</li><li>  /cygdrive/c c: system binmode,noumount</li><li>  /cygdrive/d d: system binmode,noumount</li><li>  /cygdrive/e e: system binmode,noumount</li></ol></div></li>
+<li><a id="Cygwin%3a%3amount_flags"></a><strong><pre>
+<span class="w">Cygwin::mount_flags</span></code>
+</strong>
+<p>Returns the mount type and flags for a specified mount point.
+A comma-separated string of mntent-&gt;mnt_type (always
+"system" or "user"), then the mntent-&gt;mnt_opts, where
+the first is always "binmode" or "textmode".</p>
+<pre>
+  <a class="l_k" href="functions/system.html">system</a>|<span class="w">user</span><span class="cm">,</span><a class="l_k" href="functions/binmode.html">binmode</a>|<span class="w">textmode</span><span class="cm">,</span><a class="l_k" href="functions/exec.html">exec</a><span class="cm">,</span><span class="w">cygexec</span><span class="cm">,</span><span class="w">cygdrive</span><span class="cm">,</span><span class="w">mixed</span><span class="cm">,</span>
+  <span class="w">notexec</span><span class="cm">,</span><span class="w">managed</span><span class="cm">,</span><span class="w">nosuid</span><span class="cm">,</span><span class="w">devfs</span><span class="cm">,</span><span class="w">proc</span><span class="cm">,</span><span class="w">noumount</span></pre>
+<p>If the argument is "/cygdrive", then just the volume mount settings,
+and the cygdrive mount prefix are returned.</p>
+<p>User mounts override system mounts.</p>
+<div class="verbatim"><ol><li>  $ perl -e 'print Cygwin::mount_flags "/usr/bin"'</li><li>  system,binmode,cygexec</li><li>  $ perl -e 'print Cygwin::mount_flags "/cygdrive"'</li><li>  binmode,cygdrive,/cygdrive</li></ol></div></li>
+<li><a id="Cygwin%3a%3ais_binmount"></a><strong><pre>
+<span class="w">Cygwin::is_binmount</span></code>
+</strong>
+<p>Returns true if the given cygwin path is binary mounted, false if the
+path is mounted in textmode.</p>
+</li>
+<li><a id="Cygwin%3a%3async_winenv"></a><strong><pre>
+<span class="w">Cygwin::sync_winenv</span></code>
+</strong>
+<p>Cygwin does not initialize all original Win32 environment variables.
+See the bottom of this page <a href="http://cygwin.com/cygwin-ug-net/setup-env.html">http://cygwin.com/cygwin-ug-net/setup-env.html</a>
+for "Restricted Win32 environment".</p>
+<p>Certain Win32 programs called from cygwin programs might need some environment
+variable, such as e.g. ADODB needs %COMMONPROGRAMFILES%.
+Call Cygwin::sync_winenv() to copy all Win32 environment variables to your
+process and note that cygwin will warn on every encounter of non-POSIX paths.</p>
+</li>
+</ul>
+<a id="INSTALL-PERL-ON-CYGWIN"></a><h2 class='h2' >INSTALL PERL ON CYGWIN</h2>
+<p>This will install Perl, including <i>man</i> pages.</p>
+<pre>
+  <span class="w">make</span> <span class="w">install</span> <span class="n">2</span>&gt;<span class="i">&amp;1</span> | <span class="w">tee</span> <a class="l_k" href="functions/log.html">log</a>.<span class="w">make</span>-<span class="w">install</span></pre>
+<p>NOTE: If <pre>
+<span class="w">STDERR</span></code>
+ is redirected <pre>
+<span class="w">make</span> <span class="w">install</span></code>
+ will <strong>not</strong> prompt
+you to install <i>perl</i> into <i>/usr/bin</i>.</p>
+<p>You may need to be <i>Administrator</i> to run <pre>
+<span class="w">make</span> <span class="w">install</span></code>
+.  If you
+are not, you must have write access to the directories in question.</p>
+<p>Information on installing the Perl documentation in HTML format can be
+found in the <i>INSTALL</i> document.</p>
+<a id="MANIFEST-ON-CYGWIN"></a><h2 class='h2' >MANIFEST ON CYGWIN</h2>
+<p>These are the files in the Perl release that contain references to Cygwin.
+These very brief notes attempt to explain the reason for all conditional
+code.  Hopefully, keeping this up to date will allow the Cygwin port to
+be kept as clean as possible.</p>
+<ul>
+<li><a id="Documentation"></a><strong>Documentation</strong>
+<div class="verbatim"><ol><li>  INSTALL README.cygwin README.win32 MANIFEST</li><li>  pod/perl.pod pod/perlport.pod pod/perlfaq3.pod</li><li>  pod/perldelta.pod pod/perl5004delta.pod pod/perl56delta.pod</li><li>  pod/perl561delta.pod pod/perl570delta.pod pod/perl572delta.pod</li><li>  pod/perl573delta.pod pod/perl58delta.pod pod/perl581delta.pod</li><li>  pod/perl590delta.pod pod/perlhist.pod pod/perlmodlib.pod</li><li>  pod/perltoc.pod Porting/Glossary pod/perlgit.pod</li><li>  Porting/checkAUTHORS.pl</li><li>  dist/Cwd/Changes ext/Compress-Raw-Zlib/Changes</li><li>  ext/Compress-Raw-Zlib/README ext/Compress-Zlib/Changes</li><li>  ext/DB_File/Changes ext/Encode/Changes ext/Sys-Syslog/Changes</li><li>  ext/Time-HiRes/Changes ext/Win32API-File/Changes</li><li>  lib/ExtUtils/CBuilder/Changes lib/ExtUtils/Changes lib/ExtUtils/NOTES</li><li>  lib/ExtUtils/PATCHING lib/ExtUtils/README</li><li>  lib/Net/Ping/Changes lib/Test/Harness/Changes</li><li>  lib/Term/ANSIColor/ChangeLog lib/Term/ANSIColor/README README.symbian</li><li>  symbian/TODO</li></ol></div></li>
+<li><a id="Build%2c-Configure%2c-Make%2c-Install"></a><strong>Build, Configure, Make, Install</strong>
+<div class="verbatim"><ol><li>  cygwin/Makefile.SHs</li><li>  ext/IPC/SysV/hints/cygwin.pl</li><li>  ext/NDBM_File/hints/cygwin.pl</li><li>  ext/ODBM_File/hints/cygwin.pl</li><li>  hints/cygwin.sh</li><li>  Configure             - help finding hints from uname,</li><li>                          shared libperl required for dynamic loading</li><li>  Makefile.SH Cross/Makefile-cross-SH</li><li>                        - linklibperl</li><li>  Porting/patchls       - cygwin in port list</li><li>  installman            - man pages with :: translated to .</li><li>  installperl           - install dll, install to 'pods'</li><li>  makedepend.SH         - uwinfix</li><li>  regen_lib.pl          - file permissions</li><li></li><li>  NetWare/Makefile</li><li>  plan9/mkfile</li><li>  symbian/sanity.pl symbian/sisify.pl</li><li>  hints/uwin.sh</li><li>  vms/descrip_mms.template</li><li>  win32/Makefile win32/makefile.mk</li></ol></div></li>
+<li><a id="Tests"></a><strong>Tests</strong>
+<div class="verbatim"><ol><li>  t/io/fs.t             - no file mode checks if not ntsec</li><li>                          skip rename() check when not check_case:relaxed</li><li>  t/io/tell.t           - binmode</li><li>  t/lib/cygwin.t        - builtin cygwin function tests</li><li>  t/op/groups.t         - basegroup has ID = 0</li><li>  t/op/magic.t          - $^X/symlink WORKAROUND, s/.exe//</li><li>  t/op/stat.t           - no /dev, skip Win32 ftCreationTime quirk</li><li>                          (cache manager sometimes preserves ctime of file</li><li>                          previously created and deleted), no -u (setuid)</li><li>  t/op/taint.t          - can't use empty path under Cygwin Perl</li><li>  t/op/time.t           - no tzset()</li></ol></div></li>
+<li><a id="Compiled-Perl-Source"></a><strong>Compiled Perl Source</strong>
+<div class="verbatim"><ol><li>  EXTERN.h              - __declspec(dllimport)</li><li>  XSUB.h                - __declspec(dllexport)</li><li>  cygwin/cygwin.c       - os_extras (getcwd, spawn, and several Cygwin:: functions)</li><li>  perl.c                - os_extras, -i.bak</li><li>  perl.h                - binmode</li><li>  doio.c                - win9x can not rename a file when it is open</li><li>  pp_sys.c              - do not define h_errno, init _pwent_struct.pw_comment</li><li>  util.c                - use setenv</li><li>  util.h                - PERL_FILE_IS_ABSOLUTE macro</li><li>  pp.c                  - Comment about Posix vs IEEE math under Cygwin</li><li>  perlio.c              - CR/LF mode</li><li>  perliol.c             - Comment about EXTCONST under Cygwin</li></ol></div></li>
+<li><a id="Compiled-Module-Source"></a><strong>Compiled Module Source</strong>
+<pre>
+  <span class="w">ext</span>/<span class="w">Compress</span>-<span class="w">Raw</span>-<span class="w">Zlib</span>/<span class="w">Makefile</span>.<span class="w">PL</span>
+                        - <span class="w">Can&#39;t</span> <span class="w">install</span> <span class="w">via</span> <span class="w">CPAN</span> <span class="w">shell</span> <span class="w">under</span> <span class="w">Cygwin</span>
+  <span class="w">ext</span>/<span class="w">Compress</span>-<span class="w">Raw</span>-<span class="w">Zlib</span>/<span class="w">zlib</span>-<span class="w">src</span>/<span class="w">zutil</span>.<span class="w">h</span>
+                        - <span class="w">Cygwin</span> <span class="w">is</span> <span class="w">Unix</span>-<span class="w">like</span> <a class="l_k" href="functions/and.html">and</a> <span class="w">has</span> <span class="w">vsnprintf</span>
+  <span class="w">ext</span>/<span class="w">Errno</span>/<span class="w">Errno_pm</span>.<span class="w">PL</span> - <span class="w">Special</span> <span class="w">handling</span> <a class="l_k" href="functions/for.html">for</a> <span class="w">Win32</span> <span class="w">Perl</span> <span class="w">under</span> <span class="w">Cygwin</span>
+  <span class="w">ext</span>/<span class="w">POSIX</span>/<span class="w">POSIX</span>.<span class="w">xs</span>    - <span class="w">tzname</span> <a class="l_k" href="functions/defined.html">defined</a> <span class="w">externally</span>
+  <span class="w">ext</span>/<span class="w">SDBM_File</span>/<span class="w">sdbm</span>/<span class="w">pair</span>.<span class="w">c</span>
+                        - <span class="w">EXTCONST</span> <span class="w">needs</span> <span class="w">to</span> <span class="w">be</span> <span class="w">redefined</span> <span class="w">from</span> <span class="w">EXTERN</span>.<span class="w">h</span>
+  <span class="w">ext</span>/<span class="w">SDBM_File</span>/<span class="w">sdbm</span>/<span class="w">sdbm</span>.<span class="w">c</span>
+                        - <span class="w">binary</span> <a class="l_k" href="functions/open.html">open</a>
+  <span class="w">ext</span>/<span class="w">Sys</span>/<span class="w">Syslog</span>/<span class="w">Syslog</span>.<span class="w">xs</span>
+                        - <span class="w">Cygwin</span> <span class="w">has</span> <span class="w">syslog</span>.<span class="w">h</span>
+  <span class="w">ext</span>/<span class="w">Sys</span>/<span class="w">Syslog</span>/<span class="w">win32</span>/<span class="w">compile</span>.<span class="w">pl</span>
+                        - <span class="w">Convert</span> <span class="w">paths</span> <span class="w">to</span> <span class="w">Windows</span> <span class="w">paths</span>
+  <span class="w">ext</span>/<span class="w">Time</span>-<span class="w">HiRes</span>/<span class="w">HiRes</span>.<span class="w">xs</span>
+                        - <span class="w">Various</span> <span class="w">timers</span> <a class="l_k" href="functions/not.html">not</a> <span class="w">available</span>
+  <span class="w">ext</span>/<span class="w">Time</span>-<span class="w">HiRes</span>/<span class="w">Makefile</span>.<span class="w">PL</span>
+                        - <span class="w">Find</span> <span class="w">w32api</span>/<span class="w">windows</span>.<span class="w">h</span>
+  <span class="w">ext</span>/<span class="w">Win32</span>/<span class="w">Makefile</span>.<span class="w">PL</span> - <span class="w">Use</span> <span class="w">various</span> <span class="w">libraries</span> <span class="w">under</span> <span class="w">Cygwin</span>
+  <span class="w">ext</span>/<span class="w">Win32</span>/<span class="w">Win32</span>.<span class="w">xs</span>    - <span class="w">Child</span> <span class="w">dir</span> <a class="l_k" href="functions/and.html">and</a> <span class="w">child</span> <span class="w">env</span> <span class="w">under</span> <span class="w">Cygwin</span>
+  <span class="w">ext</span>/<span class="w">Win32API</span>-<span class="w">File</span>/<span class="w">File</span>.<span class="w">xs</span>
+                        - <span class="w">_open_osfhandle</span> <a class="l_k" href="functions/not.html">not</a> <span class="w">implemented</span> <span class="w">under</span> <span class="w">Cygwin</span>
+  <span class="w">ext</span>/<span class="w">Win32CORE</span>/<span class="w">Win32CORE</span>.<span class="w">c</span>
+                        - <span class="i">__declspec</span><span class="s">(</span><span class="w">dllexport</span><span class="s">)</span></pre>
+</li>
+<li><a id="Perl-Modules%2fScripts"></a><strong>Perl Modules/Scripts</strong>
+<div class="verbatim"><ol><li>  ext/B/t/OptreeCheck.pm - Comment about stderr/stdout order under Cygwin</li><li>  ext/Digest-SHA/bin/shasum</li><li>                        - Use binary mode under Cygwin</li><li>  ext/Sys/Syslog/win32/Win32.pm</li><li>                        - Convert paths to Windows paths</li><li>  ext/Time-HiRes/HiRes.pm</li><li>                        - Comment about various timers not available</li><li>  ext/Win32API-File/File.pm</li><li>                        - _open_osfhandle not implemented under Cygwin</li><li>  ext/Win32CORE/Win32CORE.pm</li><li>                        - History of Win32CORE under Cygwin</li><li>  lib/Cwd.pm            - hook to internal Cwd::cwd</li><li>  lib/ExtUtils/CBuilder/Platform/cygwin.pm</li><li>                        - use gcc for ld, and link to libperl.dll.a</li><li>  lib/ExtUtils/CBuilder.pm</li><li>                        - Cygwin is Unix-like</li><li>  lib/ExtUtils/Install.pm - Install and rename issues under Cygwin</li><li>  lib/ExtUtils/MM.pm    - OS classifications</li><li>  lib/ExtUtils/MM_Any.pm - Example for Cygwin</li><li>  lib/ExtUtils/MakeMaker.pm</li><li>                        - require MM_Cygwin.pm</li><li>  lib/ExtUtils/MM_Cygwin.pm</li><li>                        - canonpath, cflags, manifypods, perl_archive</li><li>  lib/File/Fetch.pm     - Comment about quotes using a Cygwin example</li><li>  lib/File/Find.pm      - on remote drives stat() always sets st_nlink to 1</li><li>  lib/File/Spec/Cygwin.pm - case_tolerant</li><li>  lib/File/Spec/Unix.pm - preserve //unc</li><li>  lib/File/Spec/Win32.pm - References a message on cygwin.com</li><li>  lib/File/Spec.pm      - Pulls in lib/File/Spec/Cygwin.pm</li><li>  lib/File/Temp.pm      - no directory sticky bit</li><li>  lib/Module/CoreList.pm - List of all module files and versions</li><li>  lib/Net/Domain.pm     - No domainname command under Cygwin</li><li>  lib/Net/Netrc.pm      - Bypass using stat() under Cygwin</li><li>  lib/Net/Ping.pm       - ECONREFUSED is EAGAIN under Cygwin</li><li>  lib/Pod/Find.pm       - Set 'pods' dir</li><li>  lib/Pod/Perldoc/ToMan.pm - '-c' switch for pod2man</li><li>  lib/Pod/Perldoc.pm    - Use 'less' pager, and use .exe extension</li><li>  lib/Term/ANSIColor.pm - Cygwin terminal info</li><li>  lib/perl5db.pl        - use stdin not /dev/tty</li><li>  utils/perlbug.PL      - Add CYGWIN environment variable to report</li></ol></div></li>
+<li><a id="Perl-Module-Tests"></a><strong>Perl Module Tests</strong>
+<div class="verbatim"><ol><li>  dist/Cwd/t/cwd.t</li><li>  ext/Compress-Zlib/t/14gzopen.t</li><li>  ext/DB_File/t/db-btree.t</li><li>  ext/DB_File/t/db-hash.t</li><li>  ext/DB_File/t/db-recno.t</li><li>  ext/DynaLoader/t/DynaLoader.t</li><li>  ext/File-Glob/t/basic.t</li><li>  ext/GDBM_File/t/gdbm.t</li><li>  ext/POSIX/t/sysconf.t</li><li>  ext/POSIX/t/time.t</li><li>  ext/SDBM_File/t/sdbm.t</li><li>  ext/Sys/Syslog/t/syslog.t</li><li>  ext/Time-HiRes/t/HiRes.t</li><li>  ext/Win32/t/Unicode.t</li><li>  ext/Win32API-File/t/file.t</li><li>  ext/Win32CORE/t/win32core.t</li><li>  lib/AnyDBM_File.t</li><li>  lib/Archive/Extract/t/01_Archive-Extract.t</li><li>  lib/Archive/Tar/t/02_methods.t</li><li>  lib/ExtUtils/t/Embed.t</li><li>  lib/ExtUtils/t/eu_command.t</li><li>  lib/ExtUtils/t/MM_Cygwin.t</li><li>  lib/ExtUtils/t/MM_Unix.t</li><li>  lib/File/Compare.t</li><li>  lib/File/Copy.t</li><li>  lib/File/Find/t/find.t</li><li>  lib/File/Path.t</li><li>  lib/File/Spec/t/crossplatform.t</li><li>  lib/File/Spec/t/Spec.t</li><li>  lib/Net/hostent.t</li><li>  lib/Net/Ping/t/110_icmp_inst.t</li><li>  lib/Net/Ping/t/500_ping_icmp.t</li><li>  lib/Net/t/netrc.t</li><li>  lib/Pod/Simple/t/perlcyg.pod</li><li>  lib/Pod/Simple/t/perlcygo.txt</li><li>  lib/Pod/Simple/t/perlfaq.pod</li><li>  lib/Pod/Simple/t/perlfaqo.txt</li><li>  lib/User/grent.t</li><li>  lib/User/pwent.t</li></ol></div></li>
+</ul>
+<a id="BUGS-ON-CYGWIN"></a><h2 class='h2' >BUGS ON CYGWIN</h2>
+<p>Support for swapping real and effective user and group IDs is incomplete.
+On WinNT Cygwin provides <pre>
+<span class="i">setuid</span><span class="s">(</span><span class="s">)</span></code>
+, <pre>
+<span class="i">seteuid</span><span class="s">(</span><span class="s">)</span></code>
+, <pre>
+<span class="i">setgid</span><span class="s">(</span><span class="s">)</span></code>
+ and <pre>
+<span class="i">setegid</span><span class="s">(</span><span class="s">)</span></code>
+.
+However, additional Cygwin calls for manipulating WinNT access tokens
+and security contexts are required.</p>
+<a id="AUTHORS"></a><h2 class='h2' >AUTHORS</h2>
+<p>Charles Wilson &lt;cwilson@ece.gatech.edu&gt;,
+Eric Fifer &lt;egf7@columbia.edu&gt;,
+alexander smishlajev &lt;als@turnhere.com&gt;,
+Steven Morlock &lt;newspost@morlock.net&gt;,
+Sebastien Barre &lt;Sebastien.Barre@utc.fr&gt;,
+Teun Burgers &lt;burgers@ecn.nl&gt;,
+Gerrit P. Haase &lt;gp@familiehaase.de&gt;,
+Reini Urban &lt;rurban@cpan.org&gt;,
+Jan Dubois &lt;jand@activestate.com&gt;,
+Jerry D. Hedden &lt;jdhedden@cpan.org&gt;.</p>
+<a id="HISTORY"></a><h2 class='h2' >HISTORY</h2>
+<p>Last updated: 2012-02-08</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#PREREQUISITES-FOR-COMPILING-PERL-ON-CYGWIN">PREREQUISITES FOR COMPILING PERL ON CYGWIN</a></li><ul><li><a href="#Cygwin-%3d-GNU%2bCygnus%2bWindows-(Don't-leave-UNIX-without-it)">Cygwin = GNU+Cygnus+Windows (Don't leave UNIX without it)</a></li><li><a href="#Cygwin-Configuration">Cygwin Configuration</a></li></ul><li><a href="#CONFIGURE-PERL-ON-CYGWIN">CONFIGURE PERL ON CYGWIN</a></li><ul><li><a href="#Stripping-Perl-Binaries-on-Cygwin">Stripping Perl Binaries on Cygwin</a></li><li><a href="#Optional-Libraries-for-Perl-on-Cygwin">Optional Libraries for Perl on Cygwin</a></li><li><a href="#Configure-time-Options-for-Perl-on-Cygwin">Configure-time Options for Perl on Cygwin</a></li><li><a href="#Suspicious-Warnings-on-Cygwin">Suspicious Warnings on Cygwin</a></li></ul><li><a href="#MAKE-ON-CYGWIN">MAKE ON CYGWIN</a></li><li><a href="#TEST-ON-CYGWIN">TEST ON CYGWIN</a></li><ul><li><a href="#File-Permissions-on-Cygwin">File Permissions on Cygwin</a></li><li><a href="#NDBM_File-and-ODBM_File-do-not-work-on-FAT-filesystems">NDBM_File and ODBM_File do not work on FAT filesystems</a></li><li><a href="#fork()-failures-in-io_*-tests">fork() failures in io_* tests</a></li></ul><li><a href="#Specific-features-of-the-Cygwin-port">Specific features of the Cygwin port</a></li><ul><li><a href="#Script-Portability-on-Cygwin">Script Portability on Cygwin</a></li><li><a href="#Prebuilt-methods%3a">Prebuilt methods:</a></li></ul><li><a href="#INSTALL-PERL-ON-CYGWIN">INSTALL PERL ON CYGWIN</a></li><li><a href="#MANIFEST-ON-CYGWIN">MANIFEST ON CYGWIN</a></li><li><a href="#BUGS-ON-CYGWIN">BUGS ON CYGWIN</a></li><li><a href="#AUTHORS">AUTHORS</a></li><li><a href="#HISTORY">HISTORY</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/3/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/3/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/3/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/3/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/3/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/3/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/3/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/3/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/3/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/3/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/3/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/3/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/3/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/3/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

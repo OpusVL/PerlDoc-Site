@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="h2ph - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>h2ph - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.22.1/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.22.1/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.22.1/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.22.1/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.22.1/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.22.1/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.22.1/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.22.1/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.22.1/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.22.1/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.22.1/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.22.1/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.22.1/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.22.1/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.22.1/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="index-utilities.html">Utilities</a> &gt;
+      
+    
+    h2ph
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 22.1 documentation</h1>
+                  </div>
+                  <h1>h2ph</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#OPTIONS">OPTIONS</a></li><li><a href="#ENVIRONMENT">ENVIRONMENT</a></li><li><a href="#FILES">FILES</a></li><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#DIAGNOSTICS">DIAGNOSTICS</a></li><li><a href="#BUGS">BUGS</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>h2ph - convert .h C header files to .ph Perl header files</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<p><strong>h2ph [-d destination directory] [-r | -a] [-l] [-h] [-e] [-D] [-Q]
+[headerfiles]</strong></p>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p><i>h2ph</i>
+converts any C header files specified to the corresponding Perl header file
+format.
+It is most easily run while in /usr/include:</p>
+<div class="verbatim"><ol><li>	cd /usr/include; h2ph * sys/*</li></ol></div><p>or</p>
+<div class="verbatim"><ol><li>	cd /usr/include; h2ph * sys/* arpa/* netinet/*</li></ol></div><p>or</p>
+<div class="verbatim"><ol><li>	cd /usr/include; h2ph -r -l .</li></ol></div><p>The output files are placed in the hierarchy rooted at Perl's
+architecture dependent library directory.  You can specify a different
+hierarchy with a <strong>-d</strong> switch.</p>
+<p>If run with no arguments, filters standard input to standard output.</p>
+<a id="OPTIONS"></a><h2 class='h2' >OPTIONS</h2>
+<ul>
+<li><a id="-d-destination_dir"></a><strong>-d destination_dir</strong>
+<p>Put the resulting <strong>.ph</strong> files beneath <strong>destination_dir</strong>, instead of
+beneath the default Perl library location (<pre>
+<span class="i">$Config</span>{<span class="q">&#39;installsitearch&#39;</span>}</code>
+).</p>
+</li>
+<li><a id="-r"></a><strong>-r</strong>
+<p>Run recursively; if any of <strong>headerfiles</strong> are directories, then run <i>h2ph</i>
+on all files in those directories (and their subdirectories, etc.).  <strong>-r</strong>
+and <strong>-a</strong> are mutually exclusive.</p>
+</li>
+<li><a id="-a"></a><strong>-a</strong>
+<p>Run automagically; convert <strong>headerfiles</strong>, as well as any <strong>.h</strong> files
+which they include.  This option will search for <strong>.h</strong> files in all
+directories which your C compiler ordinarily uses.  <strong>-a</strong> and <strong>-r</strong> are
+mutually exclusive.</p>
+</li>
+<li><a id="-l"></a><strong>-l</strong>
+<p>Symbolic links will be replicated in the destination directory.  If <strong>-l</strong>
+is not specified, then links are skipped over.</p>
+</li>
+<li><a id="-h"></a><strong>-h</strong>
+<p>Put 'hints' in the .ph files which will help in locating problems with
+<i>h2ph</i>.  In those cases when you <strong>require</strong> a <strong>.ph</strong> file containing syntax
+errors, instead of the cryptic</p>
+<div class="verbatim"><ol><li>	[ some error condition ] at (eval mmm) line nnn</li></ol></div><p>you will see the slightly more helpful</p>
+<pre>
+	<span class="s">[</span> <span class="w">some</span> <span class="w">error</span> <span class="w">condition</span> <span class="s">]</span> <span class="w">at</span> <span class="w">filename</span>.<span class="w">ph</span> <span class="w">line</span> <span class="w">nnn</span></pre>
+<p>However, the <strong>.ph</strong> files almost double in size when built using <strong>-h</strong>.</p>
+</li>
+<li><a id="-e"></a><strong>-e</strong>
+<p>If an error is encountered during conversion, output file will be removed and
+a warning emitted instead of terminating the conversion immediately.</p>
+</li>
+<li><a id="-D"></a><strong>-D</strong>
+<p>Include the code from the <strong>.h</strong> file as a comment in the <strong>.ph</strong> file.
+This is primarily used for debugging <i>h2ph</i>.</p>
+</li>
+<li><a id="-Q"></a><strong>-Q</strong>
+<p>'Quiet' mode; don't print out the names of the files being converted.</p>
+</li>
+</ul>
+<a id="ENVIRONMENT"></a><h2 class='h2' >ENVIRONMENT</h2>
+<p>No environment variables are used.</p>
+<a id="FILES"></a><h2 class='h2' >FILES</h2>
+<div class="verbatim"><ol><li> /usr/include/*.h</li><li> /usr/include/sys/*.h</li></ol></div><p>etc.</p>
+<a id="AUTHOR"></a><h2 class='h2' >AUTHOR</h2>
+<p>Larry Wall</p>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<p>perl(1)</p>
+<a id="DIAGNOSTICS"></a><h2 class='h2' >DIAGNOSTICS</h2>
+<p>The usual warnings if it can't read or write the files involved.</p>
+<a id="BUGS"></a><h2 class='h2' >BUGS</h2>
+<p>Doesn't construct the %sizeof array for you.</p>
+<p>It doesn't handle all C constructs, but it does attempt to isolate
+definitions inside evals so that you can get at the definitions
+that it can translate.</p>
+<p>It's only intended as a rough tool.
+You may need to dicker with the files produced.</p>
+<p>You have to run this program by hand; it's not run as part of the Perl
+installation.</p>
+<p>Doesn't handle complicated expressions built piecemeal, a la:</p>
+<pre>
+    <span class="w">enum</span> <span class="s">{</span>
+	<span class="w">FIRST_VALUE</span><span class="cm">,</span>
+	<span class="w">SECOND_VALUE</span><span class="cm">,</span>
+    <span class="c">#ifdef ABC</span>
+	<span class="w">THIRD_VALUE</span>
+    <span class="c">#endif</span>
+    <span class="s">}</span><span class="sc">;</span></pre>
+<p>Doesn't necessarily locate all of your C compiler's internally-defined
+symbols.</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#OPTIONS">OPTIONS</a></li><li><a href="#ENVIRONMENT">ENVIRONMENT</a></li><li><a href="#FILES">FILES</a></li><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#DIAGNOSTICS">DIAGNOSTICS</a></li><li><a href="#BUGS">BUGS</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

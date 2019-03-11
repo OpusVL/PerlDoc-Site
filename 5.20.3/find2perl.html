@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="find2perl - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>find2perl - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.20.3/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.20.3/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.20.3/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.20.3/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.20.3/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.20.3/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.20.3/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.20.3/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.20.3/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.20.3/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.20.3/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.20.3/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.20.3/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.20.3/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.20.3/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.20.3/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="index-utilities.html">Utilities</a> &gt;
+      
+    
+    find2perl
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 20.3 documentation</h1>
+                  </div>
+                  <h1>find2perl</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>find2perl - translate find command lines to Perl code</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<pre>
+	<span class="w">find2perl</span> <span class="s">[</span><span class="w">paths</span><span class="s">]</span> <span class="s">[</span><span class="w">predicates</span><span class="s">]</span> | <span class="w">perl</span></pre>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>find2perl is a little translator to convert find command lines to
+equivalent Perl code.  The resulting code is typically faster than
+running find itself.</p>
+<p>"paths" are a set of paths where find2perl will start its searches and
+"predicates" are taken from the following list.</p>
+<ul>
+<li><a id="!-PREDICATE"></a><strong><pre>
+! <span class="w">PREDICATE</span></code>
+</strong>
+<p>Negate the sense of the following predicate.  The <pre>
+!</code>
+ must be passed as
+a distinct argument, so it may need to be surrounded by whitespace and/or
+quoted from interpretation by the shell using a backslash (just as with
+using <pre>
+<span class="i">find</span><span class="s">(</span><span class="n">1</span><span class="s">)</span></code>
+).</p>
+</li>
+<li><a id="(-PREDICATES-)"></a><strong><pre>
+<span class="s">(</span> <span class="w">PREDICATES</span> <span class="s">)</span></code>
+</strong>
+<p>Group the given PREDICATES.  The parentheses must be passed as distinct
+arguments, so they may need to be surrounded by whitespace and/or
+quoted from interpretation by the shell using a backslash (just as with
+using <pre>
+<span class="i">find</span><span class="s">(</span><span class="n">1</span><span class="s">)</span></code>
+).</p>
+</li>
+<li><a id="PREDICATE1-PREDICATE2"></a><strong><pre>
+<span class="w">PREDICATE1</span> <span class="w">PREDICATE2</span></code>
+</strong>
+<p>True if _both_ PREDICATE1 and PREDICATE2 are true; PREDICATE2 is not
+evaluated if PREDICATE1 is false.</p>
+</li>
+<li><a id="PREDICATE1--o-PREDICATE2"></a><strong><pre>
+<span class="w">PREDICATE1</span> -o <span class="w">PREDICATE2</span></code>
+</strong>
+<p>True if either one of PREDICATE1 or PREDICATE2 is true; PREDICATE2 is
+not evaluated if PREDICATE1 is true.</p>
+</li>
+<li><a id="-follow"></a><strong><pre>
+-<span class="w">follow</span></code>
+</strong>
+<p>Follow (dereference) symlinks.  The checking of file attributes depends
+on the position of the <pre>
+-<span class="w">follow</span></code>
+ option. If it precedes the file
+check option, an <code class="inline"><a class="l_k" href="functions/stat.html">stat</a></code> is done which means the file check applies to the
+file the symbolic link is pointing to. If <pre>
+-<span class="w">follow</span></code>
+ option follows the
+file check option, this now applies to the symbolic link itself, i.e.
+an <code class="inline"><a class="l_k" href="functions/lstat.html">lstat</a></code> is done.</p>
+</li>
+<li><a id="-depth"></a><strong><pre>
+-<span class="w">depth</span></code>
+</strong>
+<p>Change directory traversal algorithm from breadth-first to depth-first.</p>
+</li>
+<li><a id="-prune"></a><strong><pre>
+-<span class="w">prune</span></code>
+</strong>
+<p>Do not descend into the directory currently matched.</p>
+</li>
+<li><a id="-xdev"></a><strong><pre>
+-<span class="w">xdev</span></code>
+</strong>
+<p>Do not traverse mount points (prunes search at mount-point directories).</p>
+</li>
+<li><a id="-name-GLOB"></a><strong><pre>
+-<span class="w">name</span> <span class="w">GLOB</span></code>
+</strong>
+<p>File name matches specified GLOB wildcard pattern.  GLOB may need to be
+quoted to avoid interpretation by the shell (just as with using
+<pre>
+<span class="i">find</span><span class="s">(</span><span class="n">1</span><span class="s">)</span></code>
+).</p>
+</li>
+<li><a id="-iname-GLOB"></a><strong><pre>
+-<span class="w">iname</span> <span class="w">GLOB</span></code>
+</strong>
+<p>Like <pre>
+-<span class="w">name</span></code>
+, but the match is case insensitive.</p>
+</li>
+<li><a id="-path-GLOB"></a><strong><pre>
+-<span class="w">path</span> <span class="w">GLOB</span></code>
+</strong>
+<p>Path name matches specified GLOB wildcard pattern.</p>
+</li>
+<li><a id="-ipath-GLOB"></a><strong><pre>
+-<span class="w">ipath</span> <span class="w">GLOB</span></code>
+</strong>
+<p>Like <pre>
+-<span class="w">path</span></code>
+, but the match is case insensitive.</p>
+</li>
+<li><a id="-perm-PERM"></a><strong><pre>
+-<span class="w">perm</span> <span class="w">PERM</span></code>
+</strong>
+<p>Low-order 9 bits of permission match octal value PERM.</p>
+</li>
+<li><a id="-perm--PERM"></a><strong><pre>
+-<span class="w">perm</span> -<span class="w">PERM</span></code>
+</strong>
+<p>The bits specified in PERM are all set in file's permissions.</p>
+</li>
+<li><a id="-type-X"></a><strong><pre>
+-<span class="w">type</span> <span class="w">X</span></code>
+</strong>
+<p>The file's type matches perl's <code class="inline"><a class="l_k" href="functions/-X.html">-X</a></code> operator.</p>
+</li>
+<li><a id="-fstype-TYPE"></a><strong><pre>
+-<span class="w">fstype</span> <span class="w">TYPE</span></code>
+</strong>
+<p>Filesystem of current path is of type TYPE (only NFS/non-NFS distinction
+is implemented).</p>
+</li>
+<li><a id="-user-USER"></a><strong><pre>
+-<span class="w">user</span> <span class="w">USER</span></code>
+</strong>
+<p>True if USER is owner of file.</p>
+</li>
+<li><a id="-group-GROUP"></a><strong><pre>
+-<span class="w">group</span> <span class="w">GROUP</span></code>
+</strong>
+<p>True if file's group is GROUP.</p>
+</li>
+<li><a id="-nouser"></a><strong><pre>
+-<span class="w">nouser</span></code>
+</strong>
+<p>True if file's owner is not in password database.</p>
+</li>
+<li><a id="-nogroup"></a><strong><pre>
+-<span class="w">nogroup</span></code>
+</strong>
+<p>True if file's group is not in group database.</p>
+</li>
+<li><a id="-inum-INUM"></a><strong><pre>
+-<span class="w">inum</span> <span class="w">INUM</span></code>
+</strong>
+<p>True file's inode number is INUM.</p>
+</li>
+<li><a id="-links-N"></a><strong><pre>
+-<span class="w">links</span> <span class="w">N</span></code>
+</strong>
+<p>True if (hard) link count of file matches N (see below).</p>
+</li>
+<li><a id="-size-N"></a><strong><pre>
+-<span class="w">size</span> <span class="w">N</span></code>
+</strong>
+<p>True if file's size matches N (see below) N is normally counted in
+512-byte blocks, but a suffix of "c" specifies that size should be
+counted in characters (bytes) and a suffix of "k" specifies that
+size should be counted in 1024-byte blocks.</p>
+</li>
+<li><a id="-atime-N"></a><strong><pre>
+-<span class="w">atime</span> <span class="w">N</span></code>
+</strong>
+<p>True if last-access time of file matches N (measured in days) (see
+below).</p>
+</li>
+<li><a id="-ctime-N"></a><strong><pre>
+-<span class="w">ctime</span> <span class="w">N</span></code>
+</strong>
+<p>True if last-changed time of file's inode matches N (measured in days,
+see below).</p>
+</li>
+<li><a id="-mtime-N"></a><strong><pre>
+-<span class="w">mtime</span> <span class="w">N</span></code>
+</strong>
+<p>True if last-modified time of file matches N (measured in days, see below).</p>
+</li>
+<li><a id="-newer-FILE"></a><strong><pre>
+-<span class="w">newer</span> <span class="w">FILE</span></code>
+</strong>
+<p>True if last-modified time of file matches N.</p>
+</li>
+<li><a id="-print"></a><strong><pre>
+-<a class="l_k" href="functions/print.html">print</a></code>
+</strong>
+<p>Print out path of file (always true). If none of <pre>
+-<a class="l_k" href="functions/exec.html">exec</a></code>
+, <pre>
+-<span class="w">ls</span></code>
+,
+<pre>
+-<span class="w">print0</span></code>
+, or <pre>
+-<span class="w">ok</span></code>
+ is specified, then <pre>
+-<a class="l_k" href="functions/print.html">print</a></code>
+ will be added
+implicitly.</p>
+</li>
+<li><a id="-print0"></a><strong><pre>
+-<span class="w">print0</span></code>
+</strong>
+<p>Like -print, but terminates with \0 instead of \n.</p>
+</li>
+<li><a id="-exec-OPTIONS-%3b"></a><strong><pre>
+-<a class="l_k" href="functions/exec.html">exec</a> <span class="i">OPTIONS</span> <span class="sc">;</span></code>
+</strong>
+<p>exec() the arguments in OPTIONS in a subprocess; any occurrence of {} in
+OPTIONS will first be substituted with the path of the current
+file.  Note that the command "rm" has been special-cased to use perl's
+unlink() function instead (as an optimization).  The <pre>
+<span class="sc">;</span></code>
+ must be passed as
+a distinct argument, so it may need to be surrounded by whitespace and/or
+quoted from interpretation by the shell using a backslash (just as with
+using <pre>
+<span class="i">find</span><span class="s">(</span><span class="n">1</span><span class="s">)</span></code>
+).</p>
+</li>
+<li><a id="-ok-OPTIONS-%3b"></a><strong><pre>
+-<span class="w">ok</span> <span class="w">OPTIONS</span> <span class="sc">;</span></code>
+</strong>
+<p>Like -exec, but first prompts user; if user's response does not begin
+with a y, skip the exec.  The <pre>
+<span class="sc">;</span></code>
+ must be passed as
+a distinct argument, so it may need to be surrounded by whitespace and/or
+quoted from interpretation by the shell using a backslash (just as with
+using <pre>
+<span class="i">find</span><span class="s">(</span><span class="n">1</span><span class="s">)</span></code>
+).</p>
+</li>
+<li><a id="-eval-EXPR"></a><strong><pre>
+-<a class="l_k" href="functions/eval.html">eval</a> <span class="w">EXPR</span></code>
+</strong>
+<p>Has the perl script eval() the EXPR.</p>
+</li>
+<li><a id="-ls"></a><strong><pre>
+-<span class="w">ls</span></code>
+</strong>
+<p>Simulates <pre>
+-<a class="l_k" href="functions/exec.html">exec</a> <span class="i">ls</span> -<span class="w">dils</span> <span class="s">{</span><span class="s">}</span> <span class="sc">;</span></code>
+</p>
+</li>
+<li><a id="-tar-FILE"></a><strong><pre>
+-<span class="w">tar</span> <span class="w">FILE</span></code>
+</strong>
+<p>Adds current output to tar-format FILE.</p>
+</li>
+<li><a id="-cpio-FILE"></a><strong><pre>
+-<span class="w">cpio</span> <span class="w">FILE</span></code>
+</strong>
+<p>Adds current output to old-style cpio-format FILE.</p>
+</li>
+<li><a id="-ncpio-FILE"></a><strong><pre>
+-<span class="w">ncpio</span> <span class="w">FILE</span></code>
+</strong>
+<p>Adds current output to "new"-style cpio-format FILE.</p>
+</li>
+</ul>
+<p>Predicates which take a numeric argument N can come in three forms:</p>
+<div class="verbatim"><ol><li>   * N is prefixed with a +: match values greater than N</li><li>   * N is prefixed with a -: match values less than N</li><li>   * N is not prefixed with either + or -: match only values equal to N</li></ol></div><a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<p>find, File::Find.</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/3/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

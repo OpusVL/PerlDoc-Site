@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Fcntl - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>Fcntl - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.20.1/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.20.1/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.20.1/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.20.1/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.20.1/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.20.1/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.20.1/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.20.1/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.20.1/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.20.1/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.20.1/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.20.1/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.20.1/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.20.1/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.20.1/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.20.1/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="index-modules-F.html">Core modules (F)</a> &gt;
+      
+    
+    Fcntl
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 20.1 documentation</h1>
+                  </div>
+                  <h1>Fcntl</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#NOTE">NOTE</a></li><li><a href="#EXPORTED-SYMBOLS">EXPORTED SYMBOLS</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>Fcntl - load the C Fcntl.h defines</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<pre>
+    <a class="l_k" href="functions/use.html">use</a> <span class="w">Fcntl</span><span class="sc">;</span>
+    <a class="l_k" href="functions/use.html">use</a> <span class="w">Fcntl</span> <span class="q">qw(:DEFAULT :flock)</span><span class="sc">;</span></pre>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>This module is just a translation of the C <i>fcntl.h</i> file.
+Unlike the old mechanism of requiring a translated <i>fcntl.ph</i>
+file, this uses the <strong>h2xs</strong> program (see the Perl source distribution)
+and your native C compiler.  This means that it has a 
+far more likely chance of getting the numbers right.</p>
+<a id="NOTE"></a><h2 class='h2' >NOTE</h2>
+<p>Only <pre>
+<span class="c">#define</span></code>
+ symbols get translated; you must still correctly
+pack up your own arguments to pass as args for locking functions, etc.</p>
+<a id="EXPORTED-SYMBOLS"></a><h2 class='h2' >EXPORTED SYMBOLS</h2>
+<p>By default your system's F_* and O_* constants (eg, F_DUPFD and
+O_CREAT) and the FD_CLOEXEC constant are exported into your namespace.</p>
+<p>You can request that the flock() constants (LOCK_SH, LOCK_EX, LOCK_NB
+and LOCK_UN) be provided by using the tag <pre>
+<span class="j">:</span><a class="l_k" href="functions/flock.html">flock</a></code>
+.  See <a href="Exporter.html">Exporter</a>.</p>
+<p>You can request that the old constants (FAPPEND, FASYNC, FCREAT,
+FDEFER, FEXCL, FNDELAY, FNONBLOCK, FSYNC, FTRUNC) be provided for
+compatibility reasons by using the tag <pre>
+<span class="j">:</span><span class="w">Fcompat</span></code>
+.  For new
+applications the newer versions of these constants are suggested
+(O_APPEND, O_ASYNC, O_CREAT, O_DEFER, O_EXCL, O_NDELAY, O_NONBLOCK,
+O_SYNC, O_TRUNC).</p>
+<p>For ease of use also the SEEK_* constants (for seek() and sysseek(),
+e.g. SEEK_END) and the S_I* constants (for chmod() and stat()) are
+available for import.  They can be imported either separately or using
+the tags <pre>
+<span class="j">:</span><a class="l_k" href="functions/seek.html">seek</a></code>
+ and <pre>
+<span class="j">:</span><span class="w">mode</span></code>
+.</p>
+<p>Please refer to your native fcntl(2), open(2), fseek(3), lseek(2)
+(equal to Perl's seek() and sysseek(), respectively), and chmod(2)
+documentation to see what constants are implemented in your system.</p>
+<p>See <a href="perlopentut.html">perlopentut</a> to learn about the uses of the O_* constants
+with sysopen().</p>
+<p>See <a href="functions/seek.html">seek</a> and <a href="functions/sysseek.html">sysseek</a> about the SEEK_* constants.</p>
+<p>See <a href="functions/stat.html">stat</a> about the S_I* constants.</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#NOTE">NOTE</a></li><li><a href="#EXPORTED-SYMBOLS">EXPORTED SYMBOLS</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/20/1/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

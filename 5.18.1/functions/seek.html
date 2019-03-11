@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="seek - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>seek - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.18.1/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.18.1/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.18.1/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.18.1/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.18.1/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.18.1/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.18.1/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.18.1/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.18.1/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.18.1/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.18.1/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.18.1/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.18.1/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.18.1/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.18.1/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.18.1/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../index-language.html">Language reference</a> &gt;
+      
+        <a href="../index-functions.html">Functions</a> &gt;
+      
+    
+    seek
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 18.1 documentation</h1>
+                  </div>
+                  <h1>seek</h1>
+<div class="mod_az_list">
+  <a href="/5.18.1/index-functions.html">Perl functions A-Z</a> |
+  <a href="/5.18.1/index-functions-by-cat.html">Perl functions by category</a> |
+  <a href="/5.18.1/perlfunc.html">The 'perlfunc' manpage</a>
+</div>
+
+
+  <!--    -->
+<ul>
+<li><a id="seek-FILEHANDLE%2cPOSITION%2cWHENCE"></a><strong>seek FILEHANDLE,POSITION,WHENCE</strong>
+<p>  </p>
+<p>Sets FILEHANDLE's position, just like the <pre>
+<span class="w">fseek</span></code>
+ call of <pre>
+<span class="w">stdio</span></code>
+.
+FILEHANDLE may be an expression whose value gives the name of the
+filehandle.  The values for WHENCE are <pre></code>
+ to set the new position
+<i>in bytes</i> to POSITION; <pre>
+<span class="n">1</span></code>
+ to set it to the current position plus
+POSITION; and <pre>
+<span class="n">2</span></code>
+ to set it to EOF plus POSITION, typically
+negative.  For WHENCE you may use the constants <pre>
+<span class="w">SEEK_SET</span></code>
+,
+<pre>
+<span class="w">SEEK_CUR</span></code>
+, and <pre>
+<span class="w">SEEK_END</span></code>
+ (start of the file, current position, end
+of the file) from the <a href="../Fcntl.html">Fcntl</a> module.  Returns <pre>
+<span class="n">1</span></code>
+ on success, false
+otherwise.</p>
+<p>Note the <i>in bytes</i>: even if the filehandle has been set to
+operate on characters (for example by using the <pre>
+<span class="j">:</span><span class="i">encoding</span><span class="s">(</span><span class="w">utf8</span><span class="s">)</span></code>
+ open
+layer), tell() will return byte offsets, not character offsets
+(because implementing that would render seek() and tell() rather slow).</p>
+<p>If you want to position the file for <code class="inline"><a class="l_k" href="../functions/sysread.html">sysread</a></code> or <code class="inline"><a class="l_k" href="../functions/syswrite.html">syswrite</a></code>, don't use
+<code class="inline"><a class="l_k" href="../functions/seek.html">seek</a></code>, because buffering makes its effect on the file's read-write position
+unpredictable and non-portable.  Use <code class="inline"><a class="l_k" href="../functions/sysseek.html">sysseek</a></code> instead.</p>
+<p>Due to the rules and rigors of ANSI C, on some systems you have to do a
+seek whenever you switch between reading and writing.  Amongst other
+things, this may have the effect of calling stdio's clearerr(3).
+A WHENCE of <pre>
+<span class="n">1</span></code>
+ (<pre>
+<span class="w">SEEK_CUR</span></code>
+) is useful for not moving the file position:</p>
+<pre>
+    <a class="l_k" href="../functions/seek.html">seek</a><span class="s">(</span><span class="w">TEST</span><span class="cm">,</span><span class="n">0</span><span class="cm">,</span><span class="n">1</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>This is also useful for applications emulating <pre>
+<span class="w">tail</span> -f</code>
+.  Once you hit
+EOF on your read and then sleep for a while, you (probably) have to stick in a
+dummy seek() to reset things.  The <code class="inline"><a class="l_k" href="../functions/seek.html">seek</a></code> doesn't change the position,
+but it <i>does</i> clear the end-of-file condition on the handle, so that the
+next <pre>
+<span class="q">&lt;FILE&gt;</span></code>
+ makes Perl try again to read something.  (We hope.)</p>
+<p>If that doesn't work (some I/O implementations are particularly
+cantankerous), you might need something like this:</p>
+<pre>
+    <a class="l_k" href="../functions/for.html">for</a> <span class="s">(</span><span class="sc">;</span><span class="sc">;</span><span class="s">)</span> <span class="s">{</span>
+        <a class="l_k" href="../functions/for.html">for</a> <span class="s">(</span><span class="i">$curpos</span> = <a class="l_k" href="../functions/tell.html">tell</a><span class="s">(</span><span class="w">FILE</span><span class="s">)</span><span class="sc">;</span> <span class="i">$_</span> = <span class="q">&lt;FILE&gt;</span><span class="sc">;</span>
+             <span class="i">$curpos</span> = <a class="l_k" href="../functions/tell.html">tell</a><span class="s">(</span><span class="w">FILE</span><span class="s">)</span><span class="s">)</span> <span class="s">{</span>
+            <span class="c"># search for some stuff and put it into files</span>
+        <span class="s">}</span>
+        <a class="l_k" href="../functions/sleep.html">sleep</a><span class="s">(</span><span class="i">$for_a_while</span><span class="s">)</span><span class="sc">;</span>
+        <a class="l_k" href="../functions/seek.html">seek</a><span class="s">(</span><span class="w">FILE</span><span class="cm">,</span> <span class="i">$curpos</span><span class="cm">,</span> <span class="n">0</span><span class="s">)</span><span class="sc">;</span>
+    <span class="s">}</span></pre>
+</li>
+</ul>
+
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/1/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

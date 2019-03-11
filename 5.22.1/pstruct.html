@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="pstruct - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>pstruct - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.22.1/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.22.1/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.22.1/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.22.1/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.22.1/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.22.1/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.22.1/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.22.1/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.22.1/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.22.1/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.22.1/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.22.1/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.22.1/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.22.1/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.22.1/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.22.1/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="index-utilities.html">Utilities</a> &gt;
+      
+    
+    pstruct
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 22.1 documentation</h1>
+                  </div>
+                  <h1>pstruct</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><ul><li><a href="#OPTIONS">OPTIONS</a></li></ul><li><a href="#DESCRIPTION">DESCRIPTION</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>c2ph, pstruct - Dump C structures as generated from <pre>
+<span class="w">cc</span> -g -S</code>
+ stabs</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<pre>
+    <span class="w">c2ph</span> <span class="s">[</span>-<span class="w">dpnP</span><span class="s">]</span> <span class="s">[</span><span class="w">var</span>=<span class="w">val</span><span class="s">]</span> <span class="s">[</span><span class="w">files</span> ...<span class="s">]</span></pre>
+<a id="OPTIONS"></a><h3 class='h3' >OPTIONS</h3>
+<div class="verbatim"><ol><li>    Options:</li><li></li><li>    -w	wide; short for: type_width=45 member_width=35 offset_width=8</li><li>    -x	hex; short for:  offset_fmt=x offset_width=08 size_fmt=x size_width=04</li><li></li><li>    -n	do not generate perl code  (default when invoked as pstruct)</li><li>    -p	generate perl code         (default when invoked as c2ph)</li><li>    -v	generate perl code, with C decls as comments</li><li></li><li>    -i	do NOT recompute sizes for intrinsic datatypes</li><li>    -a	dump information on intrinsics also</li><li></li><li>    -t	trace execution</li><li>    -d	spew reams of debugging output</li><li></li><li>    -slist  give comma-separated list a structures to dump</li></ol></div><a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>The following is the old c2ph.doc documentation by Tom Christiansen
+&lt;tchrist@perl.com&gt;
+Date: 25 Jul 91 08:10:21 GMT</p>
+<p>Once upon a time, I wrote a program called pstruct.  It was a perl
+program that tried to parse out C structures and display their member
+offsets for you.  This was especially useful for people looking at
+binary dumps or poking around the kernel.</p>
+<p>Pstruct was not a pretty program.  Neither was it particularly robust.
+The problem, you see, was that the C compiler was much better at parsing
+C than I could ever hope to be.</p>
+<p>So I got smart:  I decided to be lazy and let the C compiler parse the C,
+which would spit out debugger stabs for me to read.  These were much
+easier to parse.  It's still not a pretty program, but at least it's more
+robust.</p>
+<p>Pstruct takes any .c or .h files, or preferably .s ones, since that's
+the format it is going to massage them into anyway, and spits out
+listings like this:</p>
+<div class="verbatim"><ol><li> struct tty {</li><li>   int                          tty.t_locker                         000      4</li><li>   int                          tty.t_mutex_index                    004      4</li><li>   struct tty *                 tty.t_tp_virt                        008      4</li><li>   struct clist                 tty.t_rawq                           00c     20</li><li>     int                        tty.t_rawq.c_cc                      00c      4</li><li>     int                        tty.t_rawq.c_cmax                    010      4</li><li>     int                        tty.t_rawq.c_cfx                     014      4</li><li>     int                        tty.t_rawq.c_clx                     018      4</li><li>     struct tty *               tty.t_rawq.c_tp_cpu                  01c      4</li><li>     struct tty *               tty.t_rawq.c_tp_iop                  020      4</li><li>     unsigned char *            tty.t_rawq.c_buf_cpu                 024      4</li><li>     unsigned char *            tty.t_rawq.c_buf_iop                 028      4</li><li>   struct clist                 tty.t_canq                           02c     20</li><li>     int                        tty.t_canq.c_cc                      02c      4</li><li>     int                        tty.t_canq.c_cmax                    030      4</li><li>     int                        tty.t_canq.c_cfx                     034      4</li><li>     int                        tty.t_canq.c_clx                     038      4</li><li>     struct tty *               tty.t_canq.c_tp_cpu                  03c      4</li><li>     struct tty *               tty.t_canq.c_tp_iop                  040      4</li><li>     unsigned char *            tty.t_canq.c_buf_cpu                 044      4</li><li>     unsigned char *            tty.t_canq.c_buf_iop                 048      4</li><li>   struct clist                 tty.t_outq                           04c     20</li><li>     int                        tty.t_outq.c_cc                      04c      4</li><li>     int                        tty.t_outq.c_cmax                    050      4</li><li>     int                        tty.t_outq.c_cfx                     054      4</li><li>     int                        tty.t_outq.c_clx                     058      4</li><li>     struct tty *               tty.t_outq.c_tp_cpu                  05c      4</li><li>     struct tty *               tty.t_outq.c_tp_iop                  060      4</li><li>     unsigned char *            tty.t_outq.c_buf_cpu                 064      4</li><li>     unsigned char *            tty.t_outq.c_buf_iop                 068      4</li><li>   (*int)()                     tty.t_oproc_cpu                      06c      4</li><li>   (*int)()                     tty.t_oproc_iop                      070      4</li><li>   (*int)()                     tty.t_stopproc_cpu                   074      4</li><li>   (*int)()                     tty.t_stopproc_iop                   078      4</li><li>   struct thread *              tty.t_rsel                           07c      4</li></ol></div><p>etc.</p>
+<p>Actually, this was generated by a particular set of options.  You can control
+the formatting of each column, whether you prefer wide or fat, hex or decimal,
+leading zeroes or whatever.</p>
+<p>All you need to be able to use this is a C compiler than generates
+BSD/GCC-style stabs.  The <strong>-g</strong> option on native BSD compilers and GCC
+should get this for you.</p>
+<p>To learn more, just type a bogus option, like <strong>-\?</strong>, and a long usage message
+will be provided.  There are a fair number of possibilities.</p>
+<p>If you're only a C programmer, than this is the end of the message for you.
+You can quit right now, and if you care to, save off the source and run it
+when you feel like it.  Or not.</p>
+<p>But if you're a perl programmer, then for you I have something much more
+wondrous than just a structure offset printer.</p>
+<p>You see, if you call pstruct by its other incybernation, c2ph, you have a code
+generator that translates C code into perl code!  Well, structure and union
+declarations at least, but that's quite a bit.</p>
+<p>Prior to this point, anyone programming in perl who wanted to interact
+with C programs, like the kernel, was forced to guess the layouts of
+the C structures, and then hardwire these into his program.  Of course,
+when you took your wonderfully crafted program to a system where the
+sgtty structure was laid out differently, your program broke.  Which is
+a shame.</p>
+<p>We've had Larry's h2ph translator, which helped, but that only works on
+cpp symbols, not real C, which was also very much needed.  What I offer
+you is a symbolic way of getting at all the C structures.  I've couched
+them in terms of packages and functions.  Consider the following program:</p>
+<pre>
+    <span class="c">#!/usr/local/bin/perl</span>
+
+    <a class="l_k" href="functions/require.html">require</a> <span class="q">&#39;syscall.ph&#39;</span><span class="sc">;</span>
+    <a class="l_k" href="functions/require.html">require</a> <span class="q">&#39;sys/time.ph&#39;</span><span class="sc">;</span>
+    <a class="l_k" href="functions/require.html">require</a> <span class="q">&#39;sys/resource.ph&#39;</span><span class="sc">;</span>
+
+    <span class="i">$ru</span> = <span class="q">&quot;\0&quot;</span> x <span class="i">&amp;rusage&#39;sizeof</span><span class="s">(</span><span class="s">)</span><span class="sc">;</span>
+
+    <a class="l_k" href="functions/syscall.html">syscall</a><span class="s">(</span><span class="i">&amp;SYS_getrusage</span><span class="cm">,</span> <span class="i">&amp;RUSAGE_SELF</span><span class="cm">,</span> <span class="i">$ru</span><span class="s">)</span>      &amp;&amp; <a class="l_k" href="functions/die.html">die</a> <span class="q">&quot;getrusage: $!&quot;</span><span class="sc">;</span>
+
+    <span class="i">@ru</span> = <a class="l_k" href="functions/unpack.html">unpack</a><span class="s">(</span><span class="i">$t</span> = <span class="i">&amp;rusage&#39;typedef</span><span class="s">(</span><span class="s">)</span><span class="cm">,</span> <span class="i">$ru</span><span class="s">)</span><span class="sc">;</span>
+
+    <span class="i">$utime</span> =  <span class="i">$ru</span>[ <span class="i">&amp;rusage&#39;ru_utime</span> + <span class="i">&amp;timeval&#39;tv_sec</span>  ]
+	   + <span class="s">(</span><span class="i">$ru</span>[ <span class="i">&amp;rusage&#39;ru_utime</span> + <span class="i">&amp;timeval&#39;tv_usec</span> ]<span class="s">)</span> / <span class="n">1e6</span><span class="sc">;</span>
+
+    <span class="i">$stime</span> =  <span class="i">$ru</span>[ <span class="i">&amp;rusage&#39;ru_stime</span> + <span class="i">&amp;timeval&#39;tv_sec</span>  ]
+	   + <span class="s">(</span><span class="i">$ru</span>[ <span class="i">&amp;rusage&#39;ru_stime</span> + <span class="i">&amp;timeval&#39;tv_usec</span> ]<span class="s">)</span> / <span class="n">1e6</span><span class="sc">;</span>
+
+    <a class="l_k" href="functions/printf.html">printf</a> <span class="q">&quot;you have used %8.3fs+%8.3fu seconds.\n&quot;</span><span class="cm">,</span> <span class="i">$utime</span><span class="cm">,</span> <span class="i">$stime</span><span class="sc">;</span></pre>
+<p>As you see, the name of the package is the name of the structure.  Regular
+fields are just their own names.  Plus the following accessor functions are
+provided for your convenience:</p>
+<div class="verbatim"><ol><li>    struct	This takes no arguments, and is merely the number of first-level</li><li>		elements in the structure.  You would use this for indexing</li><li>		into arrays of structures, perhaps like this</li><li></li><li></li><li>		    $usec = $u[ &amp;user'u_utimer</li><li>				+ (&amp;ITIMER_VIRTUAL * &amp;itimerval'struct)</li><li>				+ &amp;itimerval'it_value</li><li>				+ &amp;timeval'tv_usec</li><li>			      ];</li><li></li><li>    sizeof   	Returns the bytes in the structure, or the member if</li><li>	     	you pass it an argument, such as</li><li></li><li>			&amp;rusage'sizeof(&amp;rusage'ru_utime)</li><li></li><li>    typedef  	This is the perl format definition for passing to pack and</li><li>	     	unpack.  If you ask for the typedef of a nothing, you get</li><li>	     	the whole structure, otherwise you get that of the member</li><li>	     	you ask for.  Padding is taken care of, as is the magic to</li><li>	     	guarantee that a union is unpacked into all its aliases.</li><li>	     	Bitfields are not quite yet supported however.</li><li></li><li>    offsetof	This function is the byte offset into the array of that</li><li>		member.  You may wish to use this for indexing directly</li><li>		into the packed structure with vec() if you're too lazy</li><li>		to unpack it.</li><li></li><li>    typeof	Not to be confused with the typedef accessor function, this</li><li>		one returns the C type of that field.  This would allow</li><li>		you to print out a nice structured pretty print of some</li><li>		structure without knoning anything about it beforehand.</li><li>		No args to this one is a noop.  Someday I'll post such</li><li>		a thing to dump out your u structure for you.</li></ol></div><p>The way I see this being used is like basically this:</p>
+<div class="verbatim"><ol><li>	% h2ph &lt;some_include_file.h  &gt;  /usr/lib/perl/tmp.ph</li><li>	% c2ph  some_include_file.h  &gt;&gt; /usr/lib/perl/tmp.ph</li><li>	% install</li></ol></div><p>It's a little tricker with c2ph because you have to get the includes right.
+I can't know this for your system, but it's not usually too terribly difficult.</p>
+<p>The code isn't pretty as I mentioned  -- I never thought it would be a 1000-
+line program when I started, or I might not have begun. :-)  But I would have
+been less cavalier in how the parts of the program communicated with each
+other, etc.  It might also have helped if I didn't have to divine the makeup
+of the stabs on the fly, and then account for micro differences between my
+compiler and gcc.</p>
+<p>Anyway, here it is.  Should run on perl v4 or greater.  Maybe less.</p>
+<pre>
+ --<span class="w">tom</span></pre>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><ul><li><a href="#OPTIONS">OPTIONS</a></li></ul><li><a href="#DESCRIPTION">DESCRIPTION</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/1/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

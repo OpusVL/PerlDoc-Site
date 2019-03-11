@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="exists - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>exists - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.18.4/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.18.4/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.18.4/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.18.4/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.18.4/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.18.4/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.18.4/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.18.4/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.18.4/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.18.4/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.18.4/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.18.4/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.18.4/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.18.4/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.18.4/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.18.4/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.18.4/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.18.4/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.18.4/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.18.4/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.18.4/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.18.4/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.18.4/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.18.4/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.18.4/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.18.4/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.18.4/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.18.4/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.18.4/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.18.4/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.18.4/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.18.4/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.18.4/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.18.4/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../index-language.html">Language reference</a> &gt;
+      
+        <a href="../index-functions.html">Functions</a> &gt;
+      
+    
+    exists
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 18.4 documentation</h1>
+                  </div>
+                  <h1>exists</h1>
+<div class="mod_az_list">
+  <a href="/5.18.4/index-functions.html">Perl functions A-Z</a> |
+  <a href="/5.18.4/index-functions-by-cat.html">Perl functions by category</a> |
+  <a href="/5.18.4/perlfunc.html">The 'perlfunc' manpage</a>
+</div>
+
+
+  <!--    -->
+<ul>
+<li><a id="exists-EXPR"></a><strong>exists EXPR</strong>
+<p> </p>
+<p>Given an expression that specifies an element of a hash, returns true if the
+specified element in the hash has ever been initialized, even if the
+corresponding value is undefined.</p>
+<pre>
+    <a class="l_k" href="../functions/print.html">print</a> <span class="q">&quot;Exists\n&quot;</span>    <a class="l_k" href="../functions/if.html">if</a> <a class="l_k" href="../functions/exists.html">exists</a> <span class="i">$hash</span>{<span class="i">$key</span>}<span class="sc">;</span>
+    <a class="l_k" href="../functions/print.html">print</a> <span class="q">&quot;Defined\n&quot;</span>   <a class="l_k" href="../functions/if.html">if</a> <a class="l_k" href="../functions/defined.html">defined</a> <span class="i">$hash</span>{<span class="i">$key</span>}<span class="sc">;</span>
+    <a class="l_k" href="../functions/print.html">print</a> <span class="q">&quot;True\n&quot;</span>      <a class="l_k" href="../functions/if.html">if</a> <span class="i">$hash</span>{<span class="i">$key</span>}<span class="sc">;</span></pre>
+<p>exists may also be called on array elements, but its behavior is much less
+obvious and is strongly tied to the use of <a href="../functions/delete.html">delete</a> on arrays.  <strong>Be aware</strong>
+that calling exists on array values is deprecated and likely to be removed in
+a future version of Perl.</p>
+<pre>
+    <a class="l_k" href="../functions/print.html">print</a> <span class="q">&quot;Exists\n&quot;</span>    <a class="l_k" href="../functions/if.html">if</a> <a class="l_k" href="../functions/exists.html">exists</a> <span class="i">$array</span>[<span class="i">$index</span>]<span class="sc">;</span>
+    <a class="l_k" href="../functions/print.html">print</a> <span class="q">&quot;Defined\n&quot;</span>   <a class="l_k" href="../functions/if.html">if</a> <a class="l_k" href="../functions/defined.html">defined</a> <span class="i">$array</span>[<span class="i">$index</span>]<span class="sc">;</span>
+    <a class="l_k" href="../functions/print.html">print</a> <span class="q">&quot;True\n&quot;</span>      <a class="l_k" href="../functions/if.html">if</a> <span class="i">$array</span>[<span class="i">$index</span>]<span class="sc">;</span></pre>
+<p>A hash or array element can be true only if it's defined and defined only if
+it exists, but the reverse doesn't necessarily hold true.</p>
+<p>Given an expression that specifies the name of a subroutine,
+returns true if the specified subroutine has ever been declared, even
+if it is undefined.  Mentioning a subroutine name for exists or defined
+does not count as declaring it.  Note that a subroutine that does not
+exist may still be callable: its package may have an <code class="inline"><a class="l_k" href="../functions/AUTOLOAD.html">AUTOLOAD</a></code>
+method that makes it spring into existence the first time that it is
+called; see <a href="../perlsub.html">perlsub</a>.</p>
+<pre>
+    <a class="l_k" href="../functions/print.html">print</a> <span class="q">&quot;Exists\n&quot;</span>  <a class="l_k" href="../functions/if.html">if</a> <a class="l_k" href="../functions/exists.html">exists</a> <span class="i">&amp;subroutine</span><span class="sc">;</span>
+    <a class="l_k" href="../functions/print.html">print</a> <span class="q">&quot;Defined\n&quot;</span> <a class="l_k" href="../functions/if.html">if</a> <a class="l_k" href="../functions/defined.html">defined</a> <span class="i">&amp;subroutine</span><span class="sc">;</span></pre>
+<p>Note that the EXPR can be arbitrarily complicated as long as the final
+operation is a hash or array key lookup or subroutine name:</p>
+<pre>
+    <a class="l_k" href="../functions/if.html">if</a> <span class="s">(</span><a class="l_k" href="../functions/exists.html">exists</a> <span class="i">$ref</span>-&gt;{<span class="w">A</span>}-&gt;{<span class="w">B</span>}-&gt;{<span class="i">$key</span>}<span class="s">)</span>  <span class="s">{</span> <span class="s">}</span>
+    <a class="l_k" href="../functions/if.html">if</a> <span class="s">(</span><a class="l_k" href="../functions/exists.html">exists</a> <span class="i">$hash</span>{<span class="w">A</span>}{<span class="w">B</span>}{<span class="i">$key</span>}<span class="s">)</span>       <span class="s">{</span> <span class="s">}</span>
+
+    <a class="l_k" href="../functions/if.html">if</a> <span class="s">(</span><a class="l_k" href="../functions/exists.html">exists</a> <span class="i">$ref</span>-&gt;{<span class="w">A</span>}-&gt;{<span class="w">B</span>}-&gt;[<span class="i">$ix</span>]<span class="s">)</span>   <span class="s">{</span> <span class="s">}</span>
+    <a class="l_k" href="../functions/if.html">if</a> <span class="s">(</span><a class="l_k" href="../functions/exists.html">exists</a> <span class="i">$hash</span>{<span class="w">A</span>}{<span class="w">B</span>}[<span class="i">$ix</span>]<span class="s">)</span>        <span class="s">{</span> <span class="s">}</span>
+
+    <a class="l_k" href="../functions/if.html">if</a> <span class="s">(</span><a class="l_k" href="../functions/exists.html">exists</a> <span class="i">&amp;</span>{<span class="i">$ref</span>-&gt;{<span class="w">A</span>}{<span class="w">B</span>}{<span class="i">$key</span>}}<span class="s">)</span>   <span class="s">{</span> <span class="s">}</span></pre>
+<p>Although the most deeply nested array or hash element will not spring into
+existence just because its existence was tested, any intervening ones will.
+Thus <pre>
+<span class="i">$ref</span>-&gt;{<span class="q">&quot;A&quot;</span>}</code>
+ and <pre>
+<span class="i">$ref</span>-&gt;{<span class="q">&quot;A&quot;</span>}-&gt;{<span class="q">&quot;B&quot;</span>}</code>
+ will spring
+into existence due to the existence test for the $key element above.
+This happens anywhere the arrow operator is used, including even here:</p>
+<pre>
+    <a class="l_k" href="../functions/undef.html">undef</a> <span class="i">$ref</span><span class="sc">;</span>
+    <a class="l_k" href="../functions/if.html">if</a> <span class="s">(</span><a class="l_k" href="../functions/exists.html">exists</a> <span class="i">$ref</span>-&gt;{<span class="q">&quot;Some key&quot;</span>}<span class="s">)</span>    <span class="s">{</span> <span class="s">}</span>
+    <a class="l_k" href="../functions/print.html">print</a> <span class="i">$ref</span><span class="sc">;</span>  <span class="c"># prints HASH(0x80d3d5c)</span></pre>
+<p>This surprising autovivification in what does not at first--or even
+second--glance appear to be an lvalue context may be fixed in a future
+release.</p>
+<p>Use of a subroutine call, rather than a subroutine name, as an argument
+to exists() is an error.</p>
+<pre>
+    <a class="l_k" href="../functions/exists.html">exists</a> <span class="i">&amp;sub</span><span class="sc">;</span>    <span class="c"># OK</span>
+    <a class="l_k" href="../functions/exists.html">exists</a> <span class="i">&amp;sub</span><span class="s">(</span><span class="s">)</span><span class="sc">;</span>  <span class="c"># Error</span></pre>
+</li>
+</ul>
+
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/4/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/4/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/4/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/4/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/4/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/4/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/4/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/4/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/4/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/4/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/4/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/18/4/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/4/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/18/4/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

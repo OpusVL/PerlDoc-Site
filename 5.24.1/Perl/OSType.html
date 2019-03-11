@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Perl::OSType - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>Perl::OSType - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.24.1/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.24.1/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.24.1/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.24.1/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.24.1/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.24.1/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.24.1/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.24.1/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.24.1/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.24.1/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.24.1/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.24.1/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.24.1/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.24.1/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.24.1/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.24.1/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../index-modules-P.html">Core modules (P)</a> &gt;
+      
+    
+    Perl::OSType
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 24.1 documentation</h1>
+                  </div>
+                  <h1>Perl::OSType</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#VERSION">VERSION</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#USAGE">USAGE</a></li><ul><li><a href="#os_type()">os_type()</a></li><li><a href="#is_os_type()">is_os_type()</a></li></ul><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#SUPPORT">SUPPORT</a></li><ul><li><a href="#Bugs-%2f-Feature-Requests">Bugs / Feature Requests</a></li><li><a href="#Source-Code">Source Code</a></li></ul><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#CONTRIBUTORS">CONTRIBUTORS</a></li><li><a href="#COPYRIGHT-AND-LICENSE">COPYRIGHT AND LICENSE</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>Perl::OSType - Map Perl operating system names to generic types</p>
+<a id="VERSION"></a><h2 class='h2' >VERSION</h2>
+<p>version 1.009</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<pre>
+  <a class="l_k" href="../functions/use.html">use</a> <span class="w">Perl::OSType</span> <span class="q">&#39;:all&#39;</span><span class="sc">;</span>
+
+  <span class="i">$current_type</span> = <span class="i">os_type</span><span class="s">(</span><span class="s">)</span><span class="sc">;</span>
+  <span class="i">$other_type</span> = <span class="i">os_type</span><span class="s">(</span><span class="q">&#39;dragonfly&#39;</span><span class="s">)</span><span class="sc">;</span> <span class="c"># gives &#39;Unix&#39;</span></pre>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>Modules that provide OS-specific behaviors often need to know if
+the current operating system matches a more generic type of
+operating systems. For example, 'linux' is a type of 'Unix' operating system
+and so is 'freebsd'.</p>
+<p>This module provides a mapping between an operating system name as given by
+<pre>
+<span class="i">$^O</span></code>
+ and a more generic type.  The initial version is based on the OS type
+mappings provided in <a href="https://search.cpan.org/perldoc/Module::Build">Module::Build</a> and <a href="../ExtUtils/CBuilder.html">ExtUtils::CBuilder</a>.  (Thus,
+Microsoft operating systems are given the type 'Windows' rather than 'Win32'.)</p>
+<a id="USAGE"></a><h2 class='h2' >USAGE</h2>
+<p>No functions are exported by default. The export tag ":all" will export
+all functions listed below.</p>
+<a id="os_type()"></a><h3 class='h3' >os_type()</h3>
+<pre>
+  <span class="i">$os_type</span> = <span class="i">os_type</span><span class="s">(</span><span class="s">)</span><span class="sc">;</span>
+  <span class="i">$os_type</span> = <span class="i">os_type</span><span class="s">(</span><span class="q">&#39;MSWin32&#39;</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>Returns a single, generic OS type for a given operating system name.  With no
+arguments, returns the OS type for the current value of <pre>
+<span class="i">$^O</span></code>
+.  If the
+operating system is not recognized, the function will return the empty string.</p>
+<a id="is_os_type()"></a><h3 class='h3' >is_os_type()</h3>
+<pre>
+  <span class="i">$is_windows</span> = <span class="i">is_os_type</span><span class="s">(</span><span class="q">&#39;Windows&#39;</span><span class="s">)</span><span class="sc">;</span>
+  <span class="i">$is_unix</span>    = <span class="i">is_os_type</span><span class="s">(</span><span class="q">&#39;Unix&#39;</span><span class="cm">,</span> <span class="q">&#39;dragonfly&#39;</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>Given an OS type and OS name, returns true or false if the OS name is of the
+given type.  As with <pre>
+<span class="w">os_type</span></code>
+, it will use the current operating system as a
+default if no OS name is provided.</p>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<ul>
+<li>
+<p><a href="https://search.cpan.org/perldoc/Devel::CheckOS">Devel::CheckOS</a></p>
+</li>
+</ul>
+<a id="SUPPORT"></a><h2 class='h2' >SUPPORT</h2>
+<a id="Bugs-%2f-Feature-Requests"></a><h3 class='h3' >Bugs / Feature Requests</h3>
+<p>Please report any bugs or feature requests through the issue tracker
+at <a href="https://github.com/Perl-Toolchain-Gang/Perl-OSType/issues">https://github.com/Perl-Toolchain-Gang/Perl-OSType/issues</a>.
+You will be notified automatically of any progress on your issue.</p>
+<a id="Source-Code"></a><h3 class='h3' >Source Code</h3>
+<p>This is open source software.  The code repository is available for
+public review and contribution under the terms of the license.</p>
+<p><a href="https://github.com/Perl-Toolchain-Gang/Perl-OSType">https://github.com/Perl-Toolchain-Gang/Perl-OSType</a></p>
+<div class="verbatim"><ol><li>  git clone https://github.com/Perl-Toolchain-Gang/Perl-OSType.git</li></ol></div><a id="AUTHOR"></a><h2 class='h2' >AUTHOR</h2>
+<p>David Golden &lt;dagolden@cpan.org&gt;</p>
+<a id="CONTRIBUTORS"></a><h2 class='h2' >CONTRIBUTORS</h2>
+<ul>
+<li>
+<p>Chris 'BinGOs' Williams &lt;chris@bingosnet.co.uk&gt;</p>
+</li>
+<li>
+<p>Jonas B. Nielsen &lt;jonasbn@hoarfrost.local&gt;</p>
+</li>
+<li>
+<p>Owain G. Ainsworth &lt;oga@nicotinebsd.org&gt;</p>
+</li>
+<li>
+<p>Paul Green &lt;Paul.Green@stratus.com&gt;</p>
+</li>
+<li>
+<p>Piotr Roszatycki &lt;piotr.roszatycki@gmail.com&gt;</p>
+</li>
+</ul>
+<a id="COPYRIGHT-AND-LICENSE"></a><h2 class='h2' >COPYRIGHT AND LICENSE</h2>
+<p>This software is copyright (c) 2015 by David Golden.</p>
+<p>This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#VERSION">VERSION</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#USAGE">USAGE</a></li><ul><li><a href="#os_type()">os_type()</a></li><li><a href="#is_os_type()">is_os_type()</a></li></ul><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#SUPPORT">SUPPORT</a></li><ul><li><a href="#Bugs-%2f-Feature-Requests">Bugs / Feature Requests</a></li><li><a href="#Source-Code">Source Code</a></li></ul><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#CONTRIBUTORS">CONTRIBUTORS</a></li><li><a href="#COPYRIGHT-AND-LICENSE">COPYRIGHT AND LICENSE</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/24/1/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

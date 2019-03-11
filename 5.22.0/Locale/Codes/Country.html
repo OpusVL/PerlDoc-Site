@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Locale::Codes::Country - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>Locale::Codes::Country - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.22.0/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.22.0/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.22.0/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.22.0/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.22.0/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.22.0/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.22.0/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.22.0/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.22.0/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.22.0/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.22.0/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.22.0/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.22.0/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.22.0/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.22.0/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.22.0/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../../index-modules-L.html">Core modules (L)</a> &gt;
+      
+    
+    Locale::Codes::Country
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 22.0 documentation</h1>
+                  </div>
+                  <h1>Locale::Codes::Country</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#SUPPORTED-CODE-SETS">SUPPORTED CODE SETS</a></li><li><a href="#ROUTINES">ROUTINES</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#COPYRIGHT">COPYRIGHT</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>Locale::Codes::Country - standard codes for country identification</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<pre>
+   <a class="l_k" href="../../functions/use.html">use</a> <span class="w">Locale::Codes::Country</span><span class="sc">;</span>
+
+   <span class="i">$country</span> = <span class="i">code2country</span><span class="s">(</span><span class="q">&#39;jp&#39;</span> <span class="s">[</span><span class="cm">,</span><span class="w">CODESET</span><span class="s">]</span><span class="s">)</span><span class="sc">;</span>        <span class="c"># $country gets &#39;Japan&#39;</span>
+   <span class="i">$code</span>    = <span class="i">country2code</span><span class="s">(</span><span class="q">&#39;Norway&#39;</span> <span class="s">[</span><span class="cm">,</span><span class="w">CODESET</span><span class="s">]</span><span class="s">)</span><span class="sc">;</span>    <span class="c"># $code gets &#39;no&#39;</span>
+
+   <span class="i">@codes</span>   = <span class="i">all_country_codes</span><span class="s">(</span> <span class="s">[</span><span class="w">CODESET</span><span class="s">]</span><span class="s">)</span><span class="sc">;</span>
+   <span class="i">@names</span>   = <span class="i">all_country_names</span><span class="s">(</span><span class="s">)</span><span class="sc">;</span>
+
+   <span class="c"># semi-private routines</span>
+   <span class="i">Locale::Codes::Country::alias_code</span><span class="s">(</span><span class="q">&#39;uk&#39;</span> <span class="cm">=&gt;</span> <span class="q">&#39;gb&#39;</span><span class="s">)</span><span class="sc">;</span>
+   <span class="i">Locale::Codes::Country::rename_country</span><span class="s">(</span><span class="q">&#39;gb&#39;</span> <span class="cm">=&gt;</span> <span class="q">&#39;Great Britain&#39;</span><span class="s">)</span><span class="sc">;</span></pre>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>The <pre>
+<span class="w">Locale::Codes::Country</span></code>
+ module provides access to several code sets
+that can be used for identifying countries, such as those defined in
+ISO 3166-1.</p>
+<p>Most of the routines take an optional additional argument which
+specifies the code set to use. If not specified, the default ISO
+3166-1 two-letter codes will be used.</p>
+<a id="SUPPORTED-CODE-SETS"></a><h2 class='h2' >SUPPORTED CODE SETS</h2>
+<p>There are several different code sets you can use for identifying
+countries. A code set may be specified using either a name, or a
+constant that is automatically exported by this module.</p>
+<p>For example, the two are equivalent:</p>
+<pre>
+   <span class="i">$country</span> = <span class="i">code2country</span><span class="s">(</span><span class="q">&#39;jp&#39;</span><span class="cm">,</span><span class="q">&#39;alpha-2&#39;</span><span class="s">)</span><span class="sc">;</span>
+   <span class="i">$country</span> = <span class="i">code2country</span><span class="s">(</span><span class="q">&#39;jp&#39;</span><span class="cm">,</span><span class="w">LOCALE_CODE_ALPHA_2</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>The codesets currently supported are:</p>
+<ul>
+<li><a id="*alpha-2%2c-LOCALE_CODE_ALPHA_2*"></a><strong><strong>alpha-2, LOCALE_CODE_ALPHA_2</strong></strong>
+<p>This is the set of two-letter (lowercase) codes from ISO 3166-1, such
+as 'tv' for Tuvalu.</p>
+<p>This is the default code set.</p>
+</li>
+<li><a id="*alpha-3%2c-LOCALE_CODE_ALPHA_3*"></a><strong><strong>alpha-3, LOCALE_CODE_ALPHA_3</strong></strong>
+<p>This is the set of three-letter (lowercase) codes from ISO 3166-1,
+such as 'brb' for Barbados. These codes are actually defined and
+maintained by the U.N. Statistics division.</p>
+</li>
+<li><a id="*numeric%2c-LOCALE_CODE_NUMERIC*"></a><strong><strong>numeric, LOCALE_CODE_NUMERIC</strong></strong>
+<p>This is the set of three-digit numeric codes from ISO 3166-1, such as
+064 for Bhutan. These codes are actually defined and maintained by the
+U.N. Statistics division.</p>
+<p>If a 2-digit code is entered, it is converted to 3 digits by prepending
+a 0.</p>
+</li>
+<li><a id="*dom%2c-LOCALE_CODE_DOM*"></a><strong><strong>dom, LOCALE_CODE_DOM</strong></strong>
+<p>The IANA is responsible for delegating management of the top level country
+domains.  The country domains are the two-letter (lowercase) codes from ISO 3166
+with a few other additions.</p>
+</li>
+</ul>
+<p>NOTE: As of version 3.27, the FIPS code set is no longer supported.  See the
+Locale::Codes::Changes document for details.</p>
+<a id="ROUTINES"></a><h2 class='h2' >ROUTINES</h2>
+<ul>
+<li><a id="*code2country-(-CODE-%5b%2cCODESET%5d-%5b%2c'retired'%5d)*"></a><strong><strong>code2country ( CODE [,CODESET] [,'retired'])</strong></strong>
+</li>
+<li><a id="*country2code-(-NAME-%5b%2cCODESET%5d-%5b%2c'retired'%5d)*"></a><strong><strong>country2code ( NAME [,CODESET] [,'retired'])</strong></strong>
+</li>
+<li><a id="*country_code2code-(-CODE-%2cCODESET-%2cCODESET2-)*"></a><strong><strong>country_code2code ( CODE ,CODESET ,CODESET2 )</strong></strong>
+</li>
+<li><a id="*all_country_codes-(-%5bCODESET%5d-%5b%2c'retired'%5d)*"></a><strong><strong>all_country_codes ( [CODESET] [,'retired'])</strong></strong>
+</li>
+<li><a id="*all_country_names-(-%5bCODESET%5d-%5b%2c'retired'%5d)*"></a><strong><strong>all_country_names ( [CODESET] [,'retired'])</strong></strong>
+</li>
+<li><a id="*Locale%3a%3aCodes%3a%3aCountry%3a%3arename_country--(-CODE-%2cNEW_NAME-%5b%2cCODESET%5d-)*"></a><strong><strong>Locale::Codes::Country::rename_country  ( CODE ,NEW_NAME [,CODESET] )</strong></strong>
+</li>
+<li><a id="*Locale%3a%3aCodes%3a%3aCountry%3a%3aadd_country--(-CODE-%2cNAME-%5b%2cCODESET%5d-)*"></a><strong><strong>Locale::Codes::Country::add_country  ( CODE ,NAME [,CODESET] )</strong></strong>
+</li>
+<li><a id="*Locale%3a%3aCodes%3a%3aCountry%3a%3adelete_country--(-CODE-%5b%2cCODESET%5d-)*"></a><strong><strong>Locale::Codes::Country::delete_country  ( CODE [,CODESET] )</strong></strong>
+</li>
+<li><a id="*Locale%3a%3aCodes%3a%3aCountry%3a%3aadd_country_alias--(-NAME-%2cNEW_NAME-)*"></a><strong><strong>Locale::Codes::Country::add_country_alias  ( NAME ,NEW_NAME )</strong></strong>
+</li>
+<li><a id="*Locale%3a%3aCodes%3a%3aCountry%3a%3adelete_country_alias--(-NAME-)*"></a><strong><strong>Locale::Codes::Country::delete_country_alias  ( NAME )</strong></strong>
+</li>
+<li><a id="*Locale%3a%3aCodes%3a%3aCountry%3a%3arename_country_code--(-CODE-%2cNEW_CODE-%5b%2cCODESET%5d-)*"></a><strong><strong>Locale::Codes::Country::rename_country_code  ( CODE ,NEW_CODE [,CODESET] )</strong></strong>
+</li>
+<li><a id="*Locale%3a%3aCodes%3a%3aCountry%3a%3aadd_country_code_alias--(-CODE-%2cNEW_CODE-%5b%2cCODESET%5d-)*"></a><strong><strong>Locale::Codes::Country::add_country_code_alias  ( CODE ,NEW_CODE [,CODESET] )</strong></strong>
+</li>
+<li><a id="*Locale%3a%3aCodes%3a%3aCountry%3a%3adelete_country_code_alias--(-CODE-%5b%2cCODESET%5d-)*"></a><strong><strong>Locale::Codes::Country::delete_country_code_alias  ( CODE [,CODESET] )</strong></strong>
+<p>These routines are all documented in the Locale::Codes::API man page.</p>
+</li>
+<li><a id="*alias_code-(-ALIAS%2c-CODE-%5b%2cCODESET%5d-)*"></a><strong><strong>alias_code ( ALIAS, CODE [,CODESET] )</strong></strong>
+<p>Version 2.07 included 2 functions for modifying the internal data:
+rename_country and alias_code. Both of these could be used only to
+modify the internal data for country codes.</p>
+<p>As of 3.10, the internal data for all types of codes can be modified.</p>
+<p>The alias_code function is preserved for backwards compatibility, but
+the following two are identical:</p>
+<pre>
+   <span class="i">alias_code</span><span class="s">(</span><span class="w">ALIAS</span><span class="cm">,</span><span class="w">CODE</span> <span class="s">[</span><span class="cm">,</span><span class="w">CODESET</span><span class="s">]</span><span class="s">)</span><span class="sc">;</span>
+   <span class="i">rename_country_code</span><span class="s">(</span><span class="w">CODE</span><span class="cm">,</span><span class="w">ALIAS</span> <span class="s">[</span><span class="cm">,</span><span class="w">CODESET</span><span class="s">]</span><span class="s">)</span><span class="sc">;</span></pre>
+<p>and the latter should be used for consistency.</p>
+<p>The alias_code function is deprecated and will be removed in the December
+2014 release.</p>
+<p><strong>Note:</strong> this function was previously called _alias_code, but the
+leading underscore has been dropped. The old name was supported for
+all 2.X releases, but has been dropped as of 3.00.</p>
+</li>
+</ul>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<ul>
+<li><a id="*Locale%3a%3aCodes*"></a><strong><strong>Locale::Codes</strong></strong>
+<p>The Locale-Codes distribution.</p>
+</li>
+<li><a id="*Locale%3a%3aCodes%3a%3aAPI*"></a><strong><strong>Locale::Codes::API</strong></strong>
+<p>The list of functions supported by this module.</p>
+</li>
+<li><a id="*Locale%3a%3aSubCountry*"></a><strong><strong>Locale::SubCountry</strong></strong>
+<p>ISO codes for country sub-divisions (states, counties, provinces,
+etc), as defined in ISO 3166-2.  This module is not part of the
+Locale-Codes distribution, but is available from CPAN in
+CPAN/modules/by-module/Locale/</p>
+</li>
+<li><a id="*http%3a%2f%2fwww.iso.org%2fiso%2fhome%2fstandards%2fcountry_codes.htm*"></a><strong><strong><a href="http://www.iso.org/iso/home/standards/country_codes.htm">http://www.iso.org/iso/home/standards/country_codes.htm</a></strong></strong>
+<p>Official home page for the ISO 3166 maintenance agency.</p>
+</li>
+<li><a id="*http%3a%2f%2fwww.iso.org%2fiso%2fhome%2fstandards%2fcountry_codes%2fiso-3166-1_decoding_table.htm*"></a><strong><strong><a href="http://www.iso.org/iso/home/standards/country_codes/iso-3166-1_decoding_table.htm">http://www.iso.org/iso/home/standards/country_codes/iso-3166-1_decoding_table.htm</a></strong></strong>
+<p>The source of ISO 3166-1 two-letter codes used by this
+module.</p>
+</li>
+<li><a id="*http%3a%2f%2fwww.iana.org%2fdomains%2froot%2fdb%2f*"></a><strong><strong><a href="http://www.iana.org/domains/root/db/">http://www.iana.org/domains/root/db/</a></strong></strong>
+<p>Official source of the top-level domain names.</p>
+</li>
+<li><a id="*http%3a%2f%2funstats.un.org%2funsd%2fmethods%2fm49%2fm49alpha.htm*"></a><strong><strong><a href="http://unstats.un.org/unsd/methods/m49/m49alpha.htm">http://unstats.un.org/unsd/methods/m49/m49alpha.htm</a></strong></strong>
+<p>The source of the official ISO 3166-1 three-letter codes and
+three-digit codes.</p>
+<p>For some reason, this table is incomplete! Several countries are
+missing from it, and I cannot find them anywhere on the UN site.  I
+no longer use this as a source of data.</p>
+</li>
+<li><a id="*https%3a%2f%2fwww.cia.gov%2flibrary%2fpublications%2fthe-world-factbook%2fappendix%2fprint_appendix-d.html*"></a><strong><strong>https://www.cia.gov/library/publications/the-world-factbook/appendix/print_appendix-d.html</strong></strong>
+<p>The World Factbook maintained by the CIA is a potential source of
+the data.  Unfortunately, it adds/preserves non-standard codes, so it is no
+longer used as a source of data.</p>
+</li>
+<li><a id="*http%3a%2f%2fwww.statoids.com%2fwab.html*"></a><strong><strong><a href="http://www.statoids.com/wab.html">http://www.statoids.com/wab.html</a></strong></strong>
+<p>Another unofficial source of data. Currently, it is not used to get
+data, but the notes and explanatory material were very useful for
+understanding discrepancies between the sources.</p>
+</li>
+</ul>
+<a id="AUTHOR"></a><h2 class='h2' >AUTHOR</h2>
+<p>See Locale::Codes for full author history.</p>
+<p>Currently maintained by Sullivan Beck (sbeck@cpan.org).</p>
+<a id="COPYRIGHT"></a><h2 class='h2' >COPYRIGHT</h2>
+<div class="verbatim"><ol><li>   Copyright (c) 1997-2001 Canon Research Centre Europe (CRE).</li><li>   Copyright (c) 2001-2010 Neil Bowers</li><li>   Copyright (c) 2010-2015 Sullivan Beck</li></ol></div><p>This module is free software; you can redistribute it and/or
+modify it under the same terms as Perl itself.</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#SUPPORTED-CODE-SETS">SUPPORTED CODE SETS</a></li><li><a href="#ROUTINES">ROUTINES</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#AUTHOR">AUTHOR</a></li><li><a href="#COPYRIGHT">COPYRIGHT</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/22/0/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Thread::Semaphore - perldoc.perl.org">
+    <link rel="icon" href="/public/img/favicon.ico">
+    <title>Thread::Semaphore - perldoc.perl.org</title>
+    <link href="/public/css/main.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-1892152-2', 'auto');  // JJ's account
+            ga('create', 'UA-50555-3', 'auto', 'perlOrg');   // perl.org account
+            ga('require', 'outboundLinkTracker', {
+              events: ['click', 'auxclick', 'contextmenu'],
+            });
+            ga('require', 'maxScrollTracker');
+            ga('send', 'pageview');
+            ga('perlOrg.send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="/public/js/tracking.min.js"></script>
+  </head>
+  <body class="body container-fluid ">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-perl fixed-top justify-content-between">
+          <a class="navbar-brand" href="/">
+            <object class="logo" data="/public/img/logo_perl_doc.svg" type="image/svg+xml" name="Perl Documentation Logo">Perl Documentation Logo</object>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbar" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perl versions</a>
+                <div class="dropdown-menu" id="dropdown-menu-links" aria-labelledby="navbarDropdown">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown1" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manuals</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="/5.28.1/index-overview.html">Overview</a>
+                  <a class="dropdown-item" href="/5.28.1/index-tutorials.html">Tutorials</a>
+                  <a class="dropdown-item" href="/5.28.1/index-faq.html">FAQs</a>
+                  <a class="dropdown-item" href="/5.28.1/index-history.html">History / Changes</a>
+                  <a class="dropdown-item" href="/5.28.1/index-licence.html">License</a>
+                  <a class="dropdown-item" href="/5.28.1/index-language.html">Language</a>
+                  <a class="dropdown-item" href="/5.28.1/index-functions.html">Functions</a>
+                  <a class="dropdown-item" href="/5.28.1/perlop.html">Operators</a>
+                  <a class="dropdown-item" href="/5.28.1/perlvar.html">Special Variables</a>
+                  <a class="dropdown-item" href="/5.28.1/index-pragmas.html">Pragmas</a>
+                  <a class="dropdown-item" href="/5.28.1/index-utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="/5.28.1/index-internals.html">Internals</a>
+                  <a class="dropdown-item" href="/5.28.1/index-platforms.html">Platform Specific</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown3" href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modules</a>
+                <div aria-labelledby="navbarDropdown3" class="dropdown-menu letters-wrap">
+                  <a class="dropdown-item" href="/5.28.1/index-functions.html">A-Z</a>
+                  <a class="dropdown-item" href="/5.28.1/index-functions-by-cat.html">By Category</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="letter-container">
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-A.html">A</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-B.html">B</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-C.html">C</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-D.html">D</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-E.html">E</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-F.html">F</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-G.html">G</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-H.html">H</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-I.html">I</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-J.html">J</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-L.html">L</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-M.html">M</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-N.html">N</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-O.html">O</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-P.html">P</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-S.html">S</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-T.html">T</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-U.html">U</a>
+                    <a class="dropdown-item letters" href="/5.28.1/index-modules-X.html">X</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </nav>
+
+      <main class="row main-content pb-5 pt-5">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-sm-12">
+                <div id="breadcrumbs">
+                    
+    <a href="../index.html">Home</a>&nbsp; &gt;
+    
+      
+        <a href="../index-modules-T.html">Core modules (T)</a> &gt;
+      
+    
+    Thread::Semaphore
+  
+
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <article class="col-sm-12 content">
+                <div class="documentation-wrapper">
+                  <div id="perl_version">
+                    <h1 class='page-title'> Perl 5 version 28.1 documentation</h1>
+                  </div>
+                  <h1>Thread::Semaphore</h1>
+
+
+  <!--    -->
+<ul><li><a href="#NAME">NAME</a></li><li><a href="#VERSION">VERSION</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#METHODS">METHODS</a></li><li><a href="#NOTES">NOTES</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#MAINTAINER">MAINTAINER</a></li><li><a href="#LICENSE">LICENSE</a></li></ul><a id="NAME"></a><h2 class='h2' >NAME</h2>
+<p>Thread::Semaphore - Thread-safe semaphores</p>
+<a id="VERSION"></a><h2 class='h2' >VERSION</h2>
+<p>This document describes Thread::Semaphore version 2.13</p>
+<a id="SYNOPSIS"></a><h2 class='h2' >SYNOPSIS</h2>
+<pre>
+    <a class="l_k" href="../functions/use.html">use</a> <span class="w">Thread::Semaphore</span><span class="sc">;</span>
+    <a class="l_k" href="../functions/my.html">my</a> <span class="i">$s</span> = <span class="w">Thread::Semaphore</span><span class="w">-&gt;new</span><span class="s">(</span><span class="s">)</span><span class="sc">;</span>
+    <span class="i">$s</span><span class="i">-&gt;down</span><span class="s">(</span><span class="s">)</span><span class="sc">;</span>   <span class="c"># Also known as the semaphore P operation.</span>
+    <span class="c"># The guarded section is here</span>
+    <span class="i">$s</span><span class="i">-&gt;up</span><span class="s">(</span><span class="s">)</span><span class="sc">;</span>     <span class="c"># Also known as the semaphore V operation.</span>
+
+    <span class="c"># Decrement the semaphore only if it would immediately succeed.</span>
+    <a class="l_k" href="../functions/if.html">if</a> <span class="s">(</span><span class="i">$s</span><span class="i">-&gt;down_nb</span><span class="s">(</span><span class="s">)</span><span class="s">)</span> <span class="s">{</span>
+        <span class="c"># The guarded section is here</span>
+        <span class="i">$s</span><span class="i">-&gt;up</span><span class="s">(</span><span class="s">)</span><span class="sc">;</span>
+    <span class="s">}</span>
+
+    <span class="c"># Forcefully decrement the semaphore even if its count goes below 0.</span>
+    <span class="i">$s</span><span class="i">-&gt;down_force</span><span class="s">(</span><span class="s">)</span><span class="sc">;</span>
+
+    <span class="c"># The default value for semaphore operations is 1</span>
+    <a class="l_k" href="../functions/my.html">my</a> <span class="i">$s</span> = <span class="w">Thread::Semaphore</span><span class="w">-&gt;new</span><span class="s">(</span><span class="i">$initial_value</span><span class="s">)</span><span class="sc">;</span>
+    <span class="i">$s</span><span class="i">-&gt;down</span><span class="s">(</span><span class="i">$down_value</span><span class="s">)</span><span class="sc">;</span>
+    <span class="i">$s</span><span class="i">-&gt;up</span><span class="s">(</span><span class="i">$up_value</span><span class="s">)</span><span class="sc">;</span>
+    <a class="l_k" href="../functions/if.html">if</a> <span class="s">(</span><span class="i">$s</span><span class="i">-&gt;down_nb</span><span class="s">(</span><span class="i">$down_value</span><span class="s">)</span><span class="s">)</span> <span class="s">{</span>
+        ...
+        <span class="i">$s</span><span class="i">-&gt;up</span><span class="s">(</span><span class="i">$up_value</span><span class="s">)</span><span class="sc">;</span>
+    <span class="s">}</span>
+    <span class="i">$s</span><span class="i">-&gt;down_force</span><span class="s">(</span><span class="i">$down_value</span><span class="s">)</span><span class="sc">;</span></pre>
+<a id="DESCRIPTION"></a><h2 class='h2' >DESCRIPTION</h2>
+<p>Semaphores provide a mechanism to regulate access to resources.  Unlike
+locks, semaphores aren't tied to particular scalars, and so may be used to
+control access to anything you care to use them for.</p>
+<p>Semaphores don't limit their values to zero and one, so they can be used to
+control access to some resource that there may be more than one of (e.g.,
+filehandles).  Increment and decrement amounts aren't fixed at one either,
+so threads can reserve or return multiple resources at once.</p>
+<a id="METHODS"></a><h2 class='h2' >METHODS</h2>
+<ul>
+<li><a id="-%3enew()"></a><strong>-&gt;new()</strong>
+</li>
+<li><a id="-%3enew(NUMBER)"></a><strong>-&gt;new(NUMBER)</strong>
+<p><pre>
+<span class="w">new</span></code>
+ creates a new semaphore, and initializes its count to the specified
+number (which must be an integer).  If no number is specified, the
+semaphore's count defaults to 1.</p>
+</li>
+<li><a id="-%3edown()"></a><strong>-&gt;down()</strong>
+</li>
+<li><a id="-%3edown(NUMBER)"></a><strong>-&gt;down(NUMBER)</strong>
+<p>The <pre>
+<span class="w">down</span></code>
+ method decreases the semaphore's count by the specified number
+(which must be an integer &gt;= 1), or by one if no number is specified.</p>
+<p>If the semaphore's count would drop below zero, this method will block
+until such time as the semaphore's count is greater than or equal to the
+amount you're <pre>
+<span class="w">down</span></code>
+ing the semaphore's count by.</p>
+<p>This is the semaphore "P operation" (the name derives from the Dutch
+word "pak", which means "capture" -- the semaphore operations were
+named by the late Dijkstra, who was Dutch).</p>
+</li>
+<li><a id="-%3edown_nb()"></a><strong>-&gt;down_nb()</strong>
+</li>
+<li><a id="-%3edown_nb(NUMBER)"></a><strong>-&gt;down_nb(NUMBER)</strong>
+<p>The <pre>
+<span class="w">down_nb</span></code>
+ method attempts to decrease the semaphore's count by the
+specified number (which must be an integer &gt;= 1), or by one if no number
+is specified.</p>
+<p>If the semaphore's count would drop below zero, this method will return
+<i>false</i>, and the semaphore's count remains unchanged.  Otherwise, the
+semaphore's count is decremented and this method returns <i>true</i>.</p>
+</li>
+<li><a id="-%3edown_force()"></a><strong>-&gt;down_force()</strong>
+</li>
+<li><a id="-%3edown_force(NUMBER)"></a><strong>-&gt;down_force(NUMBER)</strong>
+<p>The <pre>
+<span class="w">down_force</span></code>
+ method decreases the semaphore's count by the specified
+number (which must be an integer &gt;= 1), or by one if no number is specified.
+This method does not block, and may cause the semaphore's count to drop
+below zero.</p>
+</li>
+<li><a id="-%3edown_timed(TIMEOUT)"></a><strong>-&gt;down_timed(TIMEOUT)</strong>
+</li>
+<li><a id="-%3edown_timed(TIMEOUT%2c-NUMBER)"></a><strong>-&gt;down_timed(TIMEOUT, NUMBER)</strong>
+<p>The <pre>
+<span class="w">down_timed</span></code>
+ method attempts to decrease the semaphore's count by 1
+or by the specified number within the specified timeout period given in
+seconds (which must be an integer &gt;= 0).</p>
+<p>If the semaphore's count would drop below zero, this method will block
+until either the semaphore's count is greater than or equal to the
+amount you're <pre>
+<span class="w">down</span></code>
+ing the semaphore's count by, or until the timeout is
+reached.</p>
+<p>If the timeout is reached, this method will return <i>false</i>, and the
+semaphore's count remains unchanged.  Otherwise, the semaphore's count is
+decremented and this method returns <i>true</i>.</p>
+</li>
+<li><a id="-%3eup()"></a><strong>-&gt;up()</strong>
+</li>
+<li><a id="-%3eup(NUMBER)"></a><strong>-&gt;up(NUMBER)</strong>
+<p>The <pre>
+<span class="w">up</span></code>
+ method increases the semaphore's count by the number specified
+(which must be an integer &gt;= 1), or by one if no number is specified.</p>
+<p>This will unblock any thread that is blocked trying to <pre>
+<span class="w">down</span></code>
+ the
+semaphore if the <pre>
+<span class="w">up</span></code>
+ raises the semaphore's count above the amount that
+the <pre>
+<span class="w">down</span></code>
+ is trying to decrement it by.  For example, if three threads
+are blocked trying to <pre>
+<span class="w">down</span></code>
+ a semaphore by one, and another thread <pre>
+<span class="w">up</span></code>
+s
+the semaphore by two, then two of the blocked threads (which two is
+indeterminate) will become unblocked.</p>
+<p>This is the semaphore "V operation" (the name derives from the Dutch
+word "vrij", which means "release").</p>
+</li>
+</ul>
+<a id="NOTES"></a><h2 class='h2' >NOTES</h2>
+<p>Semaphores created by <a href="../Thread/Semaphore.html">Thread::Semaphore</a> can be used in both threaded and
+non-threaded applications.  This allows you to write modules and packages
+that potentially make use of semaphores, and that will function in either
+environment.</p>
+<a id="SEE-ALSO"></a><h2 class='h2' >SEE ALSO</h2>
+<p>Thread::Semaphore on MetaCPAN:
+<a href="https://metacpan.org/release/Thread-Semaphore">https://metacpan.org/release/Thread-Semaphore</a></p>
+<p>Code repository for CPAN distribution:
+<a href="https://github.com/Dual-Life/Thread-Semaphore">https://github.com/Dual-Life/Thread-Semaphore</a></p>
+<p><a href="../threads.html">threads</a>, <a href="../threads/shared.html">threads::shared</a></p>
+<p>Sample code in the <i>examples</i> directory of this distribution on CPAN.</p>
+<a id="MAINTAINER"></a><h2 class='h2' >MAINTAINER</h2>
+<p>Jerry D. Hedden, &lt;jdhedden AT cpan DOT org&gt;</p>
+<a id="LICENSE"></a><h2 class='h2' >LICENSE</h2>
+<p>This program is free software; you can redistribute it and/or modify it under
+the same terms as Perl itself.</p>
+
+
+
+
+      <ul><li><a href="#NAME">NAME</a></li><li><a href="#VERSION">VERSION</a></li><li><a href="#SYNOPSIS">SYNOPSIS</a></li><li><a href="#DESCRIPTION">DESCRIPTION</a></li><li><a href="#METHODS">METHODS</a></li><li><a href="#NOTES">NOTES</a></li><li><a href="#SEE-ALSO">SEE ALSO</a></li><li><a href="#MAINTAINER">MAINTAINER</a></li><li><a href="#LICENSE">LICENSE</a></li></ul>
+
+
+                </div>
+              </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer row bg-light pt-5 pb-5">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <h4>Site info</h4>
+              </li>
+              <li>Docs mantained by
+                <a href="//lists.cpan.org/showlist.cgi?name=perl5-porters" rel="noopener">Perl 5 Porters</a>
+              </li>
+              <li>Site development sponsored by
+                <a href="//opusvl.com" rel="noopener"><img class="opus-logo" src="/public/img/opusvl_logo.svg" alt="OpusVL Logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Manual</h4>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-overview.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-tutorials.html">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-faq.html">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-history.html">Changes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Reference</h4>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-language.html">Language</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-functions.html">Functions</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/perlop.html">Operators</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/perlvar.html">Variables</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Modules</h4>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-modules-A.html">Modules</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-pragmas.html">Pragmas</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-utilities.html">Utilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                  <li>
+                    <h4>Misc</h4>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-licence.html">License</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-internals.html">Internals</a>
+                  </li>
+                  <li>
+                    <a href="/5/28/1/index-platforms.html">Platforms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 footer-inf text-center">
+            <small>perldoc.perl.org - Official documentation for the Perl programming language</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="beta-wrapper beta-bottom-right ">
+      <div class="beta beta-blue  ">
+        <a class="beta-link " href="https://github.com/OpusVL/perldoc.perl.org/issues/new" rel="noopener">
+          <span class="beta-text">
+            This is a Beta release.
+          </span>
+          <span class="beta-text">
+            For any issues please raise a ticket on GitHub
+          </span>
+        </a>
+      </div>
+    </div>
+    <script src="/public/js/main.min.js"></script>
+  </body>
+</html>
